@@ -23,7 +23,7 @@
 			<Description>
 				<em:locale>en-US</em:locale>
 				<em:name>Noia Moon Theme Manager</em:name>
-				<em:description>Select gray, black, blue, Firefox 3-like, FF4+ (Win7) or AeroGlass skins and customize your Pale Moon with many personal tweaks.</em:description>
+				<em:description>Select gray, black, blue, Firefox 3-like, FF4+ (Win7) or AeroGlass skins and customize your Pale Moon with many personal tweaks. Based on "Noia 4" by Aris</em:description>
 				<em:creator>Pale Moon Add-Ons Team</em:creator>
 				<em:contributor>Aris</em:contributor>
 				<em:contributor>Markus</em:contributor>
@@ -36,7 +36,7 @@
 			<Description>
 				<em:locale>de</em:locale>
 				<em:name>Noia Moon Theme Konfigurator</em:name>
-				<em:description>Wähle graue, schwarze, blaue, Firefox3, Firefox4-Win7, AeroGlass Skins und viele persönliche Einstellungen.</em:description>
+				<em:description>Wähle graue, schwarze, blaue, Firefox3, Firefox4-Win7, AeroGlass Skins und viele persönliche Einstellungen. Basierend auf "Noia 4" von Aris</em:description>
 				<em:creator>Pale Moon Add-Ons Team</em:creator>
 				<em:contributor>Aris</em:contributor>
 				<em:contributor>Markus</em:contributor>
@@ -49,7 +49,7 @@
 			<Description>
 				<em:locale>fr</em:locale>
 				<em:name>Configurateur de Noia Moon</em:name>
-				<em:description>Gestionnaire des options pour le thème Noia Moon. Vous pouvez choisir les affichages gris/noirs/bleus/Firefox3/Ff4+w7/aeroglass et jongler entre plusieurs réglages et des correctifs pour d'autres extensions  pour avoir un bon résultat.</em:description>
+				<em:description>Gestionnaire des options pour le thème Noia Moon. Vous pouvez choisir les affichages gris/noirs/bleus/Firefox3/Ff4+w7/aeroglass et jongler entre plusieurs réglages et des correctifs pour d'autres extensions  pour avoir un bon résultat. Sur la base de "Noia 4" par Aris</em:description>
 				<em:creator>Pale Moon Add-Ons Team</em:creator>
 				<em:contributor>Aris</em:contributor>
 				<em:contributor>Markus</em:contributor>
@@ -62,7 +62,7 @@
 			<Description>
 				<em:locale>it</em:locale>
 				<em:name>Configuratore del tema Noia Moon</em:name>
-				<em:description>Permette varie impostazioni per il tema Noia Moon. E' possibile scegliere l'aspetto grigio/blu/Firefox3/FF4+Win7/AeroGlass e abilitare/disabilitare correzioni per alcune estensioni perchè funzionino correttamente.</em:description>
+				<em:description>Permette varie impostazioni per il tema Noia Moon. E' possibile scegliere l'aspetto grigio/blu/Firefox3/FF4+Win7/AeroGlass e abilitare/disabilitare correzioni per alcune estensioni perchè funzionino correttamente. Sulla base di "Noia 4" di Aris</em:description>
 				<em:creator>Pale Moon Add-Ons Team</em:creator>
 				<em:contributor>Aris</em:contributor>
 				<em:contributor>Markus</em:contributor>
@@ -75,7 +75,7 @@
 			<Description>
 				<em:locale>sv-SE</em:locale>
 				<em:name>Noia-Moon temahanterare</em:name>
-				<em:description>Välj olika temafärg - grå, svart, blå, Firefox3, FF4+Win7 och AeroGlass och finlira dem.</em:description>
+				<em:description>Välj olika temafärg - grå, svart, blå, Firefox3, FF4+Win7 och AeroGlass och finlira dem. Baserad på "Noia 4" av Aris</em:description>
 				<em:creator>Pale Moon Add-Ons Team</em:creator>
 				<em:contributor>Aris</em:contributor>
 				<em:contributor>Markus</em:contributor>
