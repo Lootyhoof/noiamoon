@@ -1,0 +1,4 @@
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker,
+#appmenu-button > .button-box > .button-menu-dropmarker {
+	visibility: collapse !important; 
+}

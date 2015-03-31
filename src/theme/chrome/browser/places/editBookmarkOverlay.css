@@ -1,0 +1,58 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#editBookmarkPanelContent{
+	min-width: 375px;
+}
+
+#editBookmarkPanelContent textbox{
+	min-height: 20px;
+}
+
+.folder-icon > .menulist-label-box > .menulist-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.folder-icon > .menu-iconic-left {
+  display: -moz-box;
+}
+
+.folder-icon {
+  list-style-image: url("chrome://browser/skin/icons/folder_closed.png") !important;
+}
+
+
+/**** expanders ****/
+.expander-up,
+.expander-down {
+  min-width: 0;
+}
+
+.expander-up {
+  list-style-image: url("chrome://global/skin/icons/collapse.png");
+}
+
+.expander-down {
+  list-style-image: url("chrome://global/skin/icons/expand.png");
+}
+
+/**** name picker ****/
+#editBMPanel_namePicker[droppable="false"] {
+  -moz-appearance: none;
+  cursor: text;
+  margin: 2px 4px;
+  border: none;
+  -moz-border-left-colors: #DBDBDB white ;
+  background:url("chrome://global/skin/textbox/textbox-body.png") repeat-x white ;
+  color: #000000;
+}
+
+#editBMPanel_namePicker[droppable="false"] > .menulist-editable-box {
+  -moz-appearance: none;
+  padding: 2px 2px 3px 4px;   
+}
+
+#editBMPanel_namePicker[droppable="false"] > .menulist-dropmarker > .dropmarker-icon,
+#editBMPanel_namePicker[droppable="false"] > menupopup {
+  display: none;
+}

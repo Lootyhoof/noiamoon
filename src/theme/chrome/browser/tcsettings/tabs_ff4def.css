@@ -1,0 +1,27 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-tab{
+	background: linear-gradient(#d6dfeb 1px,#cad4e2,#abb4c2) !important;
+}
+
+.tabbrowser-tab:hover{
+	background: linear-gradient(#e6ecf5 1px,#dee7f1,#c7d0de) !important;
+}
+
+.tabbrowser-tab[selected=true]{
+	background: linear-gradient(#fefeff 1px,#fcfdfe,#e7edf6) !important;
+}
+
+.tabbrowser-tab:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]):not(:focus){
+	border: 1px solid #a0a0a0 !important;
+}
+
+.tabs-newtab-button:focus,
+.tabbrowser-tab:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]):focus{
+	border: 1px solid blue !important;
+}
+
+.tabbrowser-tab {
+	margin-right:1px;
+	margin-bottom:0px !important;
+}

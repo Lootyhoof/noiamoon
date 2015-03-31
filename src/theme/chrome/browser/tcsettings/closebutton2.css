@@ -1,0 +1,40 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.tab-close-button {
+	list-style-image: url(chrome://browser/skin/icons/KUI-close.png) !important;
+	-moz-image-region: rect(0 22px 22px 0) !important;
+	opacity: .4 !important;
+}
+
+.tab-close-button:hover,
+.tabbrowser-tab[selected="true"] > .tab-close-button:hover {
+	-moz-image-region: rect(22px, 22px, 44px, 0px) !important;
+	opacity: 1.0 !important;
+}
+
+.tab-close-button:hover:active,
+.tabbrowser-tab[selected="true"] > .tab-close-button:hover:active {
+  	-moz-image-region: rect(44px, 22px, 66px, 0px) !important;
+	opacity: 1.0 !important;
+}
+
+.tabbrowser-tab[selected="true"] > .tab-close-button {
+  	-moz-image-region: rect(44px, 22px, 66px, 0px) !important;
+	opacity: 1.0 !important;
+}
+
+.tabbrowser-tab:hover .tab-close-button:active,
+.tabbrowser-tab[selected="true"] .tab-close-button:active {
+  	-moz-image-region: rect(44px, 22px, 66px, 0px) !important;
+	opacity: 1.0 !important;
+}
+
+.tabbrowser-tab:hover .tab-close-button,
+.tabbrowser-tab[selected="true"] .tab-close-button {
+	-moz-image-region: rect(22px, 22px, 44px, 0px) !important;
+	opacity: 1.0 !important;
+}
+.tab-close-button {
+	margin-top: -2px !important;
+	margin-bottom: -2px !important;
+}

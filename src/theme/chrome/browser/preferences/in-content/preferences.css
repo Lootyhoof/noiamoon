@@ -1,0 +1,224 @@
+/* - This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://global/skin/inContentUI.css");
+
+@namespace html "http://www.w3.org/1999/xhtml";
+
+#header {
+  margin-bottom: 18px;
+}
+
+caption {
+  font-size: 11pt !important;
+}
+
+.main-content {
+  max-width: 800px;
+}
+
+prefpane > .content-box {
+  overflow: auto;
+}
+
+/* Category List */
+
+#categories {
+  -moz-appearance: none;
+  border: none;
+ /* -moz-margin-end: 10px;*/
+  background-color: transparent;
+  position: relative;
+  margin-top: 31px;
+}
+
+.category {
+  -moz-box-align: center;
+  overflow: hidden;
+  min-height: 0;
+  padding: 10px 4px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  height: 52px;
+  margin: 2px 4px;
+  transition-property: height, margin, opacity;
+  transition-duration: 1s, 0.8s;
+}
+
+.category:hover {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: url(chrome://global/skin/button/hover.png) transparent;
+  background-size: 100% 100%;
+}
+
+.category[selected] {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: url(chrome://global/skin/button/select.png) transparent;
+  background-size: 100% 100%;
+}
+
+.category-name {
+  font-size: 1.5rem;
+  -moz-padding-end: 24px;
+}
+
+/* Maximize the size of the viewport when the window is small */
+@media (max-width: 800px) {
+  .category-name {
+    display: none;
+  }
+}
+
+.category-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 6px;
+}
+
+#category-general > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/main1.png");
+}
+
+#category-general:hover > .category-icon,
+#category-general[selected] > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/main.png");
+}
+
+#category-content > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/content1.png");
+}
+
+#category-content:hover  > .category-icon,
+#category-content[selected] > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/content.png");
+}
+
+#category-application > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/applications1.png");
+}
+
+#category-application:hover > .category-icon,
+#category-application[selected] > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/applications.png");
+}
+
+#category-privacy > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/privacy1.png");
+}
+
+#category-privacy:hover > .category-icon,
+#category-privacy[selected] > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/privacy.png");
+}
+
+#category-security > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/security1.png");
+}
+
+#category-security:hover > .category-icon,
+#category-security[selected] > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/security.png");
+}
+
+#category-advanced > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/advanced1.png");
+}
+
+#category-advanced:hover > .category-icon,
+#category-advanced[selected] > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/advanced.png");
+}
+
+#category-sync > .category-icon {
+  list-style-image: url(chrome://browser/skin/preferences/sync1.png);
+}
+
+#category-sync:hover > .category-icon,
+#category-sync[selected] > .category-icon {
+  list-style-image: url(chrome://browser/skin/preferences/sync.png);
+}
+
+/* Applications Pane Styles */
+
+#applications-content {
+  padding: 15px;
+}
+
+#handlersView {
+  -moz-appearance: none;
+  border: 1px solid rgba(31,64,100,0.4);
+  overflow-y: auto;
+}
+
+/* XXX This style is for bug 740213 and should be removed once that
+   bug has a solution. */
+description > html|a {
+  cursor: pointer;
+}
+
+/* XXX Styles Below can be removed once bug 660726 lands */
+.nav-button {
+  list-style-image: url(chrome://mozapps/skin/extensions/navigation.png);
+}
+
+#forward-btn {
+  -moz-border-start: none;
+}
+
+#back-btn:-moz-locale-dir(ltr),
+#forward-btn:-moz-locale-dir(rtl) {
+  -moz-image-region: rect(0, 18px, 18px, 0);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#back-btn:-moz-locale-dir(rtl),
+#forward-btn:-moz-locale-dir(ltr) {
+  -moz-image-region: rect(0, 36px, 18px, 18px);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.header-button[disabled="true"] {
+  opacity: 0.8;
+}
+
+.header-button {
+  -moz-appearance: none;
+  padding: 1px 3px;
+  color: #444;
+  text-shadow: 0 0 3px white;
+  background: linear-gradient(
+                rgba(251,252,253,0.95),
+                rgba(246,247,248,0) 49%,
+                rgba(211,212,213,0.45) 51%,
+                rgba(225,226,229, 0.3));
+  background-clip: padding-box;
+  border-radius: 2.5px;
+  border: 1px solid rgba(31,64,100,0.4);
+  border-top-color: rgba(31,64,100,0.3);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25) inset,
+              0 0 2px 1px rgba(255, 255, 255, 0.25) inset;
+}
+
+.header-button[disabled="true"] > .toolbarbutton-icon {
+  opacity: 0.4;
+}
+
+.header-button:not([disabled="true"]):active:hover,
+.header-button[open="true"] {
+  background-color: rgba(61, 76, 92, 0.2);
+  border-color: rgba(39, 53, 68, 0.5);
+  box-shadow: 0 0 3px 1px rgba(39, 53, 68, 0.2) inset;
+}
+
+.header-button > .toolbarbutton-text {
+  display: none;
+}

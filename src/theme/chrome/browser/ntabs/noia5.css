@@ -1,0 +1,114 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.tabbrowser-tab[selected="true"] {
+ 	text-shadow: #999999 2px 2px 2px !important;
+	border: 1px solid white !important;
+}
+
+.tabbrowser-tab:not([pinned]),.tabbrowser-tab:not([pinned])[selected="true"] {
+	list-style-image: none !important;
+ 	min-width: 16px !important;
+	text-align: left !important;
+	border: 1px solid white !important;
+}
+
+#TabsToolbar .tabs-newtab-button,#alltabs-button,#tabview-button,#TabsToolbar #new-tab-button  {
+	opacity: 1.0  !important;
+	border: 2px solid !important;
+	height: 25px !important;
+	min-height: 25px !important;
+	-moz-border-top-colors: lightgray gray !important;
+	-moz-border-right-colors: lightgray gray !important;
+	-moz-border-bottom-colors: lightgray gray !important;
+	-moz-border-left-colors: lightgray gray !important;
+	border-top-left-radius:23px !important;
+	border-bottom-right-radius:23px !important;
+}
+
+#alltabs-button,#TabsToolbar  .tabs-newtab-button,#tabview-button,#TabsToolbar  #new-tab-button{
+	background-color:#bbb3bb !important;
+}
+
+#alltabs-button:hover,#TabsToolbar  .tabs-newtab-button:hover,#tabview-button:hover,#TabsToolbar  #new-tab-button:hover{
+	background-color: #c5c0c9 !important;
+}
+
+.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+  -moz-padding-start: 0px;
+  -moz-padding-end: 7px;
+}
+
+.tabbrowser-tabs:not([overflow]) .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+  -moz-margin-end: -6px;
+}
+
+.tab-content:not([pinned]) {
+  border: solid transparent;
+  border-width: 2px 15px;
+  -moz-margin-start: 3px;
+  -moz-margin-end: 3px;
+}
+
+.tabbrowser-tab:not([pinned]) > .tab-stack > .tab-content,
+.tabbrowser-tab:not([pinned]) > .tab-stack > .tab-content[selected="true"]{
+	border-top-left-radius:23px;
+	border-bottom-right-radius:23px;
+	background-color: #b7afb7;
+	margin:1px;
+	-moz-border-top-colors: lightgray #b7afb7;
+	-moz-border-right-colors: lightgray #b7afb7;
+	-moz-border-bottom-colors: lightgray #b7afb7;
+	-moz-border-left-colors: lightgray #b7afb7;
+}
+
+.tabbrowser-tab:hover:not([pinned]) > .tab-stack > .tab-content:not([selected="true"]){
+	background-color: #c8c0c8;
+	-moz-border-top-colors: #b7afb7 #c8c0c8;
+	-moz-border-right-colors: #b7afb7 #c8c0c8;
+	-moz-border-bottom-colors: #b7afb7 #c8c0c8;
+	-moz-border-left-colors: #b7afb7 #c8c0c8;
+}
+
+.tabbrowser-tab[selected="true"] {
+  z-index: 1;
+  position: relative;
+}
+
+.tabbrowser-tab:-moz-lwtheme {
+  text-shadow: inherit;
+}
+
+/*tab text*/
+.tabbrowser-tab:not([pinned]) .tab-text {
+ 	background: white;
+	border: 2px solid;
+    padding-left:8px;
+	padding-right:8px;
+	margin-left:6px !important;	
+	margin-right:-2px !important;
+	-moz-border-top-colors: lightgray gray;
+	-moz-border-right-colors: lightgray gray;
+	-moz-border-bottom-colors: lightgray gray;
+	-moz-border-left-colors: lightgray gray;
+	border-top-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+
+/* rounded colofultabs borders*/
+.tabbrowser-tab:not([pinned]) {
+	border-top-left-radius:23px !important;
+	border-bottom-right-radius:23px !important;
+}
+
+.tabbrowser-tab[pinned]{
+	height:29px !important;
+	border: 1px solid gray !important;
+	border-top-left-radius:10px !important;
+	border-bottom-left-radius:10px !important;
+}
+
+.tab-throbber[pinned],
+.tab-icon-image[pinned] {
+  -moz-margin-start: 0 !important;
+  -moz-margin-end: 0 !important;
+}

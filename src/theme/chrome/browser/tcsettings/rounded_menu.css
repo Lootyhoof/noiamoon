@@ -1,0 +1,10 @@
+menupopup,popup,popup[type="autocomplete"],
+menulist > menupopup,
+menupopup > menu[_moz-menuactive="true"]:not([disabled="true"]),
+menupopup > menuitem[_moz-menuactive="true"]:not([disabled="true"]),
+popup > menu[_moz-menuactive="true"]:not([disabled="true"]),
+popup > menuitem[_moz-menuactive="true"]:not([disabled="true"]),
+menubar > menu[_moz-menuactive="true"][open="true"]:not([disabled="true"]),
+menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
+  border-radius: 5px !important;
+}

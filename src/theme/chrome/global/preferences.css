@@ -1,0 +1,51 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+prefwindow {
+  padding: 0px;
+}
+
+prefpane {
+  padding: 5px 5px 0;
+}
+
+prefwindow[type="child"] > prefpane {
+  padding: 0px;
+}
+
+.prefWindow-dlgbuttons {
+  margin: 4px 15px;
+}
+
+radio[pane] {
+  -moz-appearance: none;
+  min-width: 80px;
+  margin: 1px;
+  padding: 1px 0;
+}
+
+.paneSelector {
+  border-bottom: 2px groove #D4D0C8;
+  margin: 0;
+  padding: 0px 5px 0;
+  background-image: url("chrome://browser/skin/icons/Tool-background2.png") !important;
+  color: #5A5A5A;
+}
+
+.paneButtonIcon {
+  min-width: 30px;
+  min-height: 30px;
+}
+
+radio[pane]:hover {
+  -moz-appearance: none;
+  color: #000000;
+}
+
+.paneButtonLabel {
+	margin: 0 !important;
+}
+radio[pane][selected="true"] {
+  color: #000000;
+  font-weight: bold !important;
+  -moz-appearance: none;
+}

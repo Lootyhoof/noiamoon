@@ -1,0 +1,60 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* :::::  Tab Mix Plus Extension Support  ::::: */
+/* for progressmeter on tab tag */
+.tabbrowser-tabs[progressMeter=true] .tabbrowser-tab[busy=true] progressmeter.tab-progress {
+  display: -moz-box;
+}
+
+.tabbrowser-tab progressmeter.tab-progress {
+	width: 100% !important;
+	height: 100% !important;
+	min-height:14px !important;
+	margin-left:17px !important;
+	margin-right:14px !important;
+	margin-top:2px !important;
+	min-width: 0px !important;
+	border: none;
+	/*display: none;*/
+}
+
+.tabbrowser-tabs[useProgressColor=true] .tabbrowser-tab .tab-progress {
+  -moz-appearance: none;
+  background-color: transparent;
+}
+
+/*
+ * Thicker progress meter and rounded lines
+ * when using TMP progressbar
+ */
+.tabbrowser-tabs[useProgressColor=true] .tabbrowser-tab .progress-bar {
+  -moz-appearance: none;
+  margin: 1px 0px 0px 1px !important;
+  background-image: none !important;
+  border: none !important;        /* prevent darkening the choosen color which is ugly with this small line */
+  border-radius: 50px !important;
+  min-height: 3px !important;
+}
+
+/*
+ * Prevent disappearing of favicon in the tab during page loading
+ * when using TMP progressbar
+ * we don't show the loading circle so we can have the favicon always on
+ */
+.tabbrowser-tabs[useProgressColor=true] .tab-throbber[busy] + .tab-icon-image {
+  display: -moz-box !important;
+}
+
+/*
+ * No loading image (circle), therefore we have the loading line
+ * when using TMP progressbar
+ */
+.tabbrowser-tabs[useProgressColor=true] .tab-throbber[busy] {
+  display: none !important;
+}
+
+.tabbrowser-tabs[useProgressColor=true] .tab-progress > .progress-remainder {
+  border: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}

@@ -1,0 +1,24 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+groupbox {
+  margin: 5px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.groupbox-body {
+  padding: inherit;
+}
+
+caption {
+	border-radius: 4px;
+	margin: 0px 6px 2px 6px;
+	padding: 0px 3px;
+	font-family: arial, san-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 10pt;
+	background: linear-gradient(#cdced3,#cdced3,#bcbdc0,#bcbdc0,#9b9c9e);
+	border:1px solid #808080;
+}

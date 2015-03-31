@@ -1,0 +1,17 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+tooltip {
+    text-shadow: #000000 2px 2px 2px,
+        #000000 2px 2px 2px,
+        #000000 2px 2px 2px !important;
+	background-color: rgba(0,0,0,0.60) !important;
+}
+.panel-arrowcontent{
+	background-color: rgba(0,0,0,0.60) !important;
+}
+
+#downloadsListBox richlistitem[current="true"] ,
+richlistbox#downloadView richlistitem[current="true"]  {
+	color: white !important;
+	text-shadow:none !important;
+}

@@ -1,0 +1,22 @@
+.panel-arrowcontainer > .panel-arrowcontent {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.panel-arrowbox > .panel-arrow[side=top],
+.panel-arrowbox > .panel-arrow[side=bottom] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-lin-v.png);
+}
+
+.panel-arrowbox > .panel-arrow[side=top] {
+  margin-top: 1px;
+}
+
+.panel-arrowbox > .panel-arrow[side=bottom] {
+  transform: scaleY(-1);
+}
+
+.panel-arrowbox > .panel-arrow[side=left],
+.panel-arrowbox > .panel-arrow[side=right] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-lin-h.png);
+}

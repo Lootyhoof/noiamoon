@@ -1,0 +1,111 @@
+h2 {
+  margin-bottom: 0;
+  padding: 0 .5em 1em;
+  border: 1px solid #000;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background: #f0f0f0;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  color: #000;
+  margin-bottom: 1em;
+  border: 1px solid #000;
+  border-top: 1px solid #808080;
+  border-spacing: 0;
+  border-radius: 0 0 5px 5px;
+  background: #f0f0f0;
+}
+
+#entries {
+  border-radius: 5px;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  width: 14em;
+  white-space: nowrap;
+  text-align: right;
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #808080;
+  background: #1f9afd;
+}
+
+td {
+  text-align: start;
+  border: 0;
+  border-bottom: 1px dotted #808080;
+}
+
+th + th,
+td + td {
+  border-left: 1px dotted #808080;
+}
+
+thead > th,
+tr:last-child th,
+tr:last-child td {
+  border-bottom: 0;
+}
+
+#col-key {
+  width: 60%;
+}
+#col-dataSize, #col-fetchCount,
+#col-lastModified, #col-expires {
+  width: 13%;
+}
+
+#entries > tbody > tr:nth-child(odd) {
+  background: #eaeaea;
+}
+
+#entries > tbody > tr > td {
+  padding: .5em 0;
+  text-align: center;
+}
+
+#entries > thead > tr > th {
+  text-align: center;
+  white-space: normal;
+}
+
+#entries > thead > tr > th:first-child,
+#entries > tbody > tr > td:first-child {
+  text-align: left;
+}
+
+tbody > tr > th > a {
+  display: block;
+  margin: -3px;
+  padding: 3px;
+  background-color: #f0f0f0;
+}
+
+a {
+  color: #1f9afd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #62d;
+}
+
+a:hover {
+  color: #00f;
+}
+
+a:hover:active {
+  color: #f00;
+}
+
+hr {
+  display: none;
+}

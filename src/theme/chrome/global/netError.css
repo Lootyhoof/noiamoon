@@ -1,0 +1,134 @@
+html {
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+}
+
+body {
+  margin: 0;
+  padding: 0 1em;
+  color: #000;
+  font: message-box;
+}
+
+h1 {
+  margin: 0 0 .6em;
+  font-size: 160%;
+  border-bottom: 1px solid #d4d0c8;
+  text-shadow: 1px 1px 1px #aaa;
+}
+
+ul, ol {
+  margin: 0;
+  margin-left: 1.5em;
+  padding: 0;
+}
+
+ul > li, ol > li {
+  margin-bottom: .5em;
+}
+
+ul {
+  list-style: square;
+}
+
+#errorPageContainer {
+  position: relative;
+  min-width: 13em;
+  max-width: 52em;
+  margin: 4em auto;
+  padding: 3em;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  background: url(chrome://global/skin/icons/warning-large.png) 30px 30px no-repeat #fff;
+  box-shadow: 5px 5px 5px #404040;
+}
+
+body[dir="rtl"] #errorPageContainer {
+  background-position: right 0;
+}
+
+#errorPageContainer.certerror {
+  background-image: url(chrome://global/skin/icons/sslWarning.png);
+}
+
+#errorTitle,
+#errorLongContent {
+  margin-left: 80px;
+}
+
+#errorShortDesc > p {
+  white-space: pre-wrap;
+  font-size: 130%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #d4d0c8;
+}
+
+#errorLongDesc {
+  padding-right: 3em;
+  font-size: 110%;
+}
+
+#errorTryAgain {
+  margin-top: 2em;
+  margin-left: 80px;
+}
+
+#brand {
+  position: absolute;
+  right: 0;
+  bottom: -1.5em;
+  margin-right: 10px;
+  opacity: .4;
+}
+
+body[dir="rtl"] #brand {
+  right: auto;
+  left: 0;
+}
+
+#brand > p {
+  margin: 0;
+}
+
+#errorContainer {
+  display: none;
+}
+
+#securityOverrideDiv {
+  padding-top: 10px;
+}
+
+#securityOverrideContent {
+  color:#000;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff090;
+}
+
+/* Custom styling for 'blacklist' error class */
+:root.blacklist #errorTitle, :root.blacklist #errorLongContent,
+:root.blacklist #errorShortDesc, :root.blacklist #errorLongDesc,
+:root.blacklist a {
+  background-color: #722;
+  color: #fff;
+}
+
+:root.blacklist #errorPageContainer {
+  background-image: url(chrome://global/skin/icons/warning-large.png);
+  background-color: #722;
+}
+
+:root.blacklist {
+  background: #333;
+}
+
+:root.blacklist #errorTryAgain {
+  display: none;
+}
+
+#ignoreWarningButton {
+  text-decoration:none !important;
+}
+
+#ignoreWarningButton:hover {
+  text-decoration:underline !important;
+}

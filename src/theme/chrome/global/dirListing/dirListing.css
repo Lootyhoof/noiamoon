@@ -1,0 +1,91 @@
+:root {
+  background-color: #F0F0F0;
+  color: #000000;
+  font: message-box;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+body {
+  border: 1px solid #A0A0A0;
+  border-radius: 10px;
+  padding: 3em;
+  min-width: 30em;
+  max-width: 65em;
+  margin: 4em auto;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+h1 {
+  font-size: 160%;
+  margin: 0 0 .6em;
+  border-bottom: 1px solid #E3E3E3;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 110%;
+}
+
+#UI_goUp {
+  margin-top: 0;
+  float: left;
+}
+
+#UI_showHidden {
+  margin-top: 0;
+  float: right;
+}
+
+table {
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+}
+
+thead {
+  font-size: 130%;
+}
+
+/* last modified */
+th:last-child {
+  text-align: center;
+}
+
+th:hover > a {
+  text-decoration: underline;
+}
+
+tbody > tr:hover {
+  outline: 1px solid #E3E3E3;
+  -moz-outline-radius: .3em;
+}
+
+td:not(:first-child) {
+  width: 0;
+}
+
+.up {
+  padding: 0 .5em;
+  -moz-margin-start: 20px;
+}
+
+.up::before {
+  -moz-margin-end: 4px;
+  -moz-margin-start: -20px;
+  vertical-align: middle;
+  content: url(chrome://browser/skin/icons/folder-up.png);
+}
+
+.dir::before {
+  content: url(chrome://browser/skin/icons/folder_closed.png);
+}

@@ -1,0 +1,41 @@
+#noia4_bf_dropmarker{
+	display:inline !important;
+}
+
+toolbar[iconsize="large"][mode="icons"] #noia4_bf_dropmarker:-moz-locale-dir(ltr) {
+	margin-left: -43px !important;
+	margin-right: 25px !important;
+	margin-top: 15px !important;
+}
+
+toolbar[iconsize="small"][mode="icons"] #noia4_bf_dropmarker:-moz-locale-dir(ltr) {
+	margin-left: -35px !important;
+	margin-right: 20px !important;
+	margin-top: 15px !important;
+}
+
+toolbar[iconsize="large"][mode="icons"] #noia4_bf_dropmarker:-moz-locale-dir(rtl) {
+	margin-right: -48px !important;
+	margin-left: 25px !important;
+	margin-top: 15px !important;
+}
+
+toolbar[iconsize="small"][mode="icons"] #noia4_bf_dropmarker:-moz-locale-dir(rtl) {
+	margin-right: -39px !important;
+	margin-left: 20px !important;
+	margin-top: 15px !important;
+}
+
+toolbar[iconsize="large"][mode="icons"] #noia4_bf_dropmarker {
+  list-style-image:url('chrome://browser/skin/icons/dropmarker2.png')!important;
+  -moz-image-region: rect(0px 10px 10px 0px)!important;
+}
+toolbar[iconsize="large"][mode="icons"] #noia4_bf_dropmarker:not([disabled="true"]):hover {
+  -moz-image-region: rect(10px 10px 20px 0px)!important;
+}
+toolbar[iconsize="large"][mode="icons"] #noia4_bf_dropmarker[disabled="true"] {
+  -moz-image-region: rect(50px 10px 60px 0px)!important;
+}
+toolbar[iconsize="large"][mode="icons"] #noia4_bf_dropmarker:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(10px 10px 20px 0px)!important;
+}

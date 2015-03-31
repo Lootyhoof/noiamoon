@@ -1,0 +1,6 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.tabbrowser-tab,.tabs-newtab-button {
+	border-top-left-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+}

@@ -1,0 +1,128 @@
+@import url("chrome://global/skin/inContentUI.css");
+
+*|*:root {
+  padding: 0px;					
+}
+
+*|*.main-content {
+  border : none;
+}
+
+/* sites box */
+#sites-box {
+  background: linear-gradient(65% 130% 125deg, #CED2E0, #EFF2FA, #CED2E0 87%);
+  padding: 10px;
+  width: 25em;
+}
+
+#sites-filter {
+  margin: 0;
+}
+
+#sites-list {
+  -moz-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 5px 0 0 0;
+}
+
+.site {
+  padding: 4px;
+  border-bottom: 1px solid ThreeDLightShadow;
+}
+
+.site-favicon {
+  height: 16px;
+  width: 16px;
+  -moz-margin-end: 4px;
+  list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png");
+}
+
+#all-sites-item > .site-container > .site-favicon {
+  list-style-image: none;
+}
+
+/* permissions box */
+#permissions-box {
+  background: linear-gradient(65% 75% 125deg, #CED2E0, #EFF2FA, #CED2E0 87%);
+  padding-top: 10px;
+  overflow-y: auto;
+  border-left : 1px solid #808080;
+}
+
+#site-description {
+  font-size: 125%;
+  -moz-margin-start: 6px; /* to match button margin */
+}
+
+#site-label {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#defaults-description {
+  font-size: 125%;
+  font-weight: bold;
+  -moz-margin-start: 6px;
+}
+
+.pref-item {
+  margin-bottom: 10px;
+}
+
+.pref-icon {
+  width: 16px;
+  height: 16px;
+  -moz-margin-end: 10px;
+  margin-left: 10px;
+}
+
+.pref-icon[type="password"] {
+  list-style-image: url(chrome://browser/skin/Privacy-16.png);
+}
+.pref-icon[type="cookie"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/cookie.png);
+}
+.pref-icon[type="geo"] {
+  list-style-image: url(chrome://browser/skin/Geo.png);
+}
+.pref-icon[type="indexedDB"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/help.png);
+}
+.pref-icon[type="install"] {
+  list-style-image: url(chrome://mozapps/skin/extensions/extensionGeneric-16.png);
+}
+.pref-icon[type="popup"] {
+  list-style-image: url(chrome://global/skin/icons/error-16.png);
+}
+.pref-icon[type="image"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/image.png);
+}
+.pref-icon[type="plugins"] {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric-16.png);
+}
+.pref-icon[type="fullscreen"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/fullscreen.png);
+}
+
+.pref-title {
+  font-size: 125%;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.pref-menulist {
+  margin-left: 6px;
+  margin-right: 6px;
+  min-width: 10em; /* native menulists ellipsize their longest entries by default on many themes */
+}
+
+#permissions-box button {
+box-shadow:     
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.4) inset,
+    0 13px 8px rgba(80, 80, 80, 0.1) inset,  
+    1px 2px 4px rgba(0, 0, 0, 0.3) !important; 
+}

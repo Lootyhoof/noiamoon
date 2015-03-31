@@ -1,0 +1,187 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ::::: autocomplete ::::: */
+
+textbox {
+  cursor: default;
+  padding: 0;
+}
+
+/* Used by autocomplete widgets that don't have an icon. Gross. -dwh */
+textbox.padded {
+  padding: 0px;
+}
+
+.autocomplete-textbox-container {
+  -moz-box-align: center;
+}
+
+.textbox-input-box {
+  margin: 0px;
+  padding:0px;
+  -moz-box-align: center;
+}
+
+/* ::::: history button ::::: */
+
+.autocomplete-history-dropmarker {
+  -moz-appearance: menulist-button;
+  min-width: 17px;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  border: 2px solid;
+  -moz-border-top-colors: #D4D0C8 #FFFFFF;
+  -moz-border-right-colors: #404040 #808080;
+  -moz-border-bottom-colors: #404040 #808080;
+  -moz-border-left-colors: #D4D0C8 #FFFFFF;
+  background-color: #E3E5EE;
+  padding: 1px;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+
+.autocomplete-history-dropmarker:hover:active,
+.autocomplete-history-dropmarker[open="true"] {
+  -moz-border-top-colors: #808080 #D4D0C8;
+  -moz-border-right-colors: #808080 #D4D0C8;
+  -moz-border-bottom-colors: #808080 #D4D0C8;
+  -moz-border-left-colors: #808080 #D4D0C8;
+}
+
+/* ::::: autocomplete popups ::::: */
+popup[type="autocomplete"],
+panel[type="autocomplete-richlistbox"],
+.autocomplete-history-popup {
+  padding: 0;
+  margin-top:-1px;
+  border-top:0 !important;
+}
+
+.autocomplete-history-popup {
+  max-height: 300px;
+}
+
+/* ::::: tree ::::: */
+.autocomplete-tree {
+  -moz-appearance: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.autocomplete-treecol {
+  -moz-appearance: none !important;
+  margin: 0 !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* GTK calculates space for a sort arrow */
+.autocomplete-treecol > .treecol-sortdirection {
+  -moz-appearance: none !important;
+}
+
+.autocomplete-treebody::-moz-tree-cell-text {
+  padding-left: 8px;
+}
+
+treechildren.autocomplete-treebody::-moz-tree-row(selected) {
+ background-color: Transparent !important;
+}
+
+treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
+  color: #0000FF !important;
+}
+
+.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
+  max-width: 16px;
+  height: 16px;
+}
+
+.autocomplete-treebody::-moz-tree-row(menuactive) {
+  background-color: #0A246A;
+}
+
+.autocomplete-treebody::-moz-tree-cell-text(menuactive)  {
+  color: #FFFFFF !important;
+}
+
+/* ::::: richlistbox autocomplete ::::: */
+.autocomplete-richlistbox {
+  margin: 0;
+  background: #F0F0FF;
+}
+
+.autocomplete-richlistitem[selected="true"] {
+  background-image: url("chrome://mozapps/skin/downloads/downloadSelected.png");
+  background-color: #F0F0FF;
+  background-position: center;
+  color: #0000DC;
+}
+
+.autocomplete-richlistitem {
+  padding: 1px 2px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.ac-site-icon {
+  width: 16px; 
+  height: 16px;
+  margin: 0 5px -3px 3px;
+}
+
+.ac-type-icon {
+  width: 16px; 
+  height: 16px;
+}
+
+.ac-extra > .ac-result-type-tag {
+  margin: 0 4px;
+}
+
+.ac-extra > .ac-comment {
+  padding-right: 4px;
+}
+
+.ac-ellipsis-after {
+  margin: 2px 0px 0px 0px !important;
+  padding: 0; 
+  min-width: 1em;
+}
+
+.ac-normal-text {
+  margin: 2px 0px 0px 0px !important;
+  padding: 0;
+}
+
+.ac-normal-text > html|span {
+  margin: 0 !important;
+  padding: 0;
+}
+
+html|span.ac-emphasize-text {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+html|span.ac-emphasize-alt {
+  text-decoration: underline;
+}
+
+.ac-title, .ac-url {
+  overflow: hidden;
+}
+
+/* ::::: textboxes inside toolbarpaletteitems ::::: */
+toolbarpaletteitem > toolbaritem > textbox > hbox > hbox > html|*.textbox-input {
+  visibility: hidden;
+}
+
+toolbarpaletteitem > toolbaritem > * > textbox > hbox > hbox > html|*.textbox-input {
+  visibility: hidden;
+}
+
+/* ::::: textboxes inside toolbarpaletteitems ::::: */
+
+toolbarpaletteitem > toolbaritem > textbox > hbox > hbox > html|*.textbox-input {
+  visibility: hidden;
+}

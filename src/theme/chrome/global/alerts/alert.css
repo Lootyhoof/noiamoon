@@ -1,0 +1,44 @@
+@import url("chrome://global/skin/");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.alertBox {
+  border-right: 2px solid #7B969C;
+  border-bottom: 2px solid #7B969C;
+  border-top: 2px solid #7B969C;
+  border-left: 2px solid #7B969C;
+  background-color: #DADCE4;
+  min-height: 50px;
+  color: #000000;
+}
+
+.alertImageBox {
+  margin-left: 4px;
+  margin-right: 6px;
+  min-height: 46px;
+}
+
+.alertTitle {
+  font-weight: bold;
+}
+
+.alertText {
+  margin-right: 6px;
+}
+
+.alertText[clickable="true"] {
+  cursor: pointer;
+  color: #1455D6;
+  text-decoration: underline;
+}
+
+.alertText[clickable="true"]:hover:active {
+  color: #424F63;
+}
+
+.alertTextBox
+{
+  padding-right: 10px;
+  padding-top: 5px;
+}
+

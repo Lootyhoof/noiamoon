@@ -1,0 +1,14 @@
+skin	browser			noiamoon	chrome/browser/
+skin	communicator	noiamoon	chrome/communicator/
+skin	help			noiamoon	chrome/help/
+skin	global			noiamoon	chrome/global/
+skin	mozapps			noiamoon	chrome/mozapps/
+#
+skin	os_special		noiamoon	chrome/os_special/mac/			os=Darwin
+skin	os_special		noiamoon	chrome/os_special/linux/		os=Linux
+skin	os_special		noiamoon	chrome/os_special/XP/			os=WINNT osversion<6
+skin	os_special		noiamoon	chrome/os_special/aero/			os=WINNT osversion>=6
+
+# default scrollbars for MacOS and non-MacOS systems
+skin	scrollbars		noiamoon	chrome/os_special/mac/			os=Darwin
+skin	scrollbars		noiamoon	chrome/os_special/scrollbar/	os!=Darwin

@@ -1,0 +1,54 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+spinbuttons {
+  -moz-appearance: none !important;
+  background: none !important;
+  border: none !important;
+  cursor: default;
+}
+
+.spinbuttons-button {
+  -moz-appearance: none !important;
+  border: none !important;
+  min-width: 14px !important;
+  max-width: 14px !important;
+  max-height: 10px !important;
+  margin: 0 !important;
+  background-image: url("chrome://global/skin/arrow/spinbutton.png");
+}
+
+.spinbuttons-button[disabled="true"] {
+  -moz-binding: none !important;
+  background-image: none !important;
+}
+
+.spinbuttons-button > .button-box {
+  -moz-appearance: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+.spinbuttons-up {
+  background-position: center 0px;
+}
+.spinbuttons-down {
+  background-position: center -10px;
+}
+.spinbuttons-up:hover {
+  background-position: center -20px;
+}
+.spinbuttons-down:hover {
+  background-position: center -30px;
+}
+.spinbuttons-up:hover:active {
+  background-position: center -40px;
+}
+.spinbuttons-down:hover:active {
+  background-position: center -50px;
+}
+.spinbuttons-up[disabled="true"] {
+  background-position: center -60px;
+}
+.spinbuttons-down[disabled="true"] {
+  background-position: center -70px;
+}

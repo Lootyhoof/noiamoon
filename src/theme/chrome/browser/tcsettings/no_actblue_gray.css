@@ -1,0 +1,5 @@
+.tabbrowser-tab[selected=true],
+.tabbrowser-tab:hover {
+	background-image: url("chrome://browser/skin/icons/Bookmark-background1.png") !important;
+	background: url("chrome://browser/skin/icons/Bookmark-background1.png") !important;
+}

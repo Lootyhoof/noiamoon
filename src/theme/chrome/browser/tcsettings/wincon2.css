@@ -1,0 +1,55 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#minimize-button, #restore-button,#maximize-button{
+	margin-right: 0px !important;
+}
+
+#minimize-button,#titlebar-min {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(0px 20px 20px 0px)!important;
+}
+
+#maximize-button,#titlebar-max  {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(0px 40px 20px 20px)!important;
+}
+
+#restore-button {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(0px 60px 20px 40px)!important;
+}
+
+#main-window[sizemode=maximized] #titlebar-max {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(0px 60px 20px 40px)!important;
+}
+
+#close-button,#titlebar-close {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(0px 80px 20px 60px)!important;
+} 
+
+#minimize-button:hover, #minimize-button:hover:active,#titlebar-min:hover {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(20px 20px 40px 0px)!important;
+}
+
+#maximize-button:hover, #maximize-button:hover:active,#titlebar-max:hover  {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(20px 40px 40px 20px)!important;
+}
+
+#restore-button:hover, #restore-button:hover:active {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(20px 60px 40px 40px)!important;
+}
+
+#main-window[sizemode=maximized] #titlebar-max:hover {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(20px 60px 40px 40px)!important;
+}
+
+#close-button:hover, #close-button:hover:active,#titlebar-close:hover {
+	list-style-image: url("chrome://browser/skin/icons/nwbuttons.png") !important;
+	-moz-image-region: rect(20px 80px 40px 60px)!important;
+}

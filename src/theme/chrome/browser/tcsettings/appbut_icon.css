@@ -1,0 +1,10 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#appmenu-toolbar-button,
+#appmenu-button .button-icon {
+  list-style-image: url(chrome://branding/content/icon16.png) !important;
+}
+#appmenu-toolbar-button,
+#appmenu-button {
+  padding: 0 8px 1px !important;
+}

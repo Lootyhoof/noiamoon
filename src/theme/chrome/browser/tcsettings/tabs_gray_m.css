@@ -1,0 +1,38 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.tabs-newtab-button:focus,
+.tabbrowser-tab:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]):focus{
+	border: 1px solid blue !important;
+}
+
+.tabs-newtab-button:not(:focus),
+.tabbrowser-tab:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]):not(:focus),
+.tabs-newtab-button,
+.tabbrowser-tab:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]){
+	margin-right: 1px !important;
+	padding-right: 3px !important;
+	padding-left: 3px !important;
+	border-top: 1px solid #969797 !important;
+	border-right: 1px solid #969797 !important;
+	border-left: 1px solid #969797 !important;
+}
+    	
+.tabbrowser-tab[selected]:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]){
+	background: linear-gradient(#f5f5f6,#caccd2,#a3a6b1) !important;
+}
+    	
+.tabs-newtab-button,
+.tabbrowser-tab:not([selected]):not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]){
+	background: linear-gradient(#cad0e3,#a9a9a9,#878787) !important;
+}
+    	
+.tabs-newtab-button:hover,
+.tabbrowser-tab:not([selected]):hover:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]){
+	background: linear-gradient(#d5dbee,#b7b7b7,#9b9a9a) !important;
+}
+
+.tabbrowser-tab,
+.tabs-newtab-button{
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+}

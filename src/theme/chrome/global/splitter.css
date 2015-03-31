@@ -1,0 +1,177 @@
+/* toolkit\themes\aluminum\global\splitter.css */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: splitter (vertical) ::::: */
+
+splitter {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  cursor: e-resize;
+  border-width: 0 2px;
+  border-style: solid;
+  -moz-border-left-colors: #808080 #FFFFFF;
+  -moz-border-right-colors: #404040 #D4D0C8;
+  min-width: 6px;
+  background-color: #D4D0C8;
+}
+
+/* ::::: splitter (horizontal) ::::: */
+
+splitter[orient="vertical"] {
+  cursor: n-resize;
+  border-width: 2px 0;
+  border-style: solid;
+  -moz-border-top-colors: #808080 #FFFFFF;
+  -moz-border-bottom-colors: #404040 #D4D0C8;
+  min-width: 0px;
+  min-height: 6px;
+  background-color: #D4D0C8;
+}
+
+/* ::::: splitter grippy ::::: */
+
+grippy {
+  cursor: pointer;
+  margin: 0px;
+  min-width: 5px;
+  min-height: 50px;
+}
+
+splitter[orient="vertical"] > grippy {
+  margin: 0px;
+  min-width: 50px;
+  min-height: 5px;
+}
+
+/* ..... normal state ..... */
+
+/* vertical grippies */
+splitter[collapse="before"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before.gif");
+}
+
+splitter[collapse="before"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before-act.gif");
+}
+
+splitter[collapse="before"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before-act.gif");
+}
+
+splitter[collapse="after"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after.gif");
+}
+
+splitter[collapse="after"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after-act.gif");
+}
+
+splitter[collapse="after"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after-act.gif");
+}
+
+/* horizontal grippies */
+splitter[collapse="before"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before.gif");
+}
+
+splitter[collapse="before"][orient="vertical"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before-act.gif");
+}
+
+splitter[collapse="before"][orient="vertical"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before-act.gif");
+}
+
+splitter[collapse="after"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after.gif");
+}
+
+splitter[collapse="after"][orient="vertical"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after-act.gif");
+}
+
+splitter[collapse="after"][orient="vertical"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after-act.gif");
+}
+
+/* ..... collapsed state ..... */
+
+/* vertical grippies */
+splitter[collapse="before"][state="collapsed"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after.gif");
+}
+
+splitter[collapse="before"][state="collapsed"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after-act.gif");
+}
+
+splitter[collapse="before"][state="collapsed"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-after-act.gif");
+}
+
+splitter[collapse="after"][state="collapsed"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before.gif");
+}
+
+splitter[collapse="after"][state="collapsed"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before-act.gif");
+}
+
+splitter[collapse="after"][state="collapsed"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-vrt-before-act.gif");
+}
+
+/* horizontal grippies */
+splitter[collapse="before"][state="collapsed"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after.gif");
+}
+
+splitter[collapse="before"][state="collapsed"][orient="vertical"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after-act.gif");
+}
+
+splitter[collapse="before"][state="collapsed"][orient="vertical"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-after-act.gif");
+}
+
+splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before.gif");
+}
+
+splitter[collapse="after"][state="collapsed"][orient="vertical"]:hover:active > grippy {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before-act.gif");
+}
+
+splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy:hover:active {
+  background-image: url("chrome://global/skin/splitter/grip-hrz-before-act.gif");
+}
+
+#sidebar-splitter {
+  min-width: 2px;
+  border: none;
+  background-color: #cccccc;
+}
+
+#bookmark-window splitter,
+#winInspectorMain splitter {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  cursor: e-resize;
+  border-width: 0 2px;
+  border-style: solid;
+  -moz-border-left-colors: #808080 #FFFFFF;
+  -moz-border-right-colors: #404040 #D4D0C8;
+  min-width: 6px;
+  background-color: #D4D0C8;
+}
+
+#bookmark-window splitter[orient="vertical"],
+#winInspectorMain splitter[orient="vertical"] {
+  cursor: n-resize;
+  border-width: 2px 0;
+  -moz-border-top-colors: #808080 #FFFFFF;
+  -moz-border-bottom-colors: #404040 #D4D0C8;
+  min-height: 6px;
+}

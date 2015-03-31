@@ -1,0 +1,396 @@
+@import url("chrome://browser/skin/tcsettings/skin_glass1.css");
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+#toolbar-menubar {
+  -moz-appearance: -moz-win-glass !important; 
+  background: rgba(184,194,196, .1) !important;
+}
+
+#identity-popup-container,
+#identity-popup-content-box > description,
+#identity-popup-encryption-label {
+  color: #FFFFFF !important;
+  text-shadow: #000000 1px 1px 1.5px !important;
+}
+#identity-popup-container button{
+  text-shadow: none !important;
+}
+.tctoptabs {
+	background: url(chrome://browser/skin/icons/active_glass_tab.png) !important;
+}
+
+#newtab-scrollbox:not([page-disabled]){
+  -moz-appearance: -moz-win-glass !important; 
+}
+
+#sidebars-titlebutton,sidebarheader,#sidebar,#historyTree,tree,#bookmarksPanel,
+bookmarks-tree tree,#history-panel,#aios-toolbar,toolbox,#vertical-toolbar{
+	background:none !important;
+	border:0 !important;
+	-moz-appearance: none !important;
+}
+
+#allTabs-panel{
+	background-color: rgba(0,0,0,0.20) !important;
+}
+
+tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab){
+	background: url(chrome://browser/skin/icons/active_glass_tab2.png) !important;
+}
+
+tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab):hover,tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab)[selected=true]{
+	background-image: url(chrome://browser/skin/icons/active_glass_tab_focus2.png) !important;
+}
+
+tab.tabgroupsmanager-grouptab{
+	background: url(chrome://browser/skin/icons/active_glass_tab2.png);
+}
+
+tab .tabgroupsmanager-grouptab:hover,tab.tabgroupsmanager-grouptab[selected=true]{
+	background-image: url(chrome://browser/skin/icons/active_glass_tab_focus2.png);
+}
+
+.progress-bar,#status4evar-progress-bar{
+	opacity: 0.5 !important;
+}
+
+.urlbar-input-layer,
+.urlbar-over-link-layer,
+.urlbar-over-link-box,
+.urlbar-input-layer-children{
+    text-shadow: #000000 1px 1px 1.5px !important;
+    color: #FFFFFF!important;
+}
+
+.urlbar-origin-label,
+#urlbar[s4esalign="left"] .urlbar-over-link-box{
+	display: none !important;
+}
+
+.panel-arrowcontent {
+	-moz-appearance: none !important;
+	border: none !important;
+    color: #FFFFFF!important;
+	background-color: rgba(0,0,0,0.20) !important;
+	background-image:none !important;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+}
+
+.panel-arrow[side=top] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-up_glass.png) !important;
+}
+
+.viewSelector,.viewGroupWrapper,
+.urlbar-stack,.urlbar-history-dropmarker,#detailsDeck,#detailsDeck textbox {
+	background: none !important;
+}
+
+menubar > menu,menu{
+	background:none !important;
+}
+
+#appmenuSecondaryPane{
+	background: none !important;
+}
+
+#addons-page{
+	background: #b8dbfd !important;
+}
+
+caption{
+	background-image: linear-gradient(rgba(255,255,255,.8), rgba(255, 255, 255, .5) 156px), url("chrome://mozapps/skin/extensions/background-texture.png")!important;
+	background-color:transparent!important;
+}
+
+#fireftp-main-window,
+radiogroup{
+	background:transparent!important;
+}
+
+
+dialog tabpanels,prefwindow tabpanels,
+#categories,#view-port, #addon-list, #search-list, #updates-list,#header-utils-btn,
+prefwindow,prefpane,dialog,richlistbox,
+wizardpage {
+	-moz-appearance: -moz-win-borderless-glass !important;
+	background:transparent!important;
+}
+
+.wizard-header {
+	-moz-appearance: -moz-win-borderless-glass !important;
+	background:transparent!important;
+}
+
+.wizard-buttons {
+	-moz-appearance: -moz-win-borderless-glass !important;
+	background:transparent!important;
+}
+
+#main-window[stylish-url="about:blank"]:not([onclose="PrintUtils.exitPrintPreview(); return false;"]) #content browser { 
+	opacity: 0 !important;
+	border: 0 !important;
+	background-color:transparent!important;
+}
+
+#appcontent,#content > tabbox > tabpanels {
+	background-color: transparent !important;
+}
+
+menuseparator {
+	display:none !important;
+}
+
+tooltip {
+	-moz-appearance: none !important;
+	border: none !important;
+    text-shadow: #000000 2px 2px 2px !important;
+    color: #FFFFFF !important;
+	background-color: rgba(0,0,0,0.20) !important;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+}
+
+.searchbar-engine-button,.search-go-button,
+#urlbar > toolbarbutton,
+#urlbar > .autocomplete-textbox-container > .textbox-input-box,
+#urlbar .urlbar-frontcap-and-textbox .urlbar-input-box,
+#urlbar .autocomplete-textbox-container-fission > .textbox-input-box {
+    background: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    text-shadow: #000000 1px 1px 1.5px !important;
+    color: #FFFFFF!important;
+}
+
+textbox#urlbar, .searchbar-textbox{
+    background: none !important;
+    background-color: transparent !important;
+    border-style: solid !important;
+    border: #969797 1px solid !important;/*b8dbfd*/
+    color: #FFFFFF !important;
+	text-shadow: #000000 1px 1px 1.5px !important;
+	border-radius:20px !important;
+}
+
+#identity-box.verifiedDomain,#identity-box.verifiedIdentity  {
+	-moz-padding-start: 0px !important;
+    -moz-appearance: none !important;
+	text-shadow: #FFFFFF 1px 1px 1.5px !important;
+}
+#identity-box.verifiedDomain > hbox,#identity-box.verifiedIdentity > hbox  {
+	background: none !important;
+}
+
+#identity-box.verifiedDomain {
+	background: url(chrome://browser/skin/icons/startcap-secure-mid_50.png) repeat-x !important;
+}
+#identity-box.verifiedIdentity {
+	background: url(chrome://browser/skin/icons/startcap-verified-mid_50.png) repeat-x !important;
+}
+#identity-box:not(.verifiedIdentity):not(.verifiedDomain) {
+	background: none !important;
+     -moz-appearance: none !important;
+}
+#identity-box,#notification-popup-box{
+	background: none !important;
+     -moz-appearance: none !important;
+	text-shadow: #FFFFFF 1px 1px 1.5px !important;
+}
+
+/* glass bookmark manager*/
+
+	#placesView, window, #bookmarksPanel, #defaultView, #placeContent, #placesMenu, #placesList, #placesToolbox, #placesToolbar, #searchModifiers, #placesView treechildren, #infoPaneBox{
+		-moz-appearance: -moz-win-glass !important; 
+		background: rgba(184,194,196, .1) !important;
+	}
+
+	#bookmarksPanel, #defaultView, #placeContent, #placesMenu, #placesList, #placesToolbox, #placesToolbar, #placesView treechildren, #infoPaneBox, #placesView treechildren::-moz-tree-cell-text, .menu-iconic{ 
+		color: #333 !important;
+		opacity: .99 !important; 
+	}
+
+	.menu-iconic{
+		-moz-appearance: none !important;
+		text-shadow: 0px 0px 6px white, 0px 0px 8px white !important;
+	}
+
+	treecol{
+		-moz-appearance: none !important;
+		background: rgba(165,177,192, 0.1) !important; 
+		outline: 0 none !important;
+		border: 0 none !important;
+	}
+
+	treecol:hover {
+		color: black !important;
+		text-shadow: white 1px 1px 1px !important;
+	}
+
+	#placesToolbar, #placesToolbox {
+		border: 0 none !important;
+	}
+
+	#placesView treechildren::-moz-tree-row(focus, selected, current){
+		border: transparent !important;
+	}
+
+	#placesView treechildren::-moz-tree-cell-text{
+		-moz-appearance: none !important; 
+		margin-top: -3px !important;
+		color: #333 !important;
+	} 
+
+	#placesView treechildren::-moz-tree-cell-text(selected){
+		-moz-appearance: none !important; 
+		color: #5E696E !important;
+		text-shadow: 0px 0px 6px white, -1px 0px 6px white !important;
+	}
+
+	#placesView treechildren::-moz-tree-cell-text(hover) {
+		color: #445860 !important;
+	}
+
+	#placesView treechildren::-moz-tree-separator {
+		border: 1px groove #3D5B64 !important;
+	}
+
+	#placesView splitter{ 
+		-moz-appearance: none !important;
+		width: 8px !important; 
+		margin-top: 30px !important;
+		background: transparent !important; 
+		border: none !important;
+	}
+
+	#placeContent scrollbar, #placesList scrollbar{
+		-moz-appearance: none !important;
+		background: transparent !important;
+	}
+
+	#infoPaneBox { border-top: none !important; }
+
+	/* BORDERS */
+	#editBMPanel_namePicker, menulist, textbox, listbox, 
+	treechildren::-moz-tree-row(selected), 
+	treechildren::-moz-tree-row(hover), .expander-down,
+	#organizerScopeBar toolbarbutton:hover, 
+	#organizerScopeBar toolbarbutton{
+		-moz-appearance: none !important;
+		background: rgba(165,177,192, 0.3) !important; 
+		outline: transparent !important;
+		border-radius: 6px !important;
+		border-top: 2px solid #E4F4F6 !important; 
+		border-bottom: 2px solid #75B7BD !important; 
+		border-left: 2px solid #F1F7E9 !important;
+		border-right: 2px solid #7A9C9F !important;
+		-moz-border-top-colors: #C5D3D4 #9EA9AA#8E9899 !important; 
+		-moz-border-bottom-colors: #435657 #69D2E0 #ccc !important;
+		-moz-border-left-colors: #F1F7E9 #ccc #ccc !important;
+		-moz-border-right-colors:  #666 #4CB5B8 #274D54 !important;
+	} 
+
+/* Glass download manager*/
+
+#downloadManager{
+	background-color: rgba(255, 0, 0, 0.0) !important;
+	-moz-appearance: -moz-win-glass !important;
+}
+
+#downloadView{
+	background: rgba(50, 50, 50, 0.1) !important;
+	color: black !important;
+	text-shadow: white 0px 0px 3px, white 0px 0px 8px, white 0px 0px 12px !important;
+	opacity: 0.99 !important;
+	border-radius: 8px 8px 0px 0px !important;
+}
+
+#downloadsListBox richlistitem,
+richlistbox#downloadView richlistitem {
+	-moz-appearance: none !important;
+	border: solid 1px rgb(120, 120, 120) !important;
+	border-radius: 6px !important;
+	margin-left: 6px !important;
+	margin-right: 6px !important;
+	margin-top: 3px !important; 
+	margin-bottom: 3px !important;
+	background: rgba(255, 255, 255, 0.1) !important;
+}
+
+richlistbox#downloadView richlistitem:hover{
+	border: solid 1px rgb(190, 190, 190) !important;
+	text-shadow: white 0px 0px 3px,
+		white 0px 0px 8px,
+		white 0px 0px 8px,
+		white 0px 0px 8px,
+		white 0px 0px 18px !important;
+	background: rgba(255, 255, 255, 0.2) !important;
+}
+
+#downloadsListBox richlistitem:hover{
+	border: solid 1px rgb(190, 190, 190) !important;
+	background: rgba(255, 255, 255, 0.2) !important;
+}
+
+#downloadsListBox richlistitem[current="true"] ,
+richlistbox#downloadView richlistitem[current="true"]  {
+	border: solid 1px rgb(255, 255, 255) !important;
+	background: rgba(230, 240, 255, 0.6) !important;
+	outline: none !important;
+	color: rgb(30, 50, 100) !important;
+	text-shadow:	rgb(210, 210, 255) 0px 0px 3px, 
+		rgb(210, 210, 255) 0px 0px 8px, 
+		rgb(210, 210, 255) 0px 0px 8px, 
+		rgb(210, 210, 255) 0px 0px 8px, 
+		rgb(210, 210, 255) 0px 0px 18px !important;
+}
+#downloadsPanel label{
+	background: rgba(230, 240, 255, 0.6) !important;
+	border-radius:20px !important;
+	text-shadow: white 0px 0px 3px, white 0px 0px 8px, white 0px 0px 12px !important;
+}
+/*#About Dialog*/
+#aboutDialogContainer #clientBox,
+#aboutDialog #bottomBox{
+    -moz-appearance: -moz-win-borderless-glass !important;
+    background: transparent !important;
+}
+#aboutDialog{
+    -moz-appearance: -moz-win-borderless-glass !important;
+    background: transparent url("chrome://branding/content/about-logo.png") 7% 26% no-repeat !important;
+}
+#aboutDialogContainer {
+    -moz-appearance: -moz-win-borderless-glass !important;
+    background: transparent !important;
+}
+#aboutDialogContainer,
+#aboutDialog{
+    color: black !important;
+    text-shadow: 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white !important;
+}
+#aboutDialogContainer .text-link,
+#aboutDialog .text-link{
+    color: #0077d5 !important;
+}
+
+/* Torrent Finder Toolbar */
+#TFTB-Options,#TFTB-MoreOptions{
+	-moz-appearance:none !important;
+	background: none !important;
+}
+
+.enhanced-text-normal, .enhanced-text-noArrow-normal,
+.enhanced-text-textHovered, .enhanced-text-noArrow-textHovered  {
+  color:white !important;
+  text-shadow: none !important;
+}
+
+/*Ghostery*/
+#ghostery-panel .panel-arrowcontent {
+	background: white !important;
+}

@@ -1,0 +1,4 @@
+#minimize-button,#close-button,
+#fullscreen-button ~ #window-controls > #restore-button {
+  display: none !important;
+}

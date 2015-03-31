@@ -1,0 +1,390 @@
+@import url(chrome://browser/skin/tcsettings/extra/blue.css);
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+@media not all and (-moz-windows-compositor) {
+	#main-window{
+	  -moz-appearance:none !important;
+	  background: #9fd5f0 !important;
+	}
+	
+	#titlebar{
+	  -moz-appearance:none !important;
+	  background: linear-gradient(#5ab5ff,#c9e7ff,#fdfdff) !important;
+	}
+
+	#navigator-toolbox #nav-bar,
+	#navigator-toolbox #PersonalToolbar,
+	#navigator-toolbox toolbar:not(#TabsToolbar):not(#nav-bar):not(#addon-bar):not(#status-bar):not(#PersonalToolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(.devtools-tabbar){
+		-moz-appearance: none !important;
+		background: none !important;
+	}
+
+	#navigator-toolbox {
+	  -moz-appearance: none !important;
+	  background: #9fd5f0 url("chrome://browser/skin/icons/Tool-background-blue.png") top left repeat-x  !important;
+	  border: 0px !important;
+	}
+
+	#navigator-toolbox[iconsize="small"] {
+	  -moz-appearance: none !important;
+	  background: #9fd5f0 url("chrome://browser/skin/icons/Tool-background2-blue.png") top left repeat-x  !important;
+	  border: 0px !important;
+	}
+	
+	#navigator-toolbox #TabsToolbar {
+		-moz-appearance: none !important;
+		background: linear-gradient(#bce3f4,#f0f9fc,#c9e7ff) !important;
+	}
+	#addon-bar,#status-bar{
+		-moz-appearance: none !important;
+		background: linear-gradient(#c9e7ff,#5ab5ff) !important;
+    }
+    
+    .browserContainer > findbar,
+	#FindToolbar {
+		-moz-appearance: none !important;
+		background: linear-gradient(#5ab5ff,#c9e7ff) !important;
+    }
+}
+
+@media all and (-moz-windows-compositor) {
+    #navigator-toolbox #nav-bar{
+		background: linear-gradient(#faffff,#d9edf8) !important;
+	}
+	#navigator-toolbox #PersonalToolbar {
+		background: linear-gradient(#d9edf8,#bce3f4) !important;
+	}
+	
+	#navigator-toolbox toolbar:not(#TabsToolbar):not(#nav-bar):not(#addon-bar):not(#status-bar):not(#PersonalToolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(#personal-titlebar):not(.devtools-tabbar){
+		background: linear-gradient(#bce3f4,#d9edf8,#bce3f4) !important;
+	}
+	#navigator-toolbox[tabsontop=false] #TabsToolbar{
+		background: linear-gradient(#bce3f4,#f0f9fc,#c9e7ff) !important;
+	}
+	
+	#addon-bar,#status-bar{
+	   background: linear-gradient(#c9e7ff,#5ab5ff) !important;
+    }
+    
+    .browserContainer > findbar,
+	#FindToolbar {
+	   background: linear-gradient(#5ab5ff,#c9e7ff) !important;
+    }
+	#main-window:not(:-moz-lwtheme)[inFullscreen=true] #TabsToolbar {
+		-moz-appearance: none;
+		background: linear-gradient(#bce3f4,#f0f9fc,#c9e7ff) !important;
+	}
+}
+
+#appmenuSecondaryPane{
+	background: #cce9f6 !important;
+}
+
+/*#About Dialog*/
+#aboutDialogContainer #clientBox,
+#aboutDialog #bottomBox{
+    background: transparent !important;
+    color: black !important;
+}
+#aboutDialogContainer {
+    background: url("chrome://branding/content/about-logo.png") 7% 26% no-repeat, linear-gradient(#c9e7ff,#5ab5ff) !important;
+}
+#aboutDialogContainer,
+#aboutDialog{
+    color: black !important;
+}
+#aboutDialogContainer .text-link:not(:hover),
+#aboutDialog .text-link:not(:hover){
+	color: #1f67fa !important;
+}
+
+#aboutDialogContainer .text-link:hover,
+#aboutDialog .text-link:hover {
+	color: #1f9afd !important;
+}
+
+
+#personal-titlebar{
+	-moz-appearance: none !important;
+	background: transparent !important;
+}
+
+toolbar:not(#TabsToolbar):not(#nav-bar):not(#addon-bar):not(#status-bar):not(#PersonalToolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(#personal-titlebar):not(.devtools-tabbar){
+	background: linear-gradient(#bce3f4,#d9edf8,#bce3f4) !important;
+}
+
+#urlbar:not(:hover):not([focused=true]),
+.searchbar-textbox:not(:hover):not([focused=true]) {
+  opacity: .90 !important;
+}
+
+.tctoptabs,#TM_ButtonBox {
+	-moz-appearance: none !important;
+	background: linear-gradient(#5ab5ff,#c9e7ff) !important;
+}
+
+.tabs-newtab-button{
+	background: linear-gradient(#bee3f4,#f9fefe) !important;
+}
+
+.tabs-newtab-button:hover{
+  background: linear-gradient(#bee3f4,#f9fefe) !important;
+  background-position: top left !important;
+  background-color: Transparent !important;
+  -moz-border-top-colors: #4e4efe !important;
+  -moz-border-bottom-colors: #4e4efe !important;
+  -moz-border-right-colors: #4e4efe !important;
+  -moz-border-left-colors: #4e4efe !important;
+}
+
+tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab){
+	background: linear-gradient(#c9e7ff,#5ab5ff) !important;
+}
+
+tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab):hover,tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab)[selected=true]{
+	background-image : url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+	color:white !important;
+}
+
+tab.tabgroupsmanager-grouptab{
+	background: linear-gradient(#c9e7ff,#5ab5ff);
+}
+
+tab.tabgroupsmanager-grouptab:hover,tab.tabgroupsmanager-grouptab[selected=true]{
+	background-image: url("chrome://browser/skin/icons/Bookmark-background.png");
+	color:white;
+}
+
+#fireftp-main-window,
+prefwindow,dialog,#root-window{
+	-moz-appearance: none !important;
+	background: #9fd5f0 !important;
+}
+
+caption,prefpane>tabbox>tabpanels,prefpane,prefwindow,treecol,#placesToolbar{
+	-moz-appearance: none !important;
+	background: linear-gradient(#c4e5f5,#9fd5f0,#9fd5f0) !important;
+}
+
+wizardpage {
+  -moz-appearance: none !important;
+  background: linear-gradient(#c4e5f5,#9fd5f0,#9fd5f0) !important;
+}
+
+.wizard-header {
+  -moz-appearance: none !important;
+  background: linear-gradient(#9fd5f0,#9fd5f0,#c4e5f5) !important;
+}
+
+.wizard-buttons {
+  -moz-appearance: none !important;
+ background: linear-gradient(#c4e5f5,#9fd5f0,#9fd5f0) !important;
+}
+
+.windowDialog,.windowDialog prefpane,#downloadManager,#SignonViewerDialog{
+	-moz-appearance: none !important;
+	background: #9fd5f0 !important;
+}
+
+#downloadsListBox richlistitem{
+	-moz-appearance: none !important;
+	border: solid 1px rgb(120, 120, 120) !important;
+	border-radius: 6px !important;
+	background: rgba(255, 255, 255, 0.1) !important;
+}
+
+#downloadsListBox richlistitem:hover{
+	border: solid 1px rgb(190, 190, 190) !important;
+	background: rgba(255, 255, 255, 0.2) !important;
+}
+
+#downloadsListBox richlistitem[current="true"] {
+	border: solid 1px rgb(255, 255, 255) !important;
+	background: rgba(230, 240, 255, 0.6) !important;
+}
+
+
+popup:not(#autoscroller), menupopup,tooltip:not([id^="forecastfox-"]),
+tree,#detailsDeck{
+	-moz-appearance: none !important;
+	background: #c4e5f5 !important;
+}
+
+#foxyproxyoptions2, #foxyproxyoptions2 menubar,#infoPaneBox  {
+  -moz-appearance: none !important;
+  background: #bae4f3 !important;
+}
+
+#xpinstallConfirm {
+  -moz-appearance: none !important;
+  background: radial-gradient(#ffffff,#bae4f3) #bae4f3 !important;
+}
+
+.panel-arrowcontent {
+  background: linear-gradient(to bottom,#c9e7ff,#5ab5ff) !important;
+}
+
+.panel-arrow[side=top] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-up_blue.png) !important;
+}
+
+.browserContainer > findbar,
+#FindToolbar {
+  -moz-appearance: none !important;
+  background-image: none !important;
+  background-color: #bae4f3 !important;  
+}
+
+#notification-popup-box ,#identity-box:not(.verifiedDomain):not(.verifiedIdentity){
+	background-image: linear-gradient(#a8d6ec, #f0f9fc) !important;
+	box-shadow:
+		0 0 1px rgba(255, 255, 255, 0.3) inset,
+		0 6px 4px rgba(255, 255, 255, 0.3) inset,
+		1px 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+#noiaop tab:hover,
+#noiaop tab[selected]{
+  	text-shadow: 	0 0 0.2em #000000,
+					0 0 0.2em #000000 !important;
+}
+
+#noiaop menupopup menuitem[_moz-menuactive]:not([disabled]){
+	text-shadow:0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000 !important;
+}
+
+.viewSelector,.viewGroupWrapper {
+	background-image: url("chrome://browser/skin/icons/Tool-background2-blue.png") !important;
+}
+
+#viewGroup radio {
+	color: #A0A0A0 !important;
+}
+
+.paneSelector{
+	-moz-appearance: none !important;
+	background-image: url("chrome://browser/skin/icons/Tool-background2-blue.png") !important;
+	color: #A0A0A0 !important;
+}
+
+sidebarheader {
+	-moz-appearance: none !important;
+	background: linear-gradient(#bce3f4,#f0f9fc,#c9e7ff) !important;
+}
+
+statusbar,statusbarpanel{
+	-moz-appearance: none !important;
+	background-image: none !important;
+	background: none !important;
+}
+
+.tabbrowser-strip {
+  background: linear-gradient(#bce3f4,#f0f9fc,#c9e7ff) !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
+  background: linear-gradient(#bce3f4,#f0f9fc,#c9e7ff) !important;
+}
+  
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
+  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+}
+
+page, dialog, wizard, prefwindow {
+  -moz-appearance: none !important;
+  background-color: #9fd5f0 !important;
+}
+
+#mainDeck  {
+  background: #9fd5f0 !important;
+}
+
+#CustomizeToolbarWindow {
+  -moz-appearance: none !important;
+  color: black !important;
+  background: #9fd5f0 !important;
+}
+
+#palette-box {
+  -moz-appearance: none !important;
+  border: 1px solid black !important ;
+  background-color: #c5e6f6 !important;
+}
+
+#commonDialog{
+  -moz-appearance: none !important;
+  background: none !important;
+  background-color: #9fd5f0 !important;
+}
+
+sidebarheader {
+  -moz-appearance: none !important;
+  background-image: url("chrome://browser/skin/icons/Tool-background2-blue.png") !important;
+}
+
+#bmHi-toolbar {
+  -moz-appearance: none !important;
+  background-image: url("chrome://browser/skin/icons/Tool-background-blue.png") !important;
+}
+
+#commandBar {
+  -moz-appearance: none !important;
+  background-image: url("chrome://browser/skin/icons/Tool-background-blue.png") !important;
+}
+
+window[windowtype="devtools:scratchpad"] menubar,
+window:not(#main-window) menubar {
+	-moz-appearance: none !important;
+	background: linear-gradient(#5ab5ff,#c9e7ff) !important;
+}
+
+#allTabs-panel {
+  background: linear-gradient(#c9e7ff,#5ab5ff) !important;
+}
+
+/************Extensions menu************/
+#detail-contributions {
+  -moz-appearance: none !important;
+  color: black !important;
+  /*background: black !important;*/
+}
+
+#aios-toolbar,#vertical-toolbar,
+#addons-page,#search-list,.hud-box,#TabsToolbar[orient="vertical"]{
+  -moz-appearance: none !important;
+  background: linear-gradient(#c9e7ff,#5ab5ff) !important;
+}
+
+#categories {
+  color: black !important;
+}
+
+/*Reminderfox*/
+#editRemindersWindow,#oe-date-picker-overlay-box,
+*[id^="reminderFox"]:not(menulist):not(menu):not(#reminderFox-statusLabel):not(button){
+	-moz-appearance: none !important;
+	background:#c4e5f5 !important;
+}
+
+/*Personal titlebar ext.*/
+#personal-titlebar,#personal-titlebar menubar > menu{
+	-moz-appearance: none !important;
+	background: none !important;
+}
+
+/* Torrent Finder Toolbar */
+#TFTB-Options,#TFTB-MoreOptions{
+	-moz-appearance:none !important;
+	background: linear-gradient(#c4e5f5,#9fd5f0,#9fd5f0) !important;
+}
+
+/*Ghostery*/
+#ghostery-panel .panel-arrowcontent {
+	background: white !important;
+}

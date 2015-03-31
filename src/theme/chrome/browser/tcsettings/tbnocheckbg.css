@@ -1,0 +1,5 @@
+#nav-bar toolbarbutton[checked=true]>image,
+#nav-bar toolbarbutton[checked=true]:hover>image{
+    box-shadow:none !important;
+    transition: none !important;
+}

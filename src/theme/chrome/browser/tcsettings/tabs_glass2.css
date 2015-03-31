@@ -1,0 +1,27 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-tab,
+.tabs-newtab-button {
+	background: url(chrome://browser/skin/icons/active_glass_tab.png) !important;
+}
+
+.tabbrowser-tab[selected=true],
+.tabbrowser-tab:hover,
+.tabs-newtab-button:hover  {
+	background: url(chrome://browser/skin/icons/active_glass_tab_focus.png) !important;
+}
+
+.tabs-newtab-button:not(:focus),
+.tabbrowser-tab:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]):not(:focus){
+	border: 1px solid #a0a0a0 !important;
+}
+
+.tabs-newtab-button:focus,
+.tabbrowser-tab:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]):focus{
+	border: 1px solid blue !important;
+}
+
+.tabs-newtab-button,
+.tabbrowser-tab {
+	margin-right:1px;
+}

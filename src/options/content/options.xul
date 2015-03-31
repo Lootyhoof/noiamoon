@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://noiaop/content/overlay.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://noiaop/locale/options.dtd">
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="noiaop"
+	title="&NoiaOptions;"
+	onload="noia4themeconf.settings.manager_init()"
+	onunload="noia4themeconf.settings.unload()"
+    type="prefwindow"
+	buttons="accept,extra2"
+	autosize="true"
+	resizable="yes"
+	ondialogaccept="return true"
+	persist="screenX screenY sizemode"
+>
+<script type="application/x-javascript" src="options.js"/>
+  <prefpane id="noia4options" label="Noia4 Options">
+    <preferences>
+		<!-- ########## GUI ########## -->
+		<preference id="tc_skinlist"		name="extensions.noiaop.skin" 			type="string"  instantApply="true"/>
+		<preference id="tc_ntabs"			name="extensions.noiaop.ntabs" 			type="string"  instantApply="true"/>
+		
+		<!-- ########## Skin Preferences ########## -->
+		<preference id="tc_roxp"			name="extensions.noiaop.roxp"				type="bool"  instantApply="true"/>
+		<preference id="tc_noactblueg"		name="extensions.noiaop.noactblueg"			type="bool"  instantApply="true"/>
+		<preference id="tc_hidetabbarbg"	name="extensions.noiaop.hidetabbarbg"		type="bool"  instantApply="true"/>
+		<preference id="tc_cleaner"			name="extensions.noiaop.cleaner"			type="bool"  instantApply="true"/>
+		<preference id="tc_ddg"				name="extensions.noiaop.ddg"				type="bool"  instantApply="true"/>
+		<preference id="tc_noactblueblack"	name="extensions.noiaop.noactblueblack"		type="bool"  instantApply="true"/>
+		<preference id="tc_ddgb"			name="extensions.noiaop.ddgb"				type="bool"  instantApply="true"/>
+		<preference id="tc_dddb"			name="extensions.noiaop.dddb"				type="bool"  instantApply="true"/>
+		<preference id="tc_noactblueb"		name="extensions.noiaop.noactblueb"			type="bool"  instantApply="true"/>
+		<preference id="tc_fullglassdd"		name="extensions.noiaop.fullglassdd"		type="bool"  instantApply="true"/>
+		<preference id="tc_fullglassnopref"	name="extensions.noiaop.fullglassnopref"	type="bool"  instantApply="true"/>
+		<preference id="tc_fullglasstoolt"	name="extensions.noiaop.fullglasstoolt"		type="bool"  instantApply="true"/>
+
+		<!-- ########## Skins Personas Tab ########## -->
+		<preference id="tc_persona"	name="extensions.noiaop.persona" 	type="bool"  instantApply="true"/>	
+		
+		<!-- ########## Fonts Tab ########## -->
+		<preference id="tc_tabfontcustom"	name="extensions.noiaop.tabfontcustom" 	type="bool"  instantApply="true"/>
+		<preference id="tc_tabhfontcustom"	name="extensions.noiaop.tabhfontcustom" type="bool"  instantApply="true"/>
+		<preference id="tc_tbfontcustom"	name="extensions.noiaop.tbfontcustom" 	type="bool"  instantApply="true"/>
+		<preference id="tc_sbfontcustom"	name="extensions.noiaop.sbfontcustom" 	type="bool"  instantApply="true"/>
+		<preference id="tc_ddfontcustom"	name="extensions.noiaop.ddfontcustom" 	type="bool"  instantApply="true"/>
+		
+		<preference id="tc_tabtscustom"		name="extensions.noiaop.tabtscustom" 	type="bool"  instantApply="true"/>
+		<preference id="tc_tabhtscustom"	name="extensions.noiaop.tabhtscustom" 	type="bool"  instantApply="true"/>
+		<preference id="tc_tbtscustom"		name="extensions.noiaop.tbtscustom" 	type="bool"  instantApply="true"/>
+		<preference id="tc_sbtscustom"		name="extensions.noiaop.sbtscustom" 	type="bool"  instantApply="true"/>
+		<preference id="tc_ddtscustom"		name="extensions.noiaop.ddtscustom" 	type="bool"  instantApply="true"/>	
+		
+		<!-- ########## Preferences Tweaks page 1 ########## -->
+		<preference id="tc_appbutton"		name="extensions.noiaop.appbutton" 		type="string"  instantApply="true"/>
+		<preference id="tc_appbut_nt"		name="extensions.noiaop.appbut_nt"		type="bool"  instantApply="true"/>
+		<preference id="tc_appbut"			name="extensions.noiaop.appbut" 		type="bool"  instantApply="true"/>
+		<preference id="tc_appbutdm"		name="extensions.noiaop.appbutdm"		type="bool"  instantApply="true"/>
+		<preference id="tc_butdark"			name="extensions.noiaop.butdark"		type="bool"  instantApply="true"/>
+		<preference id="tc_butglass"		name="extensions.noiaop.butglass"		type="bool"  instantApply="true"/>
+		<preference id="tc_butsemiround"	name="extensions.noiaop.butsemiround" 	type="bool"  instantApply="true"/>
+		<preference id="tc_scrollbars"		name="extensions.noiaop.scrollbars" 	type="string"  instantApply="true"/>
+		
+		<!-- ########## Preferences Tweaks page 2 ########## -->
+		<preference id="tc_hightabs"		name="extensions.noiaop.hightabs"		type="bool"  instantApply="true"/>
+		<preference id="tc_lowtabs"			name="extensions.noiaop.lowtabs"		type="bool"  instantApply="true"/>
+		<preference id="tc_closebutbig"		name="extensions.noiaop.closebutbig"	type="bool"  instantApply="true"/>
+		<preference id="tc_closebuthide"	name="extensions.noiaop.closebuthide"	type="bool"  instantApply="true"/>
+		<preference id="tc_closebut"		name="extensions.noiaop.closebut"		type="bool"  instantApply="true"/>
+		<preference id="tc_closebut_alw"	name="extensions.noiaop.closebut_alw"	type="bool"  instantApply="true"/>
+		<preference id="tc_tabclose"		name="extensions.noiaop.tabclose"		type="bool"  instantApply="true"/>
+		<preference id="tc_roundtab"		name="extensions.noiaop.roundtab"		type="bool"  instantApply="true"/>
+		<preference id="tc_roundttab"		name="extensions.noiaop.roundttab"		type="bool"  instantApply="true"/>
+		<preference id="tc_nbtabh"			name="extensions.noiaop.nbtabh"			type="bool"  instantApply="true"/>
+		<preference id="tc_nbtaba"			name="extensions.noiaop.nbtaba"			type="bool"  instantApply="true"/>
+		<preference id="tc_tabtextmargin"	name="extensions.noiaop.tabtextmargin"	type="bool"  instantApply="true"/>
+		<preference id="tc_tabactblink"		name="extensions.noiaop.tabactblink" 	type="string"  instantApply="true"/>
+		<preference id="tc_alttabthrobber"	name="extensions.noiaop.alttabthrobber" type="string"  instantApply="true"/>
+		<preference id="tc_tabprogress"		name="extensions.noiaop.tabprogress" 	type="string"  instantApply="true"/>
+		
+		<!-- ########## Preferences Tweaks page 3 ########## -->
+		<preference id="tc_owntabs"	name="extensions.noiaop.owntabs"	type="bool"  instantApply="true"/>
+		
+		<!-- ########## Preferences Tweaks page 4 ########## -->
+		<preference id="tc_ff4deftbb"	name="extensions.noiaop.ff4deftbb" 	type="bool"  instantApply="true"/>
+		<preference id="tc_ff4deftbb2"	name="extensions.noiaop.ff4deftbb2" type="bool"  instantApply="true"/>
+		<preference id="tc_smalltbb"	name="extensions.noiaop.smalltbb" 	type="bool"  instantApply="true"/>
+		<preference id="tc_tbbgray"		name="extensions.noiaop.tbbgray" 	type="bool"  instantApply="true"/>
+		<preference id="tc_smallfw"		name="extensions.noiaop.smallfw" 	type="bool"  instantApply="true"/>
+		<preference id="tc_smallfw2"	name="extensions.noiaop.smallfw2" 	type="bool"  instantApply="true"/>
+		<preference id="tc_smallfw3"	name="extensions.noiaop.smallfw3" 	type="bool"  instantApply="true"/>
+		<preference id="tc_tbbgh"		name="extensions.noiaop.tbbgh" 		type="bool"  instantApply="true"/>
+		<preference id="tc_tbbgh2"		name="extensions.noiaop.tbbgh2" 	type="bool"  instantApply="true"/>
+		<preference id="tc_tbnocheckbg"	name="extensions.noiaop.tbnocheckbg" type="bool" instantApply="true"/>
+		<preference id="tc_bfdm1"		name="extensions.noiaop.bfdm1" 		type="bool"  instantApply="true"/>
+		<preference id="tc_bfdm2"		name="extensions.noiaop.bfdm2" 		type="bool"  instantApply="true"/>
+		
+		<!-- ########## Preferences Tweaks page 5 ########## -->
+		<preference id="tc_titlebarosd"	name="extensions.noiaop.titlebarosd" type="bool"  instantApply="true"/>
+		<preference id="tc_altmb"		name="extensions.noiaop.altmb"		type="bool"  instantApply="true"/>
+		<preference id="tc_highbook"	name="extensions.noiaop.highbook"	type="bool"  instantApply="true"/>
+		<preference id="tc_urlbarbf"	name="extensions.noiaop.urlbarbf"	type="bool"  instantApply="true"/>
+		<preference id="tc_ddboldfont"	name="extensions.noiaop.ddboldfont"	type="bool"  instantApply="true"/>
+		<preference id="tc_menuspace"	name="extensions.noiaop.menuspace"	type="bool"  instantApply="true"/>
+		<preference id="tc_hideclose1"	name="extensions.noiaop.hideclose1"	type="bool"  instantApply="true"/>
+		<preference id="tc_hideclose2"	name="extensions.noiaop.hideclose2"	type="bool"  instantApply="true"/>
+		<preference id="tc_bmfolder"	name="extensions.noiaop.bmfolder"	type="bool"  instantApply="true"/>
+		<preference id="tc_icorot"		name="extensions.noiaop.icorot"		type="bool"  instantApply="true"/>
+		<preference id="tc_icorot2"		name="extensions.noiaop.icorot2"	type="bool"  instantApply="true"/>
+		<preference id="tc_tooltip1"	name="extensions.noiaop.tooltip1"	type="bool"  instantApply="true"/>
+		<preference id="tc_wincon1"		name="extensions.noiaop.wincon1"	type="bool"  instantApply="true"/>
+		<preference id="tc_wincon2"		name="extensions.noiaop.wincon2"	type="bool"  instantApply="true"/>
+		<preference id="tc_hovandactmenu" name="extensions.noiaop.hovandactmenu" type="string"  instantApply="true"/>
+
+		<!-- ########## Pro Tab ########## -->
+		<preference id="tc_fftabsontop"		name="browser.tabs.onTop"				type="bool"  instantApply="true"/>
+		<preference id="tc_downloadgui"		name="browser.download.useToolkitUI"	type="bool"  instantApply="true"/>
+		<preference id="tc_prefsincontent"	name="browser.preferences.inContent"	type="bool"  instantApply="true"/>
+		<preference id="tc_favicon_w"		name="extensions.noiaop.favicon_w" 	 	type="bool"  instantApply="true"/>
+		<preference id="tc_favicon"			name="extensions.noiaop.favicon" 	 	type="bool"  instantApply="true"/>
+		<preference id="tc_favicon_hg"		name="extensions.noiaop.favicon_hg" 	type="bool"  instantApply="true"/>		
+	</preferences>
+		<tabbox id="tctoptabbox">
+			<tabs style="font-size:130% !important;" class="tctoptabs">
+				<tab label="GUI" id="tcskins"/>
+				<tab label="&Fontt;"  id="tcfonts"/>
+				<tab label="&Tweaks;" id="tctweaks"/>
+				<tab label="&PageP;"  id="tcprotab" tooltiptext="&PageP;"/>
+				<tab label="&About;"  id="tcabout"/>
+			</tabs>
+
+			<tabpanels id="tctp">
+				<!-- ########## Skins ########## -->
+				<tabpanel class="tctabpanel">
+					<vbox class="tcvbox">
+					  
+						<tabbox style="margin:10px !important;" id="tcskintabbox">
+							<tabs style="font-size:105% !important;" class="tcsubtabs">
+								<tab label="&Skinst;"	 id="n4tc_skinstab"/>
+								<tab label="&Personast;" id="n4tc_personastab"/>
+							</tabs>
+
+							<tabpanels>
+
+								<!-- ########## Skins ########## -->
+								<tabpanel class="tctabpanel2">
+									<vbox class="tcvbox">
+										<groupbox class="tcgroupbox">
+											<caption label="&Main_skins_set;"/>
+											<menulist preference="tc_skinlist" id="tc_skinlist1">
+												<menupopup>
+													<menuitem value="skin_gray"		 label="&Gray;"		 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_gray');"/>
+													<menuitem value="skin_graylight" label="&Graylight;" oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_graylight');"/>
+													<menuitem value="skin_graydark"	 label="&Graydark;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_graydark');"/>
+													<menuitem value="skin_gray_f3"	 label="&GrayFF3;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_gray_f3');"/>
+													<menuitem value="skin_black"	 label="&Black;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_black');"/>
+													<menuitem value="skin_black_f3"	 label="&BlackFF3;"  oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_black_f3');"/>
+													<menuitem value="skin_blue"		 label="&Blue;"		 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_blue');"/>
+													<menuitem value="skin_blue_f3"	 label="&BlueFF3;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_blue_f3');"/>
+													<menuitem value="skin_ff4def"	 label="&Ff4def;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_ff4def');"/>
+													<menuitem value="skin_glass1"	 label="&Glass1;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_glass1');"/>
+													<menuitem value="skin_glass2"	 label="&Glass2;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_glass2');"/>
+													<menuitem value="skin_persona"	 label="Personas"	 oncommand="noia4themeconf.settings.themeChangePersona(true, 'persona');" id="persona_skin"/>
+												</menupopup>
+											</menulist>
+											<menulist preference="tc_skinlist" id="tc_skinlist2">
+												<menupopup>
+													<menuitem value="skin_gray"		 label="&Gray;"		 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_gray');"/>
+													<menuitem value="skin_graylight" label="&Graylight;" oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_graylight');"/>
+													<menuitem value="skin_graydark"	 label="&Graydark;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_graydark');"/>
+													<menuitem value="skin_black"	 label="&Black;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_black');"/>
+													<menuitem value="skin_blue"		 label="&Blue;"		 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_blue');"/>
+													<menuitem value="skin_ff4def"	 label="&Ff4def;"	 oncommand="noia4themeconf.settings.prefChangeString('skin', 'skin_ff4def');"/>
+													<menuitem value="skin_persona"	 label="Personas"	 oncommand="noia4themeconf.settings.themeChangePersona(true, 'persona');" id="persona_skin"/>
+												</menupopup>
+											</menulist>
+										<spacer height="10px"/>
+											<menulist preference="tc_ntabs">
+												<menupopup>
+													<menuitem value="tabs_custom"	label="&Tabs_custom;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_custom');" id="tabs_custom"/>
+													<menuitem value="tabs_gray"		label="&Tabs_gray;"		oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_gray');" id="tabs_gray"/>
+													<menuitem value="tabs_gray_m"	label="&Tabs_gray_m;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_gray_m');" id="tabs_gray_m"/>
+													<menuitem value="tabs_gray_c"	label="&Tabs_gray_c;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_gray_c');" id="tabs_gray_c"/>
+													<menuitem value="tabs_black"	label="&Tabs_black;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_black');" id="tabs_black"/>
+													<menuitem value="tabs_blue"		label="&Tabs_blue;"		oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_blue');" id="tabs_blue"/>
+													<menuitem value="tabs_ff4def"	label="&Tabs_ff4def;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_ff4def');" id="tabs_ff4def"/>
+													<menuitem value="tabs_glass1"	label="&Tabs_glass1;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_glass1');" id="tabs_glass1"/>
+													<menuitem value="tabs_glass2"	label="&Tabs_glass2;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_glass2');" id="tabs_glass2"/>
+													<menuitem value="tabs_glass3"	label="&Tabs_glass3;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_glass3');" id="tabs_glass3"/>
+													<label value="&Noiatabs;" class="tcfontbk"/>
+													<menuitem value="noiatabs1"		label="&Noiatabs1;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'noiatabs1');"/>
+													<menuitem value="noiatabs2"		label="&Noiatabs2;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'noiatabs2');"/>
+													<menuitem value="noiatabs3"		label="&Noiatabs3;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'noiatabs3');"/>
+													<menuitem value="noiatabs4"		label="&Noiatabs4;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'noiatabs4');"/>
+													<menuitem value="noiatabs5"		label="&Noiatabs5;"	oncommand="noia4themeconf.settings.prefChangeString('ntabs', 'noiatabs5');"/>
+													<label value="&Ntabs0;" class="tcfontbk"/>
+													<label value="&Ntabs1;" class="tcfontbk"/>
+												</menupopup>
+											</menulist>
+										<spacer height="10px"/>
+											<label value="&Custom0;" id="tabs_custom_info0" onclick="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_custom');"/>
+											<label value="&Custom1;" id="tabs_custom_info1" onclick="noia4themeconf.settings.prefChangeString('ntabs', 'tabs_custom');"/>
+										</groupbox>
+
+										<!-- ########## GUI Options ########## -->
+										<groupbox class="tcgroupbox">
+											<caption label="&Options;"/>
+											<checkbox label="&Roxp;"			preference="tc_roxp"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'roxp');} else {noia4themeconf.settings.prefChangeBool(false, 'roxp');}" 					id="skinop_roundtab"/>
+											<checkbox label="&Noactblue;"		preference="tc_noactblueg"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'noactblueg');} else {noia4themeconf.settings.prefChangeBool(false, 'noactblueg');}" 		id="skinop_NoActBlueGrayTab"/>
+											<checkbox label="&Hidetabbarbg;"	preference="tc_hidetabbarbg"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'hidetabbarbg');} else {noia4themeconf.settings.prefChangeBool(false, 'hidetabbarbg');}" 	id="skinop_HideTabbarBg"/>
+											<checkbox label="&Cleaner;"			preference="tc_cleaner"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'cleaner');} else {noia4themeconf.settings.prefChangeBool(false, 'cleaner');}" 			id="skinop_NoLinesOnToolbars"/>
+											<checkbox label="&Dd;"				preference="tc_ddg"				oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'ddg');} else {noia4themeconf.settings.prefChangeBool(false, 'ddg');}" 					id="skinop_DropDGray"/>
+											<checkbox label="&Noactblue;"		preference="tc_noactblueblack"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'noactblueblack');} else {noia4themeconf.settings.prefChangeBool(false, 'noactblueblack');}" id="skinop_NoActBlueBlackTab"/>
+											<checkbox label="&Dd;"				preference="tc_ddgb"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'ddgb');} else {noia4themeconf.settings.prefChangeBool(false, 'ddgb');}" 					id="skinop_DropDBlack"/>
+											<checkbox label="&Dddb;"			preference="tc_dddb"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'dddb');} else {noia4themeconf.settings.prefChangeBool(false, 'dddb');}" 					id="skinop_DropDdarkBlack"/>
+											<checkbox label="&Noactblue;"		preference="tc_noactblueb"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'noactblueb');} else {noia4themeconf.settings.prefChangeBool(false, 'noactblueb');}" 		id="skinop_NoActBlueBlueTab"/>
+											<checkbox label="&Fullglassdd;"		preference="tc_fullglassdd"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'fullglassdd');} else {noia4themeconf.settings.prefChangeBool(false, 'fullglassdd');}" 	id="skinop_DropDGlass"/>
+											<checkbox label="&Fullglassnopref;"	preference="tc_fullglassnopref"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'fullglassnopref');} else {noia4themeconf.settings.prefChangeBool(false, 'fullglassnopref');}" id="skinop_NoGlassPref"/>
+											<checkbox label="&Fullglasstoolt;"	preference="tc_fullglasstoolt"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'fullglasstoolt');} else {noia4themeconf.settings.prefChangeBool(false, 'fullglasstoolt');}" id="skinop_Fullglasstooltip"/>
+										</groupbox>
+									</vbox>
+								</tabpanel>
+
+								<!-- ########## Skins / Persona ########## -->
+								<tabpanel class="tctabpanel2">
+									<vbox class="tcvbox">
+										<groupbox class="tcgroupbox" flex="1">
+											<caption label="&Personagetlabel;"/>
+											<hbox>
+												<label value="https://addons.mozilla.org" onclick="noia4themeconf.settings.tOpen('https://addons.mozilla.org/firefox/personas/')" class="aboutlink"/>
+												<label value="&Or;"/>
+												<label value="http://www.getpersonas.com" onclick="noia4themeconf.settings.tOpen('http://getpersonas.com/')" class="aboutlink"/>
+											</hbox>
+										</groupbox>
+
+										<groupbox class="tcgroupbox" flex="1" id="personas_tab">
+											<label value="&Persona01;"/>
+											<label value="&Persona02;"/>
+											<label value="&Persona03;"/>
+											<checkbox label="&Persona04;" preference="tc_persona" oncommand="if(this.checked) {noia4themeconf.settings.themeChangePersona(true, 'persona');} else {noia4themeconf.settings.themeChangePersona(false,'persona');noia4themeconf.settings.prefChangeString('skin', 'skin_gray');}" id="PersonasCheckbox"/>
+											<label value="&Persona05;" class="tcfontbk"/>
+										</groupbox>
+
+										<groupbox class="tcgroupbox" flex="1" style="text-align:center;">
+											<caption label="&Personaimglabel;" style="font-style:italic;"/>
+											<image src="chrome://noiaop/content/persona.jpg"/>
+										</groupbox>
+									</vbox>
+								</tabpanel>
+							</tabpanels>
+						</tabbox>
+					</vbox>
+				</tabpanel>
+
+				<!-- ########## Font ########## -->
+				<tabpanel class="tctabpanel">
+					<vbox class="tcvbox" style="max-height:600px !important;">
+						<groupbox class="tcgroupbox1">
+						<caption label="&Fontcolor;"/>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_tabfontcustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tabfontcustom');} else {noia4themeconf.settings.prefChangeBool(false, 'tabfontcustom');}"/>
+								<colorpicker id="Tabfontcolor" 	type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'tabfontcolor',true)"/>
+								<label value="&Tabs;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_tabhfontcustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tabhfontcustom');} else {noia4themeconf.settings.prefChangeBool(false, 'tabhfontcustom');}"/>
+								<colorpicker id="Tabactfontcolor" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'tabactfontcolor',true)"/>
+								<label value="&Tabsacthov;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_tbfontcustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tbfontcustom');} else {noia4themeconf.settings.prefChangeBool(false, 'tbfontcustom');}"/>
+								<colorpicker id="Toolbarfontcolor" 	type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'toolbarfontcolor',true)"/>
+								<label value="&Toolbar;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_sbfontcustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'sbfontcustom');} else {noia4themeconf.settings.prefChangeBool(false, 'sbfontcustom');}"/>
+								<colorpicker id="Statusbarfontcolor" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'statusbarfontcolor',true)"/>
+								<label value="&Statusbar;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_ddfontcustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'ddfontcustom');} else {noia4themeconf.settings.prefChangeBool(false, 'ddfontcustom');}"/>
+								<colorpicker id="Dropdownmenufontcolor" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'dropdownmenufontcolor',true)"/>
+								<label value="&Ddmenu;" style="font-weight:bold;"/>
+							</hbox>
+						</groupbox>
+						
+						<groupbox class="tcgroupbox1">
+						    <caption label="&Shadow;"/>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_tabtscustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tabtscustom');} else {noia4themeconf.settings.prefChangeBool(false, 'tabtscustom');}"/>
+								<colorpicker id="Tabfontshadow" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'tabfontshadow',true)"/>
+								<label value="&Tabs;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_tabhtscustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tabhtscustom');} else {noia4themeconf.settings.prefChangeBool(false, 'tabhtscustom');}"/>
+								<colorpicker id="Tabactfontshadow" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'tabactfontshadow',true)"/>
+								<label value="&Tabsacthov;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_tbtscustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tbtscustom');} else {noia4themeconf.settings.prefChangeBool(false, 'tbtscustom');}"/>
+								<colorpicker id="Toolbarfontshadow" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'toolbarfontshadow',true)"/>
+								<label value="&Toolbar;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_sbtscustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'sbtscustom');} else {noia4themeconf.settings.prefChangeBool(false, 'sbtscustom');}"/>
+								<colorpicker id="Statusbarfontshadow" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'statusbarfontshadow',true)"/>
+								<label value="&Statusbar;" style="font-weight:bold;"/>
+							</hbox>
+							<hbox align="center">
+								<checkbox label="&#8658;"	preference="tc_ddtscustom"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'ddtscustom');} else {noia4themeconf.settings.prefChangeBool(false, 'ddtscustom');}"/>				
+								<colorpicker id="Dropdownmenufontshadow" type="button" onchange="noia4themeconf.settings.fontappearanceChange(this.color,'dropdownmenufontshadow',true)"/>
+								<label value="&Ddmenu;" style="font-weight:bold;"/>
+							</hbox>
+						</groupbox>
+
+						<groupbox class="tcgroupbox1">
+							<caption label="&Fontinfo;"/>
+							<label value="&Fontinfo1;" style="margin-bottom:0px;font-weight:bold;"/>
+							<label value="&Fontinfo2;" style="margin-bottom:0px;font-weight:bold;"/>
+						</groupbox>
+					</vbox>
+				</tabpanel>
+				
+				<tabpanel class="tctabpanel">
+					<tabbox style="margin:10px !important;">
+							<tabs style="font-size:105% !important;" class="tcsubtabs">
+								<tab label="&Page1;" tooltiptext="&Tooltippage1;" id="tctweaksp1"/>
+								<tab label="&Page2;" tooltiptext="&Tooltippage2;" id="tctweaksp2"/>
+								<tab label="&Page3;" tooltiptext="&Tooltippage3;" id="tctweaksp3"/>
+								<tab label="&Page4;" tooltiptext="&Tooltippage4;" id="tctweaksp4"/>
+								<tab label="&Page5;" tooltiptext="&Tooltippage5;" id="tctweaksp5"/>
+							</tabs>
+						<tabpanels>
+
+							<!-- ########## Tweaks page 1 ########## -->
+							<tabpanel class="tctabpanel2">
+								<vbox class="tcvbox">
+									<groupbox class="tcgroupbox">
+										<caption label="&Ffbutton;"/>
+						
+										<menulist preference="tc_appbutton" id="tc_applicationbutton">
+											<menupopup>
+												<menuitem value="appbutnoia"	label="&Appbutnoia;"	oncommand="noia4themeconf.settings.prefChangeString('appbutton', 'appbutnoia');"/>
+												<menuitem value="appbutorg"		label="&Appbutorg;"		oncommand="noia4themeconf.settings.prefChangeString('appbutton', 'appbutorg');"/>
+												<menuitem value="appbutaurora"	 label="&Appbutaurora;"		oncommand="noia4themeconf.settings.prefChangeString('appbutton', 'appbutaurora');"/>
+												<menuitem value="appbutnightly"	 label="&Appbutnightly;"	oncommand="noia4themeconf.settings.prefChangeString('appbutton', 'appbutnightly');"/>
+												<menuitem value="appbutao"	 	label="&Appbutao;" 		oncommand="noia4themeconf.settings.prefChangeString('appbutton', 'appbutao');"/>
+												<menuitem value="appbutat"	 	label="&Appbutat;" 		oncommand="noia4themeconf.settings.prefChangeString('appbutton', 'appbutat');"/>
+											</menupopup>
+										</menulist>
+										<checkbox id="Appbut_nt" label="&Appbut_nt;"	preference="tc_appbut_nt"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'appbut_nt');} else {noia4themeconf.settings.prefChangeBool(false, 'appbut_nt');}"/>
+										<checkbox id="Appbut"	 label="&Appbut;"		preference="tc_appbut"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'appbut');} else {noia4themeconf.settings.prefChangeBool(false, 'appbut');}"/>
+										<checkbox id="Appbutdm"	 label="&Appbutdm;"		preference="tc_appbutdm"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'appbutdm');} else {noia4themeconf.settings.prefChangeBool(false, 'appbutdm');}"/>										
+									</groupbox>
+									
+									<groupbox class="tcgroupbox">
+										<caption label="&Buttons;"/>
+										<checkbox label="&Butdark;"			preference="tc_butdark"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'butdark');} else {noia4themeconf.settings.prefChangeBool(false, 'butdark');}"/>
+										<checkbox label="&Butglass;"		preference="tc_butglass"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'butglass');} else {noia4themeconf.settings.prefChangeBool(false, 'butglass');}"/>
+										<checkbox label="&Butsemiround;"	preference="tc_butsemiround"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'butsemiround');} else {noia4themeconf.settings.prefChangeBool(false, 'butsemiround');}"/>	
+									</groupbox>
+									<groupbox class="tcgroupbox">
+										<caption label="&Scrollbars;"/>
+
+										<menulist preference="tc_scrollbars">
+											<menupopup>
+												<menuitem value="scrollbars1"	label="&Scrollbars1;"	oncommand="noia4themeconf.settings.prefChangeString('scrollbars','scrollbars1');"/>
+												<menuitem value="scrollbars2"	label="&Scrollbars2;"	oncommand="noia4themeconf.settings.prefChangeString('scrollbars','scrollbars2');"/>
+												<menuitem value="scrollbarsdef"	label="&Scrollbarsdef;"	oncommand="noia4themeconf.settings.prefChangeString('scrollbars','scrollbarsdef');"/>
+											</menupopup>
+										</menulist>
+										<label value="&#8658; &Scrollbarslink;" onclick="noia4themeconf.settings.tOpen('https://addons.mozilla.org/addon/noiascrollbars/')" class="aboutlink"/>
+									</groupbox>
+								</vbox>
+							</tabpanel>
+
+							<!-- ########## Tweaks page 2 ########## -->
+							<tabpanel class="tctabpanel2">
+								<vbox class="tcvbox">
+									<groupbox class="tcgroupbox">
+										<caption label="&Taboptions;"/>
+											<label value="&Tabinfo0;" class="tcfontbk"/>
+										<checkbox label="&Hightabs;"	preference="tc_hightabs"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'hightabs');} else {noia4themeconf.settings.prefChangeBool(false, 'hightabs');}"/>
+										<checkbox label="&Lowtabs;"		preference="tc_lowtabs"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'lowtabs');} else {noia4themeconf.settings.prefChangeBool(false, 'lowtabs');}"/>
+											<spacer height="10px"/>
+										<checkbox label="&CloseButbig;"	preference="tc_closebutbig"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'closebutbig');} else {noia4themeconf.settings.prefChangeBool(false, 'closebutbig');}"/>
+										<checkbox label="&CloseButhide;" preference="tc_closebuthide"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'closebuthide');} else {noia4themeconf.settings.prefChangeBool(false, 'closebuthide');}"/>
+										<checkbox label="&CloseBut;"	preference="tc_closebut"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'closebut');} else {noia4themeconf.settings.prefChangeBool(false, 'closebut');}"/>
+										<checkbox label="&CloseBut_alw;" preference="tc_closebut_alw"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'closebut_alw');} else {noia4themeconf.settings.prefChangeBool(false, 'closebut_alw');}"/>
+										<checkbox label="&Tabclose;"	preference="tc_tabclose"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tabclose');} else {noia4themeconf.settings.prefChangeBool(false, 'tabclose');}"/>
+											<spacer height="10px"/>
+										<checkbox label="&RoundTab;"	preference="tc_roundtab"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'roundtab');} else {noia4themeconf.settings.prefChangeBool(false, 'roundtab');}" id="rounded_tab1"/>
+										<checkbox label="&RoundtTab;"	preference="tc_roundttab"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'roundttab');} else {noia4themeconf.settings.prefChangeBool(false, 'roundttab');}" id="rounded_tab2"/>
+											<spacer height="10px"/>
+										<checkbox label="&Nbtabh;"		preference="tc_nbtabh"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'nbtabh');} else {noia4themeconf.settings.prefChangeBool(false, 'nbtabh');}"/>
+										<checkbox label="&Nbtaba;"		preference="tc_nbtaba"			oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'nbtaba');} else {noia4themeconf.settings.prefChangeBool(false, 'nbtaba');}"/>
+										<checkbox label="&Tabtextmargin;" preference="tc_tabtextmargin" oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tabtextmargin');} else {noia4themeconf.settings.prefChangeBool(false, 'tabtextmargin');}"/>
+											<spacer height="10px"/>
+											
+										<menulist preference="tc_tabactblink">
+											<menupopup>
+												<menuitem value="act0"	label="&Tabblinkact0;"	oncommand="noia4themeconf.settings.prefChangeString('tabactblink', 'act0');"/>
+												<menuitem value="act1"	label="&Tabblinkact1;"	oncommand="noia4themeconf.settings.prefChangeString('tabactblink', 'act1');"/>
+												<menuitem value="act2"	label="&Tabblinkact2;"	oncommand="noia4themeconf.settings.prefChangeString('tabactblink', 'act2');"/>
+												<menuitem value="act3"	label="&Tabblinkact3;"	oncommand="noia4themeconf.settings.prefChangeString('tabactblink', 'act3');"/>
+											</menupopup>
+										</menulist>
+											<spacer height="10px"/>
+										<menulist preference="tc_alttabthrobber">
+											<menupopup>
+												<menuitem value="alttabthr0"	label="&Alttabthr0;"	oncommand="noia4themeconf.settings.prefChangeString('alttabthrobber', 'alttabthr0');"/>
+												<menuitem value="alttabthr1"	label="&Alttabthr1;"	oncommand="noia4themeconf.settings.prefChangeString('alttabthrobber', 'alttabthr1');"/>
+												<menuitem value="alttabthr2"	label="&Alttabthr2;"	oncommand="noia4themeconf.settings.prefChangeString('alttabthrobber', 'alttabthr2');"/>
+											</menupopup>
+										</menulist>
+											<spacer height="10px"/>
+										<menulist preference="tc_tabprogress">
+											<menupopup>
+												<menuitem value="tabprog0"	label="&Tabprog0;"	oncommand="noia4themeconf.settings.prefChangeString('tabprogress', 'tabprog0');"/>
+												<menuitem value="tabprog1"	label="&Tabprog1;"	oncommand="noia4themeconf.settings.prefChangeString('tabprogress', 'tabprog1');"/>
+												<menuitem value="tabprog2"	label="&Tabprog2;"	oncommand="noia4themeconf.settings.prefChangeString('tabprogress', 'tabprog2');"/>
+												<menuitem value="tabprog3"	label="&Tabprog3;"	oncommand="noia4themeconf.settings.prefChangeString('tabprogress', 'tabprog3');"/>
+											</menupopup>
+										</menulist>
+									</groupbox>
+								</vbox>
+							</tabpanel>
+
+							<!-- ########## Tweaks page 3 ########## -->
+							<tabpanel class="tctabpanel2">
+								<vbox class="tcvbox">
+									<groupbox class="tcgroupbox">
+									<caption label="&Owntabs0;"/>
+										<spacer height="5px"/>
+									<checkbox label="&Owntabs1;"	preference="tc_owntabs" id="checkbox_owntabs" oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'owntabs');} else {noia4themeconf.settings.prefChangeBool(false, 'owntabs');}"/>
+									<label value="&Colortrans;" class="tcfontbk"/>
+									<hbox align="center">
+										<colorpicker id="Tabbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox id="Tabbgopacity" maxwidth="25px" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabdef;" style="font-weight:bold;"/>
+									</hbox>
+									<hbox align="center">
+										<colorpicker id="Tabhovbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox maxwidth="25px" id="Tabhovbgopacity" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabhov;" style="font-weight:bold;"/>
+									</hbox>
+									<hbox align="center">
+										<colorpicker id="Tabselbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox maxwidth="25px" id="Tabselbgopacity" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabsel;" style="font-weight:bold;"/>
+									</hbox>
+									<hbox align="center">
+										<colorpicker id="Tabpbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox maxwidth="25px" id="Tabpbgopacity" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabpdef;" style="font-weight:bold;"/>
+									</hbox>
+									<hbox align="center">
+										<colorpicker id="Tabphovbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox maxwidth="25px" id="Tabphovbgopacity" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabphov;" style="font-weight:bold;"/>
+									</hbox>
+									<hbox align="center">
+										<colorpicker id="Tabpselbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox maxwidth="25px" id="Tabpselbgopacity" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabpsel;" style="font-weight:bold;"/>
+									</hbox>
+									<hbox align="center">
+										<colorpicker id="Tabnbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox maxwidth="25px" id="Tabnbgopacity" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabndef;" style="font-weight:bold;"/>
+									</hbox>
+									<hbox align="center">
+										<colorpicker id="Tabnhovbgcolor" type="button" onchange="noia4themeconf.settings.setFontWindowValues()"></colorpicker>
+										<label value="    0." class="tctxtboxlabel"/>
+										<textbox maxwidth="25px" id="Tabnhovbgopacity" maxlength="2" size="2" onkeyup="noia4themeconf.settings.setFontWindowValues()"/>
+										<label value="&Owntabnhov;" style="font-weight:bold;"/>
+									</hbox>
+									</groupbox>
+								</vbox>
+							</tabpanel>
+
+							<!-- ########## Tweaks page 4 ########## -->
+							<tabpanel class="tctabpanel2">
+								<vbox class="tcvbox">
+									<groupbox class="tcgroupbox">
+										<caption label="&Tbblabel;"/>
+										<checkbox label="&FF4deftbb;"	preference="tc_ff4deftbb"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'ff4deftbb');} else {noia4themeconf.settings.prefChangeBool(false, 'ff4deftbb');}" id="Ff4deftbbCheckbox"/>
+										<checkbox label="&FF4deftbb2;"	preference="tc_ff4deftbb2"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'ff4deftbb2');} else {noia4themeconf.settings.prefChangeBool(false, 'ff4deftbb2');}" id="Ff4deftbb2Checkbox"/>
+											<spacer height="10px"/>
+										<checkbox label="&Smalltbb;"	preference="tc_smalltbb"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'smalltbb');} else {noia4themeconf.settings.prefChangeBool(false, 'smalltbb');}"/>
+										<checkbox label="&Tbbgray;"		preference="tc_tbbgray"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tbbgray');} else {noia4themeconf.settings.prefChangeBool(false, 'tbbgray');}"/>
+											<spacer height="10px"/>
+										<checkbox label="&Smallfw;"		preference="tc_smallfw"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'smallfw');} else {noia4themeconf.settings.prefChangeBool(false, 'smallfw');}"/>
+										<checkbox label="&Smallfw2;"	preference="tc_smallfw2"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'smallfw2');} else {noia4themeconf.settings.prefChangeBool(false, 'smallfw2');}"/>
+										<checkbox label="&Smallfw3;"	preference="tc_smallfw3"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'smallfw3');} else {noia4themeconf.settings.prefChangeBool(false, 'smallfw3');}"/>
+											<spacer height="10px"/>
+										<checkbox label="&Tbbgh;"		preference="tc_tbbgh"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tbbgh');} else {noia4themeconf.settings.prefChangeBool(false, 'tbbgh');}"/>
+										<checkbox label="&Tbbgh2;"		preference="tc_tbbgh2"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tbbgh2');} else {noia4themeconf.settings.prefChangeBool(false, 'tbbgh2');}"/>
+											<spacer height="10px"/>
+										<checkbox label="&Tbnocheckbg;"	preference="tc_tbnocheckbg"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tbnocheckbg');} else {noia4themeconf.settings.prefChangeBool(false, 'tbnocheckbg');}"/>
+									</groupbox>
+									
+									<groupbox class="tcgroupbox">
+										<caption label="&Bfdm;"/>
+										<checkbox label="&Bfdm1;"		preference="tc_bfdm1"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'bfdm1');} else {noia4themeconf.settings.prefChangeBool(false, 'bfdm1');}"/>
+										<checkbox label="&Bfdm2;"		preference="tc_bfdm2"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'bfdm2');} else {noia4themeconf.settings.prefChangeBool(false, 'bfdm2');}"/>
+									</groupbox>									
+								</vbox>
+							</tabpanel>	
+
+							<!-- ########## Tweaks page 5 ########## -->
+							<tabpanel class="tctabpanel2">
+								<vbox class="tcvbox">
+									<groupbox class="tcgroupbox">
+										<caption label="&Options;"/>
+										<checkbox label="&Titlebarosd;"	preference="tc_titlebarosd"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'titlebarosd');} else {noia4themeconf.settings.prefChangeBool(false, 'titlebarosd');}" id="TitlebarosdCheckbox"/>
+										<checkbox label="&Altmb;"		preference="tc_altmb"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'altmb');} else {noia4themeconf.settings.prefChangeBool(false, 'altmb');}" id="AltmbCheckbox"/>
+										<checkbox label="&Highbook;"	preference="tc_highbook"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'highbook');} else {noia4themeconf.settings.prefChangeBool(false, 'highbook');}"/>
+										<checkbox label="&Urlbarbf;"	preference="tc_urlbarbf"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'urlbarbf');} else {noia4themeconf.settings.prefChangeBool(false, 'urlbarbf');}"/>
+										<checkbox label="&Ddboldfont;"	preference="tc_ddboldfont"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'ddboldfont');} else {noia4themeconf.settings.prefChangeBool(false, 'ddboldfont');}"/>
+										<checkbox label="&Menuspace;"	preference="tc_menuspace"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'menuspace');} else {noia4themeconf.settings.prefChangeBool(false, 'menuspace');}"/>
+											<spacer height="10px"/>
+										<checkbox label="&Hideclose1;"	preference="tc_hideclose1"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'hideclose1');} else {noia4themeconf.settings.prefChangeBool(false, 'hideclose1');}"/>
+										<checkbox label="&Hideclose2;"	preference="tc_hideclose2"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'hideclose2');} else {noia4themeconf.settings.prefChangeBool(false, 'hideclose2');}"/>
+											<spacer height="10px"/>
+										<checkbox label="&Bmfolder;"	preference="tc_bmfolder"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'bmfolder');} else {noia4themeconf.settings.prefChangeBool(false, 'bmfolder');}"/>
+										<checkbox label="&Icorot;"		preference="tc_icorot"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'icorot');} else {noia4themeconf.settings.prefChangeBool(false, 'icorot');}"/>
+										<checkbox label="&Icorot2;"		preference="tc_icorot2"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'icorot2');} else {noia4themeconf.settings.prefChangeBool(false, 'icorot2');}"/>
+										<checkbox label="&Tooltip1;"	preference="tc_tooltip1"	oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'tooltip1');} else {noia4themeconf.settings.prefChangeBool(false, 'tooltip1');}"/>
+											<label value="&Wincon0;" class="tcfontbk"/>
+										<checkbox label="&Wincon1;"		preference="tc_wincon1"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'wincon1');} else {noia4themeconf.settings.prefChangeBool(false, 'wincon1');}"  id="Wincon1Checkbox"/>
+										<checkbox label="&Wincon2;"		preference="tc_wincon2"		oncommand="if(this.checked) {noia4themeconf.settings.prefChangeBool(true,'wincon2');} else {noia4themeconf.settings.prefChangeBool(false, 'wincon2');}"  id="Wincon2Checkbox"/>
+											<label value="&Dropdownmenit;" class="tcfontbk"/>
+										<menulist preference="tc_hovandactmenu" id="tc_hovandactmenu">
+											<menupopup>
+												<menuitem value="haamdef"			label="&Hovandactm0;"	oncommand="noia4themeconf.settings.prefChangeString('hovandactmenu', 'haamdef');"/>
+												<menuitem value="haamblue"	 		label="&Hovandactm1;"	oncommand="noia4themeconf.settings.prefChangeString('hovandactmenu', 'haamblue');"/>
+												<menuitem value="haampurple"	 	label="&Hovandactm2;"	oncommand="noia4themeconf.settings.prefChangeString('hovandactmenu', 'haampurple');"/>
+												<menuitem value="haamsemitransp"	label="&Hovandactm3;" 	oncommand="noia4themeconf.settings.prefChangeString('hovandactmenu', 'haamsemitransp');"/>
+												<menuitem value="haamtransp"		label="&Hovandactm4;"	oncommand="noia4themeconf.settings.prefChangeString('hovandactmenu', 'haamtransp');"/>
+											</menupopup>
+										</menulist>
+									</groupbox>
+								</vbox>
+							</tabpanel>
+						</tabpanels>
+					</tabbox>
+				</tabpanel>
+
+				<!-- ########## ProTab ########## -->
+				<tabpanel class="tctabpanel">
+					<vbox class="tcvbox" style="margin:0 auto !important;">
+						<groupbox class="tcgroupbox1">
+							<caption label="&N4Favicon;"/>
+							<checkbox label="&N4FaviconW;"	id="n4favicon_protabw" 	preference="tc_favicon_w" onmousedown="noia4themeconf.settings.faviconOption1()"/>
+							<checkbox label="&N4Favicon0;"	id="n4favicon_protab" 	preference="tc_favicon"	onmousedown="noia4themeconf.settings.faviconOption2()"/>
+							<checkbox label="&N4Favicon1;"	id="n4favicon_protabhg" preference="tc_favicon_hg"	onmousedown="noia4themeconf.settings.faviconOption3()"/> 
+						</groupbox>
+						<groupbox class="tcgroupbox1">
+							<caption label="&FFinternal;"/>
+							<checkbox label="&TcTabsontop;" 	preference="tc_fftabsontop"/>
+							<checkbox label="&Tcclassicdl;"		preference="tc_downloadgui"/>
+							<checkbox label="&Prefsincont;"		preference="tc_prefsincontent"/>
+								<spacer height="5px"/>
+							<description class="tcfontbk">&FFinternalinfo3;</description>
+							<description class="tcfontbk">&FFinternalinfo4;</description>
+						</groupbox>	
+					</vbox>
+				</tabpanel>				
+
+				<!-- ########## About ########## -->
+				<tabpanel class="tctabpanel">
+					<vbox class="tcvbox" style="margin:0 auto !important;">
+						<groupbox class="tcgroupbox2" style="text-align:center !important;border:0px !important;background:none !important;">
+							<label value="&Aboutinfo1;" class="abouthead"/>
+							<spacer height="20px"/>
+							<hbox>
+								<spacer flex="1"/>
+								<image id="n4_aboutimage"/>
+								<spacer flex="1"/>
+							</hbox>
+							<spacer height="40px"/>
+							<label value="https://addons.mozilla.org/addon/noia-4/" onclick="noia4themeconf.settings.tOpen('https://addons.mozilla.org/addon/noia-4/')" class="aboutlink"/>
+							<spacer height="20px"/>
+							<label value="Support: forums.mozillazine.org" onclick="noia4themeconf.settings.tOpen('http://forums.mozillazine.org/viewtopic.php?t=2259239')" class="aboutlink"/>
+							<spacer height="20px"/>
+							<label value="&Iconset;" onclick="noia4themeconf.settings.tOpen('http://carlitus.deviantart.com/')" class="aboutlink"/>
+							<spacer height="40px"/>
+							<label value="&Based;" onclick="noia4themeconf.settings.tOpen('http://kasteo.deviantart.com/art/Noia-2-0-eXtreme-For-Firefox-4266778')" class="aboutlink"/>
+						</groupbox>
+					</vbox>
+				</tabpanel>
+			</tabpanels>
+
+			<label id="StatuslineMac" value="" class="tcstatusline"/>
+			<label id="Statusline1" value="" class="tcstatusline"/>
+			<label id="Statusline2" value="" class="tcstatusline"/>
+		</tabbox>
+
+  <popupset>
+	<menupopup id="tc_settingsPopup" position="before_start">
+		<menuitem label="&Tc_overview;"	id="Tc_overview" oncommand="noia4themeconf.settings.openHelp();"/>
+		<menuitem label="&Tc_import;"	id="Tc_import"	 oncommand="noia4themeconf.settings.importData();"/>
+		<menuitem label="&Tc_export;"	id="Tc_export"	 oncommand="noia4themeconf.settings.exportData();"/>
+		<menuitem label="&Tc_default;"	id="Tc_default"	 oncommand="noia4themeconf.settings.restoreDefaults();"/>
+	</menupopup>
+  </popupset>
+  
+  <hbox align="center" flex="1" id="noia4buttonbox">
+	<button label="&Tc_settings;" dlgtype="extra2"/>
+	<spacer flex="1" />
+	<button id="tc_close" label="&Tc_close;" oncommand="window.close();"/>
+	<button dlgtype="accept"/>
+  </hbox> 
+		
+  </prefpane>
+		
+</prefwindow>

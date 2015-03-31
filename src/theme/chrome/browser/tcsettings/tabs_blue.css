@@ -1,0 +1,29 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabs-newtab-button:not([selected="true"]):not(:hover):not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]),
+.tabbrowser-tab:not([selected="true"]):not(:hover):not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]) {
+  background: linear-gradient(#bee3f4,#f9fefe) !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+  background: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+}
+
+.tabs-newtab-button:hover,
+.tabbrowser-tab:hover{
+  background: url("chrome://browser/skin/icons/Bookmark-background_tr2.png") !important;
+}
+
+.tabbrowser-tab:hover:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]),
+.tabbrowser-tab[selected="true"]:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]) {
+  -moz-border-top-colors: #4e4efe !important;
+  -moz-border-right-colors: #4e4efe !important;
+  -moz-border-left-colors: #4e4efe !important;
+  -moz-border-bottom-colors: #4e4efe !important;
+}
+
+.tabs-newtab-button,
+.tabbrowser-tab {
+	border: 1px solid #a0a0a0 !important;
+	margin-right:1px;
+}

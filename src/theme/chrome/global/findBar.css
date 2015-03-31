@@ -1,0 +1,172 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.findbar-closebutton {
+  border: 1px solid transparent;
+  padding: 3px 2px 4px 2px !important;
+  list-style-image: url("chrome://browser/skin/icons/closes.png");
+  -moz-image-region: rect(0px, 14px, 14px, 0px);
+  -moz-appearance: none;
+}
+
+.findbar-closebutton:hover {
+  -moz-image-region: rect(0px, 28px, 14px, 14px);
+}
+
+.findbar-closebutton:hover:active {
+  -moz-image-region: rect(0px, 42px, 14px, 28px);
+}
+
+.findbar-closebutton > .toolbarbutton-icon {
+  margin-right: 0px !important;
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+}
+
+.findbar-closebutton > .toolbarbutton-text {
+  display: none;
+}
+
+#find-label,
+label[anonid="find-label"] {
+	background-color: Transparent;
+	padding: 2px 5px 3px 5px !important;
+	margin: 1px 0 0 0px !important;
+	color: #000000;
+	font-weight: bold;
+}
+
+findbar {
+  -moz-appearance: none !important;
+  border-top: 2px solid;
+  -moz-border-top-colors: #808080 #FFFFFF !important;
+  border-bottom: 1px solid;
+  -moz-border-bottom-colors: transparent;  
+  min-width: 1px;
+  min-height:26px;
+}
+
+.findbar-find-previous {
+  list-style-image: url("chrome://browser/skin/icons/arrow-up.png");
+  opacity: 0.6;
+}
+
+.findbar-find-previous[disabled="true"]{
+  opacity: 0.1;
+}
+	
+.findbar-find-previous:not([disabled="true"]):hover{
+  opacity: 1.0;
+}
+
+.findbar-find-next {
+  list-style-image: url("chrome://browser/skin/icons/arrow-down.png");
+  opacity: 0.6;
+}
+
+.findbar-find-next[disabled="true"]{
+  opacity: 0.1;
+}
+
+.findbar-find-next:not([disabled="true"]):hover{
+  opacity: 1.0;
+}
+
+.findbar-highlight{
+  list-style-image: url("chrome://global/skin/CuteMenus/hline.png");
+  opacity: 0.6;
+}
+
+.findbar-highlight[disabled="true"]{
+  opacity: 0.1;
+}
+
+.findbar-highlight:not([disabled="true"]):hover{
+  opacity: 1.0;
+}
+
+.findbar-highlight:not([disabled="true"]):active, .findbar-highlight:not([disabled="true"])[checked="true"]{
+  opacity: 1.0;
+  color: #C0C000 !important;
+  font-weight: bold !important;
+}
+
+.find-status-icon {
+  list-style-image: none;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  -moz-margin-start: 12px;
+  -moz-margin-end: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+.findbar-find-status {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -moz-margin-start: 3px;
+  -moz-margin-end: 0px;
+  padding: 2px;
+}
+
+.find-status-icon[status="notfound"] {
+  list-style-image: url("chrome://browser/skin/Info.png");
+}
+
+.findbar-textbox {
+  -moz-binding: url("chrome://global/content/bindings/findbar.xml#findbar-textbox");
+  border:none;
+  margin-right: 10px;
+}
+
+#find-field ,
+.findbar-textbox {
+  height: 20px;
+  min-height: 20px;
+}
+
+#find-field > .textbox-input-box,
+.findbar-textbox > .textbox-input-box {
+  cursor: text;
+  border: 1px solid;
+  -moz-border-top-colors: #DBDBDB;
+  -moz-border-bottom-colors: #CACACA;
+  -moz-border-right-colors: #DBDBDB;
+  -moz-border-left-colors: #CACACA;
+  padding: 0px 2px 0px 2px;
+  background:url("chrome://global/skin/textbox/textbox-body.png") repeat-x transparent;
+}
+
+#find-field[focused="true"] > .textbox-input-box ,
+.findbar-textbox[focused="true"] > .textbox-input-box {
+  -moz-border-top-colors: #4EBCEB;
+  -moz-border-bottom-colors: #4EB0EB;
+  -moz-border-right-colors: #4EBCEB;
+  -moz-border-left-colors: #4EBCEB;
+}
+
+.findbar-textbox[status="notfound"]  > .textbox-input-box {
+  -moz-border-top-colors: #FFFF00;
+  -moz-border-bottom-colors: #FFFF00;
+  -moz-border-right-colors: #FFFF00;
+  -moz-border-left-colors: #FFFF00;
+  background-color: #FF8C8C;
+  color: #FFFFFF;
+}
+
+findbar[flash="true"] > .findbar-container > .find-field-container > .findbar-textbox {
+  background-color: #FFFF00;
+}
+
+.find-status-icon[status="wrapped"] {
+  list-style-image: url("chrome://global/skin/CuteMenus/undo.png");
+}
+
+
+#FindToolbar .textbox-input-box{
+	border-radius: 10px !important;
+}
+
+#findbar .textbox-input-box{
+	border-radius: 10px !important;
+	margin: -1px -2px -1px -2px !important;
+}

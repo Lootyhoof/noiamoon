@@ -1,0 +1,139 @@
+/* Sidebars */
+.sidebar-placesTree {
+  -moz-appearance: none;
+  border: 0;
+  margin: 0;
+  border-top: 1px solid #A0A0A0;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell(leaf) ,
+.sidebar-placesTreechildren::-moz-tree-image(leaf) {
+  cursor: pointer;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell-text(leaf, hover) {
+  cursor: pointer;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell(separator) {
+  cursor: default;
+}
+
+/* Trees */
+treechildren::-moz-tree-image(title) {
+  list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png");
+  padding-right: 2px;
+  margin: 0px 2px;
+  width: 16px;
+  height: 16px;
+}
+
+treechildren::-moz-tree-image(title, livemarkItem) {
+  list-style-image: url("chrome://browser/skin/feeds/feed16.png");
+}
+
+treechildren::-moz-tree-image(title, livemarkItem, visited) {
+  list-style-image: url("chrome://browser/skin/feeds/feed116.png");
+}
+
+treechildren::-moz-tree-image(title, separator) {
+  list-style-image: none;
+  width: 0;
+  height: 0;
+}
+
+treechildren::-moz-tree-image(title, container) {
+  list-style-image: url("chrome://browser/skin/icons/folder_closed.png");
+}
+
+treechildren::-moz-tree-image(title, open) {
+  list-style-image: url("chrome://browser/skin/icons/folder_open.png");
+}
+
+treechildren::-moz-tree-image(title, container, livemark) {
+  list-style-image: url("chrome://browser/skin/page-livemarks.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
+  list-style-image: url("chrome://browser/skin/places/allBookmarks.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
+  list-style-image: url("chrome://browser/skin/places/bookmarksToolbar.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu) {
+  list-style-image: url("chrome://browser/skin/places/bookmarksMenu.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
+  list-style-image: url("chrome://browser/skin/places/unsortedBookmarks.png");
+  -moz-image-region: auto;
+}
+
+/* query-nodes should be styled even if they're not expandable */
+treechildren::-moz-tree-image(title, query) {
+  list-style-image: url("chrome://browser/skin/places/query.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(title, query, tagContainer),
+treechildren::-moz-tree-image(container, OrganizerQuery_Tags) {
+  list-style-image: url("chrome://mozapps/skin/places/tagContainerIcon.png");
+  -moz-image-region: auto;
+}
+
+/* calendar icon for folders grouping items by date */
+treechildren::-moz-tree-image(title, query, dayContainer) {
+  list-style-image: url("chrome://browser/skin/places/calendar.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(title, query, hostContainer) {
+  list-style-image: url("chrome://browser/skin/icons/folder_closed.png");
+}
+
+treechildren::-moz-tree-image(title, query, hostContainer, open) {
+  list-style-image: url("chrome://browser/skin/icons/folder_open.png");
+}
+
+treechildren::-moz-tree-image(title, query, OrganizerQuery_History) {
+  list-style-image: url("chrome://global/skin/CuteMenus/history.png");
+}
+
+/* We want some queries to look like ordinary folders. This must come
+   after the (title, query) selector, or it would get overridden. */
+treechildren::-moz-tree-image(title, query, folder) {
+  list-style-image: url("chrome://browser/skin/icons/folder_closed.png");
+}
+
+treechildren::-moz-tree-image(title, query, folder, open) {
+  list-style-image: url("chrome://browser/skin/icons/folder_open.png");
+}
+
+treechildren::-moz-tree-row(session-start) {
+  border-top:1px dotted #A0A0A0;
+  font-weight: bold;
+}
+
+treechildren::-moz-tree-cell-text(date, session-continue) {
+  color: #FFFFFF;
+}
+
+/* Browser Sidebars */
+
+/* Default button vert. margins are 1px/2px, and this can cause misalignment */
+#viewButton {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#viewButton > hbox > dropmarker {
+  height: auto;
+  width: auto;
+  -moz-margin-end: -3px;
+}

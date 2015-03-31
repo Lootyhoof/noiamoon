@@ -1,0 +1,401 @@
+@import url(chrome://browser/skin/tcsettings/extra/ff4.css);
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url(http://www.w3.org/1999/xhtml);
+
+#toolbar-menubar {
+  -moz-appearance: -moz-win-glass !important; 
+  background: rgba(184,194,196, .1) !important;
+}
+
+#appmenuSecondaryPane{
+	background: none !important;
+}
+#appmenuPrimaryPane{
+	background: white !important;
+}
+/*#About Dialog*/
+#aboutDialogContainer #clientBox,
+#aboutDialog #bottomBox{
+    background: transparent !important;
+    color: black !important;
+}
+#aboutDialogContainer {
+    background: url("chrome://branding/content/about-logo.png") 7% 26% no-repeat, linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+#aboutDialogContainer,
+#aboutDialog{
+    color: black !important;
+}
+#aboutDialogContainer .text-link:not(:hover),
+#aboutDialog .text-link:not(:hover){
+	color: #1f67fa !important;
+}
+
+#aboutDialogContainer .text-link:hover,
+#aboutDialog .text-link:hover {
+	color: #1f9afd !important;
+}
+
+#urlbar:not(:hover):not([focused=true]),
+.searchbar-textbox:not(:hover):not([focused=true]) {
+  opacity: .90 !important;
+}
+
+#addons-page,#search-list,.hud-box,#TabsToolbar[orient="vertical"] {
+  -moz-appearance: none !important;
+  background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+.tabs-newtab-button{
+	background: linear-gradient(#d6dfeb 1px,#cad4e2,#abb4c2) !important;
+}
+
+.tabs-newtab-button:hover{
+	background: linear-gradient(#e6ecf5 1px,#dee7f1,#c7d0de) !important;
+}
+
+.tabs-newtab-button[selected=true]{
+	background: linear-gradient(#fefeff 1px,#fcfdfe,#e7edf6) !important;
+}
+
+.tabs-newtab-button{
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	border: 1px solid #a0a0a0 !important;
+}
+
+tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab){
+	background: linear-gradient(#d6dfeb 1px,#cad4e2,#abb4c2) !important;
+}
+
+tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab):hover{
+	background: linear-gradient(#e6ecf5 1px,#dee7f1,#c7d0de) !important;
+}
+
+tab:not(.tabbrowser-tab):not(.tabgroupsmanager-grouptab)[selected=true]{
+	background: linear-gradient(#fefeff 1px,#fcfdfe,#e7edf6) !important;
+}
+
+tab.tabgroupsmanager-grouptab{
+	background: linear-gradient(#d6dfeb 1px,#cad4e2,#abb4c2);
+}
+
+tab.tabgroupsmanager-grouptab:hover{
+	background: linear-gradient(#e6ecf5 1px,#dee7f1,#c7d0de);
+}
+
+tab.tabgroupsmanager-grouptab[selected=true]{
+	background: linear-gradient(#fefeff 1px,#fcfdfe,#e7edf6);
+}
+
+#navigator-toolbox[tabsontop=false] toolbar:not(#PersonalToolbar):not(#nav-bar):not(titlebar){
+	border-bottom: none !important;
+}
+
+.paneSelector,.tctoptabs,#TM_ButtonBox {
+	-moz-appearance: none !important;
+	background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+.viewSelector,.viewGroupWrapper,
+prefpane,prefpane>tabbox>tabpanels{
+	-moz-appearance: none !important;
+	background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+wizardpage {
+  -moz-appearance: none !important;
+  background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+.wizard-header {
+  -moz-appearance: none !important;
+  background: linear-gradient(to top,#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+.wizard-buttons {
+  -moz-appearance: none !important;
+ background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+#fireftp-main-window,prefwindow,dialog,.windowDialog{
+	-moz-appearance: none !important;
+	background: #abb4c2 !important;
+}
+
+.windowDialog prefpane{
+	-moz-appearance: none !important;
+	background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+#mainDeck  {
+  background: #cad4e2 !important;
+}
+
+#downloadManager,#xpinstallConfirm{
+	-moz-appearance: none !important;
+	background:#abb4c2 !important;
+}
+
+.panel-arrowcontent {
+  -moz-appearance: none !important;
+  background: linear-gradient(to bottom,#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+popup:not(#autoscroller), menupopup,tooltip:not([id^="forecastfox-"]){
+	-moz-appearance: none !important;
+	background: #f1f5fb !important;
+}
+
+statusbarpanel{
+	-moz-appearance: none !important;
+	background:none !important;
+}
+
+#CustomizeToolbarWindow {
+  -moz-appearance: none !important;
+  color: black !important;
+  background: #f1f5fb !important;
+}
+#palette-box {
+  -moz-appearance: none !important;
+  border: 1px solid black !important ;
+  background-color: #f7f9fd !important;
+}
+
+#navigator-toolbox[tabsontop=false] .tabbrowser-tabs:not([treestyletab-mode="vertical"]) .tabbrowser-tab,
+#navigator-toolbox[tabsontop=false] .tabbrowser-tabs:not([treestyletab-mode="vertical"]) .tabs-newtab-button{
+	margin-top:2px !important;
+}
+
+#content browser{
+	border-right: 1px solid #587090!important;
+	border-left: 1px solid #587090 !important;
+}
+
+#addon-bar{
+	-moz-appearance: none !important;
+    background: url("chrome://browser/skin/icons/defstatus.png") !important;
+	border-bottom-left-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+	border: 1px solid #587090 !important;
+}
+
+#status-bar{
+	-moz-appearance: none !important;
+    background: linear-gradient(#e7edf5,#d0dbec) !important;
+}
+
+.browserContainer > findbar,
+#FindToolbar{
+	-moz-appearance: none !important;
+	background: #e7edf5 !important;
+	border-right: 1px solid #587090!important;
+	border-left: 1px solid #587090 !important;
+	border-top: 1px solid #587090 !important;
+}
+
+#navigator-toolbox[tabsontop=true] toolbar:not(#PersonalToolbar):not(#TabsToolbar):not(.devtools-tabbar){
+	border-bottom: none !important;
+}
+
+#navigator-toolbox[tabsontop=true] #PersonalToolbar{
+	-moz-appearance: none !important;
+	background: #cfdbec !important;
+	border-top: 0px !important;
+	border-right: 1px solid #587090!important;
+	border-left: 1px solid #587090 !important;
+	border-bottom: 0px !important;
+	padding-top:2px;
+	padding-bottom:3px;
+}
+
+#navigator-toolbox[tabsontop=true] #TabsToolbar{
+	border: none !important;
+	-moz-appearance: none !important;
+	padding-left:3px !important;
+	padding-right:3px !important;
+}
+	
+#navigator-toolbox[tabsontop=true] #nav-bar{
+	-moz-appearance: none !important;
+	background: linear-gradient(#e7edf5,#d3deee,#cfdbec) !important;
+	border-right: 1px solid #587090!important;
+	border-left: 1px solid #587090 !important;
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	border-top: none !important;
+}
+
+#navigator-toolbox[tabsontop=true] .tabbrowser-tab{
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	border-bottom: 0px !important;
+}
+
+#navigator-toolbox[tabsontop=false] .tabbrowser-tab{
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+}
+
+#navigator-toolbox[tabsontop=false] toolbar:not(#PersonalToolbar):not(#TabsToolbar){
+	border-bottom: none !important;
+}
+
+window[windowtype="devtools:scratchpad"] menubar,
+window:not(#main-window) menubar {
+	-moz-appearance: none !important;
+	background: linear-gradient(#cfdbec,#c5d1e1) !important;
+}
+
+@media all and (-moz-windows-compositor) {
+	#navigator-toolbox[tabsontop=true] menubar{
+		-moz-appearance: none !important;
+		background-image: url("chrome://browser/skin/icons/active_glass.png") !important;
+		border-radius: 4px !important;
+		margin-top:1px !important;
+		margin-bottom:1px !important;
+	}
+
+	#navigator-toolbox[tabsontop=false] menubar{
+		-moz-appearance: none !important;
+		background-image: url("chrome://browser/skin/icons/active_glass.png") !important;
+		border-radius: 4px !important;
+		margin-top:1px !important;
+		margin-bottom:1px !important;
+	}
+
+	#navigator-toolbox[tabsontop=false] #PersonalToolbar{
+		-moz-appearance: none !important;
+		background: linear-gradient(#e7edf5,#d3deee,#cfdbec) !important;
+		border-top: 1px solid #587090 !important;
+		border-bottom: none !important;
+		border-right: 1px solid #587090!important;
+		border-left: 1px solid #587090 !important;
+		border-top-left-radius: 4px !important;
+		border-top-right-radius: 4px !important;
+		padding-top:2px;
+		padding-bottom:1px;
+	}
+	
+	#navigator-toolbox[tabsontop=false] #TabsToolbar{
+		border-top: none !important;
+		border-right: 1px solid #587090 !important;
+		border-left: 1px solid #587090 !important;
+		-moz-appearance: none !important;
+		background: linear-gradient(#cfdbec,#c5d1e1) !important;
+	}
+		
+	#navigator-toolbox[tabsontop=false] #nav-bar{
+		-moz-appearance: none !important;
+		background-image: none !important;
+		background: none !important;
+		border-top: 1px solid transparent !important;
+		border-right: 1px solid transparent !important;
+	}
+	#main-window:not(:-moz-lwtheme)[inFullscreen=true] #TabsToolbar {
+		-moz-appearance: none;
+		background: #cfdbec !important;
+	}
+}
+
+@media not all and (-moz-windows-compositor) {
+	#toolbar-menubar{
+	  -moz-appearance:none !important;
+	  background: #d0dbec !important;
+	  border: 0 !important;
+	}
+	
+	#titlebar{
+	  -moz-appearance:none !important;
+	  background: #d0dbec !important;
+	}
+
+	#navigator-toolbox[tabsontop=true] #TabsToolbar{
+	  -moz-appearance: none !important;
+	  background: #d0dbec !important;
+	  margin-bottom: -1px !important;
+	}
+
+	#navigator-toolbox[tabsontop=true] menubar{
+		-moz-appearance: none !important;
+		border-radius: 4px !important;
+		margin-top:1px !important;
+		margin-bottom:1px !important;
+	}
+
+	#navigator-toolbox[tabsontop=false] menubar{
+		-moz-appearance: none !important;
+		border-radius: 4px !important;
+		margin-top:1px !important;
+		margin-bottom:1px !important;
+	}
+
+	#navigator-toolbox[tabsontop=false] #PersonalToolbar{
+		-moz-appearance: none !important;
+		background: #cfdbec !important;
+		border-top: none !important;
+		border-bottom: none !important;
+		border-right: 1px solid #587090!important;
+		border-left: 1px solid #587090 !important;
+		padding-top:2px;
+		padding-bottom:1px;
+	}
+
+	#navigator-toolbox[tabsontop=false] #TabsToolbar{
+		border-top: none !important;
+		border-right: 1px solid #587090 !important;
+		border-left: 1px solid #587090 !important;
+		-moz-appearance: none !important;
+		background: #cfdbec !important;
+	}
+		
+	#navigator-toolbox[tabsontop=false] #nav-bar{
+		-moz-appearance: none !important;
+		background: linear-gradient(#e7edf5,#d3deee,#cfdbec) !important;
+		border-right: 1px solid #587090!important;
+		border-left: 1px solid #587090 !important;
+		border-top-left-radius: 4px !important;
+		border-top-right-radius: 4px !important;
+		border-top: 1px solid #587090 !important;
+	}
+}
+
+#navigator-toolbox toolbar:not(#nav-bar):not(#TabsToolbar):not(#aios-toolbar):not(#vertical-toolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(.devtools-tabbar){
+	background: #cfdbec !important;
+	border-top: 0px solid #cfdbec !important;
+	border-right: 1px solid #587090 !important;
+	border-left: 1px solid #587090 !important;
+}
+
+toolbar:not(#personal-titlebar):not(#nav-bar):not(#TabsToolbar):not(#aios-toolbar):not(#vertical-toolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(.devtools-tabbar){
+	background: #cfdbec !important;
+}
+
+#noiaop menupopup menuitem[_moz-menuactive]:not([disabled]){
+	text-shadow:0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000,
+				0 0 0.2em #000,0 0 0.2em #000,0 0 0.2em #000 !important;
+}
+
+#allTabs-panel {
+  background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+/* Torrent Finder Toolbar */
+#TFTB-Options,#TFTB-MoreOptions{
+	-moz-appearance:none !important;
+	background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+#aios-toolbar, #vertical-toolbar{
+	background: linear-gradient(#d6dfeb,#cad4e2,#abb4c2) !important;
+}
+
+/*Ghostery*/
+#ghostery-panel .panel-arrowcontent {
+	background: white !important;
+}

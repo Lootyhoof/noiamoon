@@ -1,0 +1,28 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-tab progressmeter.tab-progress {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  min-width: 0px !important;
+  min-height: 0px !important;
+  border: none;
+  display: none;
+}
+
+.tabbrowser-tab .progress-bar{
+	min-height:13px !important;
+	margin-left:20px !important;
+	margin-right:15px !important;
+	margin-top:2px !important;
+	border:none !important;
+}
+
+.tabbrowser-tabs[useProgressColor=true]  .tab-throbber {
+	list-style-image: url(chrome://browser/skin/icons/blank.png) !important;
+}
+
+.tabbrowser-tabs[useProgressColor=true] .tab-throbber[busy] + .tab-icon-image {
+  display: -moz-box !important;
+}

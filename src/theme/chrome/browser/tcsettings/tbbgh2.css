@@ -1,0 +1,71 @@
+toolbarbutton:hover:not([checked]) > image,
+#feed-button:hover  > image{
+    border-radius: 100px !important;
+    background-image: radial-gradient(hsla(210,100%,40%,0.9) 10%, hsla(210,100%,65%,.7) 65%, hsla(200,100%,67%,.6) ) !important;
+    box-shadow:
+		0px 0px 3px 0px hsla(210,100%,65%,0.8),
+		0px 0px 6px 2px hsla(210,100%,65%,0.7),
+		0px 0px 8px 5px hsla(210,100%,80%,1)!important;
+    transition: background-image 0.4s ease-in, box-shadow 0.1s ease-in !important;
+}
+
+#feed-button:hover > image{
+background:url("chrome://browser/skin/feeds/feed.png") center center no-repeat !important;
+  width:32px !important;
+  height:32px !important;
+}
+toolbar[iconsize="small"] #feed-button:hover > image{
+background:url("chrome://browser/skin/feeds/feed24.png") center center no-repeat !important;
+  width:24px !important;
+  height:24px !important;
+}
+
+#forward-button:not([disabled="true"]):hover,
+#back-button:not([disabled="true"]):hover,
+#reload-button:not([disabled="true"]):hover,
+#stop-button:not([disabled="true"]):hover,
+#home-button:not([disabled="true"]):hover,
+#print-button:not([disabled="true"]):hover,
+#new-tab-button:not([disabled="true"]):hover,
+#new-window-button:not([disabled="true"]):hover ,
+#downloads-button:not([disabled="true"]):hover,
+#bookmarks-button:not([disabled="true"]):hover,
+#history-button:not([disabled="true"]):hover,
+#cut-button:not([disabled="true"]):hover,
+#copy-button:not([disabled="true"]):hover,
+#paste-button:not([disabled="true"]):hover,
+#fullscreen-button:not([disabled="true"]):hover,
+#nav-bar #noiaop-toolbar-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+
+toolbar[iconsize="small"] #back-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #forward-button:not([disabled="true"]):hover ,
+toolbar[iconsize="small"] #reload-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #stop-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #home-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #print-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #downloads-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #new-tab-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #new-window-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #bookmarks-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #history-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #cut-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #copy-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #paste-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #fullscreen-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #nav-bar  #noiaop-toolbar-button:not([disabled="true"]):hover{
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#addon-bar #print-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+#bookmarks-menu-button:hover {
+  list-style-image: url("chrome://browser/skin/icons/bookmark32.png") !important;
+}
+
+toolbar[iconsize="small"] #bookmarks-menu-button:hover {
+  list-style-image: url("chrome://browser/skin/icons/bookmark24.png") !important;
+}

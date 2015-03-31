@@ -1,0 +1,34 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+menupopup > menu[_moz-menuactive]:not([disabled]),
+menupopup > menuitem[_moz-menuactive]:not([disabled]),
+popup > menu[_moz-menuactive]:not([disabled]),
+popup > menuitem[_moz-menuactive]:not([disabled]),
+menupopup menuitem[_moz-menuactive],
+menupopup menu[_moz-menuactive],
+.splitmenu-menuitem[_moz-menuactive],
+treechildren::-moz-tree-row(selected,focus),
+treechildren::-moz-tree-row(hover),
+treechildren::-moz-tree-row(selected),
+treechildren::-moz-tree-row(hover,selected) {
+  background: url("chrome://browser/skin/icons/Bookmark-background-purple.png") repeat-x !important;
+  border: 1px solid #cda2f8 !important;
+  color: white !important;
+}
+
+menupopup menuitem[_moz-menuactive][disabled],
+menupopup menu[_moz-menuactive][disabled],
+.splitmenu-menuitem[_moz-menuactive][disabled]{
+	text-shadow: none !important;
+}
+
+treechildren::-moz-tree-cell-text(selected, focus),
+treechildren::-moz-tree-cell-text(selected),
+treechildren::-moz-tree-cell-text(hover),
+treechildren::-moz-tree-cell-text(hover,selected) {
+  color: white !important;
+}
+treechildren::-moz-tree-cell-text(selected),
+treechildren::-moz-tree-cell-text(selected, focus) {
+  font-weight:bold !important;
+}

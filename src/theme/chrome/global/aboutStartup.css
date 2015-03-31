@@ -1,0 +1,46 @@
+table {
+  border-radius: 5px;
+}
+
+th:first-child {
+  border-top-left-radius: 4px;
+}
+
+th:last-child {
+  border-top-right-radius: 4px;
+}
+
+#graphs, #tables {
+  margin-top: 12px;
+}
+
+#graph, #overview {
+  width: 100%;
+  height: 350px;
+  margin: 0;
+}
+
+#overview {
+  height: 100px;
+}
+
+.toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 6em;
+  text-align: right;
+  font-size: smaller;
+}
+
+#showgraph,
+#tables {
+  display: none;
+}
+
+.legend table {
+  width: auto;
+}
+
+#tables > table {
+  margin-top: 1em;
+}

@@ -1,0 +1,12 @@
+content	noiaop					content/
+skin    noiaop classic/1.0		skin/
+
+#locales
+locale noiaop	de				locale/de/
+locale noiaop	en-US			locale/en-US/
+locale noiaop	fr				locale/fr/
+locale noiaop	it				locale/it/
+locale noiaop	sv-SE			locale/sv-SE/
+
+overlay chrome://browser/content/browser.xul			chrome://noiaop/content/overlay.xul
+style   chrome://global/content/customizeToolbar.xul	chrome://noiaop/content/overlay.css

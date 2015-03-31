@@ -1,0 +1,53 @@
+/*Style for some about pages*/
+@-moz-document 	url(about:newtab){
+
+	#newtab-scrollbox:not([page-disabled]):not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]){
+	  -moz-appearance: none !important;
+	  background: radial-gradient(#9a9a9a,#1d1d1d) #9a9a9a !important;
+	}
+
+}
+
+@-moz-document url("about:permissions") {
+
+	#permissions-box,#sites-box { 
+	  background: linear-gradient(#434343,#1d1d1d) repeat-x #1d1d1d !important;
+	  color:white !important;
+	}
+
+}
+	
+@-moz-document url("about:config") {
+
+	#config { 
+	  background: linear-gradient(#434343,#1d1d1d) repeat-x #1d1d1d !important;
+	  color:white !important;
+	}
+
+}
+
+@-moz-document  url("about:"),
+				url("about:about"),
+				url("about:buildconfig"),
+				url("about:cache"),
+				url("about:compartments"),
+				url("about:crashes"),
+				url("about:credits"),
+				url("about:license"),
+				url("about:memory"),
+				url("about:privatebrowsing"),
+				url("about:rights"),
+				url("about:robots"),
+				url("about:sessionrestore"),
+				url("about:support"),
+				url("about:sync-log"),
+				url("about:sync-progress"),
+				url("about:preferences"),
+				url("about:networking"),
+				url("about:welcomeback"){
+	:root{
+	  background: linear-gradient(#434343,#1d1d1d) repeat-x #1d1d1d !important;
+	  color:white !important;
+	}
+	
+}

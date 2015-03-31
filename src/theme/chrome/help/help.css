@@ -1,0 +1,188 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+toolbar toolbarbutton {
+  -moz-box-orient: horizontal !important;
+  min-width: 0px;
+  margin: 0 !important;
+  padding: 4px 5px;  
+}
+
+/* Hide labels for the toolbar because we really don't need them what with the
+   tooltips */
+#HelpToolbar .toolbarbutton-text {
+  display: none;
+}
+
+/* With no labels, we don't need the margin on the icon that separates it
+   from the label */
+#HelpToolbar .toolbarbutton-icon {
+  -moz-margin-end: 0;
+}
+
+/* Set the minimum sidebar width so the help contents aren't squeezed together.*/
+#help-sidebar { min-width: 15em; width: 20em; max-width: 25em; }
+
+toolbar[mode="icons"] .toolbarbutton-text {
+  display: none !important;
+}
+toolbar[mode="text"] .toolbarbutton-icon {
+  display: none !important;
+}
+toolbar[mode="text"] .toolbarbutton-text {
+  padding: 0px !important;
+  margin: 3px 5px !important;
+}
+
+#help-back-button > .toolbarbutton-menubutton-dropmarker {
+  display: none !important;
+}
+
+#help-forward-button > .toolbarbutton-menubutton-dropmarker {
+  display: none !important;
+}
+
+#help-find-button{
+  list-style-image: url('chrome://browser/skin/icons/search.png') !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-find-button:hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-find-button:hover:active {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-find-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#help-sidebar-button[label="Hide Sidebar"] {
+  list-style-image: url('chrome://browser/skin/icons/redo.png') !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-sidebar-button[label="Hide Sidebar"]:hover,
+#help-sidebar-button[label="Hide Sidebar"][checked="true"] {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-sidebar-button[label="Hide Sidebar"][disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#help-sidebar-button[label="Show Sidebar"] {
+  list-style-image: url('chrome://browser/skin/icons/next.png') !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-sidebar-button[label="Show Sidebar"]:hover,
+#help-sidebar-button[label="Show Sidebar"][checked="true"] {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-sidebar-button[label="Show Sidebar"][disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#help-toolbar-customization {
+  list-style-image: url("chrome://browser/skin/icons/new_window.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-toolbar-customization:hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-toolbar-customization:hover:active {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#help-back-button {
+  list-style-image: url("chrome://browser/skin/icons/back.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-back-button[buttonover="true"] {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-back-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+#help-back-button > .menubutton-dropmarker-icon {
+ display: none !important;
+}
+
+#help-forward-button {
+  list-style-image: url("chrome://browser/skin/icons/forward.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-forward-button[buttonover="true"] {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-forward-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+#help-forward-button > .menubutton-dropmarker-icon {
+ display: none !important;
+}
+
+#help-home-button {
+ list-style-image: url('chrome://browser/skin/icons/home.png') !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-home-button:hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-home-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#help-print-button {
+  list-style-image: url('chrome://browser/skin/icons/print.png') !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-print-button:hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-print-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#help-zoom-small-button {
+  list-style-image: url(chrome://browser/skin/icons/zoom-small.png) !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-zoom-small-button:hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#help-zoom-large-button {
+  list-style-image: url(chrome://browser/skin/icons/zoom-large.png) !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#help-zoom-large-button:hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#help-throbber {
+  -moz-appearance: none !important;
+  -moz-user-focus: ignore !important;
+  -moz-box-pack: center;
+  border: none !important;
+  min-width: 0 !important;
+  background: transparent !important;
+  list-style-image: url("chrome://browser/skin/icons/throbber-small.png") !important;
+}
+#help-throbber .button-box {
+  background: none !important;
+}
+#help-throbber[busy="true"] {
+  list-style-image: url("chrome://browser/skin/icons/throbber-small.gif") !important;
+}
+
+.sbtab-twisty {
+  max-width:12px !important;
+  max-height:12px !important;
+  margin: 2px !important;
+  list-style-image: url("chrome://global/skin/button/twisty.png") !important;
+}
+
+.box-texttab[selected="true"] .sbtab-twisty{
+  list-style-image: url("chrome://global/skin/button/twisty-open.png") !important;
+}
+
+#context-copy[disabled="true"] {
+  visibility: collapse;
+}

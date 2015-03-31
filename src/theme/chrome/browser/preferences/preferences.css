@@ -1,0 +1,233 @@
+
+prefwindow#BrowserPreferences {
+	padding: 0 !important;
+	width: auto !important;
+	min-width: 700px !important;
+	height: auto !important;
+	min-height: 490px !important;
+}
+
+#BrowserPreferences .prefWindow-dlgbuttons {
+	padding-top: 0 !important;
+}
+
+tabpanels {
+	padding: 0;
+}
+
+.windowDialog {
+	width: auto !important;
+	padding: 10px;
+}
+
+/* Pane Buttons/Icons */
+
+radio[pane=paneMain] {
+	list-style-image: url("chrome://browser/skin/preferences/main1.png");
+}
+radio[pane=paneMain]:hover  {
+	list-style-image: url("chrome://browser/skin/preferences/main.png");
+    background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=paneMain][selected="true"] {
+	list-style-image: url("chrome://browser/skin/preferences/main.png");
+    background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+radio[pane=panePrivacy] {
+	list-style-image: url("chrome://browser/skin/preferences/privacy1.png");
+}
+radio[pane=panePrivacy]:hover {
+	list-style-image: url("chrome://browser/skin/preferences/privacy.png");
+    background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=panePrivacy][selected="true"]  {
+	list-style-image: url("chrome://browser/skin/preferences/privacy.png");
+    background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+radio[pane=paneContent] {
+	list-style-image: url("chrome://browser/skin/preferences/content1.png");
+}
+radio[pane=paneContent]:hover {
+	list-style-image: url("chrome://browser/skin/preferences/content.png");
+    background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=paneContent][selected="true"]  {
+	list-style-image: url("chrome://browser/skin/preferences/content.png");
+    background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+radio[pane=paneTabs] {
+	list-style-image: url("chrome://browser/skin/preferences/tabs1.png");
+}
+radio[pane=paneTabs]:hover {
+	list-style-image: url("chrome://browser/skin/preferences/tabs.png");
+    background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=paneTabs][selected="true"]  {
+	list-style-image: url("chrome://browser/skin/preferences/tabs.png");
+    background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+radio[pane=paneAdvanced] {
+	list-style-image: url("chrome://browser/skin/preferences/advanced1.png");
+}
+radio[pane=paneAdvanced]:hover {
+	list-style-image: url("chrome://browser/skin/preferences/advanced.png");
+    background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=paneAdvanced][selected="true"]  {
+	list-style-image: url("chrome://browser/skin/preferences/advanced.png");
+    background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+radio[pane=paneApplications] {
+	list-style-image: url("chrome://browser/skin/preferences/applications1.png");
+}
+radio[pane=paneApplications]:hover {
+	list-style-image: url("chrome://browser/skin/preferences/applications.png");
+    background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=paneApplications][selected="true"]  {
+	list-style-image: url("chrome://browser/skin/preferences/applications.png");
+    background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+radio[pane=paneSecurity] {
+	list-style-image: url("chrome://browser/skin/preferences/security1.png");
+}
+radio[pane=paneSecurity]:hover {
+	list-style-image: url("chrome://browser/skin/preferences/security.png");
+    background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=paneSecurity][selected="true"]  {
+	list-style-image: url("chrome://browser/skin/preferences/security.png");
+    background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+radio[pane=paneSync] {
+  list-style-image: url(chrome://browser/skin/preferences/sync1.png);
+}
+radio[pane=paneSync]:hover {
+	list-style-image: url(chrome://browser/skin/preferences/sync.png);
+	background: Transparent url("chrome://browser/skin/preferences/hover.png") no-repeat center center;
+}
+radio[pane=paneSync][selected=true]  {
+	list-style-image: url(chrome://browser/skin/preferences/sync.png);
+	background: Transparent url("chrome://browser/skin/preferences/select.png") no-repeat center center;
+}
+
+
+/* Applications pane ----- */
+#BrowserPreferences[animated="true"] #handlersView {
+	height: 25em;
+}
+
+#BrowserPreferences[animated="false"] #handlersView {
+	-moz-box-flex: 1;
+}
+
+description {
+	margin-bottom: 4px !important;
+	font: small-caption;
+	font-weight: normal;
+	line-height: 1.3em;
+}
+
+#tabPrefsBox {
+	margin: 12px 4px;
+}
+
+#paneMain description,
+#paneContent description,
+#paneAdvanced description,
+#paneSecurity description {
+  /*margin:0;*/
+}
+
+#paneContent {
+	padding-top: 8px;
+}
+
+#paneContent row {
+	-moz-box-align: center;
+	padding: 2px 4px;
+}
+
+#popupPolicyRow, 
+#enableImagesRow, 
+#enableSoftwareInstallRow {
+	margin-bottom: 4px !important;
+	padding-bottom: 4px !important;
+	border-bottom: 2px solid;
+	-moz-border-bottom-colors: rgba(255,255,255,1.0) rgba(0,0,0,.23);
+}
+
+#browserUseCurrent, #browserUseBookmark, #browserUseBlank {
+	margin-top: 10px;
+}
+
+#advancedPrefs {
+	margin: 0 8px;
+}
+
+#privacyPrefs {
+	padding: 0 4px;
+}
+
+#privacyPrefs > tabpanels {
+	padding: 18px 10px 10px;
+}
+
+#OCSPDialogPane {
+
+}
+
+/** Privacy Pane */
+deck#historyPane > vbox > hbox > vbox > description {
+	max-width: 500px !important;
+}
+ 
+.inline-link {
+	color: #144fae;
+	text-shadow: rgba(255,255,255,.85) 0 1px;
+	text-decoration: underline;
+}
+ 
+.inline-link:not(:focus) {
+	outline: 1px dotted transparent;
+}
+
+/** Update Preferences */
+ #autoInstallOptions {
+	-moz-margin-start: 20px;
+}
+
+.updateControls {
+	-moz-margin-start: 10px;
+}
+
+/** Clear Private Data */
+#SanitizeDialogPane > groupbox {
+	margin-top: 0;
+}
+
+/* Sync pane ----- */
+
+#syncDesc {
+	padding: 0 8em;
+}
+
+#accountCaptionImage {
+	list-style-image: url("chrome://mozapps/skin/profile/profileicon.png");
+}
+
+#syncAddDeviceLabel {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#syncEnginesList {
+	height: 10em;
+}

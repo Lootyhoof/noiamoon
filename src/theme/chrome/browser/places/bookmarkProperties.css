@@ -1,0 +1,61 @@
+/**** folder menulist ****/
+.folder-icon > .menulist-label-box > .menulist-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.folder-icon > .menu-iconic-left {
+  display: -moz-box;
+}
+
+.folder-icon {
+  list-style-image: url("chrome://browser/skin/icons/folder_closed.png") !important;
+}
+
+/**** expander ****/
+#expander {
+  min-width: 0;
+}
+
+.up {
+  list-style-image: url("chrome://global/skin/arrow/arrow-up.gif");
+}
+
+.up:hover {
+  list-style-image: url("chrome://global/skin/arrow/arrow-up-hov.gif");
+}
+
+.down {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+
+.down:hover {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
+}
+
+/**** name picker ****/
+
+menulist#namePicker[droppable="false"] {
+  -moz-appearance: none;
+  cursor: text;
+  margin: 2px 4px;
+  border: none;
+  -moz-border-left-colors: #DBDBDB white ;
+  background:url("chrome://global/skin/textbox/textbox-body.png") repeat-x white ;
+  color: #000000;
+}
+
+menulist#namePicker[droppable="false"] > .menulist-editable-box {
+  -moz-appearance: none;
+  padding: 2px 2px 3px 4px;  
+}
+
+menulist#namePicker[droppable="false"] > .menulist-dropmarker > .dropmarker-icon,
+menulist#namePicker[droppable="false"] > menupopup {
+  display: none;
+}
+
+menulist#namePicker[droppable="false"] > .menulist-dropmarker {
+	width: 4px;
+	margin-right: 0;
+}

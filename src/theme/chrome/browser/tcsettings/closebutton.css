@@ -1,0 +1,21 @@
+/* CSS Document */
+
+.tabs-closebutton {
+  list-style-image: url("chrome://browser/skin/icons/closes1.png") !important;
+}
+
+.tab-close-button {
+  list-style-image: url("chrome://browser/skin/icons/closes1.png") !important;
+}
+
+.findbar-closebutton {
+  list-style-image: url("chrome://browser/skin/icons/closes1.png") !important;
+}
+
+.messageCloseButton {
+  list-style-image: url("chrome://browser/skin/icons/closes1.png") !important;
+}
+
+.textbox-input-closebutton {
+  list-style-image: url("chrome://browser/skin/icons/closes1.png") !important;
+}

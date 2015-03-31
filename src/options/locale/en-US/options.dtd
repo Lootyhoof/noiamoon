@@ -1,0 +1,214 @@
+<!ENTITY NoiaOptions                "Noia Moon Theme Manager">
+<!ENTITY Options                    "Options">
+<!ENTITY Enable                     "On">
+<!ENTITY TweaksOff                  "Switch off tweaks and options">
+
+<!ENTITY Skinst                     "Skins &amp; Tabs">
+<!ENTITY Fontt                      "Fonts">
+<!ENTITY Tweaks                   	"Tweaks">
+<!ENTITY Personast                  "Personas">
+<!ENTITY PageP                   	"Pro">
+<!ENTITY About                      "About">
+
+<!ENTITY Info                       "Info">
+
+<!ENTITY Main_skins_set             "Main settings for skins and tabs">
+<!ENTITY Gray                   	"Gray (default) = Skins disabled">
+<!ENTITY Graylight                  "Gray (brighter toolbars)">
+<!ENTITY Graydark                   "Gray (darker toolbars)">
+<!ENTITY GrayFF3                    "Gray (like on Firefox 3)">
+<!ENTITY Black                      "Black">
+<!ENTITY BlackFF3                   "Black (like on Firefox 3)">
+<!ENTITY Blue                       "Blue">
+<!ENTITY BlueFF3                    "Blue (like on Firefox 3)">
+<!ENTITY Ff4def                     "Firefox Windows 7 skin">
+<!ENTITY Glass1                  	"Glass (toolbars) (Windows 7/Vista only)">
+<!ENTITY Glass2                 	"Glass (full) (Windows 7/Vista only) (restart Pale Moon recommended)">
+
+<!ENTITY Tabs_custom				"CUSTOMIZABLE TABS *   or   Personas tabs">
+<!ENTITY Tabs_gray					"Gray tabs (classic)">
+<!ENTITY Tabs_gray_m				"Gray modern tabs (default)">
+<!ENTITY Tabs_gray_c				"Gray Chrome tabs **">
+<!ENTITY Tabs_black                 "Black tabs">
+<!ENTITY Tabs_blue                  "Blue tabs">
+<!ENTITY Tabs_ff4def                "Firefox Windows 7 tabs">
+<!ENTITY Tabs_glass1                "Glass tabs [v1]">
+<!ENTITY Tabs_glass2                "Glass tabs [v2]">
+<!ENTITY Tabs_glass3                "Glass tabs [v3]">
+<!ENTITY Noiatabs                   "Special tabs **">
+<!ENTITY Noiatabs1                  "Special tabs [v1]">
+<!ENTITY Noiatabs2                  "Special tabs [v2] (also for ColorfulTabs)">
+<!ENTITY Noiatabs3                  "Special tabs [v3]">
+<!ENTITY Noiatabs4                  "Special tabs [v4] (also for ColorfulTabs)">
+<!ENTITY Noiatabs5                  "Special tabs [v5] (also for ColorfulTabs)">
+<!ENTITY Ntabs0                     "* Required by ColorfulTabs, TabMixPlus etc. to colorize tabs">
+<!ENTITY Ntabs1                     "** No &quot;multirow&quot; or &quot;tab-progress&quot; possible.">
+
+<!ENTITY Custom0                    "ColorfulTabs, TabMixPlus and TabUtilities add-ons REQUIRE">
+<!ENTITY Custom1                    "the &quot;CUSTOMIZABLE TABS&quot; option to COLORIZE tabs!">
+
+<!ENTITY Personagetlabel            "Find a Persona on:">
+<!ENTITY Or				            "or">
+<!ENTITY Persona01                  "1) Install Persona and restart Pale Moon">
+<!ENTITY Persona02                  "2) Select Noia Moon theme (Add-ons Manager) and restart Pale Moon">
+<!ENTITY Persona03                  "3) Select &quot;Persona&quot; option on this tab and restart Pale Moon">
+<!ENTITY Persona04					"Use last enabled Persona with Noia Moon theme">
+<!ENTITY Persona05               	"Repeat steps for another Persona! Restart Pale Moon, if asked.">
+<!ENTITY Personaimglabel            "Example (Firefox Blue Abstract Persona)">
+
+<!ENTITY Roxp                       "Rounded popup menus">
+<!ENTITY Noactblue                  "Remove blue color from hovered and active tabs">
+<!ENTITY Hidetabbarbg				"Remove tab toolbars background image">
+<!ENTITY Cleaner                    "Hide lines between toolbars">
+<!ENTITY Dd                         "Semi-transparent popup menus">
+<!ENTITY Dddb                       "Black popup menus">
+<!ENTITY Fullglassdd                "Glass popup menus">
+<!ENTITY Fullglassnopref            "Less transparency on prefwindows &amp; dialogs">
+<!ENTITY Fullglasstoolt				"Less transparency on tooltips">
+
+<!ENTITY Toolbar                    "Top toolbars">
+<!ENTITY Fontcolor                  "Color">
+<!ENTITY Shadow                     "Shadow">
+<!ENTITY Tabs                       "Tab (normal)">
+<!ENTITY Tabsacthov                 "Tab (active/hover)">
+<!ENTITY Statusbar                  "Bottom toolbars &amp; findbars">
+<!ENTITY Ddmenu                     "Popup menus">
+<!ENTITY Fontinfo                   "Info">
+<!ENTITY Fontinfo1                  "Selecting a skin will reset colors and shadows.">
+<!ENTITY Fontinfo2                  "Tabs color settings are not compatible with ColorfulTabs extension.">
+
+<!ENTITY Page1                   	"Main">
+<!ENTITY Page2                   	"Tabs">
+<!ENTITY Page3                   	"Tabs 2">
+<!ENTITY Page4                   	"Toolbar">
+<!ENTITY Page5                   	"Misc">
+
+<!ENTITY Tooltippage1              	"Buttons and scrollbars">
+<!ENTITY Tooltippage2             	"Tab sizes and graphics">
+<!ENTITY Tooltippage3              	"Special tab shapes">
+<!ENTITY Tooltippage4              	"Nav. Buttons and toolbar icons">
+<!ENTITY Tooltippage5              	"Misc settings">
+
+<!ENTITY Ffbutton                   "Pale Moon button settings (Windows/Linux)">
+<!ENTITY Appbutnoia                 "Transparent (Noia Moon default)">
+<!ENTITY Appbutorg                  "Blue (Pale Moon default)">
+<!ENTITY Appbutaurora               "Aurora (Firefox Aurora builds)">
+<!ENTITY Appbutnightly              "Nightly (Firefox Nightly builds)">
+<!ENTITY Appbutat                   "Always transparent (normal and private browsing)">
+<!ENTITY Appbutao                   "Always blue (normal and private browsing)">
+<!ENTITY Appbut_nt                  "Display icon only">
+<!ENTITY Appbut                     "Display icon and text">
+<!ENTITY Appbutdm                   "Remove dropmarker">
+
+<!ENTITY Buttons                    "Buttons">
+<!ENTITY Butdark                    "Dark buttons">
+<!ENTITY Butglass                   "Transparent buttons">
+<!ENTITY Butsemiround               "Partly rounded button corners">
+
+<!ENTITY Scrollbars                 "Scrollbars (reload page after change)">
+<!ENTITY Scrollbars1                "Default (Noia Moon)">
+<!ENTITY Scrollbars2                "Dark (Noia Moon)">
+<!ENTITY Scrollbarsdef              "Pale Moon default or from &quot;NewScrollbars&quot; add-on">
+<!ENTITY Scrollbarslink             "NewScrollbars add-on">
+
+<!ENTITY Taboptions                 "Tab options (check settings guide)">
+<!ENTITY Tabinfo0	                "Some options may be incompatible with other tab add-ons.">
+<!ENTITY RoundTab                   "Rounded tabs">
+<!ENTITY RoundtTab                  "Halfrounded upper tab corners">
+<!ENTITY CloseBut                   "Alternative close-button">
+<!ENTITY CloseBut_alw               "Always show solid close-button icon (on tabs 2-7)">
+<!ENTITY CloseButbig                "Alternative bigger tab close-button">
+<!ENTITY CloseButhide               "Hide tab close-button on non-focussed tabs">
+<!ENTITY Nbtabh                     "Remove bold font from hovered tab">
+<!ENTITY Nbtaba                     "Remove bold font from active tab">
+<!ENTITY Tabtextmargin              "More space between icons and tab text">
+<!ENTITY Hightabs                   "Increase tab height (restart Pale Moon recommended)">
+<!ENTITY Lowtabs					"Decrease tab height (restart Pale Moon recommended)">
+<!ENTITY Tabblinkact0               "Blinking active tab - Off">
+<!ENTITY Tabblinkact1               "Blinking active tab [v1]">
+<!ENTITY Tabblinkact2               "Blinking active tab [v2]">
+<!ENTITY Tabblinkact3               "Blinking active tab [v3]">
+<!ENTITY Alttabthr0                 "Alternative tab throbber (loading animation)- Off">
+<!ENTITY Alttabthr1                 "Alternative tab throbber (loading animation) [v1]">
+<!ENTITY Alttabthr2                 "Alternative tab throbber (loading animation) [v2]">
+<!ENTITY Tabclose	                "Combine favicon and tab close button/icon">
+<!ENTITY Tabprog0                   "Alternative tabprogress indicator for TabMixPlus - Off">
+<!ENTITY Tabprog1                   "Alternative tabprogress indicator for TabMixPlus [v1]">
+<!ENTITY Tabprog2                   "Alternative tabprogress indicator for TabMixPlus [v2]">
+<!ENTITY Tabprog3                   "Alternative tabprogress indicator for TabMixPlus [v3]">
+
+<!ENTITY Highbook                   "Higher bookmarks toolbar">
+<!ENTITY Bmfolder                   "Purple bookmarks folder">
+<!ENTITY Titlebarosd				"OS default titlebar">
+<!ENTITY Altmb                      "Bigger font on menubar">
+<!ENTITY Urlbarbf                   "Bigger font on urlbar and searchbar">
+<!ENTITY Ddboldfont                 "Bold font on popup menus text labels">
+<!ENTITY Menuspace					"Compact popup menus">
+<!ENTITY Icorot                     "Rotate icons  15deg on mouse over">
+<!ENTITY Icorot2                    "Rotate icons 360deg on mouse over">
+<!ENTITY Tooltip1                   "Tooltip appearance like on &quot;Windows XP&quot;">
+<!ENTITY Hideclose1                 "Remove close-button from add-on bar">
+<!ENTITY Hideclose2                 "Remove close-button from findbar">
+<!ENTITY Wincon0                    "Window control icons (minimize, maximize, restore, close):">
+<!ENTITY Wincon1                    "MacOS-style (not visible on Windows AeroGlass)">
+<!ENTITY Wincon2                    "Noia-style (not visible on Windows AeroGlass)">
+<!ENTITY Dropdownmenit				"Hovered and active menu items:">
+<!ENTITY Hovandactm0				"Blue background color (1)">
+<!ENTITY Hovandactm1				"Blue background color (2)">
+<!ENTITY Hovandactm2				"Purple background color">
+<!ENTITY Hovandactm3                "Semitransparent background">
+<!ENTITY Hovandactm4                "Transparent background">
+
+<!ENTITY Tbblabel                   "Navigation toolbar settings">
+<!ENTITY FF4deftbb                  "Dark button icons from Firefox 4-12 (restart Pale Moon!)">
+<!ENTITY FF4deftbb2                 "Light button icons from Firefox 4-12 (restart Pale Moon!)">
+<!ENTITY Smalltbb                   "Smaller Noia buttons">
+<!ENTITY Tbbgray                    "Gray buttons">
+<!ENTITY Smallfw                    "Smaller forward button [v1]">
+<!ENTITY Smallfw2                   "Smaller forward button [v2] (no overlapping)">
+<!ENTITY Smallfw3                   "Smaller forward button [v3]">
+<!ENTITY Tbbgh                      "Lightish color behind hovered buttons">
+<!ENTITY Tbbgh2                     "Blue color behind hovered buttons">
+<!ENTITY Tbnocheckbg                "No color behind &quot;checked/active&quot; nav-bar buttons">
+
+<!ENTITY Bfdm                       "Recent pages dropmaker (aka back/forward dropmarker)">
+<!ENTITY Bfdm1                      "[v1] Position: right next to the forward button">
+<!ENTITY Bfdm2                      "[v2] Position: between forward and backward buttons">
+
+<!ENTITY Owntabs0					"Own tab colors for customizable tabs setting">
+<!ENTITY Owntabs1					"Own tab colors">
+<!ENTITY Colortrans					"Color &amp; transparency">
+<!ENTITY Owntabdef					"    Tab [default]">
+<!ENTITY Owntabhov					"    Tab [hovered]">
+<!ENTITY Owntabsel					"    Tab [selected]">
+<!ENTITY Owntabpdef					"    App Tab [default]">
+<!ENTITY Owntabphov					"    App Tab [hovered]">
+<!ENTITY Owntabpsel					"    App Tab [selected]">
+<!ENTITY Owntabndef					"    New Tab [default]">
+<!ENTITY Owntabnhov					"    New Tab [hovered]">
+
+<!ENTITY N4Favicon					"Favicon">
+<!ENTITY N4FaviconW					"I have read, understood and accepted the favicon-agreement!">
+<!ENTITY N4Favicon0					"Restore old &quot;favicon in urlbar&quot; (Pale Moon has to be restarted!)">
+<!ENTITY N4Favicon1					"Hide globe icon (Pale Moon has to be restarted!)">
+<!ENTITY FFinternal					"Pale Moon internal settings">
+<!ENTITY TcTabsontop				"Tabs on Top">
+<!ENTITY Tcclassicdl				"Classic downloads-button appearance">
+<!ENTITY Prefsincont				"Preferences in &quot;content&quot;">
+<!ENTITY FFinternalinfo3			"Settings won't be restored, exported or imported">
+<!ENTITY FFinternalinfo4			"by Noia Moon's theme manager!">
+
+<!ENTITY Aboutinfo1                 "Noia Moon Theme Manager">
+<!ENTITY Iconset                    "Noia icons created by Carlitus">
+<!ENTITY Based                      "Based on Kasteo's Noia 2 eXtreme theme">
+
+<!ENTITY Tc_settings				"Settings &amp; Help">
+<!ENTITY Tc_overview				"Help &amp; Settings Guide">
+<!ENTITY Tc_import					"Import preferences">
+<!ENTITY Tc_export					"Export preferences">
+<!ENTITY Tc_default					"Restore default settings">
+
+<!ENTITY Tc_close					"Close">
+
+<!ENTITY backForwardMenu.tooltip    "Recent pages">
+<!ENTITY N4ntbutton    				"New Tab">

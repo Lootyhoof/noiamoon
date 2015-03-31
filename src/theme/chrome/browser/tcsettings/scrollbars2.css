@@ -1,0 +1,160 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+scrollbar,scrollbar[orient="vertical"],
+scrollbar thumb,scrollbar thumb[orient="horizontal"],
+scrollbarbutton[type="increment"],
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"],
+scrollbarbutton[type="decrement"],
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"]{
+  -moz-appearance: none !important;
+  border:0px !important;
+}
+
+/* ::::: scrollbar ::::: */
+
+scrollbar {
+  -moz-binding: url("chrome://global/content/bindings/scrollbar.xml#scrollbar") !important;
+  cursor: default !important;
+}
+
+scrollbar[orient="vertical"] {
+  background: url("chrome://global/skin/scrollbar/track-vertical-bl.png") repeat-y black !important;
+}
+
+scrollbar[orient="horizontal"] {
+  background: url("chrome://global/skin/scrollbar/track-horizontal-bl.png") repeat-x black !important;
+}
+
+scrollbar thumb {
+	-moz-binding: url("chrome://global/skin/scrollbar.xml#thumb");
+}
+
+scrollbar thumb[orient="vertical"]{
+  -moz-binding: url("chrome://global/skin/scrollbars.xml#thumb-vertical") !important;
+  min-height: 28px !important;
+  background:url("chrome://global/skin/scrollbar/thumb-vertical.png") repeat-y !important;
+}
+
+scrollbar:active thumb[orient="vertical"],
+scrollbar thumb[orient="vertical"]:hover{
+  background:url("chrome://global/skin/scrollbar/thumb-vertical-h.png") repeat-y !important;
+}
+
+scrollbar thumb[orient="horizontal"] {
+  -moz-binding: url("chrome://global/skin/scrollbars.xml#thumb-horizontal") !important;
+  min-width: 28px !important;
+  background:url("chrome://global/skin/scrollbar/thumb-horizontal.png") repeat-x !important;
+}
+
+scrollbar:active  thumb[orient="horizontal"],
+scrollbar thumb[orient="horizontal"]:hover {
+  background:url("chrome://global/skin/scrollbar/thumb-horizontal-h.png") repeat-x !important;
+}
+
+.thumb-topcap{
+	background:url("chrome://global/skin/scrollbar/thumb-topcap-bl.png") top left no-repeat !important;
+}
+
+.thumb-bottomcap{
+	background:url("chrome://global/skin/scrollbar/thumb-bottomcap-bl.png") bottom left no-repeat !important;
+}
+
+.thumb-startcap{
+	background:url("chrome://global/skin/scrollbar/thumb-startcap-bl.png") top left no-repeat !important;
+}
+
+.thumb-endcap{
+	background:url("chrome://global/skin/scrollbar/thumb-endcap-bl.png") top right no-repeat !important;
+}
+
+/* ::::: square at the corner of two scrollbars ::::: */
+
+scrollcorner { 
+  background:url("chrome://global/skin/scrollbar/corner-bl.png") no-repeat !important;
+}
+
+/* ::::: scrollbar button ::::: */
+
+scrollbarbutton {
+  min-width: 13px !important;
+  min-height: 13px !important;
+  background-repeat:no-repeat !important;
+}
+
+/*right Arrow*/
+scrollbarbutton[type="increment"] {
+  background-image: url("chrome://global/skin/scrollbar/arrow-right-bl.png") !important;
+}
+scrollbarbutton[type="increment"]:hover {
+  background-image: url("chrome://global/skin/scrollbar/arrow-right2.png") !important;
+}
+scrollbarbutton[type="increment"]:hover:active {
+  background-image: url("chrome://global/skin/scrollbar/arrow-right3.png") !important;
+}
+
+/*down Arrow*/
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {
+  background-image: url("chrome://global/skin/scrollbar/arrow-down-bl.png") !important;
+}
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"]:hover {
+  background-image: url("chrome://global/skin/scrollbar/arrow-down2.png") !important;
+}
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"]:hover:active {
+  background-image: url("chrome://global/skin/scrollbar/arrow-down3.png") !important;
+}
+
+/*left Arrow*/
+scrollbarbutton[type="decrement"] {
+   background-image: url("chrome://global/skin/scrollbar/arrow-left-bl.png") !important;
+}
+scrollbarbutton[type="decrement"]:hover {
+   background-image: url("chrome://global/skin/scrollbar/arrow-left2.png") !important;
+}
+scrollbarbutton[type="decrement"]:hover:active {
+   background-image: url("chrome://global/skin/scrollbar/arrow-left3.png") !important;
+}
+
+/*up Arrow*/
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {
+   background-image: url("chrome://global/skin/scrollbar/arrow-up-bl.png") !important;
+}
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"]:hover {
+   background-image: url("chrome://global/skin/scrollbar/arrow-up2.png") !important;
+}
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"]:hover:active {
+   background-image: url("chrome://global/skin/scrollbar/arrow-up3.png") !important;
+}
+
+.thumb-topcap,.thumb-bottomcap {
+	min-width: 15px !important;
+	max-width: 15px !important;
+	min-height: 11px !important;
+	max-height: 11px !important;
+}
+
+.thumb-startcap,.thumb-endcap {
+	min-width: 11px !important;
+	max-width: 11px !important;
+	min-height: 15px !important;
+	max-height: 15px !important;
+}
+
+.thumb-vertical-body {
+	min-width: 15px !important;
+	max-width: 15px !important;
+}
+.thumb-horizontal-body {
+	min-height: 15px !important;
+	max-height: 15px !important;
+}
+
+scrollbar[orient="vertical"]{
+	min-width: 13px !important;
+	max-width: 13px !important;
+}
+
+scrollbar[orient="horizontal"]{
+	min-height: 13px !important;
+	max-height: 13px !important;
+}

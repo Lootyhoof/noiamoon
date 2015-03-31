@@ -1,0 +1,214 @@
+<!ENTITY NoiaOptions                "configurateur de Noia Moon">
+<!ENTITY Options                    "options">
+<!ENTITY Enable                     "activé">
+<!ENTITY TweaksOff                  "Restaurer les réglages par défaut">
+
+<!ENTITY Skinst                     "thèmes">
+<!ENTITY Fontt                      "polices">
+<!ENTITY Tweaks                   	"réglages">
+<!ENTITY Personast                  "Personas">
+<!ENTITY PageP                   	"Pro">
+<!ENTITY About                      "à propos">
+
+<!ENTITY Info                       "Info">
+
+<!ENTITY Main_skins_set             "principaux paramètres">
+<!ENTITY Gray	      				"gris par défaut = pas de thème">
+<!ENTITY Graylight                  "gris (barres d'outils brillantes)">
+<!ENTITY Graydark                   "gris (barres d'outils foncées)">
+<!ENTITY GrayFF3                    "gris (comme Firefox 3)">
+<!ENTITY Black                      "noir">
+<!ENTITY BlackFF3                   "noir (comme Firefox 3)">
+<!ENTITY Blue                       "bleu">
+<!ENTITY BlueFF3                    "bleu (comme Firefox 3)">
+<!ENTITY Ff4def                     "Firefox Windows 7 thème">
+<!ENTITY Glass1                  	"Glass (toutes les barres) (Windows 7/Vista uniquement)">
+<!ENTITY Glass2                 	"Glass (intégral) (Windows 7/Vista uniquement) (redémarrer Pale Moon!)">
+
+<!ENTITY Tabs_custom				"onglets personnalisés *   ou   onglets Personas">
+<!ENTITY Tabs_gray					"onglets gris">
+<!ENTITY Tabs_gray_m				"onglets gris modernes (défaut)">
+<!ENTITY Tabs_gray_c				"onglets gris Chrome **">
+<!ENTITY Tabs_black                 "onglets noir">
+<!ENTITY Tabs_blue                  "onglets blue">
+<!ENTITY Tabs_ff4def                "onglets Firefox Windows 7 thème (comme Windows 7)">
+<!ENTITY Tabs_glass1                "onglets Glass [v1]">
+<!ENTITY Tabs_glass2                "onglets Glass [v2]">
+<!ENTITY Tabs_glass3                "onglets Glass [v3]">
+<!ENTITY Noiatabs                   "onglets spéciaux **">
+<!ENTITY Noiatabs1                  "onglets spéciaux [v1]">
+<!ENTITY Noiatabs2                  "onglets spéciaux [v2] pour &quot;ColorfulTabs&quot;">
+<!ENTITY Noiatabs3                  "onglets spéciaux [v3]">
+<!ENTITY Noiatabs4                  "onglets spéciaux [v4] pour &quot;ColorfulTabs&quot;">
+<!ENTITY Noiatabs5                  "onglets spéciaux [v5] pour &quot;ColorfulTabs&quot;">
+<!ENTITY Ntabs0                     "* Requis par ColorfulTabs etc. pour coloriser les onglets">
+<!ENTITY Ntabs1                     "** Pas de témoin d'activité et les onglets sur plusieurs rangées.">
+
+<!ENTITY Custom0                    "ColorfulTabs, TabMixPlus, TabUtilities et d'autres add-ons EXIGER">
+<!ENTITY Custom1                    "que le &quot;onglets personnalisés&quot; pour COLORISER les onglets!">
+
+<!ENTITY Personagetlabel            "Trouvez un persona sur:">
+<!ENTITY Or				            "ou">
+<!ENTITY Persona01                  "1) Installez le persona (redémarrer Pale Moon!)">
+<!ENTITY Persona02                  "2) Sélectionnez Noia Moon (redémarrer Pale Moon!)">
+<!ENTITY Persona03                  "3) Activez l'option &quot;persona&quot; sur cet onglet (redémarrer Pale Moon!)">
+<!ENTITY Persona04					"Utilisez le dernier actif persona avec thème Noia Moon">
+<!ENTITY Persona05               	"Répétez ces étapes pour un autre persona!">
+<!ENTITY Personaimglabel            "Exemple avec le persona -Firefox Blue Abstract-.">
+
+<!ENTITY Roxp                       "menu déroulant arrondi">
+<!ENTITY Noactblue                  "pas d'onglets survolés/actifs bleus">
+<!ENTITY Hidetabbarbg				"masquer le fond sur l'onglet barre d'outils">
+<!ENTITY Cleaner                    "pas de ligne sur la barre d'outils">
+<!ENTITY Dd                         "menu déroulant translucide">
+<!ENTITY Dddb                       "menu déroulant noir">
+<!ENTITY Fullglassdd                "menu déroulant Glass">
+<!ENTITY Fullglassnopref            "moins de Glass sur des fenêtres de préférence">
+<!ENTITY Fullglasstoolt				"infobulle moins transparent">
+
+<!ENTITY Toolbar                    "barre d'outils">
+<!ENTITY Fontcolor                  "couleur">
+<!ENTITY Shadow                     "ombre">
+<!ENTITY Tabs                       "onglets">
+<!ENTITY Tabsacthov                 "onglets actifs/survolés">
+<!ENTITY Statusbar                  "barre d'état">
+<!ENTITY Ddmenu                     "menu déroulant">
+<!ENTITY Fontinfo                   "info">
+<!ENTITY Fontinfo1                  "Les réglages de couleur des polices sont annulés par un changement">
+<!ENTITY Fontinfo2                  "de thème, et ne sont pas compatibles avec l'extension ColorfulTabs.">
+
+<!ENTITY Page1                   	"Basique">
+<!ENTITY Page2                   	"Onglets">
+<!ENTITY Page3                   	"Onglets 2">
+<!ENTITY Page4                   	"Barre">
+<!ENTITY Page5                   	"Divers">
+
+<!ENTITY Tooltippage1              	"Boutons et barres de défilement">
+<!ENTITY Tooltippage2             	"Onglets : tailles et clip">
+<!ENTITY Tooltippage3              	"Special shapes on tabs">
+<!ENTITY Tooltippage4              	"Nav. boutons et les icônes de barre d'outils">
+<!ENTITY Tooltippage5              	"Divers">
+
+<!ENTITY Ffbutton                   "options du bouton Pale Moon (Windows/Linux)">
+<!ENTITY Appbutnoia                 "Transparent (Noia Moon défaut)">
+<!ENTITY Appbutorg                  "Bleu (Pale Moon défaut)">
+<!ENTITY Appbutaurora               "Aurora (Firefox Aurora version)">
+<!ENTITY Appbutnightly              "Nightly (Firefox Nightly version)">
+<!ENTITY Appbutat                   "toujours transparent (navigation privée/normale)">
+<!ENTITY Appbutao                   "toujours bleu (navigation privée/normale)">
+<!ENTITY Appbut_nt                  "juste l'icône">
+<!ENTITY Appbut                     "icône et texte">
+<!ENTITY Appbutdm                   "pas de bouton déroulant">
+
+<!ENTITY Buttons                    "boutons">
+<!ENTITY Butdark                    "boutons sombres">
+<!ENTITY Butglass                   "boutons transparents">
+<!ENTITY Butsemiround               "boutons semi-arrondis">
+
+<!ENTITY Scrollbars                 "barre de défilement">
+<!ENTITY Scrollbars1                "défaut (Noia Moon)">
+<!ENTITY Scrollbars2                "noire (Noia Moon)">
+<!ENTITY Scrollbarsdef              "défaut de Pale Moon ou adjonction de &quot;NewScrollbars&quot;">
+<!ENTITY Scrollbarslink             "NewScrollbars">
+
+<!ENTITY Taboptions                 "options pour onglets (lire le guide paramètres)">
+<!ENTITY Tabinfo0	                "Paramètres peuvent être incompatibles avec autre onglet extensions.">
+<!ENTITY RoundTab                   "onglets arrondis">
+<!ENTITY RoundtTab                  "onglets arrondis (juste les angles supérieurs) ">
+<!ENTITY CloseBut                   "&quot;boutons fermer&quot; alternatifs">
+<!ENTITY CloseBut_alw               "toujours afficher les &quot;boutons fermer&quot;">
+<!ENTITY CloseButbig                "gros &quot;boutons fermer&quot;">
+<!ENTITY CloseButhide               "masquer gros &quot;boutons fermer&quot; sur la non-ciblées onglets">
+<!ENTITY Nbtabh                     "ne pas épaissir la police des onglets survolés">
+<!ENTITY Nbtaba                     "ne pas épaissir la police de l'onglet actif">
+<!ENTITY Tabtextmargin              "plus d'espace entre les icônes et le texte onglet">
+<!ENTITY Hightabs                   "plus grande hauteur d'onglet (redémarrer Pale Moon)">
+<!ENTITY Lowtabs					"plus petite hauteur d'onglet (redémarrer Pale Moon)">
+<!ENTITY Tabblinkact0               "onglet actif clignotant - désactivé">
+<!ENTITY Tabblinkact1               "onglet actif clignotant [v1]">
+<!ENTITY Tabblinkact2               "onglet actif clignotant [v2]">
+<!ENTITY Tabblinkact3               "onglet actif clignotant [v3]">
+<!ENTITY Alttabthr0                 "témoin d'activité des onglets alternatif - désactivé">
+<!ENTITY Alttabthr1                 "témoin d'activité des onglets alternatif [v1]">
+<!ENTITY Alttabthr2                 "témoin d'activité des onglets alternatif [v2]">
+<!ENTITY Tabclose	                "&quot;boutons fermer&quot; et favicônes combinés">
+<!ENTITY Tabprog0                   "témoin d'activité des onglets alternatif pour &quot;TabMixPlus&quot; - désactivé">
+<!ENTITY Tabprog1                   "témoin d'activité des onglets alternatif pour &quot;TabMixPlus&quot; [v1]">
+<!ENTITY Tabprog2                   "témoin d'activité des onglets alternatif pour &quot;TabMixPlus&quot; [v2]">
+<!ENTITY Tabprog3                   "témoin d'activité des onglets alternatif pour &quot;TabMixPlus&quot; [v3]">
+
+<!ENTITY Highbook                   "barre des marque-pages plus haute">
+<!ENTITY Bmfolder                   "dossiers des marque-pages pourpres">
+<!ENTITY Altmb                      "barre de menu alternative (plus grosse)">
+<!ENTITY Titlebarosd				"OS barre de titre par défaut">
+<!ENTITY Urlbarbf                   "grande police sur les barres de recherche/d'adresse">
+<!ENTITY Ddboldfont                 "grande police sur menu déroulant">
+<!ENTITY Menuspace					"compact menus déroulant">
+<!ENTITY Icorot                     "icônes animées comme avec CuteButtons [v1]">
+<!ENTITY Icorot2                    "icônes animées comme avec CuteButtons [v2]">
+<!ENTITY Tooltip1                   "info-bulle comme Windows XP">
+<!ENTITY Hideclose1                 "cacher le &quot;bouton fermer&quot; sur la barre des modules">
+<!ENTITY Hideclose2                 "cacher le &quot;bouton fermer&quot; sur la barre de recherche">
+<!ENTITY Wincon0                    "boutons de légende (min, max, restore, close) :">
+<!ENTITY Wincon1                    "MacOS (pas sur AeroGlass)">
+<!ENTITY Wincon2                    "Noia 4 (pas sur AeroGlass)">
+<!ENTITY Dropdownmenit				"les éléments survolés/actifs sur le menu déroulant :">
+<!ENTITY Hovandactm0				"couleur de fond bleu (1)">
+<!ENTITY Hovandactm1				"couleur de fond bleu (2)">
+<!ENTITY Hovandactm2				"couleur de fond pourpre">
+<!ENTITY Hovandactm3                "couleur de fond translucide">
+<!ENTITY Hovandactm4                "couleur de fond transparente">
+
+<!ENTITY Tbblabel                   "options de la barre d'outils">
+<!ENTITY FF4deftbb                  "boutons de Firefox 4-12 [v1] (redémarrer Pale Moon!)">
+<!ENTITY FF4deftbb2                 "boutons de Firefox 4-12 [v2] (redémarrer Pale Moon!)">
+<!ENTITY Smalltbb                   "boutons plus petits (Noia)">
+<!ENTITY Tbbgray                    "boutons gris">
+<!ENTITY Smallfw                    "&quot;bouton suivant&quot; réduit [v1]">
+<!ENTITY Smallfw2                   "&quot;bouton suivant&quot; réduit [v2] (pas de chevauchement)">
+<!ENTITY Smallfw3                   "&quot;bouton suivant&quot; réduit [v3]">
+<!ENTITY Tbbgh                      "arrière-plan des boutons lumineux [v1]">
+<!ENTITY Tbbgh2                     "arrière-plan des boutons lumineux [v2]">
+<!ENTITY Tbnocheckbg                "pas d'arrière-plan pour les articles activés">
+
+<!ENTITY Bfdm                       "&quot;bouton déroulant&quot; avec les boutons précédent/suivant">
+<!ENTITY Bfdm1                      "[v1]">
+<!ENTITY Bfdm2                      "[v2]">
+     
+<!ENTITY Owntabs0					"Propre onglet couleurs pour les onglets personnalisés">
+<!ENTITY Owntabs1					"Propre onglet couleurs">
+<!ENTITY Colortrans					"Couleur &amp; transparence">
+<!ENTITY Owntabdef					"    Onglet [defaut]">
+<!ENTITY Owntabhov					"    Onglet [survolés]">
+<!ENTITY Owntabsel					"    Onglet [actifs]">
+<!ENTITY Owntabpdef					"    Épinglé onglet  [defaut]">
+<!ENTITY Owntabphov					"    Épinglé onglet  [survolés]">
+<!ENTITY Owntabpsel					"    Épinglé onglet  [actifs]">
+<!ENTITY Owntabndef					"    Nouvel onglet [defaut]">
+<!ENTITY Owntabnhov					"    Nouvel onglet [survolés]">
+
+<!ENTITY N4Favicon					"Favicon">
+<!ENTITY N4FaviconW					"J'ai lu et compris le présent accord!">
+<!ENTITY N4Favicon0					"Favicon dans barre d'adresse (redémarrer Pale Moon!)">
+<!ENTITY N4Favicon1					"Masquer le globe icône (redémarrer Pale Moon!)">
+<!ENTITY FFinternal					"Firefox paramètres internes">
+<!ENTITY TcTabsontop				"Barre des onglets au-dessus">
+<!ENTITY Tcclassicdl				"Vieux téléchargements bouton">
+<!ENTITY Prefsincont				"Préférences dans l'onglet">
+<!ENTITY FFinternalinfo3			"Réglages ne seront pas restaurés, exportés">
+<!ENTITY FFinternalinfo4			"ou importés par le configurateur de &quot;Noia Moon&quot;!">
+
+<!ENTITY Aboutinfo1                 "configurateur de &quot;Noia Moon&quot;">
+<!ENTITY Iconset                    "Le Groupe d'icônes Noia est de Carlitus.">
+<!ENTITY Based                      "Basé sur le thème &quot;Noia 2 eXtrème&quot; de Kastéo.">
+
+<!ENTITY Tc_settings				"Réglages &amp; Aide">
+<!ENTITY Tc_overview				"Aide (Anglais)">
+<!ENTITY Tc_import					"Importer les réglages">
+<!ENTITY Tc_export					"Exporter les réglages">
+<!ENTITY Tc_default					"Restaurer les réglages par défaut">
+
+<!ENTITY Tc_close					"Fermer">
+
+<!ENTITY backForwardMenu.tooltip    "pages récentes">
+<!ENTITY N4ntbutton    				"Nouvel onglet">

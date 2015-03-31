@@ -1,0 +1,85 @@
+#xpinstallConfirm {
+  padding: 8px 0 0;
+  background: radial-gradient(#ffffff,#9b9c9e) #9b9c9e;
+}
+
+#xpinstallheader {
+  margin: 0 8px 2em;
+}
+
+#itemWarningIntro {
+  margin: 2px 8px;
+}
+
+#itemList {
+  height: 14em;
+  border-top: 2px groove #d4d0c8;
+  border-bottom: 1px solid #808080;
+  background-color: #f2f2f2;
+}
+
+installitem {
+  margin-bottom: 5px;
+  padding: 5px 0 5px 5px;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+.alert-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  list-style-image: url(chrome://global/skin/icons/warning-large.png);
+}
+
+.warning {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.xpinstallIconContainer {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.xpinstallItemName {
+  font-weight: bold;
+}
+
+.xpinstallItemSigned {
+  font-style: italic;
+}
+
+.xpinstallItemNameRow {
+  padding-bottom: 3px;
+}
+
+.xpinstallItemURL {
+  padding: 0;
+  margin: 1px 5px;
+  border: 0;
+}
+
+.xpinstallItemIcon {
+  max-width: 32px;
+  max-height: 32px;
+  list-style-image: url(chrome://mozapps/skin/xpinstall/xpinstallItemGeneric.png);
+}
+
+installitem[type=theme] .xpinstallItemIcon {
+  list-style-image: url(chrome://mozapps/skin/extensions/category-themes.png);
+}
+
+installitem[type=locale] .xpinstallItemIcon {
+  list-style-image: url(chrome://mozapps/skin/extensions/category-languages.png);
+}
+
+installitem[type=plugin] .xpinstallItemIcon {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric.png);
+}
+
+.dialog-button-box {
+  margin: 0;
+  border-top: 1px solid #fff;
+}

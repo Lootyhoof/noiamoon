@@ -1,0 +1,9 @@
+prefwindow radiogroup,
+#SignonViewerDialog,#rejectedsites,
+dialog tabpanels,prefwindow tabpanels,
+prefwindow,prefpane,dialog,richlistbox{
+	-moz-appearance: -moz-win-borderless-glass !important;
+	background: rgba(151,152,153,.3)
+	  linear-gradient(rgba(251,252,253,.85), rgba(246,247,248,.37) 39%, 
+				rgba(231,232,233,.35) 61%, rgba(225,226,229,.55)) !important;
+	}

@@ -1,0 +1,17 @@
+.radio-label-box {
+  -moz-box-align:center;
+}
+
+.portrait-page {
+  list-style-image: url(chrome://global/skin/icons/Portrait.png);
+}
+
+.landscape-page {
+  list-style-image: url(chrome://global/skin/icons/Landscape.png);
+}
+
+#marginPage {
+  margin: 3px 2px 4px 0;
+  border: 1px solid #808080;
+  box-shadow: 2px 2px 2px #404040;
+}

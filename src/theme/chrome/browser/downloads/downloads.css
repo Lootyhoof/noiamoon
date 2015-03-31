@@ -1,0 +1,97 @@
+/*** Panel and outer controls ***/
+
+#downloadsPanel > .panel-arrowcontainer > .panel-arrowcontent {
+  padding: 0;
+}
+
+#downloadsListBox {
+  width: 60ch;
+  background-color: transparent;
+  padding: 4px;
+  color: inherit;
+}
+
+#downloadsHistory {
+  background: none;
+  color: -moz-nativehyperlinktext;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+
+#downloadsHistory > .button-box {
+  /*margin: 1em;*/
+}
+
+.downloadInfo {
+  padding: 8px;
+  -moz-padding-end: 0;
+}
+
+.downloadTypeIcon {
+  -moz-margin-end: 8px;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+.blockedIcon {
+  list-style-image: url("chrome://global/skin/icons/error-16.png");
+}
+
+.downloadTarget {
+  margin-bottom: 6px;
+  cursor: inherit;
+}
+
+.downloadDetails {
+  opacity: 0.6;
+  font-size: 90%;
+  cursor: inherit;
+}
+
+.downloadButton {
+  -moz-appearance: none;
+  min-width: 0;
+  min-height: 0;
+  margin: 6px;
+  border: none;
+  background: transparent;
+  padding: 5px;
+  list-style-image: url("chrome://browser/skin/downloads/buttons.png");
+  box-shadow: none !important;
+}
+
+.downloadButton > .button-box {
+  padding: 0;
+}
+
+/*** Button icons ***/
+
+.downloadButton.downloadCancel {
+  -moz-image-region: rect(0px, 14px, 14px, 0px);
+}
+.downloadButton.downloadCancel:hover {
+  -moz-image-region: rect(0px, 28px, 14px, 14px);
+}
+.downloadButton.downloadCancel:active {
+  -moz-image-region: rect(0px, 42px, 14px, 28px);
+}
+
+.downloadButton.downloadShow {
+  -moz-image-region: rect(14px, 14px, 28px, 0px);
+}
+.downloadButton.downloadShow:hover {
+  -moz-image-region: rect(14px, 28px, 28px, 14px);
+}
+.downloadButton.downloadShow:active {
+  -moz-image-region: rect(14px, 42px, 28px, 28px);
+}
+
+.downloadButton.downloadRetry {
+  -moz-image-region: rect(28px, 14px, 42px, 0px);
+}
+.downloadButton.downloadRetry:hover {
+  -moz-image-region: rect(28px, 28px, 42px, 14px);
+}
+.downloadButton.downloadRetry:active {
+  -moz-image-region: rect(28px, 42px, 42px, 28px);
+}

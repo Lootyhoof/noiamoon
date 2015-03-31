@@ -1,0 +1,76 @@
+menupopup,popup {
+  background: url("chrome://browser/skin/icons/popup.png") repeat-y !important;
+  background-color: Transparent !important;
+}
+
+popup[type="autocomplete"],
+menulist > menupopup {
+  background: url("chrome://browser/skin/icons/popup.png") right repeat-y !important;
+  background-color: Transparent !important;  
+}
+
+popup[type="autocomplete"],
+panel[type="autocomplete-richlistbox"],
+.autocomplete-history-popup {
+  background-color: Transparent !important;
+  border-top: 1px solid !important;
+  border-right: 1px solid !important;
+  border-bottom: 1px solid !important;
+  border-left: 1px solid !important;
+  -moz-border-top-colors: #666666 !important;
+  -moz-border-right-colors: #666666 !important;
+  -moz-border-bottom-colors: #666666 !important;
+  -moz-border-left-colors: #666666 !important;  
+}
+
+panel[type="autocomplete-richlistbox"] {
+  background: none !important;
+  background-color: Transparent !important;
+}
+
+.autocomplete-richlistbox {
+  -moz-appearance: none !important;
+  background: url("chrome://browser/skin/icons/popup.png") repeat-y !important;
+  background-color: Transparent !important;
+}
+
+.autocomplete-richlistitem[selected="true"] {
+  background-color: Transparent !important;
+}
+
+.autocomplete-richlistitem {
+  border-bottom: 1px solid #a6a6a6 !important;
+  background-color: Transparent !important;
+}
+
+.ac-site-icon {
+  margin: 0px 5px 0px 1px !important;
+}
+
+panel[type="autocomplete"] {
+  background: url("chrome://browser/skin/icons/popup.png") right repeat-y !important;
+  background-color: Transparent !important;
+}
+
+tooltip {
+  background-color: Transparent !important;
+  background: url("chrome://browser/skin/icons/popup.png") right repeat-y !important;
+  color: #000000 !important;
+}
+
+#autoscroller {
+  height: 28px !important;
+  width: 28px !important;
+  border: none !important;
+  margin: -14px !important;
+  padding: 0 !important;
+  background-image: url("chrome://global/skin/icons/autoscroll.png") !important;
+  background-color: transparent !important;
+  background-position: right top !important;
+  -moz-appearance: none !important;
+}
+
+#editBookmarkPanel {
+  background: url("chrome://browser/skin/icons/popup-background2.png") repeat-y Transparent !important;
+  background-color: Transparent !important;
+}

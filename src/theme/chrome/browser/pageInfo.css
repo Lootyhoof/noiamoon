@@ -1,0 +1,238 @@
+@import "chrome://global/skin/";
+
+/* View buttons */
+#viewGroup radio {
+  list-style-image: url("chrome://browser/skin/pageInfo.png");
+  -moz-box-orient: vertical;
+  -moz-box-align: center;
+  -moz-appearance: none;
+  padding: 5px 3px 1px 3px;
+}
+
+.viewSelector, /* Firefox 3.5 and older */
+.viewGroupWrapper {
+  background-image   : url("chrome://browser/skin/icons/Tool-background2.png");
+  background-position: top left;
+  background-repeat  : repeat-x;
+  background-color   : #FFFFFF;
+  border-bottom: 2px groove #75736E;
+  margin: 0px;
+  -moz-padding-start: 10px;
+  color: #000000;
+}
+
+#generalTab {
+  -moz-image-region: rect(0px, 48px, 48px, 0px)
+}
+
+#generalTab:hover, #generalTab[selected="true"] {
+  -moz-image-region: rect(48px, 48px, 96px, 0px)
+}
+
+#mediaTab {
+  -moz-image-region: rect(0px, 96px, 48px, 48px)
+}
+
+#mediaTab:hover, #mediaTab[selected="true"] {
+  -moz-image-region: rect(48px, 96px, 96px, 48px)
+}
+
+#feedTab {
+  -moz-image-region: rect(0px, 144px, 48px, 96px)
+}
+
+#feedTab:hover, #feedTab[selected="true"] {
+  -moz-image-region: rect(48px, 144px, 96px, 96px)
+}
+
+#permTab {
+  -moz-image-region: rect(0px, 192px, 48px, 144px)
+}
+
+#permTab:hover, #permTab[selected="true"] {
+  -moz-image-region: rect(48px, 192px, 96px, 144px)
+}
+
+#securityTab {
+  -moz-image-region: rect(0px, 240px, 48px, 192px)
+}
+
+#securityTab:hover, #securityTab[selected="true"] {
+  -moz-image-region: rect(48px, 240px, 96px, 192px)
+}
+
+deck {
+  padding: 10px 10px 10px 10px;
+}
+
+/* Misc */
+tree {
+  margin: .5em;
+}
+
+.gridSeparator {
+  width: .5em;
+}
+
+textbox {
+  background: transparent !important;
+  border: none;
+  padding: 0px;
+  margin-top: 1px;
+  -moz-appearance: none;
+}
+
+textbox.header {
+  -moz-margin-start: 0;
+}
+
+.iframe {
+  margin: .5em;
+  background: white;
+  overflow: auto;
+}
+
+.fixedsize {
+  height: 8.5em;
+}
+
+textbox[disabled] {
+  font-style: italic;
+}
+
+/* General Tab */
+groupbox.collapsable caption .caption-icon { 
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-margin-start: 1px;
+  -moz-margin-end: 3px;
+  background-image: url("chrome://global/skin/button/twisty-open.png");
+}
+
+groupbox.collapsable[closed="true"] {
+  border: none;
+}
+
+groupbox.collapsable[closed="true"] caption .caption-icon { 
+  background-image: url("chrome://global/skin/button/twisty.png");
+}
+
+groupbox tree { 
+  margin: 0;
+  border: none;
+}
+
+groupbox.treebox .groupbox-body { 
+  padding-top: 0;
+}
+
+#securityBox description { 
+  -moz-margin-start: 10px;
+}
+
+#general-security-identity {
+  white-space: pre-wrap;
+  line-height: 2em;
+}
+
+/* Media Tab */
+#imagetree {
+  min-height: 10em;
+}
+
+#mediaGrid {
+  min-height: 9em;
+}
+
+#mediaLabelColumn {
+  min-width: 10em;
+}
+
+#thepreviewimage {
+  margin: 1em;
+}
+
+treechildren::-moz-tree-cell-text(broken) {
+  font-style: italic;
+  color: #808080;
+}
+
+/* Feeds Tab */
+#feedtree {
+  margin-bottom: 0px;
+}
+
+#feedListbox richlistitem {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -moz-padding-start: 7px;
+  -moz-padding-end: 7px;
+  min-height: 25px;
+  border-bottom: 1px dotted #C0C0C0;
+}
+
+#feedListbox richlistitem[selected="true"] {
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+#feedListbox {
+  border: 2px solid;
+  -moz-border-top-colors: #A0A0A0 #696969;
+  -moz-border-right-colors: #FFFFFF #E3E3E3;
+  -moz-border-bottom-colors: #FFFFFF #E3E3E3;
+  -moz-border-left-colors: #A0A0A0 #696969;
+}
+
+.feedTitle { 
+  font-weight: bold;
+}
+
+/* Permissions Tab */
+#permList {
+  margin-top: .5em;
+  overflow: auto;
+  border: 2px solid;
+  -moz-border-top-colors: #A0A0A0 #696969;
+  -moz-border-right-colors: #FFFFFF #E3E3E3;
+  -moz-border-bottom-colors: #FFFFFF #E3E3E3;
+  -moz-border-left-colors: #A0A0A0 #696969;
+  background-color: #FFFFFF;
+}
+
+#permList > vbox {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -moz-padding-start: 7px;
+  -moz-padding-end: 7px;
+  min-height: 25px;
+  border-bottom: 1px dotted #C0C0C0;
+}
+
+#permList > vbox > label {
+  font-weight: bold;
+}
+
+#permList > vbox:hover {
+  background-color: #F0F0F0;
+}
+
+/* Security Tab */
+#securityPanel .caption-icon {
+  display: none;
+}
+
+#securityPanel .header {
+  font-size: 120%;
+}
+ 
+#securityPanel .fieldLabel {
+  margin: 2px 10px 3px 10px;
+}
+
+#securityPanel .fieldValue {
+  font-weight: bold;
+  margin: 2px 10px 0px 10px;
+}

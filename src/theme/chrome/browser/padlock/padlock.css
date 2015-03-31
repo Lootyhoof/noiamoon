@@ -1,0 +1,103 @@
+#padlock-ib[padshow="ib-trans-bg"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  background-color: transparent;
+}
+
+/* Position fix */
+#identity-box #padlock-ib{
+  margin: 3px 8px 0px -5px !important;
+}

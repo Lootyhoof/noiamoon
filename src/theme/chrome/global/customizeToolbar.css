@@ -1,0 +1,8 @@
+window,dialog {
+  padding: 6px;
+}
+
+#instructions {
+  font-weight: bold;
+  font-size: larger;
+}

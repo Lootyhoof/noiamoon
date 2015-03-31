@@ -1,0 +1,54 @@
+html {
+  background: #525252;
+}
+
+body {
+  margin: 0;
+  padding: 0 1em;
+  color: #000000;
+  font: message-box;
+}
+
+h1 {
+  margin: 0 0 .6em 0;
+  border-bottom: 1px solid #E3E3E3;
+  font-size: 160%;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+#errorPageContainer {
+  position: relative;
+  min-width: 13em;
+  max-width: 52em;
+  margin: 4em auto;
+  border: 1px solid #FFBD09;
+  border-radius: 10px;
+  padding: 3em;
+  -moz-padding-start: 30px;
+  background: url(chrome://global/skin/icons/sslWarning.png) 30px 30px no-repeat #fff;
+  -moz-background-origin: content;
+}
+
+body[dir="rtl"] #errorPageContainer {
+  background-position: right 0;
+}
+
+#errorTitle {
+  -moz-margin-start: 80px;
+}
+
+#errorLongContent {
+  -moz-margin-start: 80px;
+}
+
+#technicalContent > h2, #expertContent > h2 {
+  background : url("chrome://browser/skin/icons/arrow-down.png") left center no-repeat;
+}
+
+#technicalContent[collapsed] > h2,
+#expertContent[collapsed] > h2{
+  background-image: url("chrome://browser/skin/icons/arrow-right.png");
+}

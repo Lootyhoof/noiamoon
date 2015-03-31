@@ -1,0 +1,3 @@
+.tabbrowser-tab:hover:not([selected=true]){
+	font-weight:normal !important;
+}

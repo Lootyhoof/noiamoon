@@ -1,0 +1,166 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+button {
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  color: #000;
+  margin: 1px 3px;
+  padding: 1px 8px 1px 8px;
+  border: 1px solid;
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #808080;
+  -moz-border-bottom-colors: #404040 #808080;
+  -moz-border-left-colors: #404040 #fff;
+  border-radius: 50px;
+  background:linear-gradient(#f6f4f5,#d8d8d8,#dadada,#dadada,#f5f5f5,#fbfbfb);
+}
+
+button:not(.button-link):not(#appmenu-button):not(.searchbar-engine-button){
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.4) !important; 
+}
+
+button:focus {
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #02a1fe;
+  -moz-border-bottom-colors: #404040 #02a1fe;
+  -moz-border-left-colors: #404040 #fff;
+  background: url(chrome://global/skin/button/body-focus.png) repeat-x top left #c6feff;
+}
+
+button[default=true] {
+  -moz-border-top-colors: #404040 #6c6cfa;
+  -moz-border-right-colors: #404040 #1c1cca;
+  -moz-border-bottom-colors: #404040 #1c1cca;
+  -moz-border-left-colors: #404040 #6c6cfa;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+button:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+}
+
+button:hover:active {
+  -moz-border-top-colors: #404040 #808080;
+  -moz-border-right-colors: #404040 #fff;
+  -moz-border-bottom-colors: #404040 #fff;
+  -moz-border-left-colors: #404040 #808080;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+button[disabled=true] {
+  color: #d4d0c8;
+  -moz-border-top-colors: #808080 #fff !important;
+  -moz-border-right-colors: #808080 #fff !important;
+  -moz-border-bottom-colors: #808080 #fff !important;
+  -moz-border-left-colors: #808080 #fff !important;
+  background: url(chrome://global/skin/button/body-disabled.png) repeat-x top left #fafafb !important;
+}
+
+.button-icon {
+  margin-right: 2px;
+}
+
+button[disabled=true] .button-icon {
+  opacity: .3;
+}
+
+.button-text {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  min-width: 11px;
+  min-height: 11px;
+  margin: 1px;
+  list-style-image: none;
+  background: url(chrome://global/skin/arrow/arrow-down.png);
+}
+
+.button-menu-dropmarker[disabled=true],
+.button-menubutton-dropmarker[disabled=true] {
+  background: url(chrome://global/skin/arrow/arrow-down.png);
+}
+
+.button-menubutton-dropmarker[open=true] {
+  margin: 2px 0 0 2px;
+}
+
+/* plain buttons */
+
+button.plain {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+button[type=disclosure] {
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-image: url(chrome://global/skin/tree/twisty.png);
+  border: 0 !important;
+  background: none !important;
+  background-color: transparent;
+}
+
+button[type=disclosure][open=true] {
+  list-style-image: url(chrome://global/skin/tree/twisty-open.png);
+}
+
+#ok,#closeButton,button[dlgtype=accept] {
+  list-style-image: url(chrome://global/skin/CuteMenus/accept.png);
+}
+
+#cancel, button[dlgtype=cancel],
+button[oncommand="close();"] {
+  list-style-image:url(chrome://global/skin/CuteMenus/stop.png);
+}
+
+#help,#HelpButton, button[dlgtype=help] {
+  list-style-image: url(chrome://global/skin/CuteMenus/help.png);
+}
+
+button[dlgtype=disclosure] {
+  list-style-image:url(chrome://global/skin/CuteMenus/edit_add.png);
+}
+
+button[dlgtype^=extra] {
+  list-style-image: url(chrome://global/skin/CuteMenus/minimize.png);
+}
+
+button[icon=save] {
+  list-style-image: url(chrome://global/skin/CuteMenus/save.png);
+}
+
+button[type=menu-button] {
+  margin-left: 0;
+  padding: 0 3px 0 0;
+}
+
+button[type=menu-button] > button {
+  margin: -2px 3px -2px -2px;
+  border-right: 1px solid;
+  border-radius: 5px 0 0 5px;
+}
+
+
+/* .......... active/open/checked state .......... */
+
+button[checked="true"] {
+  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+button[checked="true"] > .button-box:-moz-system-metric(windows-classic) {
+  padding-top: 2px;
+  padding-bottom: 1px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 3px;
+}

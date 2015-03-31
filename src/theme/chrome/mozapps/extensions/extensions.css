@@ -1,0 +1,930 @@
+#addons-page {
+	padding: 15px 0 15px 0;
+	border-left: 1px solid #a0a0a0;
+	border-right: 1px solid #a0a0a0;
+	border-bottom: 1px solid #a0a0a0;
+	background: linear-gradient(#e8e8ec,#adaebb);
+}
+
+#search-list{
+	background: linear-gradient(#e8e8ec,#adaebb);
+	border:0;
+}
+
+#search-view , #view-port, #addon-list,#updates-list,#userstyle-sorting{
+	background: none;
+	border:0;
+}
+
+#view-port{
+	margin-top:5px;
+}
+
+#categories {
+  position: relative;
+  background: none;
+}
+
+.nav-button {
+  min-width: 0;
+  list-style-image: url(chrome://mozapps/skin/extensions/navigation.png);
+}
+
+.nav-button:hover {
+  min-width: 0;
+  list-style-image: url(chrome://mozapps/skin/extensions/navigation2.png);
+}
+
+.nav-button[disabled=true] {
+  opacity: .3;
+}
+
+.nav-button > .toolbarbutton-icon {
+  margin: 0;
+}
+
+#back-btn {
+  -moz-image-region: rect(0 18px 18px 0);
+}
+
+#forward-btn {
+  -moz-image-region: rect(0 36px 18px 18px);
+}
+
+.category {
+  -moz-box-align: center;
+  overflow: hidden;
+  min-height: 0;
+  padding: 10px 4px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.category[disabled] {
+  height: 0;
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 0;
+  transition-property: height, margin, opacity;
+  transition-duration: 1s, 0.8s;
+}
+
+.category:not([disabled]) {
+  height: 52px;
+  margin: 2px 4px;
+  transition-property: height, margin, opacity;
+  transition-duration: 1s, 0.8s;
+}
+
+#categories > .category:hover {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: url(chrome://global/skin/button/hover.png) transparent;
+  background-size: 100% 100%;
+}
+
+#categories > .category[selected] {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #02a1fe;
+  -moz-border-bottom-colors: #808080 #02a1fe;
+  -moz-border-left-colors: #808080 #fff;
+  background: url(chrome://global/skin/button/select.png) transparent;
+  background-size: 100% 100%;
+}
+
+.category-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 6px;
+}
+
+#category-search > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-search.png");
+}
+#category-discover > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-discover.png");
+}
+#category-locale > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-languages.png");
+}
+#category-searchengine > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-searchengines.png");
+}
+#category-extension > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-extensions.png");
+}
+#category-theme > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-themes.png");
+}
+#category-plugin > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/plugins/pluginGeneric.png");
+}
+#category-availableUpdates > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-available.png");
+}
+#category-recentUpdates > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-recent.png");
+}
+#category-dictionary > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-dictionaries.png");
+}
+#category-service > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-services.png");
+}
+
+.category-name {
+  font-size: 140%;
+  letter-spacing: 0.05em;
+}
+
+@media all and (max-width: 800px) {
+  .category-name {
+    display: none;
+  }
+
+  .category-icon {
+    margin: 0 6px;
+  }
+}
+
+.category-badge {
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 8px;
+  border: 1px inset #fff;
+  border-radius: 4px;
+  background-color: #fc2;
+}
+
+.category-badge[value="0"] {
+  display: none;
+}
+
+#header-name {
+  font-weight: bold;
+  font-size: 180%;
+  color: #555;
+  text-shadow: 1px 1px 1px #eee;
+}
+
+#header-utils-btn {
+  -moz-box-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  width:45px;
+  padding: 1px 5px;
+  list-style-image: url(chrome://global/skin/CuteMenus/options.png);
+  border: 1px solid black;
+  background: url(chrome://global/skin/button/body.png);
+  box-shadow:1px 1px 2px rgba(0, 0, 0, 0.4); 
+}
+
+#header-utils-btn:hover {
+  background: url(chrome://global/skin/button/body-hover.png);
+}
+
+#header-utils-btn > .toolbarbutton-menu-dropmarker {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+  -moz-image-region: auto;
+}
+
+#header-search {
+	border-radius: 25px;
+	height:20px;
+}
+
+.sorter {
+  -moz-box-direction: reverse;
+  min-width: 12px !important;
+  padding: 0 6px;
+  margin: 0 6px;
+  border: 1px solid #a2a6ad;
+}
+
+.sorter:hover {
+  border-color: #75797f;
+}
+
+.sorter:hover:active {
+  border-color: #000;
+}
+
+.sorter[checkState="1"] {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+}
+
+.sorter[checkState="2"] {
+  list-style-image: url(chrome://global/skin/arrow/arrow-up.gif);
+}
+
+.sorter > .button-box > .button-icon {
+  margin: 0 -2px 0 4px;
+}
+
+#header-searching {
+  list-style-image: url(chrome://global/skin/throbber/throbber.gif);
+}
+
+.view-header {
+  padding: 3px 4px;
+}
+
+.addon{
+  margin: 0 1px 0 1px;
+  padding: 0 4px 0 0 !important;
+  border: 1px solid #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,.7);
+}
+
+.addon[selected] {
+  border-color: #348abe;
+}
+
+.addon[active=true][selected] {
+  background: linear-gradient(#c9e7ff,#5ab5ff);
+}
+
+.addon:first-child {
+  margin-top: 4px;
+}
+
+.addon:last-child {
+  margin-bottom: 4px;
+}
+
+.addon[status=installing] {
+  -moz-box-align: center;
+  background: linear-gradient(#ffffd6,#ff8) !important;
+}
+
+.addon[active=false] {
+  color: #747474;
+  background-color: rgba(221,221,221,.5);
+}
+
+.addon[active=false] .icon  {
+  opacity: .75 !important;
+}
+
+.addon[active=false]:hover .icon  {
+ opacity: 1.0 !important;
+}
+
+.addon-view[notification=warning] .warning {
+  background-image: linear-gradient(#ff0,#fc0);
+}
+
+.addon-view[notification=error] .error {
+  background-image: linear-gradient(#f88,#f00);
+}
+
+.addon-view[notification=info] .info {
+  background-image: linear-gradient(#88f,#00f);
+}
+
+.addon-view[pending=enable] .pending,
+.addon-view[pending=upgrade] .pending,
+.addon-view[pending=install] .pending {
+  background: linear-gradient(#e1ebff,#bbd0fc,#e1ebff);
+  font-weight: bold;
+}
+
+.addon-view[pending=disable] .pending,
+.addon-view[pending=uninstall] {
+  background-image: linear-gradient(rgba(255,255,255,.6),rgba(128,128,128,.3)),
+    -moz-repeating-linear-gradient(60deg,rgba(128,128,128,.2),rgba(128,128,128,.2) 20px,
+	rgba(128,128,128,.5) 20px,rgba(128,128,128,.5) 40px) !important;
+}
+
+.addon .relnotes-toggle {
+  cursor: pointer;
+  padding: 0 6px;
+  margin: 3px;
+  min-width: 12px !important;
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+  -moz-box-direction: reverse;
+  border: 0;
+  background: transparent;
+}
+
+.addon .relnotes-toggle > .button-box > .button-icon {
+  margin: 0 -2px 0 4px;
+}
+
+.addon[show-relnotes] .relnotes-toggle {
+  list-style-image:url(chrome://global/skin/arrow/arrow-up.gif);
+}
+
+.addon .relnotes-toggle:hover {
+  box-shadow:inset rgba(31,154,253,.4) 0 -5px 12px, inset rgba(31,154,253,1) 0 1px 3px, rgba(255,255,255,.4) 0 1px;
+}
+
+.global-warning-container {
+  overflow-x: hidden;
+}
+
+#addons-page[warning] .global-warning-container {
+  background-image: -moz-repeating-linear-gradient(45deg,rgba(255,255,255,0),rgba(255,255,255,0) 20px,rgba(255,240,0,.3) 20px,rgba(255,240,0,.3) 40px),
+  linear-gradient(#adaebb,#e8e8ec);
+}
+
+.global-warning {
+  -moz-box-align: center;
+  font-weight: bold;
+  color: #916D15;
+  padding: 0 8px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+#detail-view .global-warning {
+  padding: 1px 12px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #808080;
+}
+
+@media all and (max-width: 600px) {
+  .global-warning-text {
+    display: none;
+  }
+}
+
+.alert-container {
+  -moz-box-align: center;
+}
+
+.alert-spacer-before {
+  -moz-box-flex: 1;
+}
+
+.alert-spacer-after {
+  -moz-box-flex: 3;
+}
+
+.alert {
+  -moz-box-align: center;
+  margin: 8px;
+  padding: 10px;
+  color: #373d48;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  background: linear-gradient(#e8e8ec,#adaebb);
+  box-shadow: 2px 2px 4px #999; 
+}
+
+.alert .alert-title {
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: 15px;
+}
+
+.alert .addon-control {
+  margin: 1em 2em;
+}
+
+.loading {
+  padding: 0 20px;
+  list-style-image: url(chrome://global/skin/throbber/throbber.gif);
+}
+
+.details {
+  cursor: pointer;
+  margin: 0 0 0 10px;
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+}
+
+.icon,#detail-icon {
+  max-width: 48px;
+  max-height: 48px;
+  margin: 5px;
+  list-style-image:url(chrome://mozapps/skin/xpinstall/xpinstallItemGeneric.png)
+}
+
+.addon-view[type=theme] .icon {
+  list-style-image:url(chrome://mozapps/skin/extensions/category-themes.png);
+}
+
+.addon-view[type=locale] .icon {
+  list-style-image:url(chrome://mozapps/skin/extensions/category-languages.png);
+}
+
+.addon-view[type=plugin] .icon {
+  list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric.png);
+}
+
+.name-container {
+  font-size: 140%;
+  margin-bottom: 0;
+}
+
+.description-container {
+  margin-top: 8px;
+  margin-left: 6px;
+}
+
+.description {
+  margin: 0;
+}
+
+.warning,.pending,.error ,.info{
+  -moz-margin-start: 0px;
+  font-weight: bold;
+  margin: -5px -5px 0;
+  padding: 2px 2px 2px 60px;
+  border-radius: 5px 5px 0 0;
+  -moz-box-align: center;
+}
+
+.addon-view:not([selected]) .warning {
+  color: #90792e;
+}
+
+.addon-view:not([selected]) .error {
+  color: #7c322b;
+}
+
+.addon-view:not([selected]) .pending {
+  color: #4f7939;
+}
+
+.warning-icon {
+  width: 16px;
+  height: 16px;
+  list-style-image: url(chrome://global/skin/icons/warning-16.png);
+}
+
+#addons-page .warning-icon {
+  width: 24px;
+  height: 24px;
+  list-style-image: url("chrome://browser/skin/icons/warning2.png") !important;
+}
+
+.error-icon {
+  width: 16px;
+  height: 16px;
+  list-style-image: url(chrome://global/skin/CuteMenus/stop.png);
+}
+
+#addons-page  .error-icon {
+  width: 24px;
+  height: 24px;
+  list-style-image: url("chrome://browser/skin/icons/stop2.png") !important;
+}
+
+.pending-icon,.info-icon {
+  width: 16px;
+  height: 16px;
+  list-style-image: url(chrome://global/skin/CuteMenus/info.png);
+}
+
+#addons-page .pending-icon {
+  width: 24px !important;
+  height: 24px !important;
+  list-style-image: url("chrome://browser/skin/icons/info2.png") !important;
+}
+
+.addon .relnotes-container {
+  -moz-box-align: start;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.5s;
+}
+
+.addon[show-relnotes] .relnotes-container {
+  opacity: 1;
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.5s;
+}
+
+.addon .relnotes-header {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.relnotes-container label[anonid=relnotes-error] {
+  color: #f00;
+}
+
+.addon[status=installed][pending=true] .status-container {
+  margin-top: 3px;
+}
+
+.addon .status-container > hbox[anonid=update-available] > label {
+  color: #090;
+}
+
+.addon[status=uninstalled] {
+  border: 0;
+  background-image: none !important;
+}
+
+.addon[status=uninstalled] > .container {
+  -moz-box-align: center;
+  font-size: 120%;
+  padding: 4px 20px;
+  border: 1px solid #ffd500;
+  border-radius: 8px;
+  background: linear-gradient(#ffffd6,#ff8);
+}
+
+.addon[status=uninstalled][selected] {
+  background: transparent;
+}
+
+#update-selected-btn {
+  margin: 12px;
+}
+
+#search-filter {
+  overflow-x: hidden;
+  font-size: 120%;
+  color: #555;
+  padding: 5px 20px;
+  text-shadow: 1px 1px 1px #eee;
+  border: 0;
+  background: none;
+}
+
+#search-filter-label {
+  font-weight: bold;
+}
+
+.search-filter-radio {
+  color: #000;
+  margin: 0 6px;
+  padding: 1px 5px 1px 3px;
+  text-shadow: none;
+  border: 1px solid #a2a6ad;
+  border-radius: 5px;
+  background-color: #fafafb;
+}
+
+.search-filter-radio[selected] {
+  box-shadow:inset rgba(31,154,253,.4) 0 -5px 12px, inset rgba(31,154,253,1) 0 1px 3px, rgba(255,255,255,.4) 0 1px;
+}
+
+.search-filter-radio .radio-icon,
+.search-filter-radio .radio-check {
+  display: none;
+}
+
+#search-allresults-link {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+#detail-view .loading {
+  opacity: 0;
+  margin-top: 10px;
+}
+
+#detail-view[loading-extended] .loading {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.spinner {
+  width: 16px;
+  background: url(chrome://global/skin/throbber/throbber.gif) 0 0 no-repeat;
+}
+
+.detail-view-container {
+  font-size: 110%;
+  padding: 0 2em 2em;
+}
+
+#detail-notifications {
+  margin-bottom: 1em;
+}
+
+#detail-summary {
+  margin-bottom: 2em;
+}
+
+#detail-icon {
+  max-width: 64px;
+  max-height: 64px;
+  margin-right: 10px;
+}
+
+#detail-notifications .warning,
+#detail-notifications .pending,
+#detail-notifications .error,
+#detail-notifications .info {
+  margin: 0;
+  padding: 15px 80px;
+  border-radius: 0 0 5px 5px;
+}
+
+#detail-name-container {
+  font-size: 200%;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+#detail-screenshot {
+  max-height: 300px;
+  max-width: 300px;
+  margin-right: 2em;
+}
+
+#detail-desc-container {
+  margin-bottom: 2em;
+}
+
+#detail-desc, #detail-fulldesc {
+  white-space: pre-wrap;
+  outline: solid transparent;
+  min-width: 10em;
+  margin-left: 6px;
+ }
+
+ #detail-fulldesc {
+  margin-top: 1em;
+}
+
+#detail-contributions {
+  margin-bottom: 2em;
+  padding: 1em;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+#detail-contrib-description {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+#detail-contrib-suggested {
+  color: #999;
+}
+
+#detail-contrib-btn {
+  list-style-image: url(chrome://global/skin/CuteMenus/bookmark.png);
+}
+
+#detail-grid {
+  margin-bottom: 2em;
+}
+
+#detail-controls {
+  margin-bottom: 1em;
+}
+
+.detail-row[first-row=true],
+detail-row-complex[first-row=true] {
+ border-top: 0;
+}
+
+.detail-row,
+.detail-row-complex {
+  -moz-box-align: center;
+  border-top: 1px solid #aaa;
+}
+
+.detail-row-value {
+  margin-left: 0;
+}
+
+#detail-autoUpdate {
+  margin-left: -8px;
+}
+
+.creator > label {
+  margin: 1px 0 2px;
+}
+
+.meta-rating {
+  vertical-align: text-top;
+  margin: 1px 0 2px;
+}
+
+.meta-rating > .star {
+  padding: 2px 1px 0;
+  list-style-image: url(chrome://mozapps/skin/extensions/ratings.png);
+  -moz-image-region: rect(0 11px 11px 0);
+}
+
+.meta-rating > .star[on=true] {
+  list-style-image: url(chrome://mozapps/skin/extensions/ratings.png);
+  -moz-image-region: rect(11px 11px 22px 0);
+}
+
+.download-progress {
+  -moz-binding: url(chrome://mozapps/content/extensions/extensions.xml#download-progress);
+  width: 200px;
+  height: 24px;
+  margin: 2px 8px 0;
+  border: 1px solid #555;
+  border-radius: 10000px;
+  background-image: linear-gradient(#e1e1e1,#fefefe);
+  box-shadow: #777 1px 1px 2px;
+}
+
+.download-progress .start-cap,
+.download-progress[mode=undetermined] .end-cap,
+.download-progress[complete] .end-cap {
+  background-color: #6eb9db;
+}
+
+.download-progress .start-cap, .download-progress .end-cap {
+  width: 12px;
+}
+
+.download-progress .start-cap {
+  border-radius: 10000px 0 0 10000px;
+}
+
+.download-progress .end-cap {
+  border-radius: 0 10000px 10000px 0;
+}
+
+.download-progress .progress {
+  background: none;
+}
+
+.download-progress .progress-bar {
+  background-size: auto 140%;
+}
+
+.download-progress .status-container {
+  -moz-box-align: center;
+}
+
+.download-progress .cancel {
+  width: 16px;
+  height: 16px;
+  margin: 3px;
+  padding: 0;
+  border: 0;
+}
+
+.download-progress .cancel {
+  background: url(chrome://global/skin/CuteMenus/delete.png);
+}
+
+.download-progress .cancel:hover {
+  background: url(chrome://mozapps/skin/downloads/state-cancel.png);
+}
+
+.download-progress .status {
+  color: #000;
+  font-weight: bold;
+}
+
+.update-available,.install-status {
+  -moz-box-align: center;
+  color: #f00;
+}
+
+#updates-container {
+  -moz-box-align: center;
+}
+
+#updates-installed, #updates-downloaded {
+  color: #0b0;
+  font-weight: bold;
+}
+
+.addon-control:hover {
+  border-color: #75797f;
+}
+
+.addon-control:hover:active {
+  border-color: #000;
+}
+
+.addon-control[disabled=true] {
+  display: none;
+}
+
+.addon-control.enable {
+  list-style-image:url(chrome://global/skin/CuteMenus/accept.png);
+}
+
+.addon-control.disable {
+  list-style-image:url(chrome://global/skin/CuteMenus/fileclose.png);
+}
+
+.addon-control.remove {
+  list-style-image:url(chrome://global/skin/CuteMenus/delete.png);
+}
+
+.addon-control[anonid=restart-needed] {
+  list-style-image:url(chrome://global/skin/CuteMenus/restart.png);
+}
+
+#detail-install-btn,
+.addon-control[anonid^=restart-install] {
+  list-style-image:url(chrome://global/skin/CuteMenus/extensions.png);
+}
+
+.addon-control[anonid^=undo] {
+  list-style-image:url(chrome://global/skin/CuteMenus/undo.png);
+}
+
+#detail-findUpdates,#update-selected-btn,
+.addon-control[anonid=update-btn],
+.addon-control[anonid^=install-remote] {
+  list-style-image: url(chrome://global/skin/CuteMenus/UpdateAll.png);
+}
+
+.contribute {
+  list-style-image: url(chrome://browser/skin/places/star.png);
+ -moz-image-region: rect(0 16px 16px 0);
+}
+
+#detail-prefs-btn,
+button[anonid=preferences-btn] {
+  list-style-image:url(chrome://global/skin/CuteMenus/options.png);
+}
+
+.addon-control .button-text {
+  margin: 1px 5px;
+}
+
+.addon:hover:active .button-link,
+.addon[selected]  .button-link{
+	color: white;
+}
+
+.button-link {
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #1f67fa;
+  cursor: pointer;
+  min-width: 0;
+  margin-left: -6px;
+  margin-top: -1px;
+}
+
+.text-link {
+  color: #1f67fa;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.button-link:hover,
+.text-link:hover,
+.button-link:hover:active  {
+  color: #1f9afd;
+  text-decoration: underline;
+}
+
+.pending .button-link:hover {
+  color: #00f !important;
+}
+
+.pending .button-link{
+  color: #f00 !important;
+}
+
+.button-link .button-text {
+  margin: 0;
+}
+
+.discover-spacer-before,
+.discover-spacer-after {
+  -moz-box-flex: 1;
+}
+
+#discover-error .alert {
+  max-width: 45em;
+  -moz-box-flex: 1;
+}
+
+.discover-logo {
+  -moz-margin-end: 15px;
+}
+
+.discover-title {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: MetaWebPro-Book, "Trebuchet MS", sans-serif;
+  margin: 0 0 15px 0;
+}
+
+.discover-description {
+  text-align: justify;
+  margin: 0 0 15px 0;
+}
+
+.discover-footer {
+  text-align: justify;
+}

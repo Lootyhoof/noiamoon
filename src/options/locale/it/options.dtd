@@ -1,0 +1,214 @@
+<!ENTITY NoiaOptions                "Configuratore del tema Noia Moon">
+<!ENTITY Options                    "Opzioni">
+<!ENTITY Enable                     "On">
+<!ENTITY TweaksOff                  "Disabilita impostazioni">
+
+<!ENTITY Skinst                     "Aspetto">
+<!ENTITY Fontt                      "Carattere">
+<!ENTITY Tweaks                  	"Opzioni">
+<!ENTITY Personast                  "Personas">
+<!ENTITY PageP                   	"Pro">
+<!ENTITY About                      "Info">
+
+<!ENTITY Info                       "Info">
+
+<!ENTITY Main_skins_set             "Impostazioni principali">
+<!ENTITY Gray						"Grigio (predefinito) = Aspetto off">
+<!ENTITY Graylight                  "Grigio (barra degli strumenti più chiara)">
+<!ENTITY Graydark                   "Grigio (barra degli strumenti più scura)">
+<!ENTITY GrayFF3                    "Grigio (come in Firefox 3)">
+<!ENTITY Black                      "Nero">
+<!ENTITY BlackFF3                   "Nero (come in Firefox 3)">
+<!ENTITY Blue                       "Blu">
+<!ENTITY BlueFF3                    "Blu (come in Firefox 3)">
+<!ENTITY Ff4def                     "Firefox Windows 7 aspetto">
+<!ENTITY Glass1                  	"Glass (tutte le barre) (Windows 7/Vista only)">
+<!ENTITY Glass2                 	"Glass (completo) (Windows 7/Vista only) (riavvio di Pale Moon!)">
+
+<!ENTITY Tabs_custom				"Schede personalizzate *   o   Personas tabs">
+<!ENTITY Tabs_gray					"Schede grigio">
+<!ENTITY Tabs_gray_m				"Schede grigio moderno (predefinito)">
+<!ENTITY Tabs_gray_c				"Schede grigio Chrome **">
+<!ENTITY Tabs_black                 "Schede nero">
+<!ENTITY Tabs_blue                  "Schede blu">
+<!ENTITY Tabs_ff4def                "Schede Firefox Windows 7">
+<!ENTITY Tabs_glass1                "Schede Glass [v1]">
+<!ENTITY Tabs_glass2                "Schede Glass [v2]">
+<!ENTITY Tabs_glass3                "Schede Glass [v3]">
+<!ENTITY Noiatabs                   "schede speciali **">
+<!ENTITY Noiatabs1                  "Schede speciali [v1]">
+<!ENTITY Noiatabs2                  "Schede speciali [v2] per ColorfulTabs">
+<!ENTITY Noiatabs3                  "Schede speciali [v3]">
+<!ENTITY Noiatabs4                  "Schede speciali [v4] per ColorfulTabs">
+<!ENTITY Noiatabs5                  "Schede speciali [v5] per ColorfulTabs">
+<!ENTITY Ntabs0                     "* Richiesto da ColorfulTabs, TabMixPlus ecc per colorare le schede">
+<!ENTITY Ntabs1                     "** Schede disabilita le righe multiple o avanzamento.">
+
+<!ENTITY Custom0                    "ColorfulTabs, TabMixPlus, TabUtilities e altri add-ons RICHIEDONO">
+<!ENTITY Custom1                    "il &quot;schede personalizzate&quot; opzione per COLORARE le schede!">
+
+<!ENTITY Personagetlabel            "Scarica &quot;Persona&quot; da...">
+<!ENTITY Or				            "o">
+<!ENTITY Persona01                  "1) Imposta persona  (riavvio di Pale Moon!)">
+<!ENTITY Persona02                  "2) Selezionare tema Noia 4 (riavvio di Pale Moon!)">
+<!ENTITY Persona03                  "3) Selezionare l'opzione &quot;Persona&quot; in questa scheda (riavvio di Pale Moon!)">
+<!ENTITY Persona04					"Utilizzare ultimo attivo &quot;Persona&quot; con tema Noia 4">
+<!ENTITY Persona05               	"Ripeti i punti per un altro &quot;Persona&quot;!">
+<!ENTITY Personaimglabel            "Esempio (Firefox Blue Abstract Persona)">
+
+<!ENTITY Roxp                       "Menu a tendina arrotondati">
+<!ENTITY Noactblue                  "Disabilita il colore blu per schede evidenziate/attive">
+<!ENTITY Hidetabbarbg				"Nascondi scheda barre degli strumenti sfondo">
+<!ENTITY Cleaner                    "Barra degli strumenti senza linee">
+<!ENTITY Dd                         "Menu a tendina semi-trasparente">
+<!ENTITY Dddb                       "Menu a tendina nero">
+<!ENTITY Fullglassdd                "Glass menu a tendina">
+<!ENTITY Fullglassnopref            "Meno acetato sulle finestre di dialogo e di preferenza">
+<!ENTITY Fullglasstoolt				"Tooltip meno trasparente">
+
+<!ENTITY Toolbar                    "Barra degli strumenti">
+<!ENTITY Fontcolor                  "Colore">
+<!ENTITY Shadow                     "Ombra">
+<!ENTITY Tabs                       "Schede">
+<!ENTITY Tabsacthov                 "Schede (attive/evidenziate)">
+<!ENTITY Statusbar                  "Barra di stato">
+<!ENTITY Ddmenu                     "Menu a tendina">
+<!ENTITY Fontinfo                   "Info">
+<!ENTITY Fontinfo1                  "Quando si cambia tema, i colori e le ombre saranno resettate. Le impostazioni">
+<!ENTITY Fontinfo2                  "del colore delle schede non sono compatibili con l'estensione ColorfulTabs.">
+
+<!ENTITY Page1                   	"Basic">
+<!ENTITY Page2                   	"Schede">
+<!ENTITY Page3                   	"Schede 2">
+<!ENTITY Page4                   	"Barra">
+<!ENTITY Page5                   	"Vari">
+
+<!ENTITY Tooltippage1              	"Pulsanti e barre di scorrimento">
+<!ENTITY Tooltippage2             	"Scheda dimensioni e grafica">
+<!ENTITY Tooltippage3              	"Forme speciali per le schede">
+<!ENTITY Tooltippage4              	"Pulsanti di navigazione e le icone della barra degli strumenti">
+<!ENTITY Tooltippage5              	"Vari">
+
+<!ENTITY Ffbutton                   "Tasto Pale Moon (Windows/Linux)">
+<!ENTITY Appbutnoia                 "Trasparente (Noia 4 predefinito)">
+<!ENTITY Appbutorg                  "Blu (Pale Moon predefinito)">
+<!ENTITY Appbutaurora               "Aurora (Firefox Aurora versione)">
+<!ENTITY Appbutnightly              "Nightly (Firefox Nightly versione)">
+<!ENTITY Appbutat                   "Sempre trasparente (navigazione normale/anonima)">
+<!ENTITY Appbutao                   "Sempre blu (navigazione normale/anonima)">
+<!ENTITY Appbut_nt                  "Solo icona">
+<!ENTITY Appbut                     "Icona con testo">
+<!ENTITY Appbutdm                   "Rimuovi tasto dropmarker">
+
+<!ENTITY Buttons                    "Tasti">
+<!ENTITY Butdark                    "Tasti scuri">
+<!ENTITY Butglass                   "Tasti trasparenti">
+<!ENTITY Butsemiround               "Tasti parzialmente arrotondati">
+
+<!ENTITY Scrollbars                 "Colore barra di scorrimento">
+<!ENTITY Scrollbars1                "predefinito (Noia Moon)">
+<!ENTITY Scrollbars2                "scuro (Noia Moon)">
+<!ENTITY Scrollbarsdef              "Pale Moon predefinito o da &quot;NewScrollbars&quot; add-on">
+<!ENTITY Scrollbarslink             "NewScrollbars">
+
+<!ENTITY Taboptions                 "Opzioni schede (leggere la Guida delle regolazioni)">
+<!ENTITY Tabinfo0	                "Impostazioni potrebbero non essere compatibili con altri add-on.">
+<!ENTITY RoundTab                   "Schede arrotondate">
+<!ENTITY RoundtTab                  "Schede arrotondate (solo in alto a destra/sinistra)">
+<!ENTITY CloseBut                   "Tasto di chiusura alternativo">
+<!ENTITY CloseBut_alw               "Mostra sempre il tasto di chiusura (sulle schede 2-7)">
+<!ENTITY CloseButbig                "Tasto chiusura schede più grande">
+<!ENTITY CloseButhide               "Nascondi tasto chiusura schede per schede non evidenziate">
+<!ENTITY Nbtabh                     "Carattere grassetto disabilitato su scheda evidenziata">
+<!ENTITY Nbtaba                     "Carattere grassetto disabilitato su scheda attiva">
+<!ENTITY Tabtextmargin              "Più spazio tra le icone e il testo scheda">
+<!ENTITY Hightabs                   "Altezza scheda più grande (si raccomanda il riavvio di Pale Moon)">
+<!ENTITY Lowtabs					"Altezza scheda più piccola (si raccomanda il riavvio di Pale Moon)">
+<!ENTITY Tabblinkact0               "Scheda attiva lampeggiante - Off">
+<!ENTITY Tabblinkact1               "Scheda attiva lampeggiante [v1]">
+<!ENTITY Tabblinkact2               "Scheda attiva lampeggiante [v2]">
+<!ENTITY Tabblinkact3               "Scheda attiva lampeggiante [v3]">
+<!ENTITY Alttabthr0                 "Animazione alternativa per l'indicatore attività scheda - Off">
+<!ENTITY Alttabthr1                 "Animazione alternativa per l'indicatore attività scheda [v1]">
+<!ENTITY Alttabthr2                 "Animazione alternativa per l'indicatore attività scheda [v2]">
+<!ENTITY Tabclose	                "Combinato favicon/tab-close-button">
+<!ENTITY Tabprog0                   "Barra di avanzamento alternativa per TabMixPlus - off">
+<!ENTITY Tabprog1                   "Barra di avanzamento alternativa per TabMixPlus [v1]">
+<!ENTITY Tabprog2                   "Barra di avanzamento alternativa per TabMixPlus [v2]">
+<!ENTITY Tabprog3                   "Barra di avanzamento alternativa per TabMixPlus [v3]">
+
+<!ENTITY Highbook                   "Barra dei segnalibri più alta">
+<!ENTITY Bmfolder                   "Cartella segnalibri viola">
+<!ENTITY Altmb                      "Barra dei menu alternativa (più grande)">
+<!ENTITY Titlebarosd				"Sistema operativo predefinito barra del titolo">
+<!ENTITY Urlbarbf                   "Carattere più grande per la barra degli indirizzi/barra di ricerca">
+<!ENTITY Ddboldfont                 "Carattere più grande per menu a tendina">
+<!ENTITY Menuspace					"Compact menu a tendina">
+<!ENTITY Icorot                     "Rotazione delle icone evidenziate (15deg)">
+<!ENTITY Icorot2                    "Rotazione delle icone evidenziate (360deg)">
+<!ENTITY Tooltip1                   "Suggerimenti stile Windows XP">
+<!ENTITY Hideclose1                 "Nascondi tasto di chiusura sulla barra dei componenti aggiuntivi">
+<!ENTITY Hideclose2                 "Nascondi tasto di chiusura sulla barra di ricerca">
+<!ENTITY Wincon0                    "Visualizza icone (min, max, ripristino, chiudere):">
+<!ENTITY Wincon1                  	"stile MacOs (non su AeroGlass)">
+<!ENTITY Wincon2                  	"stile Noia Moon (non su AeroGlass)">
+<!ENTITY Dropdownmenit				"Gli oggetti del menu evidenziati/attivi:">
+<!ENTITY Hovandactm0				"colore di sfondo blu (1)">
+<!ENTITY Hovandactm1				"colore di sfondo blu (2)">
+<!ENTITY Hovandactm2				"colore di sfondo viola">
+<!ENTITY Hovandactm3                "colore di sfondo semitrasparente">
+<!ENTITY Hovandactm4                "colore di sfondo trasparente">
+
+<!ENTITY Tbblabel                   "Barra degli strumenti">
+<!ENTITY FF4deftbb                  "Tasti come Firefox 4-12 [v1] (riavvio di Pale Moon!)">
+<!ENTITY FF4deftbb2                 "Tasti come Firefox 4-12 [v2] (riavvio di Pale Moon!)">
+<!ENTITY Smalltbb                   "Tasti più piccoli (Noia)">
+<!ENTITY Tbbgray                    "Tasti colore grigio">
+<!ENTITY Smallfw                    "Tasto &quot;avanti&quot; più piccolo [v1]">
+<!ENTITY Smallfw2                   "Tasto &quot;avanti&quot; più piccolo [v2] (non sovrapposto)">
+<!ENTITY Smallfw3                   "Tasto &quot;avanti&quot; più piccolo [v3]">
+<!ENTITY Tbbgh                      "Sfondo tasti evidenziati [v1]">
+<!ENTITY Tbbgh2                     "Sfondo tasti evidenziati [v2]">
+<!ENTITY Tbnocheckbg                "Disabilita sfondo tasti attivi della barra degli strumenti">
+
+<!ENTITY Bfdm                       "Back-forward-dropmarker">
+<!ENTITY Bfdm1                      "Back-forward-dropmarker [v1]">
+<!ENTITY Bfdm2                      "Back-forward-dropmarker [v2]">
+
+<!ENTITY Owntabs0					"I colori propri della scheda per schede personalizzate">
+<!ENTITY Owntabs1					"I colori propri">
+<!ENTITY Colortrans					"Ccolore e trasparenza">
+<!ENTITY Owntabdef					"    Schede">
+<!ENTITY Owntabhov					"    Schede [evidenziate]">
+<!ENTITY Owntabsel					"    Schede [attive]">
+<!ENTITY Owntabpdef					"    Scheda applicazione">
+<!ENTITY Owntabphov					"    Scheda applicazione [evidenziate]">
+<!ENTITY Owntabpsel					"    Scheda applicazione [attive]">
+<!ENTITY Owntabndef					"    Nuova scheda">
+<!ENTITY Owntabnhov					"    Nuova scheda [evidenziate]">
+
+<!ENTITY N4Favicon					"Favicon">
+<!ENTITY N4FaviconW					"Dichiaro di aver letto e compreso il presente accordo!">
+<!ENTITY N4Favicon0					"Favicon nella barra degli indirizzi (riavvio di Pale Moon!)">
+<!ENTITY N4Favicon1					"Nascondi globo icona (riavvio di Pale Moon!)">
+<!ENTITY FFinternal					"Pale Moon impostazioni interne">
+<!ENTITY TcTabsontop				"Visualizza le schede in alto">
+<!ENTITY Tcclassicdl				"Vecchio download-button">
+<!ENTITY Prefsincont				"Preferenze nel tab">
+<!ENTITY FFinternalinfo3			"Le impostazioni non verranno ripristinate,">
+<!ENTITY FFinternalinfo4			"esportate o importate da gestore di temi Noia Moon's!">
+
+<!ENTITY Aboutinfo1                 "Configuratore del tema Noia Moon">
+<!ENTITY Iconset                    "Noia iconset by Carlitus">
+<!ENTITY Based                      "Basato sul tema &quot;Noia 2 eXtreme&quot; by Kasteo">
+
+<!ENTITY Tc_settings				"Impostazioni &amp; Aiuto">
+<!ENTITY Tc_overview				"Aiuto (Inglese)">
+<!ENTITY Tc_import					"Importare da file">
+<!ENTITY Tc_export					"Esportare in file">
+<!ENTITY Tc_default					"Ripristina predefinite">
+
+<!ENTITY Tc_close					"Chiudere">
+
+<!ENTITY backForwardMenu.tooltip    "Pagine recenti">
+<!ENTITY N4ntbutton    				"Nuova schada">

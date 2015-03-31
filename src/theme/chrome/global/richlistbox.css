@@ -1,0 +1,26 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+richlistbox {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+richlistbox[disabled="true"] {
+	color: #808080;
+}
+
+richlistbox richlistitem {
+  padding: 0px !important;
+}
+
+richlistitem[selected="true"]{
+	background: linear-gradient(#c9e7ff,#5ab5ff) !important;
+}
+
+richlistitem:hover[selected="true"]{
+	background: linear-gradient(#c9e7ff,#5ab5ff) !important;
+}
+
+richlistitem:hover {
+	background: linear-gradient(#ffffff,#e8e8ec) !important;
+}

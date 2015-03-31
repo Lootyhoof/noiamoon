@@ -1,0 +1,214 @@
+<!ENTITY NoiaOptions				"NOIA MOON TEMAHANTERARE">
+<!ENTITY Options					"ÖVRIGT">
+<!ENTITY Enable						"På">
+<!ENTITY TweaksOff      	        "Återställ allt finlir och andra extraval">
+
+<!ENTITY Skinst						"Temaskal">
+<!ENTITY Fontt						"TYPSNITT FÄRGER">
+<!ENTITY Tweaks						"FINLIR">
+<!ENTITY Personast					"PERSONAS">
+<!ENTITY PageP                   	"Pro">
+<!ENTITY About                  	"Om">
+
+<!ENTITY Info                   	"Info">
+
+<!ENTITY Main_skins_set             "GRUNDUTSEENDE">
+<!ENTITY Gray                   	"Grå standard = Slå av egna val">
+<!ENTITY Graylight                  "Grått tema med ljusare verktygslister">
+<!ENTITY Graydark                   "Grått tema med mörkare verktygslister">
+<!ENTITY GrayFF3                    "Grått tema (Firefox 3)">
+<!ENTITY Black                      "Svart tema">
+<!ENTITY BlackFF3                   "Svart tema (Firefox 3)">
+<!ENTITY Blue                       "Blått tema">
+<!ENTITY BlueFF3                    "Blått tema (Firefox 3)">
+<!ENTITY Ff4def                     "Firefox för Windows 7">
+<!ENTITY Glass1                  	"AeroGlass (alla menyfälts) (endast Windows 7/Vista)">
+<!ENTITY Glass2                 	"AeroGlass (full) (endast Windows 7/Vista) (Pale Moon måste startas om!)">
+
+<!ENTITY Tabs_custom				"ANPASSADE FLIKAR *    eller    Personaflikar">
+<!ENTITY Tabs_gray					"Grå flikar">
+<!ENTITY Tabs_gray_m				"Grå moderna flikar (standard)">
+<!ENTITY Tabs_gray_c				"Grå Chrome-flikar **">
+<!ENTITY Tabs_black                 "Svarta flikar">
+<!ENTITY Tabs_blue                  "Blå flikar">
+<!ENTITY Tabs_ff4def                "Firefox Windows-7 flikar">
+<!ENTITY Tabs_glass1                "AeroGlassflikar [v1]">
+<!ENTITY Tabs_glass2                "AeroGlassflikar [v2]">
+<!ENTITY Tabs_glass3                "AeroGlassflikar [v3]">
+<!ENTITY Noiatabs               	"Specialflikar (&quot;Noia 4 flikar&quot;) **">
+<!ENTITY Noiatabs1              	"Specialflikar [v1]">
+<!ENTITY Noiatabs2              	"Specialflikar [v2] för ColorfulTabs">
+<!ENTITY Noiatabs3              	"Specialflikar [v3]">
+<!ENTITY Noiatabs4              	"Specialflikar [v4] för ColorfulTabs">
+<!ENTITY Noiatabs5              	"Specialflikar [v5] för ColorfulTabs">
+<!ENTITY Ntabs0                     "* Krävs av ColorfulTabs, TabMixPlus etc. för att färglägga flikar">
+<!ENTITY Ntabs1                 	"** Ej &quot;flerradiga&quot; eller med &quot;flikprogress&quot; möjliga.">
+
+<!ENTITY Custom0                	"ColorfulTabs, TabMixPlus, TabUtilities och andra tillägg KRÄVER">
+<!ENTITY Custom1           			"&quot;ANPASSADE FLIKAR&quot; för att FÄRGLÄGGA flikar!">
+
+<!ENTITY Personagetlabel     		"Sök en Persona på:">
+<!ENTITY Or                			"eller">
+<!ENTITY Persona01                  "1) Installera Persona (Starta om Pale Moon)">
+<!ENTITY Persona02                  "2) Välj Noia Moon tema (Starta om Pale Moon)">
+<!ENTITY Persona03                  "3) Alternativet &quot;Persona&quot; på den här fliken (Starta om Pale Moon)">
+<!ENTITY Persona04					"Använda sista aktiverade Persona med Noia Moon tema">
+<!ENTITY Persona05               	"Upprepa stegen för ett annat Persona!">
+<!ENTITY Personaimglabel    		"Exempel (Firefox Blue Abstract Persona)">
+
+<!ENTITY Roxp                   	"Rundade menyfält (utfällda menyer)">
+<!ENTITY Noactblue              	"Ej blå standardfärg på aktiva och hovrade flikar">
+<!ENTITY Hidetabbarbg				"Göm Verktygsfälts bakgrund">
+<!ENTITY Cleaner                	"Verktygsfält utan linjer">
+<!ENTITY Dd                     	"Svagt genomskinliga menyer">
+<!ENTITY Dddb                   	"Svarta verktygsmenyer">
+<!ENTITY Fullglassdd      		    "Halvgenomskinliga verktygsmenyer">
+<!ENTITY Fullglassnopref            "Mindre öppenhet i fråga om preferenser- &amp; dialogrutor">
+<!ENTITY Fullglasstoolt				"Mindre transparent tooltip">
+
+<!ENTITY Toolbar            		"På menyraden">
+<!ENTITY Fontcolor              	"TEXTFÄRGER">
+<!ENTITY Shadow                 	"SKUGGNINGAR">
+<!ENTITY Tabs                   	"På inaktiva flikar">
+<!ENTITY Tabsacthov             	"På aktiva och hovrade flikar">
+<!ENTITY Statusbar              	"På statusfält">
+<!ENTITY Ddmenu                 	"På utfällda menyer">
+<!ENTITY Fontinfo               	"Info">
+<!ENTITY Fontinfo1              	"Färg- och textskuggor återställs vid nytt temaval.">
+<!ENTITY Fontinfo2              	"Textfärgval är inte kompatibelt med tillägget ColorfulTabs.">
+
+<!ENTITY Page1                  	"BASVAL">
+<!ENTITY Page2                  	"FLIKVAL 1">
+<!ENTITY Page3                  	"FLIKVAL 2">
+<!ENTITY Page4                  	"VERKTYG">
+<!ENTITY Page5                  	"ÖVRIGT">
+
+<!ENTITY Tooltippage1              	"Knappar och rullningslister">
+<!ENTITY Tooltippage2             	"Flikstorlekar och grafik">
+<!ENTITY Tooltippage3              	"Speciella flikformer">
+<!ENTITY Tooltippage4              	"Nav. knappar och verktygsikoner">
+<!ENTITY Tooltippage5              	"Diverse">
+
+<!ENTITY Ffbutton               	"PALE MOON KNAPP (Windows/Linux)">
+<!ENTITY Appbutnoia             	"Genomskinligt (Noia Moon standard)">
+<!ENTITY Appbutorg              	"Blå (Pale Moon standard)">
+<!ENTITY Appbutaurora           	"Aurora (Firefox Aurorabyggen)">
+<!ENTITY Appbutnightly          	"Nightly (Firefox Nightlybyggen)">
+<!ENTITY Appbutat               	"Alltid genomskinligt (normal och privat surfning)">
+<!ENTITY Appbutao               	"Alltid blå (normal och privat surfning)">
+<!ENTITY Appbut_nt              	"Endast ikon">
+<!ENTITY Appbut                 	"Ikon med text">
+<!ENTITY Appbutdm               	"Ingen menymarkör">
+
+<!ENTITY Buttons                	"KOMMANDOKNAPPARNA">
+<!ENTITY Butdark                	"Mörka">
+<!ENTITY Butglass               	"Genomskinliga">
+<!ENTITY Butsemiround           	"Halvrundade">
+
+<!ENTITY Scrollbars             	"RULLLNINGSLISTER">
+<!ENTITY Scrollbars1            	"Standard (Noia Moon)">
+<!ENTITY Scrollbars2            	"Mörk (Noia Moon)">
+<!ENTITY Scrollbarsdef          	"Pale Moon standard eller &quot;NewScrollbars&quot;">
+<!ENTITY Scrollbarslink             "NewScrollbars">
+
+<!ENTITY Taboptions             	"FLIKALTERNATIV (läs inställningar guide)">
+<!ENTITY Tabinfo0	                "Vissa inställningar kan vara oförenliga med andra fliken anknytningar.">
+<!ENTITY RoundTab               	"Rundade flikhörn">
+<!ENTITY RoundtTab              	"Halvrundade flikar (endast de övre hörnen)">
+<!ENTITY CloseBut               	"Mindre rund flikstängningsknapp">
+<!ENTITY CloseBut_alw           	"Visa alltid stängknappar (på flik 2-7)">
+<!ENTITY CloseButbig            	"Stor stängknapp">
+<!ENTITY CloseButhide               "Göm stängknapp på icke-fokuserade flikar">
+<!ENTITY Nbtabh                 	"Ingen fetstil på hovrade flikar">
+<!ENTITY Nbtaba                 	"Ingen fetstil på aktiva flikar">
+<!ENTITY Tabtextmargin              "Mer utrymme mellan ikoner och fliken text">
+<!ENTITY Hightabs               	"Större fliken höjd (omstarta helst Pale Moon)">
+<!ENTITY Lowtabs					"Mindre fliken höjd (omstarta helst Pale Moon)">
+<!ENTITY Tabblinkact0           	"Växlande grön och mörkrosa färg på aktiv flik - Av">
+<!ENTITY Tabblinkact1           	"Växlande grön och mörkrosa färg på aktiv flik [v1]">
+<!ENTITY Tabblinkact2           	"Snabbt blinkande med flera färger på aktiv flik [v2]">
+<!ENTITY Tabblinkact3           	"Växlade färger på aktiv flik [v3]">
+<!ENTITY Alttabthr0             	"Roterande ringgrafik vid uppdatering - Av">
+<!ENTITY Alttabthr1             	"Roterande ringgrafik vid uppdatering [v1]">
+<!ENTITY Alttabthr2             	"Roterande färggrafik vid uppdatering [v2]">
+<!ENTITY Tabclose	         		"Kombinerad Favicon/stängikon">
+<!ENTITY Tabprog0               	"Alternativ flikprogress för TabMixPlus - Av">
+<!ENTITY Tabprog1               	"Alternativ flikprogress för TabMixPlus [v1]">
+<!ENTITY Tabprog2               	"Alternativ flikprogress för TabMixPlus [v2]">
+<!ENTITY Tabprog3               	"Alternativ flikprogress för TabMixPlus [v3]">
+
+<!ENTITY Highbook               	"Tjockare bokmärkesrad">
+<!ENTITY Bmfolder               	"Lila bokmärkesikoner">
+<!ENTITY Altmb                  	"Tjockare menyrad">
+<!ENTITY Titlebarosd				"OS standard namnlist">
+<!ENTITY Urlbarbf               	"Större text på adressrad och i sökruta">
+<!ENTITY Ddboldfont                 "Större text på verktygsmenyer">
+<!ENTITY Menuspace					"Kompakta popupmenyer">
+<!ENTITY Icorot                 	"Ikonvinkling på hovrade flikikoner (15deg)">
+<!ENTITY Icorot2                 	"Ikonvinkling på hovrade flikikoner (360deg)">
+<!ENTITY Tooltip1               	"&quot;Windows XP&quot;-lika infofönster">
+<!ENTITY Hideclose1             	"Göm stängknapp på verktygsfältet för tilläggen">
+<!ENTITY Hideclose2             	"Göm stängknappen på sökrutan">
+<!ENTITY Wincon0                    "Fönsterstyrningsikoner (min, max, återställ, stäng):">
+<!ENTITY Wincon1                	"Macstil (ej synligt med AeroGlass)">
+<!ENTITY Wincon2                	"Noiastil (ej synligt med AeroGlass)">
+<!ENTITY Dropdownmenit				"HOVRADE OCH AKTIVA MENYPOSTER:">
+<!ENTITY Hovandactm0				"Blått bakgrundsfärg (1)">
+<!ENTITY Hovandactm1				"Blått bakgrundsfärg (2)">
+<!ENTITY Hovandactm2				"Lila bakgrundsfärg">
+<!ENTITY Hovandactm3                "Semitransparent bakgrundsfärg">
+<!ENTITY Hovandactm4				"Genomskinlig bakgrundsfärg">
+
+<!ENTITY Tbblabel               	"ALTERNATIV FÖR KNAPPAR OCH MARKÖRER">
+<!ENTITY FF4deftbb              	"Firefox 4-12 knappar [v1] (starta om Pale Moon!)">
+<!ENTITY FF4deftbb2             	"Firefox 4-12 knappar [v2] (starta om Pale Moon!)">
+<!ENTITY Smalltbb               	"Mindre knappar (Noia)">
+<!ENTITY Tbbgray                	"Grå knappar">
+<!ENTITY Smallfw                	"Mindre, tättsittande framåtknapp [v1]">
+<!ENTITY Smallfw2               	"Mindre, åtskild framåtknapp [v2]">
+<!ENTITY Smallfw3              		"Liten framåtknapp [v3]">
+<!ENTITY Tbbgh                 		"Ljus omgivning på hovrade verktygsikoner [v1]">
+<!ENTITY Tbbgh2                 	"Blå omgivning på hovrade verktygsikoner [v2]">
+<!ENTITY Tbnocheckbg            	"Ingen bakgrund på aktiva navigeringsknappar">
+
+<!ENTITY Bfdm                   	"TILLÄGG PÅ FRAM OCH BACKPILARNA">
+<!ENTITY Bfdm1                  	"Historikmarkör till höger [v1]">
+<!ENTITY Bfdm2                  	"Historikmarkör i mitten [v2]">
+
+<!ENTITY Owntabs0					"Flikfärger för egna flikar Inställningar">
+<!ENTITY Owntabs1					"Flikfärger">
+<!ENTITY Colortrans					"Färg &amp; transparans">
+<!ENTITY Owntabdef					"    Ej aktiv flik">
+<!ENTITY Owntabhov					"    Hovrad flik">
+<!ENTITY Owntabsel					"    Aktiv flik">
+<!ENTITY Owntabpdef					"    Ej aktiv programflik">
+<!ENTITY Owntabphov					"    Hovrad programflik">
+<!ENTITY Owntabpsel					"    Aktiv programflik">
+<!ENTITY Owntabndef					"    Omarkerad 'Ny flik'">
+<!ENTITY Owntabnhov					"    Markerad 'Ny flik'">
+
+<!ENTITY N4Favicon					"Favicon">
+<!ENTITY N4FaviconW					"Jag har läst och förstått detta avtal!">
+<!ENTITY N4Favicon0					"Favicon i adressfältet (Pale Moon måste startas om!)">
+<!ENTITY N4Favicon1					"Göm globikonen (Pale Moon måste startas om!)">
+<!ENTITY FFinternal					"Pale Moon interna inställningar">
+<!ENTITY TcTabsontop				"Flikar högst upp">
+<!ENTITY Tcclassicdl				"Gamla nedladdningar-knappen">
+<!ENTITY Prefsincont				"Inställningar i fliken">
+<!ENTITY FFinternalinfo3			"Inställningar återställs inte, exporteras eller importeras">
+<!ENTITY FFinternalinfo4			"av Noia Moon's temahanterare.">
+
+<!ENTITY Aboutinfo1             	"Noia Moon temahanterare">
+<!ENTITY Iconset                	"Noia ikonuppsättning av Carlitus">
+<!ENTITY Based                  	"Baserat på Kasteo's tema Noia2 eXtreme">
+
+<!ENTITY Tc_settings				"Inställningar &amp; Hjälp">
+<!ENTITY Tc_overview				"Hjälp (Engelska)">
+<!ENTITY Tc_import					"Importera inställningar">
+<!ENTITY Tc_export					"Exportera inställningar">
+<!ENTITY Tc_default					"Återställ standard">
+
+<!ENTITY Tc_close					"Stänga">
+
+<!ENTITY backForwardMenu.tooltip    "Senaste sidor">
+<!ENTITY N4ntbutton    				"Ny flik">

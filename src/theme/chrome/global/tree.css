@@ -1,0 +1,285 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#bookmarksPanel bookmarks-tree tree,
+#historyTree {
+  background-color: #FFFFFF !important;
+}
+
+/* ::::: tree ::::: */
+tree {
+  margin: 0px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #808080 #404040;
+  -moz-border-right-colors: #FFFFFF #D4D0C8;
+  -moz-border-bottom-colors: #FFFFFF #D4D0C8;
+  -moz-border-left-colors: #808080 #404040;
+  background-color: #EAEBED;
+  color: #000000;
+}
+
+/* ::::: tree rows ::::: */
+treechildren::-moz-tree-row {
+  border: 1px solid transparent;
+  min-height: 18px;
+  height: 1.3em;
+}
+
+treechildren::-moz-tree-row(hover) {
+  background: url("chrome://browser/skin/icons/Bookmark-background2.png");
+  /*background-position: center center;*/
+}
+
+treechildren::-moz-tree-row(selected) {
+  background: url("chrome://browser/skin/icons/Bookmark-background2.png");
+  /*background-position: center center;*/
+}
+
+treechildren::-moz-tree-row(selected, focus) {
+  background: url(chrome://browser/skin/icons/Bookmark-background_tr.png);
+}
+
+treechildren::-moz-tree-row(current, focus) {
+  border: 1px solid #0000FF;
+}
+
+/* ::::: tree cells ::::: */
+treechildren::-moz-tree-cell {
+  padding: 0px 2px 0px 2px;
+}
+
+treechildren::-moz-tree-cell-text {
+  color: inherit;
+}
+/*
+treechildren::-moz-tree-cell-text(hover) {
+  color: #0000FF;
+}
+
+treechildren::-moz-tree-cell-text(selected) {
+  color: #0000FF;
+}
+
+treechildren::-moz-tree-cell-text(selected, focus) {
+  color: #FFFFFF;
+}*/
+
+/* ::::: lines connecting cells ::::: */
+treechildren::-moz-tree-line {
+  border: 1px dotted #808080;
+}
+
+treechildren::-moz-tree-line(selected, focus) {
+  border: 1px dotted #FFFFFF;
+}
+
+/* ::::: tree separator ::::: */
+treechildren::-moz-tree-separator {
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+
+/* ::::: drop feedback ::::: */
+treechildren::-moz-tree-cell-text(primary, dropOn) {
+  background-color: #DADCE4; /* Hightlight */
+  color: #FFFFFF;
+}
+
+treechildren::-moz-tree-drop-feedback {
+  background-color: #DADCE4; /* Highlight */
+  width: 50px;
+  height: 2px;
+  margin-left: 5px;
+}
+
+/* ::::: tree progress meter ::::: */
+treechildren::-moz-tree-progressmeter {
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #808080 #DADCE4;
+  -moz-border-right-colors: #FFFFFF #DADCE4;
+  -moz-border-bottom-colors: #FFFFFF #DADCE4;
+  -moz-border-left-colors: #808080 #DADCE4;
+  background-color: #DADCE4;
+  color: #808080;
+}
+
+treechildren::-moz-tree-progressmeter(progressUndetermined) {
+  list-style-image: url("chrome://global/skin/progressmeter/progressmeter-busy.gif");
+}
+
+treechildren::-moz-tree-cell-text(progressmeter) {
+  margin: 2px 4px;
+}
+
+/* ::::: tree columns ::::: */
+treecol,
+treecolpicker {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  border: 1px solid;
+  -moz-border-top-colors: #FFFFFF #D4D0C8;
+  -moz-border-right-colors: #404040 #808080;
+  -moz-border-bottom-colors: #404040 #808080;
+  -moz-border-left-colors: #FFFFFF #D4D0C8;
+  background: url("chrome://global/skin/tree/header.png") repeat-x;
+  color: #000000;
+  padding: 0px 4px;
+}
+
+.treecol-image {
+  padding: 0px 1px;
+}
+
+.treecol-text {
+  margin: 0px !important;
+  font-weight: bold !important;
+}
+
+treecol[hideheader="true"] {
+  -moz-appearance: none;
+  border: none;
+  padding: 0;
+}
+
+/* ..... internal box ..... */
+treecol:hover:active,
+treecolpicker:hover:active {
+  background : url("chrome://global/skin/tree/header.png") repeat-x;
+}
+
+treecol:hover,
+treecolpicker:hover {
+  background : url("chrome://global/skin/tree/header-active.png") repeat-x;
+}
+
+treecol:active .treecol-text{
+  color: #0000FF;	
+}
+
+.treecol-image:hover:active {
+}
+
+/* ::::: column drag and drop styles ::::: */
+treecol[dragging="true"] {
+  -moz-border-top-colors: #404040 transparent !important;
+  -moz-border-right-colors: #404040 transparent!important;
+  -moz-border-bottom-colors: #404040 transparent !important;
+  -moz-border-left-colors: #404040 transparent !important;
+  background-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+treecol[insertafter="true"] {
+  -moz-border-right-colors: #404040 #808080;
+}
+
+treecol[insertbefore="true"] {
+  -moz-border-left-colors: #404040 #808080;
+}
+
+treechildren::-moz-tree-column(insertbefore) {
+  border-left: 1px solid #808080;
+}
+
+treechildren::-moz-tree-column(insertafter) {
+  border-right: 1px solid #808080;
+}
+
+/* ::::: sort direction indicator :::::  */
+.treecol-sortdirection {
+  list-style-image: none;
+}
+
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="ascending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-asc.gif");
+}
+
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-dsc.gif");
+}
+
+/* ::::: column picker :::::  */
+.tree-columnpicker-icon {
+  list-style-image: url("chrome://global/skin/tree/columnpicker.gif");
+}
+
+/* ::::: twisty :::::  */
+treechildren::-moz-tree-twisty {
+  padding-right: 2px;
+  padding-top: 1px;
+  list-style-image: url("chrome://global/skin/button/twisty.png");
+}
+
+treechildren::-moz-tree-twisty(open) {
+  list-style-image: url("chrome://global/skin/button/twisty-open.png");
+}
+
+treechildren::-moz-tree-indentation {
+  width: 18px;
+}
+
+/* ::::: gridline style ::::: */
+treechildren.gridlines::-moz-tree-cell {
+  border-right: 1px solid GrayText;
+  border-bottom: 1px solid GrayText;
+}
+
+treechildren.gridlines::-moz-tree-row {
+  border: none;
+}
+
+treechildren::-moz-tree-image(Name) {
+  padding-right: 2px;
+}
+
+treechildren::-moz-tree-image(Name) {
+  margin: 0px 2px;
+  list-style-image: url("chrome://browser/skin/icons/bookmark_item.png") !important;
+}
+
+treechildren::-moz-tree-image(Name, container) {
+  list-style-image: url("chrome://browser/skin/icons/folder_closed.png") !important;
+}
+
+treechildren::-moz-tree-image(Name, open) {
+  list-style-image: url("chrome://browser/skin/icons/folder_open.png") !important;
+}
+
+treechildren::-moz-tree-image(Name, separator) {
+  list-style-image: none;
+  width: 0px !important;
+  height: 0px !important;
+  margin: 0px 0px;
+}
+
+treechildren::-moz-tree-cell-text(Name, separator) {
+  color: #808080;
+  margin: 0px 5px 0px 5px;
+}
+
+treechildren::-moz-tree-cell-text(Name, separator, selected, focus) {
+  color: #FFFFFF;
+}
+
+/* ::::: editable tree ::::: */
+treechildren::-moz-tree-row(selected, editing) {
+  background-color: transparent;
+  border: none;
+}
+
+treechildren::-moz-tree-cell-text(selected, editing) {
+  color: inherit;
+}
+
+.tree-input {
+  -moz-appearance: none;
+  border: 1px solid #3399FF;
+  -moz-border-top-colors: #3399FF;
+  -moz-border-bottom-colors: #3399FF;
+  -moz-border-left-colors: #3399FF;
+  -moz-border-right-colors: #3399FF;
+  margin: 0;
+  -moz-margin-start: -4px;
+  padding: 1px;
+}

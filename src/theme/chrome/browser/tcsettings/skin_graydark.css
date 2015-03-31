@@ -1,0 +1,67 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#TabsToolbar[orient="vertical"]{
+	background: linear-gradient(#e8e8ec,#adaebb) !important;
+}
+
+#navigator-toolbox[tabsontop=false] #TabsToolbar{
+	-moz-appearance: none !important;
+	background: linear-gradient(#ceced3,#8a8b90,#ceced3) !important;
+}
+
+@media all and (-moz-windows-compositor) {
+	#nav-bar {
+		background: linear-gradient(#727275,#a6a8af) !important;
+	}
+
+	#PersonalToolbar {
+		background: linear-gradient(#a6a8af,#cfcfd4) !important;
+	}
+	
+	#addon-bar, #status-bar{
+		background-image: url("chrome://browser/skin/icons/Bookmark-background1.png") !important;
+	}
+	
+	toolbar:not(#TabsToolbar):not(#nav-bar):not(#addon-bar):not(#status-bar):not(#PersonalToolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(#personal-titlebar):not(.devtools-tabbar){
+		background: linear-gradient(#ceced3,#a6a8af,#ceced3) !important;
+	}
+}
+
+@media not all and (-moz-windows-compositor) {
+	#titlebar,#main-window{
+	  -moz-appearance:none !important;
+	  background: #727275 !important;
+	}
+
+	toolbar:not(#TabsToolbar):not(#nav-bar):not(#addon-bar):not(#status-bar):not(#PersonalToolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(#aios-toolbar):not(#vertical-toolbar):not(.devtools-tabbar),
+	#toolbar-menubar,menubar[tabsontop=true],
+	#PersonalToolbar{
+		-moz-appearance: none !important;
+		background-image: none !important;
+	}
+
+	#navigator-toolbox {
+	  -moz-appearance: none !important;
+	  background-image: linear-gradient(#727275,#d7d7d8) !important;
+	  border: 0px !important;
+	}
+
+	#navigator-toolbox[iconsize="small"]{
+	  -moz-appearance: none !important;
+	  background-image: linear-gradient(#727275,#d7d7d8) !important;
+	  border: 0px !important;
+	}
+	#navigator-toolbox #TabsToolbar{
+		-moz-appearance: none !important;
+		background: linear-gradient(#ceced3,#8a8b90,#ceced3) !important;
+	}
+}
+
+/*Personal titlebar ext.*/
+#personal-titlebar,#personal-titlebar menubar > menu{
+	background: none !important;
+}
+
+#aios-toolbar,#vertical-toolbar{
+	background: linear-gradient(#e8e8ec,#adaebb) !important;
+}

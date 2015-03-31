@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>noia-theme@addons.palemoon.org</em:id>
+		<em:version>1.0.0</em:version>
+		<em:name>Noia Moon</em:name>
+		<em:type>4</em:type>
+		<em:internalName>noiamoon</em:internalName>
+		
+		<em:targetApplication>
+          <Description>
+            <!-- Pale Moon -->
+            <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+            <em:minVersion>25.0</em:minVersion>
+            <em:maxVersion>25.*</em:maxVersion>
+          </Description>
+        </em:targetApplication>
+		
+		<em:localized>
+		  <Description>
+			<em:locale>en-US</em:locale>
+			<em:name>Noia Moon</em:name>
+			<em:description>Noia Moon theme, based on "Noia" icons by Carlitus. You can set gray/black/blue/AeroBasic/Firefox3/FF4Win7/WinXP/AeroGlass skins and turn on/off many tweaks/fixes for other extensions to work properly.</em:description>
+			<em:creator>Pale Moon Add-Ons Team</em:creator>
+			<em:contributor>Aris</em:contributor>
+			<em:contributor>Markus</em:contributor>
+			<em:contributor>Carlitus: Noia icon set</em:contributor>
+		  </Description>
+		</em:localized>
+		<em:localized>
+		  <Description>
+			<em:locale>de</em:locale>
+			<em:name>Noia Moon</em:name>
+			<em:description>Noia Moon Theme, basierend auf "Noia" Ikonen von Carlitus. Man kann graue/schwarze/blaue/AeroBasic/Firefox3/FF4Win7/WinXP/AeroGlass Skins wählen und viele Einstellungen zum Anpassen und Berichtigen von Fehlern mit anderen Erweiterungen vornehmen.</em:description>
+			<em:creator>Pale Moon Add-Ons Team</em:creator>
+			<em:contributor>Aris</em:contributor>
+			<em:contributor>Markus</em:contributor>
+			<em:contributor>Carlitus: Noia Symbole</em:contributor>
+		  </Description>
+		</em:localized>
+		<em:localized>
+		  <Description>
+			<em:locale>fr</em:locale>
+			<em:name>Noia Moon</em:name>
+			<em:description>Noia Moon thème, reposant sur des icônes "Noia" par Carlitus. Vous pouvez choisir les affichages gris/noirs/bleus/aerobasic/Firefox3/Ff4-w7/xp/aeroglass et jongler entre plusieurs réglages et des correctifs pour d'autres extensions  pour avoir un bon résultat.</em:description>
+			<em:creator>Pale Moon Add-Ons Team</em:creator>
+			<em:contributor>Aris</em:contributor>
+			<em:contributor>Markus</em:contributor>
+			<em:contributor>Carlitus: Noia icon set</em:contributor>
+		  </Description>
+		</em:localized>
+		<em:localized>
+		  <Description>
+			<em:locale>it</em:locale>
+			<em:name>Noia Moon</em:name>
+			<em:description>Tema "Noia Moon", sulla base di "Noia" icone di Carlitus. E' possibile scegliere l'aspetto grigio/blu/AeroBasic/Firefox3/FF4+Win7/WinXp/AeroGlass e abilitare/disabilitare correzioni per alcune estensioni perchè funzionino correttamente.</em:description>
+			<em:creator>Pale Moon Add-Ons Team</em:creator>
+			<em:contributor>Aris</em:contributor>
+			<em:contributor>Markus</em:contributor>
+			<em:contributor>Carlitus: Noia icon set</em:contributor>
+		  </Description>
+		</em:localized>
+		<em:skinnable>true</em:skinnable>
+	</Description>
+</RDF>
