@@ -602,7 +602,7 @@ menuitem[oncommand="WinUpdate_WindowsUpdate()"] {
 #context-about,#new-menu,
 menuitem[oncommand="openAboutDialog();"],
 menuitem[oncommand="openUILink(getUILink('promote'), event, false, true);"] {
-  list-style-image:url(chrome://global/skin/CuteMenus/ff4.png);
+  list-style-image:url(chrome://branding/content/icon16.png);
 }
 
 #menu_HelpPopup_reportPhishingErrortoolmenu,#troubleShooting,#sync-lastsyncitem,
