@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>noia-moon@addons.palemoon.org</em:id>
-    <em:version>1.0.0</em:version>
+    <em:version>1.0.1</em:version>
     <em:name>Noia Moon</em:name>
 	<em:description>Noia theme for Pale Moon, based on "Noia" icons by Carlitus. Based on "Noia 4" by Aris</em:description>
     <em:creator>Pale Moon Add-Ons Team</em:creator>
