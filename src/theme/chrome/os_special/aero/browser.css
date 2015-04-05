@@ -45,6 +45,7 @@
 	#TabsToolbar[tabsontop=false] {
 		background-image: url("chrome://browser/skin/icons/Bookmark-background1.png");
 	}
+	
 }
 
 @media not all and (-moz-windows-compositor) {
@@ -56,4 +57,8 @@
 	#main-window[sizemode=maximized][tabsontop="true"][tabsintitlebar]{
 		padding-top:4px !important;
 	}
+}
+
+#main-window[sizemode=maximized][tabsontop="true"] #toolbar-menubar[autohide="true"]{
+  margin-left: 100px !important;
 }

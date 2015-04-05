@@ -20,10 +20,6 @@
 	padding-right:5px !important;
 }
 
-#main-window[sizemode=maximized][tabsontop="true"] #toolbar-menubar[autohide="true"]{
-	margin-left: 100px !important;
-}
-
 /*site favicon in urlbar extension*/
 #sitefavinurl-image {
 	margin-left: 5px;

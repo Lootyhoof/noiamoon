@@ -31,3 +31,7 @@
 #menubar > menu:hover{
   color: black;
 }
+
+#main-window[sizemode=maximized][tabsontop="true"] #toolbar-menubar[autohide="true"]{
+  margin-left: 110px !important;
+}
