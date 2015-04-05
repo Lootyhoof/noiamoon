@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.2 (theme only)
+- fix maximized autohide menubar position on XP
+
 ### 1.0.1
 - replace Firefox icon in Help - About with Pale Moon icon
 
