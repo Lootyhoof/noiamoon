@@ -16,7 +16,7 @@
     <em:type>2</em:type>
 
     <em:contributor>David Vincent</em:contributor>
-	<em:translator>David.Vincent [fr]</em:translator>
+    <em:translator>David.Vincent [fr]</em:translator>
 
     <em:targetApplication>
       <Description>
@@ -27,14 +27,14 @@
       </Description>
     </em:targetApplication>
 	
-	<em:localized><!-- fr -->
-		<Description>
-			<em:locale>fr</em:locale>
-			<em:name>Noia Moon : Options</em:name>
-			<em:description>Options pour le thème Noia Moon.</em:description>
-			<em:creator>Pale Moon Add-Ons Team</em:creator>
-			<em:contributor>David Vincent</em:contributor>
-		</Description>
-	</em:localized>
+    <em:localized><!-- fr -->
+        <Description>
+            <em:locale>fr</em:locale>
+            <em:name>Noia Moon : Options</em:name>
+            <em:description>Options pour le thème Noia Moon.</em:description>
+            <em:creator>Pale Moon Add-Ons Team</em:creator>
+            <em:contributor>David Vincent</em:contributor>
+        </Description>
+    </em:localized>
   </Description>
 </RDF>

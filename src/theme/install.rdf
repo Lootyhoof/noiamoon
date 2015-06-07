@@ -14,10 +14,10 @@
     <em:description>Theme for Pale Moon based on Noia Iconpack by Carlitus (deviantART). Fork of "Noia Fox" by David.Vincent</em:description>
     <em:creator>Pale Moon Add-Ons Team</em:creator>
     <em:type>4</em:type>
-	<em:internalName>noiamoon</em:internalName>
+    <em:internalName>noiamoon</em:internalName>
 
     <em:contributor>David Vincent</em:contributor>
-	<em:contributor>Carlitus: Noia icon set</em:contributor>
+    <em:contributor>Carlitus: Noia icon set</em:contributor>
 
     <em:targetApplication>
       <Description>
@@ -28,15 +28,15 @@
       </Description>
     </em:targetApplication>
 	
-	<em:localized>
-		  <Description>
-			<em:locale>fr</em:locale>
-			<em:name>Noia Moon</em:name>
-			<em:description>Thème pour Pale Moon basé sur le Noia Iconpack de Carlitus (deviantART). Sur la base de "Noia Fox" par David.Vincent</em:description>
-			<em:creator>Pale Moon Add-Ons Team</em:creator>
-			<em:contributor>David Vincent</em:contributor>
-			<em:contributor>Carlitus : Noia Iconpack</em:contributor>
-		  </Description>
-	</em:localized>
+    <em:localized>
+        <Description>
+            <em:locale>fr</em:locale>
+            <em:name>Noia Moon</em:name>
+            <em:description>Thème pour Pale Moon basé sur le Noia Iconpack de Carlitus (deviantART). Sur la base de "Noia Fox" par David.Vincent</em:description>
+            <em:creator>Pale Moon Add-Ons Team</em:creator>
+            <em:contributor>David Vincent</em:contributor>
+            <em:contributor>Carlitus : Noia Iconpack</em:contributor>
+        </Description>
+    </em:localized>
   </Description>
 </RDF>
