@@ -1,0 +1,172 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* listbox */
+
+listbox {
+  color: #000;
+  margin: 2px 5px;
+  border: 1px solid #9B9DA2;
+  background-color: #f8f8f8;
+}
+
+listbox[disabled="true"] {
+  color: #aaa;
+}
+
+/* listitem */
+
+listitem {
+  border: 1px solid transparent;
+}
+
+listitem:hover {
+  border : 1px solid #B8D6FB;
+  background-color: #E6EDF6;
+}
+
+listbox:focus > listitem[current="true"] {
+  outline: 1px dotted;
+}
+
+listbox:focus > listitem[selected="true"][current="true"] {
+  outline: none;
+}
+
+listitem[selected="true"] {
+  border : 1px solid transparent;
+  background-color: #E9E9E9;
+}
+
+listitem[selected="true"]:hover {
+  color: #000;
+  border : 1px solid #9DC5EC;
+  border-bottom : 1px solid #85B7E9;
+  background-image: linear-gradient(to bottom, #C6DDF4, #9DC5EC);
+}
+
+listbox:focus > listitem[selected="true"] {
+  color: #000;
+  border : 1px solid #9DC5EC;
+  border-bottom : 1px solid #85B7E9;
+  background-image: linear-gradient(to bottom, #C6DDF4, #9DC5EC);
+}
+
+/* listheader */
+
+listheader {
+  -moz-box-align: center;
+  color: #000;
+  padding: 0 4px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #b0b0b0;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #e0e0e0;
+  background: url(chrome://global/skin/tree/header.png) repeat-x;
+  background-size : auto 100%;
+}
+
+listheader[sortable=true]:hover{
+  text-shadow : 0 0 0 rgba(0,0,0,0.6);
+  background: url(chrome://global/skin/tree/header_hover.png) repeat-x;
+  background-size : auto 100%;
+}
+
+listheader[sortable=true]:hover:active {
+  text-shadow : 0 0 0 rgba(0,0,0,0.6);
+  background: url(chrome://global/skin/tree/header_active.png) repeat-x;
+  background-size : auto 100%;
+}
+
+.listheader-icon {
+  padding: 0 1px;
+}
+
+.listheader-label {
+  margin: 0 !important;
+}
+
+/* sort direction icon */
+
+.listheader-sortdirection {
+  list-style-image: none;
+}
+
+.listheader-sortdirection[sortDirection=ascending] {
+  list-style-image: url(chrome://global/skin/tree/sort-asc.png);
+}
+
+.listheader-sortdirection[sortDirection=descending] {
+  list-style-image: url(chrome://global/skin/tree/sort-dsc.png);
+}
+
+/* listcell */
+
+.listcell-label {
+  white-space: nowrap;
+  margin: 0 !important;
+  padding: 0 0 1px 4px;
+}
+
+.listcell-icon {
+  margin-right: 2px;
+}
+
+.listcell-label[disabled="true"] {
+  color: #aaa;
+}
+
+listitem[type="checkbox"]:hover,
+listitem[type="checkbox"][selected="true"],
+listitem[type="checkbox"][selected="true"]:hover,
+listbox:focus > listitem[type="checkbox"][selected="true"]  {
+  background: none;
+  border: 1px solid transparent;
+}
+
+listbox:-moz-focusring  > listitem[type="checkbox"][current="true"] {
+  outline: 1px dotted;
+}
+
+/* listcell checkbox */
+
+.listcell-check {
+  width:16px;
+  height:16px;
+  background: url(chrome://global/skin/checkbox/checkbox.png) no-repeat;
+}
+
+.listcell-check[checked="true"] {
+  background: url(chrome://global/skin/checkbox/checkbox-checked.png) no-repeat;
+}
+
+/* focused */
+
+listbox:-moz-focusring listitem[type="checkbox"][current="true"] .listcell-check{
+  background: url(chrome://global/skin/checkbox/checkbox-focus.png) no-repeat;
+}
+
+listbox:-moz-focusring listitem[type="checkbox"][current="true"] .listcell-check[checked="true"]{
+  background: url(chrome://global/skin/checkbox/checkbox-checked-focus.png) no-repeat;
+}
+
+/* active */
+.listcell-check:active {
+  background: url(chrome://global/skin/checkbox/checkbox-active.png) no-repeat;
+}
+
+.listcell-check[checked="true"]:active{
+  background: url(chrome://global/skin/checkbox/checkbox-checked-active.png) no-repeat;
+}
+
+/* hover */
+listitem:not([disabled="true"]):hover .listcell-check{
+  background: url(chrome://global/skin/checkbox/checkbox-active.png) no-repeat;
+}
+
+listitem:not([disabled="true"]):hover .listcell-check[checked="true"]{
+  background: url(chrome://global/skin/checkbox/checkbox-checked-active.png) no-repeat;
+}
+
+.listcell-check[disabled="true"] {
+  opacity:0.3;
+}

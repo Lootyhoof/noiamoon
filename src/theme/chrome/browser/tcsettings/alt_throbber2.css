@@ -1,5 +1,0 @@
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-
-.tab-throbber[progress], .tab-throbber[busy]{
-	list-style-image: url("chrome://global/skin/media/throbber3.gif") !important;
-}

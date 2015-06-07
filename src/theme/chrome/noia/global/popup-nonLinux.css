@@ -1,0 +1,71 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.panel-arrowcontainer[panelopen] {
+  transition-duration: 200ms, 150ms;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+}
+
+.panel-arrowcontainer:not([panelopen]) {
+  opacity: 0;
+}
+
+.panel-arrowcontainer:not([panelopen])[side="top"] {
+  transform: translateY(-20px);
+}
+
+.panel-arrowcontainer:not([panelopen])[side="bottom"] {
+  transform: translateY(20px);
+}
+
+.panel-arrowcontainer:not([panelopen])[side="left"] {
+  transform: translateX(-20px);
+}
+
+.panel-arrowcontainer:not([panelopen])[side="right"] {
+  transform: translateX(20px);
+}
+
+.panel-arrowcontent {
+  margin: 4px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 6px;
+  background : linear-gradient(to bottom,#fff, #C8C9D1 30%, #dadce4);
+  box-shadow: 3px 3px 2px rgba(0,0,0,.3);
+}
+
+.panel-arrow[side="top"],
+.panel-arrow[side="bottom"] {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.panel-arrow[side="top"] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-up.png);
+  margin-bottom: -5px;
+}
+
+.panel-arrow[side=bottom] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-down.png);
+  margin-top: -5px;
+}
+
+.panel-arrow[side="left"],
+.panel-arrow[side="right"] {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.panel-arrow[side=left] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-horiz.png);
+  margin-right: -5px;
+}
+
+.panel-arrow[side=right] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-horiz.png);
+  transform: scaleX(-1);
+  margin-left: -5px;
+}

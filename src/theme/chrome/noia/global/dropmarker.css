@@ -1,0 +1,15 @@
+.datepicker-dropmarker {
+  width: 16px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+  background: url(chrome://global/skin/icons/dropmark.png) center no-repeat;
+}
+
+datepicker[open="true"] .datepicker-dropmarker {
+  background: url(chrome://global/skin/icons/dropmark-active.png) center no-repeat;
+}
+
+.datepicker-dropmarker[disabled="true"] {
+  opacity: .4;
+}

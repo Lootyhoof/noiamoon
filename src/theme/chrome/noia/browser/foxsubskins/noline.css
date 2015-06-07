@@ -1,0 +1,91 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#PersonalToolbar ,
+#toolbar-menubar[autohide="false"] ,
+#gtbToolbar, #GBL-Toolbar ,
+#nav-bar ,
+#webdeveloper-toolbar ,
+#AMAZON_NS_PH_TB-Toolbar ,
+#TFTB-Toolbar ,
+#TabGroupsManagerToolbar ,
+#antToolbar ,
+#at_toolbar ,
+.atx-toolbar,
+#foxlingo_toolbar-2-4-3c ,
+#vidbar-toolbar ,
+#skipity-toolbar ,
+#facebook-toolbar ,
+#wmn-toolbar, 
+#main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"] toolbox,
+#main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] toolbox,
+#main-window[tabsintitlebar][nfstrip="false"]:not(:-moz-lwtheme) #TabsToolbar,
+#main-window[tabsintitlebar][nfstrip="false"]:-moz-lwtheme #TabsToolbar,
+#navigation-toolbox ,
+#tabs-toolbar,
+#mail-toolbar-menubar2,
+#quick-filter-bar-main-bar,
+#msgcomposeWindow,
+#compose-toolbar-menubar2,
+#composeToolbar2,
+#abContactsPanel,
+#addrbook-toolbar-menubar2,
+#ab-bar2,
+#ab-toolbox {
+    border : none !important;
+}
+
+#main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"] toolbox {
+  border-top : none !important;
+}
+
+@media all and (-moz-windows-compositor) {
+#main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #titlebar-buttonbox {
+  margin-bottom : -20px !important;
+  margin-top : 9px !important;
+}
+#main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #appmenu-button {
+margin-top : 8px !important;
+}
+}
+
+@media not all and (-moz-windows-compositor) {
+#main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #titlebar-buttonbox {
+  margin-bottom : -20px !important;
+  margin-top : 9px !important;
+}
+#main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #appmenu-button {
+margin-top : 10px !important;
+}
+}
+
+#main-window[inFullscreen][tabsontop="true"] .tabs-closebutton {
+  margin-top : 2px !important;
+}
+
+#main-window[inFullscreen][tabsintitlebar] .tabs-closebutton {
+  margin-top : 1px !important;
+}
+
+#main-window[inFullscreen] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+  margin-top : 1px !important;
+}
+
+#main-window[nfblack="true"][inFullscreen] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+  margin-top : 3px !important;
+}
+
+#main-window[inFullscreen][nfstrip="true"][tabsontop="true"] .tabs-closebutton {
+  margin-top : 0px !important;
+}
+
+#main-window[inFullscreen][nfstrip="true"][tabsintitlebar] .tabs-closebutton {
+  margin-top : 0px !important;
+}
+
+#main-window[inFullscreen][nfstrip="true"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+  margin-top : 0px !important;
+}
+
+#main-window[nfdarwin="true"][inFullscreen] ~ #TabsToolbar .tabs-closebutton {
+  margin-top : 4px !important;
+}

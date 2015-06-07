@@ -1,0 +1,269 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
+@import url(chrome://global/skin/);
+
+#topBar,
+.viewSelector {
+  color: #5a5a5a;
+  margin: 0;
+  padding-left: 10px;
+  border-bottom: 2px groove #d4d0c8;
+  background-image: url(chrome://browser/skin/icons/Tool-background2.png);
+  background-size: auto 100%;
+}
+
+#viewGroup > radio {
+  -moz-box-orient: vertical;
+  color: #000;
+  min-width: 90px;
+  margin: 1px;
+  padding: 0 3px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+#viewGroup > radio:hover {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #A5BFD8;
+  -moz-border-bottom-colors: #808080 #99AFCB;
+  -moz-border-left-colors: #808080 #A5BFD8;
+  background: transparent url(chrome://global/skin/button/hover.png) repeat-x top left;
+  background-size: auto 100%;
+}
+
+#viewGroup > radio[selected="true"] {
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #A5BFD8;
+  -moz-border-bottom-colors: #808080 #77A3D0;
+  -moz-border-left-colors: #808080 #A5BFD8;
+  background: transparent url(chrome://global/skin/button/hover.png) repeat-x top left;
+  background-size: auto 100%;
+}
+
+#generalTab {
+  list-style-image: url(chrome://mozapps/skin/extensions/info.png);
+}
+
+#generalTab:hover, #generalTab[selected="true"] {
+  list-style-image: url(chrome://mozapps/skin/extensions/info.png);
+}
+
+#mediaTab {
+  list-style-image: url(chrome://browser/skin/preferences/multimedia.png);
+}
+
+#mediaTab:hover, #mediaTab[selected="true"] {
+  list-style-image: url(chrome://browser/skin/preferences/multimedia.png);
+}
+
+#feedTab {
+  list-style-image: url(chrome://browser/skin/preferences/feed.png);
+}
+
+#feedTab:hover, #feedTab[selected="true"] {
+  list-style-image: url(chrome://browser/skin/preferences/feed.png);
+}
+
+#permTab {
+  list-style-image: url(chrome://browser/skin/preferences/permission.png);
+}
+
+#permTab:hover, #permTab[selected="true"] {
+  list-style-image: url(chrome://browser/skin/preferences/permission.png);
+}
+
+#securityTab {
+  list-style-image: url(chrome://browser/skin/preferences/security.png);
+}
+
+#securityTab:hover, #securityTab[selected="true"] {
+  list-style-image: url(chrome://browser/skin/preferences/security.png);
+}
+
+deck {
+  padding: 10px;
+  background : #DADCE4;
+}
+
+/* Misc */
+
+tree {
+  margin: .5em;
+}
+
+.gridSeparator {
+  width: .5em;
+}
+
+textbox {
+  background: transparent !important;
+  border: none;
+  padding: 0px;
+  margin-top: 1px;
+  -moz-appearance: none;
+}
+
+textbox.header {
+  -moz-margin-start: 0;
+}
+
+.iframe {
+  margin: .5em;
+  background: white;
+  overflow: auto;
+}
+
+.fixedsize {
+  height: 8.5em;
+}
+
+textbox[disabled] {
+  font-style: italic;
+}
+
+/* General Tab */
+groupbox.collapsable caption .caption-icon { 
+  width: 9px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-margin-start: 2px;
+  -moz-margin-end: 2px;
+  background-image: url("chrome://global/skin/tree/twisty-open.png");
+}
+
+groupbox.collapsable[closed="true"] {
+  border: none;
+  margin-bottom: 9px;
+  -moz-appearance: none;
+  background-color: transparent;
+}
+
+groupbox.collapsable[closed="true"] .groupbox-title {
+  border: none;
+  background-color: transparent;
+}
+
+groupbox.collapsable[closed="true"] caption .caption-icon { 
+  background-image: url("chrome://global/skin/tree/twisty-clsd.png");
+}
+
+#securityBox description { 
+  -moz-margin-start: 10px;
+}
+
+#general-security-identity {
+  white-space: pre-wrap;
+  line-height: 2em;
+}
+
+/* Media Tab */
+#imagetree {
+  min-height: 10em;
+  margin-bottom: 0;
+}
+
+#mediaSplitter {
+  border-style: none;
+  background: none;
+  height: .8em;
+}
+
+#mediaGrid {
+  min-height: 9em;
+}
+
+#mediaLabelColumn {
+  min-width: 10em;
+}
+
+#thepreviewimage {
+  margin: 1em;
+}
+
+treechildren::-moz-tree-cell-text(broken) {
+  font-style: italic;
+  color: #808080;
+}
+
+#imagecontainerbox {
+  border: 1px solid #9B9DA2;
+}
+
+/* Feeds Tab */
+#feedtree {
+  margin-bottom: 0px;
+}
+
+#feedListbox richlistitem {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -moz-padding-start: 7px;
+  -moz-padding-end: 7px;
+  min-height: 25px;
+  border-bottom: 1px dotted #C0C0C0;
+}
+
+#feedListbox richlistitem:hover,
+#feedListbox richlistitem[selected="true"] {
+  background-image: none;
+  background-color: #F0F0F0;
+  color: #000;
+  border: 1px solid transparent;
+  border-bottom: 1px dotted #C0C0C0;
+}
+
+#feedListbox {
+  background-color: #f8f8f8;
+  border: 1px solid #9B9DA2;
+}
+
+.feedTitle { 
+  font-weight: bold;
+}
+
+/* Permissions Tab */
+#permList {
+  margin-top: .5em;
+  overflow: auto;
+  background-color: #f8f8f8;
+  border: 1px solid #9B9DA2;
+}
+
+.permission {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -moz-padding-start: 7px;
+  -moz-padding-end: 7px;
+  min-height: 25px;
+  border-bottom: 1px dotted #C0C0C0;
+}
+
+.permissionLabel {
+  font-weight: bold;
+}
+
+.permission:hover {
+  background-color: #F0F0F0;
+}
+
+
+/* Security Tab */
+#securityPanel .caption-icon {
+  display: none;
+}
+
+#securityPanel .header {
+  font-size: 120%;
+}
+ 
+#securityPanel .fieldLabel {
+  margin: 2px 10px 3px 10px;
+}
+
+#securityPanel .fieldValue {
+  font-weight: bold;
+  margin: 2px 10px 3px 10px;
+}

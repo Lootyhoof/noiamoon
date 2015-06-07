@@ -1,14 +1,12 @@
-skin	browser			noiamoon	chrome/browser/
-skin	communicator	noiamoon	chrome/communicator/
-skin	help			noiamoon	chrome/help/
-skin	global			noiamoon	chrome/global/
-skin	mozapps			noiamoon	chrome/mozapps/
-#
-skin	os_special		noiamoon	chrome/os_special/mac/			os=Darwin
-skin	os_special		noiamoon	chrome/os_special/linux/		os=Linux
-skin	os_special		noiamoon	chrome/os_special/XP/			os=WINNT osversion<6
-skin	os_special		noiamoon	chrome/os_special/aero/			os=WINNT osversion>=6
+skin	browser	noiamoon	chrome/noia/browser/
+skin	communicator	noiamoon	chrome/noia/communicator/
+skin	help	noiamoon	chrome/noia/help/
+skin	global	noiamoon	chrome/noia/global/
+skin	mozapps	noiamoon	chrome/noia/mozapps/
+skin	reporter	noiamoon	chrome/noia/reporter/
 
-# default scrollbars for MacOS and non-MacOS systems
-skin	scrollbars		noiamoon	chrome/os_special/mac/			os=Darwin
-skin	scrollbars		noiamoon	chrome/os_special/scrollbar/	os!=Darwin
+skin   os_special	noiamoon	chrome/noia/os_special/mac/	os=Darwin
+skin   os_special	noiamoon	chrome/noia/os_special/linux/	os=Linux
+skin   os_special	noiamoon	chrome/noia/os_special/XP/		os=WINNT osversion<6
+skin   os_special	noiamoon	chrome/noia/os_special/aero/	os=WINNT osversion>=6
+

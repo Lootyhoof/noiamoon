@@ -1,0 +1,270 @@
+/*
+ * The contents of this file are subject to the Netscape Public
+ * License Version 1.1 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of
+ * the License at http://www.mozilla.org/NPL/
+ *
+ * Software distributed under the License is distributed on an "AS
+ * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * rights and limitations under the License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is Netscape
+ * Communications Corporation. Portions created by Netscape are
+ * Copyright (C) 1998-2001 Netscape Communications Corporation. All
+ * Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ */
+
+/* ===== tabbox.css =================================================
+  == Styles used by XUL tab-related elements.
+  ======================================================================= */
+
+@import url(chrome://os_special/skin/tabbox.css);
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: tabs ::::: */
+
+.tabs-left,
+.tabs-right {
+  -moz-border-bottom-colors: #0000FF #FFFFFF;
+}
+
+/* ::::: tabpanels ::::: */
+
+tabpanels {
+  -moz-appearance: none;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-bottom: 2px solid;  
+  border-top: 2px solid;
+  -moz-border-top-colors: #999 #fff;
+  -moz-border-right-colors: #999 #fff;
+  -moz-border-bottom-colors: #999 #fff;
+  -moz-border-left-colors: #999 #fff;
+  border-radius : 5px ;
+  background: transparent ;
+  color: #000000;
+  padding: 8px;
+  padding-top: 11px;
+  margin-bottom : 5px;
+}
+
+tabbox > tabs {
+  padding: 0 10px;
+  margin-bottom: -14px;
+  position: relative;
+}
+
+tabbox > tabs > .tabs-left,
+tabbox > tabs > .tabs-right {
+  -moz-box-flex: 1;
+}
+
+tabbox tab {
+  margin: 3px 0px;
+  text-align : center;
+  border: 1px solid #444444;
+  border-right: 0px;
+  border-radius: 0px;
+  padding : 2px 9px !important;
+  color: #000000;
+  background: #fafafa;
+  box-shadow:
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+    0 13px 8px rgba(80, 80, 80, 0.3) inset, 
+    1px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+tabbox > tabs > tab:first-of-type:-moz-locale-dir(ltr), 
+tabbox > tabs > tab:last-of-type:-moz-locale-dir(rtl) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+tabbox > tabs > tab:last-of-type:-moz-locale-dir(ltr), 
+tabbox > tabs > tab:first-of-type:-moz-locale-dir(rtl) {
+  border-right: 1px solid #444444;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+tabbox tab:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+}
+
+tabbox tab[selected="true"] {
+  background: url(chrome://global/skin/button/body-focus.png) repeat-x top left #c6feff;  
+  font-weight : normal;
+}
+
+/* Thunderbird */
+
+#folderPropTabBox tab,
+#abTabs tab {
+  border: 1px solid #444444;
+  border-left: 0px;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+#folderPropTabBox tab:first-of-type:-moz-locale-dir(ltr), 
+#folderPropTabBox tab:last-of-type:-moz-locale-dir(rtl),
+#abTabs tab:first-of-type:-moz-locale-dir(ltr),
+#abTabs tab:last-of-type:-moz-locale-dir(rtl) {
+  border-left : 1px solid #444444;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* Add-ons */
+
+#reminderFoxNetworkTab tab,              /* Reminder Fox */
+.uncram-tab,							/* Foxy Proxy */
+#tabviewers  tab{							/* Dom inspector */						
+  border: 1px solid #444444;
+  border-left: 0px;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+#logqueue tab
+ {
+  border: 1px solid #444444;
+  border-left: 0px;
+  border-radius: 0px !important;
+}
+
+#reminderFoxNetworkTab tab:first-of-type:-moz-locale-dir(ltr),
+#reminderFoxNetworkTab tab:last-of-type:-moz-locale-dir(rtl),
+.uncram-tab:first-of-type:-moz-locale-dir(ltr),
+.uncram-tab:last-of-type:-moz-locale-dir(rtl),
+#logqueue tab:first-of-type:-moz-locale-dir(ltr),
+#logqueue tab:last-of-type:-moz-locale-dir(rtl),
+#tabviewers  tab:first-of-type:-moz-locale-dir(ltr),
+#tabviewers  tab:last-of-type:-moz-locale-dir(rtl){
+  border-left : 1px solid #444444;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* ::::: tab ::::: */
+
+tab {
+  -moz-appearance: none;
+  margin-top: 0;
+  padding: 1px 6px 4px 6px;
+  border-top: 1px  solid;
+  border-right: 2px solid;
+  border-left: 1px solid;
+  -moz-border-top-colors: #FFFFFF;
+  -moz-border-right-colors: #808080 #404040;
+  -moz-border-left-colors: #FFFFFF;
+  -moz-border-bottom-colors: #FFFFFF;
+  background-image : none;
+  background-color : transparent;
+  border-bottom: 1px solid;
+  color: #000;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+    box-shadow:
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+    0 13px 8px rgba(150, 150, 150, 0.3) inset, 
+    1px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+.tabbrowser-tabs[treestyletab-mode="vertical"]
+  .tabbrowser-tab {
+  box-shadow:none;
+  }
+
+.tab-text {
+  margin: 0 !important;
+}
+
+tab[first-tab="true"] {
+  margin-left: 0px;
+}
+
+tab[selected="true"] {
+  font-weight: bold;
+  background-image : url("chrome://browser/skin/icons/Bookmark-background.png");
+}
+
+tab:hover {
+  background-image : url("chrome://browser/skin/icons/tab-hover.png");
+}
+
+tab[selected="false"] .tab-icon {
+  opacity: 1.0 !important;
+}
+
+tab[selected="true"] .tab-icon {
+  opacity: 1.0 !important;
+}
+
+tab:hover .tab-icon {
+  opacity: 1.0 !important;
+}
+
+tab[first-tab="true"][selected="true"] {
+  margin-left: 0;
+}
+
+/* ::::: tab-bottom ::::::::::
+   :: Tabs that are attached to the bottom of a panel, but not necessarily
+   :: a tabpanels.
+   ::::: */
+
+.tab-bottom {
+  margin-top: 0;
+  -moz-border-top-colors: #808080;
+  -moz-border-bottom-colors: #808080 #D4D0C8;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 2px 4px 1px 4px;
+}
+
+.tab-bottom[selected="true"] {
+  margin-bottom: 0;
+  -moz-border-top-colors: #FFFFFF;
+  padding: 4px 6px 1px 6px;
+}
+
+.tab-bottom[beforeselected="true"] {
+  border-bottom-right-radius: 0;
+}
+
+.tab-bottom[afterselected="true"] {
+  border-bottom-left-radius: 0;
+}
+
+/* ::::: tabs-bottom ::::: */
+
+.tabs-bottom > .tabs-left,
+.tabs-bottom > .tabs-right {
+  border-bottom: none;
+}
+.tabbrowser-tab
+{
+  border-radius: 4px ;
+  margin-top : 2px ;
+  margin-bottom : 2px ;
+}
+
+
+
+
+
+
+

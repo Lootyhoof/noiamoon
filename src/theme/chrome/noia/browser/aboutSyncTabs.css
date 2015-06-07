@@ -1,0 +1,99 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+#tabs-display,
+#tabsList {
+  margin: 0;
+  background-color: transparent;
+}
+
+#tabsList {
+  width: 100%;
+  border: 0;
+}
+
+#tabs-display {
+  background: linear-gradient(to right,#9fa2ae,#d9dbe3 100px,#dadce4);
+}
+
+#headers {
+  width: 45em;
+  height: 32px;
+  margin: 4px 2em 0;
+  background: url(chrome://browser/skin/icons/sync-32.png) no-repeat;
+}
+
+#tabsListHeading {
+  font-size: 150%;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+richlistitem[selected="true"],
+richlistitem:focus {
+  outline-style: none;
+}
+
+richlistitem[type="tab"] {
+  min-height: 3em;
+  width: 44em;
+  padding: 2px 5px;
+  margin: 0 2em 4px 4em;
+  border: #999 1px solid;
+  border-radius: 6px;
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fafafb;
+  background-size: auto 100% !important;
+  box-shadow:
+    inset rgba(255,255,255,.5) 0 1px 0,
+    inset rgba(0,0,0,.1) 0 -2px 0,
+    rgba(0,0,0,.1) 0 1px 0;
+}
+
+richlistitem[type="tab"]:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+}
+
+richlistitem[type="tab"][selected="true"] {
+  background: url(chrome://global/skin/button/body-focus.png) repeat-x top left #c6feff;
+}
+
+richlistitem[type="client"] {
+  -moz-user-focus: ignore !important;
+  outline: none;
+  width: 42em;
+  min-height: 2em;
+  color: #000;
+  margin: 2px 2em 3px;
+  border-radius: 6px;
+  background: transparent;
+}
+
+richlistitem.mobile[type="client"] {
+  list-style-image: url(chrome://browser/skin/icons/sync-mobileIcon.png);
+}
+
+richlistitem.desktop[type="client"] {
+  list-style-image: url(chrome://browser/skin/icons/sync-desktopIcon.png);
+}
+
+.tabIcon {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.title,
+.clientName {
+  color: #000;
+  font-size: 1.1em;
+}
+
+.url {
+  font-size: 0.95em;
+  color: #1f9afd;
+}
+
+.title[selected="true"],
+.url[selected="true"] {
+  color: inherit;
+}

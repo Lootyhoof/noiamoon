@@ -1,0 +1,16 @@
+#close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 22px;
+  height: 22px;
+  background: url(chrome://browser/skin/icons/KUI-close.png) no-repeat;
+}
+
+#close:hover {
+  background-position: 0 -22px;
+}
+
+#close:hover:active {
+  background-position: 0 -44px;
+}

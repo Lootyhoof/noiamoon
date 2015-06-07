@@ -1,0 +1,10 @@
+view {
+  margin: 10px 10px 5px 10px;
+  -moz-appearance: listbox;
+  -moz-user-focus: normal;
+}
+
+.richviewInner {
+  background-image: url(chrome://mozapps/skin/shared/viewFader.png);
+  padding: 0;
+}

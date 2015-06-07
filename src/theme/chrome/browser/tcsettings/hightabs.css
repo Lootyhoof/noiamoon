@@ -1,6 +1,0 @@
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-
-.tabbrowser-tab,
-.tabs-newtab-button{
-    padding: 5px 0 5px !important;
-}

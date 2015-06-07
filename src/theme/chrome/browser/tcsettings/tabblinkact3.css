@@ -1,4 +1,0 @@
-.tabbrowser-tab[selected]:not([style*="background-image"]):not([style*="background"]):not([style*="background-color"]),
-.tabbrowser-tab[selected=true]{
-	background: lightblue url("chrome://browser/skin/icons/blink3.gif")!important;
-}

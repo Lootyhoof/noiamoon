@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://noiamoonoptions/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://noiamoonoptions/locale/options.dtd">
+<overlay id="noiamoonop-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <toolbaritem id="unified-back-forward-button">
+	<toolbarbutton id="noiamoon-back-forward-dropmarker" type="menu" 
+			disabled="false" tooltiptext="&backForwardMenu.tooltip;"
+			onbroadcast="if (this.disabled) this.disabled =
+			document.getElementById('Browser:Back').hasAttribute('disabled') &amp;&amp;
+			document.getElementById('Browser:Forward').hasAttribute('disabled');">
+		<menupopup context=""
+				position="after_start"
+				onpopupshowing="return FillHistoryMenu(event.target);"
+				oncommand="gotoHistoryIndex(event); event.stopPropagation();"
+				onclick="checkForMiddleClick(this, event);"/>
+			<observes element="Browser:Back" attribute="disabled"/>
+			<observes element="Browser:Forward" attribute="disabled"/>
+	</toolbarbutton>	
+  </toolbaritem>
+    <toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton
+		class="toolbarbutton-1"
+		id="find"
+		label="&find.label;"
+		tooltiptext="&find.tooltip;"
+		command="cmd_find" />
+		<toolbarbutton id="noiamoon-toolbar-button" class="toolbarbutton-1" label="Noia Moon Options" tooltiptext="Noia Moon Options" oncommand="window.open('chrome://noiamoonoptions/content/options.xul','', 'chrome');"/>
+	</toolbarpalette>
+	<menupopup id="menu_ToolsPopup">
+		<menuitem id="noiamoonoptions" label="Noia Moon Options" hidden="false" oncommand="window.open('chrome://noiamoonoptions/content/options.xul','', 'chrome');"/>
+	</menupopup>
+
+	<menupopup id="appmenu_customizeMenu">
+		<menuitem id="noiamoonoptions_appmenu_options" insertafter="appmenu_preferences" label="Noia Moon Options" hidden="false" oncommand="window.open('chrome://noiamoonoptions/content/options.xul','', 'chrome');"/>
+	</menupopup>
+
+</overlay> 

@@ -1,0 +1,43 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* scale */
+
+.scale-slider {
+  -moz-appearance: none;
+  width: 100px;
+  margin: 2px 4px;
+  background: url(chrome://global/skin/scale/scale-tray-horiz.gif) 0% 50% repeat-x;
+}
+
+.scale-slider[orient="vertical"] {
+  height: 100px;
+  margin: 4px 2px;
+  width: auto;
+  background: url(chrome://global/skin/scale/scale-tray-vert.gif) 50% 0% repeat-y;
+}
+
+.scale-slider[disabled="true"] {
+  opacity: .4 !important;
+}
+
+/* scale thumb */
+
+.scale-thumb {
+  -moz-appearance: none;
+  min-width: 10px;
+  min-height: 20px;
+  border: 0;
+  background: url(chrome://global/skin/scale/scalethumb-horizontal.png) 0% 50% no-repeat;
+}
+
+.scale-thumb[orient="vertical"] {
+  min-width: 20px;
+  min-height: 10px;
+  border: 0;
+  background: url(chrome://global/skin/scale/scalethumb-vertical.png) 50% 0% no-repeat;
+}
+
+.scale-thumb[disabled="true"] {
+  opacity: .7 !important;
+}
+

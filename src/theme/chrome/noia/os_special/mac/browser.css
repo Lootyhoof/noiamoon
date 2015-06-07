@@ -1,0 +1,39 @@
+@import url(chrome://browser/skin/browser-nonLinux.css);
+
+.tabbrowser-strip > .tabbrowser-tabs {
+  background: #a8a8a8;
+}
+
+window:not([active=true]) .tabbrowser-strip > .tabbrowser-tabs {
+  background: #d8d8d8;
+}
+
+#navigator-toolbox {
+  -moz-appearance    : none !important;
+  background-image   : url("chrome://browser/skin/icons/Tool-background.png");
+  background-position: top left;
+  background-repeat  : repeat-x;
+  background-color   : #FFFFFF;
+  border             : 0px !important;
+}
+
+#navigator-toolbox[tabsontop="true"] #TabsToolbar {
+	-moz-appearance:none;
+	background-image : url("chrome://browser/skin/icons/Tabbar-background-top.png");
+	margin-top : 0px;
+	margin-right : 0px;
+	margin-left : 0px;
+	padding-top : 0px;
+	padding-left : 0px;
+    border-bottom : 2px groove #bbb;
+    box-shadow: none;
+}
+
+#titlebar-buttonbox-container,
+#main-window:not([drawintitlebar=true]) > #titlebar {
+  display: none;
+}
+
+#titlebar {
+  height: 22px;
+}

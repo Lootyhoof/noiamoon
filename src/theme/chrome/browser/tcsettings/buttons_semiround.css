@@ -1,4 +1,0 @@
-#header-utils-btn,menulist,
-button:not(#appmenu-button):not(#appmenu-toolbar-button):not(.searchbar-engine-button) {
-	border-radius: 5px !important;
-}

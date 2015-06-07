@@ -1,0 +1,170 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+page > hbox {
+  background: url(chrome://browser/skin/icons/Tool-background2.png) center left repeat-x #adaebb;
+}
+
+page > hbox > label {
+  display: none;
+}
+
+#search-box {
+  -moz-appearance: none;
+  margin: 2px;
+}
+
+#viewButton {
+  margin: 0 2px;
+}
+
+/* Sidebars */
+
+.sidebar-placesTree {
+  margin: 0;
+}
+
+.sidebar-placesTreechildren::-moz-tree-row(hover) {
+  background-color: transparent;
+  border : 1px solid transparent;
+}
+
+.sidebar-placesTreechildren::-moz-tree-row(hover, current),
+.sidebar-placesTreechildren::-moz-tree-row(hover, selected)  {
+  border : 1px solid transparent;
+  background-color: #E9E9E9;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell(leaf) ,
+.sidebar-placesTreechildren::-moz-tree-image(leaf) {
+  cursor: pointer;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell-text(leaf, hover) {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sidebar-placesTreechildren::-moz-tree-cell(separator) {
+  cursor: default;
+}
+
+/* Trees */
+
+treechildren::-moz-tree-image {
+  margin: 0 2px;
+  padding-right: 2px;
+}
+
+treechildren::-moz-tree-image(title) {
+  width: 16px;
+  height: 16px;
+  list-style-image: url(chrome://mozapps/skin/places/defaultFavicon.png);
+}
+
+treechildren::-moz-tree-image(title, livemarkItem) {
+  list-style-image: url("chrome://browser/skin/icons/livemark.png");
+}
+
+treechildren::-moz-tree-image(title, livemarkItem, visited) {
+  list-style-image: url("chrome://browser/skin/icons/livemark-visited.png");
+}
+
+treechildren::-moz-tree-image(title, separator) {
+  width: 0;
+  height: 0;
+  list-style-image: none;
+}
+
+treechildren::-moz-tree-image(title, container) {
+  list-style-image: url(chrome://browser/skin/icons/folder_closed.png);
+}
+
+treechildren::-moz-tree-image(title, open) {
+  list-style-image: url(chrome://browser/skin/icons/folder_open.png);
+}
+
+treechildren::-moz-tree-image(title, container, livemark) {
+  list-style-image: url(chrome://browser/skin/icons/livemark.png);
+}
+
+treechildren::-moz-tree-image(title, javascript) {
+  list-style-image: url(chrome://browser/skin/icons/bookmarklet.png);
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
+  list-style-image: url(chrome://browser/skin/icons/bookmark-folder.png);
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks, open) {
+  list-style-image: url(chrome://browser/skin/icons/bookmark-folder-open.png);
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
+  list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png);
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu) {
+  list-style-image: url(chrome://global/skin/CuteMenus/menuedit.png);
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
+  list-style-image: url(chrome://browser/skin/places/unsortedBookmarks.png);
+}
+
+/* query-nodes should be styled even if they're not expandable */
+treechildren::-moz-tree-image(title, query) {
+  list-style-image: url(chrome://browser/skin/places/query.png);
+}
+
+treechildren::-moz-tree-image(title, query, tagContainer),
+treechildren::-moz-tree-image(query, OrganizerQuery_Tags) {
+  list-style-image: url(chrome://browser/skin/places/tag.png);
+}
+
+treechildren::-moz-tree-image(query, OrganizerQuery_Downloads) {
+ list-style-image: url(chrome://browser/skin/icons/query_downloads.png);
+ -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(title, query, dayContainer) {
+  list-style-image: url(chrome://browser/skin/places/calendar.png);
+}
+
+treechildren::-moz-tree-image(title, query, hostContainer) {
+  list-style-image: url(chrome://global/skin/dirListing/remote.png);
+}
+
+treechildren::-moz-tree-image(title, query, OrganizerQuery_History) {
+  list-style-image: url(chrome://global/skin/CuteMenus/history.png);
+}
+
+treechildren::-moz-tree-image(title, query, folder) {
+  list-style-image: url(chrome://browser/skin/icons/folder_closed2.png);
+}
+
+treechildren::-moz-tree-image(title, query, folder, open) {
+  list-style-image: url(chrome://browser/skin/icons/folder_open2.png);
+}
+
+treechildren::-moz-tree-row(session-start) {
+  font-weight: bold;
+  border-top:1px dotted #808080;
+}
+
+treechildren::-moz-tree-cell-text(date, session-continue) {
+  color:#fff;
+}
+
+treechildren::-moz-tree-image(cutting) {
+  opacity: 0.5;
+}
+
+treechildren::-moz-tree-cell-text(cutting) {
+  opacity: 0.7;
+}
+
+#placeContent treechildren::-moz-tree-twisty {
+  width: 0;
+}

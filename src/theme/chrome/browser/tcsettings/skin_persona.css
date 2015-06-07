@@ -1,7 +1,0 @@
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-
-#aios-toolbar:-moz-lwtheme,#vertical-toolbar:-moz-lwtheme,tabbrowser[treestyletab]:-moz-lwtheme{
-	-moz-appearance: none !important;
-	background-image: none !important;
-	background: none !important;
-}

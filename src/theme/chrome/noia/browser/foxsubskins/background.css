@@ -1,0 +1,8 @@
+.toolbarbutton-1:not(.msgHeaderView-button):not([checked="true"]):not([disabled="true"]):hover,
+.toolbarbutton-1:not(.msgHeaderView-button):not([checked="true"]):not([disabled="true"])[buttonover="true"]
+{
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left #fff;
+  box-shadow: 0px 0px 1px transparent, 0px 0px 1px #000 inset;
+  background-size : auto 100%;
+  border-radius : 3px;
+}

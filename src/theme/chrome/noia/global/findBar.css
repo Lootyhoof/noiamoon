@@ -1,0 +1,166 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.findbar-closebutton {
+  padding: 4px 5px;
+  list-style-image: url(chrome://global/skin/icons/close.png);
+  -moz-image-region: rect(0 16px 16px 0);
+}
+
+.findbar-closebutton:hover {
+  -moz-image-region: rect(0 32px 16px 16px);
+}
+
+.findbar-closebutton:hover:active {
+  -moz-image-region: rect(0 48px 16px 32px);
+}
+
+findbar {
+  border-left: 0;
+  border-bottom: 0;
+  border-top: 1px solid #808080;
+  background: #DADCE4;
+  transition-property: margin-bottom, opacity, visibility;
+  transition-duration: 150ms, 150ms, 0s;
+  transition-timing-function: ease-in-out, ease-in-out, linear;
+}
+
+.browserContainer > findbar[position="top"] {
+  border-bottom : 1px solid #808080;
+}
+
+findbar[hidden] {
+  /* Override display:none to make the transition work. */
+  display: -moz-box;
+  visibility: collapse;
+  margin-bottom: -1em;
+  opacity: 0;
+  transition-delay: 0s, 0s, 150ms;
+}
+
+.findbar-find-previous {
+  list-style-image: url(chrome://browser/skin/icons/go-up.png);
+}
+
+.findbar-find-previous .toolbarbutton-icon {
+  opacity: .7;
+}
+
+.findbar-find-previous:not([disabled="true"]):hover .toolbarbutton-icon {
+  opacity: 1.0;
+}
+
+.findbar-find-previous[disabled="true"] {
+  opacity: .5;
+}
+
+.findbar-find-next {
+  list-style-image: url(chrome://browser/skin/icons/go-down.png);
+}
+
+.findbar-find-next .toolbarbutton-icon {
+  opacity: .7;
+}
+
+.findbar-find-next:not([disabled="true"]):hover .toolbarbutton-icon {
+  opacity: 1.0;
+}
+
+.findbar-find-next[disabled="true"] {
+  opacity: .5;
+}
+
+.findbar-highlight {
+  list-style-image: url(chrome://global/skin/CuteMenus/hline.png);
+}
+
+.findbar-highlight .toolbarbutton-icon {
+  opacity: .7;
+}
+
+.findbar-highlight:not([disabled="true"]):hover .toolbarbutton-icon {
+  opacity: 1.0;
+}
+
+.findbar-highlight[disabled="true"] {
+  opacity: .5;
+}
+
+.findbar-highlight[checked="true"] {
+  opacity: 1.0;
+}
+
+.findbar-highlight[checked="true"],
+.findbar-highlight:not([disabled="true"]):hover,
+.findbar-case-sensitive[checked="true"],
+.findbar-case-sensitive:not([disabled="true"]):hover
+ {
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent;
+  color : #000 !important;
+  border-radius : 3px;
+  box-shadow: none;
+  border : 2px solid;
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #9BB0D1;
+  -moz-border-bottom-colors: #404040 #9BB0D1;
+  -moz-border-left-colors: #404040 #fff;
+  padding : 0px !important;
+}
+
+.findbar-find-fast[value=""] {
+  display: none;
+}
+
+.find-status-icon {
+  list-style-image: none;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  -moz-margin-start: 12px;
+  -moz-margin-end: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+.findbar-find-status {
+  margin: 0 !important;
+  -moz-margin-start: 3px !important;
+  padding: 2px !important;
+}
+
+.find-status-icon[status="notfound"] {
+  list-style-image: url(chrome://global/skin/icons/warning-16.png);
+}
+
+.find-status-icon[status="wrapped"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/undo.png);
+}
+
+.find-status-icon[status="pending"] {
+  list-style-image: url("chrome://global/skin/icons/loading.png");
+}
+
+.findbar-textbox {
+  -moz-binding: url(chrome://global/content/bindings/findbar.xml#findbar-textbox);
+  margin: 0 5px;
+  border-radius: 9.5pt;
+  border: 1px solid #909090;
+  -moz-padding-start: 7px;
+}
+
+.findbar-textbox[status="notfound"] {
+  background-color: yellow;
+  color: #f66;
+  border-color: #f66;
+}
+
+.findbar-textbox[flash="true"] {
+  background-color: #c7cde7;
+  color: black;
+}
+
+.findbar-textbox[focused="true"]  {
+  border: 1px solid #5592C4;
+}
+
+
+
+

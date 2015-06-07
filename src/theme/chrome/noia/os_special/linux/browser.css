@@ -1,0 +1,219 @@
+@media all and (-moz-windows-compositor) {
+  #main-window:not([tabsintitlebar]){
+    -moz-appearance:-moz-win-borderless-glass;
+    background:transparent;
+  }
+
+  #main-window:not(:-moz-lwtheme)[inFullscreen="true"]{
+    -moz-appearance:none;
+  }
+
+  #main-window:not([tabsintitlebar]) #titlebar-buttonbox {
+    -moz-appearance: -moz-window-button-box;
+    -moz-box-align: start;
+  }
+
+  #main-window:not([tabsintitlebar])[sizemode="maximized"] > #titlebar > #titlebar-content > #titlebar-buttonbox {
+    -moz-appearance: -moz-window-button-box-maximized;
+  }
+}
+
+
+  #main-window[tabsintitlebar] #titlebar-content:not(:-moz-lwtheme),
+  #main-window[tabsintitlebar]:not([inFullscreen]) #TabsToolbar:not(:-moz-lwtheme) {
+    background-color: #99B4D1;
+    color: #000000;
+  }
+  #main-window[tabsintitlebar] #titlebar-content:not(:-moz-lwtheme):-moz-window-inactive,
+  #main-window[tabsintitlebar]:not([inFullscreen]) #TabsToolbar:not(:-moz-lwtheme):-moz-window-inactive {
+    background-color: #BFCDDB;
+    color: #434E54;
+  }
+
+  #main-window[tabsintitlebar] #titlebar:-moz-lwtheme {
+    visibility: hidden;
+  }
+  #main-window[tabsintitlebar] #titlebar-content:-moz-lwtheme {
+    -moz-binding: url("chrome://global/content/bindings/general.xml#windowdragbox");
+    visibility: visible;
+  }
+  /* ::::: titlebar ::::: */
+
+#main-window[sizemode="normal"] > #titlebar {
+  -moz-appearance: -moz-window-titlebar;
+}
+
+#main-window[sizemode="maximized"] > #titlebar {
+  -moz-appearance: -moz-window-titlebar-maximized;
+}
+
+@media all and (-moz-windows-classic) {
+  #main-window[sizemode="normal"] > #titlebar > #titlebar-content > #appmenu-button-container {
+    margin-top: 4px;
+  }
+}
+
+#titlebar-buttonbox {
+  -moz-appearance: none /*-moz-window-button-box*/;
+}
+
+#main-window[sizemode="maximized"] #titlebar-buttonbox {
+  -moz-appearance: none /*-moz-window-button-box-maximized*/;
+}
+
+.titlebar-placeholder[type="appmenu-button"] {
+  margin-left: 4px;
+}
+
+.titlebar-placeholder[type="caption-buttons"] {
+  margin-left: 0px;
+}
+
+/* titlebar command buttons */
+
+#main-window[tabsintitlebar] #titlebar-min {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/minimize.png") left no-repeat;
+  width:26px;
+  height:20px;
+}
+
+#main-window[tabsintitlebar] #titlebar-min:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/minimizeX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+}
+
+#main-window[tabsintitlebar] #titlebar-max {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/restore.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#main-window[tabsintitlebar] #titlebar-max:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/restoreX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#main-window[tabsintitlebar] #titlebar-close {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/close.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#main-window[tabsintitlebar] #titlebar-close:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/closeX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#titlebar-min {
+  -moz-appearance: -moz-window-button-minimize;
+}
+
+#titlebar-max {
+  -moz-appearance: -moz-window-button-maximize;
+}
+
+#main-window[sizemode="maximized"] #titlebar-max {
+  -moz-appearance: -moz-window-button-restore;
+}
+
+#titlebar-close {
+  -moz-appearance: -moz-window-button-close;
+}
+
+@media not all and (-moz-windows-classic) {
+  #titlebar-min {
+    -moz-margin-end: 0px;
+  }
+}
+
+#navigator-toolbox[tabsontop=true] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([inFullscreen]) {
+  margin: 0;
+}
+
+#appmenu-toolbar-button {
+  -moz-box-orient: horizontal;
+  height: 18px;
+  color: #fff;
+  text-shadow: 0 0 2px #333;
+  margin: 0 1px;
+  padding: 0 6px;
+  list-style-image: url(chrome://browser/skin/icons/firefox16.png);
+  border: 1px solid rgba(0,0,0,.5);
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
+  background-color: #0b86e0;
+  background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.4) 30%, rgba(255,255,255,0) 50%);
+  background-clip: padding-box;
+  box-shadow: 0 0 5px rgba(255,255,255,.5) inset;
+}
+
+#appmenu-toolbar-button:hover:not(:active):not([open]) {
+  background-color: #1f9afd;
+}
+
+#appmenu-toolbar-button:hover:active,
+#appmenu-toolbar-button[open] {
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2) 10%, transparent 60%);
+  box-shadow: 0 0 4px rgba(0,0,0,.3) inset;
+}
+
+#TabsToolbar[tabsontop=true] #appmenu-toolbar-button {
+  margin: -1px 1px 1px;
+}
+
+#TabsToolbar:not([tabsontop=true]) #appmenu-toolbar-button {
+  border-top: 1px solid rgba(0,0,0,.5);
+  border-radius: 4px;
+}
+
+#appmenu-toolbar-button > .toolbarbutton-text {
+  display: none;
+}
+
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  margin: 0 0 0 4px;
+  list-style-image: url(chrome://browser/skin/icons/appmenu-dropmarker.png) ;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button {
+  background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
+  border-color: rgba(43,8,65,.9) !important;
+  color : #fff !important;  
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:not(:active):not([open]) {
+  background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
+                    radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
+                    linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+  border-color: rgba(43,8,65,.9) !important;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:active,
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button[open] {
+  background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+}
+
+.appmenu-edit-button > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 1px 1px 0 !important;
+}
+
+.appmenu-edit-button:not([disabled="true"]):hover > .toolbarbutton-icon {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 1px 2px 2px 1px !important;
+}

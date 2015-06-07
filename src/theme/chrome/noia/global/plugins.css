@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+}
+
+body {
+  color: #000;
+  margin: 2em 4em;
+  padding: 0 1em;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 5px #404040;
+}
+
+DIV#outside {
+  margin: 0 auto;
+  padding: 3em;
+}
+
+#plugs,
+#noplugs {
+  margin: 0 0 .6em;
+  font-size: 220%;
+  text-shadow: 1px 1px 1px #aaa;
+}
+
+#findmore {
+  padding: 1em 1em 0;
+  border: 1px solid #000;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background: #f0f0f0;
+}
+
+#findpluginupdates {
+  padding: .3em 1em;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  background: #f0f0f0;
+}
+
+#installhelp {
+  padding: 0 1em 1em;
+  border: 1px solid #000;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  background: #f0f0f0;
+}
+
+a {
+  color: #1f9afd;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #62d;
+}
+
+hr {
+  display: none;
+}
+
+.plugname {
+  margin-bottom: 0;
+  padding: 0 .5em 1em;
+  border: 1px solid #000;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background: #f0f0f0;
+}
+
+dl {
+  margin: 0;
+  padding-bottom: 3px;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  background: #f0f0f0;
+}
+
+table {
+  color: #000;
+  border: 1px solid #000;
+  border-top: 1px solid #808080;
+  background: #f0f0f0;
+  border-radius: 0 0 5px 5px;
+}
+
+th {
+  color: #fff;
+  border-bottom: 1px solid #808080;
+  background: #1f9afd;
+}
+
+th + th,
+td + td {
+  border-left: 1px dotted #808080;
+}
+
+td {
+  border-top: 1px dotted #808080;
+}
+
+tr:first-child td {
+  border-top: 0;
+}

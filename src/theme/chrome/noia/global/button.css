@@ -1,0 +1,153 @@
+@import url(chrome://os_special/skin/button.css);
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+
+button {
+  min-width: 73px;
+  -moz-box-pack:center;
+  -moz-box-align:center;
+  font-family: arial, sans-serif;
+  font-weight: normal;
+  color: #000;
+  margin: 1px 3px;
+  padding: 2px 3px 2px 1px;
+  border: 1px solid #000;
+  -moz-padding-start: 8px;
+  -moz-padding-end: 8px;
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #808080;
+  -moz-border-bottom-colors: #404040 #808080;
+  -moz-border-left-colors: #404040 #fff;
+  border-radius: 4px;
+  background-color: #fafafa;
+  box-shadow:
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+    0 16px 8px rgba(80, 80, 80, 0.3) inset,  
+    1px 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+notification button {
+	background: url(chrome://global/skin/button/body.png) repeat-x top left #fff;
+	box-shadow:
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+    0 13px 8px rgba(80, 80, 80, 0.2) inset,  
+    1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #A5BFD8;
+  -moz-border-bottom-colors: #404040 #A5BFD8;
+  -moz-border-left-colors: #404040 #A5BFD8;
+  background: url(chrome://global/skin/button/body-focus.png) repeat-x top left #c6feff;
+}
+
+button[default="true"] {
+  -moz-border-top-colors: #404040 #6c6cfa;
+  -moz-border-right-colors: #404040 #1c1cca;
+  -moz-border-bottom-colors: #404040 #1c1cca;
+  -moz-border-left-colors: #404040 #6c6cfa;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+button:hover:not([disabled="true"]) {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+  color : #000;
+}
+
+button:hover:active:not([disabled="true"]) {
+  -moz-border-top-colors: #404040 #808080;
+  -moz-border-right-colors: #404040 #fff;
+  -moz-border-bottom-colors: #404040 #fff;
+  -moz-border-left-colors: #404040 #808080;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}
+
+button[disabled="true"] {
+  color: #999;
+  background: none;
+  background-color: #fafafa;
+  -moz-border-top-colors: #808080 #fff;
+  -moz-border-right-colors: #808080 #fff;
+  -moz-border-bottom-colors: #808080 #fff;
+  -moz-border-left-colors: #808080 #fff;
+}
+
+.button-icon {
+  margin-right: 2px;
+}
+
+button[disabled="true"] .button-icon {
+  opacity: .3;
+}
+
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  min-width: 11px;
+  min-height: 11px;
+  margin: 1px;
+  list-style-image: none;
+  background-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+}
+
+.button-menu-dropmarker[disabled="true"],
+.button-menubutton-dropmarker[disabled="true"] {
+  background-image: url(chrome://global/skin/arrow/arrow-dn-dis.gif);
+}
+
+button[type="menu"]:not(#appmenu-button) dropmarker {
+  width: 11px;
+  height: 11px;
+}
+
+.button-menubutton-dropmarker[open="true"] {
+  margin: 2px 0 0 2px;
+}
+
+/* plain buttons */
+
+button.plain {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+button[type="disclosure"] {
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-image: url(chrome://global/skin/tree/twisty.png);
+  border: 0 !important;
+  background: none !important;
+  background-color: transparent;
+}
+
+button[type="disclosure"][open="true"] {
+  list-style-image: url(chrome://global/skin/tree/twisty-open.png);
+}
+
+button[type="menu-button"] {
+  margin-left: 0;
+  padding: 0;
+  -moz-padding-end: 3px;
+}
+
+button[type="menu-button"] {
+  border : none !important;
+  background : none !important;
+  box-shadow : none !important;
+}
+
+button[type="menu-button"] > button {
+  margin: -2px;
+  -moz-margin-end: 3px;
+  border-right: 1px solid;
+  border-radius: 4px;
+}
+
+
+

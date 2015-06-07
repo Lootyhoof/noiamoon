@@ -1,0 +1,247 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* main panel */
+#editBookmarkPanel:not([type="arrow"]) {
+  padding: 0;
+  border: 1px solid #404040;
+  background: #dadce4;
+}
+
+#editBookmarkPanel .panel-arrowcontent  {
+  background : linear-gradient(to bottom,#fff, #C8C9D1 40px, #dadce4);
+}
+
+#editBookmarkPanel > #editBookmarkPanelContent {
+  margin: 0;
+  padding: 5px;
+}
+
+#editBookmarkPanel > #editBookmarkPanelBottomButtons {
+  padding: 5px;
+}
+
+#editBookmarkPanelHeader,
+#editBookmarkPanelContent {
+ margin-bottom: .5em;
+}
+
+#editBookmarkPanel > hbox {
+  min-height: 52px;
+}
+
+#editBookmarkPanelTitle {
+  font-size: 130%;
+  margin-left: 3px;
+}
+
+#editBookmarkPanelStarIcon {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+  list-style-image: url(chrome://browser/skin/places/starred48.png);
+}
+
+#editBookmarkPanelStarIcon[unstarred] {
+  list-style-image: url(chrome://browser/skin/places/unstarred48.png);
+}
+
+/* folder menulist */
+
+.folder-icon > .menu-iconic-left {
+  display: -moz-box;
+}
+
+.folder-icon > .menulist-label-box > .menulist-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.folder-icon > menupopup > menuitem {
+  padding: 1px 0px !important;
+}
+
+.folder-icon > menupopup > menuitem > .menu-iconic-text {
+  -moz-margin-start: 10px !important;
+}
+
+.folder-icon {
+  list-style-image: url(chrome://browser/skin/icons/folder_closed.png) !important;
+}
+
+#editBookmarkPanelTitle {
+  font-size: 130%;
+  margin-left: 3px;
+}
+
+#editBMPanel_folderRow,
+#editBMPanel_folderTree,
+#editBMPanel_tagsSelector {
+  margin: 2px 5px;
+}
+
+#editBMPanel_loadInSidebarCheckbox {
+  padding-bottom: 5px;
+}
+
+/* Implements editBookmarkPanel resizing on folderTree un-collapse. */
+#editBMPanel_folderTree {
+  min-width: 27em;
+}
+
+.panel-promo-box {
+  border-top : 2px groove #fff;
+  margin: 10px -5px -5px;
+}
+
+.panel-promo-icon {
+  list-style-image: url("chrome://browser/skin/sync-notification-24.png");
+  -moz-margin-end: 10px;
+  vertical-align: middle;
+}
+
+.panel-promo-closebutton {
+  -moz-appearance: none;
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+  border: none;
+  -moz-margin-end: 0px;
+  margin-top: 5px;
+}
+
+.panel-promo-closebutton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.panel-promo-closebutton:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+.panel-promo-closebutton > .toolbarbutton-text {
+  padding: 0;
+  margin: 0;
+}
+
+/* expanders */
+
+.expander-up,
+.expander-down {
+  min-width: 0;
+  margin: 0;
+  -moz-margin-end: 4px;
+}
+
+.expander-up > .button-box,
+.expander-down > .button-box {
+  padding: 0;
+  -moz-padding-start: 12px;
+}
+
+.expander-up {
+  list-style-image: url(chrome://global/skin/arrow/arrow-up.gif);
+}
+
+.expander-down {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+}
+
+#editBookmarkPanelContent {
+  min-width: 26em;
+}
+
+/* name picker */
+
+#editBMPanel_namePicker[droppable=false] {
+  cursor: text;
+  height: 1.55em;
+  margin: 2px 3px;
+  padding: 1px 2px;
+  border: 1px solid;
+  -moz-border-top-colors: #888;
+  -moz-border-right-colors: #ccc;
+  -moz-border-bottom-colors: #ccc;
+  -moz-border-left-colors: #888;
+  border-radius: 0;
+  background: #f8f8f8;
+}
+
+#editBMPanel_namePicker[droppable=false][disabled="true"] {
+  cursor: default;
+  color: #808080;
+  -moz-border-top-colors: #f00;
+  -moz-border-right-colors: #f00;
+  -moz-border-bottom-colors: #f00;
+  -moz-border-left-colors: #f00;
+}
+
+#editBMPanel_namePicker[droppable=false] > .menulist-editable-box > .menulist-editable-input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#editBMPanel_tagsField #treecolAutoCompleteValue {
+  visibility: collapse;
+}
+
+/* Hide the drop marker and the popup. */
+
+#editBMPanel_namePicker[droppable=false] > .menulist-dropmarker,
+#editBMPanel_namePicker[droppable=false] > menupopup {
+  display: none;
+}
+
+#editBMPanel_folderMenuList {
+  padding: 0 3px;
+}
+
+#editBMPanel_folderMenuList > menupopup {
+  background: url(chrome://global/skin/menu/menuback.png) repeat-y #dadce4;
+}
+
+#editBMPanel_folderMenuList > menupopup:-moz-locale-dir(rtl) {
+  background: url(chrome://global/skin/menu/menubackrtl.png) right repeat-y #dadce4;
+}
+
+#editBMPanel_folderMenuList menuitem {
+  padding: 1px 0 1px 9px;
+}
+
+/* bookmark panel dropdown icons */
+
+#editBMPanel_folderMenuList[selectedIndex="0"],
+#editBMPanel_toolbarFolderItem {
+  list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png) !important;
+}
+
+#editBMPanel_folderMenuList[selectedIndex="1"],
+#editBMPanel_bmRootItem {
+  list-style-image: url(chrome://global/skin/CuteMenus/menuedit.png) !important;
+}
+
+#editBMPanel_folderMenuList[selectedIndex="2"],
+#editBMPanel_unfiledRootItem {
+  list-style-image: url(chrome://browser/skin/places/unsortedBookmarks.png) !important;
+}
+
+/* Action buttons */
+
+#editBMPanel_newFolderButton {
+  list-style-image: url(chrome://browser/skin/icons/folder-add.png);
+  -moz-margin-start: 5px;
+}
+
+#editBookmarkPanel > #editBookmarkPanelBottomButtons {
+  min-height: 26px;
+}
+
+#editBookmarkPanelDeleteButton {
+  margin: 3px 5px;
+  list-style-image: none;
+}
+
+#editBookmarkPanelDoneButton {
+  margin: 3px 5px;
+  list-style-image: none;
+}

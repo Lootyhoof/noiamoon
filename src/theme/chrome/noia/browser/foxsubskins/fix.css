@@ -1,0 +1,78 @@
+@import url(chrome://browser/skin/foxsubskins/fix2.css); 
+
+
+/* Colorfultabs - fix for highlighted tab*/
+
+tab.tabbrowser-tab.standout {
+  -moz-appearance : none !important;
+  -moz-border-image: none !important;
+  box-shadow:
+    0 0 2px rgba(255, 255, 255, 0) inset,
+    0 4px 6px rgba(255, 255, 255, 0.1) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+    0 13px 8px rgba(255, 255, 255, 0.1) inset !important; 
+}
+
+/* Force color : Hide caption titlebar */
+
+prefwindow[id="hcp_options_window"] radiogroup > label:not(.default_label),
+prefwindow[id="hcp_options_window"] groupbox > hbox > label:not(.default_label),
+prefwindow[id="hcp_options_window"] groupbox > vbox > label:not(.default_label),
+prefwindow[id="hcp_options_window"] groupbox > label:not(.default_label),
+prefwindow[id="hcp_options_window"] label.child_label,
+prefwindow[id="hcp_options_window"] label.extrainfo,
+prefwindow[id="hcp_options_window"] span.extrainfo
+{
+	color: #0066CC !important;
+}
+
+/* about:home */
+
+@-moz-document url("about:home") {
+#bookmarks::before {
+  content: url("chrome://browser/skin/preferences/bookmark.png") !important;
+}
+
+#history::before {
+  content: url("chrome://browser/skin/preferences/history.png") !important;
+}
+
+#apps::before {
+  content: url("chrome://browser/skin/preferences/webapps.png") !important;
+}
+
+#settings::before {
+  content: url("chrome://browser/skin/preferences/advanced.png") !important;
+}
+
+#addons::before {
+  content: url("chrome://browser/skin/preferences/add-ons.png") !important;
+}
+
+#downloads::before {
+  content: url("chrome://browser/skin/preferences/downloads.png") !important;
+}
+
+#sync::before {
+  content: url("chrome://browser/skin/preferences/sync.png") !important;
+}
+
+#restorePreviousSession::before {
+  content: url("chrome://browser/skin/preferences/restore-large.png") !important;
+}
+
+body[dir=rtl] #restorePreviousSession::before {
+  transform: scaleX(-1) !important;
+}
+
+body[narrow] #restorePreviousSession::before {
+  content: url("chrome://browser/skin/preferences/restore.png") !important;
+}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+@import url(chrome://os_special/skin/checkbox.css);
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+checkbox {
+  -moz-box-align: center;
+  margin: 2px -1px;
+  padding: 1px 2px 1px 4px;
+  text-shadow: 1px 1px 0 transparent;
+}
+
+.checkbox-label-box {
+  margin-left: 2px;
+  padding: 0px 0px;
+  border: 1px solid transparent !important;
+}
+
+.checkbox-icon {
+  margin-right: 2px;
+}
+
+.checkbox-label {
+  margin: 0 !important;
+}
+
+.checkbox-check {
+  width: 16px;
+  height: 16px;
+  list-style-image: url(chrome://global/skin/checkbox/checkbox.png);
+}
+
+/* checked */
+checkbox[checked="true"] > .checkbox-check {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked.png);
+}
+
+/* focused */
+
+checkbox:-moz-focusring > .checkbox-check{
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-focus.png);
+}
+
+checkbox[checked="true"]:-moz-focusring > .checkbox-check{
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked-focus.png);
+}
+
+/* active */
+checkbox:active > .checkbox-check {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-active.png);
+}
+
+checkbox[checked="true"]:active > .checkbox-check{
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked-active.png);
+}
+
+/* hover */
+checkbox:not([disabled="true"]):hover > .checkbox-check{
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-active.png);
+}
+
+checkbox[checked="true"]:not([disabled="true"]):hover > .checkbox-check{
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked-active.png);
+}
+
+/* disabled */
+checkbox[disabled="true"] {
+  color: #aaa;
+  text-shadow: none !important;
+}
+
+checkbox[disabled="true"] > .checkbox-check {
+  opacity: .4;
+}

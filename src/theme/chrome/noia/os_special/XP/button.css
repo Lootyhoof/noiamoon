@@ -1,0 +1,3 @@
+button:-moz-focusring > .button-box {
+  outline: 1px dotted;
+}

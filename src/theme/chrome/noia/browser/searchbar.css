@@ -1,0 +1,70 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
+.searchbar-textbox {
+  min-width: 110px;
+  margin: 0 3px 0 2px;
+}
+
+.searchbar-engine-button {
+  cursor: pointer;
+  width: 33px;
+  min-width: 33px;
+  height: 20px;
+  margin: 0 3px 0 0;
+  padding: 0 2px;
+  border: 0;
+  border-right: 1px solid;
+  -moz-border-right-colors: #aaa;
+  border-radius: 10000px 0 0 10000px;
+  background: transparent;
+  box-shadow: none;
+  border: 0px solid;
+}
+
+.searchbar-engine-button:-moz-locale-dir(rtl) {
+  margin-right : 8px;
+}
+
+.searchbar-engine-image {
+  height: 16px;
+  width: 16px;
+  margin-left: 7px;
+  list-style-image: url(chrome://mozapps/skin/places/defaultFavicon.png);
+}
+
+.searchbar-dropmarker-image {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif);
+}
+
+.searchbar-engine-button[addengines=true] > .searchbar-dropmarker-image {
+  list-style-image: url(chrome://browser/skin/icons/Searchbutton.png);
+}
+
+.search-go-button {
+  padding: 2px;
+  margin-right : 3px;
+  list-style-image: url(chrome://browser/skin/icons/Searchbar.png);
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+.search-go-button:-moz-locale-dir(rtl) {
+  transform: scaleX(-1);
+}
+
+.search-go-button:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.search-go-button:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+.search-go-button[disabled="true"] {
+  opacity: .6;
+}
+
+.searchbar-engine-menuitem[selected] > .menu-iconic-text {
+  font-weight: bold;
+}

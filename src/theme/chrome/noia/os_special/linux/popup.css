@@ -1,0 +1,44 @@
+.panel-arrowcontent {
+  padding: 10px;
+  border: 1px solid #666;
+  background : linear-gradient(to bottom,#fff, #C8C9D1 30%, #dadce4);
+}
+
+.panel-arrow[side="top"],
+.panel-arrow[side="bottom"] {
+  position: relative;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.panel-arrow[side="top"] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-up.png);
+  margin-bottom: -1px;
+}
+
+.panel-arrow[side=bottom] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-down.png);
+  margin-top: -1px;
+}
+
+.panel-arrow[side="left"],
+.panel-arrow[side="right"] {
+  position: relative;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.panel-arrow[side=left] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-horiz.png);
+  margin-right: -1px;
+}
+
+.panel-arrow[side=right] {
+  list-style-image: url(chrome://global/skin/arrow/panelarrow-horiz.png);
+  transform: scaleX(-1);
+  margin-left: -1px;
+}
+
+
+
+

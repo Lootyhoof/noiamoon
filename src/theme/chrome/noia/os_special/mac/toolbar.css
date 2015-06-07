@@ -1,0 +1,3 @@
+toolbox:not(:-moz-lwtheme) {
+  -moz-appearance: -moz-mac-unified-toolbar;
+}

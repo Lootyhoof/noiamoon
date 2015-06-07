@@ -1,0 +1,14 @@
+#engineList treechildren::-moz-tree-image(engineName) {
+  width: 16px;
+  height: 16px;
+  -moz-margin-end: 4px;
+  -moz-margin-start: 1px;
+}
+
+#engineList treechildren::-moz-tree-row {
+  height: 20px;
+}
+
+#addEngines {
+  color: #0a6dbd;
+}

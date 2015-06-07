@@ -1,0 +1,367 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== tree.css ===================================================
+  == Styles used by the XUL outline element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: tree ::::: */
+
+tree {
+  margin: 0px 4px;
+  border: 1px solid #9B9DA2;
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+/* ::::: tree focusring ::::: */
+
+.focusring > .tree-stack > .tree-rows > .tree-bodybox {
+  border: 1px solid transparent;  
+}
+
+.focusring:-moz-focusring > .tree-stack > .tree-rows > .tree-bodybox {
+  border: 1px solid #000000;
+}
+
+
+/* ::::: tree rows ::::: */
+
+treechildren::-moz-tree-row {
+  border: 1px solid transparent;
+  min-height: 18px;
+  height: 1.3em;
+}
+
+treechildren::-moz-tree-row(hover) {
+  border : 1px solid #B8D6FB;
+  background-color: #E6EDF6;
+}
+
+treechildren::-moz-tree-row(selected) {
+  border : 1px solid transparent;
+  background-color: #E9E9E9;
+}
+
+treechildren::-moz-tree-row(selected, focus) {
+  border : 1px solid #9DC5EC;
+  border-bottom : 1px solid #85B7E9;
+  background-image: linear-gradient(to bottom, #C6DDF4, #9DC5EC);
+}
+
+treechildren::-moz-tree-row(current, focus) {
+  border : 1px solid #9DC5EC;
+}
+
+treechildren::-moz-tree-row(selected, current, focus) {
+  border : 1px solid #9DC5EC;
+  border-bottom : 1px solid #8CBBEA;
+}
+
+treechildren::-moz-tree-row(hover, current),
+treechildren::-moz-tree-row(hover, selected)  {
+  border : 1px solid #9DC5EC;
+  border-bottom : 1px solid #85B7E9;
+  background-image: linear-gradient(to bottom, #C6DDF4, #9DC5EC);
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-row,
+tree[seltype="text"] > treechildren::-moz-tree-row {
+  border: none;
+  background-color: transparent;
+}
+
+/* ::::: tree cells ::::: */
+
+treechildren::-moz-tree-cell {
+  padding: 0px 2px 0px 2px;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text,
+tree[seltype="text"] > treechildren::-moz-tree-cell-text,
+treechildren::-moz-tree-cell-text {
+  color: inherit;
+}
+
+treechildren::-moz-tree-cell-text(selected) {
+  color: #000000;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell {
+  border: 1px solid transparent;
+  padding: 0px 1px 0px 1px;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text {
+  border: 1px solid transparent;
+  padding: 0px 1px 1px 1px;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected) {
+  background-color: #f8f8f8;
+}
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text(active, selected) {
+  color: #000000;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected) {
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+treechildren::-moz-tree-cell-text(selected, focus) {
+  color: #000000;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected, focus) {
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
+  color: #000000;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
+  color: #000000;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, current, focus) {
+  border: 1px dotted #000000;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, current, focus) {
+  border: 1px dotted #000000;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected, current, focus) {
+  border: 1px dotted #C0C0C0;
+}
+
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, current, focus) {
+  border: 1px dotted #C0C0C0;
+}
+
+/* ::::: lines connecting cells ::::: */
+
+tree[seltype="cell"] > treechildren::-moz-tree-line,
+tree[seltype="text"] > treechildren::-moz-tree-line,
+treechildren::-moz-tree-line {
+  border: 1px dotted #808080;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-line(active, selected, focus),
+treechildren::-moz-tree-line(selected, focus) {
+  border: 1px dotted #fff;
+}
+
+/* ::::: tree separator ::::: */
+
+treechildren::-moz-tree-separator {
+  border-top: 1px solid #A0A0A0;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+
+/* ::::: drop feedback ::::: */
+
+treechildren::-moz-tree-row(dropOn) {
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+}
+
+tree[seltype="cell"] > treechildren::-moz-tree-cell-text(primary, dropOn),
+tree[seltype="text"] > treechildren::-moz-tree-cell-text(primary, dropOn),
+treechildren::-moz-tree-cell-text(primary, dropOn) {
+  color: #000000;
+}
+
+treechildren::-moz-tree-drop-feedback {
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+  width: 50px;
+  height: 2px;
+  -moz-margin-start: 5px;
+}
+
+/* ::::: tree progress meter ::::: */
+
+treechildren::-moz-tree-progressmeter {
+  color: #1f9afd;
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #808080 #dadce4;
+  -moz-border-right-colors: #fff #dadce4;
+  -moz-border-bottom-colors: #fff #dadce4;
+  -moz-border-left-colors: #808080 #dadce4;
+  background: url(chrome://global/skin/progressmeter/background.png) repeat-x left center;
+}
+
+treechildren::-moz-tree-progressmeter(progressUndetermined) {
+  list-style-image: url(chrome://global/skin/progressmeter/busy.gif);
+}
+
+treechildren::-moz-tree-cell-text(progressmeter) {
+  margin: 2px 4px;
+}
+
+
+/* tree columns */
+
+treecol,
+treecolpicker {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  color: #000;
+  padding: 0 4px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #b0b0b0;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #e0e0e0;
+  background: url(chrome://global/skin/tree/header.png) repeat-x;
+  background-size : auto 100%;
+}
+
+treecol:hover,
+treecolpicker:hover {
+  background: url(chrome://global/skin/tree/header_hover.png) repeat-x;
+  text-shadow : 0 0 0 rgba(0,0,0,0.6);
+  background-size : auto 100%;
+}
+
+treecol[sortDirection="ascending"],
+treecolpicker[sortDirection="ascending"],
+treecol[sortDirection="descending"],
+treecolpicker[sortDirection="descending"] {
+  text-shadow : 0 0 0 rgba(0,0,0,0.6);
+  border-top: 1px solid #C9DAED;
+  border-right: 1px solid #84B1D6;
+  border-bottom: 1px solid #5585C3;
+  border-left: 1px solid #91AFD9;
+  background: url("chrome://global/skin/tree/header_active.png") repeat-x;
+  background-size : auto 100%;
+}
+
+treecol[hideheader="true"] {
+  -moz-appearance: none;
+  border: none;
+  padding: 0;
+}
+
+.treecol-image {
+  padding: 0 2px;
+}
+
+.treecol-image:hover:active {
+  padding: 0 1px 0 3px;
+}
+
+.treecol-text {
+  margin: 0 !important;
+}
+
+/* column drag and drop styles */
+
+treecol[dragging="true"] {
+  border: 1px solid #1f9afd !important;
+}
+
+treecol[insertbefore],
+treechildren::-moz-tree-column(insertbefore),
+treecol[insertafter]:-moz-locale-dir(rtl),
+treechildren:-moz-locale-dir(rtl)::-moz-tree-column(insertafter) {
+  -moz-border-start: 1px solid #1f9afd;
+}
+
+treecol[insertafter],
+treechildren::-moz-tree-column(insertafter),
+treecol[insertbefore]:-moz-locale-dir(rtl) ,
+treechildren:-moz-locale-dir(rtl)::-moz-tree-column(insertbefore)  {
+  -moz-border-end: 1px solid #1f9afd;
+}
+
+/* sort direction indicator */
+
+.treecol-sortdirection {
+  list-style-image: none;
+}
+
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="ascending"] {
+  list-style-image: url(chrome://global/skin/tree/sort-asc.png);
+}
+
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descending"] {
+  list-style-image: url(chrome://global/skin/tree/sort-dsc.png);
+}
+
+/* column picker */
+
+.tree-columnpicker-icon {
+  list-style-image: url(chrome://global/skin/tree/columnpicker.gif);
+}
+
+/* twisty */
+
+treechildren::-moz-tree-twisty {
+  padding-top: 1px;
+  padding-right: 2px;
+  list-style-image: url(chrome://global/skin/tree/twisty.png);
+}
+
+treechildren:-moz-locale-dir(rtl)::-moz-tree-twisty {
+  list-style-image: url(chrome://global/skin/tree/twisty-rtl.png);
+}
+
+treechildren::-moz-tree-twisty(hover) {
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd-hover.png");
+}
+
+treechildren:-moz-locale-dir(rtl)::-moz-tree-twisty(hover) {
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd-hover-rtl.png");
+}
+
+treechildren::-moz-tree-twisty(open),
+treechildren:-moz-locale-dir(rtl)::-moz-tree-twisty(open) {
+  list-style-image: url(chrome://global/skin/tree/twisty-open.png);
+}
+
+treechildren::-moz-tree-twisty(hover, open),
+treechildren:-moz-locale-dir(rtl)::-moz-tree-twisty(hover, open)  {
+  list-style-image: url("chrome://global/skin/tree/twisty-open-hover.png");
+}
+
+treechildren::-moz-tree-indentation {
+  width: 14px;
+}
+
+/* gridline style */
+
+treechildren.gridlines::-moz-tree-cell {
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+treechildren.gridlines::-moz-tree-row {
+  border: 0;
+}
+
+/* editable tree */
+
+treechildren::-moz-tree-row(selected, editing) {
+  border: 0;
+  background: url(chrome://browser/skin/icons/Bookmark-background1.png) repeat-x center;
+}
+
+treechildren::-moz-tree-cell-text(selected, editing) {
+  color: inherit;
+}
+
+.tree-input {
+  margin: 0 0 0 -2px;
+  padding: 1px;
+  border: 1px solid #808080;
+}

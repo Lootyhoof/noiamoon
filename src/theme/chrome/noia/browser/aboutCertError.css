@@ -1,0 +1,93 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+html {
+  height: 100%;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+}
+
+body {
+  color: #000;
+  font: message-box;
+  margin: 0;
+  padding: 0 1em;
+}
+
+h1 {
+  font-size: 160%;
+  margin: 0 0 .6em 0;
+  border-bottom: 1px solid #aaa;
+  text-shadow: 1px 1px 0 #ffbd09;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+#errorPageContainer {
+  position: relative;
+  min-width: 13em;
+  max-width: 52em;
+  margin: 4em auto;
+  padding: 3em 3em 3em 30px;
+  border: 1px solid #ffbd09;
+  border-radius: 10px;
+  background: url(chrome://global/skin/icons/sslWarning.png) 30px 30px no-repeat #fff;
+  box-shadow: 5px 5px 5px #404040;
+}
+
+#errorPageContainer:dir(rtl),
+#errorPageContainer:-moz-dir(rtl) {
+  background-position: right 0;
+}
+
+#errorTitle,
+#errorLongContent {
+  -moz-margin-start: 80px;
+}
+
+#technicalContent > h2,
+#expertContent > h2 {
+  background: url(chrome://browser/skin/icons/arrow-down-small.png) left center no-repeat;
+}
+
+body[dir="rtl"] #technicalContent > h2,
+body[dir="rtl"] #expertContent > h2 {
+  background-position: right center;
+}
+
+#technicalContent[collapsed] > h2,
+#expertContent[collapsed] > h2{
+  background-image: url(chrome://browser/skin/icons/arrow-right-small.png);
+}
+
+body[dir="rtl"] #technicalContent[collapsed] > h2,
+body[dir="rtl"] #expertContent[collapsed] > h2 {
+  background-image: url(chrome://browser/skin/icons/arrow-left-small.png);
+}
+
+.expander > button {
+  -moz-padding-start: 20px;
+  -moz-margin-start: -20px;
+  background: url(chrome://browser/skin/icons/arrow-down-small.png) left center no-repeat;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+body[dir="rtl"] .expander > button ,
+.expander > button:-moz-dir(rtl) {
+  background-position: right center;
+}
+
+
+.expander[collapsed] > button {
+  background-image: url(chrome://browser/skin/icons/arrow-right-small.png);
+}
+
+body[dir="rtl"] .expander[collapsed] > button,
+.expander[collapsed] > button:-moz-dir(rtl) {
+  background-image: url(chrome://browser/skin/icons/arrow-left-small.png);
+}

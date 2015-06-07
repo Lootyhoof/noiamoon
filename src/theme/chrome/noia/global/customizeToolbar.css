@@ -1,0 +1,21 @@
+window,
+dialog {
+  padding: 6px;
+}
+
+#instructions {
+  font-weight: bold;
+  font-size: larger;
+}
+
+#palette-box {
+  -moz-appearance: none;
+  background: #f8f8f8;
+  border: 1px solid #808080;
+  margin: 0 0 10px;
+}
+
+#palette-box > toolbarpaletteitem {
+  padding: 8px 2px;
+  margin: 0 8px;
+}

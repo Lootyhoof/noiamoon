@@ -1,0 +1,142 @@
+:root {
+  color: #000;
+  font: message-box;
+  height: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+}
+
+body {
+  min-width: 30em;
+  max-width: 65em;
+  margin: 2em auto;
+  padding: 3em;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 160%;
+  font-weight: normal;
+  margin: 0 0 .6em;
+  border-bottom: 1px solid #d4d0c8;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 110%;
+}
+
+#UI_goUp {
+  float: left;
+  margin-top: 0;
+}
+
+body[dir="rtl"] #UI_goUp,
+#UI_goUp:-moz-dir(rtl) {
+  float: right;
+}
+
+#UI_showHidden {
+  float: right;
+  margin-top: 0;
+}
+
+body[dir="rtl"] #UI_showHidden ,
+#UI_showHidden:-moz-dir(rtl){
+  float: left;
+}
+
+table {
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+thead {
+  font-size: 130%;
+}
+
+th:last-child {
+  text-align: center;
+}
+
+th:hover > a {
+  text-decoration: underline;
+}
+
+tbody > tr:hover {
+  outline: 1px solid #1f9afd;
+  -moz-outline-radius: .3em;
+  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center rgba(188,245,254,201);
+}
+
+tbody > tr:hover a {
+  color: #000;
+}
+
+tbody > tr a:hover {
+  color: #00f;
+  text-decoration: none;
+}
+
+/* let 'Size' and 'Last Modified' take only as much space as they need and 'Name' all the rest */
+td:not(:first-child) {
+  width: 0;
+}
+
+.up {
+  margin-left: 20px;
+  padding: 0 .5em;
+}
+
+.up::before {
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-left: -20px;
+  content: url(chrome://browser/skin/icons/folder-up.png);
+}
+
+.dir::before {
+  content: url(chrome://browser/skin/icons/folder_closed.png);
+}
+
+button {
+  -moz-appearance: none;
+  -moz-box-pack:center;
+  -moz-box-align:center;
+  color: #000;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  margin: 1px 3px;
+  padding: 2px 3px;
+  border: 2px solid #000;
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #808080;
+  -moz-border-bottom-colors: #404040 #808080;
+  -moz-border-left-colors: #404040 #fff;
+  border-radius: 5px;
+  background: url(chrome://global/skin/button/body.png) repeat-x top left #fafafb;
+}
+
+button:hover {
+  background: url(chrome://global/skin/button/body-hover.png) repeat-x top left #b8e9fe;
+}
+
+button:hover:active {
+  -moz-border-top-colors: #404040 #808080;
+  -moz-border-right-colors: #404040 #fff;
+  -moz-border-bottom-colors: #404040 #fff;
+  -moz-border-left-colors: #404040 #808080;
+  background: url(chrome://global/skin/button/body-active.png) repeat-x top left #c5ebf9;
+}

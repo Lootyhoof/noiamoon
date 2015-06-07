@@ -1,0 +1,428 @@
+#back-button {
+  list-style-image: url("chrome://browser/skin/w_icons/back.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#back-button:not([disabled="true"]):hover, #forward-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px);
+}
+#back-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px);
+}
+#back-button:not([disabled="true"]):hover:active, #forward-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#forward-button {
+  list-style-image: url("chrome://browser/skin/w_icons/forward.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#forward-button:not([disabled="true"]):hover, #back-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px);
+}
+#forward-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px);
+}
+#forward-button:not([disabled="true"]):hover:active, #back-button:not([disabled="true"]):hover:active  {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#reload-button {
+ list-style-image: url("chrome://browser/skin/w_icons/reload.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#reload-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px);
+}
+#reload-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px);
+}
+#reload-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#home-button {
+  list-style-image: url("chrome://browser/skin/w_icons/home.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#home-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px);
+}
+#home-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px);
+}
+#home-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+
+#bookmarks-button {
+  list-style-image: url("chrome://browser/skin/w_icons/bookmarks.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#bookmarks-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px);
+}
+#bookmarks-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px);
+}
+#bookmarks-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+
+#bookmarks-menu-button {
+  list-style-image: url("chrome://browser/skin/w_icons/bookmarks.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+toolbar:not([mode="icons"]) #bookmarks-menu-button {
+  list-style-image: url("chrome://browser/skin/w_icons/bookmarks-menu.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#bookmarks-menu-button[starred] {
+ list-style-image: url("chrome://browser/skin/places/bookmarks-starred.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#bookmarks-menu-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px);
+}
+#bookmarks-menu-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px);
+}
+#bookmarks-menu-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+
+#zoom-in-button {
+ list-style-image: url("chrome://browser/skin/w_icons/Zoom in.png") !important;
+ -moz-image-region: rect(0px 32px 32px 0px);
+}
+#zoom-in-button:not([disabled="true"]):hover {
+ -moz-image-region: rect(32px 32px 64px 0px);
+}
+#zoom-in-button[disabled="true"] {
+ -moz-image-region: rect(64px 32px 96px 0px);
+}
+#zoom-in-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#zoom-out-button {
+ list-style-image: url("chrome://browser/skin/w_icons/Zoom out.png") !important;
+ -moz-image-region: rect(0px 32px 32px 0px);
+}
+#zoom-out-button:not([disabled="true"]):hover {
+ -moz-image-region: rect(32px 32px 64px 0px);
+}
+#zoom-out-button[disabled="true"] {
+ -moz-image-region: rect(64px 32px 96px 0px);
+}
+#zoom-out-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+
+#noiamoon-back-forward-dropmarker .toolbarbutton-menu-dropmarker {
+  list-style-image: url(chrome://browser/skin/icons/dropmarker.png) !important;
+}
+
+toolbar[mode="text"] #noiamoon-back-forward-dropmarker .toolbarbutton-menu-dropmarker {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn.gif) !important;
+}
+
+toolbar[mode="text"] #noiamoon-back-forward-dropmarker[disabled="true"] .toolbarbutton-menu-dropmarker {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn-dis.gif) !important;
+}
+
+#find {
+  list-style-image: url("chrome://browser/skin/w_icons/find.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#find:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#find[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+#find:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+toolbar[iconsize="small"] #back-button {
+  list-style-image: url("chrome://browser/skin/w_icons/back-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #back-button:not([disabled="true"]):hover, toolbar[iconsize="small"] #forward-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #back-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"] #back-button:not([disabled="true"]):hover:active, toolbar[iconsize="small"] #forward-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #forward-button {
+  list-style-image: url("chrome://browser/skin/w_icons/forward-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #forward-button:not([disabled="true"]):hover, toolbar[iconsize="small"] #back-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #forward-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"] #forward-button:not([disabled="true"]):hover:active, toolbar[iconsize="small"] #back-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #reload-button {
+  list-style-image: url("chrome://browser/skin/w_icons/reload-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #reload-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #reload-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"] #reload-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #zoom-in-button {
+ list-style-image: url("chrome://browser/skin/w_icons/Zoom in-small.png") !important;
+ -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #zoom-in-button:not([disabled="true"]):hover {
+ -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #zoom-in-button[disabled="true"] {
+ -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"] #zoom-in-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #zoom-out-button {
+ list-style-image: url("chrome://browser/skin/w_icons/Zoom out-small.png") !important;
+ -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #zoom-out-button:not([disabled="true"]):hover {
+ -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #zoom-out-button[disabled="true"] {
+ -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"] #zoom-out-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #home-button {
+  list-style-image: url("chrome://browser/skin/w_icons/home-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #home-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #home-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+
+toolbar[iconsize="small"] #bookmarks-button {
+  list-style-image: url("chrome://browser/skin/w_icons/bookmarks-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #bookmarks-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #bookmarks-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"]  #bookmarks-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+
+toolbar[iconsize="small"] #bookmarks-menu-button {
+  list-style-image: url("chrome://browser/skin/w_icons/bookmarks-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"]:not([mode="icons"]) #bookmarks-menu-button {
+  list-style-image: url("chrome://browser/skin/w_icons/bookmarks-menu-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #bookmarks-menu-button[starred] {
+  list-style-image: url("chrome://browser/skin/places/bookmarks-starred-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #bookmarks-menu-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #bookmarks-menu-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"]  #bookmarks-menu-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+
+toolbar[iconsize="small"] #find {
+  list-style-image: url("chrome://browser/skin/w_icons/find-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+toolbar[iconsize="small"] #find:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px) !important;
+}
+toolbar[iconsize="small"] #find[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px) !important;
+}
+toolbar[iconsize="small"]  #find:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#placesToolbar #back-button {
+  list-style-image: url("chrome://browser/skin/w_icons/back-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+#placesToolbar #back-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+#placesToolbar #back-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+#placesToolbar #forward-button  {
+  list-style-image: url("chrome://browser/skin/w_icons/forward-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+#placesToolbar #forward-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+#placesToolbar #forward-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+.home-arrow {
+  list-style-image: url(chrome://browser/skin/w_icons/start.png) !important;
+}
+
+.end-arrow {
+  list-style-image: url(chrome://browser/skin/w_icons/finish.png) !important;
+}
+
+.previous-arrow, .left-arrow {
+  list-style-image: url(chrome://browser/skin/w_icons/back1.png) !important;
+}
+
+.next-arrow, .right-arrow {
+  list-style-image: url(chrome://browser/skin/w_icons/forward1.png) !important;
+}
+
+#downloadView {
+  background-image: url(chrome://browser/skin/w_icons/downloadsBG.png) !important;
+}
+  
+.downloadButton.downloadShow {
+  list-style-image: url("chrome://browser/skin/w_icons/folder_closed.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+.downloadButton.downloadShow:hover {
+  list-style-image: url("chrome://browser/skin/w_icons/folder_open.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+.downloadButton.downloadShow:active {
+  list-style-image: url("chrome://browser/skin/w_icons/folder_closed.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+
+
+richlistitem[type="download"][state="1"]:hover > .downloadButton.downloadShow {
+  list-style-image: url("chrome://browser/skin/w_icons/folder_closed.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+richlistitem[type="download"][state="1"]:hover > .downloadButton.downloadShow:hover {
+  list-style-image: url("chrome://browser/skin/w_icons/folder_open.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+richlistitem[type="download"][state="1"]:hover > .downloadButton.downloadShow:active {
+  list-style-image: url("chrome://browser/skin/w_icons/folder_closed.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+
+#downloads-button {
+  list-style-image: url("chrome://browser/skin/w_icons/downloads.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+#downloads-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+#downloads-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+#downloads-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+
+toolbar[iconsize="small"] #downloads-button {
+  list-style-image: url("chrome://browser/skin/w_icons/downloads-small.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+toolbar[iconsize="small"] #downloads-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px) !important;
+}
+toolbar[iconsize="small"] #downloads-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px) !important;
+}
+toolbar[iconsize="small"] #downloads-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#downloads-indicator-icon {
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads.png"),
+                              0, 32, 32, 0) center no-repeat !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
+
+#downloads-indicator:not([disabled="true"]):hover  #downloads-indicator-icon{
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads.png"),
+                              32, 32, 64, 0) center no-repeat !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
+
+#downloads-indicator[disabled="true"] #downloads-indicator-icon{
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads.png"),
+                              64, 32, 96, 0) center no-repeat !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
+
+#downloads-indicator:not([disabled="true"]):hover:active #downloads-indicator-icon{
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads.png"),
+                              0, 32, 32, 0) center no-repeat !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+}
+
+toolbar[iconsize="small"] #downloads-indicator-icon {
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads-small.png"),
+                              0, 24, 24, 0) center no-repeat !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+}
+
+toolbar[iconsize="small"] #downloads-indicator:not([disabled="true"]):hover  #downloads-indicator-icon{
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads-small.png"),
+                              24, 24, 48, 0) center no-repeat !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+}
+
+toolbar[iconsize="small"] #downloads-indicator[disabled="true"] #downloads-indicator-icon{
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads-small.png"),
+                              48, 24, 72, 0) center no-repeat !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+}
+
+toolbar[iconsize="small"] #downloads-indicator:not([disabled="true"]):hover:active #downloads-indicator-icon{
+  background: -moz-image-rect(url("chrome://browser/skin/w_icons/downloads-small.png"),
+                              0, 24, 24, 0) center no-repeat !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+}
+
+#downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon,
+#downloads-button[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
+  background-image: url("chrome://browser/skin/downloads/download-glow.png") !important;
+}
+
+toolbar[iconsize="small"] #downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon,
+toolbar[iconsize="small"] #downloads-button[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
+  background-image: url("chrome://browser/skin/downloads/download-glow-small.png") !important;
+}
+

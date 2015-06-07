@@ -1,0 +1,11 @@
+
+#fullscr-toggler {
+ height: 2px !important;
+ min-height: 2px !important;
+ -moz-appearance: none !important;
+ background: #000 !important;
+}
+
+#window-controls .toolbarbutton-icon {
+  margin-top : 3px !important;
+}

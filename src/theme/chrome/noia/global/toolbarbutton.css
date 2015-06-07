@@ -1,0 +1,139 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+toolbarbutton {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  color: #222;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.toolbarbutton-icon {
+  margin-right: 2px;
+}
+
+.toolbarbutton-text {
+  margin: 0 !important;
+  text-align: center;
+}
+
+toolbarbutton.tabbable {
+  -moz-user-focus: normal !important;
+}
+
+toolbarbutton:hover,
+toolbarbutton[buttonover="true"] {
+  color: rgba(0,0,0,1);
+  text-shadow : 0 0 0 rgba(0,0,0,0.6);
+}
+
+toolbarbutton:hover:active,
+toolbarbutton[open="true"] {
+  color: #000;
+}
+
+toolbarbutton[disabled="true"],
+toolbarbutton[disabled="true"]:hover,
+toolbarbutton[disabled="true"]:hover:active,
+toolbarbutton[disabled="true"][open="true"] {
+  color: #808080;
+  text-shadow : none;
+}
+
+/* ..... checked state ..... */
+
+toolbarbutton[checked="true"],
+toolbarbutton[checked="true"]:hover,
+toolbarbutton[checked="true"]:hover:active,
+toolbarbutton[checked="true"][open="true"] {
+  color: #000000;
+}
+
+toolbarbutton:not(.toolbarbutton-1)[checked="true"] ,
+#console-toolbox > #ToolbarMode toolbarbutton:hover  {
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent;
+  color : #000;
+  border-radius : 3px;
+  box-shadow: none;
+  border : 2px solid;
+  -moz-border-top-colors: #404040 #fff;
+  -moz-border-right-colors: #404040 #9BB0D1;
+  -moz-border-bottom-colors: #404040 #9BB0D1;
+  -moz-border-left-colors: #404040 #fff;
+  padding-right : 0px !important;
+  padding-left : 0px !important;
+}
+
+toolbarbutton:-moz-lwtheme:not([disabled="true"]) {
+  color: inherit;
+  text-shadow: inherit;
+}
+
+/* toolbarbutton menu */
+toolbarbutton:not(#appmenu-toolbar-button) .toolbarbutton-menu-dropmarker {
+  list-style-image:url(chrome://browser/skin/icons/dropmarker.png);
+  -moz-image-region: rect(0 10px 10px 0);
+  margin-left: 1px;
+}
+
+toolbarbutton:not(#appmenu-toolbar-button)[open="true"] .toolbarbutton-menu-dropmarker,
+toolbarbutton:not(#appmenu-toolbar-button):hover .toolbarbutton-menu-dropmarker{
+  -moz-image-region: rect(10px 10px 20px 0);
+}
+
+.toolbarbutton-menu-dropmarker[disabled="true"] {
+  -moz-image-region: rect(20px 10px 30px 0) !important;
+}
+
+/* toolbarbutton menu-button */
+toolbarbutton[type="menu-button"] {
+  -moz-box-orient: horizontal !important;
+  padding: 0 !important;
+}
+
+.toolbarbutton-menubutton-button {
+  -moz-appearance : none !important;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  padding: 1px;
+}
+
+.toolbarbutton-menubutton-button:not([disabled="true"]):hover:active {
+  padding: 2px 0 0 2px;
+}
+
+/* dropmarker */
+.toolbarbutton-menubutton-dropmarker {
+  -moz-box-align: center;
+  list-style-image:url(chrome://browser/skin/icons/dropmarker.png);
+  -moz-image-region: rect(0 10px 10px 0);
+}
+
+.toolbarbutton-menubutton-dropmarker[checked="true"],
+.toolbarbutton-menubutton-dropmarker:hover,
+.toolbarbutton-menubutton-dropmarker[open="true"]:hover,
+toolbarbutton:hover > stack > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[open="true"] > stack > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[type="menu-button"]:hover > .toolbarbutton-menubutton-dropmarker {
+  -moz-image-region: rect(10px 10px 20px 0);
+}
+
+toolbarbutton[disabled="true"] > stack > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[disabled="true"]:hover > stack > .toolbarbutton-menubutton-dropmarker,
+.toolbarbutton-menubutton-dropmarker[disabled="true"] {
+  -moz-image-region: rect(20px 10px 30px 0) !important;
+}
+
+toolbar[mode="icons"] .toolbarbutton-text,
+toolbar[mode="text"] .toolbarbutton-icon {
+  display: none;
+}
+
+toolbar[mode="text"] .toolbarbutton-text {
+  margin: 0 3px !important;
+  vertical-align: middle;
+}
+
+
+

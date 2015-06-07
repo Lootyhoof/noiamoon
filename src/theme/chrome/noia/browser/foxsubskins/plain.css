@@ -1,0 +1,18 @@
+#navigation-toolbox:not(:-moz-lwtheme) ,
+#mail-toolbar-menubar2:not(:-moz-lwtheme),
+.mail-toolbox:not(:-moz-lwtheme),
+#quick-filter-bar-main-bar:not(:-moz-lwtheme),
+#msgcomposeWindow:not(:-moz-lwtheme),
+#compose-toolbar-menubar2:not(:-moz-lwtheme),
+#composeToolbar2:not(:-moz-lwtheme),
+#FormatToolbar:not(:-moz-lwtheme),
+#abContactsPanel:not(:-moz-lwtheme),
+#addrbook-toolbar-menubar2:not(:-moz-lwtheme),
+#ab-bar2:not(:-moz-lwtheme),
+#ab-toolbox:not(:-moz-lwtheme) { 
+  background-image: none !important;
+}
+
+#tabs-toolbar:-moz-lwtheme {
+  background: none !important;
+}

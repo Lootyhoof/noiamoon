@@ -1,0 +1,4 @@
+button[type="menu"],
+button[type="menu-button"] {
+  border-radius: 15px !important;
+}

@@ -1,0 +1,13 @@
+#tabs-toolbar  {
+  background-image : url("chrome://browser/skin/icons/BlackGlossy.png");
+  color : #fff;
+}
+
+#mail-toolbar-menubar2,
+.mail-toolbox {
+  background : #0F0F0F !important;
+}
+
+#mail-bar3 {
+  background-image : url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+}

@@ -1,0 +1,64 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+
+#noiamoon-back-forward-dropmarker {
+  display: none;
+}
+.text-link {
+	text-decoration:none;
+	font-weight:bold;
+	color:blue;
+	cursor: pointer;
+}
+
+.text-link :hover {
+	text-decoration:underline;
+}
+
+#TabsToolbar #noiamoon-toolbar-button,
+#PersonalToolbar #noiamoon-toolbar-button,
+menubar #noiamoon-toolbar-button,
+#addon-bar #noiamoon-toolbar-button {
+	list-style-image: url("noiamoon_16.png");
+	-moz-image-region: rect(0px 16px 16px 0px);
+}
+
+#noiamoon-toolbar-button {
+  list-style-image: url("noiamoon.png");
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+#noiamoon-toolbar-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(32px 32px 64px 0px);
+}
+#noiamoon-toolbar-button[disabled="true"] {
+  -moz-image-region: rect(64px 32px 96px 0px);
+}
+#noiamoon-toolbar-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+
+toolbar[iconsize="small"] #noiamoon-toolbar-button {
+  list-style-image: url("noiamoon-small.png");
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+toolbar[iconsize="small"] #noiamoon-toolbar-button:not([disabled="true"]):hover{
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+toolbar[iconsize="small"] #noiamoon-toolbar-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+toolbar[iconsize="small"] #noiamoon-toolbar-button:not([disabled="true"]):hover:active{
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+
+/* Find in text compatibility with default theme */
+#find {
+  list-style-image: url("chrome://global/skin/icons/Search-glass.png");
+  -moz-image-region: rect(0px 16px 16px 0px);
+}
+
+
+
+
+

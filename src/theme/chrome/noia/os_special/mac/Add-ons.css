@@ -1,0 +1,12 @@
+/* Thunderbird Lightning */
+
+
+#view-tabbox  tab {
+  min-height: 25px !important;
+  height: 25px !important;
+}
+
+#task-actions-toolbox {
+  -moz-appearance: none !important;
+}
+

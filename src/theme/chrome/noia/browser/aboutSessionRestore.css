@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  text-align: center;
+}
+
+#errorPageContainer {
+  background-image: url(chrome://global/skin/icons/warning-large.png);
+  display: -moz-box;
+  width: -moz-available;
+  height: 70%;
+  -moz-box-orient: vertical;
+  text-align: start;
+}
+
+#errorShortDesc > p {
+  margin-top: 0.4em;
+  margin-bottom: 0;
+}
+
+#errorLongContent, #errorTrailerDesc {
+  display: -moz-box;
+  -moz-box-flex: 1;
+  -moz-box-orient: vertical;
+}
+
+#tabList {
+  width: 100%;
+  min-height: 12em;
+  -moz-border-right-colors: #808080;
+  -moz-border-bottom-colors: #808080;
+  margin-top: 2.5em;
+}
+
+treechildren::-moz-tree-image(icon),
+treechildren::-moz-tree-image(noicon) {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+treechildren::-moz-tree-image {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox.png);
+}
+
+treechildren::-moz-tree-image(noicon) {
+  list-style-image: url(chrome://mozapps/skin/places/defaultFavicon.png);
+}
+
+treechildren::-moz-tree-image(container, noicon) {
+  list-style-image: url(chrome://global/skin/CuteMenus/view_remove.png);
+}
+
+treechildren::-moz-tree-image(checked) {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked.png);
+}
+
+treechildren::-moz-tree-image(partial) {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked-partial.png);
+}
+
+#buttons {
+  width: 100%;
+}
+
+#buttons > button {
+  margin-top: 2em;
+}
+
+#errorTryAgain {
+  list-style-image:url(chrome://global/skin/CuteMenus/reload.png);
+}

@@ -1,0 +1,253 @@
+@import url("chrome://browser/skin/foxsubskins/tabbar3.css");
+
+#main-window:not(:-moz-lwtheme) #addon-bar,
+#main-window:not(:-moz-lwtheme) #navigator-toolbox,
+#main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #TabsToolbar:not([treestyletab-mode="vertical"]),
+#main-window[tabsintitlebar][nfnormal="false"]:not(:-moz-lwtheme) #TabsToolbar:not([treestyletab-mode="vertical"]),
+#main-window[nfnormal="false"]:not(:-moz-lwtheme) #titlebar,
+#main-window:not(:-moz-lwtheme),
+findbar,
+#main-window:not(:-moz-lwtheme) #toolbar-menubar,
+#mail-bar3:not(:-moz-lwtheme),
+#mail-toolbar-menubar2:not(:-moz-lwtheme),
+.mail-toolbox:not(:-moz-lwtheme),
+#quick-filter-bar-main-bar:not(:-moz-lwtheme),
+#msgcomposeWindow:not(:-moz-lwtheme),
+#compose-toolbar-menubar2:not(:-moz-lwtheme),
+#composeToolbar2:not(:-moz-lwtheme),
+#MsgHeadersToolbar:not(:-moz-lwtheme),
+#FormatToolbar:not(:-moz-lwtheme),
+#abContactsPanel:not(:-moz-lwtheme),
+#addrbook-toolbar-menubar2:not(:-moz-lwtheme),
+#ab-bar2:not(:-moz-lwtheme),
+#ab-toolbox:not(:-moz-lwtheme),
+#attachmentView,
+#calendar-toolbox { 
+  background : #D2E1F6 !important;
+}
+
+@media not all and (-moz-windows-compositor) {
+#tabs-toolbar:not(:-moz-lwtheme) { 
+  background : #D2E1F6 !important;
+}
+
+#tabs-toolbar:-moz-lwtheme {
+  background: none !important;
+}
+}
+
+#main-window:not(:-moz-lwtheme) #toolbar-menubar,
+#main-window[nfnormal="false"]:not(:-moz-lwtheme) #titlebar,
+#main-window:not(:-moz-lwtheme) { 
+  background-image: linear-gradient(rgba(255, 255, 255, 1),
+                    rgba(255, 255, 255, .1) 25px) !important;
+}
+
+#main-window[tabsontop=true][sizemode="maximized"][nfnormal="false"]:not(:-moz-lwtheme) #toolbar-menubar[autohide="true"] ~ #TabsToolbar { 
+  background-image: linear-gradient(rgba(255, 255, 255, 1),
+                    rgba(255, 255, 255, .1) 25px) !important;
+}
+
+#main-window[tabsontop=true][sizemode="maximized"][nfnormal="false"]:not(:-moz-lwtheme) #toolbar-menubar[autohide="false"] ~ #TabsToolbar,
+#main-window[tabsontop=true]:not([sizemode="maximized"]):not(:-moz-lwtheme) #TabsToolbar,
+#main-window[tabsontop=false]:not(:-moz-lwtheme) #TabsToolbar { 
+  background-image: linear-gradient(rgba(255, 255, 255, .1),
+                    rgba(255, 255, 255, .1) 19px) !important;
+
+}
+
+#main-window[tabsintitlebar][nfnormal="true"]:not(:-moz-lwtheme) #TabsToolbar:not([treestyletab-mode="vertical"]) {
+  background: none !important;
+}
+
+#main-window[nfnormal="true"][tabsontop=true][sizemode="maximized"]:not(:-moz-lwtheme) #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
+  background-image: none !important;
+}
+
+#main-window:-moz-lwtheme #TabsToolbar { 
+  background : none !important;
+}
+
+#main-window[tabsontop="false"][nfnoline="false"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
+  border-top : 2px groove #eee !important;
+}
+
+/* Menu & Popup */
+
+popup,
+menupopup {
+  background: url(chrome://global/skin/menu/menuback.png) repeat-y #FAFAFA !important;
+}
+
+popup:-moz-locale-dir(rtl),
+menupopup:-moz-locale-dir(rtl) {
+  background: url(chrome://global/skin/menu/menubackrtl.png) right repeat-y #FAFAFA !important;
+}
+
+menulist > menupopup > menuseparator,
+.menulist-menupopup > menuseparator,
+menuseparator {
+  border-top: 1px solid #E0E0E0 !important;
+  border-bottom: 1px solid #ffffff !important;
+}
+
+#social-statusarea-user,
+.social-statusarea-user  {
+  -moz-border-bottom-colors: #ffffff  #E0E0E0 !important;
+}
+
+#social-statusarea-user[_moz-menuactive]:not([disabled="true"]),
+.social-statusarea-user[_moz-menuactive]:not([disabled="true"]) {
+  -moz-border-bottom-colors: #ffffff  #E0E0E0 !important;
+}
+
+#appmenuPrimaryPane menuseparator {
+  border-top: 1px solid #b0b0b0 !important;
+  border-bottom: 1px solid #F7F9FB !important;
+}
+
+#appmenu-edit-label {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+}
+
+#appmenuPrimaryPane {
+  background: url(chrome://global/skin/menu/menuback.png) repeat-y #E7EDF1 !important;
+}
+
+#appmenuPrimaryPane:-moz-locale-dir(rtl) {
+  background: url(chrome://global/skin/menu/menubackrtl.png) right repeat-y #E7EDF1 !important;
+}
+
+#appmenuSecondaryPane {
+  background-color: #FAFAFA !important;
+}
+
+panel[type="autocomplete"],
+panel[type="autocomplete-richlistbox"],
+.autocomplete-history-popup,
+menulist > menupopup,
+menulist > menupopup:-moz-locale-dir(rtl) {
+  background: #FFF !important;
+}
+
+.panel-arrowcontent {
+  background : linear-gradient(to bottom,#fff, #C0DBF5 30%, #D2E1F6) !important;
+}
+
+#acctCentralGrid,
+#expandedHeaderView,
+#CompactHeader_collapsedHeaderView {
+  background: linear-gradient(145deg, #D2E1F6, #EFF2FA 40%, #D2E1F6 70%) !important;
+}
+
+/* Side bar & AIOS */
+sidebarheader,
+#aios-toolbar,
+#vertical-toolbar,
+#commandBar  {
+  -moz-appearance: none !important;
+  background: #D2E1F6 !important;
+}
+
+#sidebar-search-container {
+  background-image : none !important;
+  background-color : #D2E1F6 !important;
+}
+
+/* Extensions */
+
+@-moz-document url("about:addons") {
+#header {
+  background: #D2E1F6 !important;
+}
+
+#categories {
+  background: #D3E0F1 !important;
+}
+
+#view-port, #addon-list, #search-list, #updates-list {
+  background: linear-gradient(145deg, #D2E1F6, #EFF2FA 40%, #D2E1F6 70%) !important;
+}
+}
+
+/* about:permissions */
+
+#permissions-box,
+#sites-box { 
+  background: linear-gradient(145deg, #D2E1F6, #EFF2FA 40%, #D2E1F6 70%) !important;
+}
+
+/* Buttons */
+
+#addons-page button:not(.button-link):not(.sorter) {
+  box-shadow : none !important;
+  box-shadow:
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+    0 13px 8px rgba(80, 80, 80, 0.3) inset,  
+    1px 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Downloads FF14+ */
+
+@media (-moz-windows-default-theme) {
+  #downloadsHistory {
+    box-shadow: none !important;  
+  }
+}
+
+/* Tabview */
+
+@-moz-document url("chrome://browser/content/tabview.html"){
+body {
+  background: #D7E4F7 !important;
+}
+
+#bg {
+  background: #D7E4F7 !important;
+}
+
+.groupItem {
+  background-color: #E0EAF5 !important;
+}
+}
+
+/* about:preferences */
+
+@-moz-document url("about:preferences") {
+#header {
+  background : transparent !important;
+}
+}
+
+/* Thunderbird tabs */
+
+.tabmail-tab:not([selected="true"]):not(:hover) {
+  background : #f0f0f0 !important;
+      box-shadow:
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.4) inset,
+    0 13px 8px rgba(150, 150, 150, 0.3) inset, 
+    1px 2px 4px rgba(0, 0, 0, 0.3) !important; 
+}
+
+/* Linux */
+
+#main-window[nflinux="true"][tabsontop="true"][nfnoline="false"] #TabsToolbar {
+  border : none !important;
+  border-bottom : 2px groove #fff !important;
+}
+
+/* Devtools menu */
+
+.devtools-toolbar menupopup,
+#debuggerPrefsContextMenu {
+  background : #3D464F !important;
+}
+
+
+
+

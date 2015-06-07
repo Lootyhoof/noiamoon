@@ -1,0 +1,47 @@
+@import url(chrome://global/skin/);
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* file/directory items */
+treechildren::-moz-tree-image(FilenameColumn) {
+  width: 16px;
+  height: 16px;
+  padding-right: 2px;
+}
+
+treechildren::-moz-tree-image(treecolAutoCompleteValue, directory),
+treechildren::-moz-tree-image(FilenameColumn, directory) {
+  list-style-image: url(chrome://browser/skin/icons/folder_closed.png);
+}
+
+treechildren::-moz-tree-image(treecolAutoCompleteValue, file),
+treechildren::-moz-tree-image(FilenameColumn, file) {
+  list-style-image: url(chrome://global/skin/CuteMenus/source.png);
+}
+
+/* focus rules */
+#directoryTree > treerows > .tree-bodybox {
+  border: 1px solid transparent;
+}
+
+#directoryTree:focus > treerows > .tree-bodybox {
+  border-color: #000;
+}
+
+/* button items */
+.up-button {
+  list-style-image: url(chrome://browser/skin/icons/folder-up.png);
+  max-width: 36px;
+  padding: 4px 3px 4px 5px;
+}
+
+.home-button {
+  list-style-image: url(chrome://global/skin/CuteMenus/home.png);
+  max-width: 36px;
+  padding: 4px 3px 4px 5px;
+}
+
+.new-dir-button {
+  list-style-image: url(chrome://browser/skin/icons/folder-add.png);
+  max-width: 36px;
+  padding: 4px 3px 4px 5px;
+}

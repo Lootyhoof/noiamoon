@@ -1,0 +1,148 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.console-box {
+  color: #000;
+  background-color: #f8f8f8;
+  border-top: 1px solid #808080 !important;
+}
+
+/* console rows */
+
+.console-row {
+  padding: 4px 0px;
+  border-bottom: 1px dotted #a0a0a0;
+}
+
+.console-row-icon {
+  padding: 4px;
+  -moz-padding-start: 5px;
+  -moz-box-align: start !important;
+}
+
+.console-row-msg > label:first-child,
+.console-row-file > label:first-child {
+  display: none;
+}
+
+.console-time {
+  font-weight: normal !important;
+}
+
+.console-icon {
+  list-style-image: inherit;
+}
+
+.console-error-msg {
+  margin-bottom: 2px;
+}
+
+/* error rows */
+
+.console-row-code {
+  color: #0066CC;
+  font-size: larger;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  -moz-padding-start: 3px;
+  -moz-padding-end: 0px;
+}
+
+.console-dots,
+.console-caret {
+  height: 9px;
+}
+
+.console-dots {
+  background: url(chrome://global/skin/console/error-dash.gif) repeat-x top;
+}
+
+.console-caret {
+  width: 7px;
+  background: url(chrome://global/skin/console/error-caret.gif) no-repeat top;
+}
+
+/* message rows */
+
+.console-row[type="message"] {
+  font-family: monospace;
+}
+
+/* selected state */
+
+.console-row:hover {
+  background-color: #F0F0F0;
+}
+
+.console-row[selected="true"]  {
+  background-color: #E6EDF6;
+}
+
+.console-row-code[selected="true"],
+.console-row-content[selected="true"] > .console-row-file > .console-error-source > .text-link {
+
+}
+
+/* icons */
+
+toolbar#ToolbarMode toolbarbutton {
+  padding: 2px;
+  -moz-margin-start: 3px;
+  -moz-margin-end: 3px;
+}
+
+#console-toolbox > #ToolbarMode toolbarbutton .toolbarbutton-icon {
+  height: 32px;
+  width: 32px;
+}
+
+#console-toolbox > #ToolbarMode toolbarbutton:hover > .toolbarbutton-icon {
+  height: 28px;
+  width: 28px;
+  margin: 2px 4px 2px 2px;
+}
+
+#Console\:modeAll {
+  list-style-image: url(chrome://browser/skin/icons/console.png);
+}
+
+#Console\:modeErrors {
+  list-style-image: url(chrome://browser/skin/icons/alert-error.png);
+}
+
+#Console\:modeWarnings {
+  list-style-image: url(chrome://browser/skin/icons/alert-warning.png);
+}
+
+#Console\:modeMessages {
+  list-style-image: url(chrome://browser/skin/icons/alert-message.png);
+}
+
+#Console\:clear {
+  list-style-image: url(chrome://browser/skin/icons/eraser.png);
+ }
+
+/* toolbars */
+
+#TextboxEval {
+  margin: 2px;
+}
+
+#ButtonEval {
+  margin: 2px 2px 2px 0;
+}
+
+#ButtonEval:hover{
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent;
+  color : #000;
+  border-radius : 2px ;
+  box-shadow : 0 0 0 1px #555; 
+}
+
+toolbarseparator {
+  min-height: 1em;
+}
+
+toolbarbutton .toolbarbutton-text {
+padding-left : 5px;
+padding-right : 5px;
+}

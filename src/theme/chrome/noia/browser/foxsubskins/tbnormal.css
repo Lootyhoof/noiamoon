@@ -1,0 +1,81 @@
+#navigation-toolbox {
+  margin-top: 0px !important;
+}
+
+#navigation-toolbox:not(:-moz-lwtheme) { 
+  background-image: none !important;
+}
+
+#tabs-toolbar {
+  background: none !important;
+}
+
+@media all and (-moz-windows-compositor) {
+
+#messengerWindow:not(:-moz-lwtheme) {
+  -moz-appearance:-moz-win-glass;
+  background: transparent !important;
+}
+
+#messengerWindow:not(:-moz-lwtheme) #titlebar-min,
+#messengerWindow:not(:-moz-lwtheme) #titlebar-max,
+#messengerWindow:not(:-moz-lwtheme) #titlebar-close {
+  -moz-appearance: none !important;
+  background : none !important;
+}
+}
+
+@media not all and (-moz-windows-compositor) {
+
+#messengerWindow:not(:-moz-lwtheme) {
+  -moz-appearance: none !important;
+}
+
+#titlebar {
+  -moz-appearance: -moz-window-titlebar !important;
+  height : 28px !important;
+}
+
+#messengerWindow[sizemode="maximized"] #titlebar {
+  -moz-appearance: -moz-window-titlebar-maximized !important;
+}
+
+#tabs-toolbar {
+  margin-top : 14px !important;
+}
+
+#titlebar-buttonbox {
+  margin-top : 0px !important; 
+  margin-bottom : 0px !important; 
+}
+
+#messengerWindow[sizemode="maximized"] #titlebar-buttonbox {
+   margin-top : 0px !important;
+   margin-bottom : 0px !important;
+}
+
+#titlebar-min {
+  -moz-appearance: -moz-window-button-minimize !important;
+}
+
+#titlebar-max {
+  -moz-appearance: -moz-window-button-maximize !important;
+}
+
+#messengerWindow[sizemode="maximized"] #titlebar-max {
+  -moz-appearance: -moz-window-button-restore !important;
+}
+
+#titlebar-close {
+  -moz-appearance: -moz-window-button-close !important;
+}
+}
+
+#mail-toolbar-menubar2:not(:-moz-lwtheme),
+#mail-bar3:not(:-moz-lwtheme),
+#calendar-toolbox,
+#task-toolbox,
+#chat-view-toolbox {
+  background-color: #DADCE4; 
+}
+

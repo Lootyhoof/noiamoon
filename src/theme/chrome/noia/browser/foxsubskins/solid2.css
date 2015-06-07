@@ -1,0 +1,79 @@
+#TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#titlebar #appmenu-button,
+#TabsToolbar #appmenu-button,
+#TabsToolbar #fixer-menu-button > #appmenu-button{
+background-image : url("chrome://browser/skin/icons/BlackGlossy.png") !important;
+color : #fff !important;
+}
+
+#titlebar #appmenu-button[selected="true"],
+#TabsToolbar #appmenu-button[selected="true"],
+#TabsToolbar #fixer-menu-button > #appmenu-button[selected="true"] {
+  background-image : url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+  color : #000 !important;
+}
+
+#titlebar #appmenu-button:hover,
+#TabsToolbar #appmenu-button:hover,
+#TabsToolbar #fixer-menu-button > #appmenu-button:hover  {
+  background-image : url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+  color : #000 !important;
+}
+
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button ,
+#main-window[privatebrowsingmode=temporary] #TabsToolbar #appmenu-button {
+  background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
+  border-color: rgba(43,8,65,.9) !important;
+  color : #fff !important;  
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]) ,
+#main-window[privatebrowsingmode=temporary] #TabsToolbar #appmenu-button:hover:not(:active):not([open]) {
+  background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
+                    radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
+                    linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+  border-color: rgba(43,8,65,.9) !important;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:active,
+#main-window[privatebrowsingmode=temporary] #appmenu-button[open] ,
+#main-window[privatebrowsingmode=temporary] #TabsToolbar  #appmenu-button:hover:active ,
+#main-window[privatebrowsingmode=temporary] #TabsToolbar  #appmenu-button[open] {
+  background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+}
+
+#nav-bar #appmenu-button,
+#main-window[privatebrowsingmode=temporary] #nav-bar #appmenu-button {
+  background: url("chrome://browser/skin/icons/firefox.png")  !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+}
+
+#nav-bar[iconsize="small"] #fixer-menu-button > #appmenu-button,
+#nav-bar[iconsize="small"] #appmenu-button  ,
+#main-window[privatebrowsingmode=temporary] #nav-bar[iconsize="small"] #fixer-menu-button > #appmenu-button,
+#main-window[privatebrowsingmode=temporary] #nav-bar[iconsize="small"] #appmenu-button {
+  background: url("chrome://browser/skin/icons/firefox24.png")  !important;
+  height : 24px !important;
+  width : 24px !important;
+  margin-bottom : 2px !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+}
+
+toolbar:not(#nav-bar):not(#TabsToolbar) #appmenu-button ,
+#main-window[privatebrowsingmode=temporary] toolbar:not(#nav-bar):not(#TabsToolbar) #appmenu-button { 
+    padding : 0 !important;
+    margin : 0 !important;
+    margin-top : -11px !important;
+    margin-bottom : 2px !important;
+    height : 32px !important;
+    max-height : 32px !important;
+    border : none !important;
+    box-shadow : none !important;
+    background: url("chrome://browser/skin/icons/firefox16.png")  !important;
+    background-repeat: no-repeat !important;
+    background-position: center bottom !important;
+}

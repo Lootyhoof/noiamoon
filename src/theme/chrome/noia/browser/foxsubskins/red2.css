@@ -1,0 +1,109 @@
+treechildren::-moz-tree-image(title, container, hover) {
+  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+}
+
+treechildren::-moz-tree-image(title, open, hover) {
+  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+}
+
+treechildren::-moz-tree-image(title, container, livemark, hover) {
+  list-style-image: url(chrome://browser/skin/icons/livemark.png) !important;
+}
+
+treechildren::-moz-tree-image(title, livemarkItem, hover) {
+  list-style-image: url("chrome://browser/skin/icons/livemark.png") !important;
+}
+
+treechildren::-moz-tree-image(title, javascript, hover) {
+  list-style-image: url(chrome://browser/skin/icons/bookmarklet.png) !important;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks, open, hover) {
+  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar, hover) {
+  list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png) !important;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu, hover) {
+  list-style-image: url(chrome://global/skin/CuteMenus/menuedit.png) !important;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks, hover) {
+  list-style-image: url(chrome://browser/skin/places/unsortedBookmarks.png) !important;
+}
+
+treechildren::-moz-tree-image(title, query, hover) {
+  list-style-image: url(chrome://browser/skin/w_icons/query.png) !important;
+}
+
+treechildren::-moz-tree-image(title, query, tagContainer, hover),
+treechildren::-moz-tree-image(query, OrganizerQuery_Tags, hover) {
+  list-style-image: url(chrome://browser/skin/places/tag.png) !important;
+}
+
+treechildren::-moz-tree-image(query, OrganizerQuery_Downloads, hover) {
+  list-style-image: url(chrome://browser/skin/w_icons/query_downloads.png) !important;
+}
+
+treechildren::-moz-tree-image(title, query, dayContainer, hover) {
+  list-style-image: url(chrome://browser/skin/places/calendar.png) !important;
+}
+
+treechildren::-moz-tree-image(title, query, hostContainer, hover) {
+  list-style-image: url(chrome://global/skin/dirListing/remote.png) !important;
+}
+
+treechildren::-moz-tree-image(title, query, OrganizerQuery_History, hover) {
+  list-style-image: url(chrome://global/skin/CuteMenus/history.png) !important;
+}
+
+.bookmark-item[container]:hover {
+  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+}
+
+menuitem[command="Browser:ShowAllBookmarks"]:hover,
+menuitem[oncommand^="toOpenWindowByType('bookmarks:manager'"]:hover {
+  list-style-image: url(chrome://browser/skin/w_icons/bookmark-folder.png) !important;
+}
+
+.bookmark-item:not(#bookmarks-menu-button):hover {
+  list-style-image: url(chrome://browser/skin/w_icons/bookmark_item.png) !important;
+}
+
+.bookmark-item[container][query]:hover {
+  list-style-image: url(chrome://browser/skin/w_icons/query.png) !important;
+}
+
+#context-bookmarklink,#context-bookmarkpage,#fileNewBookmark,
+#menu_bookmarksSidebar,#context_bookmarkTab,#miAddBookmark,
+#placesContext_createBookmark,#placesContext_new\:bookmark,
+#appmenu_bookmarksSidebar:hover,#appmenu_bookmarkThisPage:hover,
+#BMB_bookmarkThisPage:hover,menuitem[command="Browser:AddBookmarkAs"]:hover,
+menuitem[command="cmd_bm_newbookmark"]:hover,
+menuitem[oncommand^="RemoteTabViewer.bookmark"]:hover,
+menuitem[oncommand="addBookmarkAs(document.getElementById('content'), false);"]:hover,
+menuitem[oncommand="gContextMenu.addBookmarkForFrame();"]:hover,
+menuitem[oncommand="abhere.addBookmark(event)"]:hover,
+menuitem[oncommand="BookmarkThisTab();"]:hover,
+menuitem[oncommand="historyAddBookmarks();"]:hover {
+ list-style-image: url(chrome://browser/skin/w_icons/bookmark_item.png) !important;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) ,
+#editBMPanel_folderMenuList[selectedIndex="0"],
+#editBMPanel_toolbarFolderItem,
+#bookmarksToolbarFolderMenu,
+#BMB_bookmarksToolbarFolderMenu, #BMB_bookmarksToolbar {
+  list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png) !important;
+}
+
+.bookmark-item[container][livemark]:hover,
+.bookmark-item[type="menu"][livemark]:hover {
+  list-style-image: url(chrome://browser/skin/icons/livemark.png) !important;
+}
+
+.bookmark-item[container][livemark] .bookmark-item:hover {
+  list-style-image: url("chrome://browser/skin/icons/livemark.png") !important;
+}

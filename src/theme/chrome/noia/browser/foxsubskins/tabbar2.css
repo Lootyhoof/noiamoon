@@ -1,0 +1,132 @@
+#TabsToolbar:not([treestyletab-mode="vertical"]) {
+  background : none !important;
+}
+
+#reminderFox-list-bars > menupopup > #TabsToolbar:not([treestyletab-mode="vertical"])[_moz-menuactive=true]  {
+  background: url(chrome://browser/skin/icons/tree-hover.png) repeat-x center !important;
+  background-size: auto 100% !important;
+}
+
+#main-window[nfbottom="false"][nfnoline="false"] #navigator-toolbox[tabsontop="false"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) {
+	background-image : url("chrome://browser/skin/icons/Tabbar-background2.png") !important;
+}
+
+#navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="false"] ~ #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) {
+	-moz-appearance:none;
+	background : none !important;
+}
+
+#main-window[sizemode="normal"][nfstrip="false"][nfnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+  border : none !important;
+  border-bottom : 2px groove #999 !important;
+  border-top : 2px groove #999 !important;
+}
+
+#main-window[sizemode="normal"][nfstrip="true"][nfnoline="true"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+  border-top : none !important;
+}
+
+#main-window[sizemode="normal"][nfstrip="true"][nfnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+  border : none !important;
+  border-top : 2px groove #999 !important;
+  border-bottom : 5px solid !important;
+  -moz-border-bottom-colors: #808080 #89B3DB #89B3DB #89B3DB #89B3DB #89B3DB  !important;
+}
+
+#main-window[sizemode="maximized"][nfnoline="false"]:not([tabsintitlebar]) #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
+  border : none !important;
+  border-bottom : 2px groove #999 !important;
+  border-top : 2px groove #999 !important;
+}
+
+#main-window[sizemode="normal"] #navigator-toolbox[tabsontop="true"] .tabbrowser-tabs {
+  margin-bottom : 0px;
+}
+
+#main-window:not([tabsintitlebar])[tabsontop="true"] #TabsToolbar[multibar] {
+  min-height : 45px !important;
+}
+
+#main-window[tabsintitlebar][nfnormal="false"]:-moz-lwtheme #TabsToolbar {
+  background : transparent !important;
+  border-bottom : 2px groove #999;
+}
+
+#main-window[tabsintitlebar][nfnormal="false"]:not(:-moz-lwtheme) #TabsToolbar {
+  background : url("chrome://browser/skin/icons/titlebar.png") #CDCFD5 !important;
+  border-bottom : 2px groove #999;
+}
+
+#main-window[tabsintitlebar]:not(:-moz-lwtheme) #TabsToolbar[multibar] {
+  background-size : auto 100% !important;
+}
+
+#navigator-toolbox[tabsontop="false"] #TabsToolbar[multibar] {  
+  border-top : 2px groove #eee !important;
+}
+
+#TabsToolbar[multibar] #tabview-button  {
+  margin-top : 0px !important;
+}
+
+#main-window[nfstrip="false"] #TabsToolbar:not([multibar]) #tabview-button {
+  margin-top : -2px !important;
+}
+
+#main-window[nfstrip="false"][inFullscreen] #TabsToolbar:not([multibar]) #tabview-button {
+  margin-top : 0px !important;
+}
+
+#main-window[nfstrip="true"][tabsontop="true"]  #TabsToolbar:not([multibar]) #tabview-button {
+  margin-top : 0px !important;
+}
+
+#main-window[nfstrip="true"][tabsontop="false"]  #TabsToolbar:not([multibar]) #tabview-button {
+  margin-top : 1px !important;
+}
+
+#TabsToolbar #new-tab-button {
+  margin-bottom: 4px !important;
+}
+
+#main-window:-moz-lwtheme tab {
+  color: inherit !important;
+}
+#main-window:-moz-lwtheme tab[selected="true"],
+#main-window:-moz-lwtheme tab:hover {
+  color: #000 !important;
+}
+
+#TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tab:not([style*="background-image"]) {
+border: 1px solid rgba(0,0,0,.4) !important;
+}
+
+#main-window[inFullscreen][tabsontop="true"] .tabs-closebutton {
+  margin-top : 3px !important;
+}
+
+#main-window[inFullscreen] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+  margin-top : 1px !important;
+}
+
+#main-window[inFullscreen][nfstrip="false"][tabsintitlebar] .tabs-closebutton {
+  margin-top : 1px !important;
+}
+
+#main-window[inFullscreen][nfstrip="true"][tabsontop="true"] .tabs-closebutton {
+  margin-top : 0px !important;
+}
+
+#main-window[inFullscreen][nfstrip="true"][tabsintitlebar] .tabs-closebutton {
+  margin-top : 0px !important;
+}
+
+#main-window[inFullscreen][nfstrip="true"][tabsontop="true"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+  margin-top : -1px !important;
+}
+
+#main-window[nfbottom="true"] #TabsToolbar {
+  background-image : url("chrome://browser/skin/icons/Tabbar-background.png") !important;
+}
+
+

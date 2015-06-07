@@ -1,0 +1,82 @@
+
+#print-preview-toolbar button{
+   box-shadow:
+    0 0 2px rgba(255, 255, 255, 0.4) inset,
+    0 4px 6px rgba(255, 255, 255, 0.4) inset,
+    0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+    0 13px 8px rgba(80, 80, 80, 0.3) inset,  
+    1px 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.home-arrow,
+.end-arrow:-moz-locale-dir(rtl) {
+  list-style-image: url(chrome://global/skin/icons/start.png);
+}
+
+.home-arrow:hover,
+.end-arrow:-moz-locale-dir(rtl):hover {
+  list-style-image: url(chrome://global/skin/icons/start-hover.png);
+}
+
+.end-arrow,
+.home-arrow:-moz-locale-dir(rtl) {
+  list-style-image: url(chrome://global/skin/icons/finish.png);
+}
+
+.end-arrow:hover,
+.home-arrow:-moz-locale-dir(rtl):hover {
+  list-style-image: url(chrome://global/skin/icons/finish-hover.png);
+}
+
+.previous-arrow, .left-arrow,
+.next-arrow:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://browser/skin/icons/arrow-left.png");
+}
+
+.previous-arrow:hover,
+.next-arrow:-moz-locale-dir(rtl):hover {
+  list-style-image: url("chrome://browser/skin/icons/arrow-left-hover.png");
+}
+
+.next-arrow, .right-arrow ,
+.previous-arrow:-moz-locale-dir(rtl){
+  list-style-image: url("chrome://browser/skin/icons/arrow-right.png");
+}
+
+.next-arrow:hover,
+.previous-arrow:-moz-locale-dir(rtl):hover {
+  list-style-image: url("chrome://browser/skin/icons/arrow-right-hover.png");
+}
+
+.up-arrow {
+  list-style-image: url(chrome://global/skin/arrow/arrow-up-sharp.gif);
+}
+
+.down-arrow {
+  list-style-image: url(chrome://global/skin/arrow/arrow-dn-sharp.gif);
+}
+
+.toolbar-portrait-page {
+  padding : 2px !important;
+  margin-right: 3px;
+  list-style-image: url(chrome://global/skin/icons/Portrait-small.png);
+}
+
+.toolbar-landscape-page {
+  padding : 2px !important;
+  margin-right: 3px;
+  list-style-image: url(chrome://global/skin/icons/Landscape-small.png);
+}
+
+.toolbar-portrait-page:not([checked="true"]):hover, .toolbar-landscape-page:not([checked="true"]):hover {
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent ;
+  color : #000 !important;
+  border-radius : 2px ;
+  box-shadow : 0 0 0 1px #808080 !important;
+}
+
+
+
+
+
+

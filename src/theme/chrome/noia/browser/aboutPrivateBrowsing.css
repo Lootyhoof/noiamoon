@@ -1,0 +1,61 @@
+#errorPageContainer {
+  background-image: url(chrome://browser/skin/icons/Privacy-48.png);
+}
+
+body.normal > #errorPageContainer {
+  background-image: url(chrome://browser/skin/icons/question.png);
+}
+
+#clearRecentHistoryDesc {
+  margin-top: 2em;
+}
+
+#footerDesc > p,
+#clearRecentHistoryDesc > p {
+  font-size: 110%;
+}
+
+#startPrivateBrowsingDesc > button {
+  -moz-margin-start: 0;
+}
+
+#clearRecentHistoryDesc > button {
+  -moz-margin-start: 0;
+}
+
+#enjoyDesc {
+  margin-top: 2em;
+}
+
+#moreInfo {
+  font-size: 110%;
+  -moz-padding-start: 25px;
+  background: url(chrome://global/skin/icons/information-16.png) no-repeat 0 5px;
+}
+
+body[dir="rtl"] #moreInfo ,
+#moreInfo:-moz-dir(rtl) {
+  background-position: top right;
+}
+
+#moreInfoText {
+  margin-bottom: 0;
+}
+
+#moreInfoLinkContainer {
+  margin-top: 0.5em;
+}
+
+#moreInfoLink {
+  color: #1f9afd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#moreInfoLink:hover {
+  color: #00f;
+}
+
+#moreInfoLink:hover:active {
+  color: #f00;
+}

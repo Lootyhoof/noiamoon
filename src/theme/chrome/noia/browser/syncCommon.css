@@ -1,0 +1,54 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+.status {
+  color: #000;
+}
+
+.statusIcon {
+  max-height: 16px;
+  max-width: 16px;
+  margin-left: 4px;
+}
+
+.statusIcon[status="active"] {
+  list-style-image: url(chrome://global/skin/icons/loading.png);
+}
+
+.statusIcon[status="error"] {
+  list-style-image: url(chrome://global/skin/icons/warning-16.png);
+}
+
+.statusIcon[status="success"] {
+  list-style-image: url(chrome://global/skin/icons/information-16.png);
+}
+
+.data {
+  font-size: 90%;
+  font-weight: bold;
+}
+
+dialog#change-dialog {
+  width: 40em;
+}
+
+image#syncIcon {
+  list-style-image: url(chrome://browser/skin/icons/sync-32.png);
+}
+
+#introText {
+  margin-top: 2px;
+}
+
+button[oncommand^="gSyncUtils.passphraseEmail"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/mail_new.png);
+}
+
+button[oncommand^="gSyncUtils.passphraseSave"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/filesave.png);
+}
+
+button[oncommand^="gSyncUtils.passphrasePrint"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/print.png);
+}

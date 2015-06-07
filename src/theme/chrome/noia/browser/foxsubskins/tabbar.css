@@ -1,0 +1,57 @@
+#main-window:not([tabsintitlebar]) #TabsToolbar{
+  background : transparent !important;
+}
+
+#main-window[tabsintitlebar][nfnormal="false"]:not(:-moz-lwtheme) #TabsToolbar {
+  background : url("chrome://browser/skin/icons/titlebar.png") #CDCFD5 !important;
+}
+
+#main-window[tabsintitlebar]:-moz-lwtheme #TabsToolbar {
+  background : transparent !important;
+}
+
+#main-window[tabsintitlebar]:not(:-moz-lwtheme) #TabsToolbar[multibar] {
+  background-size : auto 100% !important;
+}
+
+#main-window[sizemode="normal"][nfstrip="true"][nfnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+  border : none !important;
+  border-top : 2px groove #999 !important;
+  border-bottom : 5px solid !important;
+  -moz-border-bottom-colors: #808080 #89B3DB #89B3DB #89B3DB #89B3DB #89B3DB  !important;
+}
+
+@media all and (-moz-windows-compositor) {
+#main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #titlebar-buttonbox {
+  margin-bottom : -20px !important;
+  margin-top : 9px !important;
+}
+#main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #appmenu-button {
+margin-top : 8px !important;
+}
+}
+
+#main-window:-moz-lwtheme tab {
+  color: inherit !important;
+}
+
+#main-window:-moz-lwtheme tab[selected="true"],
+#main-window:-moz-lwtheme tab:hover {
+  color: #000 !important;
+}
+
+.tabbrowser-tab:not([style*="background-image"])  {
+border: 1px solid rgba(0,0,0,.4) !important;
+}
+
+#main-window[nfbottom="true"] #TabsToolbar {
+	background-image : url("chrome://browser/skin/icons/Tabbar-background.png") !important;
+}
+
+
+
+
+
+
+
+

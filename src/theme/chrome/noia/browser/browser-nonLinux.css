@@ -1,0 +1,38 @@
+#mainPopupSet > #editBookmarkPanel:not([type="arrow"]),
+#mainPopupSet > #identity-popup:not([type="arrow"]) {
+  padding: 0 5px 5px 0;
+  border: 0;
+  background: none;
+}
+
+#editBookmarkPanel:not([type="arrow"]) > hbox,
+#editBookmarkPanel:not([type="arrow"]) > #editBookmarkPanelContent,
+#editBookmarkPanel:not([type="arrow"]) > #editBookmarkPanelBottomButtons,
+#identity-popup:not([type="arrow"]) > #identity-popup-container {
+  padding: 8px;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  background: #dadce4;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+  box-shadow: 3px 3px 2px rgba(0,0,0,.3);
+}
+
+#editBookmarkPanel:not([type="arrow"]) > hbox,
+#editBookmarkPanel:not([type="arrow"]) > #editBookmarkPanelContent {
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+#editBookmarkPanel:not([type="arrow"]) > hbox + #editBookmarkPanelContent {
+  border-top: 0;
+  border-radius: 0;
+}
+
+#editBookmarkPanel:not([type="arrow"]) > #editBookmarkPanelBottomButtons {
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+#sync-notifications-panel  {
+  border-radius: 5px;
+}

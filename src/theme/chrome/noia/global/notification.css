@@ -1,0 +1,81 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+notification {
+  color: #000;
+  min-height: 28px !important;
+  text-shadow: none;
+  background: #F0C864;
+}
+
+notification[type="info"] {
+  background-color: #cadce4;
+}
+
+notification[type="critical"] {
+  color: #fff;
+  background-color: #f00;
+}
+
+.notification-inner {
+  border: 0 !important;
+  border-top: 1px solid #808080 !important;
+}
+
+.messageImage {
+  width: 16px;
+  height: 16px;
+  margin: 0 1px 0 5px;
+}
+
+.messageImage[type="info"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/info.png);
+}
+
+.messageImage[type="warning"] {
+  list-style-image: url(chrome://global/skin/icons/warning-16.png);
+}
+
+.messageImage[type="critical"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/stop.png);
+}
+
+.messageCloseButton {
+  padding: 4px 2px;
+  list-style-image: url(chrome://global/skin/icons/close.png);
+  -moz-image-region: rect(0 64px 16px 48px);
+  border: 0 !important;
+}
+
+.messageCloseButton:hover {
+  -moz-image-region: rect(0 32px 16px 16px);
+}
+
+.messageCloseButton:hover:active {
+  -moz-image-region: rect(0 48px 16px 32px);
+}
+
+/* Popup notification */
+
+.popup-notification-description {
+  max-width: 24em;
+}
+
+.popup-notification-button-container {
+  margin-top: 17px;
+}
+
+.popup-notification-closebutton {
+  margin: -8px -8px 0 0;
+}
+
+.popup-notification-closeitem {
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+
+
+
+
+
+

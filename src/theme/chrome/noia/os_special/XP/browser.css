@@ -1,0 +1,256 @@
+@import url(chrome://browser/skin/browser-nonLinux.css);
+
+
+  #main-window:not(:-moz-lwtheme)[inFullscreen="true"]{
+    -moz-appearance:none;
+  }
+
+  #main-window:not([tabsintitlebar]) #titlebar-buttonbox {
+    -moz-appearance: -moz-window-button-box;
+    -moz-box-align: start;
+  }
+  
+  #titlebar-buttonbox:-moz-locale-dir(rtl) {
+    margin-left : 7px;
+  }
+
+  #main-window:not([tabsintitlebar])[sizemode="maximized"] > #titlebar > #titlebar-content > #titlebar-buttonbox {
+    -moz-appearance: -moz-window-button-box-maximized;
+  }
+
+  #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"]{
+    background : url("chrome://browser/skin/icons/titlebarbottom.png") #ABAEB8;
+	margin-top : -2px;
+  }
+  
+  #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"] toolbox {
+    border-bottom: 0px solid #808080;
+  }
+   
+  #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"]{
+    background : url("chrome://browser/skin/icons/titlebarbottom.png") #CDCFD5;
+  }
+    
+  #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] toolbox {
+  border-bottom: 0px solid #808080;
+  background: url(chrome://browser/skin/icons/Tool-background3.png) top left repeat-x #CDCFD5;
+  background-size: auto 100%;
+  }
+  
+@media not all and (-moz-windows-compositor) {
+  #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] #titlebar {
+    -moz-appearance:none !important;
+    background : url("chrome://browser/skin/icons/titlebar2.png") #CDCFD5 !important;
+	border-top : none !important;
+  }
+    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"] #titlebar {
+    -moz-appearance:none !important;
+    background : url("chrome://browser/skin/icons/titlebar2.png") #AEB1BB !important;
+	border-top : none !important;
+  }
+  #main-window:not(:-moz-lwtheme)[tabsontop="true"] #titlebar {
+    -moz-appearance:none !important;
+    background : url("chrome://browser/skin/icons/titlebar.png") #ABAEB8 !important;
+	border-top : none !important;
+  }
+}
+
+#main-window:not([tabsintitlebar]){
+  -moz-appearance:none !important;
+}
+
+#main-window:not([tabsintitlebar]) #titlebar-buttonbox {
+  margin-bottom: -18px;
+  margin-top : 3px;    
+}
+#main-window:not([tabsintitlebar]) #titlebar-buttonbox {
+  -moz-appearance: none !important;
+}
+  #main-window:not([tabsintitlebar]) #titlebar-min {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/minimize.png") left no-repeat;
+  width:26px;
+  height:20px;
+}
+#main-window:not([tabsintitlebar]) #titlebar-min:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/minimizeX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+}
+#main-window:not([tabsintitlebar]) #titlebar-max {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/restore.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+#main-window:not([tabsintitlebar]) #titlebar-max:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/restoreX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+#main-window:not([tabsintitlebar]) #titlebar-close {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/close.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+#main-window:not([tabsintitlebar]) #titlebar-close:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/closeX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+#main-window:not([tabsintitlebar])#titlebar-min {
+  -moz-appearance: -moz-window-button-minimize;
+}
+
+#main-window:not([tabsintitlebar])#titlebar-max {
+  -moz-appearance: -moz-window-button-maximize;
+}
+
+#main-window:not([tabsintitlebar])#titlebar-close {
+  -moz-appearance: -moz-window-button-close;
+}
+
+#main-window[tabsintitlebar] #titlebar-content:not(:-moz-lwtheme),
+#main-window[tabsintitlebar]:not([inFullscreen]) #TabsToolbar:not(:-moz-lwtheme) {
+  background-color: ActiveCaption;
+  color: CaptionText;
+}
+#main-window[tabsintitlebar] #titlebar-content:not(:-moz-lwtheme):-moz-window-inactive,
+#main-window[tabsintitlebar]:not([inFullscreen]) #TabsToolbar:not(:-moz-lwtheme):-moz-window-inactive {
+  background-color: InactiveCaption;
+  color: InactiveCaptionText;
+}
+
+#main-window[tabsintitlebar] #titlebar:-moz-lwtheme {
+  visibility: hidden;
+}
+#main-window[tabsintitlebar] #titlebar-content:-moz-lwtheme {
+  -moz-binding: url("chrome://global/content/bindings/general.xml#windowdragbox");
+  visibility: visible;
+}
+  /* ::::: titlebar ::::: */
+
+#main-window[sizemode="normal"] > #titlebar {
+  -moz-appearance: -moz-window-titlebar;
+}
+
+#main-window[sizemode="maximized"] > #titlebar {
+  -moz-appearance: -moz-window-titlebar-maximized;
+}
+
+#titlebar-buttonbox {
+  -moz-appearance: none /*-moz-window-button-box*/;
+}
+
+#main-window[sizemode="maximized"] #titlebar-buttonbox {
+  -moz-appearance: none /*-moz-window-button-box-maximized*/;
+}
+
+.titlebar-placeholder[type="appmenu-button"] {
+  margin-left: 4px;
+}
+
+.titlebar-placeholder[type="caption-buttons"] {
+  margin-left: 5px;
+}
+
+/* titlebar command buttons */
+
+#main-window[tabsintitlebar] #titlebar-min {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/minimize.png") left no-repeat;
+  width:26px;
+  height:20px;
+}
+
+#main-window[tabsintitlebar] #titlebar-min:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/minimizeX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+}
+
+#main-window[tabsintitlebar] #titlebar-max {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/restore.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#main-window[tabsintitlebar] #titlebar-max:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/restoreX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#main-window[tabsintitlebar] #titlebar-close {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/close.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#main-window[tabsintitlebar] #titlebar-close:hover {
+  -moz-appearance: none !important;
+  background : url("chrome://browser/skin/icons/closeX.png") left no-repeat !important;
+  width:26px;
+  height:20px;
+  margin-left:-2px;
+}
+
+#titlebar-min {
+  -moz-appearance: -moz-window-button-minimize;
+}
+
+#titlebar-max {
+  -moz-appearance: -moz-window-button-maximize;
+}
+
+#main-window[sizemode="maximized"] #titlebar-max {
+  -moz-appearance: -moz-window-button-restore;
+}
+
+#titlebar-close {
+  -moz-appearance: -moz-window-button-close;
+}
+
+#titlebar-min {
+  -moz-margin-end: 0px;
+}
+
+#main-window[sizemode=maximized] #titlebar-buttonbox {
+  margin-top: 3px;
+}
+
+#main-window[tabsintitlebar] #titlebar-buttonbox {
+  margin-bottom: -20px;
+}
+  
+@media not all and (-moz-windows-compositor) {
+  #main-window[tabsintitlebar]  #titlebar-buttonbox {
+    margin-bottom: -16px;
+    margin-top : 0px;    
+  }
+}
+
+#main-window[sizemode=normal] #navigator-toolbox[tabsontop=true] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
+  margin-top: -21px;
+}
+
+@media all and (-moz-windows-compositor) {
+  #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="true"]{
+	background : url("chrome://browser/skin/icons/titlebar2.png") #ABAEB8;
+}	
+}

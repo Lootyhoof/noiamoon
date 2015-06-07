@@ -1,0 +1,34 @@
+toolbar:-moz-any(#GBL-Toolbar, #foxlingo_toolbar-2-4-3c, #wmn-toolbar, #TFTB-Toolbar, #webdeveloper-toolbar, #AMAZON_NS_PH_TB-Toolbar, #antToolbar, #vidbar-toolbar) toolbarbutton  {
+  border: 1px solid transparent;
+  margin-bottom : 1px !important;
+}
+
+#main-window[nfblack="false"] toolbar:-moz-any(#GBL-Toolbar, #foxlingo_toolbar-2-4-3c, #wmn-toolbar, #TFTB-Toolbar, #webdeveloper-toolbar, #AMAZON_NS_PH_TB-Toolbar, #antToolbar, #vidbar-toolbar) toolbarbutton:not(.toolbarbutton-menubutton-button):not([disabled="true"]):hover {
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent;
+  border-radius : 3px;
+  box-shadow: none;
+  border : 1px solid #808080; 
+}
+
+
+/* dark */
+
+#main-window[nfblack="true"] toolbar:-moz-any(#GBL-Toolbar, #foxlingo_toolbar-2-4-3c, #wmn-toolbar, #TFTB-Toolbar, #webdeveloper-toolbar, #AMAZON_NS_PH_TB-Toolbar, #antToolbar, #vidbar-toolbar) toolbarbutton  {
+  padding-top : 0px !important;
+  padding-bottom : 0px !important;
+  margin-top : 1px !important;
+  margin-bottom : 1px !important;
+}
+
+#main-window[nfblack="true"] toolbar:-moz-any(#GBL-Toolbar, #foxlingo_toolbar-2-4-3c, #wmn-toolbar, #TFTB-Toolbar, #webdeveloper-toolbar, #AMAZON_NS_PH_TB-Toolbar, #antToolbar, #vidbar-toolbar) toolbarbutton:not(.toolbarbutton-menubutton-button):not(#TFTB-MainMenu):not([disabled="true"]):hover  {
+  border : 1px solid !important;
+  -moz-border-top-colors: #bbb !important;
+  -moz-border-right-colors: #808080 !important;
+  -moz-border-bottom-colors: #808080 !important;
+  -moz-border-left-colors: #808080 !important;
+  background: transparent !important;
+  background: linear-gradient(to bottom, rgba(150,150,150,1), #333333 15px, #222) !important;
+}
+
+
+

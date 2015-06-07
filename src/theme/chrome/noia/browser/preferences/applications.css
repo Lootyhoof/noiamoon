@@ -1,0 +1,71 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+.actionsMenu {
+  margin: 0;
+  -moz-margin-start: 5px;
+  padding: 0 2px;
+}
+
+.typeIcon,
+.actionIcon {
+  -moz-margin-start: 12px;
+  -moz-margin-end: 3px;
+}
+
+richlistitem label,
+#handlersView > richlistitem label {
+  -moz-margin-start: 1px;
+  margin-top: 2px;
+}
+
+richlistitem,
+#handlersView > richlistitem {
+  min-height: 22px;
+}
+
+richlistitem[appHandlerIcon=ask],
+menuitem[appHandlerIcon=ask] {
+  list-style-image: url(chrome://global/skin/CuteMenus/help.png);
+}
+
+richlistitem[appHandlerIcon=save],
+menuitem[appHandlerIcon=save] {
+  list-style-image: url(chrome://global/skin/CuteMenus/save.png);
+}
+
+menuitem[oncommand="gApplicationsPane.chooseApp(event)"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/configure_toolbars.png);
+}
+
+menuitem[oncommand="gApplicationsPane.manageApp(event)"] {
+  list-style-image: url(chrome://global/skin/CuteMenus/customize.png);
+}
+
+richlistitem[appHandlerIcon=feed],
+menuitem[appHandlerIcon=feed] {
+  list-style-image: url(chrome://browser/skin/feeds/feedIcon16.png);
+}
+
+richlistitem[appHandlerIcon=plugin],
+menuitem[appHandlerIcon=plugin] {
+  list-style-image: url(chrome://global/skin/CuteMenus/connect.png);
+}
+
+#install-plugin-handler {
+  list-style-image: url(chrome://global/skin/CuteMenus/search.png);
+}
+
+.actionsMenu .menulist-icon {
+  -moz-margin-end: 3px;
+}
+
+.actionsMenu > menupopup > menuitem > .menu-iconic-left {
+  -moz-padding-start: 0px;
+  -moz-padding-end: 2px;
+}
+
+.actionsMenu > menupopup > menuitem {
+  -moz-padding-start: 4px;
+}

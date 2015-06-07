@@ -1,0 +1,18 @@
+ #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tab {
+    border-top-left-radius: 8px !important; 
+	border-top-right-radius: 8px !important;
+	border-bottom-left-radius: 0px !important; 
+	border-bottom-right-radius: 0px !important;
+}
+
+/* Thunderbird */
+
+.tabmail-tab {
+    border-top-left-radius: 8px !important; 
+	border-top-right-radius: 8px !important;
+	border-bottom-left-radius: 0px !important; 
+	border-bottom-right-radius: 0px !important;
+}
+
+
+

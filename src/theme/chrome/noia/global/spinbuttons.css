@@ -1,0 +1,52 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+spinbuttons {
+  cursor: default;
+}
+
+.spinbuttons-button {
+  min-width: 12px;
+  min-height: 8px;
+  height: 8px;
+  margin: 1px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: url(chrome://global/skin/button/spinbutton.png) center transparent;
+}
+
+.spinbuttons-button:hover {
+  background: url(chrome://global/skin/button/spinbutton-focus.png) center transparent;
+}
+
+.spinbuttons-button:hover:active {
+  background: url(chrome://global/skin/button/spinbutton-active.png) center transparent;
+}
+
+.spinbuttons-button[disabled="true"] {
+  background-image: url(chrome://global/skin/button/spinbutton.png) !important;
+  opacity: .4;
+}
+
+.spinbuttons-up {
+  margin-bottom: 0;
+}
+
+.spinbuttons-up > .button-box {
+  height: 5px;
+  margin-top: 1px;
+  background: url(chrome://global/skin/arrow/arrow-up.gif) center no-repeat;
+}
+
+.spinbuttons-up[disabled="true"] > .button-box {
+  background-image: url(chrome://global/skin/arrow/arrow-up-dis.gif);
+}
+
+.spinbuttons-down > .button-box {
+  height: 5px;
+  background: url(chrome://global/skin/arrow/arrow-dn.gif) center no-repeat;
+}
+
+.spinbuttons-down[disabled="true"] > .button-box {
+  background-image: url(chrome://global/skin/arrow/arrow-dn-dis.gif);
+}

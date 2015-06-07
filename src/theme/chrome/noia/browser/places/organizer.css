@@ -1,0 +1,253 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url(chrome://os_special/skin/organizer.css);
+ 
+/* Toolbar */
+#placesToolbox {
+  border-bottom: 0;
+}
+
+#placesToolbar {
+  background: url(chrome://browser/skin/icons/Toolbar-Background.png) top left repeat-x #fdfdfe;
+  padding-right: 2px;
+  border: 0;
+}
+
+#placesToolbar #back-button {
+  list-style-image: url("chrome://browser/skin/icons/back-small.png");
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+#placesToolbar #back-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+#placesToolbar #back-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+#placesToolbar #forward-button  {
+  list-style-image: url("chrome://browser/skin/icons/forward-small.png");
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+#placesToolbar #forward-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+#placesToolbar #forward-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px);
+}
+
+#placesToolbar  #back-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
+#placesToolbar  #forward-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
+  transform: scaleX(-1);
+}
+
+/* Menu */
+
+#placesMenu {  
+  background: transparent;
+  border-style: none;
+}
+
+#placesMenu > menu {
+  margin: 0 5px;
+  padding: 2px;
+}
+
+#placesMenu > menu[_moz-menuactive="true"],
+#placesMenu > menu:hover,
+#placesMenu > menu[open="true"]  {
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent;
+  color : #000;
+  border-radius : 2px ;
+  border : 1px solid transparent;
+  box-shadow : 0 0 0 1px #555; 
+}
+
+#placesMenu > menu > .menubar-text {
+  -moz-padding-end: 13px;
+  background: url(chrome://global/skin/arrow/arrow-dn.gif) right center no-repeat;
+}
+
+#placesMenu > menu > .menubar-text:-moz-locale-dir(rtl) {
+  background-position: left;
+}
+
+/* Toolbar buttons */
+#organizeButton {
+  list-style-image: url(chrome://global/skin/CuteMenus/wizard.png);
+}
+#viewMenu {
+  list-style-image: url(chrome://global/skin/CuteMenus/view_detailed.png);
+}
+#maintenanceButton {
+  list-style-image: url(chrome://global/skin/CuteMenus/filesave.png);
+}
+
+menuitem[oncommand="PlacesOrganizer.onRestoreMenuItemClick(this);"] {
+  list-style-image: url(chrome://browser/skin/places/calendar.png);
+}
+
+/* Root View */
+#placesView {
+  background-color: #e8e8ec;
+}
+
+/* Place List, Place Content */
+.placesTree {
+  margin: 0;
+}
+
+#placesList {
+  background-color: #f8f8f8;
+}
+
+#placeContent {
+  border: 0;
+  background-color: #f8f8f8;
+}
+
+#contentView {
+  margin: 0;
+  border-top: 0px groove #fff;
+}
+
+#placesView > splitter {
+  border: 0;
+  -moz-border-end: 1px solid #a0a0a0;
+  min-width: 0;
+  width: 3px;
+  background-color: transparent;
+  -moz-margin-start: -2px;
+  position: relative;
+}
+
+#infoPaneBox ,
+#detailsDeck {
+  padding: 5px;
+  background: #DADCE4;
+}
+
+#detailsDeck {
+  border-top: 1px solid #a0a0a0;
+}
+
+/* Search Bar */
+#searchbar {
+  margin: 6px -4px 0 2px;
+}
+
+#searchFilter {
+  margin: 2px 0 2px 5px;
+}
+
+.textbox-input-closebutton {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  border-radius: 0;
+  list-style-image: url(chrome://global/skin/icons/close.png);
+  -moz-image-region: rect(0 16px 16px 0);
+  background: none;
+  cursor: default;
+}
+
+.textbox-input-closebutton:hover {
+  -moz-image-region: rect(0 32px 16px 16px);
+  background: none;
+}
+
+.textbox-input-closebutton:hover:active {
+  -moz-image-region: rect(0 48px 16px 32px);
+  background: none;
+}
+
+.small {
+  margin: 0 1px;
+}
+
+#defaultView {
+  background-color: #e8e8ec;
+}
+
+#infoBoxExpanderLabel {
+  margin: 0;
+  padding: 5px;
+}
+
+#organizerScopeBar {
+  padding-right: 3px;
+  border: 0;
+  background: url(chrome://browser/skin/icons/Title-Background.png) top left repeat-x #e8e8ec;
+}
+
+#organizerScopeBar > toolbarbutton {
+  padding: 3px 5px !important;
+}
+
+#organizerScopeBar > toolbarbutton:not([checked="true"]):hover {
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent ;
+  color : #000 !important;
+  border-radius : 2px ;
+  box-shadow : 0 0 0 1px #555 !important;  
+}
+
+
+#organizerScopeBar > toolbarbutton[checked="true"]  {
+    background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent ;
+  color : #000 !important;
+  border :none !important;
+  border-radius : 2px ;
+  box-shadow : 0 0 0 1px #000 !important;
+}
+
+
+#organizerScopeBar > #saveSearch {
+  margin: 1px 2px;
+  padding: 0 3px;
+}
+
+#scopeBarTitle {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+/* info pane */
+
+#detailsDeck .textbox-input {
+  min-height: 17px;
+  padding-top: 0px;
+}
+
+#previewBox {
+  border-right: 1px solid #404040 !important;
+}
+
+#itemsCountText,
+#selectItemDescription {
+  color: #808080;
+}
+
+.no-margin-button {
+  min-width: 0em;
+}
+
+
+/**
+ * Downloads pane
+ */
+
+#clearDownloadsButton > .toolbarbutton-icon {
+  display: none;
+}
+
+#clearDownloadsButton {
+  -moz-padding-start: 9px;
+  -moz-padding-end: 9px;
+}
+
+#placesToolbar > toolbarbutton:not([disabled="true"]):not([checked="true"]):not(#back-button):not(#forward-button):hover {
+  background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent ;
+  color : #000 !important;
+  border-radius : 2px ;
+  box-shadow : 0 0 0 1px #555 !important;  
+}

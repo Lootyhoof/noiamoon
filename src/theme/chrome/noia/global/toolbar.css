@@ -1,0 +1,117 @@
+@import url(chrome://os_special/skin/toolbar.css);
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* toolbar & menubar */
+
+menubar {
+  background: linear-gradient(#fff,#DADCE4);
+  border-bottom : 2px groove #eee;
+}
+
+menubar:-moz-lwtheme {
+  background: none;
+  border-style: none;
+}
+
+toolbar,
+menubar {
+  min-width: 1px;
+}
+
+toolbar:not(#nav-bar) {
+  min-height: 15px;
+}
+
+toolbar[type="menubar"],
+menubar {
+  padding: 0 2px;
+}
+
+/* DOMI */
+.viewer-pane-header {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #808080;
+}
+
+/* lightweight theme */
+toolbox:-moz-lwtheme,
+toolbar:-moz-lwtheme {
+  background: none;
+}
+
+/* toolbar decorations */
+toolbarseparator {
+  width: 2px;
+  margin: 2px 0.2em;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #808080;
+}
+
+toolbarpaletteitem[place="palette"] toolbarseparator {
+  display: none;
+}
+
+toolbarspacer {
+  width: 15px;
+}
+
+/* toolbarpaletteitem */
+toolbarpaletteitem {
+  cursor: -moz-grab;
+}
+
+.toolbarpaletteitem-box[type="spacer"],
+.toolbarpaletteitem-box[type="spring"] {
+  -moz-box-align: stretch;
+  border: 1px solid #808080;
+}
+
+toolbarpaletteitem[place="toolbar"] > toolbarspacer {
+  width: 11px;
+}
+
+.toolbarpaletteitem-box[type="spacer"][place="toolbar"],
+.toolbarpaletteitem-box[type="spring"][place="toolbar"] {
+  min-height: 20px;
+  margin: 2px 2px 2px 0;
+}
+
+.toolbarpaletteitem-box[type="separator"][place="palette"] {
+  height: 32px;
+  width: 2px;
+  margin-bottom: 2px;
+  background: url(chrome://global/skin/toolbar/separator-icon.png) no-repeat center;
+}
+
+.toolbarpaletteitem-box[type="spacer"][place="palette"],
+.toolbarpaletteitem-box[type="spring"][place="palette"] {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 2px;
+  border: 0;
+}
+
+.toolbarpaletteitem-box[type="spring"][place="palette"] {
+  background: url(chrome://global/skin/toolbar/spring.png) no-repeat center;
+}
+
+.toolbarpaletteitem-box[type="spacer"][place="palette"] {
+  background: url(chrome://global/skin/toolbar/space-icon.png) no-repeat center;
+}
+
+/* drag and drop feedback */
+
+toolbarpaletteitem[place="toolbar"] {
+  margin-left: -2px;
+  margin-right: -2px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+toolbarpaletteitem[dragover=left] {
+  border-left-color: #000;
+}
+
+toolbarpaletteitem[dragover=right] {
+  border-right-color: #000;
+}

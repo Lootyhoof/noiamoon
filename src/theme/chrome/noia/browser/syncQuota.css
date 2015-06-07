@@ -1,0 +1,36 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
+#quotaDialog {
+  width: 33em;
+  height: 25em;
+}
+
+#usageTree {
+  margin: 2px -10px;
+  border-right: 0;
+  border-left: 0;
+}
+
+#enabled {
+  width: 20px;
+}
+
+treechildren::-moz-tree-checkbox {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox.png);
+}
+treechildren::-moz-tree-checkbox(checked) {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked.png);
+}
+treechildren::-moz-tree-checkbox(disabled) {
+  list-style-image: url(chrome://global/skin/checkbox/checkbox-checked-partial.png);
+}
+
+#treeCaption {
+  height: 4em;
+}
+
+.captionWarning {
+  font-weight: bold;
+}

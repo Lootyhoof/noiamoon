@@ -1,9 +1,0 @@
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-
-.tabbrowser-tab,
-.tabs-newtab-button{
-    padding: 0 !important;
-}
-.tabs-newtab-button{
-    height: 22px !important;
-}

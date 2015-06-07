@@ -1,12 +1,19 @@
-content	noiaop					content/
-skin    noiaop classic/1.0		skin/
+content   noiamoonoptions                 chrome/content/        
+skin      noiamoonoptions   classic/1.0   chrome/skin/			
+locale    noiamoonoptions   en-US         chrome/locale/en-US/	
+locale    noiamoonoptions   fr-FR		 chrome/locale/fr-FR/ 	
 
-#locales
-locale noiaop	de				locale/de/
-locale noiaop	en-US			locale/en-US/
-locale noiaop	fr				locale/fr/
-locale noiaop	it				locale/it/
-locale noiaop	sv-SE			locale/sv-SE/
+overlay chrome://browser/content/browser.xul		chrome://noiamoonoptions/content/overlay.xul 	
+style   chrome://global/content/customizeToolbar.xul	chrome://noiamoonoptions/skin/overlay.css		
 
-overlay chrome://browser/content/browser.xul			chrome://noiaop/content/overlay.xul
-style   chrome://global/content/customizeToolbar.xul	chrome://noiaop/content/overlay.css
+#startup stuff
+component   {be1828e0-65e7-11e0-ae3e-0800200c9a66} chrome/components/noiamoonop.js	
+contract    @NoiaMoonOptions/startup;1 {be1828e0-65e7-11e0-ae3e-0800200c9a66}		
+category    profile-after-change noiaMoonOptions @NoiaMoonOptions/startup;1		
+
+component   {be1828e0-65e7-11e0-ae3e-0800200c9a66} chrome/tbcomponents/noiamoonop.js	
+contract    @NoiaMoonOptions/startup;1 {be1828e0-65e7-11e0-ae3e-0800200c9a66}	
+category    profile-after-change noiaMoonOptions @NoiaMoonOptions/startup;1		
+
+
+

@@ -1,0 +1,22 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* All the properties in this rule are important to avoid having to create
+ * a special type of tree. This stylesheet can be loaded into a document with
+ * a single tree that is a link tree.
+ */
+treeitem[selected="true"] > treerow {
+  color: #000 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+treecell:hover {
+  cursor: pointer;
+  text-decoration: underline !important;
+  color: #00f !important;
+}
+
+treecell:hover:active {
+  text-decoration: underline !important;
+  color: #f00 !important;
+}

@@ -1,0 +1,4 @@
+tab:-moz-focusring > .tab-middle {
+  /* Don't specify the outline-color, we should always use initial value. */
+  outline: 1px dotted;
+}

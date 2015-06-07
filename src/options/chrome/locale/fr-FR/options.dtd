@@ -1,0 +1,122 @@
+﻿<!ENTITY Options "Options">
+<!ENTITY nfclose "Fermer">
+<!ENTITY Enable "Oui">
+<!ENTITY Disable "Non">
+<!ENTITY reset "Restaurer les réglages par défaut de Noia Moon">
+<!ENTITY Alltheme "Thèmes">
+<!ENTITY persona "Comment utiliser les Personas avec Noia Moon (thèmes gris et bleu uniquement)">
+<!ENTITY DarkEnable "Thème noir">
+<!ENTITY DarkDisable "Non">
+<!ENTITY tipdark "Thème noir complet. Les Personas ne fonctionnent pas avec ce thème.">
+<!ENTITY greyEnable "Thème gris">
+<!ENTITY greyDisable "Non">
+<!ENTITY tipgrey "Thème gris par défaut">
+<!ENTITY blue "">
+<!ENTITY blueEnable "Thème bleu">
+<!ENTITY blueDisable "Non">
+<!ENTITY tipblue "Thème bleu : certains éléments sont habillés comme le thème gris (options, modules complémentaires,...).">
+<!ENTITY grey2 "Barre de titre alternative (Windows seulement)">
+<!ENTITY tipgrey2 "">
+<!ENTITY All "Options pour tous les thèmes">
+<!ENTITY tab "Onglets">
+<!ENTITY browsertab "Navigateur">
+<!ENTITY rdtab "">
+<!ENTITY rdtabEnable "Onglets arrondis">
+<!ENTITY rdtabDisable "Non">
+<!ENTITY shadow "Onglets sans ombre">
+<!ENTITY tipshadow "">
+<!ENTITY SemiRoundedtab "">
+<!ENTITY SemiRoundedtabEnable "Onglets demi ronds">
+<!ENTITY SemiRoundedtabDisable "Non">
+<!ENTITY sqtab "">
+<!ENTITY sqtabEnable "Onglets carrés">
+<!ENTITY sqtabDisable "Non">
+<!ENTITY closestyle "Boutons de fermeture des onglets, des barres latérales, des barres d'outils">
+<!ENTITY closebutton "Bouton de fermeture bleu">
+<!ENTITY noline "Pas de bord pour les barres">
+<!ENTITY tipnoline "">
+<!ENTITY tabbar "Fond de barre d'onglets transparent">
+<!ENTITY tiptabbar "">
+<!ENTITY Blueandgrey "Option uniquement pour les thèmes gris et bleu">
+<!ENTITY strip "Bande en bas de la barre d'onglets">
+<!ENTITY tipstrip "">
+<!ENTITY solid "">
+<!ENTITY solidtab "Onglets pleins">
+<!ENTITY tipsolid "Le bouton Pale Moon est également modifié.">
+<!ENTITY transtab "Onglets transparents">
+<!ENTITY tabbottom "Onglets en bas de la fenêtre">
+<!ENTITY tiptabbottom "Deselectionnez d'abord l'option 'Barre des onglets au dessus'.">
+<!ENTITY normal "Barre de titre originale de Windows (*)">
+<!ENTITY tipnormal "Uniquement pour le système d'exploitation Windows et sans Persona. Vous devez activer cette option avec WindowBlinds">
+<!ENTITY windowblinds "(*)  Utilisez cette option avec WindowBlinds">
+<!ENTITY Grey "Option uniquement pour le premier thème gris">	
+<!ENTITY darker "Fond alternatif">
+<!ENTITY tipdarker "">
+<!ENTITY light "Thème gris clair">
+<!ENTITY tiplight "">
+<!ENTITY hide "Masquer automatiquement les barres d'outils">
+<!ENTITY tiphide "Cette option est inactivée si l'option 'Onglets en bas de Pale Moon' est activée et inversement.">
+<!ENTITY rdbutton "Boutons">
+<!ENTITY buttonstyle "Boites de dialogues et gestionnaire des modules complémentaires">
+<!ENTITY rdbuttonEnable "Boutons arrondis">
+<!ENTITY rdbuttonDisable "Boutons carrés">
+<!ENTITY rdmenubutton "Boutons menus">
+<!ENTITY menubuttonstyle "Bouton Pale Moon et boutons menus">
+<!ENTITY rdmenubuttonEnable "Boutons arrondis">
+<!ENTITY rdmenubuttonDisable "Boutons carrés">
+<!ENTITY rdtabbox "Boites de dialogues">
+<!ENTITY rdtabboxEnable "Onglets arrondis">
+<!ENTITY rdtabboxDisable "Onglets carrés">
+<!ENTITY warm "Icônes Noia Warm (sauf dossiers et favoris)">
+<!ENTITY red "Dossiers et favoris : icônes Noia Warm">
+<!ENTITY red2 "Couleurs des dossiers et favoris mixées (bleu/warm)">
+<!ENTITY bookmark "Barre personnelle">
+<!ENTITY bookEnable "Icônes">
+<!ENTITY bookDisable "Texte et icônes">
+<!ENTITY addon "Aspect des modules dans la barre de navigation">
+<!ENTITY addonEnable "Icônes">
+<!ENTITY addonDisable "Texte et icônes">
+<!ENTITY personalbuttontitle "Aspect des boutons de la barre personnelle lors du suvol de ceux-ci">
+<!ENTITY personalbuttonEnable "Avec arrière-plan">
+<!ENTITY personalbuttonDisable "Sans arrière-plan">
+<!ENTITY personalbutton "">
+<!ENTITY tippersonalbuttonEnable "">
+<!ENTITY tippersonalbuttonDisable "Aspect classique des thèmes Noia">
+<!ENTITY toolbarbuttontitle "Modules : Aspect des boutons des barres d'outils lors du suvol de ceux-ci">
+<!ENTITY toolbarbuttonEnable "Avec arrière-plan">
+<!ENTITY toolbarbuttonDisable "Sans arrière-plan">
+<!ENTITY toolbarbutton "">
+<!ENTITY tiptoolbarbuttonEnable "AddThis, Amazon, FoxLingo, Googlebar lite, Torrent Finder, Webdeveloper, Webmail Notifier">
+<!ENTITY tiptoolbarbuttonDisable "Aspect classique des thèmes Noia">
+<!ENTITY navbarbuttontitle "Aspect des boutons de la barre de navigation lors du suvol de ceux-ci">
+<!ENTITY navbarbuttonEnable "Avec arrière-plan">
+<!ENTITY navbarbuttonDisable "Sans arrière-plan">
+<!ENTITY navbarbutton "">
+<!ENTITY Menu "Menu">
+<!ENTITY find.label "Rechercher">
+<!ENTITY find.tooltip "Rechercher dans la page (Ctrl+F)">
+<!ENTITY Button "Bouton">
+<!ENTITY NoiaMoonOptions "Options pour Noia Moon">
+<!ENTITY Restart "!!! REDEMARREZ PALE MOON APRES SELECTION !!!">
+<!ENTITY NMRestart "!!! REDEMARREZ PALE MOON APRES CHOIX FENETRE NORMALE/FENETRE MAXIMISEE !!!">
+<!ENTITY Contrib "Contributeurs : Icones Noia créées par Carlitus, Noia 2 Extreme créé par Kasteo (Kongkeat Kuatrakull)">
+<!ENTITY Contrib2 "Noia Moon options est une adaptation du configurateur de thème de Noia 4 créé par Aris">
+<!ENTITY help "Aide">
+<!ENTITY backForwardMenu.tooltip "Recent pages">
+<!ENTITY main "Général">
+<!ENTITY display "Apparence">
+<!ENTITY Advanced "Avancé">
+<!ENTITY Advanced2 "Avancé 2">
+<!ENTITY icons "Icônes">
+<!ENTITY Warmicons "Icônes Noia Warm">
+<!ENTITY PaleMoon "Modifications des options Pale Moon">
+<!ENTITY fixes "Corrections">
+<!ENTITY fix "Corrections pour Windows XP et Windows classique uniquement">
+<!ENTITY movable "Modules Movable Pale Moon Button et UI fixer.">
+<!ENTITY fixwarning "Utilisez ces corrections uniquement si le module est activé et pour l'OS mentionné.">
+<!ENTITY Personaenable "Activer les Personas">
+<!ENTITY tippersona "Consultez le fichier d'aide avant d'utiliser cette option">
+<!ENTITY background "Aspect des boutons des barres d'outils lors du suvol de ceux-ci">
+<!ENTITY backgroundEnable "Avec arrière-plan">
+<!ENTITY plain "Pas d'effet pour les barres d'outils">
+<!ENTITY restartFF "Redémarrez Pale Moon.">
