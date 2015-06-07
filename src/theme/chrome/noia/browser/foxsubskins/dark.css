@@ -1282,7 +1282,7 @@ radio[pane][selected="true"] ,
 	-moz-appearance: none !important;
 }
 #main-window[tabsintitlebar] #appmenu-button-container {
-  padding-top : 5px !important;
+  padding-top : 3px !important;
 }
 @media not all and (-moz-windows-compositor) {
 #main-window[tabsintitlebar] #appmenu-button-container {
