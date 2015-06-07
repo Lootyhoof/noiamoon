@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.3 (Options 1.0.2)
+- re-base on Noia Fox
+
 ### 1.0.2 (theme only)
 - fix maximized autohide menubar position on XP
 
