@@ -3588,17 +3588,7 @@ dialogheader {
   color : #fff !important;
 }
 
-/* No script */
-#headBox, #clientBox, #clientBoxInternal {
-  background: #000 !important; 
-  color : #fff !important;
-}
-
 /* Flashblock */
-description  {
-  color : #fff !important;
-}
-
 #FlashblockOptions #whitelist  {
   color : #fff !important;
 }
