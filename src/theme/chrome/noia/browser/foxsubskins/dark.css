@@ -1286,7 +1286,7 @@ radio[pane][selected="true"] ,
 }
 @media not all and (-moz-windows-compositor) {
 #main-window[tabsintitlebar] #appmenu-button-container {
-  padding-top : 0px !important;
+  margin-top: -1px !important;
 }
 }
 #navigator-toolbox[tabsontop="true"] .tabbrowser-tab
