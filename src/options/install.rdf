@@ -14,6 +14,7 @@
     <em:description>Options manager for Noia Moon theme.</em:description>
     <em:creator>Pale Moon Add-Ons Team</em:creator>
     <em:type>2</em:type>
+	<em:optionsURL>chrome://noiamoonoptions/content/options.xul</em:optionsURL>
 
     <em:contributor>David Vincent</em:contributor>
     <em:translator>David.Vincent [fr]</em:translator>
