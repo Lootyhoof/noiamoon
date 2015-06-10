@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>noia-options@addons.palemoon.org</em:id>
-    <em:version>1.0.2</em:version>
+    <em:version>1.0.3</em:version>
     <em:name>Noia Moon Options</em:name>
     <em:description>Options manager for Noia Moon theme.</em:description>
     <em:creator>Pale Moon Add-Ons Team</em:creator>
