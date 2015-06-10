@@ -1,5 +1,8 @@
 # Changelog
 
+### Options 1.0.3
+- add Options button to about:addons
+
 ### 1.0.3 (Options 1.0.2)
 - re-base on Noia Fox
 
