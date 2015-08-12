@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.1.0
+- Pale Moon v26 compatibility
+
 ### Options 1.0.3
 - add Options button to about:addons
 
