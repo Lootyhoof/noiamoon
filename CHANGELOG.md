@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.2.0
+- (PM26) add history menu button
+
 ### 1.1.0
 - Pale Moon v26 compatibility
 
