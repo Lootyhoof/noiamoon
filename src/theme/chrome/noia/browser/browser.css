@@ -358,6 +358,14 @@ toolbar[iconsize="small"] #feed-button:not([disabled="true"]):hover:active {
   margin-top: 0;
 }
 
+@media not all and (-moz-windows-compositor) {
+  @media (-moz-windows-theme: aero) {
+	#main-window[tabsintitlebar] #titlebar {
+      margin-top: 5px !important;
+    }
+  }
+}
+  
 #titlebar:-moz-lwtheme {
   background: transparent;
 }
