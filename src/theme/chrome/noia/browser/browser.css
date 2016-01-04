@@ -17,6 +17,11 @@ toolbox {
   background-size: auto 100%;
 }
 
+#main-window:not(:-moz-lwtheme):after {
+  color: black !important;
+  text-shadow: none !important;
+}
+
 #main-window[tabsintitlebar] toolbox {
   border-bottom: 0px solid #808080;
   background: url(chrome://browser/skin/icons/Tool-background4.png) 0% 50% repeat-x #CDCFD5;
