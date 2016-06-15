@@ -41,17 +41,7 @@ notification[type="critical"] {
 
 .messageCloseButton {
   padding: 4px 2px;
-  list-style-image: url(chrome://global/skin/icons/close.png);
-  -moz-image-region: rect(0 64px 16px 48px);
   border: 0 !important;
-}
-
-.messageCloseButton:hover {
-  -moz-image-region: rect(0 32px 16px 16px);
-}
-
-.messageCloseButton:hover:active {
-  -moz-image-region: rect(0 48px 16px 32px);
 }
 
 /* Popup notification */
@@ -67,15 +57,3 @@ notification[type="critical"] {
 .popup-notification-closebutton {
   margin: -8px -8px 0 0;
 }
-
-.popup-notification-closeitem {
-  list-style-image: url("chrome://global/skin/icons/close.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
-}
-
-
-
-
-
-
-

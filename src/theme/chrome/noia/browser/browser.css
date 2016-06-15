@@ -46,17 +46,7 @@ toolbox {
   border: none;
   padding: 0 5px;
   margin-top : 2px;
-  list-style-image: url("chrome://global/skin/icons/close.png");
   -moz-appearance: none;
-  -moz-image-region: rect(0, 16px, 16px, 0);
-}
-
-#addonbar-closebutton:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-#addonbar-closebutton:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 /* Taille de la barre de navigation */
@@ -2672,18 +2662,8 @@ tabpanels browser,
 
 .tabs-closebutton {
   margin: 0 -1px -2px 4px;
-  list-style-image: url(chrome://global/skin/icons/close.png);
-  -moz-image-region: rect(0 16px 16px 0);
   padding-right : 12px ;
   padding-left : 2px;
-}
-
-.tabs-closebutton:hover {
-  -moz-image-region: rect(0 32px 16px 16px);
-}
-
-.tabs-closebutton:hover:active {
-  -moz-image-region: rect(0 48px 16px 32px);
 }
 
 #main-window[inFullscreen][tabsontop="true"] .tabs-closebutton {
@@ -3332,17 +3312,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
   margin: 0;
   min-height: 0;
   min-width: 0;
-  list-style-image: url(chrome://global/skin/icons/close.png);
-  -moz-image-region: rect(0 16px 16px 0);
   box-shadow: none;
-}
-
-.popup-progress-cancel:hover {
-  -moz-image-region: rect(0 32px 16px 16px);
-}
-
-.popup-progress-cancel:active {
-  -moz-image-region: rect(0 48px 16px 32px);
 }
 
 .geolocation-text-link {
