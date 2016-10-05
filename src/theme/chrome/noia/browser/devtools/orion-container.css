@@ -6,8 +6,8 @@
   display: none; /* TODO: add tooltips support, see bug 721752 */
   font-family: monospace;
   font-size: 13px;
-  background-color: #FFFFE1;
-  color: #000000;
+  background-color: InfoBackground;
+  color: InfoText;
   padding: 2px;
   border-radius: 4px;
   border: 1px solid black;
