@@ -26,7 +26,7 @@ body {
 #aboutLogoContainer {
   width: 300px;
   margin-bottom: 2em;
-  border: 1px solid #d4d0c8;
+  margin: 0 auto;
 }
 
 h1 {
@@ -35,12 +35,6 @@ h1 {
 
 img {
   border: 0;
-}
-
-#version {
-  font-weight: bold;
-  color: #909090;
-  margin: -24px 0 9px 17px;
 }
 
 ul {
