@@ -18,6 +18,15 @@
   display: none;
 }
 
+#downloadsPanel[hasdownloads] > #emptyDownloads {
+  display: none;
+}
+
+#emptyDownloads {
+  padding: 10px 20px;
+  max-width: 40ch;
+}
+
 #downloadsHistory {
   background: transparent;
   color: #0066CC;
