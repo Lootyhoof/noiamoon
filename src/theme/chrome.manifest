@@ -10,3 +10,5 @@ skin   os_special	noiamoon	chrome/noia/os_special/linux/	os=Linux
 skin   os_special	noiamoon	chrome/noia/os_special/XP/		os=WINNT osversion<6
 skin   os_special	noiamoon	chrome/noia/os_special/aero/	os=WINNT osversion>=6
 
+skin	appver noiamoon	chrome/noia/appver/26/ appversion<27.0.0b1
+skin	appver noiamoon	chrome/noia/appver/27/ appversion>=27.0.0b1
