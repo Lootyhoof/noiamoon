@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>noia-moon@addons.palemoon.org</em:id>
-    <em:version>1.3.0</em:version>
+    <em:version>1.4.0</em:version>
     <em:name>Noia Moon</em:name>
     <em:description>Theme for Pale Moon based on Noia Iconpack by Carlitus (deviantART). Fork of "Noia Fox" by David.Vincent</em:description>
     <em:creator>Pale Moon Add-Ons Team</em:creator>
@@ -29,14 +29,14 @@
     </em:targetApplication>
 	
     <em:localized>
-        <Description>
-            <em:locale>fr</em:locale>
-            <em:name>Noia Moon</em:name>
-            <em:description>Thème pour Pale Moon basé sur le Noia Iconpack de Carlitus (deviantART). Sur la base de "Noia Fox" par David.Vincent</em:description>
-            <em:creator>Pale Moon Add-Ons Team</em:creator>
-            <em:contributor>David Vincent</em:contributor>
-            <em:contributor>Carlitus : Noia Iconpack</em:contributor>
-        </Description>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:name>Noia Moon</em:name>
+        <em:description>Thème pour Pale Moon basé sur le Noia Iconpack de Carlitus (deviantART). Sur la base de "Noia Fox" par David.Vincent</em:description>
+        <em:creator>Pale Moon Add-Ons Team</em:creator>
+        <em:contributor>David Vincent</em:contributor>
+        <em:contributor>Carlitus : Noia Iconpack</em:contributor>
+      </Description>
     </em:localized>
   </Description>
 </RDF>
