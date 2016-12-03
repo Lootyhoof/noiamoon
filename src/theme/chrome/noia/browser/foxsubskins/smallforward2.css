@@ -1,0 +1,6 @@
+#forward-button {
+	list-style-image: url("chrome://browser/skin/icons/forward-r.png") !important;
+}
+toolbar[iconsize="small"] #forward-button {
+	list-style-image: url("chrome://browser/skin/icons/forward-small-r.png") !important;
+}

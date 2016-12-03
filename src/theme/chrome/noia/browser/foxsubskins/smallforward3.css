@@ -1,0 +1,42 @@
+#noiamoon-back-forward-dropmarker:-moz-locale-dir(ltr)  {
+	padding-left: 13px !important;
+	margin-left:-15px !important;
+	padding-right:0px !important;
+}
+#forward-button:-moz-locale-dir(ltr){
+	margin-left:-8px !important;
+}
+#forward-button:-moz-locale-dir(rtl){
+	margin-right:-8px !important;
+}
+#forward-button {
+	list-style-image: url("chrome://browser/skin/icons/forward-small-r.png") !important;
+	-moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+#forward-button:not([disabled="true"]):hover {
+  -moz-image-region: rect(24px 24px 48px 0px) !important;
+}
+#forward-button[disabled="true"] {
+  -moz-image-region: rect(48px 24px 72px 0px) !important;
+}
+#forward-button:not([disabled="true"]):hover:active {
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+toolbar[iconsize="small"] #forward-button {
+	list-style-image: url("chrome://browser/skin/icons/web-dev-toolbar3.png") !important;
+	-moz-image-region: rect(0px 80px 16px 64px) !important;
+}
+
+toolbar[iconsize="small"] #forward-button:not([disabled="true"]):hover,
+toolbar[iconsize="small"] #forward-button:not([disabled="true"]):hover:active {
+	list-style-image: url("chrome://browser/skin/icons/dropmarker-r.png") !important;
+	-moz-image-region: rect(0px 16px 16px 0px) !important;
+	transform: rotate(-90deg);
+}
+
+toolbar[iconsize="small"] #forward-button[disabled="true"] {
+	list-style-image: url("chrome://browser/skin/icons/web-dev-toolbar3.png") !important;
+	-moz-image-region: rect(0px 80px 16px 64px) !important;
+	opacity:0.5 !important;
+}
