@@ -467,6 +467,10 @@ menuitem[command="cmd_CustomizeToolbars"],
   list-style-image:url(chrome://global/skin/CuteMenus/Cleanup.png);
 }
 
+#appmenu_permissions,#menu_openPermissions {
+  list-style-image:url(chrome://browser/skin/preferences/permission.png);
+}
+
 #privateBrowsingItem,#appmenu_privateBrowsing,
 #appmenu_newPrivateWindow {
   list-style-image:url(chrome://browser/skin/icons/Privacy-16.png);
