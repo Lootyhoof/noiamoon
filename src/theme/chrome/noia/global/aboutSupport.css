@@ -1,12 +1,14 @@
 html {
   height: 100%;
-  background: url(chrome://broswer/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+  font: message-box;
 }
 
 body {
   color: #000;
   margin: 2em 4em;
-  padding: 1em;
+  padding: 3em;
+  padding-left: 30px;
   border: 1px solid #808080;
   border-radius: 10px;
   background: #fff;
@@ -24,6 +26,10 @@ a {
 
 a:visited {
   color: #62d;
+}
+
+h1 {
+  text-shadow: #a0a0a0 1px 1px 0;
 }
 
 .major-section {
@@ -105,7 +111,7 @@ tr:first-child td {
   overflow: hidden;
 }
 
-#reset-box {
+#action-box {
   background-color: #F0F0F0;
   border: 1px solid #A0A0A0;
   color: #000000;
@@ -118,8 +124,17 @@ tr:first-child td {
   width: 30%;
 }
 
-body[dir="rtl"] > #reset-box,
-#reset-box:-moz-dir(rtl) {
+#contents {
+  clear: right;
+}
+
+#action-box,
+#reset-box,
+#safe-mode-box {
+  display: none;
+}
+
+#action-box:-moz-dir(rtl) {
   float: left;
 }
 
@@ -127,7 +142,19 @@ body[dir="rtl"] > #reset-box,
   margin-top: 0;
 }
 
-#reset-box > button {
+#action-box button {
   display: block;
-  margin: auto;
+}
+
+#verify-place-result {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
