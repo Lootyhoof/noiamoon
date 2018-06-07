@@ -23,7 +23,10 @@ textbox:not(.padded) {
 /* autocomplete popups */
 panel[type="autocomplete"],
 panel[type="autocomplete-richlistbox"],
-.autocomplete-history-popup {
+.autocomplete-history-popup,
+panel[type="private-autocomplete"],
+panel[type="private-autocomplete-richlistbox"],
+.private-autocomplete-history-popup {
   -moz-appearance: none;
   padding: 0;
   margin-top: -1px;
@@ -34,13 +37,15 @@ panel[type="autocomplete-richlistbox"],
   background-color: #f8f8f8;
 }
 
-.autocomplete-history-popup {
+.autocomplete-history-popup,
+.private-autocomplete-history-popup {
   max-height: 180px;
 }
 
 /* Dropmarker */
 
-.autocomplete-history-dropmarker {
+.autocomplete-history-dropmarker,
+.private-autocomplete-history-dropmarker {
   -moz-box-align: center;
   padding: 2px 3px 0 0;
   list-style-image: url(chrome://browser/skin/icons/url_dropmarker.png);
@@ -48,60 +53,73 @@ panel[type="autocomplete-richlistbox"],
 }
 
 .autocomplete-history-dropmarker:hover,
-.autocomplete-history-dropmarker[open="true"] {
+.autocomplete-history-dropmarker[open="true"],
+.private-autocomplete-history-dropmarker:hover,
+.private-autocomplete-history-dropmarker[open="true"] {
   -moz-image-region: rect(16px 16px 32px 0);
 }
 
 /* tree */
-.autocomplete-tree {
+.autocomplete-tree,
+.private-autocomplete-tree {
   -moz-appearance: none !important;
   border: 0 !important;
   background-color: transparent !important;
 }
 
-.autocomplete-treecol {
+.autocomplete-treecol,
+.private-autocomplete-treecol {
   margin: 0 !important;
   border: none !important;
   padding: 0 !important;
 }
 
 /* GTK calculates space for a sort arrow */
-.autocomplete-treecol > .treecol-sortdirection {
+.autocomplete-treecol > .treecol-sortdirection,
+.private-autocomplete-treecol > .treecol-sortdirection {
   -moz-appearance: none !important;
 }
 
-.autocomplete-treebody::-moz-tree-cell-text {
+.autocomplete-treebody::-moz-tree-cell-text,
+.private-autocomplete-treebody::-moz-tree-cell-text {
   -moz-padding-start: 8px;
 }
 
-.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
+.autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue),
+.private-autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue) {
   max-width: 16px;
   height:16px;
 }
 
-treechildren.autocomplete-treebody::-moz-tree-row(hover) {
+treechildren.autocomplete-treebody::-moz-tree-row(hover),
+treechildren.private-autocomplete-treebody::-moz-tree-row(hover) {
   border: 1px solid transparent;
   background: none;
 }
 
 treechildren.autocomplete-treebody::-moz-tree-row(selected),
-treechildren.autocomplete-treebody::-moz-tree-row(hover, focus) {
+treechildren.autocomplete-treebody::-moz-tree-row(hover, focus),
+treechildren.private-autocomplete-treebody::-moz-tree-row(selected),
+treechildren.private-autocomplete-treebody::-moz-tree-row(hover, focus) {
   border: 1px solid #78C1FE;
   background: url(chrome://browser/skin/icons/tree-hover.png) repeat-x center;
 }
 
-treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
+treechildren.autocomplete-treebody::-moz-tree-cell-text(selected),
+treechildren.private-autocomplete-treebody::-moz-tree-cell-text(selected) {
   color: #000000;
 }
 
 /* richlistbox autocomplete */
-.autocomplete-richlistbox {
+.autocomplete-richlistbox,
+.private-autocomplete-richlistbox {
   -moz-appearance: none;
   margin: 0;
   border: 0 !important;
 }
 
-.autocomplete-richlistitem {
+.autocomplete-richlistitem,
+.private-autocomplete-richlistitem {
   padding: 1px;
 }
 
@@ -113,12 +131,14 @@ treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
   margin: 1px 0 4px;
 }
 
-.autocomplete-richlistitem:hover {
+.autocomplete-richlistitem:hover,
+.private-autocomplete-richlistitem:hover {
   background-color: transparent;
   border: 1px solid transparent;
 }
   
-.autocomplete-richlistitem[selected="true"] {
+.autocomplete-richlistitem[selected="true"],
+.private-autocomplete-richlistitem[selected="true"] {
   border : 1px solid transparent;
   color: inherit;
   background-image: none;
@@ -187,7 +207,8 @@ html|span.ac-emphasize-alt {
   overflow: hidden;
 }
 
-.autocomplete-richlistitem[type="tag"] > hbox > .ac-title {
+.autocomplete-richlistitem[type="tag"] > hbox > .ac-title,
+.private-autocomplete-richlistitem[type="tag"] > hbox > .ac-title {
  color: #0acf00;
 }
 
