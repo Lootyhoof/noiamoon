@@ -25,10 +25,10 @@
   background-image: none;
   background-color: transparent;
   border: 0;
-  -moz-border-end: 1px solid rgba(118, 121, 125, .5);
+  border-inline-end: 1px solid rgba(118, 121, 125, .5);
   min-width: 3px;
   width: 3px;
-  -moz-margin-start: -3px;
+  margin-inline-start: -3px;
   position: relative;
   cursor: e-resize;
 }
@@ -187,7 +187,7 @@
   width: 32px;
   height: 32px;
   margin: 6px;
-  -moz-margin-end: 20px;
+  margin-inline-end: 20px;
 }
 
 .devtools-tooltip-alert-icon {
@@ -201,7 +201,7 @@
 }
 
 .devtools-tooltip-variables-view-box .variable-or-property > .title {
-  -moz-padding-end: 6px;
+  padding-inline-end: 6px;
 }
 
 /* Tooltip: Tiles */

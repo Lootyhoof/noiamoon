@@ -147,6 +147,6 @@ richlistitem[type="download"] .dateTime {
   opacity: 0.6 !important;
 }
 #searchbox {
-  -moz-margin-end : 10px !important;
+  margin-inline-end : 10px !important;
   margin-bottom : 10px !important;
 }

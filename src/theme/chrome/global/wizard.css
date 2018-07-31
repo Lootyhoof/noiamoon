@@ -21,7 +21,7 @@
 
 .wizard-header-icon {
   list-style-image: url(chrome://branding/content/icon64.png);
-  -moz-margin-end: 5px;
+  margin-inline-end: 5px;
 }
 
 wizard[description=""] .wizard-header-description {

@@ -62,7 +62,7 @@ richlistbox:focus > richlistitem[selected="true"] {
 .site-favicon {
   height: 16px;
   width: 16px;
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
   list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png");
 }
 
@@ -80,7 +80,7 @@ richlistbox:focus > richlistitem[selected="true"] {
 
 #site-description {
   font-size: 125%;
-  -moz-margin-start: 6px; /* to match button margin */
+  margin-inline-start: 6px; /* to match button margin */
 }
 
 #site-label {
@@ -96,7 +96,7 @@ richlistbox:focus > richlistitem[selected="true"] {
 #defaults-description {
   font-size: 125%;
   font-weight: bold;
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
 }
 
 .pref-item {
@@ -106,7 +106,7 @@ richlistbox:focus > richlistitem[selected="true"] {
 .pref-icon {
   width: 36px;
   height: 36px;
-  -moz-margin-end: 10px;
+  margin-inline-end: 10px;
   margin-left : 10px;
 }
 

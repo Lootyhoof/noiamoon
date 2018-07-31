@@ -25,13 +25,13 @@ textbox {
   -moz-border-bottom-colors: #c0c0c0;
   -moz-border-left-colors: #c0c0c0;
   padding: 2px 2px 3px;
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
   background-color: #f8f8f8;
   color: #000;
 }
 
 #urlbar  {
-  -moz-border-start : 0px;
+  border-inline-start : 0px;
 }
 
 textbox[focused="true"]  {
@@ -43,8 +43,8 @@ textbox:-moz-any(#urlbar, .searchbar-textbox) {
   background-color: #f2f2f2;
   border: 1px solid #909090;
   border-radius: 9.5pt;
-  -moz-padding-start: 0px;
-  -moz-padding-end: 0px;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
 }
 
 textbox:-moz-any(#urlbar, .searchbar-textbox)[focused="true"] {
@@ -98,7 +98,7 @@ textbox[type=search] {
   border-radius: 9.5pt;
   border: 1px solid #909090;
   padding : 2px 4px;
-  -moz-padding-start: 9px;
+  padding-inline-start: 9px;
 }
 
 textbox[type=search][focused="true"]  {

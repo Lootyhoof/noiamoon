@@ -1220,8 +1220,8 @@ radio[pane][selected="true"] ,
 
 #header-search {
   box-shadow: none !important;
-  -moz-margin-start : 10px !important;
-  -moz-padding-start : 10px !important;
+  margin-inline-start : 10px !important;
+  padding-inline-start : 10px !important;
 }
 
 .detail-view-container {
@@ -1331,8 +1331,8 @@ radio[pane] {
   color: #fff !important;
   margin-top: 1px;
   margin-bottom: 1px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 5px;
+  margin-inline-start: 6px;
+  margin-inline-end: 5px;
 }
 .dialog-button-box {
   margin: 0;
@@ -1950,12 +1950,12 @@ textbox:-moz-any(#urlbar, .searchbar-textbox)[focused="true"] {
 
 #notification-popup-box:not([hidden=true]) + #identity-box:not(.verifiedDomain):not(.verifiedIdentity):-moz-locale-dir(ltr) {
   border-radius: 9.5pt 0 0 9.5pt !important;
-  -moz-margin-start : -5px !important;
+  margin-inline-start : -5px !important;
 }
 
 #notification-popup-box:not([hidden=true]) + #identity-box:not(.verifiedDomain):not(.verifiedIdentity):-moz-locale-dir(rtl) {
   border-radius: 0px 9.5pt 9.5pt 0px !important;
-  -moz-margin-start : -5px !important;
+  margin-inline-start : -5px !important;
 }
 
 #identity-box.verifiedIdentity + .textbox-input-box,
@@ -2023,7 +2023,7 @@ textbox:-moz-any(#urlbar, .searchbar-textbox)[focused="true"] {
 
 #urlbar-display {
   color: #ffffff !important;
-  -moz-border-start: 1px solid transparent !important;
+  border-inline-start: 1px solid transparent !important;
 }
 
 /* Toolbarbutton hover (google lite,...) */
@@ -2921,7 +2921,7 @@ notification .messageText {
 }
 
 #main-window[inFullscreen][tabsontop="true"] .tabs-closebutton {
-    -moz-margin-end: -5px !important;
+    margin-inline-end: -5px !important;
 }
 
 @media all and (-moz-windows-classic) {
@@ -3289,7 +3289,7 @@ splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
 
 #urlbar-search-splitter {
   min-width: 6px !important;
-  -moz-margin-start: -3px !important;
+  margin-inline-start: -3px !important;
   border: none !important;
   background: transparent !important;
 }
@@ -3300,26 +3300,26 @@ splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
   -moz-border-left-colors: #000 #000 !important;
   -moz-border-right-colors: #555 #000 !important;
   min-width: 6px !important;
-  -moz-margin-start: 0px !important;
+  margin-inline-start: 0px !important;
 }
 
 #placesView splitter:not(.tree-splitter),
 #social-sidebar-splitter {
   border: 0 !important;
-  -moz-border-end: 1px solid #222 !important;
+  border-inline-end: 1px solid #222 !important;
   min-width: 0 !important;
   width: 3px !important;
   background-color: transparent !important;
-  -moz-margin-start: -3px !important;
+  margin-inline-start: -3px !important;
   position: relative !important;
 }
 
 #social-sidebar-splitter {
-  -moz-border-end: 1px solid #a0a0a0 !important;
+  border-inline-end: 1px solid #a0a0a0 !important;
 }
 
 #placesView splitter:not(.tree-splitter) {
-  -moz-margin-start: -2px !important;
+  margin-inline-start: -2px !important;
 }
 
 #abp-sidebar-splitter {
@@ -3333,7 +3333,7 @@ splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
 }
 
 #social-sidebar-splitter{
-  -moz-margin-start: -2px !important;
+  margin-inline-start: -2px !important;
 }
 
 #mailContent[layout="wide"] #threadPaneBox,
@@ -3367,15 +3367,15 @@ splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
   width: 5px !important;
   background-color: transparent !important;
   margin-top: 0 !important;
-  -moz-margin-end: -4px !important;
+  margin-inline-end: -4px !important;
   position: relative !important;
   z-index: 10 !important;
   transition: border-width .3s ease-in !important;
 }
 
 /* Until Bug 621351 is fixed we need border-right and border-left in
- * combination with -moz-locale-dir instead of -moz-border-end and
- * -moz-border-start for transition
+ * combination with -moz-locale-dir instead of border-inline-end and
+ * border-inline-start for transition
  */
 
 #folderpane_splitter:-moz-locale-dir(rtl),
@@ -3408,11 +3408,11 @@ splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
 
 #dirTree-splitter {
   border: none !important;
-  -moz-border-end: 1px solid #808080 !important;
+  border-inline-end: 1px solid #808080 !important;
   min-width: 0 !important;
   width: 3px !important;
   background-color: transparent !important;
-  -moz-margin-start: -3px !important;
+  margin-inline-start: -3px !important;
   position: relative !important;
   z-index: 10 !important;
 }
@@ -3430,11 +3430,11 @@ splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
 
 #msgcomposeWindow  #sidebar-splitter {
   border: 0 !important;
-  -moz-border-start: 1px solid #808080 !important;
+  border-inline-start: 1px solid #808080 !important;
   min-width: 0 !important;
   width: 5px !important;
   background-color: transparent !important;
-  -moz-margin-end: -5px !important;
+  margin-inline-end: -5px !important;
   position: relative !important;
   z-index: 10 !important;
 }
@@ -4490,8 +4490,8 @@ richlistbox:focus > richlistitem[type="download"][selected="true"] {
 }
 
 #social-toolbar-item > .toolbarbutton-1 {
-  -moz-padding-start : 5px !important;
-  -moz-padding-end : 5px !important;
+  padding-inline-start : 5px !important;
+  padding-inline-end : 5px !important;
 }
 
 .social-panel .panel-arrow[side=top] {

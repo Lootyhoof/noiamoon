@@ -135,7 +135,7 @@
 
 @media not all and (-moz-windows-classic) {
   #titlebar-min {
-    -moz-margin-end: 0px;
+    margin-inline-end: 0px;
   }
 }
 

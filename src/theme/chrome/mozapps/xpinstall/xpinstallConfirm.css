@@ -12,8 +12,8 @@
   color: #000000 ;
   margin-top: 1px;
   margin-bottom: 1px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 5px;
+  margin-inline-start: 6px;
+  margin-inline-end: 5px;
 }
 #xpinstallheader {
   margin: 0 8px 2em;

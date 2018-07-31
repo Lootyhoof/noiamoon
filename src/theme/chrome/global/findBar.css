@@ -104,15 +104,15 @@ findbar[hidden] {
   list-style-image: none;
   margin-top: 2px;
   margin-bottom: 0px;
-  -moz-margin-start: 12px;
-  -moz-margin-end: 0px;
+  margin-inline-start: 12px;
+  margin-inline-end: 0px;
   width: 16px;
   height: 16px;
 }
 
 .findbar-find-status {
   margin: 0 !important;
-  -moz-margin-start: 3px !important;
+  margin-inline-start: 3px !important;
   padding: 2px !important;
 }
 
@@ -133,7 +133,7 @@ findbar[hidden] {
   margin: 0 5px;
   border-radius: 9.5pt;
   border: 1px solid #909090;
-  -moz-padding-start: 7px;
+  padding-inline-start: 7px;
 }
 
 .findbar-textbox[status="notfound"] {

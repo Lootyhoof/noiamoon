@@ -45,7 +45,7 @@
   /* To compensate for the top and bottom borders */
   margin-top: -1px;
   margin-bottom: -1px;
-  -moz-padding-end: 8px;
+  padding-inline-end: 8px;
   -moz-box-align: center;
   outline: 0;
   vertical-align: bottom;
@@ -118,12 +118,12 @@
 
 .theme-dark .splitview-main > toolbar,
 .theme-dark .loading .splitview-nav-container {
-  -moz-border-end: 1px solid #000;
+  border-inline-end: 1px solid #000;
 }
 
 .theme-light .splitview-main > toolbar,
 .theme-light .loading .splitview-nav-container {
-  -moz-border-end: 1px solid #aaa;
+  border-inline-end: 1px solid #aaa;
 }
 
 .splitview-main > .devtools-toolbarbutton {

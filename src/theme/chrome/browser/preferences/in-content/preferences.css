@@ -81,7 +81,7 @@ prefpane > .content-box {
 #categories {
   -moz-appearance: none;
   border: none;
-  -moz-margin-end: -1px;
+  margin-inline-end: -1px;
   background-color: transparent;
   position: relative;
   margin-top: 31px;
@@ -93,7 +93,7 @@ prefpane > .content-box {
   min-height: 0;
   padding: 10px 4px;
   margin: 2px;
-  -moz-margin-end: 10px;
+  margin-inline-end: 10px;
   border: 2px solid transparent;
   border-radius: 5px;
   transition-property: height, margin, opacity;
@@ -148,8 +148,8 @@ prefpane > .content-box {
   width: 32px;
   height: 32px;
   margin: 0 6px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 5px;
+  margin-inline-start: 6px;
+  margin-inline-end: 5px;
 }
 /* FF28 end */
 
@@ -239,7 +239,7 @@ description > html|a {
 }
 
 #forward-btn {
-  -moz-border-start: none;
+  border-inline-start: none;
 }
 
 #back-btn:-moz-locale-dir(ltr),

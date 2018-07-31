@@ -932,11 +932,11 @@ dialog[windowtype="irc:chatzilla:about"] .dialog-button-box {
 
 .tabbrowser-tabs[flowing=multibar] {
   background-repeat: repeat-x !important;
-  -moz-margin-end : 20px !important;
+  margin-inline-end : 20px !important;
 }
 
 #main-window[sizemode="maximized"][tabsontop="false"] .tabbrowser-tabs[flowing=multibar] {
-  -moz-margin-end : 30px !important;
+  margin-inline-end : 30px !important;
 }
 
 #main-window:not([tabsintitlebar]) #TabsToolbar[multibar] {
@@ -1536,7 +1536,7 @@ toolbar[iconsize="small"] > #prefbar-menu:not([disabled="true"]):hover .toolbarb
 }
 
 #TFTB-SearchBox {
-  -moz-padding-start : 7px !important;
+  padding-inline-start : 7px !important;
   background-color: #f2f2f2 !important;
 }
 
@@ -1601,13 +1601,13 @@ toolbar[iconsize="small"] #GBL-TB-Toggle-Toolbar {
 }
 
 #gtbToolbar > toolbarbutton > .toolbarbutton-menubutton-dropmarker {
-  -moz-padding-end: 2px;
+  padding-inline-end: 2px;
 }
 
 #GBL-SearchBox {
   margin: 1px 3px;
-  -moz-padding-start: 8px !important;
-  -moz-padding-end: 0px !important;
+  padding-inline-start: 8px !important;
+  padding-inline-end: 0px !important;
   background-color: #f2f2f2 !important;
   border :1px solid #a0a0a0 !important;
   border-radius: 9.5pt !important;
@@ -1621,7 +1621,7 @@ toolbar[iconsize="small"] #GBL-TB-Toggle-Toolbar {
 #GBL-SearchBox .autocomplete-history-dropmarker {
   -moz-box-align: center;
   padding: 0;
-  -moz-padding-end: 3px;  
+  padding-inline-end: 3px;  
   list-style-image: url(chrome://browser/skin/icons/url_dropmarker.png);
   -moz-image-region: rect(0 16px 16px 0);
 }
@@ -2468,8 +2468,8 @@ radio[pane="status4evar-pane-addonbar"] {
 #urlbar-progress-alt {
   height: 4px;
   margin: 0px;
-  -moz-margin-start: 6px !important;
-  -moz-margin-end: 20px !important;
+  margin-inline-start: 6px !important;
+  margin-inline-end: 20px !important;
   background: transparent;
 }
 
@@ -2523,18 +2523,18 @@ radio[pane="status4evar-pane-addonbar"] {
 
 .urlbar-origin-label,
 #urlbar[s4esalign="left"] .urlbar-over-link-box {
-  -moz-padding-start: 4px !important;
+  padding-inline-start: 4px !important;
 }
 
 #urlbar .urlbar-over-link-box:-moz-locale-dir(rtl)
 {
- -moz-padding-start: 20px !important;
- -moz-padding-end: 10px !important;
+ padding-inline-start: 20px !important;
+ padding-inline-end: 10px !important;
 }
 
 #urlbar[s4esalign="left"] .urlbar-over-link-box:-moz-locale-dir(rtl)
 {
-  -moz-padding-start: 4px !important;
+  padding-inline-start: 4px !important;
 }
 
 #urlbar[s4esalign="left"] .urlbar-over-link-box {
@@ -3022,7 +3022,7 @@ menupopup[id="foxlingoPopup"] vbox {
 }
 
 #skipity-toolbar #search-box{
-  -moz-padding-start:7px !important;
+  padding-inline-start:7px !important;
   background:none !important;
   background-color:#f2f2f2 !important;
 }
@@ -3123,11 +3123,11 @@ prefwindow[id="febeOptionsID"] .rounded {
 }
 
 #calsidebar_splitter {
-  -moz-margin-end: 0px !important;
+  margin-inline-end: 0px !important;
 }
 
 #today-splitter {
-  -moz-margin-start: 0px !important;
+  margin-inline-start: 0px !important;
   background: #DADCE4 !important;
 }
 
@@ -3157,8 +3157,8 @@ treechildren::-moz-tree-row(selected) {
 #asf-add[label=" "],
 #asf-delete[label=" "],
 #asf-move-down[label=" "] {
-  -moz-padding-end: 0px !important;
-  -moz-padding-start: 14px !important;
+  padding-inline-end: 0px !important;
+  padding-inline-start: 14px !important;
 }
 
 /* Noia Fox */

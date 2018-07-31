@@ -186,7 +186,7 @@ body {
   width: 1em;
   height: 1em;
   vertical-align: text-top;
-  -moz-margin-end: 5px;
+  margin-inline-end: 5px;
   display: inline-block;
   position: relative;
 }

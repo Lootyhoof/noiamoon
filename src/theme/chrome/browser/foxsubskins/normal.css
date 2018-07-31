@@ -110,7 +110,7 @@
 }	
 
 #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme)  #TabsToolbar:not([treestyletab-mode="vertical"]):not([orient="vertical"]) {
-  -moz-padding-end : 30px !important;
+  padding-inline-end : 30px !important;
 }
 
 }

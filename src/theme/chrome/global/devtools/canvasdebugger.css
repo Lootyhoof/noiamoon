@@ -40,21 +40,21 @@
 /* Snapshots pane */
 
 #snapshots-pane > tabs {
-  -moz-border-end: 1px solid;
+  border-inline-end: 1px solid;
 }
 
 #snapshots-pane .devtools-toolbar {
-  -moz-border-end: 1px solid;
+  border-inline-end: 1px solid;
 }
 
 .theme-dark #snapshots-pane > tabs,
 .theme-dark #snapshots-pane .devtools-toolbar {
-  -moz-border-end-color: black; /* Match the splitter color. */
+  border-inline-end-color: black; /* Match the splitter color. */
 }
 
 .theme-light #snapshots-pane > tabs,
 .theme-light #snapshots-pane .devtools-toolbar {
-  -moz-border-end-color: #aaa; /* Match the splitter color. */
+  border-inline-end-color: #aaa; /* Match the splitter color. */
 }
 
 #record-snapshot {
@@ -88,7 +88,7 @@
 }
 
 .snapshot-item-details {
-  -moz-padding-start: 6px;
+  padding-inline-start: 6px;
 }
 
 .snapshot-item-calls {
@@ -177,7 +177,7 @@
 }
 
 #calls-slider {
-  -moz-padding-end: 24px;
+  padding-inline-end: 24px;
 }
 
 #calls-slider .scale-slider {
@@ -239,12 +239,12 @@
 
 .call-item-gutter {
   width: calc(3em + 22px);
-  -moz-padding-start: 22px;
-  -moz-padding-end: 4px;
+  padding-inline-start: 22px;
+  padding-inline-end: 4px;
   padding-top: 2px;
   padding-bottom: 2px;
-  -moz-border-end: 1px solid;
-  -moz-margin-end: 6px;
+  border-inline-end: 1px solid;
+  margin-inline-end: 6px;
 }
 
 .selected .call-item-gutter {
@@ -279,8 +279,8 @@
 }
 
 .call-item-location {
-  -moz-padding-start: 2px;
-  -moz-padding-end: 6px;
+  padding-inline-start: 2px;
+  padding-inline-end: 6px;
   text-align: end;
   cursor: pointer;
   color: var(--theme-highlight-bluegrey);
@@ -304,7 +304,7 @@
 }
 
 .call-item-stack {
-  -moz-padding-start: calc(3em + 22px);
+  padding-inline-start: calc(3em + 22px);
   padding-bottom: 10px;
 }
 
@@ -322,8 +322,8 @@
 }
 
 .call-item-stack-fn-location {
-  -moz-padding-start: 2px;
-  -moz-padding-end: 6px;
+  padding-inline-start: 2px;
+  padding-inline-end: 6px;
   text-align: end;
   cursor: pointer;
   text-decoration: underline;
@@ -446,7 +446,7 @@
 }
 
 .filmstrip-thumbnail {
-  -moz-border-end: 1px solid var(--theme-splitter-color)
+  border-inline-end: 1px solid var(--theme-splitter-color)
 }
 
 #snapshot-filmstrip > .filmstrip-thumbnail:hover,

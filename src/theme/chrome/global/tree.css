@@ -185,7 +185,7 @@ treechildren::-moz-tree-drop-feedback {
   background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
   width: 50px;
   height: 2px;
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 /* ::::: tree progress meter ::::: */
@@ -274,14 +274,14 @@ treecol[insertbefore],
 treechildren::-moz-tree-column(insertbefore),
 treecol[insertafter]:-moz-locale-dir(rtl),
 treechildren:-moz-locale-dir(rtl)::-moz-tree-column(insertafter) {
-  -moz-border-start: 1px solid #1f9afd;
+  border-inline-start: 1px solid #1f9afd;
 }
 
 treecol[insertafter],
 treechildren::-moz-tree-column(insertafter),
 treecol[insertbefore]:-moz-locale-dir(rtl) ,
 treechildren:-moz-locale-dir(rtl)::-moz-tree-column(insertbefore)  {
-  -moz-border-end: 1px solid #1f9afd;
+  border-inline-end: 1px solid #1f9afd;
 }
 
 /* sort direction indicator */

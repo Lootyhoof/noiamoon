@@ -16,11 +16,11 @@ body.normal > #errorPageContainer {
 }
 
 #startPrivateBrowsingDesc > button {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 #clearRecentHistoryDesc > button {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 #enjoyDesc {
@@ -29,7 +29,7 @@ body.normal > #errorPageContainer {
 
 #moreInfo {
   font-size: 110%;
-  -moz-padding-start: 25px;
+  padding-inline-start: 25px;
   background: url(chrome://global/skin/icons/information-16.png) no-repeat 0 5px;
 }
 

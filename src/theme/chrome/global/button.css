@@ -12,8 +12,8 @@ button {
   margin: 1px 3px;
   padding: 2px 3px 2px 1px;
   border: 1px solid #000;
-  -moz-padding-start: 8px;
-  -moz-padding-end: 8px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
   -moz-border-top-colors: #404040 #fff;
   -moz-border-right-colors: #404040 #808080;
   -moz-border-bottom-colors: #404040 #808080;
@@ -133,7 +133,7 @@ button[type="disclosure"][open="true"] {
 button[type="menu-button"] {
   margin-left: 0;
   padding: 0;
-  -moz-padding-end: 3px;
+  padding-inline-end: 3px;
 }
 
 button[type="menu-button"] {
@@ -144,7 +144,7 @@ button[type="menu-button"] {
 
 button[type="menu-button"] > button {
   margin: -2px;
-  -moz-margin-end: 3px;
+  margin-inline-end: 3px;
   border-right: 1px solid;
   border-radius: 4px;
 }

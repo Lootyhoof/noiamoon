@@ -65,12 +65,12 @@
 
 #recordings-pane > tabs,
 #recordings-pane .devtools-toolbar {
-  -moz-border-end-width: 1px;
+  border-inline-end-width: 1px;
 }
 
 #recordings-pane > tabs,
 #recordings-pane .devtools-toolbar {
-  -moz-border-end-color: var(--theme-splitter-color);
+  border-inline-end-color: var(--theme-splitter-color);
 }
 
 #record-button {
@@ -150,7 +150,7 @@
 
 #profile-content tab {
   -moz-appearance: none;
-  -moz-border-end: 1px solid var(--theme-splitter-color);
+  border-inline-end: 1px solid var(--theme-splitter-color);
 }
 
 #profile-content tab:hover {
@@ -264,13 +264,13 @@
 
 .call-tree-header:not(:last-child),
 .call-tree-cell:not(:last-child) {
-  -moz-border-end-width: 1px;
-  -moz-border-end-style: solid;
+  border-inline-end-width: 1px;
+  border-inline-end-style: solid;
 }
 
 .call-tree-header,
 .call-tree-cell {
-  -moz-border-end-color: var(--cell-border-color);
+  border-inline-end-color: var(--cell-border-color);
 }
 
 .call-tree-header:not(:last-child) {
@@ -306,7 +306,7 @@
 }
 
 .call-tree-item:focus .call-tree-cell {
-  -moz-border-end-color: var(--focus-cell-border-color);
+  border-inline-end-color: var(--focus-cell-border-color);
 }
 
 .call-tree-item:not([origin="content"]) .call-tree-name,
@@ -318,7 +318,7 @@
 }
 
 .call-tree-url {
-  -moz-margin-start: 4px !important;
+  margin-inline-start: 4px !important;
   cursor: pointer;
 }
 
@@ -340,7 +340,7 @@
 }
 
 .call-tree-host {
-  -moz-margin-start: 8px !important;
+  margin-inline-start: 8px !important;
   font-size: 90%;
   color: var(--theme-content-color2);
 }
@@ -360,7 +360,7 @@
   background-repeat: no-repeat;
   background-size: 11px;
   min-width: 11px;
-  -moz-margin-start: 8px !important;
+  margin-inline-start: 8px !important;
   cursor: zoom-in;
   opacity: 0;
 }

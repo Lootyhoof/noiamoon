@@ -63,7 +63,7 @@
 }
 
 .folder-icon > menupopup > menuitem > .menu-iconic-text {
-  -moz-margin-start: 10px !important;
+  margin-inline-start: 10px !important;
 }
 
 .folder-icon {
@@ -97,7 +97,7 @@
 
 .panel-promo-icon {
   list-style-image: url("chrome://browser/skin/sync-notification-24.png");
-  -moz-margin-end: 10px;
+  margin-inline-end: 10px;
   vertical-align: middle;
 }
 
@@ -106,7 +106,7 @@
   list-style-image: url("chrome://global/skin/icons/close.png");
   -moz-image-region: rect(0, 16px, 16px, 0);
   border: none;
-  -moz-margin-end: 0px;
+  margin-inline-end: 0px;
   margin-top: 5px;
 }
 
@@ -129,13 +129,13 @@
 .expander-down {
   min-width: 0;
   margin: 0;
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
 }
 
 .expander-up > .button-box,
 .expander-down > .button-box {
   padding: 0;
-  -moz-padding-start: 12px;
+  padding-inline-start: 12px;
 }
 
 .expander-up {
@@ -229,7 +229,7 @@
 
 #editBMPanel_newFolderButton {
   list-style-image: url(chrome://browser/skin/icons/folder-add.png);
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 #editBookmarkPanel > #editBookmarkPanelBottomButtons {

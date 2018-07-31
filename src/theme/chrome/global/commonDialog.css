@@ -1,4 +1,4 @@
 #filler {
-  -moz-margin-start: -8px;
-  -moz-margin-end: -10px;
+  margin-inline-start: -8px;
+  margin-inline-end: -10px;
 }

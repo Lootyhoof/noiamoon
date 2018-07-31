@@ -15,7 +15,7 @@
 
 .console-row-icon {
   padding: 4px;
-  -moz-padding-start: 5px;
+  padding-inline-start: 5px;
   -moz-box-align: start !important;
 }
 
@@ -43,8 +43,8 @@
   font-size: larger;
   padding-top: 3px;
   padding-bottom: 3px;
-  -moz-padding-start: 3px;
-  -moz-padding-end: 0px;
+  padding-inline-start: 3px;
+  padding-inline-end: 0px;
 }
 
 .console-dots,
@@ -86,8 +86,8 @@
 
 toolbar#ToolbarMode toolbarbutton {
   padding: 2px;
-  -moz-margin-start: 3px;
-  -moz-margin-end: 3px;
+  margin-inline-start: 3px;
+  margin-inline-end: 3px;
 }
 
 #console-toolbox > #ToolbarMode toolbarbutton .toolbarbutton-icon {

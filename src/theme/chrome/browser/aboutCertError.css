@@ -44,7 +44,7 @@ h2 {
 
 #errorTitle,
 #errorLongContent {
-  -moz-margin-start: 80px;
+  margin-inline-start: 80px;
 }
 
 #technicalContent > h2,
@@ -68,8 +68,8 @@ body[dir="rtl"] #expertContent[collapsed] > h2 {
 }
 
 .expander > button {
-  -moz-padding-start: 20px;
-  -moz-margin-start: -20px;
+  padding-inline-start: 20px;
+  margin-inline-start: -20px;
   background: url(chrome://browser/skin/icons/arrow-down-small.png) left center no-repeat;
   border: none;
   font: inherit;

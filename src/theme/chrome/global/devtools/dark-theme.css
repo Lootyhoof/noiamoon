@@ -265,8 +265,8 @@ div.CodeMirror div.debug-line {
 div.CodeMirror span.marked-text {
   background: rgba(255,255,0,0.2);
   border: 1px dashed rgba(192,192,0,0.6);
-  -moz-margin-start: -1px;
-  -moz-margin-end: -1px;
+  margin-inline-start: -1px;
+  margin-inline-end: -1px;
 }
 
 /* Highlight for evaluating current statement. */
@@ -464,7 +464,7 @@ div.CodeMirror span.eval-text {
 }
 
 .devtools-toolbarbutton[standalone] {
-  -moz-margin-end: 5px;
+  margin-inline-end: 5px;
   border-width: 1px;
   border-style: solid;
 }
@@ -478,8 +478,8 @@ div.CodeMirror span.eval-text {
 }
 
 #toolbox-buttons .devtools-toolbarbutton[text-as-image] {
-  -moz-padding-start: 5px;
-  -moz-padding-end: 5px;
+  padding-inline-start: 5px;
+  padding-inline-end: 5px;
   min-width: inherit;
 }
 
@@ -518,7 +518,7 @@ div.CodeMirror span.eval-text {
 }
 
 .devtools-toolbarbutton > .toolbarbutton-menubutton-button > .toolbarbutton-icon {
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
 }
 
 .devtools-menulist > .menulist-dropmarker {
@@ -629,15 +629,15 @@ div.CodeMirror span.eval-text {
 }
 
 .devtools-toolbarbutton-group > .devtools-toolbarbutton:last-child {
-  -moz-margin-end: 0;
+  margin-inline-end: 0;
 }
 
 .devtools-toolbarbutton-group + .devtools-toolbarbutton {
-  -moz-margin-start: 3px;
+  margin-inline-start: 3px;
 }
 
 .devtools-separator + .devtools-toolbarbutton {
-  -moz-margin-start: 1px;
+  margin-inline-start: 1px;
 }
 
 /* HTML buttons, similar to toolbar buttons, but work in HTML documents */
@@ -717,8 +717,8 @@ div.CodeMirror span.eval-text {
   margin-top: 1px;
   margin-bottom: 1px;
   padding: 0;
-  -moz-padding-start: 22px;
-  -moz-padding-end: 12px;
+  padding-inline-start: 22px;
+  padding-inline-end: 12px;
   background-position: 8px center;
   background-size: 11px 11px;
   background-repeat: no-repeat;
@@ -818,7 +818,7 @@ div.CodeMirror span.eval-text {
 .devtools-sidebar-alltabs {
   margin: 0;
   border-width: 0 0 1px 0;
-  -moz-border-start-width: 1px;
+  border-inline-start-width: 1px;
   border-style: solid;
 }
 
@@ -845,7 +845,7 @@ div.CodeMirror span.eval-text {
   color: inherit;
   -moz-box-flex: 1;
   border-width: 0;
-  -moz-border-start-width: 1px;
+  border-inline-start-width: 1px;
   border-style: solid;
   border-radius: 0;
   position: static;
@@ -855,7 +855,7 @@ div.CodeMirror span.eval-text {
 }
 
 .devtools-sidebar-tabs tabs > tab:first-child {
-  -moz-border-start-width: 0;
+  border-inline-start-width: 0;
 }
 
 .theme-dark .devtools-sidebar-tabs tabs > tab {
@@ -1144,7 +1144,7 @@ div.CodeMirror span.eval-text {
   padding: 0;
   border-style: solid;
   border-width: 0;
-  -moz-border-start-width: 1px;
+  border-inline-start-width: 1px;
   -moz-box-align: center;
 }
 
@@ -1187,8 +1187,8 @@ div.CodeMirror span.eval-text {
 
 .devtools-tab > image {
   border: none;
-  -moz-margin-end: 0;
-  -moz-margin-start: 4px;
+  margin-inline-end: 0;
+  margin-inline-start: 4px;
   opacity: 0.6;
   max-height: 16px;
   width: 16px; /* Prevents collapse during theme switching */
@@ -1228,26 +1228,26 @@ div.CodeMirror span.eval-text {
 #toolbox-tabs .devtools-tab[selected],
 #toolbox-tabs .devtools-tab[highlighted] {
   border-width: 0;
-  -moz-padding-start: 1px;
+  padding-inline-start: 1px;
 }
 
 #toolbox-tabs .devtools-tab[selected]:last-child,
 #toolbox-tabs .devtools-tab[highlighted]:last-child {
-  -moz-padding-end: 1px;
+  padding-inline-end: 1px;
 }
 
 #toolbox-tabs .devtools-tab[selected] + .devtools-tab,
 #toolbox-tabs .devtools-tab[highlighted] + .devtools-tab {
-  -moz-border-start-width: 0;
-  -moz-padding-start: 1px;
+  border-inline-start-width: 0;
+  padding-inline-start: 1px;
 }
 
 #toolbox-tabs .devtools-tab:first-child[selected] {
-  -moz-border-start-width: 0;
+  border-inline-start-width: 0;
 }
 
 #toolbox-tabs .devtools-tab:last-child {
-  -moz-border-end-width: 1px;
+  border-inline-end-width: 1px;
 }
 
 .devtools-tab:not([highlighted]) > .highlighted-icon,
@@ -1264,7 +1264,7 @@ div.CodeMirror span.eval-text {
 #toolbox-option-container .devtools-tab {
   border-color: transparent;
   border-width: 0;
-  -moz-padding-start: 1px;
+  padding-inline-start: 1px;
 }
 #toolbox-tab-options > image {
   margin: 0 8px;
@@ -1326,7 +1326,7 @@ div.CodeMirror span.eval-text {
 }
 
 .devtools-side-splitter {
-  -moz-border-end: 1px solid var(--theme-splitter-color);
+  border-inline-end: 1px solid var(--theme-splitter-color);
   border-color: var(--theme-splitter-color); /* Needed for responsive container at low width. */
 }
 
@@ -1335,7 +1335,7 @@ div.CodeMirror span.eval-text {
   content: "";
   display: inline-block;
   vertical-align: bottom;
-  -moz-margin-end: 0.5em;
+  margin-inline-end: 0.5em;
   width: 1em;
   height: 1em;
   border: 2px solid currentColor;

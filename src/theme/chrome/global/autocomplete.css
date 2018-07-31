@@ -82,7 +82,7 @@ panel[type="private-autocomplete-richlistbox"],
 
 .autocomplete-treebody::-moz-tree-cell-text,
 .private-autocomplete-treebody::-moz-tree-cell-text {
-  -moz-padding-start: 8px;
+  padding-inline-start: 8px;
 }
 
 .autocomplete-treebody::-moz-tree-image(treecolAutoCompleteValue),

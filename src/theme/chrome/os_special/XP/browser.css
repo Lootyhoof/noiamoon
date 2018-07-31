@@ -227,7 +227,7 @@
 }
 
 #titlebar-min {
-  -moz-margin-end: 0px;
+  margin-inline-end: 0px;
 }
 
 #main-window[sizemode=maximized] #titlebar-buttonbox {

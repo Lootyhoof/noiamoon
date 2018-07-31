@@ -38,28 +38,28 @@ menuitem[_moz-menuactive="true"][disabled="true"],
 .menu-text,
 .menu-iconic-text {
   font-weight: inherit;
-  -moz-margin-start: 8px !important;
-  -moz-padding-end: 2px;
+  margin-inline-start: 8px !important;
+  padding-inline-end: 2px;
 }
 
 .menulist-menupopup > menuitem > .menu-iconic-text,
 menulist > menupopup > menuitem > .menu-iconic-text,
 .menulist-menupopup > menu > .menu-iconic-text,
 menulist > menupopup > menu > .menu-iconic-text {
-  -moz-margin-start: 2px !important;
+  margin-inline-start: 2px !important;
 }
 
 .menu-description {
   font-style: italic;
   color: inherit;
-  -moz-margin-start: 1ex !important;
+  margin-inline-start: 1ex !important;
 }
 
 .menu-accel,
 .menu-iconic-accel {
   color: inherit;
-  -moz-margin-start: 5px !important;
-  -moz-margin-end: 17px !important;
+  margin-inline-start: 5px !important;
+  margin-inline-end: 17px !important;
 }
 
 .menu-iconic-left {
@@ -81,7 +81,7 @@ menuitem.menuitem-iconic > .menu-iconic-left,
 
 .menu-right {
   list-style-image: url(chrome://global/skin/arrow/arrow-rit.gif);
-  -moz-margin-end: -2px;
+  margin-inline-end: -2px;
   min-width: 1.28em;
   padding-top: 1px;
   -moz-image-region: auto;
@@ -141,13 +141,13 @@ menubar > menu:-moz-lwtheme {
 .menubar-left {
   color: inherit;
   margin: 0;
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 
 .menubar-text {
   color: inherit;
   margin: 0 !important;
-  -moz-margin-end: 2px !important;
+  margin-inline-end: 2px !important;
 }
 
 /* ::::: menu/menuitems in popups ::::: */
@@ -187,14 +187,14 @@ menuitem[_moz-menuactive][disabled="true"],
 }
 
 .splitmenu-menu {
-  -moz-margin-start: -1px;
+  margin-inline-start: -1px;
   padding: 1px 0;
-  -moz-padding-start: 3px;
-  -moz-border-start: 1px solid transparent !important;
+  padding-inline-start: 3px;
+  border-inline-start: 1px solid transparent !important;
 }
 
 .splitmenu-menu[_moz-menuactive]:not([disabled="true"]) {
-  -moz-border-start: 1px solid #7BB1DD !important;
+  border-inline-start: 1px solid #7BB1DD !important;
 }
 
 /* menu/menuitems in menulist popups */
@@ -266,7 +266,7 @@ menulist > menupopup > menuseparator,
 .menulist-menupopup > menuseparator,
 menuseparator {
   margin: 1px 3px 0px;
-  -moz-margin-start: 25px;
+  margin-inline-start: 25px;
   border-top: 1px solid #c0c0c0;
   border-bottom: 1px solid #f0f0f0;
 }
