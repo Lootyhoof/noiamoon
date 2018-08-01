@@ -2426,6 +2426,12 @@ toolbar[iconsize="small"] #tabview-button > image {
   display: -moz-box;
 }
 
+.browserContainer > findbar {
+  background-color: #DADCE4;
+  color: #000;
+  text-shadow: none;
+}
+
 /* Status panel */
 .statuspanel-label {
   text-shadow: none;

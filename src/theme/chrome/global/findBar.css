@@ -80,10 +80,7 @@ findbar[hidden] {
 }
 
 .findbar-highlight[checked="true"],
-.findbar-highlight:not([disabled="true"]):hover,
-.findbar-case-sensitive[checked="true"],
-.findbar-case-sensitive:not([disabled="true"]):hover
- {
+.findbar-highlight:not([disabled="true"]):hover {
   background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent;
   color : #000 !important;
   border-radius : 3px;
