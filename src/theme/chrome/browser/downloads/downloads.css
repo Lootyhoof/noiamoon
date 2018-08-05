@@ -228,57 +228,17 @@ richlistitem[type="download"]:last-child {
 }
 
 #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads.png"),
-                              0, 32, 32, 0) center no-repeat;
-  min-width: 32px;
-  min-height: 32px;
-}
-
-#downloads-indicator:not([disabled="true"]):hover  #downloads-indicator-icon{
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads.png"),
-                              32, 32, 64, 0) center no-repeat;
-  min-width: 32px;
-  min-height: 32px;
-}
-
-#downloads-indicator[disabled="true"] #downloads-indicator-icon{
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads.png"),
-                              64, 32, 96, 0) center no-repeat;
-  min-width: 32px;
-  min-height: 32px;
-}
-
-#downloads-indicator:not([disabled="true"]):hover:active #downloads-indicator-icon{
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads.png"),
-                              0, 32, 32, 0) center no-repeat;
+  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
+                              0, 384, 64, 320) center no-repeat;
+  background-size: 32px;
   min-width: 32px;
   min-height: 32px;
 }
 
 toolbar[iconsize="small"] #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads-small.png"),
-                              0, 24, 24, 0) center no-repeat;
-  min-width: 24px;
-  min-height: 24px;
-}
-
-toolbar[iconsize="small"] #downloads-indicator:not([disabled="true"]):hover  #downloads-indicator-icon{
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads-small.png"),
-                              24, 24, 48, 0) center no-repeat;
-  min-width: 24px;
-  min-height: 24px;
-}
-
-toolbar[iconsize="small"] #downloads-indicator[disabled="true"] #downloads-indicator-icon{
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads-small.png"),
-                              48, 24, 72, 0) center no-repeat;
-  min-width: 24px;
-  min-height: 24px;
-}
-
-toolbar[iconsize="small"] #downloads-indicator:not([disabled="true"]):hover:active #downloads-indicator-icon{
-  background: -moz-image-rect(url("chrome://browser/skin/icons/downloads-small.png"),
-                              0, 24, 24, 0) center no-repeat;
+  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
+                              0, 288, 48, 240) center no-repeat;
+  background-size: 24px;
   min-width: 24px;
   min-height: 24px;
 }

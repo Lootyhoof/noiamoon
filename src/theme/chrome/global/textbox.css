@@ -130,21 +130,20 @@ textbox[type=search][focused="true"]  {
 
 .textbox-search-clear {
   list-style-image: url(chrome://global/skin/icons/close.png);
-  -moz-image-region: rect(0, 16px, 16px, 0);
+  width: 16px;
 }
 
 .textbox-search-clear:not([disabled]) {
   cursor: default;
 }
 
-.textbox-search-clear:not([disabled]):hover ,
-.textbox-search-icon[searchbutton]:not([disabled]):hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
+.textbox-search-clear:not([disabled]):hover {
+  filter: saturate(150%) brightness(110%);
 }
 
-.textbox-search-clear:not([disabled]):hover:active ,
-.textbox-search-icon[searchbutton]:not([disabled]):hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
+.textbox-search-clear:not([disabled]):hover:active {
+  filter: brightness(75%);
+  transform: scale(.75);
 }
 
 /* ::::: textboxes inside toolbarpaletteitems ::::: */

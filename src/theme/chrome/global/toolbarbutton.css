@@ -71,18 +71,23 @@ toolbarbutton:-moz-lwtheme:not([disabled="true"]) {
 
 /* toolbarbutton menu */
 toolbarbutton:not(#appmenu-toolbar-button) .toolbarbutton-menu-dropmarker {
-  list-style-image:url(chrome://browser/skin/icons/dropmarker.png);
-  -moz-image-region: rect(0 10px 10px 0);
+  list-style-image:url("chrome://global/skin/icons/dropmarker.png");
+  -moz-image-region: auto;
   margin-left: 1px;
 }
 
-toolbarbutton:not(#appmenu-toolbar-button)[open="true"] .toolbarbutton-menu-dropmarker,
-toolbarbutton:not(#appmenu-toolbar-button):hover .toolbarbutton-menu-dropmarker{
-  -moz-image-region: rect(10px 10px 20px 0);
+toolbarbutton:not(#appmenu-toolbar-button) .toolbarbutton-menu-dropmarker > .dropmarker-icon {
+  width: 10px;
 }
 
-.toolbarbutton-menu-dropmarker[disabled="true"] {
-  -moz-image-region: rect(20px 10px 30px 0) !important;
+toolbarbutton:not(#appmenu-toolbar-button)[open="true"] .toolbarbutton-menu-dropmarker > .dropmarker-icon,
+toolbarbutton:not(#appmenu-toolbar-button):hover .toolbarbutton-menu-dropmarker > .dropmarker-icon {
+  filter: saturate(150%) brightness(110%);
+}
+
+.toolbarbutton-menu-dropmarker[disabled="true"] > .dropmarker-icon {
+  filter: grayscale(1);
+  opacity: .3;
 }
 
 /* toolbarbutton menu-button */

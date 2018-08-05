@@ -67,7 +67,10 @@ menuitem[buttonType=clear],menuitem[command=cmd_closeWindow],menu[anonid=delete]
 menuitem[oncommand="BrowserTryToCloseWindow()"],menuitem[oncommand="inspector.exit();"],
 menuitem[oncommand="BrowserCloseTabOrWindow()"],
 menuitem[oncommand="viewer.cmdDeleteSelectedProperty()"],
-#menu_close , #context_closeTabsToTheEnd {
+#menu_close , #context_closeTabsToTheEnd,
+#tm-closeAllTabs,#tm-content-closetab,.popup-notification-closeitem,
+menuitem[oncommand$="tabbrowser.removeAllTabsBut(tabbrowser.mContextTab);"],
+menuitem[oncommand="window.extensions.mook.minimizetotray.trayTurboClose();"] {
   list-style-image:url(chrome://global/skin/CuteMenus/delete.png);
 }
 
@@ -119,13 +122,6 @@ menuitem[oncommand="BrowserImport();"],
 menuitem[command="cmd_bm_import"],
 menuitem[oncommand="toImport();"] {
   list-style-image:url(chrome://global/skin/CuteMenus/import.png);
-}
-
-#tm-closeAllTabs,#tm-content-closetab,.popup-notification-closeitem,
-menuitem[oncommand$="tabbrowser.removeAllTabsBut(tabbrowser.mContextTab);"],
-menuitem[oncommand="window.extensions.mook.minimizetotray.trayTurboClose();"] {
-  list-style-image:url(chrome://global/skin/icons/close.png);
-  -moz-image-region: rect(0 16px 16px 0);
 }
 
 /* Edit Menu */
