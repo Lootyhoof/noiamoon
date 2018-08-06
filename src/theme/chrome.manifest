@@ -1,14 +1,11 @@
 skin	browser	noiamoon	chrome/browser/
 skin	communicator	noiamoon	chrome/communicator/
-skin	help	noiamoon	chrome/help/
 skin	global	noiamoon	chrome/global/
 skin	mozapps	noiamoon	chrome/mozapps/
-skin	reporter	noiamoon	chrome/reporter/
 
-skin   os_special	noiamoon	chrome/os_special/mac/	os=Darwin
-skin   os_special	noiamoon	chrome/os_special/linux/	os=Linux
-skin   os_special	noiamoon	chrome/os_special/XP/		os=WINNT osversion<6
-skin   os_special	noiamoon	chrome/os_special/aero/	os=WINNT osversion>=6
+skin	os	noiamoon	chrome/os/darwin/	os=Darwin
+skin	os	noiamoon	chrome/os/linux/	os=Linux
+skin	os	noiamoon	chrome/os/winnt/	os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
 override chrome://browser/skin/permissions/aboutPermissions.css chrome://browser/skin/preferences/aboutPermissions.css

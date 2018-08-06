@@ -25,7 +25,7 @@
   == Styles used by XUL tab-related elements.
   ======================================================================= */
 
-@import url(chrome://os_special/skin/tabbox.css);
+@import url(chrome://os/skin/tabbox.css);
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /* ::::: tabs ::::: */
