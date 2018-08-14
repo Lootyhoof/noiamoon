@@ -1,7 +1,16 @@
 @import url(chrome://os/skin/toolbar.css);
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-/* toolbar & menubar */
+/* ::::: toolbox ::::: */
+
+toolbox {
+  --toolbox-background: url(chrome://browser/skin/icons/Tool-background.png) top left repeat-x #B3B6BF;
+  border-bottom: 0px solid #808080;
+  background: var(--toolbox-background);
+  background-size: auto 100%;
+}
+
+/* ::::: toolbar & menubar ::::: */
 
 menubar {
   background: linear-gradient(#fff,#DADCE4);
@@ -33,13 +42,15 @@ menubar {
   border-bottom: 1px solid #808080;
 }
 
-/* lightweight theme */
+/* ::::: lightweight theme ::::: */
+
 toolbox:-moz-lwtheme,
 toolbar:-moz-lwtheme {
   background: none;
 }
 
-/* toolbar decorations */
+/* ::::: toolbar decorations ::::: */
+
 toolbarseparator {
   width: 2px;
   margin: 2px 0.2em;

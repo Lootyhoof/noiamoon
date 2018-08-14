@@ -3108,11 +3108,11 @@ listbox[disabled="true"],
 
 #privateBrowsingItem,#appmenu_privateBrowsing,
 #appmenu_newPrivateWindow {
-  list-style-image:url(chrome://browser/skin/icons/Privacy-16-dark.png) !important;
+  list-style-image:url(chrome://browser/skin/Privacy-16-dark.png) !important;
 }
 
 #errorPageContainer {
-  background-image: url(chrome://browser/skin/icons/Privacy-48-dark.png) !important;
+  background-image: url(chrome://browser/skin/Privacy-48-dark.png) !important;
 }
 
 /* Video downloadhelper */

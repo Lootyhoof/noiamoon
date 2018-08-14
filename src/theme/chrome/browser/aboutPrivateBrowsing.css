@@ -1,5 +1,5 @@
 #errorPageContainer {
-  background-image: url(chrome://browser/skin/icons/Privacy-48.png);
+  background-image: url(chrome://browser/skin/Privacy-48.png);
 }
 
 body.normal > #errorPageContainer {

@@ -228,7 +228,7 @@ richlistitem[type="download"]:last-child {
 }
 
 #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
+  background: -moz-image-rect(var(--toolbarbutton-large-image),
                               0, 384, 64, 320) center no-repeat;
   background-size: 32px;
   min-width: 32px;
@@ -236,7 +236,7 @@ richlistitem[type="download"]:last-child {
 }
 
 toolbar[iconsize="small"] #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
+  background: -moz-image-rect(var(--toolbarbutton-small-image),
                               0, 288, 48, 240) center no-repeat;
   background-size: 24px;
   min-width: 24px;

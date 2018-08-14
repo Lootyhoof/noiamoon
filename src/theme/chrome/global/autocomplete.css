@@ -10,8 +10,8 @@ textbox[nomatch=true][highlightnonmatches=true] {
   color: #f00;
 }
 
-textbox:not(.padded) {
-  padding: 0;
+textbox:not(.padded) .textbox-input-box {
+  margin: 0 3px;
 }
 
 .textbox-input-box {
