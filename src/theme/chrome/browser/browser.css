@@ -25,7 +25,6 @@
   --toolbarbutton-small-image: url("chrome://browser/skin/Toolbar-small.png");
 
   --tabs-toolbar-background: url("chrome://browser/skin/icons/Tabbar-background.png");
-  --titlebar-background: linear-gradient(to bottom,#f4f4f9,#e8e8ec);
   --toolbar-menubar-background: linear-gradient(#E5E6E8,#BABDC5);
   --toolbox-tabsintitlebar-background: url(chrome://browser/skin/icons/Tool-background4.png) 0% 50% repeat-x #CDCFD5;
 }
@@ -164,59 +163,6 @@ list-style-image: url(chrome://global/skin/CuteMenus/bookmarkbar.png);
 #appmenu_unsortedBookmarks,#BMB_unsortedBookmarks {
   list-style-image: url(chrome://browser/skin/places/unsortedBookmarks.png);
   -moz-image-region: auto;
-}
-
-/* ::::: titlebar ::::: */
-
-#titlebar {
-  -moz-appearance: none;
-  min-height: 26px;
-  margin-top: 4px;
-  background-image: var(--titlebar-background);
-}
-
-#main-window[tabsintitlebar] #titlebar {
-  margin-top: 0;
-}
-
-@media not all and (-moz-windows-compositor) {
-  @media (-moz-windows-theme: aero) {
-	#main-window[tabsintitlebar] #titlebar {
-      margin-top: 5px !important;
-    }
-  }
-}
-  
-#titlebar:-moz-lwtheme {
-  --titlebar-background: transparent;
-}
-
-#titlebar:-moz-lwtheme {
-  visibility: hidden;
-}
-
-#titlebar-content:-moz-lwtheme {
-  visibility: visible;
-}
-
-#main-window:not([sizemode="maximized"]) > #titlebar {
-  margin-top: -1px;
-  border-top: 2px solid;
-  -moz-border-top-colors: #fff #000;
-}
-
-#main-window:not([sizemode="maximized"])[tabsontop=true] > #titlebar {
-  height: 30px;
-}
-
-#main-window[sizemode="maximized"] #titlebar-spacer {
-  height: 1px;
-  max-height: 1px;
-}
-
-#titlebar-spacer {
-  height: 12px;
-  max-height: 12px;
 }
 
 /* ::::: bookmark buttons ::::: */

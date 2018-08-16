@@ -1,10 +1,13 @@
 @import url(chrome://browser/skin/browser-nonLinux.css);
 
 :root {
-  --appmenu-background: transparent;
+  --appmenu-background-color: #0b86e0;
+  --appmenu-background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.4) 30%, rgba(255,255,255,0) 50%);
   --appmenu-border-color: rgba(0,0,0,.5);
-  --appmenu-border-radius: 4px;
-  --appmenu-box-shadow: 0 0 2px rgba(255, 255, 255, 0.4) inset, 0 4px 6px rgba(255, 255, 255, 0.4) inset, 0 11px 0 -2px rgba(255, 255, 255, 0.2) inset, 0 13px 8px rgba(255, 255, 255, 0.1) inset, 1px 2px 4px rgba(0, 0, 0, 0.3);
+  --appmenu-border-radius: 6px;
+  --appmenu-box-shadow: 0 0 5px rgba(255,255,255,.5) inset;
+  
+  --titlebar-background: linear-gradient(to bottom,#f4f4f9,#e8e8ec);
 }
 
 #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"]{
@@ -39,125 +42,55 @@
 /* ::::: app menu button ::::: */
 
 #appmenu-button {
-  min-height: 22px;
-  max-height: 22px;
-  height: 22px;
-  color: #000;
-  margin-top: 1px;
-  margin-left: 1px;
-  padding: 6px 8px;
+  min-height: 20px;
+  min-width: 55px;
+  color: #fff;
+  text-shadow: 0 0 2px #333;
+  margin: 0 1px;
+  padding: 0 6px;
+  list-style-image: url("chrome://branding/content/icon16.png");
   border: 1px solid var(--appmenu-border-color);
-  border-radius: var(--appmenu-border-radius);
-  background: var(--appmenu-background);
+  border-top: 0;
+  border-radius: 0 0 var(--appmenu-border-radius) var(--appmenu-border-radius);
+  background-color: var(--appmenu-background-color);
+  background-image: var(--appmenu-background-image);
   background-clip: padding-box;
   box-shadow: var(--appmenu-box-shadow);
-  text-shadow: none;
 }
 
-#appmenu-button:hover:not([disabled="true"]) {
-  --appmenu-background: url(chrome://global/skin/button/body-hover.png) top left #b8e9fe;
-  color: #000;
+#appmenu-button:hover:not(:active):not([open]) {
+  --appmenu-background-color: #1f9afd;
 }
 
-#main-window[privatebrowsingmode=temporary] #appmenu-button ,
-#main-window[privatebrowsingmode=temporary] #TabsToolbar #appmenu-button{
-  --appmenu-background: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%);
+#appmenu-button:hover:active,
+#appmenu-button[open] {
+  --appmenu-background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2) 10%, transparent 60%);
+  --appmenu-box-shadow: 0 0 4px rgba(0,0,0,.3) inset;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button {
+  --appmenu-background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%);
   --appmenu-border-color: rgba(43,8,65,.9);
-  color: #fff;  
 }
 
-#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]),
-#main-window[privatebrowsingmode=temporary] #TabsToolbar #appmenu-button:hover:not(:active):not([open])  {
-  --appmenu-background: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%), radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)), linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%);
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]) {
+  --appmenu-background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%), radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)), linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%);
   --appmenu-border-color: rgba(43,8,65,.9);
 }
 
 #main-window[privatebrowsingmode=temporary] #appmenu-button:hover:active,
-#main-window[privatebrowsingmode=temporary] #appmenu-button[open],
-#main-window[privatebrowsingmode=temporary] #TabsToolbar  #appmenu-button:hover:active,
-#main-window[privatebrowsingmode=temporary] #TabsToolbar  #appmenu-button[open] {
-  --appmenu-background: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%);
+#main-window[privatebrowsingmode=temporary] #appmenu-button[open] {
+  --appmenu-background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%);
 }
 
-#main-window[sizemode=normal] #appmenu-button {
-  margin-top: 2px !important;
-}
-
-#appmenu-button > .button-box {
-  width: 30px;
-  height: 22px;
-  min-height: 10px;
-  background: transparent;
+#appmenu-button > .button-box > .box-inherit > .button-text {
+  display: none;
 }
 
 #appmenu-button > .button-box > .button-menu-dropmarker {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
-  margin: 0 0 0 6px;
+  list-style-image: url("chrome://browser/skin/appmenu-dropmarker.png");
+  margin: 0 0 0 4px;
   background: none;
-}
-
-#main-window[tabsintitlebar] #appmenu-button-container {
-  padding-top: 4px;
-}
-
-#appmenu-button-container {
-  margin-bottom: -25px;
-}
-
-#main-window[sizemode="maximized"] #appmenu-button {
-  margin-top:-3px;
-}
-
-#main-window:not([tabsintitlebar])[sizemode="maximized"] #appmenu-button {
-  margin-top:-2px;
-}
-
-#main-window:not([sizemode="maximized"]) #appmenu-button {
-  margin-top:6px;
-}
-
-@media not all and (-moz-windows-compositor) {
-  #main-window:-moz-lwtheme[tabsontop="false"][sizemode="maximized"] #appmenu-button {
-    margin-top: -5px !important;
-  }
-  
-	#main-window[tabsintitlebar] #appmenu-button-container {
-		margin-top: -6px;
-	}
-  
-	#main-window[sizemode="maximized"][tabsontop=false] > #titlebar > #titlebar-content > #appmenu-button-container {
-		margin-top: 4px;
-	}
-  
-	#main-window[sizemode="maximized"][tabsontop=true] #appmenu-button {
-		margin-top:-1px;
-  }
-
-	#main-window:not([sizemode="maximized"])[tabsontop=true] > #titlebar > #titlebar-content > #appmenu-button-container {
-		margin-top: -2px;
-	}
-  
-	#main-window:not([sizemode="maximized"])[tabsontop=false] > #titlebar > #titlebar-content > #appmenu-button-container {
-		margin-top: -5px;
-	}
-}
-
-#appmenu-button > menupopup > menuitem {
-  padding-right: 16px;
-}
-
-#appmenu-button .button-text { 
-  margin-top: -3px; 
-}
-
-#main-window[privatebrowsingmode=temporary] #appmenu-button> .button-box > .button-menu-dropmarker {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png");
-}
-
-#appmenu-button dropmarker { 
-  margin-top: -3px  !important; 
-  margin-right: 0px  !important;  
-  margin-left: 2px !important;
 }
 
 /* ::::: titlebar ::::: */
@@ -180,6 +113,57 @@
 
 .titlebar-placeholder[type="caption-buttons"] {
   margin-left: 5px;
+}
+
+#titlebar {
+  -moz-appearance: none;
+  min-height: 26px;
+  margin-top: 4px;
+  background-image: var(--titlebar-background);
+}
+
+#main-window[tabsintitlebar] #titlebar {
+  margin-top: 0px;
+}
+
+@media not all and (-moz-windows-compositor) {
+  @media (-moz-windows-theme: aero) {
+	#main-window[tabsintitlebar] #titlebar {
+      margin-top: 5px !important;
+    }
+  }
+}
+  
+#titlebar:-moz-lwtheme {
+  --titlebar-background: transparent;
+}
+
+#titlebar:-moz-lwtheme {
+  visibility: hidden;
+}
+
+#titlebar-content:-moz-lwtheme {
+  visibility: visible;
+}
+
+#main-window:not([sizemode="maximized"]) > #titlebar {
+  margin-top: -1px;
+  border-top: 2px solid;
+  -moz-border-top-colors: #fff #000;
+}
+
+#main-window:not([sizemode="maximized"])[tabsontop=true] > #titlebar {
+  height: 30px;
+}
+
+#main-window[sizemode="maximized"] #titlebar-spacer {
+  height: 1px;
+  max-height: 1px;
+}
+
+#titlebar-spacer {
+  height: 12px;
+  max-height: 12px;
 }
 
 /* titlebar command buttons */
@@ -281,6 +265,16 @@
 
 #titlebar-buttonbox:-moz-locale-dir(rtl) {
   margin-left: 7px;
+}
+
+@media (-moz-windows-compositor) {
+  #main-window[tabsintitlebar] #titlebar {
+    margin-top: 2px;
+  }
+  
+  #main-window[sizemode=maximized][tabsintitlebar] #TabsToolbar {
+    margin-top: 4px;
+  }
 }
 
 @media not all and (-moz-windows-compositor) {
