@@ -1,5 +1,9 @@
 @import url(chrome://browser/skin/browser-nonLinux.css);
 
+:root {
+  --toolbox-background: linear-gradient(#989ca8, #fefffe);
+}
+
 .tabbrowser-strip > .tabbrowser-tabs {
   background: #a8a8a8;
 }
@@ -10,7 +14,7 @@ window:not([active=true]) .tabbrowser-strip > .tabbrowser-tabs {
 
 #navigator-toolbox {
   -moz-appearance: none !important;
-  background-image: url("chrome://browser/skin/icons/Tool-background.png");
+  background-image: var(--toolbox-background);
   background-position: top left;
   background-repeat: repeat-x;
   background-color: #FFFFFF;

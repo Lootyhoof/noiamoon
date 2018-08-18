@@ -9,9 +9,10 @@
 }
 
 .wizard-header {
+  --toolbox-background: linear-gradient(#989ca8, #fefffe);
   color: #000;
   border-bottom: 2px groove #d4d0c8;
-  background: url(chrome://browser/skin/icons/Tool-background.png) top left repeat-x #dadce4;
+  background: var(--toolbox-background);
   background-size: auto 100%;
 }
 

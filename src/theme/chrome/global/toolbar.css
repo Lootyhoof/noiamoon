@@ -4,7 +4,7 @@
 /* ::::: toolbox ::::: */
 
 toolbox {
-  --toolbox-background: url(chrome://browser/skin/icons/Tool-background.png) top left repeat-x #B3B6BF;
+  --toolbox-background: linear-gradient(#989ca8, #fefffe);
   border-bottom: 0px solid #808080;
   background: var(--toolbox-background);
   background-size: auto 100%;
