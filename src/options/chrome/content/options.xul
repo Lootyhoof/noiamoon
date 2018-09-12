@@ -44,16 +44,6 @@
 		<preference id="personalbuttonRadio" name="extensions.noiamoonop.personalbutton" type="bool" instantApply="true"/>
 		<preference id="toolbarbuttonRadio" name="extensions.noiamoonop.toolbarbutton" type="bool" instantApply="true"/>
 	</preferences>
-	<tabbox id="nftabbox">
-	<tabs id="nftabboxmain">
-
-	<tab label="&display;"   style="height:20px;" id="nftbdisplay" class="nftabsmain"/>
-	<tab label="&fixes;"    style="height:20px;" id="nftbfixes" class="nftabsmain"/>
-	<tab label="Personas"    style="height:20px;" id="nftbpersonas" class="nftabsmain"/>
-	</tabs>
-	<tabpanels style="border:none;">	
-	
-	<tabpanel id="panedisplay" orient="vertical">
 	<vbox>	
 			<tabbox id="nftabbox2">
 			<tabs>
@@ -276,46 +266,5 @@
 			</tabpanels>
 		</tabbox>
 	</vbox>
-	</tabpanel>
-	
-	<tabpanel id="paneFixes" orient="vertical">
-			<vbox>	
-			<groupbox>
-				<label value="&fix;" style="font-weight:bold;"/>
-						<hbox align="center">							
-						<checkbox label="&movable;" preference="movableRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'movable'); else noiamoonop.options.radioChange(false,'movable');"/>
-						</hbox>							
-			</groupbox>
-			<groupbox align="center">
-						<label value="&Restart;"
-						style="color: #F00;font-size:90%;font-weight:bold;" class="warning"/>
-						<label value="&fixwarning;"
-						style="color: #F00;font-size:90%;font-weight:bold;" class="warning"/>
-			</groupbox>
-			</vbox>	
-	</tabpanel>
-	
-	<tabpanel id="panePersonas" orient="vertical">
-	<vbox>
-			<groupbox>
-						<label value="&persona;"  style="margin-top:4px;" onclick="noiamoonop.options.tOpen('chrome://noiamoonoptions/content/personas.html')" class="text-link"/>
-						
-						<label value=""/>	
-						
-						<hbox align="center">							
-						<checkbox label="&Personaenable;" preference="noiamoonpersona" oncommand="alert('&restartPM;')" tooltiptext="&tippersona;" />
-						</hbox>							
-			</groupbox>
-			<groupbox align="center">
-						<label value="&tippersona;"
-						style="color: #F00;font-size:90%;font-weight:bold;" class="warning"/>
-						<label value="&Restart;"
-						style="color: #F00;font-size:90%;font-weight:bold;" class="warning"/>
-			</groupbox>
-	</vbox>	
-	</tabpanel>
-
-	</tabpanels>
-  </tabbox>
   </prefpane>
 </prefwindow>

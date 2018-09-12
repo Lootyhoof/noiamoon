@@ -4,7 +4,6 @@
 <!ENTITY Disable "Off">
 <!ENTITY reset "Restore Noia Moon default settings">
 <!ENTITY Alltheme "Themes">
-<!ENTITY persona "How to use Personas with Noia Moon (grey themes and blue theme only)">
 <!ENTITY DarkEnable "Black theme">
 <!ENTITY DarkDisable "Off">
 <!ENTITY tipdark "Full dark theme. Personas don't work with theme">
@@ -104,18 +103,11 @@
 <!ENTITY help "Help">
 <!ENTITY backForwardMenu.tooltip "Recent pages">
 <!ENTITY main "Main">
-<!ENTITY display "Display">
 <!ENTITY Advanced "Advanced">
 <!ENTITY Advanced2 "Advanced 2">
 <!ENTITY icons "Icons">
 <!ENTITY Warmicons "Noia Warm Icons">
 <!ENTITY PaleMoon "Pale Moon options modifications">
-<!ENTITY fixes "Fixes">
-<!ENTITY movable "Movable Pale Moon Button and UI fixer add-ons.">
-<!ENTITY fix "Fixes only for Windows XP and Windows classic">
-<!ENTITY fixwarning "Use these fixes only if the add-on is enabled and with the mentioned OS.">
-<!ENTITY Personaenable "Persona enable">
-<!ENTITY tippersona "See the help file before using this option">
 <!ENTITY background "Toolbar buttons display when hovering">
 <!ENTITY backgroundEnable "With background">
 <!ENTITY plain "No effect for toolbars">

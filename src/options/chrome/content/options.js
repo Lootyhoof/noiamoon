@@ -112,7 +112,6 @@ resetnf: function() {
 		this.prefs.clearUserPref("personalbutton");
 		this.prefs.clearUserPref("toolbarbutton");
 		this.prefs.clearUserPref("navbarbutton");
-		this.prefs.clearUserPref("movable");
 		this.prefs.clearUserPref("plain");
 		this.prefs.clearUserPref("background");	
 		this.prefs.clearUserPref("fix");
@@ -735,9 +734,6 @@ applyCSS: function(which,enable){
     }
 		if (which == "navbarbutton"){
         applyIt("navbar.css");
-    }
-		if (which == "movable"){
-        applyIt("movable.css");
     }
 		if (which == "fix"){
         applyIt("fix.css");

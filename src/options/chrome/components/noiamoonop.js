@@ -306,9 +306,6 @@ observe: function(aSubject,aTopic,aData){
 	if (prefs.getBoolPref("navbarbutton") == true){
         applyIt("navbar.css");
     }
-	if (prefs.getBoolPref("movable") == true){
-        applyIt("movable.css");
-    }
 	if (prefs.getBoolPref("fix") == true){
         applyIt("fix.css");
     }
