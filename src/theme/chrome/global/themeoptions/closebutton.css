@@ -1,0 +1,21 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.close-icon {
+  list-style-image: url("chrome://global/skin/themeoptions/icons/close-blue.png");
+  -moz-image-region: rect(0px 32px 32px 0px);
+}
+
+.close-icon:hover {
+  filter: none;
+  -moz-image-region: rect(0px 64px 32px 32px);
+}
+
+.close-icon:hover:active {
+  filter: none;
+  -moz-image-region: rect(0px 96px 32px 64px);
+}
+
+.close-icon[disabled=true] {
+  filter: none;
+  -moz-image-region: rect(0px 128px 32px 96px);
+}

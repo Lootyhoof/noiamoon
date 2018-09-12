@@ -1,0 +1,9 @@
+/* Grey theme only */
+
+#TabsToolbar{
+  border: none !important;
+}
+
+#main-window[sizemode=normal] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
+  padding-top: 1px !important;
+}

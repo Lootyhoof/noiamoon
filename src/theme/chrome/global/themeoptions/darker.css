@@ -1,0 +1,14 @@
+#main-window:not(:-moz-lwtheme):not([tabsintitlebar])  #navigator-toolbox {
+  background: url(chrome://browser/skin/icons/Tool-background.png) top left repeat-x #B3B6BF !important;
+  background-size: auto 130% !important;
+}
+
+#main-window:not(:-moz-lwtheme):not([tabsintitlebar]) {
+	background: url("chrome://browser/skin/icons/titlebar2.png") #ABAEB8 !important;
+}
+
+#main-window:not(:-moz-lwtheme)[tabsintitlebar] #navigator-toolbox {
+  border-bottom: 0px solid #808080;
+  background: url(chrome://browser/skin/icons/Tool-background4.png) top left repeat-x #CDCFD5 !important;
+  background-size: auto 100% !important;
+}

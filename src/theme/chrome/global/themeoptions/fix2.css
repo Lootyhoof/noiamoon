@@ -1,0 +1,19 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url(http://www.w3.org/1999/xhtml); 
+
+/* Force color: other add-ons */
+
+#foxyproxyoptions2 html|a ,
+#foxTab_options_window label[value="Getting Started"]  {
+  color: #0066CC !important;
+} 
+
+
+
+
+
+
+
+
+

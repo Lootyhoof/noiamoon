@@ -1,0 +1,11 @@
+#main-window:not(:-moz-lwtheme):not([tabsintitlebar]),
+#main-window:not(:-moz-lwtheme):not([tabsintitlebar]) #titlebar {
+  -moz-appearance:-moz-win-borderless-glass;
+  background-image: url("chrome://browser/skin/icons/Tabbar-background-top.png") !important;
+
+}
+
+#main-window:not(:-moz-lwtheme) toolbox {
+  border-top: 0px solid #808080 !important;
+}
+

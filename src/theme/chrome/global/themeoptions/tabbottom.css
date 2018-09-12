@@ -1,0 +1,49 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#main-window:not([tabsontop="true"]) #TabsToolbar {
+  position: fixed; 
+  left: 0px;
+  right: 0px;
+  top: auto; 
+  bottom: 0px !important;
+  max-height: 25px !important;
+  height: 25px !important;
+}
+
+#main-window:not([tabsontop="true"]) #addon-bar {
+  margin-bottom: 24px !important;
+  max-height: 25px !important;
+  height: 25px !important;
+}
+
+#main-window:not([tabsontop="true"]) #tabbrowser-tabs {
+  width:95% !important;
+  left:0px;
+  right:0px;
+}
+
+#main-window:not([tabsontop="true"]) .tabs-closebutton,
+#main-window:not([tabsontop="true"]) #tabview-button,
+#main-window:not([tabsontop="true"]) .tabs-alltabs-button {
+  display: none !important;
+}
+
+#main-window:not([tabsontop="true"]):not([sizemode="fullscreen"]) #statusbar-display {
+  position:fixed!important; 
+  bottom: 25px !important;
+}
+
+#main-window:not([tabsontop="true"]) #FindToolbar {
+  margin-bottom: 25px !important;
+  padding: 0px !important;
+  border-top-width: 0px !important;
+  border-top: 1px solid #808080 !important;
+}
+
+#main-window:not([tabsontop="true"]) #FindToolbar:not([hidden]) ~ #addon-bar {
+  margin-top: -25px !important;
+}
+
+#main-window:not([tabsontop="true"]) #colorfulTabsStack {
+  display: none !important; 
+}

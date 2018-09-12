@@ -1,0 +1,10 @@
+::-moz-selection {
+
+/* the background color of the highlight */
+   background: #00ffff !important; 
+
+
+/* the color of the text within the highlight */  
+   color: #000 !important; 
+
+}

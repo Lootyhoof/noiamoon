@@ -1,0 +1,270 @@
+#navigator-toolbox[tabsontop=true] > #nav-bar {
+  border-top: none !important;
+}
+
+#main-window[sizemode="normal"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+  border-bottom: 5px solid !important;
+  -moz-border-bottom-colors: #808080 #89B3DB #89B3DB #89B3DB #89B3DB #89B3DB  !important;
+}
+
+#main-window[sizemode="maximized"]:not([tabsintitlebar]) #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {
+  border-bottom: 5px solid !important;
+  -moz-border-bottom-colors: #808080 #89B3DB #89B3DB #89B3DB #89B3DB #89B3DB  !important;
+}
+
+#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) {
+  border-bottom: 5px solid !important;
+  -moz-border-bottom-colors: #808080 #89B3DB #89B3DB #89B3DB #89B3DB #89B3DB  !important;
+}
+
+#main-window[nfstrip="true"][nfrdtab="false"] #TabsToolbar:not([multibar]) .tabbrowser-tab,
+#TabsToolbar:not([multibar]) .tabbrowser-tab[style*="background-image"] {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tab {
+  margin-bottom: -2px !important;
+}
+
+#main-window[tabsintitlebar] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tab {
+  margin-top: 3px !important;
+}
+
+#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tab[selected="true"] {
+  border-bottom: 0px solid !important;
+  background: #88B3DD !important;
+}
+ 
+#main-window[nfsolid="false"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#main-window[nfsolid="false"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) {
+  background: rgba(255,255,255,0.7) !important; 
+}
+ 
+#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tab:not([selected="true"]):hover {
+  background: #9EBEDE !important; 
+}
+
+@media all and (-moz-windows-compositor) {
+  #main-window[tabsintitlebar]:not([multibar]) #TabsToolbar {
+    margin-top: 0px !important;
+  }
+
+  #main-window[tabsintitlebar]:not([inFullscreen])[nfnormal="true"]:not([multibar]) #TabsToolbar {
+    margin-top: -27px !important;
+  }
+
+  #main-window[tabsintitlebar] #appmenu-button {
+    margin-top: -4px !important;
+  }
+
+  #main-window[inFullscreen] .tabs-closebutton {
+    margin-top: 0px !important;
+  }
+   
+   #main-window[inFullscreen] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+    margin-top: 0px !important;
+  }
+   
+   #TabsToolbar:not([multibar]) .tabs-alltabs-button {
+    margin-top: 3px !important;
+  }
+}
+
+@media not all and (-moz-windows-compositor) {
+  #main-window[tabsintitlebar] #TabsToolbar {
+    margin-top: 0px !important;
+  }
+
+  #main-window[tabsintitlebar]:not([inFullscreen])[nfnormal="true"]:not([multibar]) #TabsToolbar {
+    margin-top: -27px !important;
+  }
+
+  #main-window[tabsintitlebar] #appmenu-button {
+    margin-top: -2px !important;
+  }
+
+  #TabsToolbar .tabs-closebutton {
+    margin-top: 0px !important;
+  }
+
+  #main-window[inFullscreen] .tabs-closebutton {
+    margin-top: 0px !important;
+  }
+
+  #TabsToolbar:not([multibar]) #tabview-button {
+    margin-top: -1px !important;
+  }
+
+  #main-window[tabsintitlebar] #TabsToolbar:not([multibar]) #tabview-button {
+    margin-top: -4px !important;
+  }
+
+  #TabsToolbar:not([multibar]) #new-tab-button {
+    margin-bottom: 4px !important;
+  }
+
+  #TabsToolbar:not([multibar]) .tabs-alltabs-button {
+    margin-top: 3px !important;
+  }
+}
+
+#main-window[tabsontop=true] #TabsToolbar #appmenu-button {
+  margin-top: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#main-window[tabsintitlebar] #TabsToolbar #appmenu-button {
+  margin-top: 1px !important;
+  margin-bottom: -1px !important;
+}
+
+#main-window[tabsontop=false] #TabsToolbar #appmenu-button {
+  margin-top: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+#TabsToolbar:not([multibar]) #tabview-button {
+  margin-top: 1px !important;
+  margin-bottom: -2px !important;
+}
+
+#TabsToolbar[inFullscreen]:not([multibar]) #tabview-button {
+  margin-top: 2px !important;
+  margin-bottom: 0px !important;
+}
+
+#main-window[tabsintitlebar] #TabsToolbar:not([multibar]) #tabview-button {
+  margin-top: -1px !important;
+  margin-bottom: -2px !important;
+}
+
+#TabsToolbar[multibar] #tabview-button {
+  margin-top: 0px !important;
+}
+
+#TabsToolbar #new-tab-button {
+  margin-bottom: 2px !important;
+}
+
+#colorfulTabsStack {
+  display: none !important;
+}
+
+tab.tabbrowser-tab .tab-text.tab-label {
+  text-shadow: none !important;
+}
+
+#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tab[selected="true"]  .tab-close-button {
+  margin-top: 0px !important;
+}
+
+#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tab[selected="true"] .tab-icon-image {
+  margin-top: -2px !important;
+}
+
+@media all and (-moz-windows-compositor) {
+  #main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #titlebar-buttonbox {
+    margin-bottom: -24px !important;
+    margin-top: 9px !important;
+  }
+  #main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #appmenu-button {
+    margin-top: 8px !important;
+  }
+  #main-window[tabsalwaysintitlebar][nfnoline="true"][tabsontop=true][sizemode="normal"] #titlebar-buttonbox {
+    margin-bottom: -24px !important;
+    margin-top: 8px !important;
+  }
+  #main-window[tabsalwaysintitlebar][nfnoline="true"][tabsontop=true][sizemode="normal"] #appmenu-button {
+    margin-top: 7px !important;
+  }
+}
+
+@media not all and (-moz-windows-compositor) {
+  #main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #appmenu-button {
+    margin-top: 10px !important;
+  }
+  #main-window[tabsalwaysintitlebar][tabsontop=true][sizemode="normal"] #titlebar-buttonbox {
+    margin-bottom: -24px !important;
+    margin-top: 8px !important;
+  }
+  #main-window[tabsalwaysintitlebar][nfnoline="true"][tabsontop=true][sizemode="normal"] #appmenu-button {
+    margin-top: 9px !important;
+  }
+  #main-window[tabsalwaysintitlebar][nfnoline="true"][tabsontop=true][sizemode="normal"] #titlebar-buttonbox {
+    margin-bottom: -24px !important;
+    margin-top: 7px !important;
+  }
+}
+
+
+/* Fix for App menu button / UI fixer / Movable Firefox Button */
+
+#nav-bar #appmenu-button {
+ margin-top: 6px !important;
+ margin-bottom: 6px !important;
+}
+
+#nav-bar #fixer-menu-button > #appmenu-button,
+#nav-bar #appmenu-button { 
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 35px !important;
+  max-height: 35px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#nav-bar #fixer-menu-button > #appmenu-button dropmarker:before,
+#nav-bar #appmenu-button dropmarker:before { 
+  content: "" !important;
+}
+	
+toolbar:not([mode="text"]) #fixer-menu-button > #appmenu-button > .button-box .button-icon,
+toolbar:not([mode="text"]) #appmenu-button > .button-box .button-icon {
+	list-style-image: none !important;
+}
+
+#nav-bar #appmenu-button {
+  background: url("chrome://browser/skin/icons/firefox.png")  !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+}
+
+#nav-bar[iconsize="small"] #fixer-menu-button > #appmenu-button,
+#nav-bar[iconsize="small"] #appmenu-button {
+  background: url("chrome://browser/skin/icons/firefox24.png")  !important;
+  height: 24px !important;
+  width: 24px !important;
+  margin-bottom: 2px !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+}
+
+toolbar:not(#nav-bar):not(#TabsToolbar) #appmenu-button { 
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: -11px !important;
+  margin-bottom: 2px !important;
+  height: 32px !important;
+  max-height: 32px !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: url("chrome://browser/skin/icons/firefox16.png")  !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+}
+
+toolbar:not(#nav-bar):not(#TabsToolbar) #fixer-menu-button > #appmenu-button dropmarker:before,
+toolbar:not(#nav-bar):not(#TabsToolbar) #appmenu-button dropmarker:before { 
+  content: "" !important;
+}
+
+#nav-bar[mode="full"] #fixer-menu-button > #appmenu-button,
+#nav-bar[mode="full"] #appmenu-button  {
+  margin-top: 15px !important;
+}
+
+#main-window[nfdarwin="true"][inFullscreen] ~ #TabsToolbar .tabs-closebutton {
+  margin-top: 4px !important;
+}

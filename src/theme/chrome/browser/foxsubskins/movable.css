@@ -1,8 +1,0 @@
-/* Fix for Movable Firefox Button & UI fixer - Windows XP & Windows classic*/
-
-@media not all and (-moz-windows-compositor) {
-  #main-window[sizemode=maximized]:not([tabsintitlebar]) #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
-    margin-top : -1px !important;
-  }
-}
-
