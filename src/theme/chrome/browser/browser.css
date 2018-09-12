@@ -11,9 +11,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 
-:root {
-  --addon-bar-background: url(chrome://browser/skin/icons/Statusbar-background.png) bottom left repeat-x #fdfdfe;
-  
+:root { 
   --nav-bar-border-top: none;
 
   --print-preview-toolbar-background: url(chrome://browser/skin/icons/Tool-background2.png);
@@ -24,9 +22,9 @@
   --toolbarbutton-large-image: url("chrome://browser/skin/Toolbar-large.png");
   --toolbarbutton-small-image: url("chrome://browser/skin/Toolbar-small.png");
 
-  --tabs-toolbar-background: url("chrome://browser/skin/icons/Tabbar-background.png");
+  --toolbar-alt-background: linear-gradient(#F6F7F7, #B7B9C5, #F6F7F7);
   --toolbar-menubar-background: linear-gradient(#E5E6E8,#BABDC5);
-  --toolbox-tabsintitlebar-background: url(chrome://browser/skin/icons/Tool-background4.png) 0% 50% repeat-x #CDCFD5;
+  --toolbox-tabsintitlebar-background: linear-gradient(#ACAFBA 40%, #F4F5F7 60%);
 }
 
 #main-window:not(:-moz-lwtheme):after {
@@ -1562,7 +1560,7 @@ tabpanels browser,
 /* Tabs */
 
 #TabsToolbar{ 
-	background-image: var(--tabs-toolbar-background);  /* For compatibility with Tab Mix Plus and Tab utilities: tabs bottom */  
+	background-image: var(--toolbar-alt-background);  /* For compatibility with Tab Mix Plus and Tab utilities: tabs bottom */  
 }
 
 #main-window[sizemode="normal"][inFullscreen]  #TabsToolbar:not([treestyletab-mode="vertical"]):not([orient="vertical"]),
@@ -1584,7 +1582,7 @@ tabpanels browser,
 
 #navigator-toolbox[tabsontop="false"] #TabsToolbar {
 	-moz-appearance:none;
-	background-image: var(--tabs-toolbar-background);
+	background-image: var(--toolbar-alt-background);
 }
 
 #navigator-toolbox[tabsontop="false"] .tabbrowser-tab {
@@ -1593,7 +1591,7 @@ tabpanels browser,
 
 #main-window[tabsintitlebar] #TabsToolbar{ 
 	-moz-appearance:none;
-	--tabs-toolbar-background: linear-gradient(to bottom,#f7f7f7 10%,#B9BAC6 50%,#eee);
+	--toolbar-alt-background: linear-gradient(to bottom,#f7f7f7 10%,#B9BAC6 50%,#eee);
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-left: 0px;
@@ -1613,7 +1611,6 @@ tabpanels browser,
 
 #main-window[sizemode="normal"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
 	-moz-appearance:none;
-	--tabs-toolbar-background: url("chrome://browser/skin/icons/Tabbar-background-top4.png");
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-left: 0px;
@@ -1628,12 +1625,15 @@ tabpanels browser,
 
 #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="false"] ~ #TabsToolbar {
 	-moz-appearance:none;
-	--tabs-toolbar-background: url("chrome://browser/skin/icons/Tabbar-background-top.png");
 }
 
 #main-window[tabsintitlebar] #titlebar {
 	padding: 5px 0px 0px 0px;
 	-moz-appearance: none;
+}
+
+#main-window[tabsontop="false"] #TabsToolbar {
+  border-top: 1px solid #808080;
 }
 
  /* Disable 1px line in add-on manager with tabs in titlebar */
@@ -2774,7 +2774,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 #addon-bar {
   border-top: 1px solid #808080;
   border-bottom: 1px solid #adaebb;
-  background: var(--addon-bar-background);
+  background: var(--toolbar-alt-background);
 }
 #status-bar {
   border: none !important;
