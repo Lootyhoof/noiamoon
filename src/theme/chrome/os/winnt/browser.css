@@ -265,15 +265,13 @@
   margin-left: 7px;
 }
 
-@media not all and (-moz-os-version: windows-win10) {
-  @media (-moz-windows-compositor) {
-    #main-window[tabsintitlebar] #titlebar {
-      margin-top: 2px;
-    }
-    
-    #main-window[sizemode=maximized][tabsintitlebar] #TabsToolbar {
-      margin-top: 4px;
-    }
+@media (-moz-windows-compositor) {
+  #main-window[tabsintitlebar] #titlebar {
+    margin-top: 2px;
+  }
+  
+  #main-window[sizemode=maximized][tabsintitlebar] #TabsToolbar {
+    margin-top: 4px;
   }
 }
 
