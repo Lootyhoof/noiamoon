@@ -97,7 +97,6 @@ resetnf: function() {
 		this.prefs.clearUserPref("solid");
 		this.prefs.clearUserPref("tabbottom");
 		this.prefs.clearUserPref("normal");
-		this.prefs.clearUserPref("tbnormal");
 		this.prefs.clearUserPref("darker");
 		this.prefs.clearUserPref("light");
 		this.prefs.clearUserPref("hide");
