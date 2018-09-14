@@ -1,9 +1,9 @@
 treechildren::-moz-tree-image(title, container, hover) {
-  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_open.png) !important;
 }
 
 treechildren::-moz-tree-image(title, open, hover) {
-  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_open.png) !important;
 }
 
 treechildren::-moz-tree-image(title, container, livemark, hover) {
@@ -19,7 +19,7 @@ treechildren::-moz-tree-image(title, javascript, hover) {
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks, open, hover) {
-  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_open.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar, hover) {
@@ -35,7 +35,7 @@ treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks, hover)
 }
 
 treechildren::-moz-tree-image(title, query, hover) {
-  list-style-image: url(chrome://browser/skin/w_icons/query.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/query.png) !important;
 }
 
 treechildren::-moz-tree-image(title, query, tagContainer, hover),
@@ -44,7 +44,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_Tags, hover) {
 }
 
 treechildren::-moz-tree-image(query, OrganizerQuery_Downloads, hover) {
-  list-style-image: url(chrome://browser/skin/w_icons/query_downloads.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/query_downloads.png) !important;
 }
 
 treechildren::-moz-tree-image(title, query, dayContainer, hover) {
@@ -60,20 +60,20 @@ treechildren::-moz-tree-image(title, query, OrganizerQuery_History, hover) {
 }
 
 .bookmark-item[container]:hover {
-  list-style-image: url(chrome://browser/skin/w_icons/folder_open.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_open.png) !important;
 }
 
 menuitem[command="Browser:ShowAllBookmarks"]:hover,
 menuitem[oncommand^="toOpenWindowByType('bookmarks:manager'"]:hover {
-  list-style-image: url(chrome://browser/skin/w_icons/bookmark-folder.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark-folder.png) !important;
 }
 
 .bookmark-item:not(#bookmarks-menu-button):hover {
-  list-style-image: url(chrome://browser/skin/w_icons/bookmark_item.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark_item.png) !important;
 }
 
 .bookmark-item[container][query]:hover {
-  list-style-image: url(chrome://browser/skin/w_icons/query.png) !important;
+  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/query.png) !important;
 }
 
 #context-bookmarklink,#context-bookmarkpage,#fileNewBookmark,
@@ -88,7 +88,7 @@ menuitem[oncommand="gContextMenu.addBookmarkForFrame();"]:hover,
 menuitem[oncommand="abhere.addBookmark(event)"]:hover,
 menuitem[oncommand="BookmarkThisTab();"]:hover,
 menuitem[oncommand="historyAddBookmarks();"]:hover {
- list-style-image: url(chrome://browser/skin/w_icons/bookmark_item.png) !important;
+ list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark_item.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) ,
