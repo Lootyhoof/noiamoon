@@ -10,10 +10,7 @@
 
 /* SCROLLBOX */
 #newtab-vertical-margin {
-  background-color: rgb(229,229,229);
-  background-image: url(chrome://browser/skin/newtab/noise.png),
-                    linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.2));
-  background-attachment: fixed;
+  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
 }
 
 /* UNDO */
@@ -53,16 +50,18 @@
   width: 16px;
   float: right;
   right: 0;
-  background-image: -moz-image-rect(url(chrome://global/skin/icons/close.png), 0, 16, 16, 0);
+  background-image: url(chrome://global/skin/icons/close.png);
+  background-size: 16px;
   background-color: transparent;
 }
 
 #newtab-undo-close-button:hover {
-  background-image: -moz-image-rect(url(chrome://global/skin/icons/close.png), 0, 32, 16, 16);
+  filter: saturate(150%) brightness(110%);
 }
 
 #newtab-undo-close-button:hover:active {
-  background-image: -moz-image-rect(url(chrome://global/skin/icons/close.png), 0, 48, 16, 32);
+  filter: brightness(75%);
+  transform: scale(.75);
 }
 
 /* TOGGLE */
@@ -249,7 +248,7 @@
   box-shadow: 0 1px 0 hsla(210,65%,9%,.02) inset,
               0 0 2px hsla(210,65%,9%,.1) inset,
               0 1px 0 hsla(0,0%,100%,.2);
-  border-radius: 2.5px 0 0 2.5px;
+  border-radius: 15pt 0 0 15pt;
 }
 
 #searchLogoContainer:not([hidden]) ~ #searchText {
@@ -257,7 +256,7 @@
 }
 
 #searchText:-moz-dir(rtl) {
-  border-radius: 0 2.5px 2.5px 0;
+  border-radius: 0 15pt 15pt 0;
 }
 
 #searchText:focus,
@@ -274,7 +273,7 @@
   border-inline-start: 1px solid transparent;
   box-shadow: 0 0 2px hsla(0,0%,100%,.5) inset,
               0 1px 0 hsla(0,0%,100%,.2);
-  border-radius: 0 2.5px 2.5px 0;
+  border-radius: 0 15pt 15pt 0;
   transition-property: border-color, box-shadow;
   transition-duration: 150ms;
 }
