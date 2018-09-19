@@ -2,19 +2,19 @@
 #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
 #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
 #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) {
-  background-image: url("chrome://browser/skin/icons/solid.png") !important;
+  --tab-background: url("chrome://browser/skin/icons/solid.png") !important;
   color: #000 !important;
 }
 
-#main-window[nfblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
-#main-window[nfblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
-#main-window[nfblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
-#main-window[nfblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover),
-#main-window[nflight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
-#main-window[nflight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
-#main-window[nflight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
-#main-window[nflight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) {
-  background: #f0f0f0 !important;
+#main-window[nmblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#main-window[nmblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#main-window[nmblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#main-window[nmblue="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover),
+#main-window[nmlight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#main-window[nmlight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#main-window[nmlight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
+#main-window[nmlight="true"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) {
+  --tab-background: linear-gradient(#f0f0f0,#f0f0f0) !important;
   color: #000 !important;
   box-shadow:
     0 0 2px rgba(255, 255, 255, 0.4) inset,
@@ -22,118 +22,4 @@
     0 11px 0 -2px rgba(255, 255, 255, 0.4) inset,
     0 13px 8px rgba(150, 150, 150, 0.3) inset, 
     1px 2px 4px rgba(0, 0, 0, 0.3) !important; 
-}
-
-#TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):hover ,
-#TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):hover ,
-#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):hover ,
-#TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):hover {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
-}
-
-#titlebar #appmenu-button,
-#TabsToolbar #appmenu-button,
-#TabsToolbar #fixer-menu-button > #appmenu-button{
-  background-image: url("chrome://browser/skin/icons/Tabbar-background-top4.png") !important;
-  color: #000 !important;
-}
-
-#main-window[nfblue="true"] #titlebar #appmenu-button,
-#main-window[nfblue="true"] #TabsToolbar #appmenu-button,
-#main-window[nfblue="true"] #TabsToolbar #fixer-menu-button > #appmenu-button,
-#main-window[nflight="true"] #titlebar #appmenu-button,
-#main-window[nflight="true"] #TabsToolbar #appmenu-button,
-#main-window[nflight="true"] #TabsToolbar #fixer-menu-button > #appmenu-button{
-  box-shadow:
-    0 0 2px rgba(255, 255, 255, 0.4) inset,
-    0 4px 6px rgba(255, 255, 255, 0.4) inset,
-    0 11px 0 -2px rgba(255, 255, 255, 0.4) inset,
-    0 13px 8px rgba(150, 150, 150, 0.3) inset, 
-    1px 2px 4px rgba(0, 0, 0, 0.3) !important; 
-}
-
-#main-window[nfblue="true"] #titlebar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nfblue="true"] #TabsToolbar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nfblue="true"] #TabsToolbar #fixer-menu-button > #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nflight="true"] #titlebar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nflight="true"] #TabsToolbar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nflight="true"] #TabsToolbar #fixer-menu-button > #appmenu-button:not(:hover):not(:active):not([open]){
-  background: #f2f2f2 !important;
-  color: #000 !important;
-}
-
-#titlebar #appmenu-button[selected="true"],
-#TabsToolbar #appmenu-button[selected="true"],
-#TabsToolbar #fixer-menu-button > #appmenu-button[selected="true"] {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
-}
-
-#titlebar #appmenu-button:hover,
-#TabsToolbar #appmenu-button:hover,
-#TabsToolbar #fixer-menu-button > #appmenu-button:hover  {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
-}
-
-#main-window[privatebrowsingmode=temporary] #appmenu-button ,
-#main-window[privatebrowsingmode=temporary] #TabsToolbar #appmenu-button,
-#main-window[nfblue="true"][privatebrowsingmode=temporary] #appmenu-button:not(:hover):not(:active):not([open]) ,
-#main-window[nfblue="true"][privatebrowsingmode=temporary] #titlebar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nfblue="true"][privatebrowsingmode=temporary] #TabsToolbar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nfblue="true"][privatebrowsingmode=temporary] #TabsToolbar #fixer-menu-button > #appmenu-button:not(:hover):not(:active):not([open]) ,
-#main-window[nflight="true"][privatebrowsingmode=temporary] #appmenu-button:not(:hover):not(:active):not([open]) ,
-#main-window[nflight="true"][privatebrowsingmode=temporary] #titlebar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nflight="true"][privatebrowsingmode=temporary] #TabsToolbar #appmenu-button:not(:hover):not(:active):not([open]),
-#main-window[nflight="true"][privatebrowsingmode=temporary] #TabsToolbar #fixer-menu-button > #appmenu-button:not(:hover):not(:active):not([open]) {
-  background-image: linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
-  border-color: rgba(43,8,65,.9) !important;
-  color: #fff !important;  
-}
-
-#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]) ,
-#main-window[privatebrowsingmode=temporary] #TabsToolbar #appmenu-button:hover:not(:active):not([open]) {
-  background-image: radial-gradient(farthest-side at center bottom, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),
-                    radial-gradient(farthest-side at center bottom, rgb(192,81,247), rgba(236,172,255,0)),
-                    linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
-  border-color: rgba(43,8,65,.9) !important;
-}
-
-#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:active,
-#main-window[privatebrowsingmode=temporary] #appmenu-button[open] ,
-#main-window[privatebrowsingmode=temporary] #TabsToolbar  #appmenu-button:hover:active ,
-#main-window[privatebrowsingmode=temporary] #TabsToolbar  #appmenu-button[open] {
-  background-image: linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
-}
-
-#nav-bar #appmenu-button,
-#main-window[privatebrowsingmode=temporary] #nav-bar #appmenu-button {
-  background: url("chrome://browser/skin/icons/firefox.png")  !important;
-  background-repeat: no-repeat !important;
-  background-position: center bottom !important;
-}
-
-#nav-bar[iconsize="small"] #fixer-menu-button > #appmenu-button,
-#nav-bar[iconsize="small"] #appmenu-button  ,
-#main-window[privatebrowsingmode=temporary] #nav-bar[iconsize="small"] #fixer-menu-button > #appmenu-button,
-#main-window[privatebrowsingmode=temporary] #nav-bar[iconsize="small"] #appmenu-button {
-  background: url("chrome://browser/skin/icons/firefox24.png")  !important;
-  height: 24px !important;
-  width: 24px !important;
-  margin-bottom: 2px !important;
-  background-repeat: no-repeat !important;
-  background-position: center bottom !important;
-}
-
-toolbar:not(#nav-bar):not(#TabsToolbar) #appmenu-button ,
-#main-window[privatebrowsingmode=temporary] toolbar:not(#nav-bar):not(#TabsToolbar) #appmenu-button { 
-    padding: 0 !important;
-    margin: 0 !important;
-    margin-top: -11px !important;
-    margin-bottom: 2px !important;
-    height: 32px !important;
-    max-height: 32px !important;
-    border: none !important;
-    box-shadow: none !important;
-    background: url("chrome://browser/skin/icons/firefox16.png")  !important;
-    background-repeat: no-repeat !important;
-    background-position: center bottom !important;
 }

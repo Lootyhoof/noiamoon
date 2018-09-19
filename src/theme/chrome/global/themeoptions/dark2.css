@@ -155,3 +155,33 @@
   color: #fff !important;
   border: 1px solid #606060 !important;
 }
+
+/* about:newtab */
+
+@-moz-document url("about:newtab") {
+  #newtab-vertical-margin {
+    background-image: linear-gradient(to bottom, #111 1%, #323232) !important;
+    color: white !important;
+  }
+  
+  .newtab-title {
+    background: black !important;
+    color: white !important;
+  }
+  
+  #searchText {
+    border: 1px solid #606060 !important;
+    background: #000 !important;
+    font-weight: bold !important;
+    background-image: linear-gradient(to bottom, #111 1%, #323232) !important;
+    color: #fff !important;
+  
+  }
+  #searchEngineLogo {
+    border-radius: 99999px !important;
+  }
+  
+  #newtab-undo-container {
+    color: white !important;
+  }
+}

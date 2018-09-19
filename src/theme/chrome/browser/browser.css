@@ -12,6 +12,8 @@
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 :root { 
+  --addon-bar-background: linear-gradient(#F6F7F7, #B7B9C5, #F6F7F7);
+
   --nav-bar-border-top: none;
 
   --print-preview-toolbar-background: url(chrome://browser/skin/icons/Tool-background2.png);
@@ -22,7 +24,7 @@
   --toolbarbutton-large-image: url("chrome://browser/skin/Toolbar-large.png");
   --toolbarbutton-small-image: url("chrome://browser/skin/Toolbar-small.png");
 
-  --toolbar-alt-background: linear-gradient(#F6F7F7, #B7B9C5, #F6F7F7);
+  --tabs-toolbar-background: var(--addon-bar-background);
   --toolbar-menubar-background: linear-gradient(#E5E6E8,#BABDC5);
   --toolbox-tabsintitlebar-background: linear-gradient(#ACAFBA 40%, #F4F5F7 60%);
 }
@@ -675,7 +677,7 @@ menupopup[chromedir="rtl"] > .unified-nav-back[_moz-menuactive] {
   opacity: 0.8;
 }
 
-#main-window[nfdarwin="true"][inFullscreen] #tabview-button {
+#main-window[nmdarwin="true"][inFullscreen] #tabview-button {
   padding-bottom: 0px !important;
 }
 
@@ -1560,7 +1562,7 @@ tabpanels browser,
 /* Tabs */
 
 #TabsToolbar{ 
-	background-image: var(--toolbar-alt-background);  /* For compatibility with Tab Mix Plus and Tab utilities: tabs bottom */  
+	background-image: var(--tabs-toolbar-background);  /* For compatibility with Tab Mix Plus and Tab utilities: tabs bottom */  
 }
 
 #main-window[sizemode="normal"][inFullscreen]  #TabsToolbar:not([treestyletab-mode="vertical"]):not([orient="vertical"]),
@@ -1582,7 +1584,7 @@ tabpanels browser,
 
 #navigator-toolbox[tabsontop="false"] #TabsToolbar {
 	-moz-appearance:none;
-	background-image: var(--toolbar-alt-background);
+	background-image: var(--tabs-toolbar-background);
 }
 
 #navigator-toolbox[tabsontop="false"] .tabbrowser-tab {
@@ -1591,7 +1593,7 @@ tabpanels browser,
 
 #main-window[tabsintitlebar] #TabsToolbar{ 
 	-moz-appearance:none;
-	--toolbar-alt-background: linear-gradient(to bottom,#f7f7f7 10%,#B9BAC6 50%,#eee);
+	--tabs-toolbar-background: linear-gradient(to bottom,#f7f7f7 10%,#B9BAC6 50%,#eee);
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-left: 0px;
@@ -1757,7 +1759,7 @@ tabpanels browser,
   margin: -5px -7px 0px 0px;
 }
 
-#main-window[nfstrip="true"] #TabsToolbar .tabs-closebutton .toolbarbutton-icon {
+#main-window[nmstrip="true"] #TabsToolbar .tabs-closebutton .toolbarbutton-icon {
   margin: -3px -7px 0px 0px;
 }
 
@@ -1779,15 +1781,15 @@ tabpanels browser,
   margin-top: 1px !important;
 }
 
-#main-window[inFullscreen][nfstrip="true"][tabsontop="true"] .tabs-closebutton {
+#main-window[inFullscreen][nmstrip="true"][tabsontop="true"] .tabs-closebutton {
   margin-top: 0px !important;
 }
 
-#main-window[inFullscreen][nfstrip="true"][tabsintitlebar] .tabs-closebutton {
+#main-window[inFullscreen][nmstrip="true"][tabsintitlebar] .tabs-closebutton {
   margin-top: -1px !important;
 }
 
-#main-window[inFullscreen][nfstrip="true"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+#main-window[inFullscreen][nmstrip="true"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
   margin-top: 0px !important;
 }
 
@@ -2774,7 +2776,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 #addon-bar {
   border-top: 1px solid #808080;
   border-bottom: 1px solid #adaebb;
-  background: var(--toolbar-alt-background);
+  background: var(--addon-bar-background);
 }
 #status-bar {
   border: none !important;

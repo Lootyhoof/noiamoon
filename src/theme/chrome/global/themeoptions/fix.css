@@ -21,58 +21,50 @@ prefwindow[id="hcp_options_window"] groupbox > vbox > label:not(.default_label),
 prefwindow[id="hcp_options_window"] groupbox > label:not(.default_label),
 prefwindow[id="hcp_options_window"] label.child_label,
 prefwindow[id="hcp_options_window"] label.extrainfo,
-prefwindow[id="hcp_options_window"] span.extrainfo
-{
+prefwindow[id="hcp_options_window"] span.extrainfo {
 	color: #0066CC !important;
 }
 
 /* about:home */
 
 @-moz-document url("about:home") {
-#bookmarks::before {
-  content: url("chrome://browser/skin/preferences/bookmark.png") !important;
+  #bookmarks::before {
+    content: url("chrome://browser/skin/preferences/bookmark.png") !important;
+  }
+
+  #history::before {
+    content: url("chrome://browser/skin/preferences/history.png") !important;
+  }
+
+  #apps::before {
+    content: url("chrome://browser/skin/preferences/webapps.png") !important;
+  }
+
+  #settings::before {
+    content: url("chrome://browser/skin/preferences/advanced.png") !important;
+  }
+
+  #addons::before {
+    content: url("chrome://browser/skin/preferences/add-ons.png") !important;
+  }
+
+  #downloads::before {
+    content: url("chrome://browser/skin/preferences/downloads.png") !important;
+  }
+
+  #sync::before {
+    content: url("chrome://browser/skin/preferences/sync.png") !important;
+  }
+
+  #restorePreviousSession::before {
+    content: url("chrome://browser/skin/preferences/restore-large.png") !important;
+  }
+
+  body[dir=rtl] #restorePreviousSession::before {
+    transform: scaleX(-1) !important;
+  }
+
+  body[narrow] #restorePreviousSession::before {
+    content: url("chrome://browser/skin/preferences/restore.png") !important;
+  }
 }
-
-#history::before {
-  content: url("chrome://browser/skin/preferences/history.png") !important;
-}
-
-#apps::before {
-  content: url("chrome://browser/skin/preferences/webapps.png") !important;
-}
-
-#settings::before {
-  content: url("chrome://browser/skin/preferences/advanced.png") !important;
-}
-
-#addons::before {
-  content: url("chrome://browser/skin/preferences/add-ons.png") !important;
-}
-
-#downloads::before {
-  content: url("chrome://browser/skin/preferences/downloads.png") !important;
-}
-
-#sync::before {
-  content: url("chrome://browser/skin/preferences/sync.png") !important;
-}
-
-#restorePreviousSession::before {
-  content: url("chrome://browser/skin/preferences/restore-large.png") !important;
-}
-
-body[dir=rtl] #restorePreviousSession::before {
-  transform: scaleX(-1) !important;
-}
-
-body[narrow] #restorePreviousSession::before {
-  content: url("chrome://browser/skin/preferences/restore.png") !important;
-}
-}
-
-
-
-
-
-
-

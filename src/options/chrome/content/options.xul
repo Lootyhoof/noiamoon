@@ -90,7 +90,7 @@
 				</row>
 				<row>						
 						<hbox align="center">
-						<checkbox label="&normal;" preference="normalRadio" oncommand="if(this.checked) noiafoxop.options.radioChange(true,'normal'); else noiafoxop.options.radioChange(false,'normal');" tooltiptext="&tipnormal;"/>
+						<checkbox label="&normal;" preference="normalRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'normal'); else noiamoonop.options.radioChange(false,'normal');" tooltiptext="&tipnormal;"/>
 						</hbox>
 						<hbox align="center">
 						<label value="&windowblinds;"/>
@@ -126,13 +126,7 @@
 						</hbox>					
 					</vbox>
 			</groupbox>
-					
-			<groupbox align="center">
-						<label value="&Restart;"
-						style="color: #F00;font-size:90%;font-weight:bold;" class="warning"/>
-						<label value="&NMRestart;"
-						style="color: #F00;font-size:90%;font-weight:bold;" class="warning"/>							
-			</groupbox>
+
 			</tabpanel>					
 			<tabpanel id="panetab" orient="vertical">
 			<groupbox>
@@ -156,7 +150,7 @@
 						<label value="&sqtab;" style="display: none;margin-top:4px;"/>
 						</radiogroup>						
 						<hbox align="center">
-						<checkbox label="&solidtab;" preference="solidRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'solid'); else noiamoonop.options.radioChange(false,'solid');" tooltiptext="&tipsolid;"/>										
+						<checkbox label="&solidtab;" preference="solidRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'solid'); else noiamoonop.options.radioChange(false,'solid');"/>										
 						</hbox>						
 						<hbox align="center">
 						<checkbox label="&shadow;" preference="shadowRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'shadow'); else noiamoonop.options.radioChange(false,'shadow');" tooltiptext="&tipshadow;"/>						
@@ -211,10 +205,6 @@
 						</hbox>				
 			</groupbox>
 
-			<groupbox align="center">
-						<label value="&Restart;"
-						style="color: #F00;font-size:90%;font-weight:bold;" class="warning"/>
-			</groupbox>
 			</vbox>	
 			</tabpanel>			
 
@@ -261,7 +251,7 @@
 						<checkbox label="&navbarbuttonEnable;" tooltiptext="" preference="navbarbuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'navbarbutton'); else noiamoonop.options.radioChange(false,'navbarbutton');"/>	
 						</hbox>							
 			</groupbox>	
-						<button label="&reset;" oncommand="noiamoonop.options.resetnf();alert('&restartPM;');"/>
+						<button label="&reset;" oncommand="noiamoonop.options.resetnm();alert('&restartPM;');"/>
 			</tabpanel>					
 			</tabpanels>
 		</tabbox>

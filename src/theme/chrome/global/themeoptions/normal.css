@@ -1,6 +1,6 @@
 /* Add a border to the nav bar for the basic grey theme */
 
-#main-window[tabsintitlebar][nfnoline="false"][nfstrip="false"][nflight="false"][nfblue="false"][nfblack="false"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
+#main-window[tabsintitlebar][nmnoline="false"][nmstrip="false"][nmlight="false"][nmblue="false"][nmblack="false"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
   border-top: 2px solid !important;
   -moz-border-top-colors: #5C5C5C #DADADA !important
 }
@@ -8,29 +8,29 @@
 /* Nav bar background for the black theme */
 
 @media all and (-moz-windows-compositor) {
-  #main-window[nflight="false"][nfblue="false"][nfblack="true"]:not([inFullscreen])  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
+  #main-window[nmlight="false"][nmblue="false"][nmblack="true"]:not([inFullscreen])  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
     background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
   }
 
-  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nflight="false"][nfblue="false"][nfblack="true"]  #toolbar-menubar[autohide="true"] ~  #TabsToolbar{ 
+  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nmlight="false"][nmblue="false"][nmblack="true"]  #toolbar-menubar[autohide="true"] ~  #TabsToolbar{ 
     background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
   }
 
-  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nflight="false"][nfblue="false"][nfblack="true"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
+  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nmlight="false"][nmblue="false"][nmblack="true"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
     background: #000 !important;
   }
 }
 
 @media not all and (-moz-windows-compositor){
-  #main-window[nflight="false"][nfblue="false"][nfblack="true"]:not([inFullscreen])  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
+  #main-window[nmlight="false"][nmblue="false"][nmblack="true"]:not([inFullscreen])  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
     background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
   }
 
-  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nflight="false"][nfblue="false"][nfblack="true"]  #toolbar-menubar[autohide="true"] ~  #TabsToolbar{ 
+  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nmlight="false"][nmblue="false"][nmblack="true"]  #toolbar-menubar[autohide="true"] ~  #TabsToolbar{ 
     background: #000 !important;
   }
 
-  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nflight="false"][nfblue="false"][nfblack="true"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
+  #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nmlight="false"][nmblue="false"][nmblack="true"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
     background: #000 !important;
   }
 }

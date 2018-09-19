@@ -41,7 +41,6 @@
 <!ENTITY tipstrip "">
 <!ENTITY solid "">
 <!ENTITY solidtab "Onglets pleins">
-<!ENTITY tipsolid "Le bouton Pale Moon est également modifié.">
 <!ENTITY transtab "Onglets transparents">
 <!ENTITY tabbottom "Onglets en bas de la fenêtre">
 <!ENTITY tiptabbottom "Deselectionnez d'abord l'option 'Barre des onglets au dessus'.">
@@ -96,8 +95,6 @@
 <!ENTITY find.tooltip "Rechercher dans la page (Ctrl+F)">
 <!ENTITY Button "Bouton">
 <!ENTITY NoiaMoonOptions "Options pour Noia Moon">
-<!ENTITY Restart "!!! REDEMARREZ PALE MOON APRES SELECTION !!!">
-<!ENTITY NMRestart "!!! REDEMARREZ PALE MOON APRES CHOIX FENETRE NORMALE/FENETRE MAXIMISEE !!!">
 <!ENTITY Contrib "Contributeurs : Icones Noia créées par Carlitus, Noia 2 Extreme créé par Kasteo (Kongkeat Kuatrakull)">
 <!ENTITY Contrib2 "Noia Moon options est une adaptation du configurateur de thème de Noia 4 créé par Aris">
 <!ENTITY help "Aide">

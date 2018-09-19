@@ -2,7 +2,7 @@
   background: transparent !important;
 }
 
-#main-window[tabsintitlebar][nfnormal="false"]:not(:-moz-lwtheme) #TabsToolbar {
+#main-window[tabsintitlebar][nmnormal="false"]:not(:-moz-lwtheme) #TabsToolbar {
   background: url("chrome://browser/skin/icons/titlebar.png") #CDCFD5 !important;
 }
 
@@ -14,7 +14,7 @@
   background-size: auto 100% !important;
 }
 
-#main-window[sizemode="normal"][nfstrip="true"][nfnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+#main-window[sizemode="normal"][nmstrip="true"][nmnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
   border: none !important;
   border-top: 2px groove #999 !important;
   border-bottom: 5px solid !important;
@@ -44,6 +44,6 @@
 border: 1px solid rgba(0,0,0,.4) !important;
 }
 
-#main-window[nfbottom="true"] #TabsToolbar {
-	background-image: url("chrome://browser/skin/icons/Tabbar-background.png") !important;
+#main-window[nmbottom="true"] #TabsToolbar {
+	background-image: linear-gradient(#F6F7F7, #B7B9C5, #F6F7F7) !important;
 }

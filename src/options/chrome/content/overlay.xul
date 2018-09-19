@@ -17,15 +17,11 @@
 			<observes element="Browser:Forward" attribute="disabled"/>
 	</toolbarbutton>	
   </toolbaritem>
-    <toolbarpalette id="BrowserToolbarPalette">
-		<toolbarbutton
-		class="toolbarbutton-1"
-		id="find"
-		label="&find.label;"
-		tooltiptext="&find.tooltip;"
-		command="cmd_find" />
+  
+  <toolbarpalette id="BrowserToolbarPalette">
 		<toolbarbutton id="noiamoon-toolbar-button" class="toolbarbutton-1" label="Noia Moon Options" tooltiptext="Noia Moon Options" oncommand="window.open('chrome://noiamoonoptions/content/options.xul','', 'chrome');"/>
 	</toolbarpalette>
+  
 	<menupopup id="menu_ToolsPopup">
 		<menuitem id="noiamoonoptions" label="Noia Moon Options" hidden="false" oncommand="window.open('chrome://noiamoonoptions/content/options.xul','', 'chrome');"/>
 	</menupopup>
@@ -33,5 +29,4 @@
 	<menupopup id="appmenu_customizeMenu">
 		<menuitem id="noiamoonoptions_appmenu_options" insertafter="appmenu_preferences" label="Noia Moon Options" hidden="false" oncommand="window.open('chrome://noiamoonoptions/content/options.xul','', 'chrome');"/>
 	</menupopup>
-
 </overlay> 

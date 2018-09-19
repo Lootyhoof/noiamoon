@@ -41,7 +41,6 @@
 <!ENTITY tipstrip "">
 <!ENTITY solid "">
 <!ENTITY solidtab "Solid tabs">
-<!ENTITY tipsolid "Pale Moon button is also modified.">
 <!ENTITY transtab "Transparent tabs">
 <!ENTITY tabbottom "Tabs at the bottom of the window">
 <!ENTITY tiptabbottom "First uncheck 'Tabs on top' option.">
@@ -96,8 +95,6 @@
 <!ENTITY find.tooltip "Find text (Ctrl+F)">
 <!ENTITY Button "Button">
 <!ENTITY NoiaMoonOptions "Noia Moon Options">
-<!ENTITY Restart "!!! PLEASE RESTART PALE MOON AFTER SELECT !!!">	
-<!ENTITY NMRestart "!!! PLEASE RESTART PALE MOON AFTER SWITCHING BETWEEN NORMAL AND MAXIMIZED WINDOW !!!">	
 <!ENTITY Contrib "Contributors : Noia icon set by Carlitus, Noia 2 Extreme theme by Kasteo (Kongkeat Kuatrakull)">
 <!ENTITY Contrib2 "Noia Moon options is an adaptation from the Noia 4 theme configurator by Aris">
 <!ENTITY help "Help">

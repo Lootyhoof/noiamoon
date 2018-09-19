@@ -1,14 +1,14 @@
-@import url("chrome://browser/skin/foxsubskins/tabbar3.css");
+@import url("chrome://global/skin/themeoptions/tabbar3.css");
 
 #main-window:not(:-moz-lwtheme) #addon-bar,
 #main-window:not(:-moz-lwtheme) #navigator-toolbox,
 #main-window:not([tabsintitlebar]):not(:-moz-lwtheme) #TabsToolbar:not([treestyletab-mode="vertical"]),
-#main-window[tabsintitlebar][nfnormal="false"]:not(:-moz-lwtheme) #TabsToolbar:not([treestyletab-mode="vertical"]),
-#main-window[nfnormal="false"]:not(:-moz-lwtheme) #titlebar,
+#main-window[tabsintitlebar][nmnormal="false"]:not(:-moz-lwtheme) #TabsToolbar:not([treestyletab-mode="vertical"]),
+#main-window[nmnormal="false"]:not(:-moz-lwtheme) #titlebar,
 #main-window:not(:-moz-lwtheme),
 findbar,
 #main-window:not(:-moz-lwtheme) #toolbar-menubar,
-#navigation-toolbox:not(:-moz-lwtheme) ,
+#navigation-toolbox:not(:-moz-lwtheme),
 #tabs-toolbar:not(:-moz-lwtheme),
 #mail-toolbar-menubar2:not(:-moz-lwtheme),
 .mail-toolbox:not(:-moz-lwtheme),
@@ -26,7 +26,7 @@ findbar,
 }
 
 
-#navigation-toolbox:not(:-moz-lwtheme) ,
+#navigation-toolbox:not(:-moz-lwtheme),
 #tabs-toolbar:not(:-moz-lwtheme),
 #mail-toolbar-menubar2:not(:-moz-lwtheme),
 .mail-toolbox:not(:-moz-lwtheme),
@@ -45,14 +45,14 @@ findbar,
 }
 
 #main-window:not(:-moz-lwtheme) #toolbar-menubar,
-#main-window[tabsontop=true][sizemode="maximized"][nfnormal="false"]:not(:-moz-lwtheme) #toolbar-menubar[autohide="true"] ~ #TabsToolbar,
-#main-window[nfnormal="false"]:not(:-moz-lwtheme) #titlebar,
+#main-window[tabsontop=true][sizemode="maximized"][nmnormal="false"]:not(:-moz-lwtheme) #toolbar-menubar[autohide="true"] ~ #TabsToolbar,
+#main-window[nmnormal="false"]:not(:-moz-lwtheme) #titlebar,
 #main-window:not(:-moz-lwtheme) { 
   background-image: linear-gradient(rgba(255, 255, 255, 1),
                     rgba(255, 255, 255, .1) 25px) !important;
 }
 
-#main-window[tabsontop=true][sizemode="maximized"][nfnormal="false"]:not(:-moz-lwtheme) #toolbar-menubar[autohide="false"] ~ #TabsToolbar,
+#main-window[tabsontop=true][sizemode="maximized"][nmnormal="false"]:not(:-moz-lwtheme) #toolbar-menubar[autohide="false"] ~ #TabsToolbar,
 #main-window[tabsontop=true]:not([sizemode="maximized"]):not(:-moz-lwtheme) #TabsToolbar,
 #main-window[tabsontop=false]:not(:-moz-lwtheme) #TabsToolbar,
 #main-window:not(:-moz-lwtheme) #navigator-toolbox { 
@@ -65,7 +65,7 @@ findbar,
   background: none !important;
 }
 
-#main-window[tabsontop="false"][nfnoline="false"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
+#main-window[tabsontop="false"][nmnoline="false"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
   border-top: 2px groove #eee !important;
 }
 
@@ -154,17 +154,17 @@ sidebarheader,
 /* Extensions */
 
 @-moz-document url("about:addons") {
-#header {
-  background: #DADCE4 !important;
-}
+  #header {
+    background: #DADCE4 !important;
+  }
 
-#categories {
-  background: #DADCE4 !important;
-}
+  #categories {
+    background: #DADCE4 !important;
+  }
 
-#view-port, #addon-list, #search-list, #updates-list {
-  background: linear-gradient(145deg, #E5E5E5, #FDFEFF 40%, #E5E5E5 70%) !important;
-}
+  #view-port, #addon-list, #search-list, #updates-list {
+    background: linear-gradient(145deg, #E5E5E5, #FDFEFF 40%, #E5E5E5 70%) !important;
+  }
 }
 
 /* about:permissions */
@@ -186,7 +186,7 @@ sidebarheader,
     1px 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Downloads FF14+ */
+/* Downloads popup */
 
 @media (-moz-windows-default-theme) {
   #downloadsHistory {
@@ -197,30 +197,30 @@ sidebarheader,
 /* Tabview */
 
 @-moz-document url("chrome://browser/content/tabview.html"){
-body {
-  background: #DEE0E7 !important;
-}
+  body {
+    background: #DEE0E7 !important;
+  }
 
-#bg {
-  background: #DEE0E7 !important;
-}
+  #bg {
+    background: #DEE0E7 !important;
+  }
 
-.groupItem {
-  background-color: #EBECF1 !important;
-}
+  .groupItem {
+    background-color: #EBECF1 !important;
+  }
 }
 
 /* about:preferences */
 
 @-moz-document url("about:preferences") {
-#header {
-  background: transparent !important;
-}
+  #header {
+    background: transparent !important;
+  }
 }
 
 /* Linux */
 
-#main-window[nflinux="true"][tabsontop="true"][nfnoline="false"] #TabsToolbar {
+#main-window[nmlinux="true"][tabsontop="true"][nmnoline="false"] #TabsToolbar {
   border: none !important;
   border-bottom: 2px groove #fff !important;
 }

@@ -1,59 +1,59 @@
-#main-window[nfnoline="false"] #PersonalToolbar {
+#main-window[nmnoline="false"] #PersonalToolbar {
   border-top: 2px groove #fff !important;
 }
 
-#main-window[nfnoline="false"]  #toolbar-menubar[autohide="false"] {
+#main-window[nmnoline="false"]  #toolbar-menubar[autohide="false"] {
   border-bottom: 2px  groove #fff !important;
 }
 
-#main-window[nfnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="false"] ~ #nav-bar { 
+#main-window[nmnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="false"] ~ #nav-bar { 
   border-top: 2px groove #fff !important;
 }
 
-#main-window[nfnoline="false"]:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"] toolbox {
+#main-window[nmnoline="false"]:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"] toolbox {
   border-bottom: 0px solid #808080;
 }
   
-#main-window[nfnoline="false"]:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] toolbox {
+#main-window[nmnoline="false"]:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] toolbox {
   border-bottom: 0px solid #808080;
 }
 
-#main-window[sizemode=normal][nfstrip="false"][nfnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+#main-window[sizemode=normal][nmstrip="false"][nmnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
   border: none !important;
   border-bottom: 2px groove #fff !important;
   border-top: 2px groove #fff !important;
 }
 
-#main-window[sizemode=normal][nfstrip="true"][nfnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
+#main-window[sizemode=normal][nmstrip="true"][nmnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  
   border: none !important;
   border-top: 2px groove #fff !important;
   border-bottom: 5px solid !important;
   -moz-border-bottom-colors: #808080 #89B3DB #89B3DB #89B3DB #89B3DB #89B3DB  !important;
 }
 
-#main-window[sizemode=maximized][nfnoline="false"]:not([tabsintitlebar]) #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
+#main-window[sizemode=maximized][nmnoline="false"]:not([tabsintitlebar]) #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
   border: none !important;
   border-bottom: 2px groove #fff !important;
   border-top: 2px groove #fff !important;
 }
 
-#main-window[nfnoline="false"][tabsintitlebar]:-moz-lwtheme #TabsToolbar {
+#main-window[nmnoline="false"][tabsintitlebar]:-moz-lwtheme #TabsToolbar {
   border-bottom: 2px groove #fff !important;
 }
 
-#main-window[nfnoline="false"][tabsintitlebar]:not(:-moz-lwtheme) #TabsToolbar {
+#main-window[nmnoline="false"][tabsintitlebar]:not(:-moz-lwtheme) #TabsToolbar {
   border-bottom: 2px groove #fff !important;
 }
 
-#main-window[nfstrip="true"][tabsintitlebar]:not(:-moz-lwtheme) #TabsToolbar {
+#main-window[nmstrip="true"][tabsintitlebar]:not(:-moz-lwtheme) #TabsToolbar {
   border-bottom: 5px solid !important;
   -moz-border-bottom-colors: #808080 #89B3DB #89B3DB #89B3DB #89B3DB #89B3DB  !important;
 }
 
-#navigator-toolbox[tabsontop="false"][nfnoline="false"] #TabsToolbar[multibar] {  
+#navigator-toolbox[tabsontop="false"][nmnoline="false"] #TabsToolbar[multibar] {  
   border-top: 2px groove #fff !important;
 }
 
-#main-window[tabsontop="false"][nfnoline="false"]:not(:-moz-lwtheme) #TabsToolbar {
+#main-window[tabsontop="false"][nmnoline="false"]:not(:-moz-lwtheme) #TabsToolbar {
   border-top: 2px groove #fff;
 }

@@ -2,13 +2,7 @@
   border-radius: 15px !important;
 }
 
-#main-window[nfstrip="true"] #TabsToolbar:not([multibar]) .tabbrowser-tab,
+#main-window[nmstrip="true"] #TabsToolbar:not([multibar]) .tabbrowser-tab,
 #TabsToolbar:not([multibar]) .tabbrowser-tab[style*="background-image"] {
-  border-radius: 15px !important;
-}
-
-/* Thunderbird */
-
-.tabmail-tab {
   border-radius: 15px !important;
 }

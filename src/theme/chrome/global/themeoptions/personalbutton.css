@@ -3,28 +3,28 @@ toolbar:-moz-any(#PersonalToolbar) toolbarbutton  {
   margin-bottom: 1px !important;
 }
 
-#main-window[nfblack="false"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton:not(.toolbarbutton-menubutton-button):not([disabled="true"]):hover {
+#main-window[nmblack="false"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton:not(.toolbarbutton-menubutton-button):not([disabled="true"]):hover {
   background: url(chrome://global/skin/button/hover.png) repeat-x top left transparent;
   border-radius: 3px;
   box-shadow: none;
   border: 1px solid #808080; 
 }
 
-#main-window[nfblack="false"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton:not([disabled="true"]):hover {
+#main-window[nmblack="false"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton:not([disabled="true"]):hover {
   color: #000 !important;
 }
 
 
 /* dark */
 
-#main-window[nfblack="true"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton  {
+#main-window[nmblack="true"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton  {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   margin-top: 1px !important;
   margin-bottom: 1px !important;
 }
 
-#main-window[nfblack="true"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton:not(.toolbarbutton-menubutton-button):not([disabled="true"]):hover  {
+#main-window[nmblack="true"] toolbar:-moz-any(#PersonalToolbar) toolbarbutton:not(.toolbarbutton-menubutton-button):not([disabled="true"]):hover  {
   border: 1px solid !important;
   -moz-border-top-colors: #bbb !important;
   -moz-border-right-colors: #808080 !important;

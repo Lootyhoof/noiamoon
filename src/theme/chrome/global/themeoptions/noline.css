@@ -1,37 +1,8 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-#PersonalToolbar ,
-#toolbar-menubar[autohide="false"] ,
-#gtbToolbar, #GBL-Toolbar ,
-#nav-bar ,
-#webdeveloper-toolbar ,
-#AMAZON_NS_PH_TB-Toolbar ,
-#TFTB-Toolbar ,
-#TabGroupsManagerToolbar ,
-#antToolbar ,
-#at_toolbar ,
-.atx-toolbar,
-#foxlingo_toolbar-2-4-3c ,
-#vidbar-toolbar ,
-#skipity-toolbar ,
-#facebook-toolbar ,
-#wmn-toolbar, 
-#main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"] toolbox,
-#main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] toolbox,
-#main-window[tabsintitlebar][nfstrip="false"]:not(:-moz-lwtheme) #TabsToolbar,
-#main-window[tabsintitlebar][nfstrip="false"]:-moz-lwtheme #TabsToolbar,
-#navigation-toolbox ,
-#tabs-toolbar,
-#mail-toolbar-menubar2,
-#quick-filter-bar-main-bar,
-#msgcomposeWindow,
-#compose-toolbar-menubar2,
-#composeToolbar2,
-#abContactsPanel,
-#addrbook-toolbar-menubar2,
-#ab-bar2,
-#ab-toolbox {
-    border: none !important;
+#navigator-toolbox toolbar,
+#browser-bottombox toolbar {
+  border: none !important;
 }
 
 #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"] toolbox {
@@ -70,22 +41,22 @@
   margin-top: 1px !important;
 }
 
-#main-window[nfblack="true"][inFullscreen] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+#main-window[nmblack="true"][inFullscreen] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
   margin-top: 3px !important;
 }
 
-#main-window[inFullscreen][nfstrip="true"][tabsontop="true"] .tabs-closebutton {
+#main-window[inFullscreen][nmstrip="true"][tabsontop="true"] .tabs-closebutton {
   margin-top: 0px !important;
 }
 
-#main-window[inFullscreen][nfstrip="true"][tabsintitlebar] .tabs-closebutton {
+#main-window[inFullscreen][nmstrip="true"][tabsintitlebar] .tabs-closebutton {
   margin-top: 0px !important;
 }
 
-#main-window[inFullscreen][nfstrip="true"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
+#main-window[inFullscreen][nmstrip="true"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar .tabs-closebutton {
   margin-top: 0px !important;
 }
 
-#main-window[nfdarwin="true"][inFullscreen] ~ #TabsToolbar .tabs-closebutton {
+#main-window[nmdarwin="true"][inFullscreen] ~ #TabsToolbar .tabs-closebutton {
   margin-top: 4px !important;
 }

@@ -870,31 +870,31 @@ dialog[windowtype="irc:chatzilla:about"] .dialog-button-box {
   border-bottom : 0px solid !important;
 }
 
- #main-window[tabsintitlebar][nftabbar="false"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
+ #main-window[tabsintitlebar][nmtabbar="false"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
   margin-bottom: 1px !important;
 }
 
-#main-window[nftabbar="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
+#main-window[nmtabbar="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
   margin-bottom: 1px !important;
   border-bottom : 0px solid !important;
 }
 
-#main-window[tabsontop="true"][nftabbar="true"][nfnoline="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
+#main-window[tabsontop="true"][nmtabbar="true"][nmnoline="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
   margin-bottom: 1px !important;
   border-bottom : 0px solid !important;
 }
 
 #main-window:not([tabsintitlebar])[tabsontop="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"],
-#main-window[tabsintitlebar][nftabbar="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
+#main-window[tabsintitlebar][nmtabbar="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
   margin-bottom: 0px !important;
 }
 
-#main-window[tabsontop="false"][nftabbar="false"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
+#main-window[tabsontop="false"][nmtabbar="false"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
   padding-bottom : 1px !important;
   margin-bottom: -1px !important;
 }
 
-#main-window[tabsontop="false"][nftabbar="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
+#main-window[tabsontop="false"][nmtabbar="true"] .tabbrowser-tab:not([selected="true"])[style*="background-image"] {
   margin-top: 1px !important;
   margin-bottom: -1px !important;
 }
@@ -910,7 +910,7 @@ dialog[windowtype="irc:chatzilla:about"] .dialog-button-box {
   -moz-border-left-colors: transparent !important;
 }
 
-#main-window[nftabbar="true"] #tabbrowser-tabs > .tabbrowser-tab[selected="true"][style*="background-image"] {
+#main-window[nmtabbar="true"] #tabbrowser-tabs > .tabbrowser-tab[selected="true"][style*="background-image"] {
   border-bottom : 0px solid !important;
 }
 
