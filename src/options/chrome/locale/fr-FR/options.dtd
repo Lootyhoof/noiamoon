@@ -1,5 +1,5 @@
 ﻿<!ENTITY Options "Options">
-<!ENTITY nfclose "Fermer">
+<!ENTITY nmclose "Fermer">
 <!ENTITY Enable "Oui">
 <!ENTITY Disable "Non">
 <!ENTITY reset "Restaurer les réglages par défaut de Noia Moon">
@@ -97,7 +97,6 @@
 <!ENTITY NoiaMoonOptions "Options pour Noia Moon">
 <!ENTITY Contrib "Contributeurs : Icones Noia créées par Carlitus, Noia 2 Extreme créé par Kasteo (Kongkeat Kuatrakull)">
 <!ENTITY Contrib2 "Noia Moon options est une adaptation du configurateur de thème de Noia 4 créé par Aris">
-<!ENTITY help "Aide">
 <!ENTITY backForwardMenu.tooltip "Recent pages">
 <!ENTITY main "Général">
 <!ENTITY Advanced "Avancé">

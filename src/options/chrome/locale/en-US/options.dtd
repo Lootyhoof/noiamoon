@@ -1,5 +1,5 @@
 <!ENTITY Options "Options">
-<!ENTITY nfclose "Close">
+<!ENTITY nmclose "Close">
 <!ENTITY Enable "On">
 <!ENTITY Disable "Off">
 <!ENTITY reset "Restore Noia Moon default settings">
@@ -97,7 +97,6 @@
 <!ENTITY NoiaMoonOptions "Noia Moon Options">
 <!ENTITY Contrib "Contributors : Noia icon set by Carlitus, Noia 2 Extreme theme by Kasteo (Kongkeat Kuatrakull)">
 <!ENTITY Contrib2 "Noia Moon options is an adaptation from the Noia 4 theme configurator by Aris">
-<!ENTITY help "Help">
 <!ENTITY backForwardMenu.tooltip "Recent pages">
 <!ENTITY main "Main">
 <!ENTITY Advanced "Advanced">

@@ -7,10 +7,8 @@
 	type="prefwindow"
 	title="&NoiaMoonOptions;"
 	onload="noiamoonop.options.init()"
-    buttons="extra1,extra2"
-	buttonlabelextra1="&nfclose;"
-	buttonlabelextra2="&help;"
-	ondialogextra2="noiamoonop.options.tOpen('chrome://noiamoonoptions/content/help.html');"
+    buttons="extra1"
+	buttonlabelextra1="&nmclose;"
 	ondialogextra1="window.close();"
 >
 
