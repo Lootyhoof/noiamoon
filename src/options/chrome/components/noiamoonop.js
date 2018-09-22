@@ -17,7 +17,7 @@ noiaMoonOptions.prototype = {
     var prefs = Components.classes["@mozilla.org/preferences-service;1"]
         .getService(Components.interfaces.nsIPrefService)
         .getBranch("extensions.noiamoonop.");
-      
+
     var watcher = Components.classes["@mozilla.org/embedcomp/window-watcher;1"].getService(Components.interfaces.nsIWindowWatcher);
     var listenOpen = {
       observe : function(aSubject, aTopic) {
@@ -43,9 +43,9 @@ noiaMoonOptions.prototype = {
       aWindow.removeEventListener("load", mainFunction, false);
       var xulRuntime = Components.classes["@mozilla.org/xre/app-info;1"]
         .getService(Components.interfaces.nsIXULRuntime);
-    
+
       // Set attribute on #main-window for use by Noia Moon theme.
-      
+
       switch(xulRuntime.OS) {
         case "Darwin":
           doc.getElementById('main-window').setAttribute('nmdarwin',true);
@@ -120,7 +120,7 @@ noiaMoonOptions.prototype = {
         sss.loadAndRegisterSheet(uri,sss.AGENT_SHEET);
       }
     }
-    
+
     var sss = Components.classes["@mozilla.org/content/style-sheet-service;1"]
       .getService(Components.interfaces.nsIStyleSheetService);
     var ios = Components.classes["@mozilla.org/network/io-service;1"]
@@ -131,7 +131,7 @@ noiaMoonOptions.prototype = {
     if (prefs.getBoolPref("semiroundedtab") == true) {
       applyIt("semi_rounded_tab.css");
     }
-    
+
     if (prefs.getBoolPref("grey") == false) {
       if (prefs.getBoolPref("blue") == false) {
         if (prefs.getBoolPref("dark") == false) {
@@ -142,7 +142,7 @@ noiaMoonOptions.prototype = {
         }
       }
     }
-    
+
     if (prefs.getBoolPref("grey") == true) {
       if (prefs.getBoolPref("blue") == false) {
         if (prefs.getBoolPref("dark") == false) {
@@ -161,7 +161,7 @@ noiaMoonOptions.prototype = {
         }
       }
     }
-    
+
     if (prefs.getBoolPref("dark") == true) {
       applyIt("dark.css");
       prefs.setBoolPref("tabbar",false);
@@ -172,145 +172,173 @@ noiaMoonOptions.prototype = {
     if (prefs.getBoolPref("dark") == true) {
       applyIt("dark2.css");
     }
-    
+
     if (prefs.getBoolPref("blue") == true) {
       applyIt("blue.css");
     }
-    
+
     if (prefs.getBoolPref("grey") == true) {
       applyIt("grey.css");
     }
-    
+
     if (prefs.getBoolPref("grey2") == true) {
       applyIt("grey2.css");
     }
-    
+
     if (prefs.getBoolPref("darker") == true) {
       applyIt("darker.css");
     }
-    
+
+    if (prefs.getBoolPref("darker2") == true) {
+      applyIt("darker2.css");
+    }
+
     if (prefs.getBoolPref("light") == true) {
       applyIt("light.css");
     }
-    
+
     if (prefs.getBoolPref("shadow") == true) {
       applyIt("shadow.css");
     }
-    
+
     if (prefs.getBoolPref("closebutton") == true) {
       applyIt("closebutton.css");
     }
-    
+
     if (prefs.getBoolPref("findbartop") == true) {
       applyIt("findbartop.css");
     }
-    
+
     if (prefs.getBoolPref("noline") == true) {
       applyIt("noline.css");
     }
-    
+
     if (prefs.getBoolPref("dark") == false) {
       if (prefs.getBoolPref("noline") == true) {
         applyIt("noline2.css");
       }
     }
-    
+
     if (prefs.getBoolPref("tabbar") == true) {
       if (prefs.getBoolPref("noline") == true) {
         applyIt("tabbar.css");
       }
     }
-    
+
     if (prefs.getBoolPref("tabbar") == true) {
       if (prefs.getBoolPref("noline") == false) {
-        applyIt("tabbar2.css");		
+        applyIt("tabbar2.css");
       }
-    }	
+    }
 
     if (prefs.getBoolPref("strip") == true) {
       applyIt("strip.css");
-    }	
-    
+    }
+
     if (prefs.getBoolPref("semiroundedtab") == true) {
       applyIt("semi_rounded_tab.css");
     }
-    
+
     if (prefs.getBoolPref("rdtab") == true) {
       applyIt("rdtab.css");
     }
-    
+
     if (prefs.getBoolPref("sqtab") == true) {
       applyIt("sqtab.css");
     }
-    
+
     if (prefs.getBoolPref("dark") == true) {
       if (prefs.getBoolPref("solid") == true) {
         applyIt("solid2.css");
       }
-    }	
-    
+    }
+
     if (prefs.getBoolPref("dark") == false) {
       if (prefs.getBoolPref("solid") == true) {
         applyIt("solid.css");
       }
     }
 
+    if (prefs.getBoolPref("scrollbars") == true) {
+      applyIt("scrollbars.css");
+    }
+
     if (prefs.getBoolPref("tabbottom") == true) {
       applyIt("tabbottom.css");
     }
-    
+
     if (prefs.getBoolPref("normal") == true) {
       applyIt("normal.css");
     }
-    
+
     if (prefs.getBoolPref("hide") == true) {
       applyIt("hide.css");
     }
-    
+
     if (prefs.getBoolPref("rdbutton") == true) {
       applyIt("rdbutton.css");
     }
-    
+
     if (prefs.getBoolPref("rdmenubutton") == true) {
       applyIt("rdmenubutton.css");
     }
-    
+
     if (prefs.getBoolPref("rdtabbox") == true) {
       applyIt("rdtabbox.css");
     }
-    
+
     if (prefs.getBoolPref("warm") == true) {
       applyIt("warm.css");
     }
-    
+
     if (prefs.getBoolPref("red") == true) {
       applyIt("red.css");
     }
-    
+
     if (prefs.getBoolPref("red2") == true) {
       applyIt("red2.css");
     }
-    
+
+    if (prefs.getBoolPref("navbuttons") == true) {
+      applyIt("navbuttons.css");
+    }
+
+    if (prefs.getBoolPref("forward") == true) {
+      applyIt("forward.css");
+    }
+
+    if (prefs.getBoolPref("bfdrop") == true) {
+      applyIt("bfdrop.css");
+    }
+
+    if (prefs.getBoolPref("bfdrop2") == true) {
+      applyIt("bfdrop2.css");
+    }
+
+    if (prefs.getBoolPref("bfdrop3") == true) {
+      applyIt("bfdrop3.css");
+    }
+
     if (prefs.getBoolPref("bookmark") == true) {
       applyIt("bookmark.css");
     }
-    
+
     if (prefs.getBoolPref("addon") == true) {
       applyIt("addon.css");
     }
-    
+
     if (prefs.getBoolPref("personalbutton") == true) {
       applyIt("personalbutton.css");
     }
-    
+
     if (prefs.getBoolPref("toolbarbutton") == true) {
       applyIt("toolbarbutton.css");
     }
-    
+
     if (prefs.getBoolPref("navbarbutton") == true) {
       applyIt("navbar.css");
     }
-    
+
     if (prefs.getBoolPref("fix") == true) {
       applyIt("fix.css");
     }
@@ -318,7 +346,7 @@ noiaMoonOptions.prototype = {
 };
 
 if (XPCOMUtils.generateNSGetFactory) {
-    var NSGetFactory = XPCOMUtils.generateNSGetFactory([noiaMoonOptions]);
+  var NSGetFactory = XPCOMUtils.generateNSGetFactory([noiaMoonOptions]);
 } else {
-    var NSGetModule = XPCOMUtils.generateNSGetModule([noiaMoonOptions]);
+  var NSGetModule = XPCOMUtils.generateNSGetModule([noiaMoonOptions]);
 }

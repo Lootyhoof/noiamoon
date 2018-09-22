@@ -6,7 +6,7 @@ noiamoonop.options = {
   prefs: Components.classes["@mozilla.org/preferences-service;1"]
       .getService(Components.interfaces.nsIPrefService)
       .getBranch("extensions.noiamoonop."),
-      
+
   //get options from prefs for options dialog
   init: function() {
     var prefs = this.prefs,idTmp;
@@ -21,38 +21,40 @@ noiamoonop.options = {
     }
     set("SemiRoundedtabRadio","semiroundedtab");
     set("rdtabRadio","rdtab");
-    set("sqtabRadio","sqtab");  
+    set("sqtabRadio","sqtab");
     set("rdbuttonRadio","rdbutton");
     set("rdmenubuttonRadio","rdmenubutton");
     set("rdtabboxRadio","rdtabbox");
     set("bookmarkRadio","bookmark");
     set("addonRadio","addon");
-    
+
     if (prefs.getBoolPref("grey") == false) {
       document.getElementById('grey2Radio').disabled = true;
       document.getElementById('darkerRadio').disabled = true;
-      document.getElementById('tabbarRadio').disabled = true; 
+      document.getElementById('darker2Radio').disabled = true;
+      document.getElementById('tabbarRadio').disabled = true;
     }
-    
+
     if (prefs.getBoolPref("grey") == true) {
       document.getElementById('grey2Radio').disabled = false;
       document.getElementById('darkerRadio').disabled = false;
-      document.getElementById('tabbarRadio').disabled = false;  
+      document.getElementById('darker2Radio').disabled = false;
+      document.getElementById('tabbarRadio').disabled = false;
     }
-    
+
     var xulRuntime = Components.classes["@mozilla.org/xre/app-info;1"]
           .getService(Components.interfaces.nsIXULRuntime);
-      
-    if ("Darwin" == xulRuntime.OS) {  
-      document.getElementById('normalRadio').disabled = true; 
-      document.getElementById('grey2Radio').disabled = true;  
+
+    if ("Darwin" == xulRuntime.OS) {
+      document.getElementById('normalRadio').disabled = true;
+      document.getElementById('grey2Radio').disabled = true;
     }
-    
-    if ("Linux" == xulRuntime.OS) { 
-      document.getElementById('normalRadio').disabled = true; 
-      document.getElementById('grey2Radio').disabled = true;  
+
+    if ("Linux" == xulRuntime.OS) {
+      document.getElementById('normalRadio').disabled = true;
+      document.getElementById('grey2Radio').disabled = true;
     }
-    
+
   },
   tOpen: function(url) {
 
@@ -72,22 +74,23 @@ noiamoonop.options = {
       .getBranch("extensions.noiamoonop.");
 
     this.prefs.clearUserPref("dark");
-    this.prefs.setBoolPref("grey",true);    
+    this.prefs.setBoolPref("grey",true);
     this.prefs.clearUserPref("blue");
     this.prefs.clearUserPref("grey2");
-    this.prefs.clearUserPref("semiroundedtab");   
+    this.prefs.clearUserPref("semiroundedtab");
     this.prefs.clearUserPref("rdtab");
     this.prefs.clearUserPref("sqtab");
     this.prefs.clearUserPref("shadow");
     this.prefs.clearUserPref("closebutton");
-    this.prefs.clearUserPref("findbartop");
     this.prefs.clearUserPref("noline");
     this.prefs.clearUserPref("tabbar");
     this.prefs.clearUserPref("strip");
     this.prefs.clearUserPref("solid");
+    this.prefs.clearUserPref("scrollbars");
     this.prefs.clearUserPref("tabbottom");
     this.prefs.clearUserPref("normal");
     this.prefs.clearUserPref("darker");
+    this.prefs.clearUserPref("darker2");
     this.prefs.clearUserPref("light");
     this.prefs.clearUserPref("hide");
     this.prefs.clearUserPref("rdbutton");
@@ -96,19 +99,24 @@ noiamoonop.options = {
     this.prefs.clearUserPref("warm");
     this.prefs.clearUserPref("red");
     this.prefs.clearUserPref("red2");
+    this.prefs.clearUserPref("navbuttons");
+    this.prefs.clearUserPref("forward");
+    this.prefs.clearUserPref("bfdrop");
+    this.prefs.clearUserPref("bfdrop2");
+    this.prefs.clearUserPref("bfdrop3");
     this.prefs.clearUserPref("bookmark");
     this.prefs.clearUserPref("addon");
     this.prefs.clearUserPref("personalbutton");
     this.prefs.clearUserPref("toolbarbutton");
     this.prefs.clearUserPref("navbarbutton");
     this.prefs.clearUserPref("plain");
-    this.prefs.clearUserPref("background"); 
+    this.prefs.clearUserPref("background");
     this.prefs.clearUserPref("fix");
-    this.prefs.clearUserPref("ontop");    
+    this.prefs.clearUserPref("ontop");
     this.prefs.setBoolPref("dark2",false);
     this.prefs.setBoolPref("blue2",false);
     this.prefs.setBoolPref("noline2",false);
-    this.prefs.setBoolPref("tabbar2",true); 
+    this.prefs.setBoolPref("tabbar2",true);
   },
 
   //when you press a radio
@@ -117,9 +125,9 @@ noiamoonop.options = {
     var prefs = Components.classes["@mozilla.org/preferences-service;1"]
       .getService(Components.interfaces.nsIPrefService)
       .getBranch("extensions.noiamoonop.");
-      
+
     var prefgen = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("");
-      
+
     this.applyCSS(which,value);
     if (which == "menuicons" || which == "buttonicons") {
       if (value == true) {
@@ -128,9 +136,9 @@ noiamoonop.options = {
         value = true;
       }
     }
-    
+
     this.prefs.setBoolPref(which,value);
-    
+
     var xulRuntime = Components.classes["@mozilla.org/xre/app-info;1"]
       .getService(Components.interfaces.nsIXULRuntime);
 
@@ -138,7 +146,7 @@ noiamoonop.options = {
     this.application = Components.classes["@mozilla.org/appshell/window-mediator;1"].getService(Components.interfaces.nsIWindowMediator).
       getMostRecentWindow( "navigator:browser" ).document;
       this.mainWindow = this.application.getElementById("main-window");
-      
+
     switch(xulRuntime.OS) {
       case "Darwin":
         this.mainWindow.setAttribute('nmdarwin',true);
@@ -153,7 +161,7 @@ noiamoonop.options = {
         this.mainWindow.setAttribute('nmother',true);
         break;
     }
-    
+
     if (prefs.getBoolPref("dark") == true) {
       this.mainWindow.setAttribute('nmblack',true);
     } else {
@@ -209,21 +217,21 @@ noiamoonop.options = {
       if (prefs.getBoolPref("tabbottom") == true) {
         if (prefgen.getBoolPref("browser.tabs.onTop") == true) {
           this.prefs.setBoolPref("ontop",true);
-        }  
+        }
         if (prefgen.getBoolPref("browser.tabs.onTop") == false) {
           this.prefs.setBoolPref("ontop",false);
         }
       }
-      prefgen.setBoolPref("browser.tabs.onTop",false);  
+      prefgen.setBoolPref("browser.tabs.onTop",false);
     }
-    
-    if(which == "ontop") {  
+
+    if(which == "ontop") {
       if (prefs.getBoolPref("ontop") == true) {
         this.prefs.setBoolPref("tabbottom",false);
-        this.applyCSS("tabbottom",false);   
+        this.applyCSS("tabbottom",false);
       }
     }
-    
+
     if(which == "tabbottom") {
       if (prefs.getBoolPref("tabbottom") == false) {
         if (prefs.getBoolPref("ontop") == false) {
@@ -231,14 +239,14 @@ noiamoonop.options = {
         }
         if (prefs.getBoolPref("ontop") == true) {
           prefgen.setBoolPref("browser.tabs.onTop",true);
-        }       
+        }
       }
     }
-      
+
     if (prefs.getBoolPref("grey") == false) {
       if (prefs.getBoolPref("blue") == false) {
         if (prefs.getBoolPref("dark") == false) {
-          if (prefs.getBoolPref("light") == false) {  
+          if (prefs.getBoolPref("light") == false) {
             if (prefs.getBoolPref("noline") == false) {
               this.prefs.setBoolPref("tabbar",true);
               this.applyCSS("tabbar",true);
@@ -247,11 +255,11 @@ noiamoonop.options = {
         }
       }
     }
-    
+
     if (prefs.getBoolPref("grey") == false) {
       if (prefs.getBoolPref("blue") == false) {
         if (prefs.getBoolPref("dark") == false) {
-          if (prefs.getBoolPref("light") == false) {  
+          if (prefs.getBoolPref("light") == false) {
             if (prefs.getBoolPref("noline") == true) {
               this.prefs.setBoolPref("tabbar2",true);
               this.applyCSS("tabbar2",true);
@@ -262,7 +270,7 @@ noiamoonop.options = {
         }
       }
     }
-    
+
     if (prefs.getBoolPref("grey") == false) {
       if (prefs.getBoolPref("blue") == false) {
         if (prefs.getBoolPref("dark") == false) {
@@ -275,6 +283,8 @@ noiamoonop.options = {
             this.applyCSS("light",false);
             this.prefs.setBoolPref("darker",false);
             this.applyCSS("darker",false);
+            this.prefs.setBoolPref("darker2",false);
+            this.applyCSS("darker2",false);
             this.prefs.setBoolPref("dark2",false);
             this.applyCSS("dark2",false);
             this.prefs.setBoolPref("solid",true);
@@ -282,7 +292,7 @@ noiamoonop.options = {
             this.mainWindow.setAttribute("nmblue",false);
             this.mainWindow.setAttribute("nmblack",false);
             this.mainWindow.setAttribute("nmlight",false);
-            }
+          }
         }
       }
     }
@@ -291,6 +301,9 @@ noiamoonop.options = {
       if (prefs.getBoolPref("dark") == true) {
         this.prefs.setBoolPref("dark2",true);
         this.applyCSS("dark2",true);
+        if (prefs.getBoolPref("scrollbars") == true) {
+          this.applyCSS("scrollbars",true);
+        }
         this.prefs.setBoolPref("tabbar",false);
         this.applyCSS("tabbar",false);
         this.prefs.setBoolPref("tabbar2",false);
@@ -303,6 +316,8 @@ noiamoonop.options = {
         this.applyCSS("grey",false);
         this.prefs.setBoolPref("darker",false);
         this.applyCSS("darker",false);
+        this.prefs.setBoolPref("darker2",false);
+        this.applyCSS("darker2",false);
         this.prefs.setBoolPref("light",false);
         this.applyCSS("light",false);
         this.prefs.setBoolPref("blue",false);
@@ -310,7 +325,7 @@ noiamoonop.options = {
         this.mainWindow.setAttribute("nmblue",false);
         this.mainWindow.setAttribute("nmlight",false);
       }
-    } 
+    }
 
     if(which == "grey") {
       if (prefs.getBoolPref("grey") == true) {
@@ -328,7 +343,7 @@ noiamoonop.options = {
         this.mainWindow.setAttribute("nmblack",false);
         this.mainWindow.setAttribute("nmlight",false);
       }
-    } 
+    }
 
     if(which == "grey") {
       if (prefs.getBoolPref("grey") == true) {
@@ -337,7 +352,7 @@ noiamoonop.options = {
           this.applyCSS("tabbar",true);
         }
       }
-    } 
+    }
 
     if(which == "grey") {
       if (prefs.getBoolPref("grey") == true) {
@@ -348,7 +363,7 @@ noiamoonop.options = {
           this.applyCSS("tabbar",false);
         }
       }
-    } 
+    }
 
     if(which == "blue") {
       if (prefs.getBoolPref("blue") == true) {
@@ -366,6 +381,8 @@ noiamoonop.options = {
         this.applyCSS("grey2",false);
         this.prefs.setBoolPref("darker",false);
         this.applyCSS("darker",false);
+        this.prefs.setBoolPref("darker2",false);
+        this.applyCSS("darker2",false);
         this.prefs.setBoolPref("light",false);
         this.applyCSS("light",false);
         this.mainWindow.setAttribute("nmblack",false);
@@ -384,9 +401,22 @@ noiamoonop.options = {
 
     if(which == "darker") {
       if (prefs.getBoolPref("darker") == true) {
+        this.prefs.setBoolPref("darker2",false);
+        this.applyCSS("darker2",false);
         if (prefs.getBoolPref("dark") == true) {
           this.prefs.setBoolPref("darker",false);
           this.applyCSS("darker",false);
+        }
+      }
+    }
+
+    if(which == "darker2") {
+      if (prefs.getBoolPref("darker2") == true) {
+        this.prefs.setBoolPref("darker",false);
+        this.applyCSS("darker",false);
+        if (prefs.getBoolPref("dark") == true) {
+          this.prefs.setBoolPref("darker2",false);
+          this.applyCSS("darker2",false);
         }
       }
     }
@@ -399,6 +429,8 @@ noiamoonop.options = {
         this.applyCSS("grey2",false);
         this.prefs.setBoolPref("darker",false);
         this.applyCSS("darker",false);
+        this.prefs.setBoolPref("darker2",false);
+        this.applyCSS("darker2",false);
         this.prefs.setBoolPref("dark",false);
         this.applyCSS("dark",false);
         this.prefs.setBoolPref("dark2",false);
@@ -406,7 +438,7 @@ noiamoonop.options = {
         this.prefs.setBoolPref("blue",false);
         this.applyCSS("blue",false);
         this.mainWindow.setAttribute("nmblue",false);
-        this.mainWindow.setAttribute("nmblack",false);    
+        this.mainWindow.setAttribute("nmblack",false);
         this.prefs.setBoolPref("tabbar",false);
         this.applyCSS("tabbar",false);
         this.prefs.setBoolPref("tabbar2",false);
@@ -450,31 +482,31 @@ noiamoonop.options = {
       this.prefs.setBoolPref("sqtab",false);
       this.applyCSS("sqtab",false);
     }
-    
+
     if(which == "rdtab") {
       this.prefs.setBoolPref("semiroundedtab",false);
       this.applyCSS("semiroundedtab",false);
       this.prefs.setBoolPref("sqtab",false);
       this.applyCSS("sqtab",false);
     }
-    
+
     if(which == "sqtab") {
       this.prefs.setBoolPref("semiroundedtab",false);
       this.applyCSS("semiroundedtab",false);
       this.prefs.setBoolPref("rdtab",false);
       this.applyCSS("rdtab",false);
     }
-    
+
     if(which == "hide") {
       this.prefs.setBoolPref("tabbottom",false);
       this.applyCSS("tabbottom",false);
     }
-    
+
     if(which == "tabbottom") {
       this.prefs.setBoolPref("hide",false);
       this.applyCSS("hide",false);
     }
-    
+
     if(which == "tabbar") {
       if (prefs.getBoolPref("tabbar") == true) {
         if (prefs.getBoolPref("blue") == true) {
@@ -490,7 +522,7 @@ noiamoonop.options = {
             this.prefs.setBoolPref("tabbar",false);
             this.applyCSS("tabbar",false);
             this.prefs.setBoolPref("tabbar2",false);
-            this.applyCSS("tabbar2",false);   
+            this.applyCSS("tabbar2",false);
           }
         }
         if (prefs.getBoolPref("noline") == false) {
@@ -502,14 +534,14 @@ noiamoonop.options = {
           }
         }
       }
-      if (prefs.getBoolPref("tabbar") == false) { 
+      if (prefs.getBoolPref("tabbar") == false) {
         this.prefs.setBoolPref("tabbar",false);
         this.applyCSS("tabbar",false);
         this.prefs.setBoolPref("tabbar2",false);
         this.applyCSS("tabbar2",false);
       }
     }
-    
+
     if(which == "grey2") {
       if (prefs.getBoolPref("grey2") == true) {
         if (prefs.getBoolPref("blue") == true) {
@@ -522,7 +554,7 @@ noiamoonop.options = {
         }
       }
     }
-    
+
     if(which == "darker") {
       if (prefs.getBoolPref("darker") == true) {
         if (prefs.getBoolPref("blue") == true) {
@@ -532,6 +564,19 @@ noiamoonop.options = {
         if (prefs.getBoolPref("light") == true) {
           this.prefs.setBoolPref("darker",false);
           this.applyCSS("darker",false);
+        }
+      }
+    }
+
+    if(which == "darker2") {
+      if (prefs.getBoolPref("darker2") == true) {
+        if (prefs.getBoolPref("blue") == true) {
+          this.prefs.setBoolPref("darker2",false);
+          this.applyCSS("darker2",false);
+        }
+        if (prefs.getBoolPref("light") == true) {
+          this.prefs.setBoolPref("darker2",false);
+          this.applyCSS("darker2",false);
         }
       }
     }
@@ -570,21 +615,21 @@ noiamoonop.options = {
         }
       }
     }
-    
+
     if (prefs.getBoolPref("dark") == true) {
       if (prefs.getBoolPref("solid") == true) {
         this.applyCSS("solid",false);
         this.applyCSS("solid2",true);
       }
     }
-    
+
     if (prefs.getBoolPref("dark") == true) {
       if (prefs.getBoolPref("solid") == false) {
         this.applyCSS("solid",false);
         this.applyCSS("solid2",false);
       }
     }
-    
+
     if (prefs.getBoolPref("dark") == false) {
       if (prefs.getBoolPref("solid") == true) {
         this.applyCSS("solid",true);
@@ -598,26 +643,67 @@ noiamoonop.options = {
         this.applyCSS("noline2",true);
       }
     }
-    
+
     if (prefs.getBoolPref("noline") == false) {
       this.prefs.setBoolPref("noline2",false);
       this.applyCSS("noline2",false);
     }
-    
+
     if(which == "red") {
       if (prefs.getBoolPref("red") == true) {
         this.prefs.setBoolPref("red2",false);
         this.applyCSS("red2",false);
       }
     }
-    
+
     if(which == "red2") {
       if (prefs.getBoolPref("red2") == true) {
         this.prefs.setBoolPref("red",false);
         this.applyCSS("red",false);
       }
     }
-    
+
+    if(which == "navbuttons") {
+      if (prefs.getBoolPref("navbuttons") == true) {
+        this.prefs.setBoolPref("forward",false);
+        this.applyCSS("forward",false);
+      }
+    }
+
+    if(which == "forward") {
+      if (prefs.getBoolPref("forward") == true) {
+        this.prefs.setBoolPref("navbuttons",false);
+        this.applyCSS("navbuttons",false);
+      }
+    }
+
+    if(which == "bfdrop") {
+      if (prefs.getBoolPref("bfdrop") == true) {
+        this.prefs.setBoolPref("bfdrop2",false);
+        this.prefs.setBoolPref("bfdrop3",false);
+        this.applyCSS("bfdrop2",false);
+        this.applyCSS("bfdrop3",false);
+      }
+    }
+
+    if(which == "bfdrop2") {
+      if (prefs.getBoolPref("bfdrop2") == true) {
+        this.prefs.setBoolPref("bfdrop",false);
+        this.prefs.setBoolPref("bfdrop3",false);
+        this.applyCSS("bfdrop",false);
+        this.applyCSS("bfdrop3",false);
+      }
+    }
+
+    if(which == "bfdrop3") {
+      if (prefs.getBoolPref("bfdrop3") == true) {
+        this.prefs.setBoolPref("bfdrop",false);
+        this.prefs.setBoolPref("bfdrop2",false);
+        this.applyCSS("bfdrop",false);
+        this.applyCSS("bfdrop2",false);
+      }
+    }
+
     this.init();
   },
 
@@ -644,18 +730,21 @@ noiamoonop.options = {
 
     if (which == "semiroundedtab") {
       applyIt("semi_rounded_tab.css");
-    } 
+    }
     if (which == "dark") {
       applyIt("dark.css");
     }
     if (which == "blue") {
       applyIt("blue.css");
-    } 
+    }
     if (which == "grey") {
       applyIt("grey.css");
     }
     if (which == "darker") {
       applyIt("darker.css");
+    }
+    if (which == "darker2") {
+      applyIt("darker2.css");
     }
     if (which == "light") {
       applyIt("light.css");
@@ -675,19 +764,16 @@ noiamoonop.options = {
     if (which == "shadow") {
       applyIt("shadow.css");
     }
-      if (which == "closebutton") {
+    if (which == "closebutton") {
       applyIt("closebutton.css");
-    }
-      if (which == "findbartop") {
-      applyIt("findbartop.css");
     }
     if (which == "noline") {
       applyIt("noline.css");
-    } 
+    }
     if (which == "noline2") {
       applyIt("noline2.css");
     }
-      if (which == "tabbar") {
+    if (which == "tabbar") {
       applyIt("tabbar.css");
     }
     if (which == "strip") {
@@ -701,6 +787,9 @@ noiamoonop.options = {
     }
     if (which == "tabbar2") {
       applyIt("tabbar2.css");
+    }
+    if (which == "scrollbars") {
+      applyIt("scrollbars.css");
     }
     if (which == "tabbottom") {
       applyIt("tabbottom.css");
@@ -729,12 +818,27 @@ noiamoonop.options = {
     if (which == "red2") {
       applyIt("red2.css");
     }
+    if (which == "navbuttons") {
+      applyIt("navbuttons.css");
+    }
+    if (which == "forward") {
+      applyIt("forward.css");
+    }
+    if (which == "bfdrop") {
+      applyIt("bfdrop.css");
+    }
+    if (which == "bfdrop2") {
+      applyIt("bfdrop2.css");
+    }
+    if (which == "bfdrop3") {
+      applyIt("bfdrop3.css");
+    }
     if (which == "bookmark") {
       applyIt("bookmark.css");
     }
     if (which == "addon") {
       applyIt("addon.css");
-    }     
+    }
     if (which == "personalbutton") {
       applyIt("personalbutton.css");
     }

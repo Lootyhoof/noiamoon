@@ -1,0 +1,9 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#nav-bar[iconsize=large] #forward-button > .toolbarbutton-icon {
+  width: 24px !important; 
+}
+
+#nav-bar[iconsize=small] #forward-button > .toolbarbutton-icon {
+  width: 16px !important;
+}

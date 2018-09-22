@@ -1,258 +1,290 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>  
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <!DOCTYPE prefwindow SYSTEM "chrome://noiamoonoptions/locale/options.dtd">
 <prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
     xmlns:html="http://www.w3.org/1999/xhtml"
-	id="noiamoonop"
-	type="prefwindow"
-	title="&NoiaMoonOptions;"
-	onload="noiamoonop.options.init()"
+  id="noiamoonop"
+  type="prefwindow"
+  title="&NoiaMoonOptions;"
+  onload="noiamoonop.options.init()"
     buttons="extra1"
-	buttonlabelextra1="&nmclose;"
-	ondialogextra1="window.close();"
+  buttonlabelextra1="&nmclose;"
+  ondialogextra1="window.close();"
 >
 
-    <script type="application/x-javascript" src="options.js"/>
-	
-	<prefpane>
-        <preferences>
-		<preference id="noiamoonpersona"	name="lightweightThemes.isThemeSelected" type="bool" instantApply="true"/>	
-		<preference id="greyRadio" name="extensions.noiamoonop.grey" type="bool" instantApply="true"/>	
-		<preference id="blueRadio" name="extensions.noiamoonop.blue" type="bool" instantApply="true"/>	
-		<preference id="DarkRadio" name="extensions.noiamoonop.dark" type="bool" instantApply="true"/>			
-		<preference id="grey2Radio" name="extensions.noiamoonop.grey2" type="bool" instantApply="true"/>	
-		<preference id="solidRadio" name="extensions.noiamoonop.solid" type="bool" instantApply="true"/>		
-		<preference id="shadowRadio" name="extensions.noiamoonop.shadow" type="bool" instantApply="true"/>
-		<preference id="closebuttonRadio" name="extensions.noiamoonop.closebutton" type="bool" instantApply="true"/>
-		<preference id="findbartopRadio" name="extensions.noiamoonop.findbartop" type="bool" instantApply="true"/>
-		<preference id="nolineRadio" name="extensions.noiamoonop.noline" type="bool" instantApply="true"/>
-		<preference id="tabbarRadio" name="extensions.noiamoonop.tabbar" type="bool" instantApply="true"/>
-		<preference id="stripRadio" name="extensions.noiamoonop.strip" type="bool" instantApply="true"/>
-		<preference id="tabbottomRadio" name="extensions.noiamoonop.tabbottom" type="bool" instantApply="true"/>
-		<preference id="normalRadio" name="extensions.noiamoonop.normal" type="bool" instantApply="true"/>		
-		<preference id="hideRadio" name="extensions.noiamoonop.hide" type="bool" instantApply="true"/>		
-		<preference id="darkerRadio" name="extensions.noiamoonop.darker" type="bool" instantApply="true"/>
-		<preference id="lightRadio" name="extensions.noiamoonop.light" type="bool" instantApply="true"/>
-		<preference id="warmRadio" name="extensions.noiamoonop.warm" type="bool" instantApply="true"/>
-		<preference id="redRadio" name="extensions.noiamoonop.red" type="bool" instantApply="true"/>
-		<preference id="red2Radio" name="extensions.noiamoonop.red2" type="bool" instantApply="true"/>
-		<preference id="movableRadio" name="extensions.noiamoonop.movable" type="bool" instantApply="true"/>
-		<preference id="resetRadio" name="extensions.noiamoonop.reset" type="bool" instantApply="true"/>
-		<preference id="navbarbuttonRadio" name="extensions.noiamoonop.navbarbutton" type="bool" instantApply="true"/>
-		<preference id="personalbuttonRadio" name="extensions.noiamoonop.personalbutton" type="bool" instantApply="true"/>
-		<preference id="toolbarbuttonRadio" name="extensions.noiamoonop.toolbarbutton" type="bool" instantApply="true"/>
-	</preferences>
-	<vbox>	
-			<tabbox id="nftabbox2">
-			<tabs>
-			<tab label="&main;"   style="height:20px;" id="nftmain"/>
-			<tab label="&tab;"   style="height:20px;" id="nfttab"/>
-			<tab label="&rdbutton;"   style="height:20px;" id="nftrdbutton"/>
-			<tab label="&icons;"   style="height:20px;" id="nfticons"/>
-			<tab label="&Advanced;"   style="height:20px;" id="nftOptions"/>
-			</tabs>
-			<tabpanels>
-			<tabpanel id="panemain" orient="vertical">
-			<groupbox>
+  <script type="application/x-javascript" src="options.js"/>
+
+  <prefpane>
+    <preferences>
+      <preference id="noiamoonpersona"  name="lightweightThemes.isThemeSelected" type="bool" instantApply="true"/>
+      <preference id="greyRadio" name="extensions.noiamoonop.grey" type="bool" instantApply="true"/>
+      <preference id="blueRadio" name="extensions.noiamoonop.blue" type="bool" instantApply="true"/>
+      <preference id="DarkRadio" name="extensions.noiamoonop.dark" type="bool" instantApply="true"/>
+      <preference id="grey2Radio" name="extensions.noiamoonop.grey2" type="bool" instantApply="true"/>
+      <preference id="solidRadio" name="extensions.noiamoonop.solid" type="bool" instantApply="true"/>
+      <preference id="shadowRadio" name="extensions.noiamoonop.shadow" type="bool" instantApply="true"/>
+      <preference id="scrollbarsRadio" name="extensions.noiamoonop.scrollbars" type="bool" instantApply="true"/>
+      <preference id="closebuttonRadio" name="extensions.noiamoonop.closebutton" type="bool" instantApply="true"/>
+      <preference id="nolineRadio" name="extensions.noiamoonop.noline" type="bool" instantApply="true"/>
+      <preference id="tabbarRadio" name="extensions.noiamoonop.tabbar" type="bool" instantApply="true"/>
+      <preference id="stripRadio" name="extensions.noiamoonop.strip" type="bool" instantApply="true"/>
+      <preference id="tabbottomRadio" name="extensions.noiamoonop.tabbottom" type="bool" instantApply="true"/>
+      <preference id="normalRadio" name="extensions.noiamoonop.normal" type="bool" instantApply="true"/>
+      <preference id="hideRadio" name="extensions.noiamoonop.hide" type="bool" instantApply="true"/>
+      <preference id="darkerRadio" name="extensions.noiamoonop.darker" type="bool" instantApply="true"/>
+      <preference id="darker2Radio" name="extensions.noiamoonop.darker2" type="bool" instantApply="true"/>
+      <preference id="lightRadio" name="extensions.noiamoonop.light" type="bool" instantApply="true"/>
+      <preference id="warmRadio" name="extensions.noiamoonop.warm" type="bool" instantApply="true"/>
+      <preference id="redRadio" name="extensions.noiamoonop.red" type="bool" instantApply="true"/>
+      <preference id="red2Radio" name="extensions.noiamoonop.red2" type="bool" instantApply="true"/>
+      <preference id="navbuttonsRadio" name="extensions.noiamoonop.navbuttons" type="bool" instantApply="true"/>
+      <preference id="forwardRadio" name="extensions.noiamoonop.forward" type="bool" instantApply="true"/>
+      <preference id="bfdropRadio" name="extensions.noiamoonop.bfdrop" type="bool" instantApply="true"/>
+      <preference id="bfdrop2Radio" name="extensions.noiamoonop.bfdrop2" type="bool" instantApply="true"/>
+      <preference id="bfdrop3Radio" name="extensions.noiamoonop.bfdrop3" type="bool" instantApply="true"/>
+      <preference id="resetRadio" name="extensions.noiamoonop.reset" type="bool" instantApply="true"/>
+      <preference id="navbarbuttonRadio" name="extensions.noiamoonop.navbarbutton" type="bool" instantApply="true"/>
+      <preference id="personalbuttonRadio" name="extensions.noiamoonop.personalbutton" type="bool" instantApply="true"/>
+      <preference id="toolbarbuttonRadio" name="extensions.noiamoonop.toolbarbutton" type="bool" instantApply="true"/>
+    </preferences>
+    <vbox>
+      <tabbox id="nftabbox2">
+        <tabs>
+          <tab label="&main;"   style="height:20px;" id="nftmain"/>
+          <tab label="&tab;"   style="height:20px;" id="nfttab"/>
+          <tab label="&rdbutton;"   style="height:20px;" id="nftrdbutton"/>
+          <tab label="&icons;"   style="height:20px;" id="nfticons"/>
+          <tab label="&Advanced;"   style="height:20px;" id="nftOptions"/>
+        </tabs>
+        <tabpanels>
+          <tabpanel id="panemain" orient="vertical">
+            <groupbox>
               <hbox align="center">
-					<checkbox label="&greyEnable;" preference="greyRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'grey'); else noiamoonop.options.radioChange(false,'grey');" tooltiptext=""/>		    		
-			  </hbox>
+                <checkbox label="&greyEnable;" preference="greyRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'grey'); else noiamoonop.options.radioChange(false,'grey');" tooltiptext=""/>
+              </hbox>
               <hbox align="center">
-					<checkbox label="&light;" preference="lightRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'light'); else noiamoonop.options.radioChange(false,'light');" tooltiptext="&tiplight;"/>
-			  </hbox>
-              <hbox align="center">			  
-					<checkbox label="&blueEnable;" preference="blueRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'blue'); else noiamoonop.options.radioChange(false,'blue');" tooltiptext=""/>			
-			  </hbox>
-              <hbox align="center">			  
-					<checkbox label="&DarkEnable;" preference="DarkRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'dark'); else noiamoonop.options.radioChange(false,'dark');" tooltiptext=""/>			
-			  </hbox>
-			</groupbox>
-			
-			<groupbox>
-		
-				<hbox>
-				<grid flex="1">
-				<columns>
-				<column flex="1" />
-				<column flex="1" />
-				</columns>
-			
-				<rows>
-				<row>
-						<hbox align="center">				
-						<checkbox label="&noline;" preference="nolineRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'noline'); else noiamoonop.options.radioChange(false,'noline');" tooltiptext="&tipnoline;"/>
-						</hbox>
-						<hbox align="center">
-						<checkbox label="&hide;" preference="hideRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'hide'); else noiamoonop.options.radioChange(false,'hide');" tooltiptext="&tiphide;"/>		
-						</hbox>
-				</row>
-				<row>						
-						<hbox align="center">
-						<checkbox label="&normal;" preference="normalRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'normal'); else noiamoonop.options.radioChange(false,'normal');" tooltiptext="&tipnormal;"/>
-						</hbox>
-						<hbox align="center">
-						<label value="&windowblinds;"/>
-			            </hbox>
+                <checkbox label="&light;" preference="lightRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'light'); else noiamoonop.options.radioChange(false,'light');" tooltiptext="&tiplight;"/>
+              </hbox>
+              <hbox align="center">
+                <checkbox label="&blueEnable;" preference="blueRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'blue'); else noiamoonop.options.radioChange(false,'blue');" tooltiptext=""/>
+              </hbox>
+              <hbox align="center">
+                <checkbox label="&DarkEnable;" preference="DarkRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'dark'); else noiamoonop.options.radioChange(false,'dark');" tooltiptext=""/>
+              </hbox>
+            </groupbox>
 
-				</row>
-				<row>
-						<hbox align="center">
-						<checkbox label="&tabbottom;" preference="tabbottomRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'tabbottom'); else noiamoonop.options.radioChange(false,'tabbottom');" tooltiptext=""/>
-			            </hbox>
-				</row>	
-				</rows>
-				</grid>
-				</hbox>
-				
-				<separator class="groove"/>				    
+            <groupbox>
 
-						<hbox align="center">			    
-						<checkbox label="&strip;" preference="stripRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'strip'); else noiamoonop.options.radioChange(false,'strip');" tooltiptext="&Blueandgrey;"/>
-						</hbox>
-						
-				<separator class="groove"/>					
-			
-					<vbox>
-						<hbox align="center">
-						<checkbox label="&grey2;" preference="grey2Radio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'grey2'); else noiamoonop.options.radioChange(false,'grey2');" tooltiptext="&Grey;"/>
-						</hbox>						
-						<hbox align="center">
-						<checkbox label="&tabbar;" preference="tabbarRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'tabbar'); else noiamoonop.options.radioChange(false,'tabbar');" tooltiptext="&Grey;"/>
-						</hbox>						
-						<hbox align="center">
-						<checkbox label="&darker;" preference="darkerRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'darker'); else noiamoonop.options.radioChange(false,'darker');" tooltiptext="&Grey;"/>
-						</hbox>					
-					</vbox>
-			</groupbox>
+              <hbox>
+                <grid flex="1">
+                  <columns>
+                    <column flex="1" />
+                    <column flex="1" />
+                  </columns>
 
-			</tabpanel>					
-			<tabpanel id="panetab" orient="vertical">
-			<groupbox>
-                        <label value="&browsertab;" style="font-weight:bold;"/>			
+                  <rows>
+                    <row>
+                      <hbox align="center">
+                        <checkbox label="&noline;" preference="nolineRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'noline'); else noiamoonop.options.radioChange(false,'noline');" tooltiptext="&tipnoline;"/>
+                      </hbox>
+                      <hbox align="center">
+                        <checkbox label="&hide;" preference="hideRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'hide'); else noiamoonop.options.radioChange(false,'hide');" tooltiptext="&tiphide;"/>
+                      </hbox>
+                    </row>
+                    <row>
+                      <hbox align="center">
+                        <checkbox label="&normal;" preference="normalRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'normal'); else noiamoonop.options.radioChange(false,'normal');" tooltiptext="&tipnormal;"/>
+                      </hbox>
+                      <hbox align="center">
+                        <label value="&windowblinds;"/>
+                      </hbox>
 
-					    <radiogroup id="rdtabRadio" orient="horizontal" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-                        <radio label="&rdtabEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdtab');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&rdtabDisable;" value="0" style="display: none;" onmousedown="noiamoonop.options.radioChange(false,'rdtab');this.parentNode.selectedIndex = 0"/>
-						<label value="&rdtab;" style="display: none;margin-top:4px;"/>
-						</radiogroup>
-						
-						<radiogroup id="SemiRoundedtabRadio" orient="horizontal" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-                        <radio label="&SemiRoundedtabEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'semiroundedtab');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&SemiRoundedtabDisable;" value="0" style="display: none;" onmousedown="noiamoonop.options.radioChange(false,'semiroundedtab');this.parentNode.selectedIndex = 0"/>
-						<label value="&SemiRoundedtab;" style="display: none;margin-top:4px;"/>
-						</radiogroup>
-						
-						<radiogroup id="sqtabRadio" orient="horizontal" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-                        <radio label="&sqtabEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'sqtab');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&sqtabDisable;" value="0" style="display: none;" onmousedown="noiamoonop.options.radioChange(false,'sqtab');this.parentNode.selectedIndex = 0"/>
-						<label value="&sqtab;" style="display: none;margin-top:4px;"/>
-						</radiogroup>						
-						<hbox align="center">
-						<checkbox label="&solidtab;" preference="solidRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'solid'); else noiamoonop.options.radioChange(false,'solid');"/>										
-						</hbox>						
-						<hbox align="center">
-						<checkbox label="&shadow;" preference="shadowRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'shadow'); else noiamoonop.options.radioChange(false,'shadow');" tooltiptext="&tipshadow;"/>						
-						</hbox>						
-						<separator class="groove"/>	
-                        <label value="&rdtabbox;" style="margin-top:4px;font-weight:bold;"/>						
-						<hbox align="center">				
-						<radiogroup id="rdtabboxRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-						<radio label="&rdtabboxEnable;" tooltiptext="" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdtabbox');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&rdtabboxDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'rdtabbox');this.parentNode.selectedIndex = 0"/>
-						</radiogroup>
-						</hbox>
-			</groupbox>						
-			</tabpanel>			
+                    </row>
+                    <row>
+                      <hbox align="center">
+                        <checkbox label="&tabbottom;" preference="tabbottomRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'tabbottom'); else noiamoonop.options.radioChange(false,'tabbottom');" tooltiptext=""/>
+                      </hbox>
+                      <hbox align="center">
+                        <checkbox label="&scrollbars;" preference="scrollbarsRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'scrollbars'); else noiamoonop.options.radioChange(false,'scrollbars');"/>
+                      </hbox>
+                    </row>
+                  </rows>
+                </grid>
+              </hbox>
 
-			<tabpanel id="panebuttons" orient="vertical">				
-			<groupbox>
-                        <label value="&buttonstyle;" style="margin-top:4px;font-weight:bold;"/>							
-						<hbox align="center">			
-						<radiogroup id="rdbuttonRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-						<radio label="&rdbuttonEnable;" tooltiptext="" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdbutton');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&rdbuttonDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'rdbutton');this.parentNode.selectedIndex = 0"/>
-						</radiogroup>
-						</hbox>
-						<separator class="groove"/>	
-						<label value="&menubuttonstyle;" style="margin-top:4px;font-weight:bold;"/>							
-						<hbox align="center">			
-						<radiogroup id="rdmenubuttonRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-						<radio label="&rdmenubuttonEnable;" tooltiptext="" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdmenubutton');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&rdmenubuttonDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'rdmenubutton');this.parentNode.selectedIndex = 0"/>
-						</radiogroup>
-						</hbox>
-						<separator class="groove"/>	
-                        <label value="&closestyle;" style="margin-top:4px;font-weight:bold;"/>							
-						<hbox align="center">
-						<checkbox label="&closebutton;" preference="closebuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'closebutton'); else noiamoonop.options.radioChange(false,'closebutton');" />
-						</hbox>
-			</groupbox>
-			</tabpanel>
+              <separator class="groove"/>
 
-			<tabpanel id="paneIcons" orient="vertical">
-			<vbox>	
-			<groupbox>
-						<hbox align="center">				
-						<checkbox label="&warm;" preference="warmRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'warm'); else noiamoonop.options.radioChange(false,'warm');"/>
-						</hbox>							
-						<hbox align="center">						
-						<checkbox label="&red;" preference="redRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'red'); else noiamoonop.options.radioChange(false,'red');"/>
-						</hbox>							
-						<hbox align="center">						
-						<checkbox label="&red2;" preference="red2Radio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'red2'); else noiamoonop.options.radioChange(false,'red2');"/>
-						</hbox>				
-			</groupbox>
+              <hbox align="center">
+                <checkbox label="&strip;" preference="stripRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'strip'); else noiamoonop.options.radioChange(false,'strip');" tooltiptext="&Blueandgrey;"/>
+              </hbox>
 
-			</vbox>	
-			</tabpanel>			
+              <separator class="groove"/>
 
-			<tabpanel id="paneAdvanced" orient="vertical">
-			<groupbox>
-				<label value="&bookmark;" style="font-weight:bold;"/>
-						<hbox align="center">				
-						<radiogroup id="bookmarkRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-                        <radio label="&bookEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'bookmark');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&bookDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'bookmark');this.parentNode.selectedIndex = 0"/>
-						<label value="&bookmark;" style="margin-top:4px;display:none;"/>
-						</radiogroup>
-						</hbox>		
-						
-				<separator class="groove"/>	
-				
-				<label value="&addon;" style="font-weight:bold;"/>
-						<hbox align="center">				
-						<radiogroup id="addonRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
-                        <radio label="&addonEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'addon');this.parentNode.selectedIndex = 1"/>
-                        <radio label="&addonDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'addon');this.parentNode.selectedIndex = 0"/>
-						<label value="&addon;" style="margin-top:4px;display:none;"/>
-						</radiogroup>
-						</hbox>			
-						
-				<separator class="groove"/>	
-				
-				<label value="&personalbuttontitle;" style="font-weight:bold;"/>
-						<hbox align="center">	
-						<checkbox label="&personalbuttonEnable;" tooltiptext="&tippersonalbuttonEnable;" preference="personalbuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'personalbutton'); else noiamoonop.options.radioChange(false,'personalbutton');"/>	
-						</hbox>						
+              <vbox>
+                <hbox align="center">
+                  <checkbox label="&grey2;" preference="grey2Radio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'grey2'); else noiamoonop.options.radioChange(false,'grey2');" tooltiptext="&Grey;"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&tabbar;" preference="tabbarRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'tabbar'); else noiamoonop.options.radioChange(false,'tabbar');" tooltiptext="&Grey;"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&darker;" preference="darkerRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'darker'); else noiamoonop.options.radioChange(false,'darker');" tooltiptext="&Grey;"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&darker2;" preference="darker2Radio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'darker2'); else noiamoonop.options.radioChange(false,'darker2');" tooltiptext="&Grey;"/>
+                </hbox>
+              </vbox>
+            </groupbox>
 
-				<separator class="groove"/>	
-				
-				<label value="&toolbarbuttontitle;" style="font-weight:bold;"/>
-						<hbox align="center">
-						<checkbox label="&toolbarbuttonEnable;" tooltiptext="&tiptoolbarbuttonEnable;" preference="toolbarbuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'toolbarbutton'); else noiamoonop.options.radioChange(false,'toolbarbutton');"/>	
-						</hbox>	
-						
-				<separator class="groove"/>	
-				
-				<label value="&navbarbuttontitle;" style="font-weight:bold;"/>
-						<hbox align="center">
-						<checkbox label="&navbarbuttonEnable;" tooltiptext="" preference="navbarbuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'navbarbutton'); else noiamoonop.options.radioChange(false,'navbarbutton');"/>	
-						</hbox>							
-			</groupbox>	
-						<button label="&reset;" oncommand="noiamoonop.options.resetnm();alert('&restartPM;');"/>
-			</tabpanel>					
-			</tabpanels>
-		</tabbox>
-	</vbox>
+          </tabpanel>
+          <tabpanel id="panetab" orient="vertical">
+            <groupbox>
+              <label value="&browsertab;" style="font-weight:bold;"/>
+
+              <radiogroup id="rdtabRadio" orient="horizontal" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                <radio label="&rdtabEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdtab');this.parentNode.selectedIndex = 1"/>
+                <radio label="&rdtabDisable;" value="0" style="display: none;" onmousedown="noiamoonop.options.radioChange(false,'rdtab');this.parentNode.selectedIndex = 0"/>
+                <label value="&rdtab;" style="display: none;margin-top:4px;"/>
+              </radiogroup>
+
+              <radiogroup id="SemiRoundedtabRadio" orient="horizontal" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                <radio label="&SemiRoundedtabEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'semiroundedtab');this.parentNode.selectedIndex = 1"/>
+                <radio label="&SemiRoundedtabDisable;" value="0" style="display: none;" onmousedown="noiamoonop.options.radioChange(false,'semiroundedtab');this.parentNode.selectedIndex = 0"/>
+                <label value="&SemiRoundedtab;" style="display: none;margin-top:4px;"/>
+              </radiogroup>
+
+              <radiogroup id="sqtabRadio" orient="horizontal" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                <radio label="&sqtabEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'sqtab');this.parentNode.selectedIndex = 1"/>
+                <radio label="&sqtabDisable;" value="0" style="display: none;" onmousedown="noiamoonop.options.radioChange(false,'sqtab');this.parentNode.selectedIndex = 0"/>
+                <label value="&sqtab;" style="display: none;margin-top:4px;"/>
+              </radiogroup>
+              <hbox align="center">
+                <checkbox label="&solidtab;" preference="solidRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'solid'); else noiamoonop.options.radioChange(false,'solid');"/>
+              </hbox>
+              <hbox align="center">
+                <checkbox label="&shadow;" preference="shadowRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'shadow'); else noiamoonop.options.radioChange(false,'shadow');" tooltiptext="&tipshadow;"/>
+              </hbox>
+              <separator class="groove"/>
+              <label value="&rdtabbox;" style="margin-top:4px;font-weight:bold;"/>
+              <hbox align="center">
+                <radiogroup id="rdtabboxRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                  <radio label="&rdtabboxEnable;" tooltiptext="" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdtabbox');this.parentNode.selectedIndex = 1"/>
+                  <radio label="&rdtabboxDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'rdtabbox');this.parentNode.selectedIndex = 0"/>
+                </radiogroup>
+              </hbox>
+            </groupbox>
+          </tabpanel>
+
+          <tabpanel id="panebuttons" orient="vertical">
+            <groupbox>
+              <label value="&buttonstyle;" style="margin-top:4px;font-weight:bold;"/>
+              <hbox align="center">
+                <radiogroup id="rdbuttonRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                  <radio label="&rdbuttonEnable;" tooltiptext="" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdbutton');this.parentNode.selectedIndex = 1"/>
+                  <radio label="&rdbuttonDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'rdbutton');this.parentNode.selectedIndex = 0"/>
+                </radiogroup>
+              </hbox>
+              <separator class="groove"/>
+              <label value="&menubuttonstyle;" style="margin-top:4px;font-weight:bold;"/>
+              <hbox align="center">
+                <radiogroup id="rdmenubuttonRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                  <radio label="&rdmenubuttonEnable;" tooltiptext="" value="1" onmousedown="noiamoonop.options.radioChange(true,'rdmenubutton');this.parentNode.selectedIndex = 1"/>
+                  <radio label="&rdmenubuttonDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'rdmenubutton');this.parentNode.selectedIndex = 0"/>
+                </radiogroup>
+              </hbox>
+              <separator class="groove"/>
+              <label value="&closestyle;" style="margin-top:4px;font-weight:bold;"/>
+              <hbox align="center">
+                <checkbox label="&closebutton;" preference="closebuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'closebutton'); else noiamoonop.options.radioChange(false,'closebutton');" />
+              </hbox>
+            </groupbox>
+          </tabpanel>
+
+          <tabpanel id="paneIcons" orient="vertical">
+            <vbox>
+              <groupbox>
+                <hbox align="center">
+                  <checkbox label="&warm;" preference="warmRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'warm'); else noiamoonop.options.radioChange(false,'warm');"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&red;" preference="redRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'red'); else noiamoonop.options.radioChange(false,'red');"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&red2;" preference="red2Radio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'red2'); else noiamoonop.options.radioChange(false,'red2');"/>
+                </hbox>
+                
+                <separator class="groove"/>
+                
+                <hbox align="center">
+                  <checkbox label="&navbuttons;" preference="navbuttonsRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'navbuttons'); else noiamoonop.options.radioChange(false,'navbuttons');"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&forward;" preference="forwardRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'forward'); else noiamoonop.options.radioChange(false,'forward');"/>
+                </hbox>
+                
+                <separator class="groove"/>
+                
+                <hbox align="center">
+                  <checkbox label="&bfdrop;" preference="bfdropRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'bfdrop'); else noiamoonop.options.radioChange(false,'bfdrop');"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&bfdrop2;" preference="bfdrop2Radio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'bfdrop2'); else noiamoonop.options.radioChange(false,'bfdrop2');"/>
+                </hbox>
+                <hbox align="center">
+                  <checkbox label="&bfdrop3;" preference="bfdrop3Radio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'bfdrop3'); else noiamoonop.options.radioChange(false,'bfdrop3');"/>
+                </hbox>
+              </groupbox>
+
+            </vbox>
+          </tabpanel>
+
+          <tabpanel id="paneAdvanced" orient="vertical">
+            <groupbox>
+              <label value="&bookmark;" style="font-weight:bold;"/>
+              <hbox align="center">
+                <radiogroup id="bookmarkRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                  <radio label="&bookEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'bookmark');this.parentNode.selectedIndex = 1"/>
+                  <radio label="&bookDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'bookmark');this.parentNode.selectedIndex = 0"/>
+                  <label value="&bookmark;" style="margin-top:4px;display:none;"/>
+                </radiogroup>
+              </hbox>
+
+              <separator class="groove"/>
+
+              <label value="&addon;" style="font-weight:bold;"/>
+              <hbox align="center">
+                <radiogroup id="addonRadio" orient="vertical" value="" style="border-width:0px;border-style:solid;margin-bottom:1px;">
+                  <radio label="&addonEnable;" value="1" onmousedown="noiamoonop.options.radioChange(true,'addon');this.parentNode.selectedIndex = 1"/>
+                  <radio label="&addonDisable;" value="0" onmousedown="noiamoonop.options.radioChange(false,'addon');this.parentNode.selectedIndex = 0"/>
+                  <label value="&addon;" style="margin-top:4px;display:none;"/>
+                </radiogroup>
+              </hbox>
+
+              <separator class="groove"/>
+
+              <label value="&personalbuttontitle;" style="font-weight:bold;"/>
+              <hbox align="center">
+                <checkbox label="&personalbuttonEnable;" tooltiptext="&tippersonalbuttonEnable;" preference="personalbuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'personalbutton'); else noiamoonop.options.radioChange(false,'personalbutton');"/>
+              </hbox>
+
+              <separator class="groove"/>
+
+              <label value="&toolbarbuttontitle;" style="font-weight:bold;"/>
+              <hbox align="center">
+                <checkbox label="&toolbarbuttonEnable;" tooltiptext="&tiptoolbarbuttonEnable;" preference="toolbarbuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'toolbarbutton'); else noiamoonop.options.radioChange(false,'toolbarbutton');"/>
+              </hbox>
+
+              <separator class="groove"/>
+
+              <label value="&navbarbuttontitle;" style="font-weight:bold;"/>
+              <hbox align="center">
+                <checkbox label="&navbarbuttonEnable;" tooltiptext="" preference="navbarbuttonRadio" oncommand="if(this.checked) noiamoonop.options.radioChange(true,'navbarbutton'); else noiamoonop.options.radioChange(false,'navbarbutton');"/>
+              </hbox>
+            </groupbox>
+            <button label="&reset;" oncommand="noiamoonop.options.resetnm();alert('&restartPM;');"/>
+          </tabpanel>
+        </tabpanels>
+      </tabbox>
+    </vbox>
   </prefpane>
 </prefwindow>

@@ -1,0 +1,9 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#noiamoon-back-forward-dropmarker {
+  -moz-box-ordinal-group: 3 !important;
+}
+
+#forward-button {
+  margin-left: 0px !important;
+}

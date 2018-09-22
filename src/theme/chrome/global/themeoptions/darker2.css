@@ -1,0 +1,26 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#TabsToolbar[orient="vertical"]{
+	background: linear-gradient(#e8e8ec,#adaebb) !important;
+}
+
+toolbar:not(#TabsToolbar):not(#addon-bar):not(#status-bar):not(#PersonalToolbar):not(#inspector-toolbar):not(.devtools-toolbar):not(#aios-toolbar):not(#vertical-toolbar):not(.devtools-tabbar),
+#toolbar-menubar,menubar[tabsontop=true],#PersonalToolbar{
+	-moz-appearance: none !important;
+	background-image: none !important;
+}
+
+#navigator-toolbox {
+  -moz-appearance: none !important;
+  background: linear-gradient(#979BA7, #FFFFFF) repeat-x !important;
+  border: 0px !important;
+}
+
+#titlebar,#main-window{
+  background: #a3a6b1 !important;
+}
+
+#aios-toolbar,#vertical-toolbar{
+	background: linear-gradient(#e8e8ec,#adaebb) !important;
+}
+

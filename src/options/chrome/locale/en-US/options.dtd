@@ -13,7 +13,7 @@
 <!ENTITY blue "">
 <!ENTITY blueEnable "Blue theme">
 <!ENTITY blueDisable "Off">
-<!ENTITY tipblue "Blue theme : Some elements are skinned like the grey theme (options, add-ons,...).">
+<!ENTITY tipblue "Blue theme: Some elements are skinned like the grey theme (options, add-ons,...).">
 <!ENTITY grey2 "Alternative grey theme titlebar (Windows only)">
 <!ENTITY tipgrey2 "">
 <!ENTITY All "Options for all themes">
@@ -44,11 +44,13 @@
 <!ENTITY transtab "Transparent tabs">
 <!ENTITY tabbottom "Tabs at the bottom of the window">
 <!ENTITY tiptabbottom "First uncheck 'Tabs on top' option.">
+<!ENTITY scrollbars "OS scrollbars (reload pages after setting)">
 <!ENTITY normal "Original Windows titlebar (*)">
 <!ENTITY tipnormal "Windows OS only with no Persona. You must enable this option with WindowBlinds">
 <!ENTITY windowblinds "(*)  Use this option with WindowBlinds">
 <!ENTITY Grey "Option only for the first grey theme">	
 <!ENTITY darker "Alternative background">
+<!ENTITY darker2 "Alternative background (v2)">
 <!ENTITY tipdarker "">
 <!ENTITY hide "Auto hide toolbars">
 <!ENTITY light "Light grey theme">
@@ -65,9 +67,14 @@
 <!ENTITY rdtabbox "Dialogs">
 <!ENTITY rdtabboxEnable "Rounded tabs">
 <!ENTITY rdtabboxDisable "Square tabs">
-<!ENTITY warm "Noia warm icons (except : folders and bookmarks)">
+<!ENTITY warm "Noia warm icons (except: folders and bookmarks)">
 <!ENTITY red "Noia warm icons for folders and bookmarks">
 <!ENTITY red2 "Blue/warm mixed folders and bookmarks">
+<!ENTITY navbuttons "Smaller toolbar icons">
+<!ENTITY forward "Small forward button only">
+<!ENTITY bfdrop2 "Move back/forward dropmarker after forward button (less spacing)">
+<!ENTITY bfdrop "Move back/forward dropmarker after forward button">
+<!ENTITY bfdrop3 "Hide back/forward dropmarker">
 <!ENTITY bookmark "Bookmarks toolbar">
 <!ENTITY bookEnable "Icons">
 <!ENTITY bookDisable "Icons and Text">
@@ -95,7 +102,7 @@
 <!ENTITY find.tooltip "Find text (Ctrl+F)">
 <!ENTITY Button "Button">
 <!ENTITY NoiaMoonOptions "Noia Moon Options">
-<!ENTITY Contrib "Contributors : Noia icon set by Carlitus, Noia 2 Extreme theme by Kasteo (Kongkeat Kuatrakull)">
+<!ENTITY Contrib "Contributors: Noia icon set by Carlitus, Noia 2 Extreme theme by Kasteo (Kongkeat Kuatrakull)">
 <!ENTITY Contrib2 "Noia Moon options is an adaptation from the Noia 4 theme configurator by Aris">
 <!ENTITY backForwardMenu.tooltip "Recent pages">
 <!ENTITY main "Main">
@@ -107,5 +114,4 @@
 <!ENTITY background "Toolbar buttons display when hovering">
 <!ENTITY backgroundEnable "With background">
 <!ENTITY plain "No effect for toolbars">
-<!ENTITY restartPM "Restart Pale Moon.">
-
+<!ENTITY restartPM "Restart Pale Moon for changes to take effect.">
