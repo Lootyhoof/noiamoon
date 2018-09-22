@@ -8,12 +8,13 @@
 }
 
 #main-window[nmbottom="false"][nmnoline="false"] #navigator-toolbox[tabsontop="false"] #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) {
-	background-image: url("chrome://browser/skin/icons/Tabbar-background2.png") !important;
+  background-image: url("chrome://browser/skin/icons/Tabbar-background2.png") !important;
+  border-top: none !important;
 }
 
 #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="false"] ~ #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) {
-	-moz-appearance:none;
-	background: none !important;
+  -moz-appearance:none;
+  background: none !important;
 }
 
 #main-window[sizemode="normal"][nmstrip="false"][nmnoline="false"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not([multibar]) {  

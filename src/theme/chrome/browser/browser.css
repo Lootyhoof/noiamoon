@@ -1634,7 +1634,13 @@ tabpanels browser,
 	-moz-appearance: none;
 }
 
-#main-window[tabsontop="false"] #TabsToolbar {
+@media not all and (-moz-windows-compositor) {
+  #main-window[tabsintitlebar] #titlebar {
+    padding-top: 3px;
+  }
+}
+
+#main-window[tabsontop="false"][nmblue="false"][nmlight="false"][nmblack="false"] #TabsToolbar {
   border-top: 1px solid #808080;
 }
 
