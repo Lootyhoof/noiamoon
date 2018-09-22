@@ -153,7 +153,7 @@ toolbox:not(:-moz-lwtheme) {
   background: url(chrome://browser/skin/icons/Tool-background-black.png) #696969 !important;
 }
 
-#main-window[tabsintitlebar] toolbox:not(#aios-sbhtoolbox) {
+#main-window[tabsintitlebar]:not(:-moz-lwtheme) toolbox:not(#aios-sbhtoolbox) {
   background: linear-gradient(to bottom,#070707,#2B2B2B) !important;
 }
 
@@ -2723,7 +2723,7 @@ menu[id="appmenu-sessionmanager"] {
   color: #fff !important;
 }
 /* Personal toobar*/ 
-#PersonalToolbar:not(:-moz-lwtheme) {
+#main-window[nmnoline="false"] #PersonalToolbar:not(:-moz-lwtheme) {
   border-top: 1px groove #8D919F !important;
 }
  
