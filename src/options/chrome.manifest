@@ -1,12 +1,11 @@
-content   noiamoonoptions                 chrome/content/        
-skin      noiamoonoptions   classic/1.0   chrome/skin/			
-locale    noiamoonoptions   en-US         chrome/locale/en-US/	
-locale    noiamoonoptions   fr-FR		 chrome/locale/fr-FR/ 	
+content   noiamoonoptions                 chrome/content/
+skin      noiamoonoptions   classic/1.0   chrome/skin/
+locale    noiamoonoptions   en-US         chrome/locale/en-US/
 
-overlay chrome://browser/content/browser.xul		chrome://noiamoonoptions/content/overlay.xul 	
-style   chrome://global/content/customizeToolbar.xul	chrome://noiamoonoptions/skin/overlay.css		
+overlay chrome://browser/content/browser.xul		chrome://noiamoonoptions/content/overlay.xul
+style   chrome://global/content/customizeToolbar.xul	chrome://noiamoonoptions/skin/overlay.css
 
 #startup stuff
-component   {a5e395d9-d32f-48c2-9626-626a2cd81e4e} chrome/components/noiamoonop.js	
+component   {a5e395d9-d32f-48c2-9626-626a2cd81e4e} chrome/components/noiamoonop.js
 contract    @nmoptions.ext/startup;1 {a5e395d9-d32f-48c2-9626-626a2cd81e4e}
 category    profile-after-change nmoStartup @nmoptions.ext/startup;1
