@@ -1,4 +1,4 @@
-@import url("chrome://global/skin/themeoptions/tabbar3.css");
+@import url("chrome://browser/skin/nmoptions/tabbar3.css");
 
 #main-window:not(:-moz-lwtheme) #addon-bar,
 #main-window:not(:-moz-lwtheme) #navigator-toolbox,

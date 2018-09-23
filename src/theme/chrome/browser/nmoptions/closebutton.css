@@ -1,7 +1,7 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 .close-icon {
-  list-style-image: url("chrome://global/skin/themeoptions/icons/close-blue.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/close-blue.png") !important;
   -moz-image-region: rect(0px 32px 32px 0px);
 }
 

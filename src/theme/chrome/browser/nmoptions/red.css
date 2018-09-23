@@ -1,23 +1,23 @@
 
 .bookmark-item[container] {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_closed.png) !important;
 }
 
 .bookmark-item[container][open] {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_open.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_open.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark-folder.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/bookmark-folder.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks, open) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark-folder-open.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/bookmark-folder-open.png) !important;
 }
 #cmRestorePoint-compact-extra-prefs,#appmenu_bookmarks,
 menuitem[command="Browser:ShowAllBookmarks"],
 menuitem[oncommand^="toOpenWindowByType('bookmarks:manager'"] {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark-folder.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/bookmark-folder.png) !important;
 }
 #context-bookmarklink,#context-bookmarkpage,#fileNewBookmark,
 #menu_bookmarksSidebar,#context_bookmarkTab,#miAddBookmark,
@@ -31,25 +31,25 @@ menuitem[oncommand="gContextMenu.addBookmarkForFrame();"],
 menuitem[oncommand="abhere.addBookmark(event)"],
 menuitem[oncommand="BookmarkThisTab();"],
 menuitem[oncommand="historyAddBookmarks();"] {
- list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark_item.png) !important;
+ list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/bookmark_item.png) !important;
 }
 #openMessageFileMenuitem,#placesContext_open,#menu_openFile,
 #restoreFromFile,#editBMPanel_chooseFolderMenuItem,#appmenu_openFile,
 #utils-installFromFile,menuitem[oncommand="nightly.openProfileDir();"],
 menuitem[command="cmd_bm_open"] {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_closed.png) !important;
 }
 #file-menu {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_closed.png) !important;
 }
 treechildren::-moz-tree-image(title, container) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_closed.png) !important;
 }
 treechildren::-moz-tree-image(title, open) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_open.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_open.png) !important;
 }
 treechildren::-moz-tree-image(title, query) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/query.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/query.png) !important;
 }
 
 treechildren::-moz-tree-image(title, container, livemark) {
@@ -65,11 +65,11 @@ treechildren::-moz-tree-image(title, javascript) {
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_closed.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks, open) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_open.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_open.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
@@ -90,7 +90,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_Tags) {
 }
 
 treechildren::-moz-tree-image(query, OrganizerQuery_Downloads) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/query_downloads.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/query_downloads.png) !important;
 }
 
 treechildren::-moz-tree-image(title, query, dayContainer) {
@@ -107,43 +107,43 @@ treechildren::-moz-tree-image(title, query, OrganizerQuery_History) {
 
 menuitem[command="placesCmd_new:folder"],
 menuitem[command="cmd_bm_newfolder"] {
-  list-style-image:url(chrome://global/skin/themeoptions/icons/warm/folder-add.png) !important;
+  list-style-image:url(chrome://browser/skin/nmoptions/icons/warm/folder-add.png) !important;
 }
 .bookmark-item:not(#bookmarks-menu-button) {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark_item.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/bookmark_item.png) !important;
 }
 .bookmark-item[container][query] {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/query.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/query.png) !important;
 }
 .folder-icon {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder_closed.png) !important;
 }
 #editBMPanel_newFolderButton {
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/folder-add.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/folder-add.png) !important;
 }
 .tab-throbber,
 .tab-icon-image {
   margin: 0px 3px 0px 2px;
   width: 16px;
   height: 16px;
-   list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark_item.png) !important;
+   list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/bookmark_item.png) !important;
 }
 .alltabs-item > .menu-iconic-left > .menu-iconic-icon {
   width: 16px;
   height: 16px;
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/bookmark_item.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/bookmark_item.png) !important;
 }
 
 .ac-result-type-bookmark,
 .autocomplete-treebody::-moz-tree-image(bookmark, treecolAutoCompleteImage) {
   width: 16px;
   height: 16px;
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/star.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/star.png) !important;
  -moz-image-region: rect(0 16px 16px 0);
 }
 #star-button {
   padding: 0 2px;
-  list-style-image: url(chrome://global/skin/themeoptions/icons/warm/star.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/warm/star.png) !important;
   -moz-image-region: rect(32px 16px 48px 0);
 }
 #star-button:hover {
