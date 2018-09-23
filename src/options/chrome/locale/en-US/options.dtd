@@ -61,7 +61,7 @@
 <!ENTITY rdbuttonEnable "Rounded buttons">
 <!ENTITY rdbuttonDisable "Square buttons">
 <!ENTITY rdmenubutton "Menu Buttons">
-<!ENTITY menubuttonstyle "Pale Moon button and menu buttons">
+<!ENTITY menubuttonstyle "Menu Buttons">
 <!ENTITY rdmenubuttonEnable "Rounded buttons">
 <!ENTITY rdmenubuttonDisable "Square buttons">
 <!ENTITY rdtabbox "Dialogs">
