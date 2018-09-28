@@ -245,10 +245,16 @@ toolbar[iconsize="small"] #downloads-indicator-icon {
 
 #downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
   background-image: url("chrome://browser/skin/downloads/download-glow.png");
+  background-size: 32px;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 toolbar[iconsize="small"] #downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
   background-image: url("chrome://browser/skin/downloads/download-glow-small.png");
+  background-size: 24px;
+  min-width: 24px;
+  min-height: 24px;
 }
 
 /* In the next few rules, we use :not([counter]) as a shortcut that is
