@@ -2,6 +2,7 @@
 
 menu,
 menuitem,
+menucaption,
 .splitmenu-menuitem {
   -moz-box-align: center;
   -moz-image-region: auto;
@@ -20,7 +21,8 @@ menu[disabled="true"], menuitem[disabled="true"],
 menu[_moz-menuactive="true"][disabled="true"],
 menuitem[_moz-menuactive="true"][disabled="true"],
 .splitmenu-menuitem[disabled="true"],
-.splitmenu-menuitem[_moz-menuactive="true"][disabled="true"] {
+.splitmenu-menuitem[_moz-menuactive="true"][disabled="true"],
+menucaption[disabled="true"] {
   color: #808080;
 }
 
@@ -47,6 +49,12 @@ menulist > menupopup > menuitem > .menu-iconic-text,
 .menulist-menupopup > menu > .menu-iconic-text,
 menulist > menupopup > menu > .menu-iconic-text {
   margin-inline-start: 2px !important;
+}
+
+menucaption > .menu-text,
+menucaption > .menu-iconic-text {
+  margin-inline-start: 0 !important;
+  font-weight: bold;
 }
 
 .menu-description {
@@ -153,7 +161,8 @@ menubar > menu:-moz-lwtheme {
 /* ::::: menu/menuitems in popups ::::: */
 
 menupopup > menu,
-menupopup > menuitem {
+menupopup > menuitem,
+menupopup > menucaption {
   max-width: 42em;
   border: 1px solid transparent;
   padding-top : 1px;
@@ -199,10 +208,9 @@ menuitem[_moz-menuactive][disabled="true"],
 
 /* menu/menuitems in menulist popups */
 
-.menulist-menupopup > menuitem,
-menulist > menupopup > menuitem,
-.menulist-menupopup > menu,
-menulist > menupopup > menu {
+menupopup > menu,
+menupopup > menuitem,
+menupopup > menucaption {
   max-width: none;
   font: message-box;
   color: #000;
@@ -210,16 +218,13 @@ menulist > menupopup > menu {
   border: 1px solid transparent;
 }
 
-.menulist-menupopup > menuitem > .menu-iconic-left,
 menulist > menupopup > menuitem > .menu-iconic-left,
-.menulist-menupopup > menu > .menu-iconic-left,
+menulist > menupopup > menucaption > .menu-iconic-left,
 menulist > menupopup > menu > .menu-iconic-left {
   display: none;
 }
 
-.menulist-menupopup > menuitem[_moz-menuactive="true"],
 menulist > menupopup > menuitem[_moz-menuactive="true"],
-.menulist-menupopup > menu[_moz-menuactive="true"],
 menulist > menupopup > menu[_moz-menuactive="true"]{
   border: 1px solid #78C1FE;
 }
@@ -263,7 +268,6 @@ menuitem[type="radio"][checked="true"][_moz-menuactive="true"] {
 /* menuseparator */
 
 menulist > menupopup > menuseparator,
-.menulist-menupopup > menuseparator,
 menuseparator {
   margin: 1px 3px 0px;
   margin-inline-start: 25px;

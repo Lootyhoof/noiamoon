@@ -636,7 +636,6 @@ menubar > menu[_moz-menuactive][disabled="true"] {
 }
 
 menulist > menupopup > menuseparator,
-.menulist-menupopup > menuseparator,
 menuseparator {
   border-top: 1px dotted #a6a6a6 !important;
   border-bottom: 1px solid transparent !important;

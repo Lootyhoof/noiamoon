@@ -89,36 +89,3 @@ html|*.menulist-editable-input {
   font: inherit;
   color : inherit;
 }
-
-/* compact menulists */
-.menulist-compact {
-  -moz-box-align: center;
-  -moz-box-pack: center;
-  max-height: 18px; 
-  margin: 0;
-  border-radius: 2px;
-}
-
-.menulist-compact > .menulist-label-box > .menulist-label {
-  text-align: end;
-} 
-
-.menulist-compact > .menulist-label-box > .menulist-icon {
-  margin-inline-start: 2px;
-}
-
-.menulist-compact > .menulist-dropmarker {
-  margin: -1px 0 0 2px;
-  padding: 0;
-  list-style-image:url('chrome://global/skin/icons/dropmarker.png');
-  -moz-image-region: rect(0 10px 10px 0);
-}
-
-.menulist-compact[open] > .menulist-dropmarker {
-  -moz-image-region: rect(10px 10px 20px 0);
-}
-
-.menulist-compact:-moz-focusring:not([open="true"]) > .menulist-label-box {
-  outline: 1px dotted;
-}
-
