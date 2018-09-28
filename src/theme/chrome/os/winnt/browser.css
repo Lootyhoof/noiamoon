@@ -11,7 +11,7 @@
 }
 
 #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"]{
-  background: url("chrome://browser/skin/icons/titlebarbottom.png") #ABAEB8;
+  background: url("chrome://browser/skin/titlebarbottom.png") #ABAEB8;
   margin-top: -2px;
 }
 
@@ -20,12 +20,12 @@
 }
  
 #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] {
-  background: url("chrome://browser/skin/icons/titlebarbottom.png") #CDCFD5;
+  background: url("chrome://browser/skin/titlebarbottom.png") #CDCFD5;
 }
   
 #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] #navigator-toolbox {
   border-bottom: 0px solid #808080;
-  background: url(chrome://browser/skin/icons/Tool-background3.png) top left repeat-x #CDCFD5;
+  background: url(chrome://global/skin/toolbar/Tool-background3.png) top left repeat-x #CDCFD5;
   background-size: auto 100%;
 }
 
@@ -35,7 +35,7 @@
   }
   
   #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="true"]{
-    background: url("chrome://browser/skin/icons/titlebar2.png") #ABAEB8;
+    background: url("chrome://browser/skin/titlebar2.png") #ABAEB8;
   }	
 }
 
@@ -168,21 +168,21 @@
 
 #titlebar-min {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/icons/minimize.png") 0px 0px no-repeat;
+  background: url("chrome://browser/skin/minimize.png") 0px 0px no-repeat;
   width: 26px;
   height: 20px;
 }
 
 #titlebar-min:hover {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/icons/minimizeX.png") 0px 0px no-repeat;
+  background: url("chrome://browser/skin/minimizeX.png") 0px 0px no-repeat;
   width: 26px;
   height: 20px;
 }
 
 #titlebar-max {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/icons/restore.png") 0px 0px no-repeat;
+  background: url("chrome://browser/skin/restore.png") 0px 0px no-repeat;
   width: 26px;
   height: 20px;
   margin-left: -2px;
@@ -191,7 +191,7 @@
 
 #titlebar-max:hover {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/icons/restoreX.png") 0px 0px no-repeat;
+  background: url("chrome://browser/skin/restoreX.png") 0px 0px no-repeat;
   width: 26px;
   height: 20px;
   margin-left: -2px;
@@ -199,7 +199,7 @@
 
 #titlebar-close {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/icons/close.png") 0px 0px no-repeat;
+  background: url("chrome://browser/skin/close.png") 0px 0px no-repeat;
   width: 26px;
   height: 20px;
   margin-left: -2px;
@@ -207,7 +207,7 @@
 
 #titlebar-close:hover {
   -moz-appearance: none;
-  background: url("chrome://browser/skin/icons/closeX.png") 0px 0px no-repeat;
+  background: url("chrome://browser/skin/closeX.png") 0px 0px no-repeat;
   width: 26px;
   height: 20px;
   margin-left: -2px;
@@ -268,18 +268,18 @@
 @media not all and (-moz-windows-compositor) {
   #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="normal"] #titlebar {
     -moz-appearance: none;
-    background: url("chrome://browser/skin/icons/titlebar2.png") #CDCFD5;
+    background: url("chrome://browser/skin/titlebar2.png") #CDCFD5;
     border-top: none;
   }
   #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"][sizemode="maximized"] #titlebar {
     -moz-appearance: none;
-    background: url("chrome://browser/skin/icons/titlebar2.png") #AEB1BB;
+    background: url("chrome://browser/skin/titlebar2.png") #AEB1BB;
     border-top: none;
     margin-top: 7px;
   }
   #main-window:not(:-moz-lwtheme)[tabsontop="true"] #titlebar {
     -moz-appearance: none;
-    background: url("chrome://browser/skin/icons/titlebar.png") #ABAEB8;
+    background: url("chrome://browser/skin/titlebar.png") #ABAEB8;
     border-top: none;
   }
 }

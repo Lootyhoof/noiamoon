@@ -117,7 +117,7 @@ radio[pane][selected="true"] {
   margin: 0;
   padding: 0 8px;
   border-bottom: 2px groove #d4d0c8;
-  background-image: url(chrome://browser/skin/icons/Tool-background2.png);
+  background-image: url(chrome://global/skin/toolbar/Tool-background2.png);
 }
 
 .paneButtonIcon {

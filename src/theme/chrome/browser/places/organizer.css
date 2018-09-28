@@ -10,13 +10,13 @@
 }
 
 #placesToolbar {
-  background: url(chrome://browser/skin/icons/Toolbar-Background.png) top left repeat-x #fdfdfe;
+  background: url(chrome://global/skin/toolbar/Toolbar-Background.png) top left repeat-x #fdfdfe;
   padding-right: 2px;
   border: 0;
 }
 
 #placesToolbar #back-button {
-  list-style-image: url("chrome://browser/skin/icons/back-small.png");
+  list-style-image: url("chrome://browser/skin/back-small.png");
   -moz-image-region: rect(0px 24px 24px 0px);
 }
 #placesToolbar #back-button:not([disabled="true"]):hover {
@@ -26,7 +26,7 @@
   -moz-image-region: rect(48px 24px 72px 0px);
 }
 #placesToolbar #forward-button  {
-  list-style-image: url("chrome://browser/skin/icons/forward-small.png");
+  list-style-image: url("chrome://browser/skin/forward-small.png");
   -moz-image-region: rect(0px 24px 24px 0px);
 }
 #placesToolbar #forward-button:not([disabled="true"]):hover {
@@ -177,7 +177,7 @@ menuitem[oncommand="PlacesOrganizer.onRestoreMenuItemClick(this);"] {
 #organizerScopeBar {
   padding-right: 3px;
   border: 0;
-  background: url(chrome://browser/skin/icons/Title-Background.png) top left repeat-x #e8e8ec;
+  background: url(chrome://browser/skin/Title-Background.png) top left repeat-x #e8e8ec;
 }
 
 #organizerScopeBar > toolbarbutton {

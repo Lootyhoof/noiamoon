@@ -196,11 +196,11 @@ tab[first-tab="true"] {
 
 tab[selected="true"] {
   font-weight: bold;
-  background-image : url("chrome://browser/skin/icons/Bookmark-background.png");
+  background-image : url("chrome://browser/skin/places/Bookmark-background.png");
 }
 
 tab:hover {
-  background-image : url("chrome://browser/skin/icons/tab-hover.png");
+  background-image : url("chrome://global/skin/icons/tab-hover.png");
 }
 
 tab[selected="false"] .tab-icon {
@@ -261,10 +261,3 @@ tab[first-tab="true"][selected="true"] {
   margin-top : 2px ;
   margin-bottom : 2px ;
 }
-
-
-
-
-
-
-

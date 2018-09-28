@@ -42,13 +42,13 @@
 }
 
 .searchbar-engine-button[addengines=true] > .searchbar-dropmarker-image {
-  list-style-image: url(chrome://browser/skin/icons/Searchbutton.png);
+  list-style-image: url(chrome://browser/skin/Searchbutton.png);
 }
 
 .search-go-button {
   padding: 2px;
   margin-right : 3px;
-  list-style-image: url(chrome://browser/skin/icons/Searchbar.png);
+  list-style-image: url(chrome://browser/skin/Searchbar.png);
   -moz-image-region: rect(0, 16px, 16px, 0);
 }
 

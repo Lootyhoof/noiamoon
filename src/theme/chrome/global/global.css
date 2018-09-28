@@ -1,6 +1,6 @@
 @import url(chrome://global/locale/intl.css);
 @import url(chrome://global/skin/cutemenus.css);
-@import url(chrome://global/skin/Add-ons.css);
+@import url(chrome://global/skin/add-ons/add-ons.css);
 @import url(chrome://global/skin/resizer.css);
 @import url(chrome://os/skin/global.css);
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
@@ -48,19 +48,19 @@ window.dialog {
 }
 
 .message-icon {
-  list-style-image: url(chrome://browser/skin/icons/alert-message.png);
+  list-style-image: url(chrome://global/skin/icons/Information.png);
 }
 
 .alert-icon {
-  list-style-image: url(chrome://browser/skin/icons/alert-warning.png);
+  list-style-image: url(chrome://global/skin/icons/Warning.png);
 }
 
 .error-icon {
-  list-style-image: url(chrome://browser/skin/icons/alert-error.png);
+  list-style-image: url(chrome://global/skin/icons/Error.png);
 }
 
 .question-icon {
-  list-style-image: url(chrome://browser/skin/icons/alert-question.png);
+  list-style-image: url(chrome://global/skin/icons/Question.png);
 }
 
 #infoContainer {
@@ -80,7 +80,7 @@ statusbar {
   min-height: 22px !important;
   border-top: 1px solid #808080;
   border-bottom: 1px solid #adaebb;
-  background: url(chrome://browser/skin/icons/Statusbar-background.png) bottom left repeat-x #fdfdfe;
+  background: url(chrome://browser/skin/Statusbar-background.png) bottom left repeat-x #fdfdfe;
 }
 
 statusbarpanel {
@@ -113,7 +113,7 @@ sidebarheader {
   text-shadow: 0 1px 0 #eee;
   border-bottom: 1px solid #808080;
   border-top: 1px solid #808080;
-  background: url(chrome://browser/skin/icons/Toolbar-Background.png) center left repeat-x #fdfdfe;
+  background: url(chrome://global/skin/toolbar/Toolbar-Background.png) center left repeat-x #fdfdfe;
 }
 
 sidebarheader > label {
@@ -366,13 +366,13 @@ dialog #list {
 #engineManager #up .button-box,
 #LanguagesDialog #up .button-box {
   padding-left: 18px;
-  background: url(chrome://browser/skin/icons/arrow-up.png) left center no-repeat;
+  background: url(chrome://global/skin/arrow/arrow-up.png) left center no-repeat;
 }
 
 #engineManager #dn .button-box,
 #LanguagesDialog #down .button-box {
   padding-left: 18px;
-  background: url(chrome://browser/skin/icons/arrow-down.png) left center no-repeat;
+  background: url(chrome://global/skin/arrow/arrow-down.png) left center no-repeat;
 }
 
 #engineManager #remove {

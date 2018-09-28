@@ -127,7 +127,7 @@ richlistbox:focus > richlistitem[selected="true"] {
 }
 
 .pref-icon[type="geo"] {
-  list-style-image: url(chrome://browser/skin/icons/Geolocation-64.png);
+  list-style-image: url(chrome://browser/skin/Geolocation-64.png);
 }
 
 .pref-icon[type="indexedDB"] {

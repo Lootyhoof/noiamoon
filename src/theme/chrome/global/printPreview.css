@@ -30,22 +30,22 @@
 
 .previous-arrow, .left-arrow,
 .next-arrow:-moz-locale-dir(rtl) {
-  list-style-image: url("chrome://browser/skin/icons/arrow-left.png");
+  list-style-image: url("chrome://global/skin/arrow/arrow-left.png");
 }
 
 .previous-arrow:hover,
 .next-arrow:-moz-locale-dir(rtl):hover {
-  list-style-image: url("chrome://browser/skin/icons/arrow-left-hover.png");
+  list-style-image: url("chrome://global/skin/arrow/arrow-left-hover.png");
 }
 
 .next-arrow, .right-arrow ,
 .previous-arrow:-moz-locale-dir(rtl){
-  list-style-image: url("chrome://browser/skin/icons/arrow-right.png");
+  list-style-image: url("chrome://global/skin/arrow/arrow-right.png");
 }
 
 .next-arrow:hover,
 .previous-arrow:-moz-locale-dir(rtl):hover {
-  list-style-image: url("chrome://browser/skin/icons/arrow-right-hover.png");
+  list-style-image: url("chrome://global/skin/arrow/arrow-right-hover.png");
 }
 
 .up-arrow {

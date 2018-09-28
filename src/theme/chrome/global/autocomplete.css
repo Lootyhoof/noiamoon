@@ -48,7 +48,7 @@ panel[type="private-autocomplete-richlistbox"],
 .private-autocomplete-history-dropmarker {
   -moz-box-align: center;
   padding: 2px 3px 0 0;
-  list-style-image: url(chrome://browser/skin/icons/url_dropmarker.png);
+  list-style-image: url(chrome://browser/skin/url_dropmarker.png);
   -moz-image-region: rect(0 16px 16px 0);
 }
 
@@ -102,7 +102,7 @@ treechildren.autocomplete-treebody::-moz-tree-row(hover, focus),
 treechildren.private-autocomplete-treebody::-moz-tree-row(selected),
 treechildren.private-autocomplete-treebody::-moz-tree-row(hover, focus) {
   border: 1px solid #78C1FE;
-  background: url(chrome://browser/skin/icons/tree-hover.png) repeat-x center;
+  background: url(chrome://global/skin/tree/tree-hover.png) repeat-x center;
 }
 
 treechildren.autocomplete-treebody::-moz-tree-cell-text(selected),

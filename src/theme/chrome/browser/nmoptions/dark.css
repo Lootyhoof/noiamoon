@@ -1,9 +1,14 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 @namespace html url("http://www.w3.org/1999/xhtml");
 
+:root {
+  --toolbar-dark-background: url("chrome://browser/skin/nmoptions/icons/dark/Tool-background-black.png");
+  --toolbar-dark-background2: url("chrome://browser/skin/nmoptions/icons/dark/Tool-background2-black.png");
+}
+
 #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover),
 #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background3.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/Bookmark-background3.png") !important;
 }
 
 #TabsToolbar:-moz-lwtheme {
@@ -36,7 +41,7 @@ menubar[tabsontop=true]:not(:-moz-lwtheme) {
 
 #TabsToolbar:not([treestyletab-mode="vertical"])[tabsontop=true]:not(:-moz-lwtheme) {
   -moz-appearance: -moz-win-borderless-glass;
-  background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+  background-image: var(--toolbar-dark-background) !important;
   min-height: 27px;
   height: 27px;
 }
@@ -81,26 +86,26 @@ listitem {
 }
 
 listitem:hover {
-  background: url(chrome://browser/skin/icons/tree-dark-hover.png) repeat-x center !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/tree-dark-hover.png) repeat-x center !important;
   background-position: center center !important;
   border: 1px solid transparent !important;
 }
 
 listitem[selected="true"] {
-  background: url("chrome://browser/skin/icons/tree-dark-selected.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark-selected.png") repeat-x !important;
   background-position: center center !important;
   border: 1px solid transparent !important;
 }
 
 listitem[selected="true"]:hover {
-  background: url("chrome://browser/skin/icons/tree-dark.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark.png") repeat-x !important;
   background-position: center center !important;
   color: #00ffff !important;
   border: 1px solid transparent !important;
 }
 
 listbox:focus > listitem[selected="true"] {
-  background: url("chrome://browser/skin/icons/tree-dark.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark.png") repeat-x !important;
   background-position: center center !important;
   color: #00ffff !important;
   border: 1px solid transparent !important;
@@ -150,7 +155,7 @@ caption {
 
 toolbox:not(:-moz-lwtheme) { 
   color: #FFFFFF !important;
-  background: url(chrome://browser/skin/icons/Tool-background-black.png) #696969 !important;
+  background: var(--toolbar-dark-background) #696969 !important;
 }
 
 #main-window[tabsintitlebar]:not(:-moz-lwtheme) toolbox:not(#aios-sbhtoolbox) {
@@ -159,7 +164,7 @@ toolbox:not(:-moz-lwtheme) {
 
 .viewSelector, /* Firefox 3.5 and Older */
 .viewGroupWrapper {
-  background-image: url("chrome://browser/skin/icons/Tool-background2-black.png") !important;
+  background-image: var(--toolbar-dark-background2) !important;
 }
 
 #viewGroup radio {
@@ -174,7 +179,7 @@ toolbox:not(:-moz-lwtheme) {
   color: #FFFFFF !important;
 }
 .paneSelector {
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") !important;
   color: #A0A0A0 !important;
   border-bottom: 0px solid #949494 !important;
 }
@@ -192,7 +197,7 @@ toolbox:not(:-moz-lwtheme) {
 }
 
 sidebarheader:not(:-moz-lwtheme) {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background3.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/Bookmark-background3.png") !important;
   background-color: #515151 !important;  
   background-position: center left !important;
   border-bottom: 1px solid #808080 !important;
@@ -220,14 +225,14 @@ statusbarpanel:not(:-moz-lwtheme) {
 }
 
 #navigator-toolbox:not(:-moz-lwtheme) {
-  background-image: url("chrome://browser/skin/icons/Tool-background-black.png")  !important;
+  background-image: var(--toolbar-dark-background) !important;
   background-size: auto 100% !important;
   background-position: top left !important;
   background-color: #515151 !important;
 }
 
 #navigator-toolbox[iconsize="small"]:not(:-moz-lwtheme) {
-  background-image: url("chrome://browser/skin/icons/Tool-background2-black.png") !important;
+  background-image: var(--toolbar-dark-background2) !important;
   background-position: top left !important;
   background-color: #515151 !important;
 }
@@ -318,7 +323,7 @@ menubar > menu[_moz-menuactive="true"]:not([disabled="true"]):not(:-moz-lwtheme)
 }
 
 #TabsToolbar:not([treestyletab-mode="vertical"]):not(:-moz-lwtheme) .tabbrowser-strip {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background3.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/Bookmark-background3.png") !important;
   background-position: center left !important;
   background-color: #8d8d8d !important;  
 }
@@ -334,7 +339,7 @@ menubar > menu[_moz-menuactive="true"]:not([disabled="true"]):not(:-moz-lwtheme)
 
 #TabsToolbar:not([treestyletab-mode="vertical"]):not(:-moz-lwtheme) .tabbrowser-tabs:not([useCurrentBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):hover,
 #TabsToolbar:not([treestyletab-mode="vertical"]):not(:-moz-lwtheme) .tabbrowser-tabs:not([useCurrentBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab[selected="true"]:not([style*="background-image"]) {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+  background-image: url("chrome://browser/skin/places/Bookmark-background.png") !important;
   color: #000000 !important;
   -moz-border-top-colors: #88AFE3 !important;
   -moz-border-bottom-colors: #88AFE3 !important;
@@ -386,7 +391,7 @@ wizard,
 prefwindow,
 window:not(#main-window),
 #main-window:not(:-moz-lwtheme) {
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") !important;
   color: #E3E3E3 !important;
 }
 
@@ -422,12 +427,12 @@ richlistbox {
 
 richlistitem:hover {
   border: 1px solid transparent !important;
-  background: url(chrome://browser/skin/icons/tree-dark-hover.png) repeat-x center !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/tree-dark-hover.png) repeat-x center !important;
   background-size: auto 100% !important;
 }
 
 .addon:hover {
-  background: url(chrome://browser/skin/icons/tree-dark.png) repeat-x center !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/tree-dark.png) repeat-x center !important;
   background-size: auto 100% !important;
   border: 1px solid transparent !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -506,19 +511,19 @@ richlistitem[selected="true"] > .text-link {
 /* Menus */
 
 .menu-right {
-  list-style-image: url(chrome://global/skin/arrow/arrow-rit-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-rit-dark.png) !important;
 }
 
 .menu-right[disabled="true"] {
-  list-style-image: url(chrome://global/skin/arrow/arrow-rit-hov-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-rit-hov-dark.png) !important;
 }
 
 .menu-right:-moz-locale-dir(rtl) {
-  list-style-image: url(chrome://global/skin/arrow/arrow-lft-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-lft-dark.png) !important;
 }
 
 .menu-right:-moz-locale-dir(rtl)[disabled="true"] {
-  list-style-image: url(chrome://global/skin/arrow/arrow-lft-hov-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-lft-hov-dark.png) !important;
 }
 
 menu.bookmark-item,
@@ -540,7 +545,7 @@ menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
   text-shadow: none !important;
   border: 1px solid transparent !important;
   background-color: transparent !important;
-  background-image: url("chrome://browser/skin/icons/Selects.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/Selects.png") !important;
   background-position: center center !important;
   border-radius: 10px !important;
 }
@@ -619,7 +624,7 @@ menuitem[_moz-menuactive="true"]:not([disabled="true"]),
   color: #00FFFF !important;
   text-shadow: none !important;
   border: 1px solid #515151 !important;  
-  background-image: url("chrome://browser/skin/icons/Selects.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/Selects.png") !important;
   background-position: center center !important;
   border-radius: 10px !important;
   background-size: auto 100% !important;
@@ -674,7 +679,7 @@ treechildren::-moz-tree-row {
 
 treechildren::-moz-tree-row(hover) {
   background-color: transparent !important;
-  background: url(chrome://browser/skin/icons/tree-dark-hover.png) repeat-x center !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/tree-dark-hover.png) repeat-x center !important;
   background-position: center center !important;
 }
 
@@ -685,28 +690,28 @@ treechildren::-moz-tree-row(hover) {
 treechildren::-moz-tree-row(selected),
 treechildren::-moz-tree-row(current, focus) {
   background-color: transparent !important;
-  background: url("chrome://browser/skin/icons/tree-dark-selected.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark-selected.png") repeat-x !important;
   background-position: center center !important;
 }
 
 treechildren::-moz-tree-row(hover, current),
 treechildren::-moz-tree-row(hover, selected)  {
   background-color: Transparent !important;
-  background: url("chrome://browser/skin/icons/tree-dark.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark.png") repeat-x !important;
   background-position: center center !important;
 }
 
 .sidebar-placesTreechildren::-moz-tree-row(hover, current),
 .sidebar-placesTreechildren::-moz-tree-row(hover, selected)  {
   background-color: transparent !important;
-  background: url("chrome://browser/skin/icons/tree-dark.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark.png") repeat-x !important;
   background-position: center center !important;
 }
 
 treechildren::-moz-tree-row(selected, focus),
 .sidebar-placesTreechildren::-moz-tree-row(hover, selected, focus)  {
   background-color: Transparent !important;
-  background: url("chrome://browser/skin/icons/tree-dark.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark.png") repeat-x !important;
   background-position: center center !important;
 }
 
@@ -764,7 +769,7 @@ treechildren.autocomplete-treebody::-moz-tree-row(hover) {
 treechildren.autocomplete-treebody::-moz-tree-row(selected),
 treechildren.autocomplete-treebody::-moz-tree-row(hover, focus) {
   background-color: transparent !important;
-  background: url("chrome://browser/skin/icons/tree-dark-hover.png") repeat-x !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/tree-dark-hover.png") repeat-x !important;
   background-position: center center !important;
 }
 
@@ -807,14 +812,14 @@ treechildren.autocomplete-treebody::-moz-tree-row(hover, focus) {
   background-color: #A0A0A0 !important;
 }
 #sidebars-titlebutton > label:not(:-moz-lwtheme) {
-  background-image: url(chrome://global/skin/arrow/arrow-dn-dark.png) !important;
+  background-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png) !important;
 }
 #sidebars-titlebutton:hover > label:not(:-moz-lwtheme) {
 	color: #00FFFF !important;
 }
 
 sidebarheader:not(:-moz-lwtheme) {
-  background-image: url("chrome://browser/skin/icons/Tool-background2-black.png") !important;
+  background-image: var(--toolbar-dark-background2) !important;
   background-position: top left !important;
   border-bottom: 1px solid #808080 !important;
   border-top: 1px solid #808080 !important;
@@ -826,13 +831,13 @@ sidebarheader:not(:-moz-lwtheme) {
 }
 
 #bmHi-toolbar:not(:-moz-lwtheme) {
-  background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+  background-image: var(--toolbar-dark-background) !important;
   background-position: top left !important;
   background-color: #000000 !important;
 }
 
 #commandBar:not(:-moz-lwtheme) {
-  background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+  background-image: var(--toolbar-dark-background) !important;
   background-position: top left !important;
   background-color: #000000 !important;
 }
@@ -984,7 +989,7 @@ panel[type="autocomplete-richlistbox"],
 #editBookmarkPanel:not([type="arrow"]) {
   padding: 0 ;
   border: 1px solid #404040;
-  background: url(chrome://global/skin/icons/dialog-background-dark.png) repeat-y #dadce4 !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/dialog-background-dark.png) repeat-y #dadce4 !important;
 }
 
 #editBookmarkPanelTitle {
@@ -1281,7 +1286,7 @@ radio[pane] {
 /************Xpi Install***********/
 #xpinstallConfirm {
   padding: 8px 0 0;
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") !important;
   color:#fff !important;
 }
 #itemList {
@@ -1328,7 +1333,7 @@ menuitem:not([disabled="true"])[_moz-menuactive="true"],
   background-color: #515151 !important;
   color: #00FFFF !important;
   border: 1px solid #515151 !important;
-  background-image: url("chrome://browser/skin/icons/Selects.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/Selects.png") !important;
   background-position: center center !important;
   border-radius: 0px !important;
   background-size: auto 100% !important;
@@ -1383,11 +1388,11 @@ button[disabled="true"] {
 }
 
 .sorter[checkState="1"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png") !important;
 }
 
 .sorter[checkState="2"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-up-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-up-dark.png") !important;
 }
 
 .sorter[checkState="1"],
@@ -1430,11 +1435,11 @@ button[disabled="true"] {
 
 
 .addon .relnotes-toggle {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png") !important;
 }
 
 .addon[show-relnotes] .relnotes-toggle {
-  list-style-image: url("chrome://global/skin/arrow/arrow-up-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-up-dark.png") !important;
 }
 
 .addon .relnotes-toggle:hover,
@@ -1449,7 +1454,7 @@ button[disabled="true"] {
 
 button[type="menu"]:not(#appmenu-button) dropmarker,
 button[type="menu-button"] dropmarker {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png") !important;
 }
 
 button[type="menu"]:not(#appmenu-button):hover dropmarker,
@@ -1469,7 +1474,7 @@ button[type="menu-button"]:focus {
 }
 
 #appmenu-button > .button-box > .button-menu-dropmarker {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png") !important;
 }
 
 #appmenu-button:hover:not(:active) {
@@ -1495,7 +1500,7 @@ button[type="menu-button"]:focus {
 }
 
 #appmenu-button:not(:active) > .button-box > .button-menu-dropmarker {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png") !important;
 }
 
 #main-window[privatebrowsingmode=temporary] #appmenu-button {
@@ -1518,18 +1523,18 @@ button[type="menu-button"]:focus {
 
 /* SCROLLBAR */
 scrollbar[orient="vertical"] {
-  background: url("chrome://global/skin/scrollbar/track-vertical-dark.png") repeat-y #000 !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/track-vertical-dark.png") repeat-y #000 !important;
   
 }
 
 scrollbar[orient="horizontal"] {
-  background: url("chrome://global/skin/scrollbar/track-horizontal-dark.png") repeat-x #000 !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/track-horizontal-dark.png") repeat-x #000 !important;
   
 }
 /* topcap */
 
 thumb:not(.scale-thumb), thumb[height]:not([width]):not(.scale-thumb) {
-  background:url("chrome://global/skin/scrollbar/thumb-vertical-dark.png") no-repeat top left !important;
+  background:url("chrome://browser/skin/nmoptions/icons/dark/thumb-vertical-dark.png") no-repeat top left !important;
   opacity: 0.9 !important;
 }
 
@@ -1541,13 +1546,13 @@ thumb:not(.scale-thumb):active, thumb[height]:not([width]):not(.scale-thumb):act
 /* bottom cap */
 
 thumb:not(.scale-thumb) > gripper, thumb[height]:not([width]) > gripper {
-  background:url("chrome://global/skin/scrollbar/thumb-bottomcap-dark.png") no-repeat bottom left !important;
+  background:url("chrome://browser/skin/nmoptions/icons/dark/thumb-bottomcap-dark.png") no-repeat bottom left !important;
 }
 
 /*startcap*/
 
 thumb[orient="horizontal"]:not(.scale-thumb), thumb[width]:not([height]):not(.scale-thumb) {
-  background:url("chrome://global/skin/scrollbar/thumb-horizontal-dark.png") no-repeat top left !important;
+  background:url("chrome://browser/skin/nmoptions/icons/dark/thumb-horizontal-dark.png") no-repeat top left !important;
   opacity: 0.9 !important;
 }
 
@@ -1559,23 +1564,23 @@ thumb[orient="horizontal"]:not(.scale-thumb):active, thumb[width]:not([height]):
 /*endcap*/
 
 thumb[orient="horizontal"]:not(.scale-thumb) > gripper, thumb[width]:not([height]) > gripper {
-  background:url("chrome://global/skin/scrollbar/thumb-endcap-dark.png") no-repeat top right !important;
+  background:url("chrome://browser/skin/nmoptions/icons/dark/thumb-endcap-dark.png") no-repeat top right !important;
 }
 
 scrollcorner { 
-  background:url("chrome://global/skin/scrollbar/corner-dark.png") no-repeat !important;
+  background:url("chrome://browser/skin/nmoptions/icons/dark/corner-dark.png") no-repeat !important;
 }
 scrollbarbutton[type="increment"] {
-  background-image: url("chrome://global/skin/scrollbar/arrow-right-dark.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/scrollarrow-right-dark.png") !important;
 }
 scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {
-  background-image: url("chrome://global/skin/scrollbar/arrow-down-dark.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/scrollarrow-down-dark.png") !important;
 }
 scrollbarbutton[type="decrement"] {
-   background-image: url("chrome://global/skin/scrollbar/arrow-left-dark.png") !important;
+   background-image: url("chrome://browser/skin/nmoptions/icons/dark/scrollarrow-left-dark.png") !important;
 }
 scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {
-   background-image: url("chrome://global/skin/scrollbar/arrow-up-dark.png") !important;
+   background-image: url("chrome://browser/skin/nmoptions/icons/dark/scrollarrow-up-dark.png") !important;
 }
 
 /* TABBOX */
@@ -1731,7 +1736,7 @@ textbox:-moz-any(#urlbar, .searchbar-textbox)[focused="true"] {
 }
 
 .searchbar-engine-button:hover > .searchbar-dropmarker-image {
-  list-style-image: url(chrome://global/skin/arrow/arrow-dn-hov-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-dn-hov-dark.png) !important;
 }
 #urlbar .autocomplete-textbox-container {
   color: #fff !important;
@@ -1772,15 +1777,15 @@ textbox:-moz-any(#urlbar, .searchbar-textbox)[focused="true"] {
 }
 
 #identity-box {
-  background: url(chrome://browser/skin/icons/identitycap-black.png) repeat-x !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/identitycap-black.png) repeat-x !important;
 }
 
 #identity-box.verifiedDomain {
-  background: url(chrome://browser/skin/icons/identitycap-domain.png) repeat-x !important;
+  background: url(chrome://browser/skin/identitycap-domain.png) repeat-x !important;
 }
 
 #identity-box.verifiedIdentity {
-  background: url(chrome://browser/skin/icons/identitycap-identity.png) repeat-x !important;
+  background: url(chrome://browser/skin/identitycap-identity.png) repeat-x !important;
 }
 
 #identity-box:-moz-locale-dir(ltr),
@@ -1802,23 +1807,23 @@ textbox:-moz-any(#urlbar, .searchbar-textbox)[focused="true"] {
 }
 
 .urlbar-stack { /* Status 4 evar */
-  background: url(chrome://browser/skin/icons/leftcap3.png) left center no-repeat !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/leftcap3.png) left center no-repeat !important;
 }
 
 .urlbar-stack:-moz-locale-dir(rtl) { /* Status 4 evar */
-  background: url(chrome://browser/skin/icons/rightcap3.png) right center no-repeat !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/rightcap3.png) right center no-repeat !important;
 }
 
 #urlbar > .autocomplete-textbox-container > .textbox-input-box,
 #urlbar .urlbar-frontcap-and-textbox .urlbar-input-box,
 #urlbar .autocomplete-textbox-container-fission > .textbox-input-box {
-	background: url(chrome://browser/skin/icons/leftcap3.png) left center no-repeat !important;
+	background: url(chrome://browser/skin/nmoptions/icons/dark/leftcap3.png) left center no-repeat !important;
 }
 
 #urlbar > .autocomplete-textbox-container > .textbox-input-box:-moz-locale-dir(rtl),
 #urlbar .urlbar-frontcap-and-textbox .urlbar-input-box:-moz-locale-dir(rtl),
 #urlbar .autocomplete-textbox-container-fission > .textbox-input-box:-moz-locale-dir(rtl) {
-  background: url(chrome://browser/skin/icons/rightcap3.png) right center no-repeat !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/rightcap3.png) right center no-repeat !important;
 }
 
 #urlbar-display {
@@ -1846,7 +1851,7 @@ listheader  {
   border-right: 1px solid #606060 !important;
   border-bottom: 1px solid #606060 !important;
   text-shadow: none !important;
-  background: url(chrome://browser/skin/icons/Bookmark-background3.png) repeat-x #929292 !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/Bookmark-background3.png) repeat-x #929292 !important;
   background-size: auto 100% !important;
 }
 
@@ -1854,7 +1859,7 @@ treecol:hover,
 treecolpicker:hover,
 listheader[sortable=true]:hover {
   color: #fff !important;
-  background: url(chrome://global/skin/tree/header_hover_dark.png) repeat-x #929292 !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/header_hover_dark.png) repeat-x #929292 !important;
   background-size: auto 100% !important;
 }
 
@@ -1873,15 +1878,15 @@ listheader[sortable=true]:hover:active {
 }
 
 .tree-columnpicker-icon {
-  list-style-image: url(chrome://global/skin/tree/columnpicker_dark.gif) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/columnpicker_dark.gif) !important;
 }
 
 .listheader-sortdirection[sortDirection=ascending] {
-  list-style-image: url(chrome://global/skin/tree/sort-asc-dark.png);
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/sort-asc-dark.png);
 }
 
 .listheader-sortdirection[sortDirection=descending] {
-  list-style-image: url(chrome://global/skin/tree/sort-dsc-dark.png);
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/sort-dsc-dark.png);
 }
 
 /* status bar color text */
@@ -1933,7 +1938,7 @@ findbar:not(:-moz-lwtheme) {
 }
 
 #pref-tabmix > #TMBox > #TM_ButtonBox:first-child {
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") !important;
 }
 
 #pref-tabmix > #TMBox > #TM_ButtonBox:first-child > button {
@@ -2015,7 +2020,7 @@ findbar:not(:-moz-lwtheme) {
 
 .wizard-header {
   border-bottom: 0px !important;
-  background: url("chrome://browser/skin/icons/BlackGlossy.jpg") repeat-x #000 !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") repeat-x #000 !important;
   color: #fff !important;
 }
 
@@ -2038,11 +2043,11 @@ page > hbox {
 }
 
 #placesToolbar {
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") !important;
 }
 
 #placesMenu > menu > .menubar-text {
-  background: url(chrome://global/skin/arrow/arrow-dn-dark.png) right center no-repeat !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png) right center no-repeat !important;
 }
 
 #placesMenu > menu > .menubar-text:-moz-locale-dir(rtl) {
@@ -2270,11 +2275,11 @@ vbox.websites toolbarbutton label {
   background: #111 !important;
 }
 .expander-up {
-  list-style-image: url(chrome://global/skin/arrow/arrow-up-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-up-dark.png) !important;
 }
 
 .expander-down {
-  list-style-image: url(chrome://global/skin/arrow/arrow-dn-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png) !important;
 }
 .expander-up:hover {
   list-style-image: url(chrome://global/skin/arrow/arrow-up.gif) !important;
@@ -2300,7 +2305,7 @@ progressmeter {
 /* print preview */
 
 toolbar#print-preview-toolbar {
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") !important;
   padding:8px 5px 8px 5px;
   color: #fff !important;
 }
@@ -2308,7 +2313,7 @@ toolbar#print-preview-toolbar {
 /* password manager */
 
 #SignonViewerDialog {
-  background: url("chrome://browser/skin/icons/BlackGlossy.jpg") repeat-x #000  !important;
+  background: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") repeat-x #000  !important;
   color: #fff !important;
 }
 
@@ -2357,11 +2362,11 @@ update {
 }
 
 #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(ltr) {
-  background: url(chrome://global/skin/arrow/urlbar-over-link-arrow-dark.png) no-repeat left center !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/urlbar-over-link-arrow-dark.png) no-repeat left center !important;
 }
 
 #urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(rtl) {
-  background: url(chrome://global/skin/arrow/urlbar-over-link-arrow-rtl-dark.png) no-repeat right center !important;
+  background: url(chrome://browser/skin/nmoptions/icons/dark/urlbar-over-link-arrow-rtl-dark.png) no-repeat right center !important;
 }
 
 /* Torrent finder toolbar */
@@ -2443,14 +2448,14 @@ notification .messageText {
 }
 
 .popup-notification-menubutton > .button-menubutton-dropmarker { 
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png") !important;
 }
 
 /* Tabprompts */
 
 .mainContainer {
   color: #fff !important;
-    background: url("chrome://browser/skin/icons/BlackGlossy.jpg") repeat-x #000  !important;
+    background: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") repeat-x #000  !important;
 }
 
 /* Tabs close button and Tabs alltabs button*/
@@ -2634,7 +2639,7 @@ treechildren::-moz-tree-cell-text(fastFiltered) {
   #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen]):not(:-moz-lwtheme),
   #main-window:not([tabsintitlebar])[tabsontop="false"][nmnormal="false"]:not([inFullscreen]):not(:-moz-lwtheme) {
     -moz-appearance: none !important;
-    background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+    background-image: var(--toolbar-dark-background) !important;
   }
 
   #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not(:-moz-lwtheme),
@@ -2654,7 +2659,7 @@ treechildren::-moz-tree-cell-text(fastFiltered) {
   #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen]) #titlebar:not(:-moz-lwtheme),
   #main-window:not([tabsintitlebar])[tabsontop="false"][nmnormal="false"]:not([inFullscreen]) #titlebar:not(:-moz-lwtheme) {
     -moz-appearance: none !important;
-    background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+    background-image: var(--toolbar-dark-background) !important;
   }
   
   #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not(:-moz-lwtheme),
@@ -2692,11 +2697,11 @@ listbox[disabled="true"],
 #privateBrowsingItem,
 #appmenu_privateBrowsing,
 #appmenu_newPrivateWindow {
-  list-style-image:url(chrome://browser/skin/Privacy-16-dark.png) !important;
+  list-style-image:url(chrome://browser/skin/nmoptions/icons/dark/Privacy-16-dark.png) !important;
 }
 
 #errorPageContainer {
-  background-image: url(chrome://browser/skin/Privacy-48-dark.png) !important;
+  background-image: url(chrome://browser/skin/nmoptions/icons/dark/Privacy-48-dark.png) !important;
 }
 
 /* Video downloadhelper */
@@ -2758,7 +2763,7 @@ menu[id="appmenu-sessionmanager"] {
 
  /* Adblock Plus */ 
 #abp-bottombar-toolbar {
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.jpg") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/BlackGlossy.jpg") !important;
 }
 
 @-moz-document url(chrome://adblockplus/content/ui/firstRun.xul) {
@@ -2817,21 +2822,21 @@ splitter[orient="vertical"] > grippy {
 /* vertical grippies */
 splitter[collapse="before"] > grippy,
 splitter[collapse="after"] > grippy:-moz-locale-dir(rtl) {
-  background-image: url("chrome://global/skin/splitter/grip-left-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-left-dark.gif") !important;
 }
 
 splitter[collapse="after"] > grippy,
 splitter[collapse="before"] > grippy:-moz-locale-dir(rtl) {
-  background-image: url("chrome://global/skin/splitter/grip-right-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-right-dark.gif") !important;
 }
 
 /* horizontal grippies */
 splitter[collapse="before"][orient="vertical"] > grippy {
-  background-image: url("chrome://global/skin/splitter/grip-top-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-top-dark.gif") !important;
 }  
 
 splitter[collapse="after"][orient="vertical"] > grippy {
-  background-image: url("chrome://global/skin/splitter/grip-bottom-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-bottom-dark.gif") !important;
 }  
   
 /* ..... collapsed state ..... */
@@ -2839,21 +2844,21 @@ splitter[collapse="after"][orient="vertical"] > grippy {
 /* vertical grippies */
 splitter[collapse="before"][state="collapsed"] > grippy,
 splitter[collapse="after"][state="collapsed"] > grippy:-moz-locale-dir(rtl) {
-  background-image: url("chrome://global/skin/splitter/grip-right-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-right-dark.gif") !important;
 }
 
 splitter[collapse="after"][state="collapsed"] > grippy,
 splitter[collapse="before"][state="collapsed"] > grippy:-moz-locale-dir(rtl) {
-  background-image: url("chrome://global/skin/splitter/grip-left-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-left-dark.gif") !important;
 }
 
 /* horizontal grippies */
 splitter[collapse="before"][state="collapsed"][orient="vertical"] > grippy {
-  background-image: url("chrome://global/skin/splitter/grip-bottom-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-bottom-dark.gif") !important;
 }  
 
 splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy {
-  background-image: url("chrome://global/skin/splitter/grip-top-dark.gif") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/grip-top-dark.gif") !important;
 }
 
 #urlbar-search-splitter {
@@ -3005,7 +3010,7 @@ dialogheader {
 
 #main-toolbar {
   border-top: none !important;
-  background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+  background-image: var(--toolbar-dark-background) !important;
 }
 #localtoolbar,
 #remoteview > toolbar {
@@ -3073,7 +3078,7 @@ tabbox[id="wf_tabbox"] checkbox {
 }
 
 #oe-date-picker-overlay-box{
-   color     : #000 !important;
+   color: #000 !important;
 }
 
 .reminderfox-datepicker-month-day-box-class,
@@ -3092,7 +3097,7 @@ tabbox[id="wf_tabbox"] checkbox {
   background-color: #515151 !important;
   color: #00FFFF !important;
   border: 1px solid #515151 !important;  
-  background-image: url("chrome://browser/skin/icons/Selects.png") !important;
+  background-image: url("chrome://browser/skin/nmoptions/icons/dark/Selects.png") !important;
   background-position: center center !important;
   border-radius: 10px !important;
   background-size: auto 100% !important;
@@ -3149,7 +3154,7 @@ background: #000 !important;
 }
 
 radio.subtab[selected] {
-background-image: url("chrome://browser/skin/icons/Selects.png") !important;
+background-image: url("chrome://browser/skin/nmoptions/icons/dark/Selects.png") !important;
 
 }
 
@@ -3173,14 +3178,14 @@ color: #fff !important;
 .autorepeatbutton-down:-moz-locale-dir(rtl)[orient="horizontal"],
 .scrollbutton-up[orient="horizontal"],
 .scrollbutton-down:-moz-locale-dir(rtl)[orient="horizontal"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-lft-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-lft-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 .autorepeatbutton-up[orient="horizontal"]:not([disabled="true"]):hover,
 .autorepeatbutton-down:-moz-locale-dir(rtl)[orient="horizontal"]:not([disabled="true"]):hover,
 .scrollbutton-up[orient="horizontal"]:not([disabled="true"]):hover,
 .scrollbutton-down:-moz-locale-dir(rtl)[orient="horizontal"]:not([disabled="true"]):hover {
-  list-style-image: url("chrome://global/skin/arrow/arrow-lft-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-lft-hov-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 
@@ -3188,7 +3193,7 @@ color: #fff !important;
 .autorepeatbutton-up:-moz-locale-dir(rtl)[orient="horizontal"],
 .scrollbutton-down[orient="horizontal"],
 .scrollbutton-up:-moz-locale-dir(rtl)[orient="horizontal"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-rit-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-rit-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 
@@ -3196,7 +3201,7 @@ color: #fff !important;
 .autorepeatbutton-up:-moz-locale-dir(rtl)[orient="horizontal"]:not([disabled="true"]):hover,
 .scrollbutton-down[orient="horizontal"]:not([disabled="true"]):hover,
 .scrollbutton-up:-moz-locale-dir(rtl)[orient="horizontal"]:not([disabled="true"]):hover{
-  list-style-image: url("chrome://global/skin/arrow/arrow-rit-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-rit-hov-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 
@@ -3204,7 +3209,7 @@ color: #fff !important;
 .autorepeatbutton-down:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"],
 .scrollbutton-up[orient="horizontal"][disabled="true"],
 .scrollbutton-down:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-lft-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-lft-hov-dark.png") !important;
   -moz-image-region: auto; /* cut off inheritance */
 }
 
@@ -3212,45 +3217,45 @@ color: #fff !important;
 .autorepeatbutton-up:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"],
 .scrollbutton-down[orient="horizontal"][disabled="true"],
 .scrollbutton-up:-moz-locale-dir(rtl)[orient="horizontal"][disabled="true"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-rit-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-rit-hov-dark.png") !important;
   -moz-image-region: auto; /* cut off inheritance */
 }
 
 /* Vertical enabled */
 .autorepeatbutton-up,
 .scrollbutton-up {
-  list-style-image: url("chrome://global/skin/arrow/arrow-up-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-up-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 
 .autorepeatbutton-up:not([disabled="true"]):hover,
 .scrollbutton-up:not([disabled="true"]):hover {
-  list-style-image: url("chrome://global/skin/arrow/arrow-up-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-up-hov-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 
 .autorepeatbutton-down,
 .scrollbutton-down {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 
 .autorepeatbutton-down:not([disabled="true"]):hover,
 .scrollbutton-down:not([disabled="true"]):hover {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-hov-dark.png") !important;
   -moz-image-region: auto !important; /* cut off inheritance */
 }
 
 /* Vertical disabled */
 .autorepeatbutton-up[disabled="true"],
 .scrollbutton-up[disabled="true"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-up-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-up-hov-dark.png") !important;
   -moz-image-region: auto; /* cut off inheritance */
 }
 
 .autorepeatbutton-down[disabled="true"],
 .scrollbutton-down[disabled="true"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-hov-dark.png") !important;
+  list-style-image: url("chrome://browser/skin/nmoptions/icons/dark/arrow-dn-hov-dark.png") !important;
   -moz-image-region: auto; /* cut off inheritance */
 }
 
@@ -3500,11 +3505,11 @@ toolbarbutton[id="ScrapBookHighlighter4"]  {
 }
 
 .panel-arrow[side=top] {
-  list-style-image: url(chrome://global/skin/arrow/panelarrow-up-black.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/panelarrow-up-black.png) !important;
 }
 
 .panel-arrow[side=bottom] {
-  list-style-image: url(chrome://global/skin/arrow/panelarrow-down-black.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/panelarrow-down-black.png) !important;
 }
 
 /* Subscribe */
@@ -3825,16 +3830,16 @@ richlistbox:focus > richlistitem[type="download"][selected="true"] {
 
 .unified-nav-back[_moz-menuactive]:-moz-locale-dir(ltr),
 .unified-nav-forward[_moz-menuactive]:-moz-locale-dir(rtl) {
-  list-style-image: url(chrome://browser/skin/icons/arrow-lft-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-lft-dark.png) !important;
 }
 
 .unified-nav-forward[_moz-menuactive]:-moz-locale-dir(ltr),
 .unified-nav-back[_moz-menuactive]:-moz-locale-dir(rtl) {
-  list-style-image: url(chrome://browser/skin/icons/arrow-rit-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-rit-dark.png) !important;
 }
 
 toolbar[mode="text"] #noiamoon-back-forward-dropmarker .toolbarbutton-menu-dropmarker:not(:-moz-lwtheme) {
-  list-style-image: url(chrome://global/skin/arrow/arrow-dn-dark.png) !important;
+  list-style-image: url(chrome://browser/skin/nmoptions/icons/dark/arrow-dn-dark.png) !important;
 }
 
 toolbar[mode="text"] #noiamoon-back-forward-dropmarker[disabled="true"] .toolbarbutton-menu-dropmarker:not(:-moz-lwtheme) {

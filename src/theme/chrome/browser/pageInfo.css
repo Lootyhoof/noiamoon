@@ -10,7 +10,7 @@
   margin: 0;
   padding-left: 10px;
   border-bottom: 2px groove #d4d0c8;
-  background-image: url(chrome://browser/skin/icons/Tool-background2.png);
+  background-image: url(chrome://global/skin/toolbar/Tool-background2.png);
   background-size: auto 100%;
 }
 

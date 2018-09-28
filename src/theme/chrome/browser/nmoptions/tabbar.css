@@ -3,7 +3,7 @@
 }
 
 #main-window[tabsintitlebar][nmnormal="false"]:not(:-moz-lwtheme) #TabsToolbar {
-  background: url("chrome://browser/skin/icons/titlebar.png") #CDCFD5 !important;
+  background: url("chrome://browser/skin/titlebar.png") #CDCFD5 !important;
 }
 
 #main-window[tabsintitlebar]:-moz-lwtheme #TabsToolbar {

@@ -616,7 +616,7 @@ html[dir=rtl] .iq-resizable-se {
 }
 
 #actions #searchbutton{
-  background-image: -moz-image-rect(url("chrome://browser/skin/icons/Searchbar.png"), 0, 16, 16, 0);
+  background-image: -moz-image-rect(url("chrome://browser/skin/Searchbar.png"), 0, 16, 16, 0);
   background-repeat: no-repeat;
   background-color : transparent;
   border: none;
@@ -627,7 +627,7 @@ html[dir=rtl] .iq-resizable-se {
 }
 
 #actions #searchbutton:hover{
-  background-image: -moz-image-rect(url("chrome://browser/skin/icons/Searchbar.png"), 0, 32, 16, 16);
+  background-image: -moz-image-rect(url("chrome://browser/skin/Searchbar.png"), 0, 32, 16, 16);
 }
 
 .notMainMatch{

@@ -103,11 +103,11 @@ prefpane {
 }
 
 #cookiesChildren::-moz-tree-image(domainCol, container) {
-  list-style-image: url(chrome://browser/skin/icons/folder_closed.png);
+  list-style-image: url(chrome://browser/skin/places/folder_closed.png);
 }
 
 #cookiesChildren::-moz-tree-image(domainCol, container, open) {
-  list-style-image: url(chrome://browser/skin/icons/folder_open.png);
+  list-style-image: url(chrome://browser/skin/places/folder_open.png);
 }
 
 #cookieInfoBox {

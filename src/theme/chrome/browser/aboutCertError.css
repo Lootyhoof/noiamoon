@@ -4,7 +4,7 @@
 
 html {
   height: 100%;
-  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+  background: url(chrome://global/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
 }
 
 body {
@@ -49,7 +49,7 @@ h2 {
 
 #technicalContent > h2,
 #expertContent > h2 {
-  background: url(chrome://browser/skin/icons/arrow-down-small.png) left center no-repeat;
+  background: url(chrome://global/skin/arrow/arrow-down-small.png) left center no-repeat;
 }
 
 body[dir="rtl"] #technicalContent > h2,
@@ -59,18 +59,18 @@ body[dir="rtl"] #expertContent > h2 {
 
 #technicalContent[collapsed] > h2,
 #expertContent[collapsed] > h2{
-  background-image: url(chrome://browser/skin/icons/arrow-right-small.png);
+  background-image: url(chrome://global/skin/arrow/arrow-right-small.png);
 }
 
 body[dir="rtl"] #technicalContent[collapsed] > h2,
 body[dir="rtl"] #expertContent[collapsed] > h2 {
-  background-image: url(chrome://browser/skin/icons/arrow-left-small.png);
+  background-image: url(chrome://global/skin/arrow/arrow-left-small.png);
 }
 
 .expander > button {
   padding-inline-start: 20px;
   margin-inline-start: -20px;
-  background: url(chrome://browser/skin/icons/arrow-down-small.png) left center no-repeat;
+  background: url(chrome://global/skin/arrow/arrow-down-small.png) left center no-repeat;
   border: none;
   font: inherit;
   color: inherit;
@@ -84,10 +84,10 @@ body[dir="rtl"] .expander > button ,
 
 
 .expander[collapsed] > button {
-  background-image: url(chrome://browser/skin/icons/arrow-right-small.png);
+  background-image: url(chrome://global/skin/arrow/arrow-right-small.png);
 }
 
 body[dir="rtl"] .expander[collapsed] > button,
 .expander[collapsed] > button:-moz-dir(rtl) {
-  background-image: url(chrome://browser/skin/icons/arrow-left-small.png);
+  background-image: url(chrome://global/skin/arrow/arrow-left-small.png);
 }

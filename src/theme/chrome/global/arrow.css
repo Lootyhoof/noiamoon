@@ -2,20 +2,20 @@
 
 .up {
   min-width: 0;
-  list-style-image:url(chrome://browser/skin/icons/arrow-up.png);
+  list-style-image:url(chrome://global/skin/arrow/arrow-up.png);
 }
 
 .down {
   min-width: 0;
-  list-style-image:url(chrome://browser/skin/icons/arrow-down.png);
+  list-style-image:url(chrome://global/skin/arrow/arrow-down.png);
 }
 
 .left {
   min-width: 0;
-  list-style-image:url(chrome://browser/skin/icons/arrow-left.png);
+  list-style-image:url(chrome://global/skin/arrow/arrow-left.png);
 }
 
 .right {
   min-width: 0;
-  list-style-image:url(chrome://browser/skin/icons/arrow-right.png);
+  list-style-image:url(chrome://global/skin/arrow/arrow-right.png);
 }

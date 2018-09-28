@@ -12,12 +12,12 @@
 /* ::::: warning screen ::::: */
 
 #config {
-  background: url(chrome://browser/skin/icons/Toolbar-Background.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Toolbar-Background.png) top left repeat-x #adaebb;
 }
 
 #warningScreen
 {
-  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+  background: url(chrome://global/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
 }
 
 #warningBox

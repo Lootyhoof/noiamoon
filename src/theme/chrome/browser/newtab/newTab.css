@@ -10,7 +10,7 @@
 
 /* SCROLLBOX */
 #newtab-vertical-margin {
-  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+  background: url(chrome://global/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
 }
 
 /* UNDO */

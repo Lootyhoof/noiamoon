@@ -117,11 +117,11 @@ treechildren::-moz-tree-cell-text(selected, focus) {
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected, focus) {
-  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+  background: url(chrome://browser/skin/places/Bookmark-background.png) repeat-x center;
 }
 
 tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
-  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+  background: url(chrome://browser/skin/places/Bookmark-background.png) repeat-x center;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
@@ -172,7 +172,7 @@ treechildren::-moz-tree-separator {
 /* ::::: drop feedback ::::: */
 
 treechildren::-moz-tree-row(dropOn) {
-  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+  background: url(chrome://browser/skin/places/Bookmark-background.png) repeat-x center;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell-text(primary, dropOn),
@@ -182,7 +182,7 @@ treechildren::-moz-tree-cell-text(primary, dropOn) {
 }
 
 treechildren::-moz-tree-drop-feedback {
-  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+  background: url(chrome://browser/skin/places/Bookmark-background.png) repeat-x center;
   width: 50px;
   height: 2px;
   margin-inline-start: 5px;
@@ -353,7 +353,7 @@ treechildren.gridlines::-moz-tree-row {
 
 treechildren::-moz-tree-row(selected, editing) {
   border: 0;
-  background: url(chrome://browser/skin/icons/Bookmark-background1.png) repeat-x center;
+  background: url(chrome://browser/skin/places/Bookmark-background1.png) repeat-x center;
 }
 
 treechildren::-moz-tree-cell-text(selected, editing) {

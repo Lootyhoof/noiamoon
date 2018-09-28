@@ -135,7 +135,7 @@ toolbarbutton[type="menu-button"] {
 /* dropmarker */
 .toolbarbutton-menubutton-dropmarker {
   -moz-box-align: center;
-  list-style-image:url(chrome://browser/skin/icons/dropmarker.png);
+  list-style-image:url(chrome://global/skin/icons/dropmarker.png);
   -moz-image-region: rect(0 10px 10px 0);
 }
 

@@ -21,7 +21,7 @@
   width: 45em;
   height: 32px;
   margin: 4px 2em 0;
-  background: url(chrome://browser/skin/icons/sync-32.png) no-repeat;
+  background: url(chrome://browser/skin/sync-32.png) no-repeat;
 }
 
 #tabsListHeading {
@@ -70,11 +70,11 @@ richlistitem[type="client"] {
 }
 
 richlistitem.mobile[type="client"] {
-  list-style-image: url(chrome://browser/skin/icons/sync-mobileIcon.png);
+  list-style-image: url(chrome://browser/skin/sync-mobileIcon.png);
 }
 
 richlistitem.desktop[type="client"] {
-  list-style-image: url(chrome://browser/skin/icons/sync-desktopIcon.png);
+  list-style-image: url(chrome://browser/skin/sync-desktopIcon.png);
 }
 
 .tabIcon {

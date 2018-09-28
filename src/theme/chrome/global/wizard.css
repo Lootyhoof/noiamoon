@@ -53,7 +53,7 @@ wizard[description=""] .wizard-header-description {
 
 .wizard-buttons {
   border-top: 2px groove #d4d0c8;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #dadce4;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #dadce4;
   background-size: auto 100%;
 }
 

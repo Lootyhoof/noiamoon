@@ -23,7 +23,7 @@ window:not([active=true]) .tabbrowser-strip > .tabbrowser-tabs {
 
 #navigator-toolbox[tabsontop="true"] #TabsToolbar {
 	-moz-appearance:none;
-	background-image: url("chrome://browser/skin/icons/Tabbar-background-top.png");
+	background-image: url("chrome://browser/skin/tabbrowser/Tabbar-background-top.png");
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-left: 0px;

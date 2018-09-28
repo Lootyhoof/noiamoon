@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  background: #cdced3 url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed;
+  background: #cdced3 url(chrome://global/skin/icons/box-background.png) repeat-x bottom fixed;
 }
 
 body {

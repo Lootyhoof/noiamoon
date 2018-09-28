@@ -53,15 +53,15 @@ treechildren::-moz-tree-image(title, query) {
 }
 
 treechildren::-moz-tree-image(title, container, livemark) {
-  list-style-image: url(chrome://browser/skin/icons/livemark.png) !important;
+  list-style-image: url(chrome://browser/skin/places/livemark.png) !important;
 }
 
 treechildren::-moz-tree-image(title, livemarkItem) {
-  list-style-image: url("chrome://browser/skin/icons/livemark.png") !important;
+  list-style-image: url("chrome://browser/skin/places/livemark.png") !important;
 }
 
 treechildren::-moz-tree-image(title, javascript) {
-  list-style-image: url(chrome://browser/skin/icons/bookmarklet.png) !important;
+  list-style-image: url(chrome://browser/skin/places/bookmarklet.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
@@ -168,9 +168,9 @@ treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) ,
 
 .bookmark-item[container][livemark],
 .bookmark-item[type="menu"][livemark] {
-  list-style-image: url(chrome://browser/skin/icons/livemark.png) !important;
+  list-style-image: url(chrome://browser/skin/places/livemark.png) !important;
 }
 
 .bookmark-item[container][livemark] .bookmark-item {
-  list-style-image: url("chrome://browser/skin/icons/livemark.png") !important;
+  list-style-image: url("chrome://browser/skin/places/livemark.png") !important;
 }

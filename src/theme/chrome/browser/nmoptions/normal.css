@@ -9,11 +9,11 @@
 
 @media all and (-moz-windows-compositor) {
   #main-window[nmlight="false"][nmblue="false"][nmblack="true"]:not([inFullscreen])  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
-    background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+    background-image: url("chrome://browser/skin/nmoptions/icons/dark/Tool-background-black.png") !important;
   }
 
   #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nmlight="false"][nmblue="false"][nmblack="true"]  #toolbar-menubar[autohide="true"] ~  #TabsToolbar{ 
-    background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+    background-image: url("chrome://browser/skin/nmoptions/icons/dark/Tool-background-black.png") !important;
   }
 
   #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nmlight="false"][nmblue="false"][nmblack="true"]  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
@@ -23,7 +23,7 @@
 
 @media not all and (-moz-windows-compositor){
   #main-window[nmlight="false"][nmblue="false"][nmblack="true"]:not([inFullscreen])  #toolbar-menubar[autohide="true"] ~ #nav-bar { 
-    background-image: url("chrome://browser/skin/icons/Tool-background-black.png") !important;
+    background-image: url("chrome://browser/skin/nmoptions/icons/dark/Tool-background-black.png") !important;
   }
 
   #main-window:not([tabsintitlebar])[tabsontop="true"]:not([inFullscreen])[nmlight="false"][nmblue="false"][nmblack="true"]  #toolbar-menubar[autohide="true"] ~  #TabsToolbar{ 
@@ -281,19 +281,19 @@
       }
       
       #titlebar-min:not(:-moz-window-inactive):not(:-moz-lwtheme) {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#minimize) !important;
       }
 
       #titlebar-max:not(:-moz-window-inactive):not(:-moz-lwtheme) {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#maximize) !important;
       }
 
       #main-window[sizemode="maximized"] #titlebar-max:not(:-moz-window-inactive):not(:-moz-lwtheme) {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#restore) !important;
       }
       
       #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme) {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#close) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close) !important;
       }
 
       .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
@@ -306,7 +306,7 @@
       }
       
       #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-white) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
         background-color: hsla(0, 86%, 49%, 1) !important;
       }
 
@@ -323,19 +323,19 @@
       }
       
       #titlebar-min {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#minimize) !important;
       }
 
       #titlebar-max {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#maximize) !important;
       }
 
       #main-window[sizemode="maximized"] #titlebar-max {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#restore) !important;
       }
 
       #titlebar-close {
-        list-style-image: url(chrome://browser/skin/caption-buttons.svg#close) !important;
+        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close) !important;
       }
       
       .titlebar-button:hover {
@@ -350,19 +350,19 @@
       @media (-moz-windows-accent-color-is-dark) {
         /* dark accent color */
         #titlebar-min {
-          list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-white) !important;
+          list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#minimize-white) !important;
         }
 
         #titlebar-max {
-          list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize-white) !important;
+          list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#maximize-white) !important;
         }
 
         #main-window[sizemode="maximized"] #titlebar-max {
-          list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore-white) !important;
+          list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#restore-white) !important;
         }
 
         #titlebar-close {
-          list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-white) !important;
+          list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
         }
       
         .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
@@ -430,7 +430,7 @@
     }
     
     #titlebar-close:hover {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-white) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
       background-color: hsla(0, 86%, 49%, 1) !important;
       transition: background-color linear 160ms !important;
     }
@@ -443,19 +443,19 @@
     /* inactive window */
 
     #titlebar-min:-moz-window-inactive:not(:-moz-lwtheme) {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#minimize) !important;
     }
 
     #titlebar-max:-moz-window-inactive:not(:-moz-lwtheme) {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#maximize) !important;
     }
 
     #main-window[sizemode="maximized"] #titlebar-max:-moz-window-inactive:not(:-moz-lwtheme) {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#restore) !important;
     }
 
     #titlebar-close:-moz-window-inactive:not(:-moz-lwtheme):not(:hover) {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close) !important;
     }
     
     .titlebar-button:-moz-window-inactive:not(:-moz-lwtheme):hover {
@@ -479,22 +479,22 @@
     }
     
     #titlebar-min:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-darktext) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#minimize-darktext) !important;
     }
 
     #titlebar-max:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize-darktext) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#maximize-darktext) !important;
     }
 
     #main-window[sizemode="maximized"]:-moz-lwtheme-darktext #titlebar-max:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore-darktext) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#restore-darktext) !important;
     }
 
     #titlebar-close:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-darktext) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-darktext) !important;
     }
     #titlebar-close:hover:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-darktext) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-darktext) !important;
     }
         
     /* dark persona */
@@ -509,22 +509,22 @@
     }
     
     #titlebar-min:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-themes) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#minimize-themes) !important;
     }
 
     #titlebar-max:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize-themes) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#maximize-themes) !important;
     }
 
     #main-window[sizemode="maximized"]:-moz-lwtheme-brighttext #titlebar-max:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore-themes) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#restore-themes) !important;
     }
 
     #titlebar-close:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-themes) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-themes) !important;
     }
     #titlebar-close:hover:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-themes) !important;
+      list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-themes) !important;
     }
         
     /* the 12px image renders a 10px icon, and the 10px upscaled gets rounded to 12.5, which

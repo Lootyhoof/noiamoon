@@ -54,7 +54,7 @@
 
 #appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
   margin: 0 0 0 4px;
-  list-style-image: url(chrome://browser/skin/icons/appmenu-dropmarker.png) ;
+  list-style-image: url(chrome://browser/skin/appmenu-dropmarker.png) ;
 }
 
 #main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button {

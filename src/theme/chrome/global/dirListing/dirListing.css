@@ -4,7 +4,7 @@
   height: 100%;
   padding-left: 2em;
   padding-right: 2em;
-  background: url(chrome://browser/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
+  background: url(chrome://global/skin/icons/box-background.png) repeat-x bottom fixed #cdced3;
 }
 
 body {
@@ -78,7 +78,7 @@ th:hover > a {
 tbody > tr:hover {
   outline: 1px solid #1f9afd;
   -moz-outline-radius: .3em;
-  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center rgba(188,245,254,201);
+  background: url(chrome://browser/skin/places/Bookmark-background.png) repeat-x center rgba(188,245,254,201);
 }
 
 tbody > tr:hover a {
@@ -104,11 +104,11 @@ td:not(:first-child) {
   vertical-align: middle;
   margin-right: 4px;
   margin-left: -20px;
-  content: url(chrome://browser/skin/icons/folder-up.png);
+  content: url(chrome://global/skin/dirListing/folder-up.png);
 }
 
 .dir::before {
-  content: url(chrome://browser/skin/icons/folder_closed.png);
+  content: url(chrome://browser/skin/places/folder_closed.png);
 }
 
 button {

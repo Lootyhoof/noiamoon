@@ -7,15 +7,15 @@ treechildren::-moz-tree-image(title, open, hover) {
 }
 
 treechildren::-moz-tree-image(title, container, livemark, hover) {
-  list-style-image: url(chrome://browser/skin/icons/livemark.png) !important;
+  list-style-image: url(chrome://browser/skin/places/livemark.png) !important;
 }
 
 treechildren::-moz-tree-image(title, livemarkItem, hover) {
-  list-style-image: url("chrome://browser/skin/icons/livemark.png") !important;
+  list-style-image: url("chrome://browser/skin/places/livemark.png") !important;
 }
 
 treechildren::-moz-tree-image(title, javascript, hover) {
-  list-style-image: url(chrome://browser/skin/icons/bookmarklet.png) !important;
+  list-style-image: url(chrome://browser/skin/places/bookmarklet.png) !important;
 }
 
 treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks, open, hover) {
@@ -101,9 +101,9 @@ treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) ,
 
 .bookmark-item[container][livemark]:hover,
 .bookmark-item[type="menu"][livemark]:hover {
-  list-style-image: url(chrome://browser/skin/icons/livemark.png) !important;
+  list-style-image: url(chrome://browser/skin/places/livemark.png) !important;
 }
 
 .bookmark-item[container][livemark] .bookmark-item:hover {
-  list-style-image: url("chrome://browser/skin/icons/livemark.png") !important;
+  list-style-image: url("chrome://browser/skin/places/livemark.png") !important;
 }

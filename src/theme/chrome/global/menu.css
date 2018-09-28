@@ -116,14 +116,14 @@ menubar > menu[_moz-menuactive] {
   color: #000;
   text-shadow: none;
   border: 1px solid #0a246a;
-  background-image: url(chrome://browser/skin/icons/Menu.png);
+  background-image: url(chrome://global/skin/menu/Menu.png);
 }
 
 menubar > menu[_moz-menuactive][open] {
   color: #000;
   text-shadow: none;
   border: 1px solid #0a246a;
-  background-image: url(chrome://browser/skin/icons/Menu.png);
+  background-image: url(chrome://global/skin/menu/Menu.png);
 }
 
 menubar > menu[disabled="true"],
@@ -167,7 +167,7 @@ menuitem[_moz-menuactive],
 .splitmenu-menuitem[_moz-menuactive] {
   color: #000;
   border: 1px solid #7BB1DD;
-  background: url(chrome://browser/skin/icons/tree-hover.png) repeat-x center;
+  background: url(chrome://global/skin/tree/tree-hover.png) repeat-x center;
   background-size: auto 100%;
 }
 

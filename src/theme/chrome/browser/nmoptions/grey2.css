@@ -1,6 +1,6 @@
 #main-window:not(:-moz-lwtheme):not([tabsintitlebar]) {
   -moz-appearance:-moz-win-borderless-glass;
-  background-image: url("chrome://browser/skin/icons/Tabbar-background-top.png") !important;
+  background-image: url("chrome://browser/skin/tabbrowser/Tabbar-background-top.png") !important;
 
 }
 

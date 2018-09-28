@@ -50,7 +50,7 @@ menulist:focus:not([open="true"]):not(.menulist-compact) > .menulist-label-box >
   width: 18px;
   -moz-box-align: center;
   -moz-box-pack: center;
-  list-style-image:url(chrome://browser/skin/icons/url_dropmarker.png);
+  list-style-image:url(chrome://browser/skin/url_dropmarker.png);
   -moz-image-region: rect(0px 16px 16px 0px);
   padding: 1px 0 1px 2px;
 }
@@ -110,7 +110,7 @@ html|*.menulist-editable-input {
 .menulist-compact > .menulist-dropmarker {
   margin: -1px 0 0 2px;
   padding: 0;
-  list-style-image:url('chrome://browser/skin/icons/dropmarker.png');
+  list-style-image:url('chrome://global/skin/icons/dropmarker.png');
   -moz-image-region: rect(0 10px 10px 0);
 }
 

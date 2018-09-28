@@ -3,21 +3,21 @@
 #titlebar #appmenu-button,
 #TabsToolbar #appmenu-button,
 #TabsToolbar #fixer-menu-button > #appmenu-button{
-  background-image: url("chrome://browser/skin/icons/BlackGlossy.png") !important;
+  background-image: url("chrome://browser/skin/BlackGlossy.png") !important;
   color: #fff !important;
 }
 
 #titlebar #appmenu-button[selected="true"],
 #TabsToolbar #appmenu-button[selected="true"],
 #TabsToolbar #fixer-menu-button > #appmenu-button[selected="true"] {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+  background-image: url("chrome://browser/skin/places/Bookmark-background.png") !important;
   color: #000 !important;
 }
 
 #titlebar #appmenu-button:hover,
 #TabsToolbar #appmenu-button:hover,
 #TabsToolbar #fixer-menu-button > #appmenu-button:hover  {
-  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+  background-image: url("chrome://browser/skin/places/Bookmark-background.png") !important;
   color: #000 !important;
 }
 
@@ -46,7 +46,7 @@
 
 #nav-bar #appmenu-button,
 #main-window[privatebrowsingmode=temporary] #nav-bar #appmenu-button {
-  background: url("chrome://browser/skin/icons/firefox.png")  !important;
+  background: url("chrome://browser/skin/firefox.png")  !important;
   background-repeat: no-repeat !important;
   background-position: center bottom !important;
 }
@@ -55,7 +55,7 @@
 #nav-bar[iconsize="small"] #appmenu-button  ,
 #main-window[privatebrowsingmode=temporary] #nav-bar[iconsize="small"] #fixer-menu-button > #appmenu-button,
 #main-window[privatebrowsingmode=temporary] #nav-bar[iconsize="small"] #appmenu-button {
-  background: url("chrome://browser/skin/icons/firefox24.png")  !important;
+  background: url("chrome://browser/skin/firefox24.png")  !important;
   height: 24px !important;
   width: 24px !important;
   margin-bottom: 2px !important;
@@ -73,7 +73,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar) #appmenu-button ,
   max-height: 32px !important;
   border: none !important;
   box-shadow: none !important;
-  background: url("chrome://browser/skin/icons/firefox16.png")  !important;
+  background: url("chrome://browser/skin/firefox16.png")  !important;
   background-repeat: no-repeat !important;
   background-position: center bottom !important;
 }

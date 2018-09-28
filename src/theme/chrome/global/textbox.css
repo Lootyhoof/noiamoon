@@ -108,7 +108,7 @@ textbox[type=search][focused="true"]  {
 .textbox-search-icon {
   width: 16px;
   height: 16px;
-  list-style-image: url(chrome://browser/skin/icons/Searchbar.png);
+  list-style-image: url(chrome://browser/skin/Searchbar.png);
   -moz-image-region: rect(0 16px 16px 0);
 }
 

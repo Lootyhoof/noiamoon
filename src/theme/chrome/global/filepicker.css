@@ -10,7 +10,7 @@ treechildren::-moz-tree-image(FilenameColumn) {
 
 treechildren::-moz-tree-image(treecolAutoCompleteValue, directory),
 treechildren::-moz-tree-image(FilenameColumn, directory) {
-  list-style-image: url(chrome://browser/skin/icons/folder_closed.png);
+  list-style-image: url(chrome://browser/skin/places/folder_closed.png);
 }
 
 treechildren::-moz-tree-image(treecolAutoCompleteValue, file),
@@ -29,7 +29,7 @@ treechildren::-moz-tree-image(FilenameColumn, file) {
 
 /* button items */
 .up-button {
-  list-style-image: url(chrome://browser/skin/icons/folder-up.png);
+  list-style-image: url(chrome://global/skin/dirListing/folder-up.png);
   max-width: 36px;
   padding: 4px 3px 4px 5px;
 }
@@ -41,7 +41,7 @@ treechildren::-moz-tree-image(FilenameColumn, file) {
 }
 
 .new-dir-button {
-  list-style-image: url(chrome://browser/skin/icons/folder-add.png);
+  list-style-image: url(chrome://browser/skin/folder-add.png);
   max-width: 36px;
   padding: 4px 3px 4px 5px;
 }

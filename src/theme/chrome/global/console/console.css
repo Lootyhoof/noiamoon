@@ -102,23 +102,23 @@ toolbar#ToolbarMode toolbarbutton {
 }
 
 #Console\:modeAll {
-  list-style-image: url(chrome://browser/skin/icons/console.png);
+  list-style-image: url(chrome://global/skin/console/console.png);
 }
 
 #Console\:modeErrors {
-  list-style-image: url(chrome://browser/skin/icons/alert-error.png);
+  list-style-image: url(chrome://global/skin/console/alert-error.png);
 }
 
 #Console\:modeWarnings {
-  list-style-image: url(chrome://browser/skin/icons/alert-warning.png);
+  list-style-image: url(chrome://global/skin/console/alert-warning.png);
 }
 
 #Console\:modeMessages {
-  list-style-image: url(chrome://browser/skin/icons/alert-message.png);
+  list-style-image: url(chrome://global/skin/console/alert-message.png);
 }
 
 #Console\:clear {
-  list-style-image: url(chrome://browser/skin/icons/eraser.png);
+  list-style-image: url(chrome://global/skin/console/eraser.png);
  }
 
 /* toolbars */

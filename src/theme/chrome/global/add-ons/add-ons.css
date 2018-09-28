@@ -37,7 +37,7 @@
 #abpPreferencesWindow #FindToolbar {
   margin: 8px -10px -8px;
   border-top: 1px solid #808080 !important;
-  background: url(chrome://browser/skin/icons/Statusbar-background.png) top left repeat-x #fdfdfe;
+  background: url(chrome://browser/skin/Statusbar-background.png) top left repeat-x #fdfdfe;
 }
 
 #abpPreferencesWindow #find-closebutton {
@@ -45,12 +45,12 @@
 }
 
 #abpPreferencesWindow #find-next {
-  list-style-image: url(chrome://browser/skin/icons/go-down.png);
+  list-style-image: url(chrome://global/skin/icons/go-down.png);
   -moz-image-region: auto !important;
 }
 
 #abpPreferencesWindow #find-previous {
-  list-style-image: url(chrome://browser/skin/icons/go-up.png);
+  list-style-image: url(chrome://global/skin/icons/go-up.png);
   -moz-image-region: auto !important;
 }
 
@@ -157,7 +157,7 @@ panelTab:focus > panelTabMenu .menuTarget {
 
 /* Download Statusbar */
 #downbarHolder {
-  background: url(chrome://browser/skin/icons/Statusbar-background.png) top left repeat-x #fdfdfe;
+  background: url(chrome://browser/skin/Statusbar-background.png) top left repeat-x #fdfdfe;
 }
 
 #downbarHolder:-moz-lwtheme {
@@ -176,13 +176,13 @@ panelTab:focus > panelTabMenu .menuTarget {
   padding: 1px 0;
   border: 1px solid #A0A0A0;
   border-radius: 4px;
-  background: url(chrome://browser/skin/icons/Toolbar-Background.png) center left repeat-x #fdfdfe;
+  background: url(chrome://global/skin/toolbar/Toolbar-Background.png) center left repeat-x #fdfdfe;
 }
 
 #downbarHolder > #downbarMainMenuButton:hover,
 #downbarHolder > #downbarClearButton:hover,
 #downbarHolder > #downbarToMiniButton:hover {
-  background: url(chrome://browser/skin/icons/Title-Background.png) center left repeat-x #fdfdfe;
+  background: url(chrome://browser/skin/Title-Background.png) center left repeat-x #fdfdfe;
 }
 
 .db_progressStack, .db_pauseStack,
@@ -242,7 +242,7 @@ panelTab:focus > panelTabMenu .menuTarget {
 #downbarprefs > hbox {
   padding: 5px;
   border-top: 1px solid #fff;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb;
 }
 
 #downbarprefs > tabbox + separator,
@@ -283,22 +283,22 @@ panelTab:focus > panelTabMenu .menuTarget {
 
 /* locationbar */
 .textbox-presentation-slash {
-  list-style-image: url(chrome://browser/skin/icons/breadcrumb.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/breadcrumb.png) !important;
 }
 
 /* Parentfolder and Uppity */
 #parentfolder-menu {
-  list-style-image: url(chrome://browser/skin/icons/arrow-up.png);
+  list-style-image: url(chrome://global/skin/arrow/arrow-up.png);
 }
 #parentfolder-button,
 #tb-uppity {
-  list-style-image: url(chrome://browser/skin/icons/up.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/up.png) !important;
   -moz-image-region: auto !important;
 }
 
 toolbar[iconsize="small"] #parentfolder-button,
 toolbar[iconsize="small"] #tb-uppity {
-  list-style-image: url(chrome://browser/skin/icons/up-small.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/up-small.png) !important;
   -moz-image-region: auto !important;
 }
 
@@ -360,7 +360,7 @@ margin : 1px !important;
 }
 
 #item_modeErrors {
-  list-style-image: url(chrome://browser/skin/icons/alert-error.png) !important;
+  list-style-image: url(chrome://global/skin/console/alert-error.png) !important;
   -moz-image-region: auto !important;
 }
 
@@ -370,7 +370,7 @@ toolbar[iconsize="small"] #item_modeErrors {
 }
 
 #item_modeWarnings {
-  list-style-image: url(chrome://browser/skin/icons/alert-warning.png) !important;
+  list-style-image: url(chrome://global/skin/console/alert-warning.png) !important;
   -moz-image-region: auto !important;
 }
 
@@ -380,7 +380,7 @@ toolbar[iconsize="small"] #item_modeWarnings {
 }
 
 #item_modeMessages {
-  list-style-image: url(chrome://browser/skin/icons/alert-message.png) !important;
+  list-style-image: url(chrome://global/skin/console/alert-message.png) !important;
   -moz-image-region: auto !important;
 }
 
@@ -390,7 +390,7 @@ toolbar[iconsize="small"] #item_modeMessages {
 }
 
 #item_clearConsole {
-  list-style-image: url(chrome://browser/skin/icons/delete.png) !important;
+  list-style-image: url(chrome://global/skin/console/delete.png) !important;
   -moz-image-region: auto !important;
 }
 
@@ -423,19 +423,19 @@ toolbar[iconsize="small"] #item_clearConsole {
 
 .console-row[type="error"],
 .console-row[type="exception"] {
-  list-style-image: url(chrome://browser/skin/icons/alert-error.png) !important;
+  list-style-image: url(chrome://browser/skin/alert-error.png) !important;
 }
 
 .console-row[type="warning"] {
-  list-style-image: url(chrome://browser/skin/icons/alert-warning.png) !important;
+  list-style-image: url(chrome://browser/skin/alert-warning.png) !important;
 }
 
 .console-row[type="message"] {
-  list-style-image: url(chrome://browser/skin/icons/alert-message.png) !important;
+  list-style-image: url(chrome://browser/skin/alert-message.png) !important;
 }
 
 .console-row[type="all"] {
-  list-style-image: url(chrome://browser/skin/icons/alert-question.png) !important;
+  list-style-image: url(chrome://browser/skin/alert-question.png) !important;
 }
 
 richlistbox[console2themeable=true] {
@@ -513,7 +513,7 @@ prefwindow[id="coomanPlusWindowOptions"] .text-link:hover  {
   margin: -0.5em 0 0;
   padding: 5px;
   border-top: 2px groove #d4d0c8;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb;
 }
 
 #PermissionsDialog:not(.windowDialog) > vbox > separator + hbox:not(#updateSection) {
@@ -545,67 +545,67 @@ prefwindow[id="coomanPlusWindowOptions"] .text-link:hover  {
   margin: 8px -10px -8px;
   padding: 5px;
   border-top: 2px groove #d4d0c8;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb;
 }
 
 /* Webdeveloper */
 #webdeveloper-cookies-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 32px 16px 16px) !important;
 }
 
 #webdeveloper-css-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 48px 16px 32px) !important;
 }
 
 #webdeveloper-disable-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 16px 16px 0) !important;
 }
 
 #webdeveloper-forms-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 64px 16px 48px) !important;
 }
 
 #webdeveloper-images-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 80px 16px 64px) !important;
 }
 
 #webdeveloper-information-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 96px 16px 80px) !important;
 }
 
 #webdeveloper-miscellaneous-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 112px 16px 96px) !important;
 }
 
 #webdeveloper-options-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 192px 16px 176px) !important;
 }
 
 #webdeveloper-outline-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 128px 16px 112px) !important;
 }
 
 #webdeveloper-resize-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 144px 16px 128px) !important;
 }
 
 #webdeveloper-tools-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 160px 16px 144px) !important;
 }
 
 #webdeveloper-view-source-toolbar {
-  list-style-image: url(chrome://browser/skin/icons/web-dev-toolbar.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/web-dev-toolbar.png) !important;
   -moz-image-region: rect(0 176px 16px 160px) !important;
 }
 
@@ -636,7 +636,7 @@ toolbarbutton.webdeveloper-close-toolbar:hover:active {
 }
 
 #webdeveloper-open-dashboard {
-  list-style-image: url(chrome://browser/skin/icons/location.png) !important;
+  list-style-image: url(chrome://global/skin/icons/location.png) !important;
 }
 
 #webdeveloper-position-dashboard {
@@ -669,23 +669,23 @@ toolbarbutton.webdeveloper-close-toolbar:hover:active {
 
 toolbar #menu-button,
 #CustomizeToolbarWindow #menu-button {
-  list-style-image: url(chrome://browser/skin/icons/compact-menu.png);
+  list-style-image: url(chrome://global/skin/add-ons/compact-menu.png);
   -moz-image-region: rect(0 32px 32px 0);
 }
 
 toolbar #compact-bk-button,
 #CustomizeToolbarWindow #compact-bk-button {
-  list-style-image: url(chrome://browser/skin/icons/bookmarks-menu.png);
+  list-style-image: url(chrome://browser/skin/places/bookmarks-menu.png);
   -moz-image-region: rect(0 32px 32px 0);
 }
 
 toolbar[iconsize="small"] #menu-button {
-  list-style-image: url(chrome://browser/skin/icons/compact-menu-small.png);
+  list-style-image: url(chrome://global/skin/add-ons/compact-menu-small.png);
   -moz-image-region: rect(0 24px 24px 0);
 }
 
 toolbar[iconsize="small"] #compact-bk-button {
-  list-style-image: url(chrome://browser/skin/icons/bookmarks-menu-small.png);
+  list-style-image: url(chrome://browser/skin/places/bookmarks-menu-small.png);
   -moz-image-region: rect(0 24px 24px 0);
 }
 
@@ -774,7 +774,7 @@ dialog[windowtype="irc:chatzilla:about"] .dialog-button-box {
 
 /* ImageToolbar */
 #mozilla-image-toolbar {
-  background: url(chrome://browser/skin/icons/Selects.png) !important;
+  background: url(chrome://browser/skin/Selects.png) !important;
   color: #000 !important;
 }
 
@@ -842,16 +842,16 @@ dialog[windowtype="irc:chatzilla:about"] .dialog-button-box {
 }
 
 #imageToolbarOpenFolder {
-  list-style-image: url(chrome://browser/skin/icons/folder-up.png) !important;
+  list-style-image: url(chrome://global/skin/dirListing/folder-up.png) !important;
   opacity: .8 !important;
 }
 #imageToolbarOpenFolder:hover,
 #imageToolbarOpenFolder[checked="true"] {
-  list-style-image: url(chrome://browser/skin/icons/folder-up.png) !important;
+  list-style-image: url(chrome://global/skin/dirListing/folder-up.png) !important;
   opacity: 1.0 !important;
 }
 #imageToolbarOpenFolder[disabled="true"] {
-  list-style-image: url(chrome://browser/skin/icons/folder-up.png) !important;
+  list-style-image: url(chrome://global/skin/dirListing/folder-up.png) !important;
   opacity: .4 !important;
 }
 
@@ -1079,7 +1079,7 @@ tabpanels.groupbox-panels {
   margin-bottom: 5px !important;
   padding: 0 5px;
   border-bottom: 2px groove #d4d0c8 !important;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb !important;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb !important;
   background-size: auto 100%;
 }
 
@@ -1119,7 +1119,7 @@ tabpanels.groupbox-panels {
   margin-top: 8px;
   padding: 5px;
   border-top: 2px groove #d4d0c8;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb;
 }
 
 #pref-tabmix .dialog-button-box {
@@ -1265,7 +1265,7 @@ page [aios-appOS="Linux"] #categories  {
 }
 
 #aios-toolsButton dropmarker {
-  list-style-image:url(chrome://browser/skin/icons/dropmarker.png);
+  list-style-image:url(chrome://global/skin/icons/dropmarker.png);
   -moz-image-region: rect(10px 10px 20px 0);
   background: none;
 }
@@ -1277,7 +1277,7 @@ page [aios-appOS="Linux"] #categories  {
 }
 
 #aios-toolbar #downloads-button {
-  list-style-image: url("chrome://browser/skin/icons/downloads.png");
+  list-style-image: url("chrome://browser/skin/downloads.png");
   -moz-image-region: rect(0px 32px 32px 0px) !important;
 }
 #aios-toolbar #downloads-button:hover {
@@ -1310,7 +1310,7 @@ page [aios-appOS="Linux"] #categories  {
 }
 
 #aios-toolbar[iconsize="small"] #downloads-button {
-  list-style-image: url("chrome://browser/skin/icons/downloads-small.png");
+  list-style-image: url("chrome://browser/skin/downloads-small.png");
   -moz-image-region: rect(0px 24px 24px 0px) !important;
 }
 #aios-toolbar[iconsize="small"] #downloads-button:hover {
@@ -1550,7 +1550,7 @@ toolbar[iconsize="small"] > #prefbar-menu:not([disabled="true"]):hover .toolbarb
 }
 
 #TFTB-TB-SearchType > .toolbarbutton-menubutton-dropmarker {
-  list-style-image:url(chrome://browser/skin/icons/dropmarker.png) !important;
+  list-style-image:url(chrome://global/skin/icons/dropmarker.png) !important;
 }
 
 #TFTB-MoreOptions, #TFTB-menupopup {
@@ -1622,7 +1622,7 @@ toolbar[iconsize="small"] #GBL-TB-Toggle-Toolbar {
   -moz-box-align: center;
   padding: 0;
   padding-inline-end: 3px;  
-  list-style-image: url(chrome://browser/skin/icons/url_dropmarker.png);
+  list-style-image: url(chrome://browser/skin/url_dropmarker.png);
   -moz-image-region: rect(0 16px 16px 0);
 }
 
@@ -1690,11 +1690,11 @@ toolbar #un-toolbarbutton > hbox > * {
 
 /* GetMail Extension */
 #Getallmail-button {
-  list-style-image: url(chrome://browser/skin/icons/mails.png) !important;
+  list-style-image: url(chrome://browser/skin/mails.png) !important;
 }
 
 toolbar[iconsize="small"] #Getallmail-button {
-  list-style-image: url(chrome://browser/skin/icons/mails-small.png) !important;
+  list-style-image: url(chrome://browser/skin/mails-small.png) !important;
 }
 
 #Getallmail-button:hover .toolbarbutton-icon {
@@ -1735,7 +1735,7 @@ toolbar[iconsize="small"] #Getallmail-button:hover .toolbarbutton-icon {
 #myconfigView > hbox {
   padding: 5px;
   border-top: 2px groove #d4d0c8;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb;
   background-size: auto 100%;
 }
 
@@ -1757,7 +1757,7 @@ toolbar[iconsize="small"] #Getallmail-button:hover .toolbarbutton-icon {
 
 #infolister-buttonMenu:hover,
 #restartfirefox-fileMenu2:hover {
-  background: url(chrome://browser/skin/icons/Bookmark-background.png) repeat-x center;
+  background: url(chrome://browser/skin/places/Bookmark-background.png) repeat-x center;
 }
 
 #infolister-buttonMenu:hover:active,
@@ -1780,19 +1780,19 @@ toolbar[iconsize="small"] #Getallmail-button:hover .toolbarbutton-icon {
 
 #main-toolbar {
   border-bottom: 1px solid #808080;
-  background: url(chrome://browser/skin/icons/Toolbar-Background.png) top left repeat-x #fdfdfe;
+  background: url(chrome://global/skin/toolbar/Toolbar-Background.png) top left repeat-x #fdfdfe;
 }
 
 #localtoolbar,
 #remoteview > toolbar {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #808080;
-  background: url(chrome://browser/skin/icons/Title-Background.png) top left repeat-x #e8e8ec;
+  background: url(chrome://browser/skin/Title-Background.png) top left repeat-x #e8e8ec;
 }
 
 #localview .upButton,
 #remoteview .upButton {
-  list-style-image: url(chrome://browser/skin/icons/folder-up.png) !important;
+  list-style-image: url(chrome://global/skin/dirListing/folder-up.png) !important;
   -moz-image-region: auto !important;
   padding: 3px 1px 3px 4px !important;
 }
@@ -1812,7 +1812,7 @@ toolbar[iconsize="small"] #Getallmail-button:hover .toolbarbutton-icon {
 }
 
 #leftsplitter + vbox {
-  background: #cdced3 url(chrome://browser/skin/icons/box-background.png) repeat-x bottom;
+  background: #cdced3 url(chrome://global/skin/icons/box-background.png) repeat-x bottom;
 }
 
 #retrieveButton {
@@ -1833,12 +1833,12 @@ toolbar[iconsize="small"] #Getallmail-button:hover .toolbarbutton-icon {
 }
 
 .fileTree::-moz-tree-image(isFolder), .dirTree::-moz-tree-image(closed) {
-  list-style-image: url(chrome://browser/skin/icons/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/places/folder_closed.png) !important;
   -moz-image-region: auto !important;
 }
 
 .dirTree::-moz-tree-image(open) {
-  list-style-image: url(chrome://browser/skin/icons/folder_open.png) !important;
+  list-style-image: url(chrome://browser/skin/places/folder_open.png) !important;
   -moz-image-region: auto !important;
 }
 
@@ -1863,7 +1863,7 @@ toolbar[iconsize="small"] #Getallmail-button:hover .toolbarbutton-icon {
   -moz-box-align: center;
   margin-left: -2px;
   padding: 2px 3px 0 0;
-  list-style-image: url(chrome://browser/skin/icons/url_dropmarker.png);
+  list-style-image: url(chrome://browser/skin/url_dropmarker.png);
   -moz-image-region: rect(0 16px 16px 0);
 }
 
@@ -1953,41 +1953,41 @@ tabpanel #cmdlog {
 }
 
 #ff-controls > .wrap1 > #ff-fullscreen-button {
-  list-style-image: url(chrome://browser/skin/icons/ff-fullscreen.png);
+  list-style-image: url(chrome://global/skin/add-ons/ff-fullscreen.png);
 }
 
 #window-controls > #minimize-button,
 #ff-controls > .wrap1 > #ff-minimize-button {
-  list-style-image: url(chrome://browser/skin/icons/minimize.png) !important;
+  list-style-image: url(chrome://browser/skin/minimize.png) !important;
 }
 
 #window-controls > #restore-button,
 #ff-controls > .wrap2 > #ff-maximize-button {
-  list-style-image: url(chrome://browser/skin/icons/restore.png) !important;
+  list-style-image: url(chrome://browser/skin/restore.png) !important;
 }
 
 #window-controls > #close-button,
 #ff-controls > .wrap2 > #ff-close-button {
-  list-style-image: url(chrome://browser/skin/icons/close.png) !important;
+  list-style-image: url(chrome://browser/skin/close.png) !important;
 }
 
 #ff-controls > .wrap1 > #ff-fullscreen-button:hover {
-  list-style-image: url(chrome://browser/skin/icons/ff-fullscreenX.png) !important;
+  list-style-image: url(chrome://global/skin/add-ons/ff-fullscreenX.png) !important;
 }
 
 #window-controls > #minimize-button:hover,
 #ff-controls > .wrap1 > #ff-minimize-button:hover {
-  list-style-image: url(chrome://browser/skin/icons/minimizeX.png) !important;
+  list-style-image: url(chrome://browser/skin/minimizeX.png) !important;
 }
 
 #window-controls > #restore-button:hover,
 #ff-controls > .wrap2 > #ff-maximize-button:hover {
-  list-style-image: url(chrome://browser/skin/icons/restoreX.png) !important;
+  list-style-image: url(chrome://browser/skin/restoreX.png) !important;
 }
 
 #window-controls > #close-button:hover,
 #ff-controls > .wrap2 > #ff-close-button:hover {
-  list-style-image: url(chrome://browser/skin/icons/closeX.png) !important;
+  list-style-image: url(chrome://browser/skin/closeX.png) !important;
 }
 
 menuitem[oncommand="foxiFrame.setDefSize('gold')"] > .menu-iconic-text {
@@ -2043,13 +2043,13 @@ menuitem[oncommand="foxiFrame.setDefSize('gold')"] > .menu-iconic-text {
 }
 
 #tabbrowser-tabs:not([treestyletab-mode="vertical"])[orient="vertical"] ~ #alltabs-button {
-   background-image: url("chrome://browser/skin/icons/alltabs.png") !important;
+   background-image: url("chrome://browser/skin/alltabs.png") !important;
    background-repeat: no-repeat !important;
    background-position:center !important;    
 }
 
 #tabbrowser-tabs:not([treestyletab-mode="vertical"])[orient="vertical"] ~ #alltabs-button:hover {
-   background-image: url("chrome://browser/skin/icons/alltabs-hover.png") !important;
+   background-image: url("chrome://browser/skin/alltabs-hover.png") !important;
    background-repeat: no-repeat !important;
    background-position:center !important;    
 }
@@ -2140,13 +2140,13 @@ tabbrowser[treestyletab-mode="vertical"][treestyletab-tab-inverted="true"] .tabb
 }
 
 #TabsToolbar[treestyletab-mode="vertical"] .tabs-alltabs-button {
-   background-image: url("chrome://browser/skin/icons/alltabs.png") !important;
+   background-image: url("chrome://browser/skin/alltabs.png") !important;
    background-repeat: no-repeat !important;
    background-position:center !important; 
 }
 
 #TabsToolbar[treestyletab-mode="vertical"] .tabs-alltabs-button:hover {
-   background-image: url("chrome://browser/skin/icons/alltabs-hover.png") !important;
+   background-image: url("chrome://browser/skin/alltabs-hover.png") !important;
    background-repeat: no-repeat !important;
    background-position:center !important;    
 }
@@ -2318,7 +2318,7 @@ toolbar[iconsize="small"] #dta-manager-button {
 }
 
 #browsedir {
-	list-style-image: url(chrome://browser/skin/icons/folder_closed.png) !important;
+	list-style-image: url(chrome://browser/skin/places/folder_closed.png) !important;
 }
 
 saveddropdown {
@@ -2380,7 +2380,7 @@ maskbutton toolbarbutton {
   padding: 2px 5px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #b0b0b0;
-  background: url(chrome://browser/skin/icons/Title-Background.png) top left repeat-x #e8e8ec;
+  background: url(chrome://browser/skin/Title-Background.png) top left repeat-x #e8e8ec;
 }
 
 #userstyles-heading > #styles-filter {
@@ -2456,7 +2456,7 @@ maskbutton toolbarbutton {
 
 #stylish-manage-standalone > hbox {
   padding: 5px;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb;
 }
 
 /* status-4-evar */
@@ -2480,7 +2480,7 @@ radio[pane="status4evar-pane-addonbar"] {
 #urlbar-progress-alt > .progress-bar {
   border-radius: 0 ;
   -moz-appearance: none;
-  background-image : url(chrome://browser/skin/icons/Bookmark-background.png);
+  background-image : url(chrome://browser/skin/places/Bookmark-background.png);
   opacity: 0.7;
 }
 
@@ -2503,22 +2503,22 @@ radio[pane="status4evar-pane-addonbar"] {
 
 .urlbar-stack {
   margin-left: -7px;
-  background: url(chrome://browser/skin/icons/leftcap2.png) left center no-repeat;
+  background: url(chrome://browser/skin/leftcap2.png) left center no-repeat;
 }
 
 .urlbar-stack:-moz-locale-dir(rtl) {
   margin-right: -7px;
-  background: url(chrome://browser/skin/icons/rightcap.png) right center no-repeat;
+  background: url(chrome://browser/skin/rightcap.png) right center no-repeat;
 }
 
 #urlbar[focused="true"] .urlbar-stack {
   margin-left: -7px;
-  background: url(chrome://browser/skin/icons/leftcap2f.png) left center no-repeat;
+  background: url(chrome://browser/skin/leftcap2f.png) left center no-repeat;
 }
 
 #urlbar[focused="true"][focused="true"] .urlbar-stack:-moz-locale-dir(rtl) {
   margin-right: -7px;
-  background: url(chrome://browser/skin/icons/rightcapf.png) right center no-repeat;
+  background: url(chrome://browser/skin/rightcapf.png) right center no-repeat;
 }
 
 .urlbar-origin-label,
@@ -2552,16 +2552,16 @@ radio[pane="status4evar-pane-addonbar"] {
 }
 
 .paletteRow > #wrapper-status4evar-download-button #status4evar-download-button {
-  list-style-image: url(chrome://browser/skin/icons/downloads.png);
+  list-style-image: url(chrome://browser/skin/downloads.png);
   -moz-image-region: rect(0px 32px 32px 0px);
 }
 
 #status4evar-prefs radio[pane=status4evar-pane-status] {
-  list-style-image: url(chrome://browser/skin/icons/alert-message.png);
+  list-style-image: url(chrome://browser/skin/alert-message.png);
 }
 
 #status4evar-prefs radio[pane=status4evar-pane-download] {
-  list-style-image: url(chrome://browser/skin/icons/downloads.png);
+  list-style-image: url(chrome://browser/skin/downloads.png);
   -moz-image-region: rect(0px 32px 32px 0px);
 }
 
@@ -2644,7 +2644,7 @@ radio[pane="status4evar-pane-addonbar"] {
 #footerVbox > hbox:last-child {
   padding: 5px;
   border-top: 2px groove #d4d0c8;
-  background: url(chrome://browser/skin/icons/Tool-background2.png) top left repeat-x #adaebb;
+  background: url(chrome://global/skin/toolbar/Tool-background2.png) top left repeat-x #adaebb;
 }
 
 #rmButtonBox,
@@ -2669,7 +2669,7 @@ radio[pane="status4evar-pane-addonbar"] {
 #reminderFox-list-bars > menupopup > menuitem[_moz-menuactive=true]  {
   color: #000 !important;
   border: 1px solid #7BB1DD !important;
-  background: url(chrome://browser/skin/icons/tree-hover.png) repeat-x center !important;
+  background: url(chrome://global/skin/tree/tree-hover.png) repeat-x center !important;
   background-size: auto 100% !important;
 }
 
@@ -2713,7 +2713,7 @@ radio[pane="status4evar-pane-addonbar"] {
 }
 
 .barlesque-bar[findmode] {
-  background: url(chrome://browser/skin/icons/Statusbar-background.png) top left repeat-x #fdfdfe;
+  background: url(chrome://browser/skin/Statusbar-background.png) top left repeat-x #fdfdfe;
 }
 
 .barlesque-bar #addon-bar {

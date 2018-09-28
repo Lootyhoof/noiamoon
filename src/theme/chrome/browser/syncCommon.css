@@ -34,7 +34,7 @@ dialog#change-dialog {
 }
 
 image#syncIcon {
-  list-style-image: url(chrome://browser/skin/icons/sync-32.png);
+  list-style-image: url(chrome://browser/skin/sync-32.png);
 }
 
 #introText {

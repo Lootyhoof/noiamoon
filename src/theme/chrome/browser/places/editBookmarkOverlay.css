@@ -67,7 +67,7 @@
 }
 
 .folder-icon {
-  list-style-image: url(chrome://browser/skin/icons/folder_closed.png) !important;
+  list-style-image: url(chrome://browser/skin/places/folder_closed.png) !important;
 }
 
 #editBookmarkPanelTitle {
@@ -228,7 +228,7 @@
 /* Action buttons */
 
 #editBMPanel_newFolderButton {
-  list-style-image: url(chrome://browser/skin/icons/folder-add.png);
+  list-style-image: url(chrome://browser/skin/folder-add.png);
   margin-inline-start: 5px;
 }
 

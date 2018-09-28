@@ -2,7 +2,7 @@
 #TabsToolbar:not([treestyletab-mode="vertical"]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
 #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs:not([useUnreadBGColor]):not([useOtherBGColor]):not([highlightCurrent]):not([highlightUnread]):not([highlightRead]):not([highlightUnloaded]):not([highlightSelected]):not([highlightProtected]):not([highlightLocked]) > .tabbrowser-tab:not([style*="background-image"]):not([selected="true"]):not(:hover) ,
 #TabsToolbar:not([treestyletab-mode="vertical"]):not([multibar]) .tabbrowser-tabs[useUnreadBGColor]:not([useOtherBGColor]) > .tabbrowser-tab[visited]:not([style*="background-image"]):not([selected="true"]):not(:hover) {
-  --tab-background: url("chrome://browser/skin/icons/solid.png") !important;
+  --tab-background: url("chrome://browser/skin/nmoptions/icons/solid.png") !important;
   color: #000 !important;
 }
 

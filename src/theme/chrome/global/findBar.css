@@ -28,7 +28,7 @@ findbar[hidden] {
 }
 
 .findbar-find-previous {
-  list-style-image: url(chrome://browser/skin/icons/go-up.png);
+  list-style-image: url(chrome://global/skin/icons/go-up.png);
 }
 
 .findbar-find-previous .toolbarbutton-icon {
@@ -44,7 +44,7 @@ findbar[hidden] {
 }
 
 .findbar-find-next {
-  list-style-image: url(chrome://browser/skin/icons/go-down.png);
+  list-style-image: url(chrome://global/skin/icons/go-down.png);
 }
 
 .findbar-find-next .toolbarbutton-icon {

@@ -10,9 +10,9 @@ html|canvas#screen {
 }
 
 #monitor {
-  list-style-image: url(chrome://browser/skin/icons/monitor.png);
+  list-style-image: url(chrome://browser/skin/monitor.png);
 }
 
 #monitor[aspectratio="16:10"] {
-  list-style-image: url(chrome://browser/skin/icons/monitor_16-10.png);
+  list-style-image: url(chrome://browser/skin/monitor_16-10.png);
 }
