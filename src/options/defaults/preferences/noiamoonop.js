@@ -7,7 +7,6 @@ pref("extensions.noiamoonop.rdtab",false);
 pref("extensions.noiamoonop.sqtab",false);
 pref("extensions.noiamoonop.shadow",false);
 pref("extensions.noiamoonop.closebutton",false);
-pref("extensions.noiamoonop.findbartop",false);
 pref("extensions.noiamoonop.noline",false);
 pref("extensions.noiamoonop.tabbar",false);
 pref("extensions.noiamoonop.strip",false);
@@ -42,6 +41,3 @@ pref("extensions.noiamoonop.movable",false);
 pref("extensions.noiamoonop.background",false);
 pref("extensions.noiamoonop.plain",false);
 pref("extensions.noiamoonop.fix",true);
-
-
-
