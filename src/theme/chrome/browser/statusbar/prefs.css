@@ -13,20 +13,19 @@ radio[pane="status4evar-pane-status"] {
 }
 
 radio[pane="status4evar-pane-progress"] {
-	list-style-image: url("chrome://browser/skin/statusbar/throbberStatic.png");
+	list-style-image: url("chrome://browser/skin/preferences/restore.png");
 }
 
 radio[pane="status4evar-pane-download"] {
-	list-style-image: url("chrome://mozapps/skin/downloads/downloadIcon.png");
+	list-style-image: url("chrome://browser/skin/preferences/downloads.png");
 }
 
 radio[pane="status4evar-pane-addonbar"] {
-	list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric.png");
+	list-style-image: url("chrome://browser/skin/preferences/add-ons.png");
 }
 
 radio[pane="status4evar-pane-advanced"] {
-	list-style-image: url("chrome://browser/skin/preferences/Options.png");
-	-moz-image-region: rect(0px, 224px, 32px, 192px);
+	list-style-image: url("chrome://browser/skin/preferences/advanced.png");
 }
 
 

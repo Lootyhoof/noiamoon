@@ -2461,10 +2461,6 @@ maskbutton toolbarbutton {
 
 /* status-4-evar */
 
-radio[pane="status4evar-pane-addonbar"] {
-  list-style-image: url(chrome://browser/skin/preferences/add-ons.png) !important;
-}
-
 #urlbar-progress-alt {
   height: 4px;
   margin: 0px;
@@ -2501,26 +2497,6 @@ radio[pane="status4evar-pane-addonbar"] {
   padding: 0 10px 0 10px;
 }
 
-.urlbar-stack {
-  margin-left: -7px;
-  background: url(chrome://browser/skin/leftcap2.png) left center no-repeat;
-}
-
-.urlbar-stack:-moz-locale-dir(rtl) {
-  margin-right: -7px;
-  background: url(chrome://browser/skin/rightcap.png) right center no-repeat;
-}
-
-#urlbar[focused="true"] .urlbar-stack {
-  margin-left: -7px;
-  background: url(chrome://browser/skin/leftcap2f.png) left center no-repeat;
-}
-
-#urlbar[focused="true"][focused="true"] .urlbar-stack:-moz-locale-dir(rtl) {
-  margin-right: -7px;
-  background: url(chrome://browser/skin/rightcapf.png) right center no-repeat;
-}
-
 .urlbar-origin-label,
 #urlbar[s4esalign="left"] .urlbar-over-link-box {
   padding-inline-start: 4px !important;
@@ -2541,29 +2517,6 @@ radio[pane="status4evar-pane-addonbar"] {
   background : none !important;
 }
 
-#status4evar-download-button[attention] #status4evar-download-icon {
-  background-image: url("chrome://browser/skin/downloads/download-glow-status.png") !important;
-}
-
-#status4evar-download-button:hover > .toolbarbutton-icon {
-  height: 18px;
-  width: 18px;
-  margin: 0;
-}
-
-.paletteRow > #wrapper-status4evar-download-button #status4evar-download-button {
-  list-style-image: url(chrome://browser/skin/downloads.png);
-  -moz-image-region: rect(0px 32px 32px 0px);
-}
-
-#status4evar-prefs radio[pane=status4evar-pane-status] {
-  list-style-image: url(chrome://browser/skin/alert-message.png);
-}
-
-#status4evar-prefs radio[pane=status4evar-pane-download] {
-  list-style-image: url(chrome://browser/skin/downloads.png);
-  -moz-image-region: rect(0px 32px 32px 0px);
-}
 
 #status4evar-status-splitter-before,
 #status4evar-status-splitter-after {
