@@ -348,17 +348,17 @@ toolbar[mode="full"] .toolbarbutton-1:not([type=menu-button]) {
   -moz-box-orient: vertical;
 }
 
-:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #status4evar-download-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #feed-button, #sync-button, #find, #Getallmail-button):not([disabled="true"]):hover:not(:active) .toolbarbutton-icon {
+:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #status4evar-download-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #feed-button, #sync-button):not([disabled="true"]):hover:not(:active) .toolbarbutton-icon {
   filter: saturate(150%) brightness(110%);
   transform: scale(.75);
 }
 
-:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #status4evar-download-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #feed-button, #sync-button, #find, #Getallmail-button):not([disabled="true"]):hover:active .toolbarbutton-icon {
+:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #status4evar-download-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #feed-button, #sync-button):not([disabled="true"]):hover:active .toolbarbutton-icon {
   filter: brightness(75%);
   transform: scale(.75);
 }
 
-:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #status4evar-download-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #feed-button, #sync-button, #find, #Getallmail-button)[disabled="true"] {
+:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #downloads-indicator, #status4evar-download-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #feed-button, #sync-button)[disabled="true"] {
   filter: grayscale(1);
   opacity: .3;
 }
@@ -858,20 +858,6 @@ toolbar:not([mode="icons"]) #bookmarks-menu-button .toolbarbutton-menu-dropmarke
   -moz-image-region: rect(0px 1216px 64px 1152px);
 }
 
-/*  Get Mail Extension Support */
-
-#Getallmail-button {
-  list-style-image: url("chrome://browser/skin/mails.png") !important;
-  -moz-image-region: auto !important;
-}
-
-/*  Find  */
-
-#find {
-  list-style-image: url("chrome://browser/skin/find.png") !important;
-  -moz-image-region: auto !important;
-}
-
 /* ::::: 24px primary toolbar buttons ::::: */
 
 toolbar[iconsize="small"] :-moz-any(#back-button, #forward-button, #stop-button, #reload-button, #home-button, #downloads-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #print-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-in-button, #zoom-out-button, #feed-button, #sync-button, #find, #Getallmail-button) .toolbarbutton-icon {
@@ -1017,20 +1003,6 @@ toolbar[iconsize="small"] #feed-button {
 
 toolbar[iconsize="small"] #sync-button {
   -moz-image-region: rect(0, 912px, 48px, 864px);
-}
-
-/* Get Mail Extension Support */
-
-toolbar[iconsize="small"] #Getallmail-button {
-  list-style-image: url("chrome://browser/skin/mails-small.png") !important;
-  -moz-image-region: auto !important;
-}
-
-/* Find */
-
-toolbar[iconsize="small"] #find {
-  list-style-image: url("chrome://browser/skin/find-small.png") !important;
-  -moz-image-region: auto !important;
 }
 
 /* Toolbar Mode Text */
