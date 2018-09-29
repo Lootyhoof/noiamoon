@@ -1,5 +1,47 @@
 # Changelog
 
+### 2.0.0
+
+#### Theme
+
+- add PM28 newtab styling
+- add HiDPI-friendly toolbar icons
+- add private browsing indicator
+- Windows: redesign appmenu
+- Linux: use correct browser icon in appmenu
+- fix disappearing titlebar in private and lwtheme modes on macOS
+- sync global stylings with Pale Moon 28
+- sync browser devtools with default
+- remove redundant devtools styling
+- use non-prefixed -inline syntax
+- update media controls
+- improve statusbar options window styling
+- use browser-native popup animation
+- fix locationbar styling when used in "Location-4-Evar"
+- fix favicon sizes in password manager
+- fix password popup prompt
+- include theme-native dummy toolbar image for further extension compatibility
+- cleanup redundant files
+- improve folder structure
+
+#### Options
+
+- allow personas on all built-in themes (black/blue/light etc)
+- allow "tabbar bottom strip" on all built-in themes
+- allow dark theme to darken about:newtab too
+- fix "original Windows titlebar" mode to work on Windows 10 (+ fixes for other Windows)
+- add "OS scrollbars" mode for native scrollbars
+- add alternative background (v2) for grey mode only
+- add small toolbar icons styling (all icons/forward only)
+- allow changing the position/display of back/forward dropmarker icon
+- remove redundant dedicated persona mode
+- remove redundant help page
+- remove various redundant stylings
+- remove find button
+- cleanup interface
+- cleanup internal code
+- remove fr-FR
+
 ### 1.7.0
 - add initial Pale Moon 28 support
 - sync statusbar styling with default

@@ -9,33 +9,22 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>noia-options@addons.palemoon.org</em:id>
-    <em:version>1.1.0</em:version>
+    <em:version>2.0.0</em:version>
     <em:name>Noia Moon Options</em:name>
     <em:description>Options manager for Noia Moon theme.</em:description>
     <em:creator>Pale Moon Add-Ons Team</em:creator>
     <em:type>2</em:type>
-	<em:optionsURL>chrome://noiamoonoptions/content/options.xul</em:optionsURL>
+    <em:optionsURL>chrome://noiamoonoptions/content/options.xul</em:optionsURL>
 
     <em:contributor>David Vincent</em:contributor>
-    <em:translator>David.Vincent [fr]</em:translator>
 
     <em:targetApplication>
       <Description>
         <!-- Pale Moon -->
         <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
-        <em:minVersion>25.0</em:minVersion>
-        <em:maxVersion>26.*</em:maxVersion>
+        <em:minVersion>28.0</em:minVersion>
+        <em:maxVersion>28.*</em:maxVersion>
       </Description>
     </em:targetApplication>
-	
-    <em:localized><!-- fr -->
-        <Description>
-            <em:locale>fr</em:locale>
-            <em:name>Noia Moon : Options</em:name>
-            <em:description>Options pour le thème Noia Moon.</em:description>
-            <em:creator>Pale Moon Add-Ons Team</em:creator>
-            <em:contributor>David Vincent</em:contributor>
-        </Description>
-    </em:localized>
   </Description>
 </RDF>
