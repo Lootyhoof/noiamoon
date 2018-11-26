@@ -1841,6 +1841,70 @@ tabpanels browser,
   opacity: 0.4;
 }
 
+/* Tab sound indicator */
+.tab-icon-sound {
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+.allTabs-endimage {
+  width: 16px;
+}
+
+.tab-icon-sound,
+.allTabs-endimage[soundplaying],
+.allTabs-endimage[muted],
+.tab-icon-overlay[soundplaying],
+.tab-icon-overlay[muted]  {
+  list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio.png");
+}
+
+.tab-icon-sound:hover,
+.allTabs-endimage[soundplaying]:hover,
+.tab-icon-overlay[soundplaying]:hover {
+  filter: saturate(150%) brightness(110%);
+}
+
+.tab-icon-sound:hover:active,
+.allTabs-endimage[soundplaying]:hover:active,
+.tab-icon-overlay[soundplaying]:hover:active {
+  filter: brightness(75%);
+  transform: scale(.75);
+}
+
+.allTabs-endimage[muted],
+.tab-icon-sound[muted],
+.tab-icon-overlay[muted] {
+  filter: grayscale(100%);
+  opacity: 0.4;
+}
+
+.allTabs-endimage[muted]:hover,
+.tab-icon-sound[muted]:hover,
+.tab-icon-overlay[muted]:hover {
+  filter: grayscale(100%) saturate(150%) brightness(110%);
+}
+
+.allTabs-endimage[muted]:hover:active,
+.tab-icon-sound[muted]:hover:active,
+.tab-icon-overlay[muted]:hover:active {
+  filter: grayscale(100%) brightness(75%);
+  transform: scale(.75);
+}
+
+/* Tab icon overlay */
+.tab-icon-overlay {
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-inline-start: -15px;
+  margin-inline-end: -1px;
+  position: relative;
+}
+
 /* All Tabs Button */
 
 .tabs-alltabs-button  > .toolbarbutton-text,

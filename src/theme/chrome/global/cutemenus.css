@@ -679,6 +679,10 @@ menu[anonid="spell-dictionaries"] {
   list-style-image:url(chrome://global/skin/CuteMenus/unpin.png);
 }
 
+#context_toggleMuteTab {
+  list-style-image:url(chrome://global/skin/CuteMenus/mute.png);
+}
+
 /* Extension TabBrowser and or TabMixPlus */
 
 #quicknote-fopentab,#miOpenInNewTab,#tm-newtab,#textlink-open-tab,
