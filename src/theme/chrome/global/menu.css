@@ -208,9 +208,9 @@ menuitem[_moz-menuactive][disabled="true"],
 
 /* menu/menuitems in menulist popups */
 
-menupopup > menu,
-menupopup > menuitem,
-menupopup > menucaption {
+menulist > menupopup > menuitem,
+menulist > menupopup > menucaption,
+menulist > menupopup > menu {
   max-width: none;
   font: message-box;
   color: #000;
