@@ -3,6 +3,7 @@
 ### 2.1.0 (theme only)
 - add tab audio indicators for Pale Moon 28.3.0+
 - fix namespace declaration for native scrollbar styling in macOS
+- fix menu fonts on Windows for non-default selections
 
 ### 2.0.0
 
