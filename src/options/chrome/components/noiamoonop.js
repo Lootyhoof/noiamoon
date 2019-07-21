@@ -205,10 +205,6 @@ noiaMoonOptions.prototype = {
       applyIt("closebutton.css");
     }
 
-    if (prefs.getBoolPref("findbartop") == true) {
-      applyIt("findbartop.css");
-    }
-
     if (prefs.getBoolPref("noline") == true) {
       applyIt("noline.css");
     }
