@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.2.0 (options 2.0.1)
+- theme: update Reader View styling to reflect changes in Pale Moon 28.6.0+
+- options: minor pref cleanup
+
 ### 2.1.0 (theme only)
 - add tab audio indicators for Pale Moon 28.3.0+
 - fix namespace declaration for native scrollbar styling in macOS
