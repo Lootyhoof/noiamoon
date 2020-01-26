@@ -1,5 +1,5 @@
 # Noia Moon
-![Preview](http://i66.tinypic.com/2d457n.png)
+![Preview](https://i.imgur.com/IPoZX0M.png)
 
 Fork of the theme "Noia Fox" by David Vincent for Pale Moon. Icons by Carlitus.
 
