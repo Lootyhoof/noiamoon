@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>noia-options@addons.palemoon.org</em:id>
-    <em:version>2.0.1</em:version>
+    <em:version>2.0.2</em:version>
     <em:name>Noia Moon Options</em:name>
     <em:description>Options manager for Noia Moon theme.</em:description>
     <em:creator>Pale Moon Add-Ons Team</em:creator>
@@ -23,7 +23,7 @@
         <!-- Pale Moon -->
         <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
         <em:minVersion>28.0</em:minVersion>
-        <em:maxVersion>28.*</em:maxVersion>
+        <em:maxVersion>29.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
