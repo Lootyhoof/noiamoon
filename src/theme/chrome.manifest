@@ -3,8 +3,8 @@ skin	communicator	noiamoon	chrome/communicator/
 skin	global	noiamoon	chrome/global/
 skin	mozapps	noiamoon	chrome/mozapps/
 
+skin	os	noiamoon	chrome/os/linux/
 skin	os	noiamoon	chrome/os/darwin/	os=Darwin
-skin	os	noiamoon	chrome/os/linux/	os=Linux
 skin	os	noiamoon	chrome/os/winnt/	os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
