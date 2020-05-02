@@ -1023,6 +1023,8 @@ toolbar[mode="text"][iconsize="large"] #unified-back-forward-button {
 
 #window-controls {
   -moz-box-align: center;
+  /* Make sure the window controls are always last on the toolbar */
+  -moz-box-ordinal-group: 100;
   padding: 0 2px 0 4px;
 }
 
