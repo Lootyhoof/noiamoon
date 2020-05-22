@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.3.0
+- support other GTK-based operating systems
+- Windows/Linux: fix fullscreen window control placement
+
 ### 2.2.2 (theme only)
 - Pale Moon 29: clarify the status of Firefox extensions in the Add-ons Manager
 
