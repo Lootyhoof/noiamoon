@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.3.1
+- don't move the vertical tab bar down
+
 ### 2.3.0
 - support other GTK-based operating systems
 - Windows/Linux: fix fullscreen window control placement
