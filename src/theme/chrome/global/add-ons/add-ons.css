@@ -2035,7 +2035,6 @@ menuitem[oncommand="foxiFrame.setDefSize('gold')"] > .menu-iconic-text {
 
 .tabbrowser-tabs[orient="vertical"] {
   background-color: #CACCD4;
-  margin-bottom : -35px !important;
   border-top : #808080 1px solid !important;
   border-right : #808080 1px solid !important;
 }
