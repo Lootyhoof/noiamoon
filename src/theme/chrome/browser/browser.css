@@ -1179,6 +1179,10 @@ toolbar[mode="text"][iconsize="large"] #unified-back-forward-button {
 #urlbar[level="low"] > .autocomplete-textbox-container {
   color: #ded600;
 }
+#identity-box.mixedContent + .textbox-input-box,
+#urlbar[level=broken][security_level=mixed] > .private-autocomplete-textbox-container {
+  color: #ce9e36;
+}
 #urlbar[level="broken"] > .autocomplete-textbox-container {
   color: #f00;
 }
@@ -2147,7 +2151,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
   padding-inline-start: 0;
 }
 
-#identity-box.unknownIdentity > hbox > #identity-icon-label {
+#identity-box:not(.mixedContent).unknownIdentity > hbox > #identity-icon-label {
   color: #404040 !important;
   text-shadow: -1px -1px 0 #ddd;
 }
@@ -2169,6 +2173,10 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 #identity-box.verifiedIdentity {
   background: url(chrome://browser/skin/identitycap-identity.png) repeat-x;
   border-bottom: 1px solid #808080 !important;
+}
+
+#identity-box.mixedContent {
+  background: url(chrome://browser/skin/identitycap-mixed.png) repeat-x;
 }
 
 #identity-box.verifiedIdentity:-moz-locale-dir(ltr){
