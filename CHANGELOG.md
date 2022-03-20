@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.4.0
+- add mixed-mode SSL styling
+- support Pale Moon 30
+
 ### 2.3.1
 - don't move the vertical tab bar down
 
