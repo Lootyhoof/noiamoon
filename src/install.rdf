@@ -9,13 +9,12 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>noia-moon@addons.palemoon.org</em:id>
-    <em:version>2.4.0</em:version>
+    <em:version>2.5.0</em:version>
     <em:name>Noia Moon</em:name>
     <em:description>Theme for Pale Moon based on Noia Iconpack by Carlitus (deviantART). Fork of "Noia Fox" by David.Vincent</em:description>
-    <em:creator>Pale Moon Add-Ons Team</em:creator>
+    <em:creator>Lootyhoof</em:creator>
     <em:type>32</em:type>
     <em:internalName>noiamoon</em:internalName>
-    <em:updateURL>https://raw.githubusercontent.com/Lootyhoof/noiamoon/master/update.xml</em:updateURL>
 
     <em:contributor>David Vincent</em:contributor>
     <em:contributor>Carlitus: Noia icon set</em:contributor>
