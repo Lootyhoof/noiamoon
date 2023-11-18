@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.5.2
+- support Pale Moon 33
+
 ### 2.5.1
 - support Pale Moon 32
 
