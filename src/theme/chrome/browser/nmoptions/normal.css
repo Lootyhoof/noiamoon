@@ -46,29 +46,31 @@
   }
 
   @media not all and (-moz-os-version: windows-win10) and (-moz-windows-default-theme) {
-    #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=true] #titlebar-min,
-    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=false] #titlebar-min,
-    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="maximized"][tabsontop=false] #titlebar-min  {
-      -moz-appearance: none !important;
-      background: none !important;
-    }
-    #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=true] #titlebar-max,
-    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=false] #titlebar-max,
-    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="maximized"][tabsontop=false] #titlebar-max  {
-      -moz-appearance: none !important;
-      background: none !important;
-    }
-    #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=true] #titlebar-close,
-    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=false] #titlebar-close,
-    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="maximized"][tabsontop=false] #titlebar-close {
-      -moz-appearance: none !important;
-      background: none !important;
-    }
-    
-    #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="true"],
-    #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"] {
-      -moz-appearance:-moz-win-borderless-glass !important;
-      background-color: transparent !important;
+    @media not all and (-moz-os-version: windows-win11) and (-moz-windows-default-theme) {
+      #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=true] #titlebar-min,
+      #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=false] #titlebar-min,
+      #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="maximized"][tabsontop=false] #titlebar-min  {
+        -moz-appearance: none !important;
+        background: none !important;
+      }
+      #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=true] #titlebar-max,
+      #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=false] #titlebar-max,
+      #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="maximized"][tabsontop=false] #titlebar-max  {
+        -moz-appearance: none !important;
+        background: none !important;
+      }
+      #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=true] #titlebar-close,
+      #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="normal"][tabsontop=false] #titlebar-close,
+      #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[sizemode="maximized"][tabsontop=false] #titlebar-close {
+        -moz-appearance: none !important;
+        background: none !important;
+      }
+      
+      #main-window:not([tabsalwaysintitlebar]):not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="true"],
+      #main-window:not(:-moz-lwtheme):not([tabsintitlebar])[tabsontop="false"] {
+        -moz-appearance:-moz-win-borderless-glass !important;
+        background-color: transparent !important;
+      }
     }
   }
 
@@ -98,16 +100,18 @@
   }
 
   @media not all and (-moz-os-version: windows-win10) and (-moz-windows-default-theme) {
-    #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) #titlebar-min,
-    #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) #titlebar-max,
-    #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) #titlebar-close {
-      -moz-appearance: none !important;
-      background: none !important;
-    }
-    
-    #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) {
-      -moz-appearance:-moz-win-borderless-glass !important;
-      background: transparent !important;
+    @media not all and (-moz-os-version: windows-win11) and (-moz-windows-default-theme) {
+      #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) #titlebar-min,
+      #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) #titlebar-max,
+      #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) #titlebar-close {
+        -moz-appearance: none !important;
+        background: none !important;
+      }
+      
+      #main-window[tabsintitlebar]:not([inFullscreen]):not(:-moz-lwtheme) {
+        -moz-appearance:-moz-win-borderless-glass !important;
+        background: transparent !important;
+      }
     }
   }
 
@@ -266,9 +270,10 @@
   }
 }
 
-/* Windows 10 */
+/* Windows 10/11 */
 
-@media (-moz-os-version: windows-win10) {
+@media (-moz-os-version: windows-win10),
+       (-moz-os-version: windows-win11) {
   @media (-moz-windows-default-theme) {
     #browser {
       -moz-appearance: -moz-win-exclude-glass !important;
@@ -278,6 +283,13 @@
       /* Default styling for when no accent color is applied */
       #main-window:not(:-moz-window-inactive):not(:-moz-lwtheme) {
         background-color: white !important;
+      }
+      
+      @media (-moz-os-version: windows-win11) {
+        #main-window:not(:-moz-window-inactive):not(:-moz-lwtheme) {
+          /* Windows 11 defaults to RGB 243 */
+          background-color: rgb(243,243,243) !important;
+        }
       }
       
       #titlebar-min:not(:-moz-window-inactive):not(:-moz-lwtheme) {
@@ -296,23 +308,48 @@
         list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close) !important;
       }
 
-      .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
-        background-color: hsla(0, 0%, 0%, .17) !important;
-      }
+      /* Windows 10 caption button effects */
+      @media (-moz-os-version: windows-win10) {
+        .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+          background-color: hsla(0, 0%, 0%, .17) !important;
+        }
 
-      .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active	{
-        background-color: hsla(0, 0%, 0%, .27) !important;
-        transition: none !important;
+        .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+          background-color: hsla(0, 0%, 0%, .27) !important;
+          transition: none !important;
+        }
+      
+        #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+          list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
+          background-color: hsla(0, 86%, 49%, 1) !important;
+        }
+
+        #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+          background-color: hsla(0, 60%, 49%, 0.6) !important;
+          transition: none !important;
+        }
       }
       
-      #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
-        list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
-        background-color: hsla(0, 86%, 49%, 1) !important;
-      }
+      /* Windows 11 caption button effects */
+      @media (-moz-os-version: windows-win11) {
+        .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+          background-color: hsla(0, 0%, 0%, .17) !important;
+        }
 
-      #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active	{
-        background-color: hsla(0, 60%, 49%, 0.6) !important;
-        transition: none !important;
+        .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+          background-color: hsla(0, 0%, 0%, .07) !important;
+          transition: none !important;
+        }
+      
+        #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+          list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
+          background-color: hsla(0, 75%, 44%, 1) !important;
+        }
+
+        #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+          background-color: hsla(0, 61%, 48%, 1) !important;
+          transition: none !important;
+        }
       }
     }
     
@@ -365,22 +402,48 @@
           list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
         }
       
-        .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
-          background-color: hsla(0, 0%, 100%, .17) !important;
-        }
+        /* Windows 10 caption button effects */
+        @media (-moz-os-version: windows-win10) {
+          .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+            background-color: hsla(0, 0%, 100%, .17) !important;
+          }
 
-        .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active	{
-          background-color: hsla(0, 0%, 100%, .27) !important;
-          transition: none !important;
+          .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+            background-color: hsla(0, 0%, 100%, .27) !important;
+            transition: none;
+          }
+      
+          #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+            list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
+            background-color: hsla(0, 86%, 45%, 1) !important;
+          }
+
+          #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+            background-color: hsla(0, 60%, 49%, 0.6) !important;
+            transition: none;
+          }
         }
       
-        #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
-          background-color: hsla(0, 86%, 49%, 1) !important;
-        }
+        /* Windows 11 caption button effects */
+        @media (-moz-os-version: windows-win11) {
+          .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+            background-color: hsla(0, 0%, 0%, .17) !important;
+          }
 
-        #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active	{
-          background-color: hsla(0, 60%, 39%, 1) !important;
-          transition: none !important;
+          .titlebar-button:not(#titlebar-close):not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+            background-color: hsla(0, 0%, 0%, .07) !important;
+            transition: none !important;
+          }
+      
+          #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover {
+            list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close-white) !important;
+            background-color: hsla(4, 75%, 44%, 1) !important;
+          }
+
+          #titlebar-close:not(:-moz-window-inactive):not(:-moz-lwtheme):hover:active {
+            background-color: hsla(4, 61%, 48%, 1) !important;
+            transition: none !important;
+          }
         }
       }
     }
@@ -456,6 +519,10 @@
 
     #titlebar-close:-moz-window-inactive:not(:-moz-lwtheme):not(:hover) {
       list-style-image: url(chrome://browser/skin/nmoptions/icons/caption-buttons.svg#close) !important;
+    }
+
+    .titlebar-button:-moz-window-inactive:not(:-moz-lwtheme):not(:hover):not(:active) {
+      opacity: 0.5 !important;
     }
     
     .titlebar-button:-moz-window-inactive:not(:-moz-lwtheme):hover {
@@ -629,10 +696,11 @@
     }
   }
     
-  @media (-moz-os-version: windows-win10) {    
+  @media (-moz-os-version: windows-win10),
+         (-moz-os-version: windows-win11) {    
     @media (-moz-windows-accent-color-applies: 0) {
       #main-window:not(:-moz-window-inactive):not(:-moz-lwtheme)::after {
-        /* Default Windows 10 styling is white - apply black text styling */
+        /* Default Windows 10 styling is light - apply black text styling */
         color: black !important;
       }
     }
